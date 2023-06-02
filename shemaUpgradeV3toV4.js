@@ -4,10 +4,12 @@ const path = require('path')
 const fs = require('fs')
 const yaml = require('js-yaml')
 
-const STRAPI3_PATH = path.join(__dirname, '..', 'web2021')
-const STRAPI3_API_PATH = path.join(STRAPI3_PATH, 'strapi', 'strapi-development', 'api')
-const STRAPI3_DATAMODEL = path.join(STRAPI3_PATH, 'ssg', 'docs', 'datamodel.yaml')
-const STRAPI4_API_PATH = path.join(__dirname, 'src', 'api')
+const STRAPI3_ROOT = path.join(__dirname, '..', 'web2021')
+const STRAPI3_API_PATH = path.join(STRAPI3_ROOT, 'strapi', 'strapi-development', 'api')
+const STRAPI3_DATAMODEL = path.join(STRAPI3_ROOT, 'ssg', 'docs', 'datamodel.yaml')
+
+const STRAPI4_ROOT = path.join(__dirname, '..', 'web2023')
+const STRAPI4_API_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'api')
 
 // read strapi3 datamodel.yaml, where all relevant collections
 // should be listed and hierarchically organized
