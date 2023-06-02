@@ -1,0 +1,1788 @@
+{
+    "collections": [
+        {
+            "kind": "collectionType",
+            "modelName": "address",
+            "collectionName": "addresses",
+            "displayName": "address"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "age-restriction",
+            "collectionName": "age_restrictions",
+            "displayName": "TagAgeRestriction"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "article-hero",
+            "collectionName": "article_heroes",
+            "displayName": "HeroArticlePoff"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "article-type",
+            "collectionName": "article_types",
+            "displayName": "ArticleType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "awarding",
+            "collectionName": "awardings",
+            "displayName": "Awarding"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "banner",
+            "collectionName": "banners",
+            "displayName": "BannerGroup"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "bruno-article",
+            "collectionName": "bruno_articles",
+            "displayName": "Bruno_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "bruno-footer",
+            "collectionName": "bruno_footers",
+            "displayName": "Bruno_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "bruno-menu",
+            "collectionName": "bruno_menus",
+            "displayName": "Bruno_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "bruno-supporter",
+            "collectionName": "bruno_supporters",
+            "displayName": "Bruno_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "business-profile",
+            "collectionName": "business_profiles",
+            "displayName": "BusinessProfile"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "cassette",
+            "collectionName": "cassettes",
+            "displayName": "Cassette"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "cep",
+            "collectionName": "ceps",
+            "displayName": "cep"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "channel",
+            "collectionName": "channels",
+            "displayName": "Channel"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "cinema",
+            "collectionName": "cinemas",
+            "displayName": "Cinema"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "colours",
+            "collectionName": "colours",
+            "displayName": "Colour"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "country",
+            "collectionName": "countries",
+            "displayName": "Country"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "county",
+            "collectionName": "counties",
+            "displayName": "County"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "course",
+            "collectionName": "courses",
+            "displayName": "Course"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "course-event",
+            "collectionName": "course_events",
+            "displayName": "CourseEvent"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "delivery",
+            "collectionName": "deliveries",
+            "displayName": "Delivery"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "delivery-type",
+            "collectionName": "delivery_types",
+            "displayName": "DeliveryType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-article",
+            "collectionName": "dis_camp_articles",
+            "displayName": "DisCampArticle"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-category",
+            "collectionName": "dis_camp_categories",
+            "displayName": "DisCampCategory"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-event",
+            "collectionName": "dis_camp_events",
+            "displayName": "DisCampEvent"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-footer",
+            "collectionName": "dis_camp_footers",
+            "displayName": "DisCampFooter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-group",
+            "collectionName": "dis_camp_groups",
+            "displayName": "DisCampGroup"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-menu",
+            "collectionName": "dis_camp_menus",
+            "displayName": "DisCampMenu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-person",
+            "collectionName": "dis_camp_people",
+            "displayName": "DisCampPerson"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-person-type",
+            "collectionName": "dis_camp_person_types",
+            "displayName": "DisCampPersonType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-project",
+            "collectionName": "dis_camp_projects",
+            "displayName": "DisCampProject"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dis-camp-supporter",
+            "collectionName": "dis_camp_supporters",
+            "displayName": "DisCampSupporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "domain",
+            "collectionName": "Domeen",
+            "displayName": "Domain"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "dumb-folder",
+            "collectionName": "dumb_folders",
+            "displayName": "DumbFolder"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "event",
+            "collectionName": "events",
+            "displayName": "Event"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "event-access",
+            "collectionName": "event_accesses",
+            "displayName": "EventAccess"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "event-mode",
+            "collectionName": "event_modes",
+            "displayName": "EventMode"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "event-type",
+            "collectionName": "event_types",
+            "displayName": "EventType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "eye-colour",
+            "collectionName": "eye_colours",
+            "displayName": "EyeColour"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "festival",
+            "collectionName": "FestivalCollectionName",
+            "displayName": "Festival"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "festival-edition",
+            "collectionName": "Edition",
+            "displayName": "FestivalEdition"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "festival-pass",
+            "collectionName": "festival_passes",
+            "displayName": "Product_Pass"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "film",
+            "collectionName": "films",
+            "displayName": "Film"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "filmikool-supporter",
+            "collectionName": "filmikool_supporters",
+            "displayName": "Filmikooli_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "filmikooli-article",
+            "collectionName": "filmikooli_articles",
+            "displayName": "Filmikooli_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "filmikooli-footer",
+            "collectionName": "filmikooli_footers",
+            "displayName": "Filmikooli_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "filmikooli-menu",
+            "collectionName": "filmikooli_menus",
+            "displayName": "Filmikooli_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "filmography",
+            "collectionName": "filmographies",
+            "displayName": "Filmography"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "front-page-courses",
+            "collectionName": "front_page_courses",
+            "displayName": "Front_Page_Courses"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "function",
+            "collectionName": "functions",
+            "displayName": "UserFunction"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "gender",
+            "collectionName": "genders",
+            "displayName": "Gender"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "hair-colour",
+            "collectionName": "hair_colours",
+            "displayName": "HairColour"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "hair-length",
+            "collectionName": "hair_lengths",
+            "displayName": "HairLength"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "hall",
+            "collectionName": "halls",
+            "displayName": "Hall"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-bruno",
+            "collectionName": "hero_article_bruno",
+            "displayName": "HeroArticleBruno"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-dis-camp",
+            "collectionName": "hero_article_dis_camps",
+            "displayName": "HeroArticleDisCamp"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-filmikool",
+            "collectionName": "hero_article_filmikools",
+            "displayName": "HeroArticleFilmikool"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-hoff",
+            "collectionName": "hero_article_hoffs",
+            "displayName": "HeroArticleHoff"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-industry",
+            "collectionName": "hero_article_industries",
+            "displayName": "HeroArticleIndustry"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-just-film",
+            "collectionName": "hero_article_just_films",
+            "displayName": "HeroArticleJustFilm"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-kinoff",
+            "collectionName": "hero_article_kinoffs",
+            "displayName": "HeroArticleKinoff"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-kumu",
+            "collectionName": "hero_article_kumu",
+            "displayName": "HeroArticleKumu"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-shorts",
+            "collectionName": "hero_article_shorts",
+            "displayName": "HeroArticleShorts"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "hero-article-tartuff",
+            "collectionName": "hero_article_tartuffs",
+            "displayName": "HeroArticleTartuff"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "hof-fi-article",
+            "collectionName": "hof_fi_articles",
+            "displayName": "HOFFi_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "hof-fi-footer",
+            "collectionName": "hof_fi_footers",
+            "displayName": "HOFFi_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "hof-fi-menu",
+            "collectionName": "hof_fi_menus",
+            "displayName": "HOFFi_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "hof-fi-supporter",
+            "collectionName": "hof_fi_supporters",
+            "displayName": "HOFFi_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-article",
+            "collectionName": "industry_articles",
+            "displayName": "Industry_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-award",
+            "collectionName": "industry_awards",
+            "displayName": "Award"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-category",
+            "collectionName": "industry_categories",
+            "displayName": "Industry_Category"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-event",
+            "collectionName": "industry_events",
+            "displayName": "Industry_Event"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-footer",
+            "collectionName": "industry_footers",
+            "displayName": "Industry_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-group",
+            "collectionName": "industry_groups",
+            "displayName": "Industry_Group"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-menu",
+            "collectionName": "industry_menus",
+            "displayName": "Industry_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-person",
+            "collectionName": "industry_people",
+            "displayName": "Industry_Person"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-person-type",
+            "collectionName": "industry_person_types",
+            "displayName": "Industry_PersonType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-project",
+            "collectionName": "industry_projects",
+            "displayName": "Industry_Project"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "industry-supporter",
+            "collectionName": "industry_supporters",
+            "displayName": "Industry_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "just-film-footer",
+            "collectionName": "just_film_footers",
+            "displayName": "JustFilm_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "just-filmi-article",
+            "collectionName": "just_filmi_articles",
+            "displayName": "JustFilmi_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "just-filmi-menu",
+            "collectionName": "just_filmi_menus",
+            "displayName": "JustFilmi_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kinoffi-article",
+            "collectionName": "kinoffi_articles",
+            "displayName": "Kinoffi_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kinoffi-footer",
+            "collectionName": "kinoffi_footers",
+            "displayName": "Kinoffi_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kinoffi-menu",
+            "collectionName": "kinoffi_menus",
+            "displayName": "Kinoffi_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kinoffi-supporter",
+            "collectionName": "kinoffi_supporters",
+            "displayName": "Kinoffi_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kumu-article",
+            "collectionName": "kumu_articles",
+            "displayName": "Kumu_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kumu-footer",
+            "collectionName": "kumu_footers",
+            "displayName": "Kumu_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kumu-menu",
+            "collectionName": "kumu_menus",
+            "displayName": "Kumu_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "kumu-supporter",
+            "collectionName": "kumu_supporters",
+            "displayName": "Kumu_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "l1-menu-default",
+            "collectionName": "l1_menu_defaults",
+            "displayName": "L1Menu_default"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "l1-menu-industry",
+            "collectionName": "l1_menu_industries",
+            "displayName": "L1MenuIndustry"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "l1-menu-kumu",
+            "collectionName": "l1_menu_kumus",
+            "displayName": "L1MenuKumu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "label-group",
+            "collectionName": "label_groups",
+            "displayName": "LabelGroup"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "language",
+            "collectionName": "languages",
+            "displayName": "Language"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "local-government",
+            "collectionName": "local_governments",
+            "displayName": "LocalGovernment"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "location",
+            "collectionName": "locations",
+            "displayName": "Location"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "organisation",
+            "collectionName": "organisations",
+            "displayName": "Organisation"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "origin",
+            "collectionName": "origins",
+            "displayName": "Origin"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "pattern-collections",
+            "collectionName": "pattern_collections",
+            "displayName": "Pattern_Collections"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "payment-parameters",
+            "collectionName": "payment_parameters",
+            "displayName": "PaymentParameters"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "person",
+            "collectionName": "people",
+            "displayName": "Person"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "person-pro",
+            "collectionName": "person_pros",
+            "displayName": "PersonPro"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "pitch-of-voice",
+            "collectionName": "pitch_of_voices",
+            "displayName": "PitchOfVoice"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "pof-fi-article",
+            "collectionName": "pof_fi_articles",
+            "displayName": "POFFi_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "pof-fi-footer",
+            "collectionName": "pof_fi_footers",
+            "displayName": "POFFi_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "pof-fi-menu",
+            "collectionName": "pof_fi_menus",
+            "displayName": "POFFi_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "populated-place",
+            "collectionName": "populated_places",
+            "displayName": "Municipality"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "product",
+            "collectionName": "products",
+            "displayName": "Product"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "product-category",
+            "collectionName": "product_categories",
+            "displayName": "Product_Category"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "product-type",
+            "collectionName": "product_types",
+            "displayName": "ProductType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "programme",
+            "collectionName": "programmes",
+            "displayName": "Programme"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "project-status",
+            "collectionName": "project_statuses",
+            "displayName": "Project_Status"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "project-type",
+            "collectionName": "project_types",
+            "displayName": "Project_Type"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "role-at-film",
+            "collectionName": "role_at_films",
+            "displayName": "RoleAtFilm"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "role-dialog",
+            "collectionName": "role_dialogs",
+            "displayName": "RoleDialog"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "screening",
+            "collectionName": "screenings",
+            "displayName": "Screening"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "screening-mode",
+            "collectionName": "screening_modes",
+            "displayName": "ScreeningMode"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "screening-type",
+            "collectionName": "screening_types",
+            "displayName": "ScreeningType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "shoe-size",
+            "collectionName": "shoe_sizes",
+            "displayName": "Shoe_Size"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "shop",
+            "collectionName": "shops",
+            "displayName": "Shop"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "shortsi-article",
+            "collectionName": "shortsi_articles",
+            "displayName": "Shortsi_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "shortsi-footer",
+            "collectionName": "shortsi_footers",
+            "displayName": "Shortsi_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "shortsi-menu",
+            "collectionName": "shortsi_menus",
+            "displayName": "Shortsi_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "simple-article",
+            "collectionName": "simple_articles",
+            "displayName": "SimpleArticle"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "six-films",
+            "collectionName": "six_films",
+            "displayName": "SixFilms"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "smart-folder",
+            "collectionName": "smart_folders",
+            "displayName": "SmartFolder"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "stature",
+            "collectionName": "statures",
+            "displayName": "Stature"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "sub-level2-item",
+            "collectionName": "sub_level2_items",
+            "displayName": "SubLevel2Item"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "supporters-just",
+            "collectionName": "supporters_justs",
+            "displayName": "Just_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "supporters-page",
+            "collectionName": "supporters_pages",
+            "displayName": "POFFi_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "supporters-shorts",
+            "collectionName": "supporters_shorts",
+            "displayName": "Shorts_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-category",
+            "collectionName": "tag_categories",
+            "displayName": "TagCategory"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-film-type",
+            "collectionName": "tag_film_types",
+            "displayName": "TagFilmType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-genre",
+            "collectionName": "tag_genres",
+            "displayName": "TagGenre"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-keyword",
+            "collectionName": "tag_keywords",
+            "displayName": "TagKeyword"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-location",
+            "collectionName": "tag_locations",
+            "displayName": "TagLocation"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-looking-for",
+            "collectionName": "tag_looking_fors",
+            "displayName": "TagLookingFor"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-premiere-type",
+            "collectionName": "tag_premiere_types",
+            "displayName": "TagPremiereType"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tag-secret",
+            "collectionName": "tag_secrets",
+            "displayName": "TagSecret"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tartuffi-article",
+            "collectionName": "tartuffi_articles",
+            "displayName": "Tartuffi_Article"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tartuffi-footer",
+            "collectionName": "tartuffi_footers",
+            "displayName": "Tartuffi_Footer"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tartuffi-menu",
+            "collectionName": "tartuffi_menus",
+            "displayName": "Tartuffi_Menu"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "tartuffi-supporter",
+            "collectionName": "tartuffi_supporters",
+            "displayName": "Tartuffi_Supporter"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "team",
+            "collectionName": "teams",
+            "displayName": "Team"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "test-menu",
+            "collectionName": "test_menus",
+            "displayName": "testMenuDomain1"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "time-units",
+            "collectionName": "time_units",
+            "displayName": "TimeUnits"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "town",
+            "collectionName": "towns",
+            "displayName": "Town"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "transaction",
+            "collectionName": "transactions",
+            "displayName": "transaction"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "transactions-products",
+            "collectionName": "transactions_products",
+            "displayName": "TransactionsProducts"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "trigger-warning",
+            "collectionName": "trigger_warnings",
+            "displayName": "TagTriggerWarning"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-bruno",
+            "collectionName": "trio_bruno",
+            "displayName": "TrioBruno"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-dis-camp",
+            "collectionName": "trio_dis_camps",
+            "displayName": "TrioDisCamp"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-filmikool",
+            "collectionName": "trio_filmikools",
+            "displayName": "TrioFilmikool"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-hoff",
+            "collectionName": "trio_hoffs",
+            "displayName": "TrioHOFF"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-industry",
+            "collectionName": "trio_industries",
+            "displayName": "TrioIndustry"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-just-film",
+            "collectionName": "trio_just_films",
+            "displayName": "TrioJustFilm"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-kinoff",
+            "collectionName": "trio_kinoffs",
+            "displayName": "TrioKinoff"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-kumu",
+            "collectionName": "trio_kumu",
+            "displayName": "TrioKumu"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-p-oe-ff",
+            "collectionName": "trio_p_oe_ffs",
+            "displayName": "TrioPOFF"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-poff-2",
+            "collectionName": "trio_poff_2s",
+            "displayName": "trioPOFF2"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-shorts",
+            "collectionName": "trio_shorts",
+            "displayName": "TrioShorts"
+        },
+        {
+            "kind": "singleType",
+            "modelName": "trio-tartuff",
+            "collectionName": "trio_tartuffs",
+            "displayName": "TrioTartuff"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "type-of-work",
+            "collectionName": "type_of_works",
+            "displayName": "TypeOfWork"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "user-persons-collection",
+            "collectionName": "user_persons_collections",
+            "displayName": "userPersonsCollection"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "user-profiles",
+            "collectionName": "user_profiles",
+            "displayName": "UserProfiles"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "user-role",
+            "collectionName": "user_roles",
+            "displayName": "UserRole"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "users-providers",
+            "collectionName": "users_providers",
+            "displayName": "UsersProviders"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "web-author",
+            "collectionName": "web_authors",
+            "displayName": "WebAuthor"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "web-permission",
+            "collectionName": "web_permissions",
+            "displayName": "webPermission"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "web-role",
+            "collectionName": "web_roles",
+            "displayName": "webRole"
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "web-user",
+            "collectionName": "web_users",
+            "displayName": "webUser"
+        }
+    ],
+    "components": {
+        "article": {
+            "article-component.json": {
+                "kind": "componentType",
+                "modelName": "article-component.json",
+                "collectionName": "components_article_article_components",
+                "displayName": "ComponentArticle"
+            },
+            "article-media.json": {
+                "kind": "componentType",
+                "modelName": "article-media.json",
+                "collectionName": "components_article_article_medias",
+                "displayName": "ArticleMedia"
+            },
+            "trio-bruno.json": {
+                "kind": "componentType",
+                "modelName": "trio-bruno.json",
+                "collectionName": "components_article_trio_bruno",
+                "displayName": "Triobruno"
+            },
+            "trio-hoff.json": {
+                "kind": "componentType",
+                "modelName": "trio-hoff.json",
+                "collectionName": "components_article_trio_hoffs",
+                "displayName": "TrioHoff"
+            },
+            "trio-item-bruno.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-bruno.json",
+                "collectionName": "components_article_trio_item_bruno",
+                "displayName": "TrioItemBruno"
+            },
+            "trio-item-dis-camp.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-dis-camp.json",
+                "collectionName": "components_article_trio_item_dis_camps",
+                "displayName": "TrioItemDisCamp"
+            },
+            "trio-item-filmikool.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-filmikool.json",
+                "collectionName": "components_article_trio_item_filmikools",
+                "displayName": "TrioItemFilmikool"
+            },
+            "trio-item-hoff.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-hoff.json",
+                "collectionName": "components_article_trio_item_hoffs",
+                "displayName": "TrioItemHoff"
+            },
+            "trio-item-industry.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-industry.json",
+                "collectionName": "components_article_trio_item_industry",
+                "displayName": "TrioItemIndustry"
+            },
+            "trio-item-just-film.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-just-film.json",
+                "collectionName": "components_article_trio_item_just_films",
+                "displayName": "TrioItemJustFilm"
+            },
+            "trio-item-kinoff.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-kinoff.json",
+                "collectionName": "components_article_trio_item_kinoff",
+                "displayName": "TrioItemKinoff"
+            },
+            "trio-item-kumu.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-kumu.json",
+                "collectionName": "components_article_trio_item_kumu",
+                "displayName": "TrioItemKumu"
+            },
+            "trio-item-shorts.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-shorts.json",
+                "collectionName": "components_article_trio_item_shorts",
+                "displayName": "TrioItemShorts"
+            },
+            "trio-item-tartuff.json": {
+                "kind": "componentType",
+                "modelName": "trio-item-tartuff.json",
+                "collectionName": "components_article_trio_item_tartuffs",
+                "displayName": "TrioItemTartuff"
+            },
+            "trio-just-film.json": {
+                "kind": "componentType",
+                "modelName": "trio-just-film.json",
+                "collectionName": "components_article_trio_just_films",
+                "displayName": "Triojustfilm"
+            },
+            "trio-kumu.json": {
+                "kind": "componentType",
+                "modelName": "trio-kumu.json",
+                "collectionName": "components_article_trio_kumu",
+                "displayName": "Triokumu"
+            },
+            "trio-lang-item.json": {
+                "kind": "componentType",
+                "modelName": "trio-lang-item.json",
+                "collectionName": "components_article_trio_lang_items",
+                "displayName": "TrioItemPoff"
+            },
+            "trio-poff-et.json": {
+                "kind": "componentType",
+                "modelName": "trio-poff-et.json",
+                "collectionName": "components_article_trio_poff_ets",
+                "displayName": "Triopoff"
+            },
+            "trio-shorts.json": {
+                "kind": "componentType",
+                "modelName": "trio-shorts.json",
+                "collectionName": "components_article_trio_shorts",
+                "displayName": "Trioshorts"
+            },
+            "trio-tartuff.json": {
+                "kind": "componentType",
+                "modelName": "trio-tartuff.json",
+                "collectionName": "components_article_trio_tartuffs",
+                "displayName": "Triotartuff"
+            },
+            "triodiscamp.json": {
+                "kind": "componentType",
+                "modelName": "triodiscamp.json",
+                "collectionName": "components_article_triodiscamps",
+                "displayName": "Triodiscamp"
+            },
+            "triofilmikool.json": {
+                "kind": "componentType",
+                "modelName": "triofilmikool.json",
+                "collectionName": "components_article_triofilmikools",
+                "displayName": "Triofilmikool"
+            },
+            "trioindustry.json": {
+                "kind": "componentType",
+                "modelName": "trioindustry.json",
+                "collectionName": "components_article_trio_industry",
+                "displayName": "Trioindustry"
+            },
+            "triokinoff.json": {
+                "kind": "componentType",
+                "modelName": "triokinoff.json",
+                "collectionName": "components_article_trio_kinoff",
+                "displayName": "Triokinoff"
+            }
+        },
+        "button": {
+            "button.json": {
+                "kind": "componentType",
+                "modelName": "button.json",
+                "collectionName": "components_button_buttons",
+                "displayName": "Button"
+            }
+        },
+        "course": {
+            "course-module.json": {
+                "kind": "componentType",
+                "modelName": "course-module.json",
+                "collectionName": "components_course_course_modules",
+                "displayName": "CourseModule"
+            }
+        },
+        "creativegate": {
+            "awarding.json": {
+                "kind": "componentType",
+                "modelName": "awarding.json",
+                "collectionName": "components_creativegate_awardings",
+                "displayName": "Awarding"
+            }
+        },
+        "credentials": {
+            "credentials.json": {
+                "kind": "componentType",
+                "modelName": "credentials.json",
+                "collectionName": "components_credentials_credentials",
+                "displayName": "Film Credentials"
+            },
+            "production-company.json": {
+                "kind": "componentType",
+                "modelName": "production-company.json",
+                "collectionName": "components_credentials_production_companies",
+                "displayName": "ProductionCompany"
+            }
+        },
+        "film": {
+            "countries-and-languages.json": {
+                "kind": "componentType",
+                "modelName": "countries-and-languages.json",
+                "collectionName": "components_film_countries_and_languages",
+                "displayName": "countriesAndLanguages"
+            },
+            "credentials-new.json": {
+                "kind": "componentType",
+                "modelName": "credentials-new.json",
+                "collectionName": "components_film_credentials_news",
+                "displayName": "credentials"
+            },
+            "film-in-filmography.json": {
+                "kind": "componentType",
+                "modelName": "film-in-filmography.json",
+                "collectionName": "components_film_film_in_filmographies",
+                "displayName": "filmInFilmography"
+            },
+            "filmography.json": {
+                "kind": "componentType",
+                "modelName": "filmography.json",
+                "collectionName": "components_film_filmographies",
+                "displayName": "filmography"
+            },
+            "ordered-countries.json": {
+                "kind": "componentType",
+                "modelName": "ordered-countries.json",
+                "collectionName": "components_film_ordered_countries",
+                "displayName": "orderedCountries"
+            },
+            "ordered-films.json": {
+                "kind": "componentType",
+                "modelName": "ordered-films.json",
+                "collectionName": "components_film_ordered_films",
+                "displayName": "orderedFilms"
+            },
+            "presented-by.json": {
+                "kind": "componentType",
+                "modelName": "presented-by.json",
+                "collectionName": "components_film_presented_bies",
+                "displayName": "presentedBy"
+            },
+            "role-company.json": {
+                "kind": "componentType",
+                "modelName": "role-company.json",
+                "collectionName": "components_film_role_companies",
+                "displayName": "roleCompany"
+            },
+            "role-person.json": {
+                "kind": "componentType",
+                "modelName": "role-person.json",
+                "collectionName": "components_film_role_people",
+                "displayName": "rolePerson"
+            }
+        },
+        "footer": {
+            "footer-item-nav.json": {
+                "kind": "componentType",
+                "modelName": "footer-item-nav.json",
+                "collectionName": "components_footer_footer_item_navs",
+                "displayName": "footerItemNav"
+            },
+            "sup-bruno.json": {
+                "kind": "componentType",
+                "modelName": "sup-bruno.json",
+                "collectionName": "components_footer_sup_bruno",
+                "displayName": "SupBruno"
+            },
+            "sup-dis-camp.json": {
+                "kind": "componentType",
+                "modelName": "sup-dis-camp.json",
+                "collectionName": "components_footer_sup_dis_camps",
+                "displayName": "SupDisCamp"
+            },
+            "sup-filmikool.json": {
+                "kind": "componentType",
+                "modelName": "sup-filmikool.json",
+                "collectionName": "components_footer_sup_filmikools",
+                "displayName": "SupFilmikool"
+            },
+            "sup-hoff.json": {
+                "kind": "componentType",
+                "modelName": "sup-hoff.json",
+                "collectionName": "components_footer_sup_hoffs",
+                "displayName": "SupHoff"
+            },
+            "sup-industry.json": {
+                "kind": "componentType",
+                "modelName": "sup-industry.json",
+                "collectionName": "components_footer_sup_industry",
+                "displayName": "SupIndustry"
+            },
+            "sup-just.json": {
+                "kind": "componentType",
+                "modelName": "sup-just.json",
+                "collectionName": "components_footer_sup_justs",
+                "displayName": "supJust"
+            },
+            "sup-kinoff.json": {
+                "kind": "componentType",
+                "modelName": "sup-kinoff.json",
+                "collectionName": "components_footer_sup_kinoffs",
+                "displayName": "supKinoff"
+            },
+            "sup-kumu.json": {
+                "kind": "componentType",
+                "modelName": "sup-kumu.json",
+                "collectionName": "components_footer_sup_kumu",
+                "displayName": "SupKumu"
+            },
+            "sup-poff.json": {
+                "kind": "componentType",
+                "modelName": "sup-poff.json",
+                "collectionName": "components_footer_sup_poffs",
+                "displayName": "supPoff"
+            },
+            "sup-sec-bruno.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-bruno.json",
+                "collectionName": "components_footer_sup_sec_bruno",
+                "displayName": "SupSecBruno"
+            },
+            "sup-sec-dis-camp.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-dis-camp.json",
+                "collectionName": "components_footer_sup_sec_dis_camps",
+                "displayName": "SupSecDisCamp"
+            },
+            "sup-sec-filmikool.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-filmikool.json",
+                "collectionName": "components_footer_sup_sec_filmikools",
+                "displayName": "SupSecFilmikool"
+            },
+            "sup-sec-hoff.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-hoff.json",
+                "collectionName": "components_footer_sup_sec_hoffs",
+                "displayName": "SupSecHoff"
+            },
+            "sup-sec-industry.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-industry.json",
+                "collectionName": "components_footer_sup_sec_industry",
+                "displayName": "SupSecIndustry"
+            },
+            "sup-sec-just.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-just.json",
+                "collectionName": "components_footer_sup_sec_justs",
+                "displayName": "supSecJust"
+            },
+            "sup-sec-kinoff.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-kinoff.json",
+                "collectionName": "components_footer_sup_sec_kinoff",
+                "displayName": "SupSecKinoff"
+            },
+            "sup-sec-kumu.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-kumu.json",
+                "collectionName": "components_footer_sup_sec_kumu",
+                "displayName": "SupSecKumu"
+            },
+            "sup-sec-poff.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-poff.json",
+                "collectionName": "components_footer_sup_sec_poffs",
+                "displayName": "supSecPoff"
+            },
+            "sup-sec-shorts.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-shorts.json",
+                "collectionName": "components_footer_sup_sec_shorts",
+                "displayName": "supSecShorts"
+            },
+            "sup-sec-tartuff.json": {
+                "kind": "componentType",
+                "modelName": "sup-sec-tartuff.json",
+                "collectionName": "components_footer_sup_sec_tartuffs",
+                "displayName": "SupSecTartuff"
+            },
+            "sup-shorts.json": {
+                "kind": "componentType",
+                "modelName": "sup-shorts.json",
+                "collectionName": "components_footer_sup_shorts",
+                "displayName": "supShorts"
+            },
+            "sup-tartuff.json": {
+                "kind": "componentType",
+                "modelName": "sup-tartuff.json",
+                "collectionName": "components_footer_sup_tartuffs",
+                "displayName": "SupTartuff"
+            }
+        },
+        "frontpage": {
+            "banner.json": {
+                "kind": "componentType",
+                "modelName": "banner.json",
+                "collectionName": "components_frontpage_banners",
+                "displayName": "Banner"
+            }
+        },
+        "label": {
+            "label-group.json": {
+                "kind": "componentType",
+                "modelName": "label-group.json",
+                "collectionName": "components_label_label_groups",
+                "displayName": "labelGroup"
+            },
+            "label.json": {
+                "kind": "componentType",
+                "modelName": "label.json",
+                "collectionName": "components_label_labels",
+                "displayName": "label"
+            }
+        },
+        "location": {
+            "address.json": {
+                "kind": "componentType",
+                "modelName": "address.json",
+                "collectionName": "components_location_addresses",
+                "displayName": "Address"
+            },
+            "location.json": {
+                "kind": "componentType",
+                "modelName": "location.json",
+                "collectionName": "components_location_locations",
+                "displayName": "Location"
+            }
+        },
+        "media": {
+            "film-media.json": {
+                "kind": "componentType",
+                "modelName": "film-media.json",
+                "collectionName": "components_media_film_medias",
+                "displayName": "Film Media"
+            },
+            "imgs.json": {
+                "kind": "componentType",
+                "modelName": "imgs.json",
+                "collectionName": "components_media_imgs",
+                "displayName": "imgs"
+            },
+            "qa-clip.json": {
+                "kind": "componentType",
+                "modelName": "qa-clip.json",
+                "collectionName": "components_media_qa_clips",
+                "displayName": "QaClip"
+            },
+            "remote-img.json": {
+                "kind": "componentType",
+                "modelName": "remote-img.json",
+                "collectionName": "components_media_remote_imgs",
+                "displayName": "RemoteImg"
+            },
+            "trailers.json": {
+                "kind": "componentType",
+                "modelName": "trailers.json",
+                "collectionName": "components_media_trailers",
+                "displayName": "Trailer"
+            }
+        },
+        "menu": {
+            "bruno-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "bruno-sub-menu-item.json",
+                "collectionName": "components_menu_bruno_sub_menu_items",
+                "displayName": "BrunoSubMenuItem"
+            },
+            "dis-camp-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "dis-camp-sub-menu-item.json",
+                "collectionName": "components_menu_dis_camp_sub_menu_items",
+                "displayName": "DisCampSubMenuItem"
+            },
+            "filmikooli-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "filmikooli-sub-menu-item.json",
+                "collectionName": "components_menu_filmikooli_sub_menu_items",
+                "displayName": "FilmikooliSubMenuItem"
+            },
+            "hoffi-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "hoffi-sub-menu-item.json",
+                "collectionName": "components_menu_hoffi_sub_menu_items",
+                "displayName": "hoffiSubMenuItem"
+            },
+            "industry-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "industry-sub-menu-item.json",
+                "collectionName": "components_menu_industry_sub_menu_items",
+                "displayName": "IndustrySubMenuItem"
+            },
+            "just-filmi-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "just-filmi-sub-menu-item.json",
+                "collectionName": "components_menu_just_filmi_sub_menu_items",
+                "displayName": "JustFilmiSubMenuItem"
+            },
+            "kinoffi-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "kinoffi-sub-menu-item.json",
+                "collectionName": "components_menu_kinoffi_sub_menu_items",
+                "displayName": "KinoffiSubMenuItem"
+            },
+            "kumu-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "kumu-sub-menu-item.json",
+                "collectionName": "components_menu_kumu_sub_menu_items",
+                "displayName": "KumuSubMenuItem"
+            },
+            "l2-menu-industry.json": {
+                "kind": "componentType",
+                "modelName": "l2-menu-industry.json",
+                "collectionName": "components_menu_l2_menu_industries",
+                "displayName": "L2MenuIndustry"
+            },
+            "l2-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "l2-menu-item.json",
+                "collectionName": "components_menu_l2_menu_items",
+                "displayName": "L2MenuItem"
+            },
+            "l2-menu-kumu.json": {
+                "kind": "componentType",
+                "modelName": "l2-menu-kumu.json",
+                "collectionName": "components_menu_l2_menu_kumus",
+                "displayName": "L2MenuKumu"
+            },
+            "l3-menu-industry.json": {
+                "kind": "componentType",
+                "modelName": "l3-menu-industry.json",
+                "collectionName": "components_menu_l3_menu_industries",
+                "displayName": "L3MenuIndustry"
+            },
+            "l3-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "l3-menu-item.json",
+                "collectionName": "components_menu_l3_menu_items",
+                "displayName": "L3MenuItem"
+            },
+            "l3-menu-kumu.json": {
+                "kind": "componentType",
+                "modelName": "l3-menu-kumu.json",
+                "collectionName": "components_menu_l3_menu_kumus",
+                "displayName": "L3MenuKumu"
+            },
+            "menu-item.json": {
+                "kind": "componentType",
+                "modelName": "menu-item.json",
+                "collectionName": "components_menu_menu_items",
+                "displayName": "poffiSubMenuItem"
+            },
+            "shortsi-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "shortsi-sub-menu-item.json",
+                "collectionName": "components_menu_shortsi_sub_menu_items",
+                "displayName": "ShortsiSubMenuItem"
+            },
+            "tartuffi-sub-menu-item.json": {
+                "kind": "componentType",
+                "modelName": "tartuffi-sub-menu-item.json",
+                "collectionName": "components_menu_tartuffi_sub_menu_items",
+                "displayName": "TartuffiSubMenuItem"
+            }
+        },
+        "person": {
+            "actor-info-set.json": {
+                "kind": "componentType",
+                "modelName": "actor-info-set.json",
+                "collectionName": "components_person_actor_info_sets",
+                "displayName": "Actor_Info_Set"
+            }
+        },
+        "screening": {
+            "intro-conversation-qand-a.json": {
+                "kind": "componentType",
+                "modelName": "intro-conversation-qand-a.json",
+                "collectionName": "components_screening_intro_conversation_qand_as",
+                "displayName": "Intro_Conversation_QandA"
+            },
+            "subtitles.json": {
+                "kind": "componentType",
+                "modelName": "subtitles.json",
+                "collectionName": "components_screening_subtitles",
+                "displayName": "Subtitles"
+            }
+        },
+        "social": {
+            "social-group.json": {
+                "kind": "componentType",
+                "modelName": "social-group.json",
+                "collectionName": "components_social_social_groups",
+                "displayName": "SocialGroup"
+            },
+            "social-item.json": {
+                "kind": "componentType",
+                "modelName": "social-item.json",
+                "collectionName": "components_social_social_items",
+                "displayName": "SocialItem"
+            }
+        },
+        "tags": {
+            "course-tags.json": {
+                "kind": "componentType",
+                "modelName": "course-tags.json",
+                "collectionName": "components_tags_course_tags",
+                "displayName": "CourseTags"
+            },
+            "tags.json": {
+                "kind": "componentType",
+                "modelName": "tags.json",
+                "collectionName": "components_tags_tags",
+                "displayName": "Tags"
+            }
+        },
+        "teams": {
+            "jury-member.json": {
+                "kind": "componentType",
+                "modelName": "jury-member.json",
+                "collectionName": "components_teams_jury_members",
+                "displayName": "juryMember"
+            },
+            "team-member.json": {
+                "kind": "componentType",
+                "modelName": "team-member.json",
+                "collectionName": "components_teams_team_members",
+                "displayName": "teamMember"
+            },
+            "test-team.json": {
+                "kind": "componentType",
+                "modelName": "test-team.json",
+                "collectionName": "components_teams_test_teams",
+                "displayName": "subTeam"
+            }
+        },
+        "ticketing": {
+            "delivery-price.json": {
+                "kind": "componentType",
+                "modelName": "delivery-price.json",
+                "collectionName": "components_ticketing_delivery_prices",
+                "displayName": "DeliveryPrice"
+            },
+            "ordered-products.json": {
+                "kind": "componentType",
+                "modelName": "ordered-products.json",
+                "collectionName": "components_ticketing_ordered_products",
+                "displayName": "orderedProduct"
+            },
+            "price-with-time.json": {
+                "kind": "componentType",
+                "modelName": "price-with-time.json",
+                "collectionName": "components_ticketing_price_with_times",
+                "displayName": "priceAtPeriod"
+            },
+            "prod-cat-list.json": {
+                "kind": "componentType",
+                "modelName": "prod-cat-list.json",
+                "collectionName": "components_ticketing_prod_cat_lists",
+                "displayName": "prodCatList"
+            },
+            "ticketing-rights.json": {
+                "kind": "componentType",
+                "modelName": "ticketing-rights.json",
+                "collectionName": "components_ticketing_ticketing_rights",
+                "displayName": "ticketingRight"
+            }
+        },
+        "time": {
+            "period-relative.json": {
+                "kind": "componentType",
+                "modelName": "period-relative.json",
+                "collectionName": "components_time_period_relatives",
+                "displayName": "PeriodRelative"
+            },
+            "period.json": {
+                "kind": "componentType",
+                "modelName": "period.json",
+                "collectionName": "components_time_periods",
+                "displayName": "period"
+            }
+        },
+        "translated": {
+            "translated-long.json": {
+                "kind": "componentType",
+                "modelName": "translated-long.json",
+                "collectionName": "components_translated_translated_longs",
+                "displayName": "Translated Long"
+            },
+            "translated-short.json": {
+                "kind": "componentType",
+                "modelName": "translated-short.json",
+                "collectionName": "components_translated_translated_shorts",
+                "displayName": "Translated Short"
+            }
+        },
+        "user": {
+            "external-providers.json": {
+                "kind": "componentType",
+                "modelName": "external-providers.json",
+                "collectionName": "components_user_external_providers",
+                "displayName": "externalProviders"
+            },
+            "function-conditions.json": {
+                "kind": "componentType",
+                "modelName": "function-conditions.json",
+                "collectionName": "components_user_function_conditions",
+                "displayName": "Conditions"
+            },
+            "function-parameters.json": {
+                "kind": "componentType",
+                "modelName": "function-parameters.json",
+                "collectionName": "components_user_function_parameters",
+                "displayName": "FunctionParameters"
+            },
+            "imported-to-strapi.json": {
+                "kind": "componentType",
+                "modelName": "imported-to-strapi.json",
+                "collectionName": "components_user_imported_to_strapis",
+                "displayName": "importedToStrapi"
+            },
+            "last10-logins.json": {
+                "kind": "componentType",
+                "modelName": "last10-logins.json",
+                "collectionName": "components_user_last10_logins",
+                "displayName": "loginEvent"
+            },
+            "login-event.json": {
+                "kind": "componentType",
+                "modelName": "login-event.json",
+                "collectionName": "components_user_login_events",
+                "displayName": "loginEvent"
+            },
+            "my-events.json": {
+                "kind": "componentType",
+                "modelName": "my-events.json",
+                "collectionName": "components_user_my_events",
+                "displayName": "MyEvents"
+            },
+            "my-films.json": {
+                "kind": "componentType",
+                "modelName": "my-films.json",
+                "collectionName": "components_user_my_films",
+                "displayName": "MyFilms"
+            },
+            "my-screenings.json": {
+                "kind": "componentType",
+                "modelName": "my-screenings.json",
+                "collectionName": "components_user_my_screenings",
+                "displayName": "MyScreenings"
+            },
+            "my.json": {
+                "kind": "componentType",
+                "modelName": "my.json",
+                "collectionName": "components_user_mies",
+                "displayName": "my"
+            },
+            "user-right.json": {
+                "kind": "componentType",
+                "modelName": "user-right.json",
+                "collectionName": "components_user_user_rights",
+                "displayName": "UserRight"
+            }
+        }
+    }
+}
