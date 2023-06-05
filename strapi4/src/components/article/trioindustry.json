@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_trio_industry",
+  "info": {
+    "displayName": "Trioindustry"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-item-industry"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-item-industry"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-item-industry"
+    }
+  }
+}

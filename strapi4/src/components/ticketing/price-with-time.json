@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ticketing_price_with_times",
+  "info": {
+    "displayName": "priceAtPeriod"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "startDateTime": {
+      "type": "datetime"
+    },
+    "endDateTime": {
+      "type": "datetime"
+    }
+  }
+}

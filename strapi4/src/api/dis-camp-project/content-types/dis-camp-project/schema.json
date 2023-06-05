@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dis_camp_projects",
+  "info": {
+    "singularName": "dis-camp-project",
+    "pluralName": "dis-camp-projects",
+    "displayName": "DisCampProject"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "titleOriginal": {
+      "type": "string"
+    },
+    "logline": {
+      "type": "string"
+    },
+    "completionDate": {
+      "type": "datetime"
+    },
+    "numOfSeasons": {
+      "type": "integer"
+    },
+    "numOfEpisodes": {
+      "type": "integer"
+    },
+    "episodeDuration": {
+      "type": "integer"
+    },
+    "plannedPremiere": {
+      "type": "datetime"
+    },
+    "country_focus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "teamCredentials": {
+      "type": "component",
+      "component": "film.credentials-new"
+    },
+    "budget": {
+      "type": "integer"
+    },
+    "financed": {
+      "type": "integer"
+    },
+    "lookingFor": {
+      "type": "text"
+    },
+    "synopsis": {
+      "type": "text"
+    },
+    "directorsNote": {
+      "type": "text"
+    },
+    "contactName": {
+      "type": "string"
+    },
+    "contactCompany": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::organisation.organisation"
+    },
+    "contactAddress": {
+      "type": "string"
+    },
+    "contactEmail": {
+      "type": "email"
+    },
+    "contactWeb": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": true
+    },
+    "clipUrl": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "public": {
+      "type": "boolean"
+    }
+  }
+}

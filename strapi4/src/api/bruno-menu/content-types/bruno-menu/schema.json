@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bruno_menus",
+  "info": {
+    "singularName": "bruno-menu",
+    "pluralName": "bruno-menus",
+    "displayName": "BrunoMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "bruno_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bruno-article.bruno-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.bruno-sub-menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

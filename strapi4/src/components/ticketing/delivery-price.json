@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_ticketing_delivery_prices",
+  "info": {
+    "displayName": "DeliveryPrice"
+  },
+  "options": {},
+  "attributes": {
+    "name_private": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "info_et": {
+      "type": "text"
+    },
+    "info_en": {
+      "type": "text"
+    },
+    "info_ru": {
+      "type": "text"
+    },
+    "days_before": {
+      "type": "integer"
+    }
+  }
+}

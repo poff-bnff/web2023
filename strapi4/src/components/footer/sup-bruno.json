@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_footer_sup_bruno",
+  "info": {
+    "displayName": "SupBruno"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "logoColour": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "logoBlack": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "bruno_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bruno-article.bruno-article"
+    }
+  }
+}

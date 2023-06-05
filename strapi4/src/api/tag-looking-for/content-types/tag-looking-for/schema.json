@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tag_looking_fors",
+  "info": {
+    "singularName": "tag-looking-for",
+    "pluralName": "tag-looking-fors",
+    "displayName": "TagLookingFor"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "et": {
+      "type": "string"
+    },
+    "en": {
+      "type": "string"
+    },
+    "ru": {
+      "type": "string"
+    }
+  }
+}

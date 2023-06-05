@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cinemas",
+  "info": {
+    "singularName": "cinema",
+    "pluralName": "cinemas",
+    "displayName": "Cinema"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "town": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::town.town"
+    },
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

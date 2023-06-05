@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_translated_translated_longs",
+  "info": {
+    "displayName": "Translated Long"
+  },
+  "options": {},
+  "attributes": {
+    "et": {
+      "type": "text"
+    },
+    "en": {
+      "type": "text"
+    },
+    "ru": {
+      "type": "text"
+    }
+  }
+}

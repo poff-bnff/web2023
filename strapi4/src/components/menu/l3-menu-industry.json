@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_menu_l3_menu_industries",
+  "info": {
+    "displayName": "L3MenuIndustry"
+  },
+  "options": {},
+  "attributes": {
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "customUrl_et": {
+      "type": "string"
+    },
+    "customUrl_en": {
+      "type": "string"
+    },
+    "customUrl_ru": {
+      "type": "string"
+    },
+    "publish": {
+      "type": "boolean"
+    },
+    "namePrivate": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_modes",
+  "info": {
+    "singularName": "event-mode",
+    "pluralName": "event-modes",
+    "displayName": "EventMode"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_private": {
+      "type": "string"
+    },
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    }
+  }
+}

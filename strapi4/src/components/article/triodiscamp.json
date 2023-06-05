@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_triodiscamps",
+  "info": {
+    "displayName": "Triodiscamp"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-item-dis-camp"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-item-dis-camp"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-item-dis-camp"
+    },
+    "lead": {
+      "type": "string"
+    }
+  }
+}

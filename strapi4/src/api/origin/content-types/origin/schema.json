@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "origins",
+  "info": {
+    "singularName": "origin",
+    "pluralName": "origins",
+    "displayName": "Origin"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

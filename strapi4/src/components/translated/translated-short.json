@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_translated_translated_shorts",
+  "info": {
+    "displayName": "Translated Short"
+  },
+  "options": {},
+  "attributes": {
+    "et": {
+      "type": "string"
+    },
+    "en": {
+      "type": "string"
+    },
+    "ru": {
+      "type": "string"
+    }
+  }
+}

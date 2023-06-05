@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_trio_shorts",
+  "info": {
+    "displayName": "Trioshorts"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-item-shorts"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-item-shorts"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-item-shorts"
+    }
+  }
+}

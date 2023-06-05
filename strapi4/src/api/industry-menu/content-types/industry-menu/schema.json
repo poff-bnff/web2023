@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_menus",
+  "info": {
+    "singularName": "industry-menu",
+    "pluralName": "industry-menus",
+    "displayName": "IndustryMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "industry_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-article.industry-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.industry-sub-menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_statuses",
+  "info": {
+    "singularName": "project-status",
+    "pluralName": "project-statuses",
+    "displayName": "ProjectStatus"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

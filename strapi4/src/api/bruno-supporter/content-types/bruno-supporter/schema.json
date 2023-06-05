@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bruno_supporters",
+  "info": {
+    "singularName": "bruno-supporter",
+    "pluralName": "bruno-supporters",
+    "displayName": "BrunoSupporter"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "intro": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "namePrivate": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "supporters": {
+      "type": "component",
+      "component": "footer.sup-sec-bruno"
+    }
+  }
+}

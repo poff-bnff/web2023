@@ -1,0 +1,248 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "singularName": "person",
+    "pluralName": "persons",
+    "displayName": "Person"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "gender": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gender.gender"
+    },
+    "phoneNr": {
+      "type": "string"
+    },
+    "eMail": {
+      "type": "email"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "profession": {
+      "type": "string"
+    },
+    "firstNameLastName": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "filmography": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "remoteId": {
+      "type": "uid"
+    },
+    "pageUrl": {
+      "type": "string"
+    },
+    "height_cm": {
+      "type": "integer"
+    },
+    "weight_kg": {
+      "type": "integer"
+    },
+    "eye_colour": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::eye-colour.eye-colour"
+    },
+    "hair_colour": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hair-colour.hair-colour"
+    },
+    "shoe_size": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shoe-size.shoe-size"
+    },
+    "stature": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stature.stature"
+    },
+    "pitch_of_voice": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pitch-of-voice.pitch-of-voice"
+    },
+    "eventival_id": {
+      "type": "uid"
+    },
+    "ev_account_email": {
+      "type": "email"
+    },
+    "ev_contact_email": {
+      "type": "email"
+    },
+    "ev_country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "ev_org_name": {
+      "type": "string"
+    },
+    "ev_job_title": {
+      "type": "string"
+    },
+    "bio_et": {
+      "type": "text"
+    },
+    "bio_en": {
+      "type": "text"
+    },
+    "bio_ru": {
+      "type": "text"
+    },
+    "profile_img": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "ev_professions": {
+      "type": "string"
+    },
+    "ev_fow": {
+      "type": "string"
+    },
+    "ev_img_url": {
+      "type": "string"
+    },
+    "addr_coll": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address"
+    },
+    "hair_length": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hair-length.hair-length"
+    },
+    "native_lang": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "showreel": {
+      "type": "string"
+    },
+    "audioreel": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ],
+      "multiple": false
+    },
+    "acting_age_from": {
+      "type": "integer"
+    },
+    "acting_age_to": {
+      "type": "integer"
+    },
+    "acc_imdb": {
+      "type": "string"
+    },
+    "acc_efis": {
+      "type": "string"
+    },
+    "acc_castupload": {
+      "type": "string"
+    },
+    "acc_instagram": {
+      "type": "string"
+    },
+    "acc_fb": {
+      "type": "string"
+    },
+    "acc_other": {
+      "type": "string"
+    },
+    "webpage_url": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "repr_p_name": {
+      "type": "string"
+    },
+    "repr_phone": {
+      "type": "string"
+    },
+    "repr_email": {
+      "type": "string"
+    },
+    "repr_org_name": {
+      "type": "string"
+    },
+    "repr_org_url": {
+      "type": "string"
+    },
+    "acc_etalenta": {
+      "type": "string"
+    },
+    "skills_et": {
+      "type": "text"
+    },
+    "skills_en": {
+      "type": "text"
+    },
+    "skills_ru": {
+      "type": "text"
+    },
+    "origin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::origin.origin"
+    },
+    "looking_for": {
+      "type": "text"
+    }
+  }
+}

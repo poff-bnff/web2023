@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_trio_kumu",
+  "info": {
+    "displayName": "Triokumu"
+  },
+  "options": {},
+  "attributes": {
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-item-kumu"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-item-kumu"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-item-kumu"
+    },
+    "name": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    }
+  }
+}

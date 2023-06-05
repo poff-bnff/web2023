@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_media_trailers",
+  "info": {
+    "displayName": "Trailer"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "YouTube",
+        "Vimeo"
+      ]
+    }
+  }
+}

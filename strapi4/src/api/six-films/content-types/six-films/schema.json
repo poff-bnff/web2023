@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "six_films",
+  "info": {
+    "singularName": "six-films",
+    "pluralName": "six-filmses",
+    "displayName": "SixFilms"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "lead": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "namePrivate": {
+      "type": "string"
+    }
+  }
+}

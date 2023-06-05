@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_categories",
+  "info": {
+    "singularName": "product-category",
+    "pluralName": "product-categorys",
+    "displayName": "ProductCategory"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "festival_edition": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::festival-edition.festival-edition"
+    },
+    "description": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "validityPeriod": {
+      "type": "component",
+      "component": "time.period"
+    },
+    "salesPeriod": {
+      "type": "component",
+      "component": "time.period"
+    },
+    "ticketingRight": {
+      "type": "component",
+      "component": "ticketing.ticketing-rights"
+    },
+    "priceAtPeriod": {
+      "type": "component",
+      "component": "ticketing.price-with-time"
+    },
+    "codePrefix": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "images": {
+      "type": "component",
+      "component": "media.imgs"
+    },
+    "validity_period_relative": {
+      "type": "component",
+      "component": "time.period-relative"
+    },
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    },
+    "transferable": {
+      "type": "boolean"
+    },
+    "free": {
+      "type": "boolean"
+    },
+    "hidden": {
+      "type": "boolean"
+    }
+  }
+}

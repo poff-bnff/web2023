@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_footer_sup_justs",
+  "info": {
+    "displayName": "supJust"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "logoColour": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "logoBlack": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "just_filmi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::just-filmi-article.just-filmi-article"
+    }
+  }
+}

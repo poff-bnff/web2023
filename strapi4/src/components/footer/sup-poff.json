@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_footer_sup_poffs",
+  "info": {
+    "displayName": "supPoff"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "logoColour": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "logoBlack": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "poffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pof-fi-article.pof-fi-article"
+    }
+  }
+}

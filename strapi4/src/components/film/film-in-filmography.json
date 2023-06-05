@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_film_film_in_filmographies",
+  "info": {
+    "displayName": "filmInFilmography"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "film": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::film.film"
+    },
+    "foreignUrl": {
+      "type": "string"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "titleOriginal": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "synopsis_et": {
+      "type": "text"
+    },
+    "synopsis_en": {
+      "type": "text"
+    },
+    "synopsis_ru": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "trailerUrl": {
+      "type": "string"
+    }
+  }
+}

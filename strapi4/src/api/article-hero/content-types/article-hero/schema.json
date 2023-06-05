@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "article_heroes",
+  "info": {
+    "singularName": "article-hero",
+    "pluralName": "article-heros",
+    "displayName": "HeroArticlePoff"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "article_en": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pof-fi-article.pof-fi-article"
+    },
+    "article_ru": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pof-fi-article.pof-fi-article"
+    },
+    "article_et": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pof-fi-article.pof-fi-article"
+    }
+  }
+}

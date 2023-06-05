@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_person_types",
+  "info": {
+    "singularName": "industry-person-type",
+    "pluralName": "industry-person-types",
+    "displayName": "IndustryPersonType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

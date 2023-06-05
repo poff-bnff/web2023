@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "just_filmi_menus",
+  "info": {
+    "singularName": "just-filmi-menu",
+    "pluralName": "just-filmi-menus",
+    "displayName": "JustFilmiMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "just_filmi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::just-filmi-article.just-filmi-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.just-filmi-sub-menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

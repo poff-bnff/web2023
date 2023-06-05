@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_groups",
+  "info": {
+    "singularName": "industry-group",
+    "pluralName": "industry-groups",
+    "displayName": "IndustryGroup"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "description_en": {
+      "type": "text"
+    }
+  }
+}

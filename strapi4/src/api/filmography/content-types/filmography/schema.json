@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filmographies",
+  "info": {
+    "singularName": "filmography",
+    "pluralName": "filmographys",
+    "displayName": "Filmography"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type_of_work": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-of-work.type-of-work"
+    },
+    "year_from": {
+      "type": "integer"
+    },
+    "year_to": {
+      "type": "integer"
+    },
+    "work_name": {
+      "type": "string"
+    },
+    "work_url": {
+      "type": "string"
+    },
+    "actor_role": {
+      "type": "string"
+    },
+    "org_name": {
+      "type": "string"
+    },
+    "org_url": {
+      "type": "string"
+    },
+    "org_department": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "string"
+    },
+    "work_director": {
+      "type": "string"
+    }
+  }
+}

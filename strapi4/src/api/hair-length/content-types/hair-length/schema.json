@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hair_lengths",
+  "info": {
+    "singularName": "hair-length",
+    "pluralName": "hair-lengths",
+    "displayName": "HairLength"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    }
+  }
+}

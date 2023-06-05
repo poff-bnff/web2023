@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kinoffi_menus",
+  "info": {
+    "singularName": "kinoffi-menu",
+    "pluralName": "kinoffi-menus",
+    "displayName": "KinoffiMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "kinoffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kinoffi-article.kinoffi-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.kinoffi-sub-menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

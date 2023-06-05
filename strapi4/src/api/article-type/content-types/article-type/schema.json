@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_types",
+  "info": {
+    "singularName": "article-type",
+    "pluralName": "article-types",
+    "displayName": "ArticleType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "label_et": {
+      "type": "string"
+    },
+    "label_en": {
+      "type": "string"
+    },
+    "label_ru": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_article_hoffs",
+  "info": {
+    "singularName": "hero-article-hoff",
+    "pluralName": "hero-article-hoffs",
+    "displayName": "HeroArticleHoff"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "article_et": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hof-fi-article.hof-fi-article"
+    },
+    "article_en": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hof-fi-article.hof-fi-article"
+    },
+    "article_ru": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hof-fi-article.hof-fi-article"
+    }
+  }
+}

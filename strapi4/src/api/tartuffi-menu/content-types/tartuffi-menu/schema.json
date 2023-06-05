@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tartuffi_menus",
+  "info": {
+    "singularName": "tartuffi-menu",
+    "pluralName": "tartuffi-menus",
+    "displayName": "TartuffiMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "tartuffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.tartuffi-sub-menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

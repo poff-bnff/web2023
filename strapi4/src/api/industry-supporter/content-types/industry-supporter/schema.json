@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_supporters",
+  "info": {
+    "singularName": "industry-supporter",
+    "pluralName": "industry-supporters",
+    "displayName": "IndustrySupporter"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "title": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "intro": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "supporters": {
+      "type": "component",
+      "component": "footer.sup-sec-industry"
+    }
+  }
+}

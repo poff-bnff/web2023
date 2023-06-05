@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_footer_footer_item_navs",
+  "info": {
+    "displayName": "footerItemNav"
+  },
+  "options": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "button": {
+      "type": "component",
+      "component": "button.button"
+    },
+    "text": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "image": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "svgItem": {
+      "type": "component",
+      "component": "social.social-item"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "awardings",
+  "info": {
+    "singularName": "awarding",
+    "pluralName": "awardings",
+    "displayName": "Awarding"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "titlePrivate": {
+      "type": "string"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "description_et": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_ru": {
+      "type": "text"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "award": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-award.industry-award"
+    },
+    "actor_role": {
+      "type": "string"
+    },
+    "work_title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    }
+  }
+}

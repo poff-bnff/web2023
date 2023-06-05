@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_ticketing_ordered_products",
+  "info": {
+    "displayName": "orderedProduct"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    }
+  }
+}

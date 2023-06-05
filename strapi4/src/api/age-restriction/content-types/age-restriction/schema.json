@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "age_restrictions",
+  "info": {
+    "singularName": "age-restriction",
+    "pluralName": "age-restrictions",
+    "displayName": "TagAgeRestriction"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    },
+    "description_et": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_ru": {
+      "type": "text"
+    },
+    "icon_default": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "icon_et": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "icon_en": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "icon_ru": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    }
+  }
+}

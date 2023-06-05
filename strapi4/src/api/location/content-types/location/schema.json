@@ -1,0 +1,121 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "town": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::town.town"
+    },
+    "cinema": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cinema.cinema"
+    },
+    "hall": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hall.hall"
+    },
+    "name": {
+      "type": "string"
+    },
+    "remoteId": {
+      "type": "uid"
+    },
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    },
+    "addr_coll": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address"
+    },
+    "description_et": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_ru": {
+      "type": "text"
+    },
+    "webpage_url": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "visitest_id": {
+      "type": "uid"
+    },
+    "profile_img": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "repr_p_name": {
+      "type": "string"
+    },
+    "repr_phone": {
+      "type": "string"
+    },
+    "repr_email": {
+      "type": "string"
+    },
+    "repr_org_name": {
+      "type": "string"
+    },
+    "repr_org_url": {
+      "type": "string"
+    },
+    "showreel": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::origin.origin"
+    }
+  }
+}

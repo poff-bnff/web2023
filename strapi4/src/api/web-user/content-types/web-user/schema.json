@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_users",
+  "info": {
+    "singularName": "web-user",
+    "pluralName": "web-users",
+    "displayName": "WebUser"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "resetPasswordToken": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "confirmed": {
+      "type": "boolean"
+    },
+    "blocked": {
+      "type": "boolean"
+    },
+    "web_role": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-role.web-role"
+    }
+  }
+}

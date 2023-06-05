@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "role_at_films",
+  "info": {
+    "singularName": "role-at-film",
+    "pluralName": "role-at-films",
+    "displayName": "RoleAtFilm"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roleNamePrivate": {
+      "type": "string"
+    },
+    "roleName": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "remoteId": {
+      "type": "uid"
+    }
+  }
+}

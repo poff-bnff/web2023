@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_film_ordered_countries",
+  "info": {
+    "displayName": "orderedCountries"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    }
+  }
+}

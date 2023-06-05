@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pof_fi_menus",
+  "info": {
+    "singularName": "pof-fi-menu",
+    "pluralName": "pof-fi-menus",
+    "displayName": "POFFiMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "poffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pof-fi-article.pof-fi-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

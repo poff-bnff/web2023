@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_article_trio_item_just_films",
+  "info": {
+    "displayName": "TrioItemJustFilm"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    }
+  }
+}

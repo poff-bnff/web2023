@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filmikooli_footers",
+  "info": {
+    "singularName": "filmikooli-footer",
+    "pluralName": "filmikooli-footers",
+    "displayName": "FilmikooliFooter"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "socialGroup": {
+      "type": "component",
+      "component": "social.social-group"
+    },
+    "item": {
+      "type": "component",
+      "component": "footer.footer-item-nav"
+    },
+    "supporters": {
+      "type": "component",
+      "component": "footer.sup-sec-filmikool"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supporters_shorts",
+  "info": {
+    "singularName": "supporters-shorts",
+    "pluralName": "supporters-shortses",
+    "displayName": "ShortsSupporter"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "title": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "intro": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "supporters": {
+      "type": "component",
+      "component": "footer.sup-sec-shorts"
+    }
+  }
+}

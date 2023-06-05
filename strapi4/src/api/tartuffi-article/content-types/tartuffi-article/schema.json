@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tartuffi_articles",
+  "info": {
+    "singularName": "tartuffi-article",
+    "pluralName": "tartuffi-articles",
+    "displayName": "TartuffiArticle"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePrivate": {
+      "type": "string"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid",
+      "required": false
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "slug_en": {
+      "type": "uid",
+      "required": false
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "slug_ru": {
+      "type": "uid",
+      "required": false
+    },
+    "lead_et": {
+      "type": "text"
+    },
+    "lead_ru": {
+      "type": "text"
+    },
+    "lead_en": {
+      "type": "text"
+    },
+    "contents_et": {
+      "type": "text"
+    },
+    "contents_en": {
+      "type": "text"
+    },
+    "contents_ru": {
+      "type": "text"
+    },
+    "media": {
+      "type": "component",
+      "component": "article.article-media"
+    },
+    "publishFrom": {
+      "type": "datetime"
+    },
+    "publishUntil": {
+      "type": "datetime"
+    },
+    "publish_et": {
+      "type": "boolean"
+    },
+    "publish_en": {
+      "type": "boolean"
+    },
+    "publish_ru": {
+      "type": "boolean"
+    },
+    "button": {
+      "type": "component",
+      "component": "button.button"
+    },
+    "public": {
+      "type": "boolean"
+    }
+  }
+}

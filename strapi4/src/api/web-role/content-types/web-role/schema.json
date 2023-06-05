@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_roles",
+  "info": {
+    "singularName": "web-role",
+    "pluralName": "web-roles",
+    "displayName": "WebRole"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "web_permission": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-permission.web-permission"
+    }
+  }
+}

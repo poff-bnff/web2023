@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_article_trio_item_hoffs",
+  "info": {
+    "displayName": "TrioItemHoff"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    }
+  }
+}

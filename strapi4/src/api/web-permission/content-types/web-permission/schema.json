@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_permissions",
+  "info": {
+    "singularName": "web-permission",
+    "pluralName": "web-permissions",
+    "displayName": "WebPermission"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "controller": {
+      "type": "string"
+    },
+    "policy": {
+      "type": "string"
+    }
+  }
+}

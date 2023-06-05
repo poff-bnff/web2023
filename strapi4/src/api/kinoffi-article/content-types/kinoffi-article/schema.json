@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kinoffi_articles",
+  "info": {
+    "singularName": "kinoffi-article",
+    "pluralName": "kinoffi-articles",
+    "displayName": "KinoffiArticle"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePrivate": {
+      "type": "string"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "lead_et": {
+      "type": "text"
+    },
+    "lead_en": {
+      "type": "text"
+    },
+    "lead_ru": {
+      "type": "text"
+    },
+    "contents_et": {
+      "type": "text"
+    },
+    "contents_en": {
+      "type": "text"
+    },
+    "contents_ru": {
+      "type": "text"
+    },
+    "media": {
+      "type": "component",
+      "component": "article.article-media"
+    },
+    "publishFrom": {
+      "type": "datetime"
+    },
+    "publishUntil": {
+      "type": "datetime"
+    },
+    "publish_et": {
+      "type": "boolean"
+    },
+    "publish_en": {
+      "type": "boolean"
+    },
+    "publish_ru": {
+      "type": "boolean"
+    },
+    "button": {
+      "type": "component",
+      "component": "button.button"
+    },
+    "public": {
+      "type": "boolean"
+    }
+  }
+}

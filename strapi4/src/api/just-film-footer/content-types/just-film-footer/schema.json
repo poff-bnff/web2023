@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "just_film_footers",
+  "info": {
+    "singularName": "just-film-footer",
+    "pluralName": "just-film-footers",
+    "displayName": "JustFilmFooter"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "socialGroup": {
+      "type": "component",
+      "component": "social.social-group"
+    },
+    "item": {
+      "type": "component",
+      "component": "footer.footer-item-nav"
+    },
+    "supporters": {
+      "type": "component",
+      "component": "footer.sup-sec-just"
+    }
+  }
+}

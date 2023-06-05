@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kumu_menus",
+  "info": {
+    "singularName": "kumu-menu",
+    "pluralName": "kumu-menus",
+    "displayName": "KumuMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "kumu_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kumu-article.kumu-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.kumu-sub-menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

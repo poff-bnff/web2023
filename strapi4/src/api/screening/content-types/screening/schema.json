@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "screenings",
+  "info": {
+    "singularName": "screening",
+    "pluralName": "screenings",
+    "displayName": "Screening"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codeAndTitle": {
+      "type": "string"
+    },
+    "ticketingUrl": {
+      "type": "string"
+    },
+    "dateTime": {
+      "type": "datetime"
+    },
+    "introQaConversation": {
+      "type": "component",
+      "component": "screening.intro-conversation-qand-a"
+    },
+    "durationTotal": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "screening_mode": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-mode.event-mode"
+    },
+    "cassette": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cassette.cassette"
+    },
+    "bookingUrl": {
+      "type": "string"
+    },
+    "extraInfo": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "code": {
+      "type": "string"
+    },
+    "remoteId": {
+      "type": "uid"
+    },
+    "ticketingId": {
+      "type": "uid"
+    }
+  }
+}

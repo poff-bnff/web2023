@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_social_social_items",
+  "info": {
+    "displayName": "SocialItem"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url_et": {
+      "type": "string"
+    },
+    "svgCode": {
+      "type": "text"
+    },
+    "svgMedia": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false
+    },
+    "url_en": {
+      "type": "string"
+    },
+    "url_ru": {
+      "type": "string"
+    }
+  }
+}

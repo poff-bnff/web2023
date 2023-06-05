@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "halls",
+  "info": {
+    "singularName": "hall",
+    "pluralName": "halls",
+    "displayName": "Hall"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_et": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "numberOfSeats": {
+      "type": "integer"
+    },
+    "cinema": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cinema.cinema"
+    },
+    "floor": {
+      "type": "enumeration",
+      "enum": [
+        "First",
+        "Second",
+        "Third",
+        "Fourth",
+        "Fifth"
+      ]
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    },
+    "hallId": {
+      "type": "uid"
+    },
+    "namePrivate": {
+      "type": "string"
+    }
+  }
+}

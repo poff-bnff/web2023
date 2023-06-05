@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_categories",
+  "info": {
+    "singularName": "industry-category",
+    "pluralName": "industry-categorys",
+    "displayName": "IndustryCategory"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

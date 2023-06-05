@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "trio_industries",
+  "info": {
+    "singularName": "trio-industry",
+    "pluralName": "trio-industrys",
+    "displayName": "TrioIndustry"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trioIndustry_et": {
+      "type": "component",
+      "component": "article.trioindustry"
+    },
+    "trioIndustry_en": {
+      "type": "component",
+      "component": "article.trioindustry"
+    },
+    "trioIndustry_ru": {
+      "type": "component",
+      "component": "article.trioindustry"
+    }
+  }
+}

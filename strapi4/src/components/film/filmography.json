@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_film_filmographies",
+  "info": {
+    "displayName": "filmography"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "film": {
+      "type": "component",
+      "component": "film.film-in-filmography"
+    }
+  }
+}

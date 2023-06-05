@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dis_camp_person_types",
+  "info": {
+    "singularName": "dis-camp-person-type",
+    "pluralName": "dis-camp-person-types",
+    "displayName": "DisCampPersonType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

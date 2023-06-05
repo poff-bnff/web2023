@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titleOriginal": {
+      "type": "string"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "tags": {
+      "type": "component",
+      "component": "tags.course-tags"
+    },
+    "credentials": {
+      "type": "component",
+      "component": "film.credentials-new"
+    },
+    "presentedBy": {
+      "type": "component",
+      "component": "film.presented-by"
+    },
+    "additInfo": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "foreignUrl": {
+      "type": "text"
+    },
+    "volume": {
+      "type": "string"
+    },
+    "stills": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "posters": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "trailer": {
+      "type": "component",
+      "component": "media.trailers"
+    },
+    "QaClip": {
+      "type": "component",
+      "component": "media.qa-clip"
+    },
+    "moodle_id": {
+      "type": "uid"
+    }
+  }
+}

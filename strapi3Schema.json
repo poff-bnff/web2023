@@ -7,13 +7,19 @@
             "displayName": "address",
             "attributes": {
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "county": {
-                    "model": "county"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::county.county"
                 },
                 "municipality": {
-                    "model": "populated-place"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::populated-place.populated-place"
                 },
                 "settl_unit": {
                     "type": "string"
@@ -100,44 +106,48 @@
                     "type": "text"
                 },
                 "icon_default": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "icon_et": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "icon_en": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "icon_ru": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             },
             "s3DisplayName": "TagAgeRestriction"
@@ -149,13 +159,19 @@
             "displayName": "HeroArticlePoff",
             "attributes": {
                 "article_en": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 },
                 "article_ru": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 },
                 "article_et": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 }
             },
             "s3DisplayName": "HeroArticlePoff"
@@ -204,24 +220,34 @@
                     "type": "date"
                 },
                 "project": {
-                    "model": "industry-project",
-                    "via": "awardings"
+                    "via": "awardings",
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-project.industry-project"
                 },
                 "film": {
                     "via": "awardings",
-                    "model": "film"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::film.film"
                 },
                 "person": {
                     "via": "awardings",
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 },
                 "organisation": {
                     "via": "awardings",
-                    "model": "organisation"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::organisation.organisation"
                 },
                 "festival_edition": {
-                    "model": "festival-edition",
-                    "via": "awardings"
+                    "via": "awardings",
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "titlePrivate": {
                     "type": "string"
@@ -257,8 +283,10 @@
                     "targetField": "title_ru"
                 },
                 "award": {
-                    "model": "industry-award",
-                    "via": "awardings"
+                    "via": "awardings",
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-award.industry-award"
                 },
                 "actor_role": {
                     "type": "string"
@@ -416,7 +444,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -452,7 +482,9 @@
                     "component": "translated.translated-short"
                 },
                 "bruno_article": {
-                    "model": "bruno-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::bruno-article.bruno-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -495,7 +527,9 @@
                     "private": true
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "supporters": {
                     "type": "component",
@@ -705,7 +739,9 @@
             "displayName": "Cinema",
             "attributes": {
                 "town": {
-                    "model": "town"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::town.town"
                 },
                 "name_et": {
                     "type": "string"
@@ -781,7 +817,9 @@
                     "type": "string"
                 },
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 }
             },
             "s3DisplayName": "County"
@@ -959,7 +997,9 @@
                     "type": "datetime"
                 },
                 "location": {
-                    "model": "location"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::location.location"
                 },
                 "course_module": {
                     "type": "component",
@@ -978,7 +1018,9 @@
                     "collection": "domain"
                 },
                 "event_mode": {
-                    "model": "event-mode"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::event-mode.event-mode"
                 },
                 "trailer": {
                     "type": "component",
@@ -1074,7 +1116,9 @@
                     "collection": "event-type"
                 },
                 "event_access": {
-                    "model": "event-access"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::event-access.event-access"
                 },
                 "chat_w_name": {
                     "type": "string"
@@ -1308,7 +1352,9 @@
                     "pluginOptions": {}
                 },
                 "location": {
-                    "model": "location"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::location.location"
                 },
                 "lead": {
                     "type": "richtext"
@@ -1320,7 +1366,9 @@
                     "collection": "dis-camp-category"
                 },
                 "project_type": {
-                    "model": "project-type"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::project-type.project-type"
                 },
                 "publishFrom": {
                     "type": "datetime"
@@ -1332,7 +1380,9 @@
                     "type": "boolean"
                 },
                 "channel": {
-                    "model": "channel"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::channel.channel"
                 },
                 "durationTime": {
                     "type": "time"
@@ -1363,7 +1413,9 @@
             "displayName": "DisCampFooter",
             "attributes": {
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "item": {
                     "type": "component",
@@ -1396,7 +1448,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "name_en": {
                     "type": "string"
@@ -1443,7 +1497,9 @@
                     "default": true
                 },
                 "discamp_article": {
-                    "model": "dis-camp-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::dis-camp-article.dis-camp-article"
                 }
             },
             "s3DisplayName": "DisCampMenu"
@@ -1458,10 +1514,11 @@
                     "type": "uid"
                 },
                 "person": {
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 },
                 "profilePicAtDC": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -1470,7 +1527,9 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "role_at_films": {
                     "collection": "role-at-film"
@@ -1586,7 +1645,9 @@
                     "type": "datetime"
                 },
                 "country_focus": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "teamCredentials": {
                     "type": "component",
@@ -1615,7 +1676,9 @@
                     "type": "string"
                 },
                 "contactCompany": {
-                    "model": "organisation"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::organisation.organisation"
                 },
                 "contactAddress": {
                     "type": "string"
@@ -1670,7 +1733,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "title": {
                     "type": "component",
@@ -1766,7 +1831,9 @@
                     "type": "integer"
                 },
                 "location": {
-                    "model": "location"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::location.location"
                 },
                 "extraInfo": {
                     "type": "component",
@@ -1778,7 +1845,9 @@
                 },
                 "course": {
                     "via": "events",
-                    "model": "course"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::course.course"
                 },
                 "endDate": {
                     "type": "datetime"
@@ -1916,13 +1985,14 @@
                     "type": "richtext"
                 },
                 "logo": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "images": {
                     "collection": "file",
@@ -1979,7 +2049,9 @@
                     "collection": "domain"
                 },
                 "festival": {
-                    "model": "festival"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::festival.festival"
                 },
                 "slug_et": {
                     "type": "uid",
@@ -2203,7 +2275,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "title": {
                     "type": "component",
@@ -2331,7 +2405,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -2366,7 +2442,9 @@
                     "component": "translated.translated-short"
                 },
                 "filmikooli_article": {
-                    "model": "filmikooli-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::filmikooli-article.filmikooli-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -2395,7 +2473,9 @@
             "displayName": "Filmography",
             "attributes": {
                 "type_of_work": {
-                    "model": "type-of-work"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::type-of-work.type-of-work"
                 },
                 "year_from": {
                     "type": "integer"
@@ -2435,7 +2515,9 @@
                 },
                 "person": {
                     "via": "filmographies",
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 }
             },
             "s3DisplayName": "Filmography"
@@ -2457,7 +2539,9 @@
                     "component": "translated.translated-long"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "namePrivate": {
                     "type": "string"
@@ -2563,7 +2647,9 @@
                     "type": "integer"
                 },
                 "cinema": {
-                    "model": "cinema"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::cinema.cinema"
                 },
                 "floor": {
                     "type": "enumeration",
@@ -2597,13 +2683,19 @@
             "displayName": "HeroArticleBruno",
             "attributes": {
                 "article_en": {
-                    "model": "bruno-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::bruno-article.bruno-article"
                 },
                 "article_ru": {
-                    "model": "bruno-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::bruno-article.bruno-article"
                 },
                 "article_et": {
-                    "model": "bruno-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::bruno-article.bruno-article"
                 }
             },
             "s3DisplayName": "HeroArticleBruno"
@@ -2615,13 +2707,19 @@
             "displayName": "HeroArticleDisCamp",
             "attributes": {
                 "article_et": {
-                    "model": "dis-camp-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::dis-camp-article.dis-camp-article"
                 },
                 "article_en": {
-                    "model": "dis-camp-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::dis-camp-article.dis-camp-article"
                 },
                 "article_ru": {
-                    "model": "dis-camp-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::dis-camp-article.dis-camp-article"
                 }
             },
             "s3DisplayName": "HeroArticleDisCamp"
@@ -2633,13 +2731,19 @@
             "displayName": "HeroArticleFilmikool",
             "attributes": {
                 "article_et": {
-                    "model": "filmikooli-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::filmikooli-article.filmikooli-article"
                 },
                 "article_en": {
-                    "model": "filmikooli-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::filmikooli-article.filmikooli-article"
                 },
                 "article_ru": {
-                    "model": "filmikooli-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::filmikooli-article.filmikooli-article"
                 }
             },
             "s3DisplayName": "HeroArticleFilmikool"
@@ -2651,13 +2755,19 @@
             "displayName": "HeroArticleHoff",
             "attributes": {
                 "article_et": {
-                    "model": "hof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hof-fi-article.hof-fi-article"
                 },
                 "article_en": {
-                    "model": "hof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hof-fi-article.hof-fi-article"
                 },
                 "article_ru": {
-                    "model": "hof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hof-fi-article.hof-fi-article"
                 }
             },
             "s3DisplayName": "HeroArticleHoff"
@@ -2669,13 +2779,19 @@
             "displayName": "HeroArticleIndustry",
             "attributes": {
                 "article_et": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "article_en": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "article_ru": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 }
             },
             "s3DisplayName": "HeroArticleIndustry"
@@ -2687,13 +2803,19 @@
             "displayName": "HeroArticleJustFilm",
             "attributes": {
                 "article_et": {
-                    "model": "just-filmi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::just-filmi-article.just-filmi-article"
                 },
                 "article_en": {
-                    "model": "just-filmi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::just-filmi-article.just-filmi-article"
                 },
                 "article_ru": {
-                    "model": "just-filmi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::just-filmi-article.just-filmi-article"
                 }
             },
             "s3DisplayName": "HeroArticleJustFilm"
@@ -2705,13 +2827,19 @@
             "displayName": "HeroArticleKinoff",
             "attributes": {
                 "article_et": {
-                    "model": "kinoffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kinoffi-article.kinoffi-article"
                 },
                 "article_en": {
-                    "model": "kinoffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kinoffi-article.kinoffi-article"
                 },
                 "article_ru": {
-                    "model": "kinoffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kinoffi-article.kinoffi-article"
                 }
             },
             "s3DisplayName": "HeroArticleKinoff"
@@ -2723,13 +2851,19 @@
             "displayName": "HeroArticleKumu",
             "attributes": {
                 "article_en": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "article_ru": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "article_et": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 }
             },
             "s3DisplayName": "HeroArticleKumu"
@@ -2741,13 +2875,19 @@
             "displayName": "HeroArticleShorts",
             "attributes": {
                 "article_et": {
-                    "model": "shortsi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shortsi-article.shortsi-article"
                 },
                 "article_en": {
-                    "model": "shortsi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shortsi-article.shortsi-article"
                 },
                 "article_ru": {
-                    "model": "shortsi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shortsi-article.shortsi-article"
                 }
             },
             "s3DisplayName": "HeroArticleShorts"
@@ -2759,13 +2899,19 @@
             "displayName": "HeroArticleTartuff",
             "attributes": {
                 "article_en": {
-                    "model": "tartuffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::tartuffi-article.tartuffi-article"
                 },
                 "article_ru": {
-                    "model": "tartuffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::tartuffi-article.tartuffi-article"
                 },
                 "article_et": {
-                    "model": "tartuffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::tartuffi-article.tartuffi-article"
                 }
             },
             "s3DisplayName": "HeroArticleTartuff"
@@ -2882,7 +3028,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -2918,7 +3066,9 @@
                     "component": "translated.translated-short"
                 },
                 "hoffi_article": {
-                    "model": "hof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hof-fi-article.hof-fi-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -2961,7 +3111,9 @@
                     "private": true
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "supporters": {
                     "type": "component",
@@ -3163,7 +3315,9 @@
                     "pluginOptions": {}
                 },
                 "location": {
-                    "model": "location"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::location.location"
                 },
                 "lead": {
                     "type": "richtext"
@@ -3175,7 +3329,9 @@
                     "collection": "industry-category"
                 },
                 "project_type": {
-                    "model": "project-type"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::project-type.project-type"
                 },
                 "publishFrom": {
                     "type": "datetime"
@@ -3187,7 +3343,9 @@
                     "type": "boolean"
                 },
                 "channel": {
-                    "model": "channel"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::channel.channel"
                 },
                 "durationTime": {
                     "type": "time"
@@ -3211,7 +3369,9 @@
                     "collection": "festival-edition"
                 },
                 "event_mode": {
-                    "model": "event-mode"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::event-mode.event-mode"
                 },
                 "domains": {
                     "collection": "domain"
@@ -3249,7 +3409,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -3279,7 +3441,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "name_en": {
                     "type": "string"
@@ -3310,7 +3474,9 @@
                     "component": "translated.translated-short"
                 },
                 "industry_article": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -3339,17 +3505,20 @@
             "displayName": "Industry_Person",
             "attributes": {
                 "person": {
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 },
                 "profilePicAtInd": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "role_at_films": {
                     "collection": "role-at-film"
@@ -3483,7 +3652,9 @@
                     "type": "date"
                 },
                 "country_focus": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "teamCredentials": {
                     "type": "component",
@@ -3512,7 +3683,9 @@
                     "type": "string"
                 },
                 "contactCompany": {
-                    "model": "organisation"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::organisation.organisation"
                 },
                 "contactAddress": {
                     "type": "string"
@@ -3580,7 +3753,9 @@
                     "private": true
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "title": {
                     "type": "component",
@@ -3610,7 +3785,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -3751,7 +3928,9 @@
                     "component": "translated.translated-short"
                 },
                 "just_filmi_article": {
-                    "model": "just-filmi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::just-filmi-article.just-filmi-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -3885,7 +4064,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -3921,7 +4102,9 @@
                     "component": "translated.translated-short"
                 },
                 "kinoffi_article": {
-                    "model": "kinoffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kinoffi-article.kinoffi-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -3954,7 +4137,9 @@
                     "private": true
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "title": {
                     "type": "component",
@@ -4089,7 +4274,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -4125,7 +4312,9 @@
                     "component": "translated.translated-short"
                 },
                 "kumu_article": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -4168,7 +4357,9 @@
                     "private": true
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "supporters": {
                     "type": "component",
@@ -4241,7 +4432,9 @@
                     "type": "string"
                 },
                 "industry_article": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "order": {
                     "type": "integer"
@@ -4285,7 +4478,9 @@
                     "type": "string"
                 },
                 "kumu_article": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "order": {
                     "type": "integer"
@@ -4379,16 +4574,24 @@
             "displayName": "Location",
             "attributes": {
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "town": {
-                    "model": "town"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::town.town"
                 },
                 "cinema": {
-                    "model": "cinema"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::cinema.cinema"
                 },
                 "hall": {
-                    "model": "hall"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hall.hall"
                 },
                 "name": {
                     "type": "string",
@@ -4407,7 +4610,9 @@
                     "type": "string"
                 },
                 "addr_coll": {
-                    "model": "address"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::address.address"
                 },
                 "description_et": {
                     "type": "richtext"
@@ -4443,14 +4648,15 @@
                     "collection": "festival-edition"
                 },
                 "profile_img": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "images": {
                     "collection": "file",
@@ -4496,7 +4702,9 @@
                     "collection": "tag-location"
                 },
                 "origin": {
-                    "model": "origin"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::origin.origin"
                 }
             },
             "s3DisplayName": "Location"
@@ -4546,34 +4754,37 @@
                     ]
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "homepageUrl": {
                     "type": "string"
@@ -4589,33 +4800,37 @@
                     "collection": "domain"
                 },
                 "profile_img": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "role_at_films": {
                     "collection": "role-at-film"
                 },
                 "addr_coll": {
-                    "model": "address"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::address.address"
                 },
                 "showreel": {
                     "type": "string"
                 },
                 "audioreel": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "files"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "name_et": {
                     "type": "string"
@@ -4641,7 +4856,9 @@
                     "component": "media.remote-img"
                 },
                 "origin": {
-                    "model": "origin"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::origin.origin"
                 },
                 "tag_looking_fors": {
                     "collection": "tag-looking-for"
@@ -4656,7 +4873,9 @@
                     "type": "email"
                 },
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 }
             },
             "s3DisplayName": "Organisation"
@@ -4720,17 +4939,20 @@
                     "type": "string"
                 },
                 "picture": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "gender": {
-                    "model": "gender"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::gender.gender"
                 },
                 "phoneNr": {
                     "type": "string"
@@ -4786,19 +5008,29 @@
                     "type": "integer"
                 },
                 "eye_colour": {
-                    "model": "eye-colour"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::eye-colour.eye-colour"
                 },
                 "hair_colour": {
-                    "model": "hair-colour"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hair-colour.hair-colour"
                 },
                 "shoe_size": {
-                    "model": "shoe-size"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shoe-size.shoe-size"
                 },
                 "stature": {
-                    "model": "stature"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::stature.stature"
                 },
                 "pitch_of_voice": {
-                    "model": "pitch-of-voice"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pitch-of-voice.pitch-of-voice"
                 },
                 "eventival_id": {
                     "type": "uid"
@@ -4810,7 +5042,9 @@
                     "type": "email"
                 },
                 "ev_country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "ev_org_name": {
                     "type": "string"
@@ -4828,14 +5062,15 @@
                     "type": "richtext"
                 },
                 "profile_img": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "ev_professions": {
                     "type": "string"
@@ -4847,13 +5082,19 @@
                     "type": "string"
                 },
                 "addr_coll": {
-                    "model": "address"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::address.address"
                 },
                 "hair_length": {
-                    "model": "hair-length"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hair-length.hair-length"
                 },
                 "native_lang": {
-                    "model": "language"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::language.language"
                 },
                 "other_lang": {
                     "collection": "language"
@@ -4872,14 +5113,15 @@
                     "type": "string"
                 },
                 "audioreel": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "files"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "acting_age_from": {
                     "type": "integer"
@@ -4964,7 +5206,9 @@
                     "via": "person"
                 },
                 "origin": {
-                    "model": "origin"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::origin.origin"
                 },
                 "industry_categories": {
                     "collection": "industry-category"
@@ -5189,7 +5433,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -5225,7 +5471,9 @@
                     "component": "translated.translated-short"
                 },
                 "poffi_article": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -5263,7 +5511,9 @@
                     "type": "string"
                 },
                 "county": {
-                    "model": "county"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::county.county"
                 }
             },
             "s3DisplayName": "Municipality"
@@ -5352,7 +5602,9 @@
                     "component": "translated.translated-short"
                 },
                 "festival_edition": {
-                    "model": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "description": {
                     "type": "component",
@@ -5421,7 +5673,9 @@
                     "type": "string"
                 },
                 "business_profile": {
-                    "model": "business-profile"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::business-profile.business-profile"
                 },
                 "courses": {
                     "collection": "course",
@@ -5665,19 +5919,25 @@
                     "type": "integer"
                 },
                 "location": {
-                    "model": "location"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::location.location"
                 },
                 "screening_types": {
                     "collection": "screening-type"
                 },
                 "screening_mode": {
-                    "model": "event-mode"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::event-mode.event-mode"
                 },
                 "subtitles": {
                     "collection": "language"
                 },
                 "cassette": {
-                    "model": "cassette"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::cassette.cassette"
                 },
                 "bookingUrl": {
                     "type": "string"
@@ -5904,7 +6164,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -5940,7 +6202,9 @@
                     "component": "translated.translated-short"
                 },
                 "shortsi_article": {
-                    "model": "shortsi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shortsi-article.shortsi-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -6013,7 +6277,9 @@
                     "component": "translated.translated-long"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "namePrivate": {
                     "type": "string"
@@ -6160,7 +6426,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "title": {
                     "type": "component",
@@ -6201,7 +6469,9 @@
                     "private": true
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "supporters": {
                     "type": "component",
@@ -6221,7 +6491,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "title": {
                     "type": "component",
@@ -6521,7 +6793,9 @@
                     "type": "string"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "socialGroup": {
                     "type": "component",
@@ -6557,7 +6831,9 @@
                     "component": "translated.translated-short"
                 },
                 "tartuffi_article": {
-                    "model": "tartuffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::tartuffi-article.tartuffi-article"
                 },
                 "customUrl": {
                     "type": "component",
@@ -6600,7 +6876,9 @@
                     "private": true
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "supporters": {
                     "type": "component",
@@ -6627,7 +6905,9 @@
                     "component": "translated.translated-short"
                 },
                 "domain": {
-                    "model": "domain"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::domain.domain"
                 },
                 "namePrivate": {
                     "type": "string"
@@ -6711,7 +6991,9 @@
                     "type": "string"
                 },
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "name_en": {
                     "type": "string"
@@ -7318,7 +7600,9 @@
                     "type": "string"
                 },
                 "web_permission": {
-                    "model": "web-permission"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::web-permission.web-permission"
                 }
             },
             "s3DisplayName": "WebRole"
@@ -7352,7 +7636,9 @@
                     "type": "boolean"
                 },
                 "web_role": {
-                    "model": "web-role"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::web-role.web-role"
                 }
             },
             "s3DisplayName": "WebUser"
@@ -7523,7 +7809,9 @@
             "options": {},
             "attributes": {
                 "bruno_article": {
-                    "model": "bruno-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::bruno-article.bruno-article"
                 },
                 "title": {
                     "type": "string"
@@ -7535,13 +7823,14 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7554,7 +7843,9 @@
             "options": {},
             "attributes": {
                 "discamp_article": {
-                    "model": "dis-camp-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::dis-camp-article.dis-camp-article"
                 },
                 "title": {
                     "type": "string"
@@ -7563,7 +7854,6 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -7572,7 +7862,9 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "lead": {
                     "type": "string"
@@ -7594,7 +7886,6 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -7602,13 +7893,17 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "lead": {
                     "type": "string"
                 },
                 "filmikooli_article": {
-                    "model": "filmikooli-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::filmikooli-article.filmikooli-article"
                 }
             }
         },
@@ -7621,7 +7916,9 @@
             "options": {},
             "attributes": {
                 "hoffi_article": {
-                    "model": "hof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hof-fi-article.hof-fi-article"
                 },
                 "title": {
                     "type": "string"
@@ -7633,13 +7930,14 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7652,7 +7950,9 @@
             "options": {},
             "attributes": {
                 "industry_article": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "title": {
                     "type": "string"
@@ -7664,7 +7964,6 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -7672,7 +7971,9 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7685,7 +7986,9 @@
             "options": {},
             "attributes": {
                 "just_filmi_article": {
-                    "model": "just-filmi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::just-filmi-article.just-filmi-article"
                 },
                 "title": {
                     "type": "string"
@@ -7697,13 +8000,14 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7716,7 +8020,9 @@
             "options": {},
             "attributes": {
                 "kinoffi_article": {
-                    "model": "kinoffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kinoffi-article.kinoffi-article"
                 },
                 "title": {
                     "type": "string"
@@ -7728,7 +8034,6 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -7736,7 +8041,9 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7749,7 +8056,9 @@
             "options": {},
             "attributes": {
                 "kumu_article": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "title": {
                     "type": "string"
@@ -7761,13 +8070,14 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7780,7 +8090,9 @@
             "options": {},
             "attributes": {
                 "shortsi_article": {
-                    "model": "shortsi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shortsi-article.shortsi-article"
                 },
                 "title": {
                     "type": "string"
@@ -7792,13 +8104,14 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7811,7 +8124,9 @@
             "options": {},
             "attributes": {
                 "tartuffi_article": {
-                    "model": "tartuffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::tartuffi-article.tartuffi-article"
                 },
                 "title": {
                     "type": "string"
@@ -7823,13 +8138,14 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -7904,7 +8220,9 @@
             "options": {},
             "attributes": {
                 "poffi_article": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 },
                 "title": {
                     "type": "string"
@@ -7916,13 +8234,14 @@
                     "type": "string"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -8399,7 +8718,9 @@
                     "type": "integer"
                 },
                 "film": {
-                    "model": "film"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::film.film"
                 },
                 "foreignUrl": {
                     "type": "string"
@@ -8445,7 +8766,9 @@
                     "collection": "role-at-film"
                 },
                 "person_of_role": {
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 }
             }
         },
@@ -8479,7 +8802,9 @@
                     "type": "integer"
                 },
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 }
             }
         },
@@ -8495,7 +8820,9 @@
                     "type": "integer"
                 },
                 "film": {
-                    "model": "film"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::film.film"
                 }
             }
         },
@@ -8530,10 +8857,14 @@
                     "required": true
                 },
                 "roles_at_film": {
-                    "model": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "organisation": {
-                    "model": "organisation"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::organisation.organisation"
                 }
             }
         },
@@ -8550,10 +8881,14 @@
                     "required": true
                 },
                 "role_at_film": {
-                    "model": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "person": {
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 },
                 "actor_role": {
                     "type": "string"
@@ -8587,13 +8922,14 @@
                     "component": "translated.translated-long"
                 },
                 "image": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "svgItem": {
                     "type": "component",
@@ -8617,34 +8953,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "bruno_article": {
-                    "model": "bruno-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::bruno-article.bruno-article"
                 }
             }
         },
@@ -8663,13 +9004,14 @@
                     "type": "string"
                 },
                 "discamp_article": {
-                    "model": "dis-camp-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::dis-camp-article.dis-camp-article"
                 },
                 "customUrl": {
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8678,10 +9020,11 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8690,10 +9033,11 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8702,7 +9046,9 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -8721,7 +9067,6 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8729,10 +9074,11 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8740,10 +9086,11 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8751,10 +9098,14 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "filmikooli_article": {
-                    "model": "filmikooli-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::filmikooli-article.filmikooli-article"
                 }
             }
         },
@@ -8773,34 +9124,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "hoffi_article": {
-                    "model": "hof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hof-fi-article.hof-fi-article"
                 }
             }
         },
@@ -8819,7 +9175,6 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8827,10 +9182,11 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8838,10 +9194,11 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -8849,10 +9206,14 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "industry_article": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 }
             }
         },
@@ -8871,34 +9232,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "just_filmi_article": {
-                    "model": "just-filmi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::just-filmi-article.just-filmi-article"
                 }
             }
         },
@@ -8917,34 +9283,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "kinoffi_article": {
-                    "model": "kinoffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kinoffi-article.kinoffi-article"
                 }
             }
         },
@@ -8963,34 +9334,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "kumu_article": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 }
             }
         },
@@ -9009,34 +9385,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "poffi_article": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 }
             }
         },
@@ -9308,34 +9689,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "shortsi_article": {
-                    "model": "shortsi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shortsi-article.shortsi-article"
                 }
             }
         },
@@ -9354,34 +9740,39 @@
                     "type": "string"
                 },
                 "logoWhite": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoColour": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "logoBlack": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "tartuffi_article": {
-                    "model": "tartuffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::tartuffi-article.tartuffi-article"
                 }
             }
         },
@@ -9636,40 +10027,44 @@
             "options": {},
             "attributes": {
                 "imageDefault": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "image_et": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "image_en": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "image_ru": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 }
             }
         },
@@ -9742,7 +10137,9 @@
                     "component": "translated.translated-short"
                 },
                 "bruno_article": {
-                    "model": "bruno-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::bruno-article.bruno-article"
                 },
                 "order": {
                     "type": "integer"
@@ -9778,7 +10175,9 @@
                     "component": "translated.translated-short"
                 },
                 "discamp_article": {
-                    "model": "dis-camp-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::dis-camp-article.dis-camp-article"
                 },
                 "order": {
                     "type": "integer"
@@ -9811,7 +10210,9 @@
                     "component": "translated.translated-short"
                 },
                 "filmikooli_article": {
-                    "model": "filmikooli-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::filmikooli-article.filmikooli-article"
                 },
                 "order": {
                     "type": "integer"
@@ -9844,7 +10245,9 @@
                     "component": "translated.translated-short"
                 },
                 "hoffi_article": {
-                    "model": "hof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::hof-fi-article.hof-fi-article"
                 },
                 "order": {
                     "type": "integer"
@@ -9877,7 +10280,9 @@
                     "component": "translated.translated-short"
                 },
                 "industry_article": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "order": {
                     "type": "integer"
@@ -9910,7 +10315,9 @@
                     "component": "translated.translated-short"
                 },
                 "just_filmi_article": {
-                    "model": "just-filmi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::just-filmi-article.just-filmi-article"
                 },
                 "order": {
                     "type": "integer"
@@ -9943,7 +10350,9 @@
                     "component": "translated.translated-short"
                 },
                 "kinoffi_article": {
-                    "model": "kinoffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kinoffi-article.kinoffi-article"
                 },
                 "order": {
                     "type": "integer"
@@ -9976,7 +10385,9 @@
                     "component": "translated.translated-short"
                 },
                 "kumu_article": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10013,7 +10424,9 @@
                     "type": "string"
                 },
                 "industry_article": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10104,7 +10517,9 @@
                     "type": "string"
                 },
                 "kumu_article": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10149,7 +10564,9 @@
                     "type": "string"
                 },
                 "industry_article": {
-                    "model": "industry-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10230,7 +10647,9 @@
                     "type": "string"
                 },
                 "kumu_article": {
-                    "model": "kumu-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::kumu-article.kumu-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10266,7 +10685,9 @@
                     "component": "translated.translated-short"
                 },
                 "poffi_article": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10299,7 +10720,9 @@
                     "component": "translated.translated-short"
                 },
                 "shortsi_article": {
-                    "model": "shortsi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shortsi-article.shortsi-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10332,7 +10755,9 @@
                     "component": "translated.translated-short"
                 },
                 "tartuffi_article": {
-                    "model": "tartuffi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::tartuffi-article.tartuffi-article"
                 },
                 "order": {
                     "type": "integer"
@@ -10360,7 +10785,9 @@
             "options": {},
             "attributes": {
                 "native_language": {
-                    "model": "language"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::language.language"
                 },
                 "languages": {
                     "collection": "language"
@@ -10376,13 +10803,19 @@
                     "min": 20
                 },
                 "eye_colour": {
-                    "model": "colours"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::colours.colours"
                 },
                 "hair_colour": {
-                    "model": "colours"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::colours.colours"
                 },
                 "shoe_size": {
-                    "model": "shoe-size"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::shoe-size.shoe-size"
                 },
                 "circum_chest": {
                     "type": "integer"
@@ -10500,7 +10933,6 @@
                     "type": "text"
                 },
                 "svgMedia": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -10508,7 +10940,9 @@
                         "videos"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "url_en": {
                     "type": "string"
@@ -10558,7 +10992,9 @@
                     "collection": "tag-secret"
                 },
                 "age_restriction": {
-                    "model": "age-restriction"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::age-restriction.age-restriction"
                 },
                 "trigger_warnings": {
                     "collection": "trigger-warning"
@@ -10574,17 +11010,20 @@
             "options": {},
             "attributes": {
                 "person": {
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 },
                 "pictureAtJury": {
-                    "model": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "target": "api::file.file"
                 },
                 "roleAtJury_et": {
                     "type": "string"
@@ -10605,7 +11044,9 @@
                     "type": "string"
                 },
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "about_et": {
                     "type": "richtext"
@@ -10630,7 +11071,9 @@
             "options": {},
             "attributes": {
                 "person": {
-                    "model": "person"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::person.person"
                 },
                 "pictureAtTeam": {
                     "collection": "file",
@@ -10736,7 +11179,9 @@
                     "type": "integer"
                 },
                 "product_category": {
-                    "model": "product-category"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::product-category.product-category"
                 }
             }
         },
@@ -10813,7 +11258,9 @@
                     "type": "integer"
                 },
                 "time_unit": {
-                    "model": "time-units"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::time-units.time-units"
                 }
             }
         },

@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cassettes",
+  "info": {
+    "singularName": "cassette",
+    "pluralName": "cassettes",
+    "displayName": "Cassette"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_et": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "synopsis": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "tags": {
+      "type": "component",
+      "component": "tags.tags"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "remoteId": {
+      "type": "uid"
+    },
+    "orderedFilms": {
+      "type": "component",
+      "component": "film.ordered-films"
+    },
+    "stills": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "posters": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "trailer": {
+      "type": "component",
+      "component": "media.trailers"
+    },
+    "QaClip": {
+      "type": "component",
+      "component": "media.qa-clip"
+    },
+    "chat_w_name": {
+      "type": "string"
+    },
+    "is_published": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statures",
+  "info": {
+    "singularName": "stature",
+    "pluralName": "statures",
+    "displayName": "Stature"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    }
+  }
+}

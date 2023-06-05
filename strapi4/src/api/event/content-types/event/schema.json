@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "integer"
+    },
+    "ticketingUrl": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "durationTotal": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "extraInfo": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "bookingUrl": {
+      "type": "text"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "namePrivate": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

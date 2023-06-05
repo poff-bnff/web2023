@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_film_ordered_films",
+  "info": {
+    "displayName": "orderedFilms"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "film": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::film.film"
+    }
+  }
+}

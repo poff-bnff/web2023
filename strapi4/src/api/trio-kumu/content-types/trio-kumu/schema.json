@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "trio_kumu",
+  "info": {
+    "singularName": "trio-kumu",
+    "pluralName": "trio-kumus",
+    "displayName": "TrioKumu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trioKumu_et": {
+      "type": "component",
+      "component": "article.trio-kumu"
+    },
+    "trioKumu_en": {
+      "type": "component",
+      "component": "article.trio-kumu"
+    },
+    "trioKumu_ru": {
+      "type": "component",
+      "component": "article.trio-kumu"
+    }
+  }
+}

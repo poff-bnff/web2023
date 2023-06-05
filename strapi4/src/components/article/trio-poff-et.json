@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_trio_poff_ets",
+  "info": {
+    "displayName": "Triopoff"
+  },
+  "options": {},
+  "attributes": {
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-lang-item"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-lang-item"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-lang-item"
+    },
+    "name": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dis_camp_events",
+  "info": {
+    "singularName": "dis-camp-event",
+    "pluralName": "dis-camp-events",
+    "displayName": "DisCampEvent"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePrivate": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "datetime"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": true
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "lead": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "project_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-type.project-type"
+    },
+    "publishFrom": {
+      "type": "datetime"
+    },
+    "publishUntil": {
+      "type": "datetime"
+    },
+    "publish": {
+      "type": "boolean"
+    },
+    "channel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::channel.channel"
+    },
+    "durationTime": {
+      "type": "time"
+    },
+    "isLiveEvent": {
+      "type": "boolean"
+    },
+    "isPublicEvent": {
+      "type": "boolean"
+    },
+    "public": {
+      "type": "boolean"
+    }
+  }
+}

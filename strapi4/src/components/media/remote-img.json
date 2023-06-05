@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_media_remote_imgs",
+  "info": {
+    "displayName": "RemoteImg"
+  },
+  "options": {},
+  "attributes": {
+    "img_url": {
+      "type": "string"
+    }
+  }
+}

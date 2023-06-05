@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_article_trio_item_dis_camps",
+  "info": {
+    "displayName": "TrioItemDisCamp"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "custom_url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false
+    },
+    "lead": {
+      "type": "string"
+    }
+  }
+}

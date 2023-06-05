@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_trio_kinoff",
+  "info": {
+    "displayName": "Triokinoff"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-item-kinoff"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-item-kinoff"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-item-kinoff"
+    }
+  }
+}

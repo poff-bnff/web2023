@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "trio_tartuffs",
+  "info": {
+    "singularName": "trio-tartuff",
+    "pluralName": "trio-tartuffs",
+    "displayName": "TrioTartuff"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trioTartuff_et": {
+      "type": "component",
+      "component": "article.trio-tartuff"
+    },
+    "trioTartuff_en": {
+      "type": "component",
+      "component": "article.trio-tartuff"
+    },
+    "trioTartuff_ru": {
+      "type": "component",
+      "component": "article.trio-tartuff"
+    }
+  }
+}

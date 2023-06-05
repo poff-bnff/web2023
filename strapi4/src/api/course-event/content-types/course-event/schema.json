@@ -1,0 +1,158 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_events",
+  "info": {
+    "singularName": "course-event",
+    "pluralName": "course-events",
+    "displayName": "CourseEvent"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_private": {
+      "type": "string"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    },
+    "short_descr_et": {
+      "type": "text"
+    },
+    "short_descr_en": {
+      "type": "text"
+    },
+    "short_descr_ru": {
+      "type": "text"
+    },
+    "description_et": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_ru": {
+      "type": "text"
+    },
+    "start_time": {
+      "type": "datetime"
+    },
+    "duration_time": {
+      "type": "time"
+    },
+    "end_time": {
+      "type": "datetime"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "course_module": {
+      "type": "component",
+      "component": "course.course-module"
+    },
+    "credentials": {
+      "type": "component",
+      "component": "film.credentials-new"
+    },
+    "event_mode": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-mode.event-mode"
+    },
+    "trailer": {
+      "type": "component",
+      "component": "media.trailers"
+    },
+    "is_live_event": {
+      "type": "boolean"
+    },
+    "is_public_event": {
+      "type": "boolean"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "moodle_id": {
+      "type": "uid"
+    },
+    "posters": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": true
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": true
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "publish_et": {
+      "type": "boolean"
+    },
+    "publish_en": {
+      "type": "boolean"
+    },
+    "publish_ru": {
+      "type": "boolean"
+    },
+    "remote_id": {
+      "type": "uid"
+    },
+    "publishFrom": {
+      "type": "datetime"
+    },
+    "publishUntil": {
+      "type": "datetime"
+    },
+    "tags": {
+      "type": "component",
+      "component": "tags.course-tags"
+    },
+    "presentedBy": {
+      "type": "component",
+      "component": "film.presented-by"
+    },
+    "event_access": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-access.event-access"
+    },
+    "chat_w_name": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "component": "button.button"
+    }
+  }
+}

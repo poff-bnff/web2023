@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_social_social_groups",
+  "info": {
+    "displayName": "SocialGroup"
+  },
+  "options": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "items": {
+      "type": "component",
+      "component": "social.social-item"
+    }
+  }
+}

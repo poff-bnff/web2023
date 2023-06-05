@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_projects",
+  "info": {
+    "singularName": "industry-project",
+    "pluralName": "industry-projects",
+    "displayName": "IndustryProject"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "titleOriginal": {
+      "type": "string"
+    },
+    "logline": {
+      "type": "text"
+    },
+    "completionDate": {
+      "type": "datetime"
+    },
+    "numOfSeasons": {
+      "type": "integer"
+    },
+    "numOfEpisodes": {
+      "type": "integer"
+    },
+    "episodeDuration": {
+      "type": "integer"
+    },
+    "plannedPremiere": {
+      "type": "date"
+    },
+    "country_focus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "teamCredentials": {
+      "type": "component",
+      "component": "film.credentials-new"
+    },
+    "budget": {
+      "type": "decimal"
+    },
+    "financed": {
+      "type": "decimal"
+    },
+    "lookingFor": {
+      "type": "text"
+    },
+    "synopsis": {
+      "type": "text"
+    },
+    "directorsNote": {
+      "type": "text"
+    },
+    "contactName": {
+      "type": "string"
+    },
+    "contactCompany": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::organisation.organisation"
+    },
+    "contactAddress": {
+      "type": "string"
+    },
+    "contactEmail": {
+      "type": "email"
+    },
+    "contactWeb": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "clipUrl": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "completionYear": {
+      "type": "integer"
+    },
+    "imdbLink": {
+      "type": "string"
+    },
+    "public": {
+      "type": "boolean"
+    }
+  }
+}

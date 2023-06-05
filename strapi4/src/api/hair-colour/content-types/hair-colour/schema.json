@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hair_colours",
+  "info": {
+    "singularName": "hair-colour",
+    "pluralName": "hair-colours",
+    "displayName": "HairColour"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    }
+  }
+}

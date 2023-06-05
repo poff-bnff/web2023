@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_trio_bruno",
+  "info": {
+    "displayName": "Triobruno"
+  },
+  "options": {},
+  "attributes": {
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-item-bruno"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-item-bruno"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-item-bruno"
+    },
+    "name": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    }
+  }
+}

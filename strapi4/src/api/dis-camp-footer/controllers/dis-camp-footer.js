@@ -1,0 +1,5 @@
+'use strict'
+
+const { createCoreController } = require('@strapi/strapi').factories
+
+module.exports = createCoreController('api::dis-camp-footer.dis-camp-footer')

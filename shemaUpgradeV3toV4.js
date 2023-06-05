@@ -71,6 +71,15 @@ const strapi4Schema = {
   components: []
 }
 
+// pluralize. also make kebab-case
+const pluralize = (singular) => {
+  const kebab = singular.toLowerCase().replace(/_/g, '-')
+  if (kebab.endsWith('s')) {
+    return `${kebab}es`
+  }
+  return `${kebab}s`
+}
+
 const addCollectionToS4Schema = (s3Collection) => {
   // hard copy s3Collection to s4Collection to avoid side effects
   const s4Collection = {
@@ -79,7 +88,20 @@ const addCollectionToS4Schema = (s3Collection) => {
     collectionName: s3Collection.collectionName,
     displayName: s3Collection.displayName,
     s3DisplayName: s3Collection.s3DisplayName,
-    attributes: s3Collection.attributes
+    s4: {
+      kind: s3Collection.kind,
+      collectionName: s3Collection.collectionName,
+      info: {
+        singularName: s3Collection.modelName,
+        pluralName: pluralize(s3Collection.modelName),
+        displayName: s3Collection.s3DisplayName,
+      },
+      options: {
+        draftAndPublish: false
+      },
+      pluginOptions: {},
+      attributes: convertAttributes(s3Collection.attributes, s3Collection.modelName)
+    }
   }
   strapi4Schema.collections.push(s4Collection)
   // console.log(`writeS4Collection: ${JSON.stringify(s3Collection, null, 2)}`)
@@ -133,6 +155,73 @@ const addComponentsToS4Schema = (componentNames) => {
   return addedComponentNames
 }
 
+const convertAttributes = (s3Attributes, name) => {
+  const s4Attributes = {}
+  Object.keys(s3Attributes).forEach((attributeName) => {
+    const s3Attribute = s3Attributes[attributeName]
+    if (!s3Attribute.type) {
+      if (s3Attribute.model) {
+        s3Attribute.type = 'relation'
+        s3Attribute.relation = 'oneToOne'
+        s3Attribute.target = `api::${s3Attribute.model}.${s3Attribute.model}`
+        delete s3Attribute.model
+      }
+    }
+    const s4Attribute = {
+      type: s3Attribute.type,
+      required: s3Attribute.required,
+    }
+
+    if (s3Attribute.target === 'api::file.file'
+      || s3Attribute.plugin === 'upload') {
+      s4Attribute.allowedTypes = s3Attribute.allowedTypes
+      s4Attribute.type = 'media'
+      s4Attribute.multiple = s3Attribute.relation === 'oneToOne' ? false : true
+      delete s4Attribute.target
+      delete s3Attribute.relation
+    }
+    else if (s3Attribute.type === 'relation') {
+      // if target is not in s3Schema, skip the attribute
+      const targetName = s3Attribute.target.split('.')[1]
+      if (!strapi4Schema.collections.find((collection) => collection.modelName === targetName)) {
+        console.log(`WARNING: ${name} has attribute ${attributeName} with target ${s3Attribute.target} which is not in s4Schema`)
+        // Object.keys(s4Attribute).forEach((key) => delete s4Attribute[key])
+        return
+      }
+      const maxNameLength = 45
+      if (name.length + attributeName.length > maxNameLength) {
+        console.log(`WARNING: ${name} has attribute ${attributeName} with name length ${name.length + attributeName.length} > ${maxNameLength}`)
+        return
+      }
+  
+      s4Attribute.relation = s3Attribute.relation
+      s4Attribute.target = s3Attribute.target
+    }
+
+    if (s3Attribute.type === 'component') {
+      s4Attribute.component = s3Attribute.component
+    }
+    if (s3Attribute.type === 'dynamiczone') {
+      s4Attribute.components = s3Attribute.components
+    }
+    if (s3Attribute.type === 'media') {
+      s4Attribute.allowedTypes = s3Attribute.allowedTypes
+    }
+    if (s3Attribute.type === 'richtext') {
+      s4Attribute.type = 'text'
+    }
+    if (s3Attribute.type === 'enumeration') {
+      s4Attribute.enum = s3Attribute.enum
+    }
+    if (!s4Attribute.type) {
+      // console.log(`WARNING: ${name} has no type for attribute ${attributeName}`)
+      return
+    }
+    s4Attributes[attributeName] = s4Attribute
+  })
+  return s4Attributes
+}
+
 const addComponentToS4Schema = (s3Component) => {
   // hard copy s3Component to s4Component to avoid side effects
   const s4Component = {
@@ -148,7 +237,7 @@ const addComponentToS4Schema = (s3Component) => {
         displayName: s3Component.displayName
       },
       options: s3Component.options,
-      attributes: s3Component.attributes
+      attributes: convertAttributes(s3Component.attributes, s3Component.collectionName)
     }
   }
   strapi4Schema.components.push(s4Component)
@@ -202,10 +291,10 @@ fs.writeFileSync(path.join(__dirname, 'strapi3Schema.json'), JSON.stringify(stra
 fs.writeFileSync(path.join(__dirname, 'strapi4Schema.json'), JSON.stringify(strapi4Schema, null, 4))
 
 // create some files for testing
-let modelsCreated = 0
+let componentsCreated = 0
 strapi4Schema.components.forEach((component) => {
-  if (modelsCreated > 0) {
-    return
+  if (componentsCreated > 0) {
+    // return
   }
   const categoryName  = component.componentCategory
   const categoryPath = path.join(STRAPI4_COMPONENT_PATH, categoryName)
@@ -216,11 +305,56 @@ strapi4Schema.components.forEach((component) => {
   const modelFileName = component.fileName
   const modelFile = path.join(categoryPath, `${modelFileName}.json`)
   if (fs.existsSync(modelFile)) {
-    console.log(`WARNING: modelFile ${modelFile} already exists in category ${categoryName} for component ${component.displayName}`)
-    return
+    // return
+    fs.rmSync(modelFile)
   }
-  console.log(`create modelFile ${modelFile} for component ${component.displayName}`) 
+  // console.log(`create modelFile ${modelFile} for component ${component.displayName}`) 
   fs.writeFileSync(modelFile, JSON.stringify(component.s4, null, 2))
-  modelsCreated++
+  componentsCreated++
 })
-  
+
+let collectionsCreated = 0
+strapi4Schema.collections.forEach((collection) => {
+  if (collectionsCreated > 0) {
+    // return
+  }
+  const { kind, modelName: singularName, collectionName, displayName, s3DislpayName, attributes } = collection
+
+  const s4APIPath = path.join(STRAPI4_API_PATH, singularName)
+  const s4APISchemaPath = path.join(s4APIPath, 'content-types', singularName, 'schema.json')
+  const s4APIControllerPath = path.join(s4APIPath, 'controllers')
+  const s4APIRouterPath = path.join(s4APIPath, 'routes')
+  const s4APIServicePath = path.join(s4APIPath, 'services')
+  const s4APIRouterFileContent = `'use strict';`
+
+  if (fs.existsSync(s4APIPath)) {
+    // return
+    fs.rmSync(s4APIPath, { recursive: true })
+  }
+  collectionsCreated++
+
+  // create api folder
+  fs.mkdirSync(s4APIPath, { recursive: true })
+
+  // create content-types folder
+  fs.mkdirSync(path.join(s4APIPath, 'content-types', singularName), { recursive: true })
+  // create schema.json file
+  fs.writeFileSync(s4APISchemaPath, JSON.stringify(collection.s4, null, 2))
+
+  // create controllers folder
+  fs.mkdirSync(s4APIControllerPath, { recursive: true })
+  // create controller.js file
+  fs.writeFileSync(path.join(s4APIControllerPath, `${singularName}.js`), `'use strict'\n\nconst { createCoreController } = require('@strapi/strapi').factories\n\nmodule.exports = createCoreController('api::${singularName}.${singularName}')`)
+
+  // create routes folder
+  fs.mkdirSync(s4APIRouterPath, { recursive: true })
+  // create routes.js file
+  fs.writeFileSync(path.join(s4APIRouterPath, `${singularName}.js`), `'use strict'\n\nconst { createCoreRouter } = require('@strapi/strapi').factories\n\nmodule.exports = createCoreRouter('api::${singularName}.${singularName}')`)
+
+  // create services folder
+  fs.mkdirSync(s4APIServicePath, { recursive: true })
+  // create services.js file
+  fs.writeFileSync(path.join(s4APIServicePath, `${singularName}.js`), `'use strict'\n\nconst { createCoreService } = require('@strapi/strapi').factories\n\nmodule.exports = createCoreService('api::${singularName}.${singularName}')`)
+
+})
+

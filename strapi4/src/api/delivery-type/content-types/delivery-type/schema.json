@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "delivery_types",
+  "info": {
+    "singularName": "delivery-type",
+    "pluralName": "delivery-types",
+    "displayName": "DeliveryType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_private": {
+      "type": "string"
+    },
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    },
+    "description_et": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_ru": {
+      "type": "text"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "delivery_prices": {
+      "type": "component",
+      "component": "ticketing.delivery-price"
+    },
+    "days_before": {
+      "type": "integer"
+    }
+  }
+}

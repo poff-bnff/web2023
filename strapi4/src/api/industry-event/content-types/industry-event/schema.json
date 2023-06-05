@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_events",
+  "info": {
+    "singularName": "industry-event",
+    "pluralName": "industry-events",
+    "displayName": "IndustryEvent"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePrivate": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "datetime"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "lead": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "project_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-type.project-type"
+    },
+    "publishFrom": {
+      "type": "datetime"
+    },
+    "publishUntil": {
+      "type": "datetime"
+    },
+    "publish": {
+      "type": "boolean"
+    },
+    "channel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::channel.channel"
+    },
+    "durationTime": {
+      "type": "time"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "isLiveEvent": {
+      "type": "boolean"
+    },
+    "isPublicEvent": {
+      "type": "boolean"
+    },
+    "event_mode": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-mode.event-mode"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "posters": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": true
+    }
+  }
+}

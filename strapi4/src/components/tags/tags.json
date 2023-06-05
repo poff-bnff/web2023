@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_tags_tags",
+  "info": {
+    "displayName": "Tags"
+  },
+  "options": {},
+  "attributes": {
+    "age_restriction": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::age-restriction.age-restriction"
+    }
+  }
+}

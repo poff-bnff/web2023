@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hof_fi_menus",
+  "info": {
+    "singularName": "hof-fi-menu",
+    "pluralName": "hof-fi-menus",
+    "displayName": "HOFFiMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "hoffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hof-fi-article.hof-fi-article"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenuItem": {
+      "type": "component",
+      "component": "menu.hoffi-sub-menu-item"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

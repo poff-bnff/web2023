@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_course_course_modules",
+  "info": {
+    "displayName": "CourseModule"
+  },
+  "options": {},
+  "attributes": {
+    "title_private": {
+      "type": "string"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "contents_et": {
+      "type": "text"
+    },
+    "contents_en": {
+      "type": "text"
+    },
+    "contents_ru": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "publish_et": {
+      "type": "boolean"
+    },
+    "publish_en": {
+      "type": "boolean"
+    },
+    "publish_ru": {
+      "type": "boolean"
+    },
+    "start_time": {
+      "type": "datetime"
+    },
+    "duration_time": {
+      "type": "time"
+    },
+    "end_time": {
+      "type": "datetime"
+    }
+  }
+}

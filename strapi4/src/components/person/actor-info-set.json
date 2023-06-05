@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_person_actor_info_sets",
+  "info": {
+    "displayName": "Actor_Info_Set"
+  },
+  "options": {},
+  "attributes": {
+    "height": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "shoe_size": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shoe-size.shoe-size"
+    },
+    "circum_chest": {
+      "type": "integer"
+    },
+    "circum_waist": {
+      "type": "integer"
+    },
+    "circum_hip": {
+      "type": "integer"
+    },
+    "particular_signs": {
+      "type": "text"
+    },
+    "sport_activities": {
+      "type": "text"
+    }
+  }
+}

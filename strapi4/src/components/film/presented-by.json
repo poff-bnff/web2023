@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_film_presented_bies",
+  "info": {
+    "displayName": "presentedBy"
+  },
+  "options": {},
+  "attributes": {
+    "presentedByText": {
+      "type": "component",
+      "component": "translated.translated-short"
+    }
+  }
+}

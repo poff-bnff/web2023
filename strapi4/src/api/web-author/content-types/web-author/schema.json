@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_authors",
+  "info": {
+    "singularName": "web-author",
+    "pluralName": "web-authors",
+    "displayName": "WebAuthor"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    }
+  }
+}

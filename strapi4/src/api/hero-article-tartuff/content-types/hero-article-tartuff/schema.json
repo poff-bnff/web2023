@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_article_tartuffs",
+  "info": {
+    "singularName": "hero-article-tartuff",
+    "pluralName": "hero-article-tartuffs",
+    "displayName": "HeroArticleTartuff"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "article_en": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
+    },
+    "article_ru": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
+    },
+    "article_et": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
+    }
+  }
+}

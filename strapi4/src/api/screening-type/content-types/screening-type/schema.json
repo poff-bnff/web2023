@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "screening_types",
+  "info": {
+    "singularName": "screening-type",
+    "pluralName": "screening-types",
+    "displayName": "ScreeningType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "validFrom": {
+      "type": "datetime"
+    },
+    "validTo": {
+      "type": "datetime"
+    }
+  }
+}

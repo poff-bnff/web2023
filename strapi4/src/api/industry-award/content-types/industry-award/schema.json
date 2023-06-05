@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_awards",
+  "info": {
+    "singularName": "industry-award",
+    "pluralName": "industry-awards",
+    "displayName": "Award"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "description": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "title_et": {
+      "type": "string"
+    },
+    "title_ru": {
+      "type": "string"
+    },
+    "slug_et": {
+      "type": "uid"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "slug_ru": {
+      "type": "uid"
+    }
+  }
+}

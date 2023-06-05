@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_article_article_medias",
+  "info": {
+    "displayName": "ArticleMedia"
+  },
+  "options": {},
+  "attributes": {
+    "imageDefault": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "image_et": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "image_en": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "image_ru": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "clipUrlDefault": {
+      "type": "string"
+    },
+    "clipUrl_et": {
+      "type": "string"
+    },
+    "clipUrl_en": {
+      "type": "string"
+    },
+    "clipUrl_ru": {
+      "type": "string"
+    }
+  }
+}

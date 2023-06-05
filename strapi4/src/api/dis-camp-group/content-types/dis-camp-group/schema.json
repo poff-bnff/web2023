@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dis_camp_groups",
+  "info": {
+    "singularName": "dis-camp-group",
+    "pluralName": "dis-camp-groups",
+    "displayName": "DisCampGroup"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "slug_en": {
+      "type": "uid"
+    },
+    "description_en": {
+      "type": "text"
+    }
+  }
+}

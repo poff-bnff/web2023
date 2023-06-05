@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shops",
+  "info": {
+    "singularName": "shop",
+    "pluralName": "shops",
+    "displayName": "Shop"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrivate": {
+      "type": "string"
+    },
+    "title": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "intro": {
+      "type": "component",
+      "component": "translated.translated-long"
+    },
+    "prodCatList": {
+      "type": "component",
+      "component": "ticketing.prod-cat-list"
+    },
+    "shopRules": {
+      "type": "component",
+      "component": "translated.translated-long"
+    }
+  }
+}

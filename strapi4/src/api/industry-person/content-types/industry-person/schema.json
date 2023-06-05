@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_people",
+  "info": {
+    "singularName": "industry-person",
+    "pluralName": "industry-persons",
+    "displayName": "IndustryPerson"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
+    },
+    "profilePicAtInd": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false
+    },
+    "emailAtInd": {
+      "type": "email"
+    },
+    "phoneAtInd": {
+      "type": "string"
+    },
+    "aboutText": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true
+    },
+    "clipUrl": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "filmography": {
+      "type": "component",
+      "component": "film.filmography"
+    },
+    "lookingFor": {
+      "type": "text"
+    },
+    "contactAtEvent": {
+      "type": "string"
+    },
+    "fullNamePrivate": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "actor_info_set": {
+      "type": "component",
+      "component": "person.actor-info-set"
+    },
+    "public": {
+      "type": "boolean"
+    }
+  }
+}

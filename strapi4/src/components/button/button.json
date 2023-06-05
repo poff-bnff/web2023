@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_button_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "text_et": {
+      "type": "string"
+    },
+    "url_et": {
+      "type": "string"
+    },
+    "text_en": {
+      "type": "string"
+    },
+    "url_en": {
+      "type": "string"
+    },
+    "text_ru": {
+      "type": "string"
+    },
+    "url_ru": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_menu_hoffi_sub_menu_items",
+  "info": {
+    "displayName": "hoffiSubMenuItem"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "customUrl": {
+      "type": "component",
+      "component": "translated.translated-short"
+    },
+    "namePrivate": {
+      "type": "string"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  }
+}

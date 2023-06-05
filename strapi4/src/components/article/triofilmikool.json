@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_triofilmikools",
+  "info": {
+    "displayName": "Triofilmikool"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "trioItem_1": {
+      "type": "component",
+      "component": "article.trio-item-filmikool"
+    },
+    "trioItem_2": {
+      "type": "component",
+      "component": "article.trio-item-filmikool"
+    },
+    "trioItem_3": {
+      "type": "component",
+      "component": "article.trio-item-filmikool"
+    },
+    "lead": {
+      "type": "string"
+    }
+  }
+}

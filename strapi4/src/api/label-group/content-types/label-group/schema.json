@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "label_groups",
+  "info": {
+    "singularName": "label-group",
+    "pluralName": "label-groups",
+    "displayName": "LabelGroup"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "component",
+      "component": "label.label"
+    }
+  }
+}
