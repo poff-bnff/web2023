@@ -8,6 +8,11 @@
     "presentedByText": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "organisations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organisation.organisation"
     }
   }
 }

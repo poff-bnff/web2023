@@ -39,6 +39,11 @@
     "dateOfBirth": {
       "type": "date"
     },
+    "organisations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organisation.organisation"
+    },
     "profession": {
       "type": "string"
     },
@@ -58,6 +63,26 @@
     },
     "pageUrl": {
       "type": "string"
+    },
+    "awardings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::awarding.awarding"
+    },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
+    },
+    "role_at_films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::role-at-film.role-at-film"
     },
     "height_cm": {
       "type": "integer"
@@ -151,6 +176,11 @@
       "relation": "oneToOne",
       "target": "api::language.language"
     },
+    "other_lang": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
     "images": {
       "type": "media",
       "required": false,
@@ -194,8 +224,23 @@
     "acc_other": {
       "type": "string"
     },
+    "tag_secrets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-secret.tag-secret"
+    },
     "webpage_url": {
       "type": "string"
+    },
+    "industry_person_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-person-type.industry-person-type"
+    },
+    "tag_looking_fors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-looking-for.tag-looking-for"
     },
     "slug_et": {
       "type": "uid"
@@ -236,10 +281,20 @@
     "skills_ru": {
       "type": "text"
     },
+    "filmographies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::filmography.filmography"
+    },
     "origin": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::origin.origin"
+    },
+    "industry_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-category.industry-category"
     },
     "looking_for": {
       "type": "text"

@@ -30,6 +30,11 @@
     "shopRules": {
       "type": "component",
       "component": "translated.translated-long"
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
     }
   }
 }

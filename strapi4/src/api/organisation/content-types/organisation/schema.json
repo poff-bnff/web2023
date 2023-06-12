@@ -71,6 +71,21 @@
     "homepageUrl": {
       "type": "string"
     },
+    "awardings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::awarding.awarding"
+    },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
+    },
     "profile_img": {
       "type": "media",
       "required": false,
@@ -78,6 +93,11 @@
         "images"
       ],
       "multiple": false
+    },
+    "role_at_films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::role-at-film.role-at-film"
     },
     "addr_coll": {
       "type": "relation",
@@ -122,6 +142,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::origin.origin"
+    },
+    "tag_looking_fors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-looking-for.tag-looking-for"
     },
     "looking_for": {
       "type": "text"

@@ -17,8 +17,28 @@
     "titleOriginal": {
       "type": "string"
     },
+    "countries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::country.country"
+    },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "project_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-type.project-type"
+    },
     "logline": {
       "type": "string"
+    },
+    "project_statuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-status.project-status"
     },
     "completionDate": {
       "type": "datetime"
@@ -31,6 +51,11 @@
     },
     "episodeDuration": {
       "type": "integer"
+    },
+    "broadcasters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organisation.organisation"
     },
     "plannedPremiere": {
       "type": "datetime"
@@ -49,6 +74,11 @@
     },
     "financed": {
       "type": "integer"
+    },
+    "attached_partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organisation.organisation"
     },
     "lookingFor": {
       "type": "text"
@@ -91,6 +121,21 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "tag_genres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-genre.tag-genre"
+    },
+    "editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
+    "tag_looking_fors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-looking-for.tag-looking-for"
     },
     "public": {
       "type": "boolean"

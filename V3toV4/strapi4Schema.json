@@ -518,6 +518,11 @@
                     },
                     "active": {
                         "type": "boolean"
+                    },
+                    "tag_locations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-location.tag-location"
                     }
                 }
             }
@@ -1178,6 +1183,11 @@
                     "endDate": {
                         "type": "datetime"
                     },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
+                    },
                     "festival": {
                         "type": "relation",
                         "relation": "oneToOne",
@@ -1194,6 +1204,11 @@
                     },
                     "remoteId": {
                         "type": "uid"
+                    },
+                    "awardings": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::awarding.awarding"
                     }
                 }
             }
@@ -1277,6 +1292,21 @@
                     "homepageUrl": {
                         "type": "string"
                     },
+                    "awardings": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::awarding.awarding"
+                    },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
+                    },
                     "profile_img": {
                         "type": "media",
                         "required": false,
@@ -1284,6 +1314,11 @@
                             "images"
                         ],
                         "multiple": false
+                    },
+                    "role_at_films": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::role-at-film.role-at-film"
                     },
                     "addr_coll": {
                         "type": "relation",
@@ -1329,6 +1364,11 @@
                         "relation": "oneToOne",
                         "target": "api::origin.origin"
                     },
+                    "tag_looking_fors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-looking-for.tag-looking-for"
+                    },
                     "looking_for": {
                         "type": "text"
                     },
@@ -1372,6 +1412,11 @@
                         "type": "component",
                         "component": "translated.translated-long"
                     },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
                     "images": {
                         "type": "media",
                         "required": false,
@@ -1379,6 +1424,11 @@
                             "images"
                         ],
                         "multiple": true
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
                     },
                     "order": {
                         "type": "integer"
@@ -1568,6 +1618,41 @@
                         "repeatable": true,
                         "component": "button.button"
                     },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
                     "public": {
                         "type": "boolean"
                     }
@@ -1658,6 +1743,41 @@
                         "type": "component",
                         "repeatable": true,
                         "component": "button.button"
+                    },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "public": {
                         "type": "boolean"
@@ -1750,6 +1870,41 @@
                         "repeatable": true,
                         "component": "button.button"
                     },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
                     "public": {
                         "type": "boolean"
                     }
@@ -1838,6 +1993,41 @@
                         "repeatable": true,
                         "component": "button.button"
                     },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
                     "public": {
                         "type": "boolean"
                     }
@@ -1925,6 +2115,41 @@
                         "type": "component",
                         "repeatable": true,
                         "component": "button.button"
+                    },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "public": {
                         "type": "boolean"
@@ -2017,6 +2242,41 @@
                         "repeatable": true,
                         "component": "button.button"
                     },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
                     "public": {
                         "type": "boolean"
                     }
@@ -2107,6 +2367,41 @@
                         "type": "component",
                         "repeatable": true,
                         "component": "button.button"
+                    },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "public": {
                         "type": "boolean"
@@ -2199,6 +2494,41 @@
                         "repeatable": true,
                         "component": "button.button"
                     },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
                     "public": {
                         "type": "boolean"
                     }
@@ -2283,6 +2613,36 @@
                         "type": "component",
                         "repeatable": true,
                         "component": "button.button"
+                    },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "publishUntil": {
                         "type": "datetime"
@@ -2376,6 +2736,16 @@
                     "visitest_id": {
                         "type": "uid"
                     },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
+                    },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
                     "profile_img": {
                         "type": "media",
                         "required": false,
@@ -2395,6 +2765,11 @@
                     "public": {
                         "type": "boolean"
                     },
+                    "tag_secrets": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-secret.tag-secret"
+                    },
                     "repr_p_name": {
                         "type": "string"
                     },
@@ -2410,8 +2785,23 @@
                     "repr_org_url": {
                         "type": "string"
                     },
+                    "tag_categories": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-category.tag-category"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
                     "showreel": {
                         "type": "string"
+                    },
+                    "tag_locations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-location.tag-location"
                     },
                     "origin": {
                         "type": "relation",
@@ -2745,6 +3135,16 @@
                     "work_url": {
                         "type": "string"
                     },
+                    "tag_film_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-film-type.tag-film-type"
+                    },
+                    "role_at_films": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::role-at-film.role-at-film"
+                    },
                     "actor_role": {
                         "type": "string"
                     },
@@ -2841,6 +3241,11 @@
                     "dateOfBirth": {
                         "type": "date"
                     },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
                     "profession": {
                         "type": "string"
                     },
@@ -2860,6 +3265,26 @@
                     },
                     "pageUrl": {
                         "type": "string"
+                    },
+                    "awardings": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::awarding.awarding"
+                    },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
+                    },
+                    "role_at_films": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::role-at-film.role-at-film"
                     },
                     "height_cm": {
                         "type": "integer"
@@ -2953,6 +3378,11 @@
                         "relation": "oneToOne",
                         "target": "api::language.language"
                     },
+                    "other_lang": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
+                    },
                     "images": {
                         "type": "media",
                         "required": false,
@@ -2996,8 +3426,23 @@
                     "acc_other": {
                         "type": "string"
                     },
+                    "tag_secrets": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-secret.tag-secret"
+                    },
                     "webpage_url": {
                         "type": "string"
+                    },
+                    "industry_person_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-person-type.industry-person-type"
+                    },
+                    "tag_looking_fors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-looking-for.tag-looking-for"
                     },
                     "slug_et": {
                         "type": "uid"
@@ -3038,10 +3483,20 @@
                     "skills_ru": {
                         "type": "text"
                     },
+                    "filmographies": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::filmography.filmography"
+                    },
                     "origin": {
                         "type": "relation",
                         "relation": "oneToOne",
                         "target": "api::origin.origin"
+                    },
+                    "industry_categories": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-category.industry-category"
                     },
                     "looking_for": {
                         "type": "text"
@@ -3313,6 +3768,11 @@
                     "slug_ru": {
                         "type": "uid"
                     },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
                     "credentials": {
                         "type": "component",
                         "component": "film.credentials-new"
@@ -3321,8 +3781,23 @@
                         "type": "component",
                         "component": "film.presented-by"
                     },
+                    "world_sales": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
+                    "subtitles": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
+                    },
                     "remoteId": {
                         "type": "uid"
+                    },
+                    "languages": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
                     },
                     "order": {
                         "type": "integer"
@@ -3341,6 +3816,16 @@
                     },
                     "multi_and_single": {
                         "type": "boolean"
+                    },
+                    "awardings": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::awarding.awarding"
+                    },
+                    "other_festivals": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival.festival"
                     },
                     "vialog_id": {
                         "type": "string"
@@ -3412,6 +3897,11 @@
                         "type": "component",
                         "component": "translated.translated-long"
                     },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
                     "tags": {
                         "type": "component",
                         "component": "tags.tags"
@@ -3424,6 +3914,11 @@
                     },
                     "slug_ru": {
                         "type": "uid"
+                    },
+                    "presenters": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "remoteId": {
                         "type": "uid"
@@ -3509,10 +4004,20 @@
                         "relation": "oneToOne",
                         "target": "api::location.location"
                     },
+                    "screening_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::screening-type.screening-type"
+                    },
                     "screening_mode": {
                         "type": "relation",
                         "relation": "oneToOne",
                         "target": "api::event-mode.event-mode"
+                    },
+                    "subtitles": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
                     },
                     "cassette": {
                         "type": "relation",
@@ -3572,6 +4077,36 @@
                     },
                     "namePrivate": {
                         "type": "string"
+                    },
+                    "films_et": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::film.film"
+                    },
+                    "films_en": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::film.film"
+                    },
+                    "films_ru": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::film.film"
+                    },
+                    "cassettes_et": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::cassette.cassette"
+                    },
+                    "cassettes_en": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::cassette.cassette"
+                    },
+                    "cassettes_ru": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::cassette.cassette"
                     }
                 }
             }
@@ -3639,6 +4174,11 @@
                         ],
                         "multiple": false
                     },
+                    "role_at_films": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::role-at-film.role-at-film"
+                    },
                     "emailAtInd": {
                         "type": "email"
                     },
@@ -3666,6 +4206,11 @@
                         "type": "component",
                         "component": "film.filmography"
                     },
+                    "industry_person_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-person-type.industry-person-type"
+                    },
                     "lookingFor": {
                         "type": "text"
                     },
@@ -3679,9 +4224,24 @@
                         "type": "uid",
                         "required": true
                     },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
+                    "tag_looking_fors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-looking-for.tag-looking-for"
+                    },
                     "actor_info_set": {
                         "type": "component",
                         "component": "person.actor-info-set"
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
                     },
                     "public": {
                         "type": "boolean"
@@ -3770,6 +4330,51 @@
                         "type": "component",
                         "repeatable": true,
                         "component": "button.button"
+                    },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
+                    },
+                    "industry_people": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-person.industry-person"
+                    },
+                    "people": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::person.person"
                     },
                     "public": {
                         "type": "boolean"
@@ -3897,8 +4502,28 @@
                     "titleOriginal": {
                         "type": "string"
                     },
+                    "countries": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::country.country"
+                    },
+                    "languages": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
+                    },
+                    "project_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::project-type.project-type"
+                    },
                     "logline": {
                         "type": "text"
+                    },
+                    "project_statuses": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::project-status.project-status"
                     },
                     "completionDate": {
                         "type": "datetime"
@@ -3911,6 +4536,11 @@
                     },
                     "episodeDuration": {
                         "type": "integer"
+                    },
+                    "broadcasters": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "plannedPremiere": {
                         "type": "date"
@@ -3929,6 +4559,11 @@
                     },
                     "financed": {
                         "type": "decimal"
+                    },
+                    "attached_partners": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "lookingFor": {
                         "type": "text"
@@ -3971,11 +4606,31 @@
                         "type": "uid",
                         "required": true
                     },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
                     "completionYear": {
                         "type": "integer"
                     },
                     "imdbLink": {
                         "type": "string"
+                    },
+                    "editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
+                    "awardings": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::awarding.awarding"
+                    },
+                    "tag_looking_fors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-looking-for.tag-looking-for"
                     },
                     "public": {
                         "type": "boolean"
@@ -4069,6 +4724,11 @@
                     "description": {
                         "type": "text"
                     },
+                    "industry_categories": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-category.industry-category"
+                    },
                     "project_type": {
                         "type": "relation",
                         "relation": "oneToOne",
@@ -4091,6 +4751,16 @@
                     "durationTime": {
                         "type": "time"
                     },
+                    "industry_people": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-person.industry-person"
+                    },
+                    "industry_projects": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-project.industry-project"
+                    },
                     "videoUrl": {
                         "type": "string"
                     },
@@ -4100,10 +4770,20 @@
                     "isPublicEvent": {
                         "type": "boolean"
                     },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
                     "event_mode": {
                         "type": "relation",
                         "relation": "oneToOne",
                         "target": "api::event-mode.event-mode"
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
                     },
                     "public": {
                         "type": "boolean"
@@ -4282,6 +4962,11 @@
                         "type": "component",
                         "component": "tags.course-tags"
                     },
+                    "languages": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
+                    },
                     "credentials": {
                         "type": "component",
                         "component": "film.credentials-new"
@@ -4297,8 +4982,18 @@
                     "foreignUrl": {
                         "type": "text"
                     },
+                    "events": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::event.event"
+                    },
                     "volume": {
                         "type": "string"
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
                     },
                     "stills": {
                         "type": "media",
@@ -4504,6 +5199,11 @@
                     "name_ru": {
                         "type": "string"
                     },
+                    "courses": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::course.course"
+                    },
                     "transferable": {
                         "type": "boolean"
                     },
@@ -4554,6 +5254,11 @@
                     "shopRules": {
                         "type": "component",
                         "component": "translated.translated-long"
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
                     }
                 }
             }
@@ -4639,6 +5344,16 @@
                         "type": "component",
                         "component": "film.credentials-new"
                     },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
+                    "domains": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::domain.domain"
+                    },
                     "event_mode": {
                         "type": "relation",
                         "relation": "oneToOne",
@@ -4648,6 +5363,11 @@
                         "type": "component",
                         "repeatable": true,
                         "component": "media.trailers"
+                    },
+                    "industry_categories": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-category.industry-category"
                     },
                     "is_live_event": {
                         "type": "boolean"
@@ -4696,6 +5416,16 @@
                     "remote_id": {
                         "type": "uid"
                     },
+                    "product_categories": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::product-category.product-category"
+                    },
+                    "industry_projects": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-project.industry-project"
+                    },
                     "publishFrom": {
                         "type": "datetime"
                     },
@@ -4710,6 +5440,16 @@
                         "type": "component",
                         "component": "film.presented-by"
                     },
+                    "languages": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
+                    },
+                    "event_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::event-type.event-type"
+                    },
                     "event_access": {
                         "type": "relation",
                         "relation": "oneToOne",
@@ -4721,6 +5461,11 @@
                     "button": {
                         "type": "component",
                         "component": "button.button"
+                    },
+                    "industry_people": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::industry-person.industry-person"
                     }
                 }
             }
@@ -4759,6 +5504,21 @@
                     },
                     "namePrivate": {
                         "type": "string"
+                    },
+                    "course_events_et": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::course-event.course-event"
+                    },
+                    "course_events_en": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::course-event.course-event"
+                    },
+                    "course_events_ru": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::course-event.course-event"
                     }
                 }
             }
@@ -4828,6 +5588,11 @@
                         ],
                         "multiple": false
                     },
+                    "role_at_films": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::role-at-film.role-at-film"
+                    },
                     "emailAtDC": {
                         "type": "email"
                     },
@@ -4857,11 +5622,26 @@
                         "type": "component",
                         "component": "film.filmography"
                     },
+                    "discamp_person_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::dis-camp-person-type.dis-camp-person-type"
+                    },
                     "lookingFor": {
                         "type": "text"
                     },
                     "contactAtEvent": {
                         "type": "string"
+                    },
+                    "festival_editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
+                    "tag_looking_fors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-looking-for.tag-looking-for"
                     }
                 }
             }
@@ -4941,6 +5721,51 @@
                         "type": "component",
                         "repeatable": true,
                         "component": "button.button"
+                    },
+                    "article_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::article-type.article-type"
+                    },
+                    "tag_premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "tag_keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "web_authors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::web-author.web-author"
+                    },
+                    "discamp_people": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::dis-camp-person.dis-camp-person"
+                    },
+                    "people": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::person.person"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "publishFrom": {
                         "type": "datetime"
@@ -5046,8 +5871,28 @@
                     "titleOriginal": {
                         "type": "string"
                     },
+                    "countries": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::country.country"
+                    },
+                    "languages": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::language.language"
+                    },
+                    "project_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::project-type.project-type"
+                    },
                     "logline": {
                         "type": "string"
+                    },
+                    "project_statuses": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::project-status.project-status"
                     },
                     "completionDate": {
                         "type": "datetime"
@@ -5060,6 +5905,11 @@
                     },
                     "episodeDuration": {
                         "type": "integer"
+                    },
+                    "broadcasters": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "plannedPremiere": {
                         "type": "datetime"
@@ -5078,6 +5928,11 @@
                     },
                     "financed": {
                         "type": "integer"
+                    },
+                    "attached_partners": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     },
                     "lookingFor": {
                         "type": "text"
@@ -5120,6 +5975,21 @@
                     },
                     "slug": {
                         "type": "uid"
+                    },
+                    "tag_genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "editions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::festival-edition.festival-edition"
+                    },
+                    "tag_looking_fors": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-looking-for.tag-looking-for"
                     },
                     "public": {
                         "type": "boolean"
@@ -5182,6 +6052,11 @@
                     "description": {
                         "type": "text"
                     },
+                    "discamp_categories": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::dis-camp-category.dis-camp-category"
+                    },
                     "project_type": {
                         "type": "relation",
                         "relation": "oneToOne",
@@ -5203,6 +6078,16 @@
                     },
                     "durationTime": {
                         "type": "time"
+                    },
+                    "discamp_people": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::dis-camp-person.dis-camp-person"
+                    },
+                    "discamp_projects": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::dis-camp-project.dis-camp-project"
                     },
                     "isLiveEvent": {
                         "type": "boolean"
@@ -7649,6 +8534,11 @@
                     "presentedByText": {
                         "type": "component",
                         "component": "translated.translated-short"
+                    },
+                    "organisations": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::organisation.organisation"
                     }
                 }
             }
@@ -7907,10 +8797,45 @@
                 },
                 "options": {},
                 "attributes": {
+                    "premiere_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-premiere-type.tag-premiere-type"
+                    },
+                    "genres": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-genre.tag-genre"
+                    },
+                    "keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    },
+                    "programmes": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::programme.programme"
+                    },
+                    "film_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-film-type.tag-film-type"
+                    },
+                    "tag_secrets": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-secret.tag-secret"
+                    },
                     "age_restriction": {
                         "type": "relation",
                         "relation": "oneToOne",
                         "target": "api::age-restriction.age-restriction"
+                    },
+                    "trigger_warnings": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::trigger-warning.trigger-warning"
                     }
                 }
             }
@@ -8269,6 +9194,11 @@
                     "trailerUrl": {
                         "type": "string"
                     },
+                    "roles_of_person": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::role-at-film.role-at-film"
+                    },
                     "person_of_role": {
                         "type": "relation",
                         "relation": "oneToOne",
@@ -8293,6 +9223,11 @@
                     "native_language": {
                         "type": "relation",
                         "relation": "oneToOne",
+                        "target": "api::language.language"
+                    },
+                    "languages": {
+                        "type": "relation",
+                        "relation": "oneToMany",
                         "target": "api::language.language"
                     },
                     "height": {
@@ -8374,7 +9309,13 @@
                     "displayName": "CourseTags"
                 },
                 "options": {},
-                "attributes": {}
+                "attributes": {
+                    "keywords": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::tag-keyword.tag-keyword"
+                    }
+                }
             }
         },
         {
@@ -8392,6 +9333,11 @@
                 "attributes": {
                     "name_private": {
                         "type": "string"
+                    },
+                    "countries": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::country.country"
                     },
                     "price": {
                         "type": "decimal"

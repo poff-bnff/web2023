@@ -33,10 +33,20 @@
       "relation": "oneToOne",
       "target": "api::location.location"
     },
+    "screening_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::screening-type.screening-type"
+    },
     "screening_mode": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::event-mode.event-mode"
+    },
+    "subtitles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
     },
     "cassette": {
       "type": "relation",

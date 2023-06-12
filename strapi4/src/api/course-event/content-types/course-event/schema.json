@@ -73,6 +73,16 @@
       "type": "component",
       "component": "film.credentials-new"
     },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
+    },
     "event_mode": {
       "type": "relation",
       "relation": "oneToOne",
@@ -82,6 +92,11 @@
       "type": "component",
       "repeatable": true,
       "component": "media.trailers"
+    },
+    "industry_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-category.industry-category"
     },
     "is_live_event": {
       "type": "boolean"
@@ -130,6 +145,16 @@
     "remote_id": {
       "type": "uid"
     },
+    "product_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-category.product-category"
+    },
+    "industry_projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-project.industry-project"
+    },
     "publishFrom": {
       "type": "datetime"
     },
@@ -144,6 +169,16 @@
       "type": "component",
       "component": "film.presented-by"
     },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "event_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event-type.event-type"
+    },
     "event_access": {
       "type": "relation",
       "relation": "oneToOne",
@@ -155,6 +190,11 @@
     "button": {
       "type": "component",
       "component": "button.button"
+    },
+    "industry_people": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-person.industry-person"
     }
   }
 }

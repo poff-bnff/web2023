@@ -29,6 +29,11 @@
       ],
       "multiple": false
     },
+    "role_at_films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::role-at-film.role-at-film"
+    },
     "emailAtDC": {
       "type": "email"
     },
@@ -58,11 +63,26 @@
       "type": "component",
       "component": "film.filmography"
     },
+    "discamp_person_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dis-camp-person-type.dis-camp-person-type"
+    },
     "lookingFor": {
       "type": "text"
     },
     "contactAtEvent": {
       "type": "string"
+    },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
+    "tag_looking_fors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-looking-for.tag-looking-for"
     }
   }
 }

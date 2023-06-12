@@ -18,6 +18,11 @@
       "type": "component",
       "component": "translated.translated-long"
     },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
     "images": {
       "type": "media",
       "required": false,
@@ -25,6 +30,11 @@
         "images"
       ],
       "multiple": true
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
     },
     "order": {
       "type": "integer"

@@ -45,6 +45,11 @@
       "type": "component",
       "component": "tags.course-tags"
     },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
     "credentials": {
       "type": "component",
       "component": "film.credentials-new"
@@ -60,8 +65,18 @@
     "foreignUrl": {
       "type": "text"
     },
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    },
     "volume": {
       "type": "string"
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
     },
     "stills": {
       "type": "media",

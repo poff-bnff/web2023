@@ -4,5 +4,11 @@
     "displayName": "CourseTags"
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "keywords": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-keyword.tag-keyword"
+    }
+  }
 }

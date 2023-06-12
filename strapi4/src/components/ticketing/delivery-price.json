@@ -8,6 +8,11 @@
     "name_private": {
       "type": "string"
     },
+    "countries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::country.country"
+    },
     "price": {
       "type": "decimal"
     },

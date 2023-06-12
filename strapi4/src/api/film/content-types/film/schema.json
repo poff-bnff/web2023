@@ -46,6 +46,11 @@
     "slug_ru": {
       "type": "uid"
     },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
     "credentials": {
       "type": "component",
       "component": "film.credentials-new"
@@ -54,8 +59,23 @@
       "type": "component",
       "component": "film.presented-by"
     },
+    "world_sales": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organisation.organisation"
+    },
+    "subtitles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
     "remoteId": {
       "type": "uid"
+    },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
     },
     "order": {
       "type": "integer"
@@ -74,6 +94,16 @@
     },
     "multi_and_single": {
       "type": "boolean"
+    },
+    "awardings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::awarding.awarding"
+    },
+    "other_festivals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival.festival"
     },
     "vialog_id": {
       "type": "string"

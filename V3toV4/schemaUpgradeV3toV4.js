@@ -199,6 +199,25 @@ const convertAttributes = (s3Attributes, name) => {
       s4Attribute.relation = s3Attribute.relation
       s4Attribute.target = s3Attribute.target
     }
+    // if s3attribute has collection property, it is a oneToMany relation
+    else if (s3Attribute.collection) { // oneToMany
+      console.log(`I: ${name} has attribute ${attributeName} with oneToMany collection ${s3Attribute.collection}`)
+      const targetName = s3Attribute.collection
+      if (!strapi4Schema.collections.find((collection) => collection.modelName === targetName)) {
+        console.log(`WARNING: ${name} has attribute ${attributeName} with collection ${s3Attribute.collection} which is not in s4Schema`)
+        // Object.keys(s4Attribute).forEach((key) => delete s4Attribute[key])
+        return
+      }
+      const maxNameLength = 45
+      if (name.length + attributeName.length > maxNameLength) {
+        console.log(`WARNING: ${name} has attribute ${attributeName} with name length ${name.length + attributeName.length} > ${maxNameLength}`)
+        return
+      }
+      s4Attribute.type = 'relation'
+      s4Attribute.relation = 'oneToMany'
+      s4Attribute.target = `api::${s3Attribute.collection}.${s3Attribute.collection}`
+      delete s4Attribute.collection
+    }
 
     if (s3Attribute.type === 'component') {
       s4Attribute.component = s3Attribute.component

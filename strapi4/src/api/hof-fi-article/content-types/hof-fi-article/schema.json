@@ -74,6 +74,41 @@
       "repeatable": true,
       "component": "button.button"
     },
+    "article_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article-type.article-type"
+    },
+    "tag_premiere_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-premiere-type.tag-premiere-type"
+    },
+    "programmes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::programme.programme"
+    },
+    "tag_genres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-genre.tag-genre"
+    },
+    "tag_keywords": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-keyword.tag-keyword"
+    },
+    "web_authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::web-author.web-author"
+    },
+    "organisations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organisation.organisation"
+    },
     "public": {
       "type": "boolean"
     }

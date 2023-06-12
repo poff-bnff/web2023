@@ -41,6 +41,11 @@
     "endDate": {
       "type": "datetime"
     },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
+    },
     "festival": {
       "type": "relation",
       "relation": "oneToOne",
@@ -57,6 +62,11 @@
     },
     "remoteId": {
       "type": "uid"
+    },
+    "awardings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::awarding.awarding"
     }
   }
 }

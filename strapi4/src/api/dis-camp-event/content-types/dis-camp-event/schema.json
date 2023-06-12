@@ -47,6 +47,11 @@
     "description": {
       "type": "text"
     },
+    "discamp_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dis-camp-category.dis-camp-category"
+    },
     "project_type": {
       "type": "relation",
       "relation": "oneToOne",
@@ -68,6 +73,16 @@
     },
     "durationTime": {
       "type": "time"
+    },
+    "discamp_people": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dis-camp-person.dis-camp-person"
+    },
+    "discamp_projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dis-camp-project.dis-camp-project"
     },
     "isLiveEvent": {
       "type": "boolean"

@@ -76,6 +76,11 @@
     "name_ru": {
       "type": "string"
     },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    },
     "transferable": {
       "type": "boolean"
     },

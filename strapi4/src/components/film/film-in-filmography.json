@@ -51,6 +51,11 @@
     "trailerUrl": {
       "type": "string"
     },
+    "roles_of_person": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::role-at-film.role-at-film"
+    },
     "person_of_role": {
       "type": "relation",
       "relation": "oneToOne",

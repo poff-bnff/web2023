@@ -24,6 +24,11 @@
       "type": "component",
       "component": "translated.translated-long"
     },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
     "tags": {
       "type": "component",
       "component": "tags.tags"
@@ -36,6 +41,11 @@
     },
     "slug_ru": {
       "type": "uid"
+    },
+    "presenters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organisation.organisation"
     },
     "remoteId": {
       "type": "uid"

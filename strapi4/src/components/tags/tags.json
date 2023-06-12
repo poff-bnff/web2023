@@ -5,10 +5,45 @@
   },
   "options": {},
   "attributes": {
+    "premiere_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-premiere-type.tag-premiere-type"
+    },
+    "genres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-genre.tag-genre"
+    },
+    "keywords": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-keyword.tag-keyword"
+    },
+    "programmes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::programme.programme"
+    },
+    "film_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-film-type.tag-film-type"
+    },
+    "tag_secrets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-secret.tag-secret"
+    },
     "age_restriction": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::age-restriction.age-restriction"
+    },
+    "trigger_warnings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trigger-warning.trigger-warning"
     }
   }
 }

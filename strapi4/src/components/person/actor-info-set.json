@@ -10,6 +10,11 @@
       "relation": "oneToOne",
       "target": "api::language.language"
     },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
     "height": {
       "type": "integer"
     },

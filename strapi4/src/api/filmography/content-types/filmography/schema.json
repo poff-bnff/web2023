@@ -28,6 +28,16 @@
     "work_url": {
       "type": "string"
     },
+    "tag_film_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-film-type.tag-film-type"
+    },
+    "role_at_films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::role-at-film.role-at-film"
+    },
     "actor_role": {
       "type": "string"
     },

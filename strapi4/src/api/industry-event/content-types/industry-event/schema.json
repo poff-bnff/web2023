@@ -42,6 +42,11 @@
     "description": {
       "type": "text"
     },
+    "industry_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-category.industry-category"
+    },
     "project_type": {
       "type": "relation",
       "relation": "oneToOne",
@@ -64,6 +69,16 @@
     "durationTime": {
       "type": "time"
     },
+    "industry_people": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-person.industry-person"
+    },
+    "industry_projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-project.industry-project"
+    },
     "videoUrl": {
       "type": "string"
     },
@@ -73,10 +88,20 @@
     "isPublicEvent": {
       "type": "boolean"
     },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
     "event_mode": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::event-mode.event-mode"
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
     },
     "public": {
       "type": "boolean"

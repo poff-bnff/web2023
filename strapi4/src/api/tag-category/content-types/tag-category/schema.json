@@ -28,6 +28,11 @@
     },
     "active": {
       "type": "boolean"
+    },
+    "tag_locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-location.tag-location"
     }
   }
 }

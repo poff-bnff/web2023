@@ -26,6 +26,21 @@
     },
     "namePrivate": {
       "type": "string"
+    },
+    "course_events_et": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-event.course-event"
+    },
+    "course_events_en": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-event.course-event"
+    },
+    "course_events_ru": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-event.course-event"
     }
   }
 }

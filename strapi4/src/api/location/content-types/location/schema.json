@@ -75,6 +75,16 @@
     "visitest_id": {
       "type": "uid"
     },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
+    },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
     "profile_img": {
       "type": "media",
       "required": false,
@@ -94,6 +104,11 @@
     "public": {
       "type": "boolean"
     },
+    "tag_secrets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-secret.tag-secret"
+    },
     "repr_p_name": {
       "type": "string"
     },
@@ -109,8 +124,23 @@
     "repr_org_url": {
       "type": "string"
     },
+    "tag_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-category.tag-category"
+    },
+    "tag_keywords": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-keyword.tag-keyword"
+    },
     "showreel": {
       "type": "string"
+    },
+    "tag_locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-location.tag-location"
     },
     "origin": {
       "type": "relation",

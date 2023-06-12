@@ -26,6 +26,36 @@
     },
     "namePrivate": {
       "type": "string"
+    },
+    "films_et": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::film.film"
+    },
+    "films_en": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::film.film"
+    },
+    "films_ru": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::film.film"
+    },
+    "cassettes_et": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cassette.cassette"
+    },
+    "cassettes_en": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cassette.cassette"
+    },
+    "cassettes_ru": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cassette.cassette"
     }
   }
 }

@@ -24,6 +24,11 @@
       ],
       "multiple": false
     },
+    "role_at_films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::role-at-film.role-at-film"
+    },
     "emailAtInd": {
       "type": "email"
     },
@@ -51,6 +56,11 @@
       "type": "component",
       "component": "film.filmography"
     },
+    "industry_person_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-person-type.industry-person-type"
+    },
     "lookingFor": {
       "type": "text"
     },
@@ -64,9 +74,24 @@
       "type": "uid",
       "required": true
     },
+    "festival_editions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::festival-edition.festival-edition"
+    },
+    "tag_looking_fors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-looking-for.tag-looking-for"
+    },
     "actor_info_set": {
       "type": "component",
       "component": "person.actor-info-set"
+    },
+    "domains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::domain.domain"
     },
     "public": {
       "type": "boolean"
