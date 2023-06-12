@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_sec_dis_camps",
+  "collectionName": "sup_sec_dis_camps",
   "info": {
     "displayName": "SupSecDisCamp"
   },
@@ -14,6 +14,7 @@
     },
     "supporter": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.sup-dis-camp"
     }
   }

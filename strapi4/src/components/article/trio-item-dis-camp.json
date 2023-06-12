@@ -1,10 +1,15 @@
 {
-  "collectionName": "components_article_trio_item_dis_camps",
+  "collectionName": "trio_item_dis_camps",
   "info": {
     "displayName": "TrioItemDisCamp"
   },
   "options": {},
   "attributes": {
+    "discamp_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dis-camp-article.dis-camp-article"
+    },
     "title": {
       "type": "string"
     },

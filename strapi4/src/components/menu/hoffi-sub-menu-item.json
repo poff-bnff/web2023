@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_hoffi_sub_menu_items",
+  "collectionName": "hoffi_sub_menu_items",
   "info": {
     "displayName": "hoffiSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "hoffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hof-fi-article.hof-fi-article"
     },
     "order": {
       "type": "integer"

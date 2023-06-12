@@ -17,10 +17,12 @@
     },
     "teamMember": {
       "type": "component",
+      "repeatable": true,
       "component": "teams.team-member"
     },
     "juryMember": {
       "type": "component",
+      "repeatable": true,
       "component": "teams.jury-member"
     }
   }

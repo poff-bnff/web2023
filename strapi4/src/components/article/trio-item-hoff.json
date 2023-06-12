@@ -1,10 +1,15 @@
 {
-  "collectionName": "components_article_trio_item_hoffs",
+  "collectionName": "trio_item_hoffs",
   "info": {
     "displayName": "TrioItemHoff"
   },
   "options": {},
   "attributes": {
+    "hoffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hof-fi-article.hof-fi-article"
+    },
     "title": {
       "type": "string"
     },

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_l3_menu_industries",
+  "collectionName": "menu_l3_menu_industries",
   "info": {
     "displayName": "L3MenuIndustry"
   },
@@ -13,6 +13,11 @@
     },
     "name_ru": {
       "type": "string"
+    },
+    "industry_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-article.industry-article"
     },
     "order": {
       "type": "integer"

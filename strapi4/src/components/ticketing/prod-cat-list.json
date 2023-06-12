@@ -10,6 +10,7 @@
     },
     "orderedProductCategories": {
       "type": "component",
+      "repeatable": true,
       "component": "ticketing.ordered-products"
     },
     "title": {

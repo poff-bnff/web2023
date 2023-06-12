@@ -27,6 +27,7 @@
     },
     "subMenuItem": {
       "type": "component",
+      "repeatable": true,
       "component": "menu.dis-camp-sub-menu-item"
     },
     "publish": {

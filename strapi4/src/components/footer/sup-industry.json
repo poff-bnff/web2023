@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_industry",
+  "collectionName": "sup_industry",
   "info": {
     "displayName": "SupIndustry"
   },
@@ -40,6 +40,11 @@
         "videos"
       ],
       "multiple": false
+    },
+    "industry_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-article.industry-article"
     }
   }
 }

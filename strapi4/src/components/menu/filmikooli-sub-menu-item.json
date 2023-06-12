@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_filmikooli_sub_menu_items",
+  "collectionName": "filmikooli_sub_menu_items",
   "info": {
     "displayName": "FilmikooliSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "filmikooli_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::filmikooli-article.filmikooli-article"
     },
     "order": {
       "type": "integer"

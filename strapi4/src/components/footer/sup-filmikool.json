@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_filmikools",
+  "collectionName": "sup_filmikools",
   "info": {
     "displayName": "SupFilmikool"
   },
@@ -40,6 +40,11 @@
         "videos"
       ],
       "multiple": false
+    },
+    "filmikooli_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::filmikooli-article.filmikooli-article"
     }
   }
 }

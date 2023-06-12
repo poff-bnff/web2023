@@ -32,6 +32,7 @@
     },
     "subMenuItem": {
       "type": "component",
+      "repeatable": true,
       "component": "menu.shortsi-sub-menu-item"
     },
     "publish": {

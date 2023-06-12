@@ -586,6 +586,7 @@
                     },
                     "description": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "translated.translated-long"
                     },
                     "title_et": {
@@ -1320,6 +1321,7 @@
                     },
                     "remote_img": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.remote-img"
                     },
                     "origin": {
@@ -1563,6 +1565,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -1653,6 +1656,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -1743,6 +1747,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -1830,6 +1835,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -1917,6 +1923,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -2007,6 +2014,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -2097,6 +2105,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -2187,6 +2196,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -2271,6 +2281,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "publishUntil": {
@@ -3059,6 +3070,7 @@
                 "attributes": {
                     "subTeam": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "teams.test-team"
                     },
                     "name": {
@@ -3317,6 +3329,7 @@
                     },
                     "orderedCountries": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "film.ordered-countries"
                     },
                     "additInfo": {
@@ -3350,10 +3363,12 @@
                     },
                     "trailer": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.trailers"
                     },
                     "QaClip": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.qa-clip"
                     },
                     "chat_w_name": {
@@ -3415,6 +3430,7 @@
                     },
                     "orderedFilms": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "film.ordered-films"
                     },
                     "stills": {
@@ -3435,10 +3451,12 @@
                     },
                     "trailer": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.trailers"
                     },
                     "QaClip": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.qa-clip"
                     },
                     "chat_w_name": {
@@ -3480,6 +3498,7 @@
                     },
                     "introQaConversation": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "screening.intro-conversation-qand-a"
                     },
                     "durationTotal": {
@@ -3582,6 +3601,7 @@
                     },
                     "label": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "label.label"
                     }
                 }
@@ -3748,6 +3768,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "public": {
@@ -4140,6 +4161,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.industry-sub-menu-item"
                     },
                     "publish": {
@@ -4296,10 +4318,12 @@
                     },
                     "trailer": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.trailers"
                     },
                     "QaClip": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.qa-clip"
                     },
                     "moodle_id": {
@@ -4353,6 +4377,7 @@
                     },
                     "delivery_prices": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "ticketing.delivery-price"
                     },
                     "days_before": {
@@ -4432,18 +4457,22 @@
                     },
                     "validityPeriod": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "time.period"
                     },
                     "salesPeriod": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "time.period"
                     },
                     "ticketingRight": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "ticketing.ticketing-rights"
                     },
                     "priceAtPeriod": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "ticketing.price-with-time"
                     },
                     "codePrefix": {
@@ -4519,6 +4548,7 @@
                     },
                     "prodCatList": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "ticketing.prod-cat-list"
                     },
                     "shopRules": {
@@ -4602,6 +4632,7 @@
                     },
                     "course_module": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "course.course-module"
                     },
                     "credentials": {
@@ -4615,6 +4646,7 @@
                     },
                     "trailer": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "media.trailers"
                     },
                     "is_live_event": {
@@ -4907,6 +4939,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "publishFrom": {
@@ -5218,6 +5251,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.dis-camp-sub-menu-item"
                     },
                     "publish": {
@@ -5268,6 +5302,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-poff"
                     }
                 }
@@ -5310,6 +5345,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-just"
                     }
                 }
@@ -5352,6 +5388,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-shorts"
                     }
                 }
@@ -5394,6 +5431,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-industry"
                     }
                 }
@@ -5436,6 +5474,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-kinoff"
                     }
                 }
@@ -5478,6 +5517,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-hoff"
                     }
                 }
@@ -5520,6 +5560,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-tartuff"
                     }
                 }
@@ -5562,6 +5603,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-kumu"
                     }
                 }
@@ -5604,6 +5646,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-bruno"
                     }
                 }
@@ -5646,6 +5689,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-filmikool"
                     }
                 }
@@ -5688,6 +5732,7 @@
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-dis-camp"
                     }
                 }
@@ -5726,10 +5771,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-poff"
                     }
                 }
@@ -5768,10 +5815,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-just"
                     }
                 }
@@ -5810,10 +5859,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-shorts"
                     }
                 }
@@ -5852,10 +5903,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-industry"
                     }
                 }
@@ -5894,10 +5947,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-kinoff"
                     }
                 }
@@ -5936,10 +5991,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-hoff"
                     }
                 }
@@ -5978,10 +6035,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-tartuff"
                     }
                 }
@@ -6020,10 +6079,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-kumu"
                     }
                 }
@@ -6062,10 +6123,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-bruno"
                     }
                 }
@@ -6104,10 +6167,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-filmikool"
                     }
                 }
@@ -6139,10 +6204,12 @@
                     },
                     "item": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.footer-item-nav"
                     },
                     "supporters": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-sec-dis-camp"
                     },
                     "namePrivate": {
@@ -6195,6 +6262,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.menu-item"
                     },
                     "publish": {
@@ -6243,6 +6311,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.just-filmi-sub-menu-item"
                     },
                     "publish": {
@@ -6291,6 +6360,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.shortsi-sub-menu-item"
                     },
                     "publish": {
@@ -6339,6 +6409,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.kinoffi-sub-menu-item"
                     },
                     "publish": {
@@ -6387,6 +6458,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.hoffi-sub-menu-item"
                     },
                     "publish": {
@@ -6435,6 +6507,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.tartuffi-sub-menu-item"
                     },
                     "publish": {
@@ -6483,6 +6556,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.kumu-sub-menu-item"
                     },
                     "publish": {
@@ -6531,6 +6605,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.bruno-sub-menu-item"
                     },
                     "publish": {
@@ -6579,6 +6654,7 @@
                     },
                     "subMenuItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.filmikooli-sub-menu-item"
                     },
                     "publish": {
@@ -6640,6 +6716,7 @@
                     },
                     "L2MenuItems": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.l2-menu-industry"
                     }
                 }
@@ -6698,6 +6775,7 @@
                     },
                     "L2MenuItems": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.l2-menu-kumu"
                     }
                 }
@@ -7694,10 +7772,12 @@
                     },
                     "teamMember": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "teams.team-member"
                     },
                     "juryMember": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "teams.jury-member"
                     }
                 }
@@ -7850,10 +7930,12 @@
                 "attributes": {
                     "rolePerson": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "film.role-person"
                     },
                     "roleCompany": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "film.role-company"
                     }
                 }
@@ -8058,10 +8140,12 @@
                     },
                     "presenter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "translated.translated-short"
                     },
                     "guest": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "translated.translated-short"
                     },
                     "duration": {
@@ -8120,6 +8204,7 @@
                     },
                     "film": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "film.film-in-filmography"
                     }
                 }
@@ -8483,6 +8568,7 @@
                     },
                     "orderedProductCategories": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "ticketing.ordered-products"
                     },
                     "title": {
@@ -8648,6 +8734,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-poff"
                     }
                 }
@@ -8726,6 +8813,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-just"
                     }
                 }
@@ -8804,6 +8892,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-shorts"
                     }
                 }
@@ -8882,6 +8971,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-industry"
                     }
                 }
@@ -8966,6 +9056,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-kinoff"
                     }
                 }
@@ -9044,6 +9135,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-hoff"
                     }
                 }
@@ -9122,6 +9214,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-tartuff"
                     }
                 }
@@ -9200,6 +9293,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-kumu"
                     }
                 }
@@ -9278,6 +9372,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-bruno"
                     }
                 }
@@ -9356,6 +9451,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-filmikool"
                     }
                 }
@@ -9440,6 +9536,7 @@
                     },
                     "supporter": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "footer.sup-dis-camp"
                     }
                 }
@@ -9527,6 +9624,7 @@
                     },
                     "items": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "social.social-item"
                     }
                 }
@@ -9595,6 +9693,7 @@
                     },
                     "button": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "button.button"
                     },
                     "text": {
@@ -9611,6 +9710,7 @@
                     },
                     "svgItem": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "social.social-item"
                     }
                 }
@@ -10005,6 +10105,7 @@
                     },
                     "L3MenuItems": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.l3-menu-industry"
                     }
                 }
@@ -10105,6 +10206,7 @@
                     },
                     "L3MenuItems": {
                         "type": "component",
+                        "repeatable": true,
                         "component": "menu.l3-menu-kumu"
                     }
                 }

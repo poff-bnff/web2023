@@ -1,10 +1,15 @@
 {
-  "collectionName": "components_person_actor_info_sets",
+  "collectionName": "actor_info_sets",
   "info": {
     "displayName": "Actor_Info_Set"
   },
   "options": {},
   "attributes": {
+    "native_language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
     "height": {
       "type": "integer"
     },

@@ -29,18 +29,22 @@
     },
     "validityPeriod": {
       "type": "component",
+      "repeatable": true,
       "component": "time.period"
     },
     "salesPeriod": {
       "type": "component",
+      "repeatable": true,
       "component": "time.period"
     },
     "ticketingRight": {
       "type": "component",
+      "repeatable": true,
       "component": "ticketing.ticketing-rights"
     },
     "priceAtPeriod": {
       "type": "component",
+      "repeatable": true,
       "component": "ticketing.price-with-time"
     },
     "codePrefix": {

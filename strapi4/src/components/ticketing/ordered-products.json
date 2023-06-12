@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_ticketing_ordered_products",
+  "collectionName": "ticketing_ordered_products",
   "info": {
     "displayName": "orderedProduct"
   },
@@ -7,6 +7,11 @@
   "attributes": {
     "order": {
       "type": "integer"
+    },
+    "product_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-category.product-category"
     }
   }
 }

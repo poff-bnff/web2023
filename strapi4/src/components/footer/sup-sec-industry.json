@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_sec_industry",
+  "collectionName": "sup_sec_industry",
   "info": {
     "displayName": "SupSecIndustry"
   },
@@ -14,6 +14,7 @@
     },
     "supporter": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.sup-industry"
     }
   }

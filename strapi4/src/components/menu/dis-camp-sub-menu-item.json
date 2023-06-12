@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_dis_camp_sub_menu_items",
+  "collectionName": "dis_camp_sub_menu_items",
   "info": {
     "displayName": "DisCampSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "discamp_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dis-camp-article.dis-camp-article"
     },
     "order": {
       "type": "integer"

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_sec_tartuffs",
+  "collectionName": "sup_sec_tartuffs",
   "info": {
     "displayName": "SupSecTartuff"
   },
@@ -14,6 +14,7 @@
     },
     "supporter": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.sup-tartuff"
     }
   }

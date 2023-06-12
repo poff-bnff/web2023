@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_kinoffi_sub_menu_items",
+  "collectionName": "kinoffi_sub_menu_items",
   "info": {
     "displayName": "KinoffiSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "kinoffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kinoffi-article.kinoffi-article"
     },
     "order": {
       "type": "integer"

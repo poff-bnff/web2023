@@ -32,6 +32,7 @@
     },
     "subMenuItem": {
       "type": "component",
+      "repeatable": true,
       "component": "menu.kinoffi-sub-menu-item"
     },
     "publish": {

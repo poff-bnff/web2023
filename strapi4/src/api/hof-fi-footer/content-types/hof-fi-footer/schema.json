@@ -25,10 +25,12 @@
     },
     "item": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.footer-item-nav"
     },
     "supporters": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.sup-sec-hoff"
     }
   }

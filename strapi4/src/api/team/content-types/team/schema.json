@@ -13,6 +13,7 @@
   "attributes": {
     "subTeam": {
       "type": "component",
+      "repeatable": true,
       "component": "teams.test-team"
     },
     "name": {

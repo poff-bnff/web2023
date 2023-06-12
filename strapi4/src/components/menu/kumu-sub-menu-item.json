@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_kumu_sub_menu_items",
+  "collectionName": "kumu_sub_menu_items",
   "info": {
     "displayName": "KumuSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "kumu_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kumu-article.kumu-article"
     },
     "order": {
       "type": "integer"

@@ -115,6 +115,7 @@
     },
     "remote_img": {
       "type": "component",
+      "repeatable": true,
       "component": "media.remote-img"
     },
     "origin": {

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_tartuffi_sub_menu_items",
+  "collectionName": "tartuffi_sub_menu_items",
   "info": {
     "displayName": "TartuffiSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "tartuffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
     },
     "order": {
       "type": "integer"

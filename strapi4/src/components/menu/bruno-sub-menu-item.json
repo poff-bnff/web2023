@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_bruno_sub_menu_items",
+  "collectionName": "bruno_sub_menu_items",
   "info": {
     "displayName": "BrunoSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "bruno_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bruno-article.bruno-article"
     },
     "order": {
       "type": "integer"

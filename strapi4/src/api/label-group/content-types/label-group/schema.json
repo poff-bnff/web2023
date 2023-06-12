@@ -17,6 +17,7 @@
     },
     "label": {
       "type": "component",
+      "repeatable": true,
       "component": "label.label"
     }
   }

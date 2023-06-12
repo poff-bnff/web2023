@@ -45,6 +45,7 @@
     },
     "L2MenuItems": {
       "type": "component",
+      "repeatable": true,
       "component": "menu.l2-menu-industry"
     }
   }

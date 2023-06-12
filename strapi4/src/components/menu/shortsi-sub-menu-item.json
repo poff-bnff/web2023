@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_shortsi_sub_menu_items",
+  "collectionName": "shortsi_sub_menu_items",
   "info": {
     "displayName": "ShortsiSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "shortsi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shortsi-article.shortsi-article"
     },
     "order": {
       "type": "integer"

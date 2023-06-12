@@ -62,6 +62,7 @@
     },
     "orderedCountries": {
       "type": "component",
+      "repeatable": true,
       "component": "film.ordered-countries"
     },
     "additInfo": {
@@ -95,10 +96,12 @@
     },
     "trailer": {
       "type": "component",
+      "repeatable": true,
       "component": "media.trailers"
     },
     "QaClip": {
       "type": "component",
+      "repeatable": true,
       "component": "media.qa-clip"
     },
     "chat_w_name": {

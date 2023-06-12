@@ -14,6 +14,7 @@
     },
     "items": {
       "type": "component",
+      "repeatable": true,
       "component": "social.social-item"
     }
   }

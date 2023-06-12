@@ -1,10 +1,15 @@
 {
-  "collectionName": "components_article_trio_item_industry",
+  "collectionName": "trio_item_industry",
   "info": {
     "displayName": "TrioItemIndustry"
   },
   "options": {},
   "attributes": {
+    "industry_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-article.industry-article"
+    },
     "title": {
       "type": "string"
     },

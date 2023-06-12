@@ -81,10 +81,12 @@
     },
     "trailer": {
       "type": "component",
+      "repeatable": true,
       "component": "media.trailers"
     },
     "QaClip": {
       "type": "component",
+      "repeatable": true,
       "component": "media.qa-clip"
     },
     "moodle_id": {

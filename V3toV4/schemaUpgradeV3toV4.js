@@ -1,27 +1,25 @@
 'use strinct'
 
+const {
+  STRAPI3_COLLECTIONS_PATH,
+  STRAPI3_COMPONENTS_PATH,
+
+  STRAPI4_API_PATH, 
+  STRAPI4_COMPONENT_PATH,
+
+  STRAPI3_DATAMODEL_PATH
+} = require('./paths.js')
+
 const path = require('path')
 const fs = require('fs')
 const yaml = require('js-yaml')
-const readline = require('readline')
-
-const STRAPI3_ROOT = path.join(__dirname, '..', 'web2021')
-const STRAPI3_COLLECTIONS_PATH = path.join(STRAPI3_ROOT, 'strapi', 'strapi-development', 'api')
-const STRAPI3_COLLECTIONS = fs.readdirSync(STRAPI3_COLLECTIONS_PATH)
-const STRAPI3_COMPONENTS_PATH = path.join(STRAPI3_ROOT, 'strapi', 'strapi-development', 'components')
-const STRAPI3_COMPONENTS = fs.readdirSync(STRAPI3_COMPONENTS_PATH)
-const STRAPI3_DATAMODEL = path.join(STRAPI3_ROOT, 'ssg', 'docs', 'datamodel.yaml')
-
-const STRAPI4_ROOT = path.join(__dirname, '..', 'web2023')
-const STRAPI4_API_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'api')
-const STRAPI4_COMPONENT_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'components')
 
 // read strapi3 datamodel.yaml, where all relevant collections
 // are listed and hierarchically organized
-const s3datamodel = yaml.load(fs.readFileSync(STRAPI3_DATAMODEL, 'utf8'))
+const s3datamodel = yaml.load(fs.readFileSync(STRAPI3_DATAMODEL_PATH, 'utf8'))
 
 const strapi3Schema = {
-  collections: STRAPI3_COLLECTIONS
+  collections: fs.readdirSync(STRAPI3_COLLECTIONS_PATH)
     .filter((modelName) => fs.statSync(path.join(STRAPI3_COLLECTIONS_PATH, modelName)).isDirectory())
     .filter((modelName) => {
       if (fs.existsSync(path.join(STRAPI3_COLLECTIONS_PATH, modelName, 'models', `${modelName}.settings.json`))) {
@@ -41,7 +39,7 @@ const strapi3Schema = {
       })
       return collectionsArray
     }, []),
-  components: STRAPI3_COMPONENTS
+  components: fs.readdirSync(STRAPI3_COMPONENTS_PATH)
     .filter((componentCategory) => fs.statSync(path.join(STRAPI3_COMPONENTS_PATH, componentCategory)).isDirectory())
     .reduce((componentsGroupArray, componentCategory) => {
       const componentGroupPath = path.join(STRAPI3_COMPONENTS_PATH, componentCategory)
@@ -172,6 +170,10 @@ const convertAttributes = (s3Attributes, name) => {
       required: s3Attribute.required,
     }
 
+    if (s3Attribute.repeatable === true) {
+      s4Attribute.repeatable = true
+    }
+
     if (s3Attribute.target === 'api::file.file'
       || s3Attribute.plugin === 'upload') {
       s4Attribute.allowedTypes = s3Attribute.allowedTypes
@@ -290,12 +292,8 @@ for (s3DislpayName in s3datamodel) {
 fs.writeFileSync(path.join(__dirname, 'strapi3Schema.json'), JSON.stringify(strapi3Schema, null, 4))
 fs.writeFileSync(path.join(__dirname, 'strapi4Schema.json'), JSON.stringify(strapi4Schema, null, 4))
 
-// create some files for testing
-let componentsCreated = 0
+// create components
 strapi4Schema.components.forEach((component) => {
-  if (componentsCreated > 0) {
-    // return
-  }
   const categoryName  = component.componentCategory
   const categoryPath = path.join(STRAPI4_COMPONENT_PATH, categoryName)
   if (!fs.existsSync(categoryPath)) {
@@ -310,28 +308,21 @@ strapi4Schema.components.forEach((component) => {
   }
   // console.log(`create modelFile ${modelFile} for component ${component.displayName}`) 
   fs.writeFileSync(modelFile, JSON.stringify(component.s4, null, 2))
-  componentsCreated++
 })
 
-let collectionsCreated = 0
+// create collections
 strapi4Schema.collections.forEach((collection) => {
-  if (collectionsCreated > 0) {
-    // return
-  }
-  const { kind, modelName: singularName, collectionName, displayName, s3DislpayName, attributes } = collection
-
+  const singularName = collection.modelName
   const s4APIPath = path.join(STRAPI4_API_PATH, singularName)
   const s4APISchemaPath = path.join(s4APIPath, 'content-types', singularName, 'schema.json')
   const s4APIControllerPath = path.join(s4APIPath, 'controllers')
   const s4APIRouterPath = path.join(s4APIPath, 'routes')
   const s4APIServicePath = path.join(s4APIPath, 'services')
-  const s4APIRouterFileContent = `'use strict';`
 
   if (fs.existsSync(s4APIPath)) {
     // return
     fs.rmSync(s4APIPath, { recursive: true })
   }
-  collectionsCreated++
 
   // create api folder
   fs.mkdirSync(s4APIPath, { recursive: true })

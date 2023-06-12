@@ -71,6 +71,7 @@
     },
     "button": {
       "type": "component",
+      "repeatable": true,
       "component": "button.button"
     },
     "public": {

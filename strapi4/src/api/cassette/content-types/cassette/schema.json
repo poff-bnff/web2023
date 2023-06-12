@@ -42,6 +42,7 @@
     },
     "orderedFilms": {
       "type": "component",
+      "repeatable": true,
       "component": "film.ordered-films"
     },
     "stills": {
@@ -62,10 +63,12 @@
     },
     "trailer": {
       "type": "component",
+      "repeatable": true,
       "component": "media.trailers"
     },
     "QaClip": {
       "type": "component",
+      "repeatable": true,
       "component": "media.qa-clip"
     },
     "chat_w_name": {

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_film_film_in_filmographies",
+  "collectionName": "film_in_filmographies",
   "info": {
     "displayName": "filmInFilmography"
   },
@@ -50,6 +50,11 @@
     },
     "trailerUrl": {
       "type": "string"
+    },
+    "person_of_role": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
     }
   }
 }

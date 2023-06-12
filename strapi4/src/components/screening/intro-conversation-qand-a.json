@@ -26,10 +26,12 @@
     },
     "presenter": {
       "type": "component",
+      "repeatable": true,
       "component": "translated.translated-short"
     },
     "guest": {
       "type": "component",
+      "repeatable": true,
       "component": "translated.translated-short"
     },
     "duration": {

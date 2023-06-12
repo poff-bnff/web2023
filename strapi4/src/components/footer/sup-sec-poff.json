@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_sec_poffs",
+  "collectionName": "sup_sec_poffs",
   "info": {
     "displayName": "supSecPoff"
   },
@@ -14,6 +14,7 @@
     },
     "supporter": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.sup-poff"
     }
   }

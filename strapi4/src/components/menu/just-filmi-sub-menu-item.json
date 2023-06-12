@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_just_filmi_sub_menu_items",
+  "collectionName": "just_filmi_sub_menu_items",
   "info": {
     "displayName": "JustFilmiSubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "just_filmi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::just-filmi-article.just-filmi-article"
     },
     "order": {
       "type": "integer"

@@ -66,6 +66,7 @@
     },
     "course_module": {
       "type": "component",
+      "repeatable": true,
       "component": "course.course-module"
     },
     "credentials": {
@@ -79,6 +80,7 @@
     },
     "trailer": {
       "type": "component",
+      "repeatable": true,
       "component": "media.trailers"
     },
     "is_live_event": {

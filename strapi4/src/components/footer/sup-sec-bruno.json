@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_sec_bruno",
+  "collectionName": "sup_sec_bruno",
   "info": {
     "displayName": "SupSecBruno"
   },
@@ -14,6 +14,7 @@
     },
     "supporter": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.sup-bruno"
     }
   }

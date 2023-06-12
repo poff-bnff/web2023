@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_dis_camps",
+  "collectionName": "sup_dis_camps",
   "info": {
     "displayName": "SupDisCamp"
   },
@@ -10,6 +10,11 @@
     },
     "custom_url": {
       "type": "string"
+    },
+    "discamp_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dis-camp-article.dis-camp-article"
     },
     "customUrl": {
       "type": "string"

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_footer_sup_tartuffs",
+  "collectionName": "sup_tartuffs",
   "info": {
     "displayName": "SupTartuff"
   },
@@ -34,6 +34,11 @@
         "images"
       ],
       "multiple": false
+    },
+    "tartuffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
     }
   }
 }

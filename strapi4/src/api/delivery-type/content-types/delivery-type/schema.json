@@ -37,6 +37,7 @@
     },
     "delivery_prices": {
       "type": "component",
+      "repeatable": true,
       "component": "ticketing.delivery-price"
     },
     "days_before": {

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_l2_menu_kumus",
+  "collectionName": "l2_menu_kumus",
   "info": {
     "displayName": "L2MenuKumu"
   },
@@ -39,6 +39,7 @@
     },
     "L3MenuItems": {
       "type": "component",
+      "repeatable": true,
       "component": "menu.l3-menu-kumu"
     }
   }

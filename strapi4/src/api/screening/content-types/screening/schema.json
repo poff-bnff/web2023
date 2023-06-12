@@ -22,6 +22,7 @@
     },
     "introQaConversation": {
       "type": "component",
+      "repeatable": true,
       "component": "screening.intro-conversation-qand-a"
     },
     "durationTotal": {

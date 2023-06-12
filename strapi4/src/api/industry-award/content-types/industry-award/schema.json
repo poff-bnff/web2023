@@ -16,6 +16,7 @@
     },
     "description": {
       "type": "component",
+      "repeatable": true,
       "component": "translated.translated-long"
     },
     "title_et": {

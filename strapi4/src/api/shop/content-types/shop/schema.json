@@ -24,6 +24,7 @@
     },
     "prodCatList": {
       "type": "component",
+      "repeatable": true,
       "component": "ticketing.prod-cat-list"
     },
     "shopRules": {

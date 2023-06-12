@@ -1,10 +1,15 @@
 {
-  "collectionName": "components_article_trio_item_kinoff",
+  "collectionName": "trio_item_kinoff",
   "info": {
     "displayName": "TrioItemKinoff"
   },
   "options": {},
   "attributes": {
+    "kinoffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kinoffi-article.kinoffi-article"
+    },
     "title": {
       "type": "string"
     },

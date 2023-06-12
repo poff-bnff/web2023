@@ -1,10 +1,15 @@
 {
-  "collectionName": "components_article_trio_item_shorts",
+  "collectionName": "trio_item_shorts",
   "info": {
     "displayName": "TrioItemShorts"
   },
   "options": {},
   "attributes": {
+    "shortsi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shortsi-article.shortsi-article"
+    },
     "title": {
       "type": "string"
     },

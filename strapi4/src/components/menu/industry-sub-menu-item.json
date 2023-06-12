@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_menu_industry_sub_menu_items",
+  "collectionName": "industry_sub_menu_items",
   "info": {
     "displayName": "IndustrySubMenuItem"
   },
@@ -8,6 +8,11 @@
     "name": {
       "type": "component",
       "component": "translated.translated-short"
+    },
+    "industry_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-article.industry-article"
     },
     "order": {
       "type": "integer"

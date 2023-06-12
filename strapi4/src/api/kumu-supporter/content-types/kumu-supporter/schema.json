@@ -29,6 +29,7 @@
     },
     "supporters": {
       "type": "component",
+      "repeatable": true,
       "component": "footer.sup-sec-kumu"
     }
   }
