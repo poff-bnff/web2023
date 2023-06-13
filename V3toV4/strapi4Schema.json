@@ -478,6 +478,12 @@
                     },
                     "order": {
                         "type": "integer"
+                    },
+                    "tag_categories": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::tag-category.tag-category",
+                        "inversedBy": "tag_locations"
                     }
                 }
             }
@@ -521,8 +527,9 @@
                     },
                     "tag_locations": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::tag-location.tag-location"
+                        "relation": "manyToMany",
+                        "target": "api::tag-location.tag-location",
+                        "inversedBy": "tag_categories"
                     }
                 }
             }
@@ -608,6 +615,12 @@
                     },
                     "slug_ru": {
                         "type": "uid"
+                    },
+                    "awardings": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::awarding.awarding",
+                        "inversedBy": "award"
                     }
                 }
             }
@@ -633,6 +646,31 @@
                 "attributes": {
                     "date": {
                         "type": "date"
+                    },
+                    "project": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::industry-project.industry-project"
+                    },
+                    "film": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::film.film"
+                    },
+                    "person": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::person.person"
+                    },
+                    "organisation": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::organisation.organisation"
+                    },
+                    "festival_edition": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::festival-edition.festival-edition"
                     },
                     "titlePrivate": {
                         "type": "string"
@@ -737,6 +775,12 @@
                     },
                     "remoteId": {
                         "type": "uid"
+                    },
+                    "person_pros": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::person-pro.person-pro",
+                        "inversedBy": "role_at_films"
                     }
                 }
             }
@@ -1205,10 +1249,17 @@
                     "remoteId": {
                         "type": "uid"
                     },
+                    "projects": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::industry-project.industry-project",
+                        "inversedBy": "editions"
+                    },
                     "awardings": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::awarding.awarding"
+                        "relation": "manyToMany",
+                        "target": "api::awarding.awarding",
+                        "inversedBy": "festival_edition"
                     }
                 }
             }
@@ -1294,8 +1345,9 @@
                     },
                     "awardings": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::awarding.awarding"
+                        "relation": "manyToMany",
+                        "target": "api::awarding.awarding",
+                        "inversedBy": "organisation"
                     },
                     "festival_editions": {
                         "type": "relation",
@@ -3162,6 +3214,11 @@
                     },
                     "work_director": {
                         "type": "string"
+                    },
+                    "person": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::person.person"
                     }
                 }
             }
@@ -3190,6 +3247,11 @@
                     },
                     "description": {
                         "type": "text"
+                    },
+                    "industry_article": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::industry-article.industry-article"
                     }
                 }
             }
@@ -3268,8 +3330,9 @@
                     },
                     "awardings": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::awarding.awarding"
+                        "relation": "manyToMany",
+                        "target": "api::awarding.awarding",
+                        "inversedBy": "person"
                     },
                     "festival_editions": {
                         "type": "relation",
@@ -3485,8 +3548,9 @@
                     },
                     "filmographies": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::filmography.filmography"
+                        "relation": "manyToMany",
+                        "target": "api::filmography.filmography",
+                        "inversedBy": "person"
                     },
                     "origin": {
                         "type": "relation",
@@ -3819,8 +3883,9 @@
                     },
                     "awardings": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::awarding.awarding"
+                        "relation": "manyToMany",
+                        "target": "api::awarding.awarding",
+                        "inversedBy": "film"
                     },
                     "other_festivals": {
                         "type": "relation",
@@ -4234,10 +4299,6 @@
                         "relation": "oneToMany",
                         "target": "api::tag-looking-for.tag-looking-for"
                     },
-                    "actor_info_set": {
-                        "type": "component",
-                        "component": "person.actor-info-set"
-                    },
                     "domains": {
                         "type": "relation",
                         "relation": "oneToMany",
@@ -4378,6 +4439,12 @@
                     },
                     "public": {
                         "type": "boolean"
+                    },
+                    "industry_categories": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::industry-category.industry-category",
+                        "inversedBy": "industry_article"
                     }
                 }
             }
@@ -4619,13 +4686,15 @@
                     },
                     "editions": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::festival-edition.festival-edition"
+                        "relation": "manyToMany",
+                        "target": "api::festival-edition.festival-edition",
+                        "inversedBy": "projects"
                     },
                     "awardings": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::awarding.awarding"
+                        "relation": "manyToMany",
+                        "target": "api::awarding.awarding",
+                        "inversedBy": "project"
                     },
                     "tag_looking_fors": {
                         "type": "relation",
@@ -4670,133 +4739,6 @@
                     },
                     "embedCode": {
                         "type": "string"
-                    }
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "industry-event",
-            "collectionName": "industry_events",
-            "displayName": "Industry_Event",
-            "s3DisplayName": "IndustryEvent",
-            "s4": {
-                "kind": "collectionType",
-                "collectionName": "industry_events",
-                "info": {
-                    "singularName": "industry-event",
-                    "pluralName": "industry-events",
-                    "displayName": "IndustryEvent"
-                },
-                "options": {
-                    "draftAndPublish": false
-                },
-                "pluginOptions": {},
-                "attributes": {
-                    "titlePrivate": {
-                        "type": "string"
-                    },
-                    "startTime": {
-                        "type": "datetime"
-                    },
-                    "title_en": {
-                        "type": "string"
-                    },
-                    "slug_en": {
-                        "type": "uid"
-                    },
-                    "images": {
-                        "type": "media",
-                        "required": false,
-                        "allowedTypes": [
-                            "images"
-                        ],
-                        "multiple": true
-                    },
-                    "location": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::location.location"
-                    },
-                    "lead": {
-                        "type": "text"
-                    },
-                    "description": {
-                        "type": "text"
-                    },
-                    "industry_categories": {
-                        "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::industry-category.industry-category"
-                    },
-                    "project_type": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::project-type.project-type"
-                    },
-                    "publishFrom": {
-                        "type": "datetime"
-                    },
-                    "publishUntil": {
-                        "type": "datetime"
-                    },
-                    "publish": {
-                        "type": "boolean"
-                    },
-                    "channel": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::channel.channel"
-                    },
-                    "durationTime": {
-                        "type": "time"
-                    },
-                    "industry_people": {
-                        "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::industry-person.industry-person"
-                    },
-                    "industry_projects": {
-                        "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::industry-project.industry-project"
-                    },
-                    "videoUrl": {
-                        "type": "string"
-                    },
-                    "isLiveEvent": {
-                        "type": "boolean"
-                    },
-                    "isPublicEvent": {
-                        "type": "boolean"
-                    },
-                    "festival_editions": {
-                        "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::festival-edition.festival-edition"
-                    },
-                    "event_mode": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::event-mode.event-mode"
-                    },
-                    "domains": {
-                        "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::domain.domain"
-                    },
-                    "public": {
-                        "type": "boolean"
-                    },
-                    "posters": {
-                        "type": "media",
-                        "required": false,
-                        "allowedTypes": [
-                            "images",
-                            "files",
-                            "videos"
-                        ],
-                        "multiple": true
                     }
                 }
             }
@@ -4893,6 +4835,11 @@
                     "bookingUrl": {
                         "type": "text"
                     },
+                    "course": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::course.course"
+                    },
                     "endDate": {
                         "type": "datetime"
                     },
@@ -4984,8 +4931,9 @@
                     },
                     "events": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::event.event"
+                        "relation": "manyToMany",
+                        "target": "api::event.event",
+                        "inversedBy": "course"
                     },
                     "volume": {
                         "type": "string"
@@ -5023,6 +4971,12 @@
                     },
                     "moodle_id": {
                         "type": "uid"
+                    },
+                    "product_categories": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::product-category.product-category",
+                        "inversedBy": "courses"
                     }
                 }
             }
@@ -5120,14 +5074,14 @@
             "modelName": "product-category",
             "collectionName": "product_categories",
             "displayName": "Product_Category",
-            "s3DisplayName": "ProductCategory",
+            "s3DisplayName": "Product_Category",
             "s4": {
                 "kind": "collectionType",
                 "collectionName": "product_categories",
                 "info": {
                     "singularName": "product-category",
                     "pluralName": "product-categorys",
-                    "displayName": "ProductCategory"
+                    "displayName": "Product_Category"
                 },
                 "options": {
                     "draftAndPublish": false
@@ -5186,6 +5140,12 @@
                         "type": "component",
                         "component": "media.imgs"
                     },
+                    "user_roles": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::user-role.user-role",
+                        "inversedBy": "product_categories"
+                    },
                     "validity_period_relative": {
                         "type": "component",
                         "component": "time.period-relative"
@@ -5199,16 +5159,33 @@
                     "name_ru": {
                         "type": "string"
                     },
+                    "business_profile": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::business-profile.business-profile"
+                    },
                     "courses": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::course.course"
+                        "relation": "manyToMany",
+                        "target": "api::course.course",
+                        "inversedBy": "product_categories"
+                    },
+                    "course_events": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::course-event.course-event",
+                        "inversedBy": "product_categories"
                     },
                     "transferable": {
                         "type": "boolean"
                     },
                     "free": {
                         "type": "boolean"
+                    },
+                    "product_types": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::product-type.product-type"
                     },
                     "hidden": {
                         "type": "boolean"
@@ -5378,6 +5355,11 @@
                     "public": {
                         "type": "boolean"
                     },
+                    "preconditions": {
+                        "type": "relation",
+                        "relation": "oneToMany",
+                        "target": "api::course-event.course-event"
+                    },
                     "moodle_id": {
                         "type": "uid"
                     },
@@ -5418,8 +5400,9 @@
                     },
                     "product_categories": {
                         "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::product-category.product-category"
+                        "relation": "manyToMany",
+                        "target": "api::product-category.product-category",
+                        "inversedBy": "course_events"
                     },
                     "industry_projects": {
                         "type": "relation",
@@ -9138,11 +9121,11 @@
         {
             "kind": "componentType",
             "componentCategory": "film",
-            "collectionName": "film_in_filmographies",
+            "collectionName": "components_film_film_in_filmographies",
             "displayName": "filmInFilmography",
             "fileName": "film-in-filmography",
             "s4": {
-                "collectionName": "film_in_filmographies",
+                "collectionName": "components_film_film_in_filmographies",
                 "info": {
                     "displayName": "filmInFilmography"
                 },
@@ -9193,68 +9176,6 @@
                     },
                     "trailerUrl": {
                         "type": "string"
-                    },
-                    "roles_of_person": {
-                        "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::role-at-film.role-at-film"
-                    },
-                    "person_of_role": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::person.person"
-                    }
-                }
-            }
-        },
-        {
-            "kind": "componentType",
-            "componentCategory": "person",
-            "collectionName": "actor_info_sets",
-            "displayName": "Actor_Info_Set",
-            "fileName": "actor-info-set",
-            "s4": {
-                "collectionName": "actor_info_sets",
-                "info": {
-                    "displayName": "Actor_Info_Set"
-                },
-                "options": {},
-                "attributes": {
-                    "native_language": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::language.language"
-                    },
-                    "languages": {
-                        "type": "relation",
-                        "relation": "oneToMany",
-                        "target": "api::language.language"
-                    },
-                    "height": {
-                        "type": "integer"
-                    },
-                    "weight": {
-                        "type": "integer"
-                    },
-                    "shoe_size": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::shoe-size.shoe-size"
-                    },
-                    "circum_chest": {
-                        "type": "integer"
-                    },
-                    "circum_waist": {
-                        "type": "integer"
-                    },
-                    "circum_hip": {
-                        "type": "integer"
-                    },
-                    "particular_signs": {
-                        "type": "text"
-                    },
-                    "sport_activities": {
-                        "type": "text"
                     }
                 }
             }
@@ -9262,11 +9183,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "industry_sub_menu_items",
+            "collectionName": "components_menu_industry_sub_menu_items",
             "displayName": "IndustrySubMenuItem",
             "fileName": "industry-sub-menu-item",
             "s4": {
-                "collectionName": "industry_sub_menu_items",
+                "collectionName": "components_menu_industry_sub_menu_items",
                 "info": {
                     "displayName": "IndustrySubMenuItem"
                 },
@@ -9275,11 +9196,6 @@
                     "name": {
                         "type": "component",
                         "component": "translated.translated-short"
-                    },
-                    "industry_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::industry-article.industry-article"
                     },
                     "order": {
                         "type": "integer"
@@ -9492,6 +9408,11 @@
                 "attributes": {
                     "number_of_time_units": {
                         "type": "integer"
+                    },
+                    "time_unit": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::time-units.time-units"
                     }
                 }
             }
@@ -9527,11 +9448,11 @@
         {
             "kind": "componentType",
             "componentCategory": "ticketing",
-            "collectionName": "ticketing_ordered_products",
+            "collectionName": "components_ticketing_ordered_products",
             "displayName": "orderedProduct",
             "fileName": "ordered-products",
             "s4": {
-                "collectionName": "ticketing_ordered_products",
+                "collectionName": "components_ticketing_ordered_products",
                 "info": {
                     "displayName": "orderedProduct"
                 },
@@ -9539,11 +9460,6 @@
                 "attributes": {
                     "order": {
                         "type": "integer"
-                    },
-                    "product_category": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::product-category.product-category"
                     }
                 }
             }
@@ -9623,11 +9539,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "dis_camp_sub_menu_items",
+            "collectionName": "components_menu_dis_camp_sub_menu_items",
             "displayName": "DisCampSubMenuItem",
             "fileName": "dis-camp-sub-menu-item",
             "s4": {
-                "collectionName": "dis_camp_sub_menu_items",
+                "collectionName": "components_menu_dis_camp_sub_menu_items",
                 "info": {
                     "displayName": "DisCampSubMenuItem"
                 },
@@ -9636,11 +9552,6 @@
                     "name": {
                         "type": "component",
                         "component": "translated.translated-short"
-                    },
-                    "discamp_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::dis-camp-article.dis-camp-article"
                     },
                     "order": {
                         "type": "integer"
@@ -9661,11 +9572,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_poffs",
+            "collectionName": "components_footer_sup_sec_poffs",
             "displayName": "supSecPoff",
             "fileName": "sup-sec-poff",
             "s4": {
-                "collectionName": "sup_sec_poffs",
+                "collectionName": "components_footer_sup_sec_poffs",
                 "info": {
                     "displayName": "supSecPoff"
                 },
@@ -9689,11 +9600,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_poffs",
+            "collectionName": "components_footer_sup_poffs",
             "displayName": "supPoff",
             "fileName": "sup-poff",
             "s4": {
-                "collectionName": "sup_poffs",
+                "collectionName": "components_footer_sup_poffs",
                 "info": {
                     "displayName": "supPoff"
                 },
@@ -9740,11 +9651,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_justs",
+            "collectionName": "components_footer_sup_sec_justs",
             "displayName": "supSecJust",
             "fileName": "sup-sec-just",
             "s4": {
-                "collectionName": "sup_sec_justs",
+                "collectionName": "components_footer_sup_sec_justs",
                 "info": {
                     "displayName": "supSecJust"
                 },
@@ -9768,11 +9679,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_justs",
+            "collectionName": "components_footer_sup_justs",
             "displayName": "supJust",
             "fileName": "sup-just",
             "s4": {
-                "collectionName": "sup_justs",
+                "collectionName": "components_footer_sup_justs",
                 "info": {
                     "displayName": "supJust"
                 },
@@ -9819,11 +9730,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_shorts",
+            "collectionName": "components_footer_sup_sec_shorts",
             "displayName": "supSecShorts",
             "fileName": "sup-sec-shorts",
             "s4": {
-                "collectionName": "sup_sec_shorts",
+                "collectionName": "components_footer_sup_sec_shorts",
                 "info": {
                     "displayName": "supSecShorts"
                 },
@@ -9847,11 +9758,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_shorts",
+            "collectionName": "components_footer_sup_shorts",
             "displayName": "supShorts",
             "fileName": "sup-shorts",
             "s4": {
-                "collectionName": "sup_shorts",
+                "collectionName": "components_footer_sup_shorts",
                 "info": {
                     "displayName": "supShorts"
                 },
@@ -9898,11 +9809,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_industry",
+            "collectionName": "components_footer_sup_sec_industry",
             "displayName": "SupSecIndustry",
             "fileName": "sup-sec-industry",
             "s4": {
-                "collectionName": "sup_sec_industry",
+                "collectionName": "components_footer_sup_sec_industry",
                 "info": {
                     "displayName": "SupSecIndustry"
                 },
@@ -9926,11 +9837,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_industry",
+            "collectionName": "components_footer_sup_industry",
             "displayName": "SupIndustry",
             "fileName": "sup-industry",
             "s4": {
-                "collectionName": "sup_industry",
+                "collectionName": "components_footer_sup_industry",
                 "info": {
                     "displayName": "SupIndustry"
                 },
@@ -9971,11 +9882,6 @@
                             "videos"
                         ],
                         "multiple": false
-                    },
-                    "industry_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::industry-article.industry-article"
                     }
                 }
             }
@@ -9983,11 +9889,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_kinoff",
+            "collectionName": "components_footer_sup_sec_kinoff",
             "displayName": "SupSecKinoff",
             "fileName": "sup-sec-kinoff",
             "s4": {
-                "collectionName": "sup_sec_kinoff",
+                "collectionName": "components_footer_sup_sec_kinoff",
                 "info": {
                     "displayName": "SupSecKinoff"
                 },
@@ -10011,11 +9917,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_kinoffs",
+            "collectionName": "components_footer_sup_kinoffs",
             "displayName": "supKinoff",
             "fileName": "sup-kinoff",
             "s4": {
-                "collectionName": "sup_kinoffs",
+                "collectionName": "components_footer_sup_kinoffs",
                 "info": {
                     "displayName": "supKinoff"
                 },
@@ -10062,11 +9968,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_hoffs",
+            "collectionName": "components_footer_sup_sec_hoffs",
             "displayName": "SupSecHoff",
             "fileName": "sup-sec-hoff",
             "s4": {
-                "collectionName": "sup_sec_hoffs",
+                "collectionName": "components_footer_sup_sec_hoffs",
                 "info": {
                     "displayName": "SupSecHoff"
                 },
@@ -10090,11 +9996,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_hoffs",
+            "collectionName": "components_footer_sup_hoffs",
             "displayName": "SupHoff",
             "fileName": "sup-hoff",
             "s4": {
-                "collectionName": "sup_hoffs",
+                "collectionName": "components_footer_sup_hoffs",
                 "info": {
                     "displayName": "SupHoff"
                 },
@@ -10141,11 +10047,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_tartuffs",
+            "collectionName": "components_footer_sup_sec_tartuffs",
             "displayName": "SupSecTartuff",
             "fileName": "sup-sec-tartuff",
             "s4": {
-                "collectionName": "sup_sec_tartuffs",
+                "collectionName": "components_footer_sup_sec_tartuffs",
                 "info": {
                     "displayName": "SupSecTartuff"
                 },
@@ -10169,11 +10075,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_tartuffs",
+            "collectionName": "components_footer_sup_tartuffs",
             "displayName": "SupTartuff",
             "fileName": "sup-tartuff",
             "s4": {
-                "collectionName": "sup_tartuffs",
+                "collectionName": "components_footer_sup_tartuffs",
                 "info": {
                     "displayName": "SupTartuff"
                 },
@@ -10208,11 +10114,6 @@
                             "images"
                         ],
                         "multiple": false
-                    },
-                    "tartuffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::tartuffi-article.tartuffi-article"
                     }
                 }
             }
@@ -10220,11 +10121,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_kumu",
+            "collectionName": "components_footer_sup_sec_kumu",
             "displayName": "SupSecKumu",
             "fileName": "sup-sec-kumu",
             "s4": {
-                "collectionName": "sup_sec_kumu",
+                "collectionName": "components_footer_sup_sec_kumu",
                 "info": {
                     "displayName": "SupSecKumu"
                 },
@@ -10248,11 +10149,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_kumu",
+            "collectionName": "components_footer_sup_kumu",
             "displayName": "SupKumu",
             "fileName": "sup-kumu",
             "s4": {
-                "collectionName": "sup_kumu",
+                "collectionName": "components_footer_sup_kumu",
                 "info": {
                     "displayName": "SupKumu"
                 },
@@ -10299,11 +10200,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_bruno",
+            "collectionName": "components_footer_sup_sec_bruno",
             "displayName": "SupSecBruno",
             "fileName": "sup-sec-bruno",
             "s4": {
-                "collectionName": "sup_sec_bruno",
+                "collectionName": "components_footer_sup_sec_bruno",
                 "info": {
                     "displayName": "SupSecBruno"
                 },
@@ -10327,11 +10228,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_bruno",
+            "collectionName": "components_footer_sup_bruno",
             "displayName": "SupBruno",
             "fileName": "sup-bruno",
             "s4": {
-                "collectionName": "sup_bruno",
+                "collectionName": "components_footer_sup_bruno",
                 "info": {
                     "displayName": "SupBruno"
                 },
@@ -10378,11 +10279,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_filmikools",
+            "collectionName": "components_footer_sup_sec_filmikools",
             "displayName": "SupSecFilmikool",
             "fileName": "sup-sec-filmikool",
             "s4": {
-                "collectionName": "sup_sec_filmikools",
+                "collectionName": "components_footer_sup_sec_filmikools",
                 "info": {
                     "displayName": "SupSecFilmikool"
                 },
@@ -10406,11 +10307,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_filmikools",
+            "collectionName": "components_footer_sup_filmikools",
             "displayName": "SupFilmikool",
             "fileName": "sup-filmikool",
             "s4": {
-                "collectionName": "sup_filmikools",
+                "collectionName": "components_footer_sup_filmikools",
                 "info": {
                     "displayName": "SupFilmikool"
                 },
@@ -10451,11 +10352,6 @@
                             "videos"
                         ],
                         "multiple": false
-                    },
-                    "filmikooli_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::filmikooli-article.filmikooli-article"
                     }
                 }
             }
@@ -10463,11 +10359,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_sec_dis_camps",
+            "collectionName": "components_footer_sup_sec_dis_camps",
             "displayName": "SupSecDisCamp",
             "fileName": "sup-sec-dis-camp",
             "s4": {
-                "collectionName": "sup_sec_dis_camps",
+                "collectionName": "components_footer_sup_sec_dis_camps",
                 "info": {
                     "displayName": "SupSecDisCamp"
                 },
@@ -10491,11 +10387,11 @@
         {
             "kind": "componentType",
             "componentCategory": "footer",
-            "collectionName": "sup_dis_camps",
+            "collectionName": "components_footer_sup_dis_camps",
             "displayName": "SupDisCamp",
             "fileName": "sup-dis-camp",
             "s4": {
-                "collectionName": "sup_dis_camps",
+                "collectionName": "components_footer_sup_dis_camps",
                 "info": {
                     "displayName": "SupDisCamp"
                 },
@@ -10503,14 +10399,6 @@
                 "attributes": {
                     "name": {
                         "type": "string"
-                    },
-                    "custom_url": {
-                        "type": "string"
-                    },
-                    "discamp_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::dis-camp-article.dis-camp-article"
                     },
                     "customUrl": {
                         "type": "string"
@@ -10665,11 +10553,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "menu_items",
+            "collectionName": "components_menu_menu_items",
             "displayName": "poffiSubMenuItem",
             "fileName": "menu-item",
             "s4": {
-                "collectionName": "menu_items",
+                "collectionName": "components_menu_menu_items",
                 "info": {
                     "displayName": "poffiSubMenuItem"
                 },
@@ -10703,11 +10591,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "just_filmi_sub_menu_items",
+            "collectionName": "components_menu_just_filmi_sub_menu_items",
             "displayName": "JustFilmiSubMenuItem",
             "fileName": "just-filmi-sub-menu-item",
             "s4": {
-                "collectionName": "just_filmi_sub_menu_items",
+                "collectionName": "components_menu_just_filmi_sub_menu_items",
                 "info": {
                     "displayName": "JustFilmiSubMenuItem"
                 },
@@ -10717,11 +10605,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "just_filmi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::just-filmi-article.just-filmi-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -10741,11 +10624,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "shortsi_sub_menu_items",
+            "collectionName": "components_menu_shortsi_sub_menu_items",
             "displayName": "ShortsiSubMenuItem",
             "fileName": "shortsi-sub-menu-item",
             "s4": {
-                "collectionName": "shortsi_sub_menu_items",
+                "collectionName": "components_menu_shortsi_sub_menu_items",
                 "info": {
                     "displayName": "ShortsiSubMenuItem"
                 },
@@ -10755,11 +10638,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "shortsi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::shortsi-article.shortsi-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -10779,11 +10657,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "kinoffi_sub_menu_items",
+            "collectionName": "components_menu_kinoffi_sub_menu_items",
             "displayName": "KinoffiSubMenuItem",
             "fileName": "kinoffi-sub-menu-item",
             "s4": {
-                "collectionName": "kinoffi_sub_menu_items",
+                "collectionName": "components_menu_kinoffi_sub_menu_items",
                 "info": {
                     "displayName": "KinoffiSubMenuItem"
                 },
@@ -10793,11 +10671,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "kinoffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::kinoffi-article.kinoffi-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -10817,11 +10690,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "hoffi_sub_menu_items",
+            "collectionName": "components_menu_hoffi_sub_menu_items",
             "displayName": "hoffiSubMenuItem",
             "fileName": "hoffi-sub-menu-item",
             "s4": {
-                "collectionName": "hoffi_sub_menu_items",
+                "collectionName": "components_menu_hoffi_sub_menu_items",
                 "info": {
                     "displayName": "hoffiSubMenuItem"
                 },
@@ -10831,11 +10704,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "hoffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::hof-fi-article.hof-fi-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -10855,11 +10723,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "tartuffi_sub_menu_items",
+            "collectionName": "components_menu_tartuffi_sub_menu_items",
             "displayName": "TartuffiSubMenuItem",
             "fileName": "tartuffi-sub-menu-item",
             "s4": {
-                "collectionName": "tartuffi_sub_menu_items",
+                "collectionName": "components_menu_tartuffi_sub_menu_items",
                 "info": {
                     "displayName": "TartuffiSubMenuItem"
                 },
@@ -10869,11 +10737,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "tartuffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::tartuffi-article.tartuffi-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -10893,11 +10756,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "kumu_sub_menu_items",
+            "collectionName": "components_menu_kumu_sub_menu_items",
             "displayName": "KumuSubMenuItem",
             "fileName": "kumu-sub-menu-item",
             "s4": {
-                "collectionName": "kumu_sub_menu_items",
+                "collectionName": "components_menu_kumu_sub_menu_items",
                 "info": {
                     "displayName": "KumuSubMenuItem"
                 },
@@ -10907,11 +10770,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "kumu_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::kumu-article.kumu-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -10931,11 +10789,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "bruno_sub_menu_items",
+            "collectionName": "components_menu_bruno_sub_menu_items",
             "displayName": "BrunoSubMenuItem",
             "fileName": "bruno-sub-menu-item",
             "s4": {
-                "collectionName": "bruno_sub_menu_items",
+                "collectionName": "components_menu_bruno_sub_menu_items",
                 "info": {
                     "displayName": "BrunoSubMenuItem"
                 },
@@ -10945,11 +10803,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "bruno_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::bruno-article.bruno-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -10969,11 +10822,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "filmikooli_sub_menu_items",
+            "collectionName": "components_menu_filmikooli_sub_menu_items",
             "displayName": "FilmikooliSubMenuItem",
             "fileName": "filmikooli-sub-menu-item",
             "s4": {
-                "collectionName": "filmikooli_sub_menu_items",
+                "collectionName": "components_menu_filmikooli_sub_menu_items",
                 "info": {
                     "displayName": "FilmikooliSubMenuItem"
                 },
@@ -10983,11 +10836,6 @@
                         "type": "component",
                         "component": "translated.translated-short"
                     },
-                    "filmikooli_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::filmikooli-article.filmikooli-article"
-                    },
                     "order": {
                         "type": "integer"
                     },
@@ -11007,11 +10855,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "menu_l2_menu_industries",
+            "collectionName": "components_menu_l2_menu_industries",
             "displayName": "L2MenuIndustry",
             "fileName": "l2-menu-industry",
             "s4": {
-                "collectionName": "menu_l2_menu_industries",
+                "collectionName": "components_menu_l2_menu_industries",
                 "info": {
                     "displayName": "L2MenuIndustry"
                 },
@@ -11025,11 +10873,6 @@
                     },
                     "name_ru": {
                         "type": "string"
-                    },
-                    "industry_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::industry-article.industry-article"
                     },
                     "order": {
                         "type": "integer"
@@ -11060,11 +10903,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "menu_l3_menu_industries",
+            "collectionName": "components_menu_l3_menu_industries",
             "displayName": "L3MenuIndustry",
             "fileName": "l3-menu-industry",
             "s4": {
-                "collectionName": "menu_l3_menu_industries",
+                "collectionName": "components_menu_l3_menu_industries",
                 "info": {
                     "displayName": "L3MenuIndustry"
                 },
@@ -11078,11 +10921,6 @@
                     },
                     "name_ru": {
                         "type": "string"
-                    },
-                    "industry_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::industry-article.industry-article"
                     },
                     "order": {
                         "type": "integer"
@@ -11108,11 +10946,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "l2_menu_kumus",
+            "collectionName": "components_menu_l2_menu_kumus",
             "displayName": "L2MenuKumu",
             "fileName": "l2-menu-kumu",
             "s4": {
-                "collectionName": "l2_menu_kumus",
+                "collectionName": "components_menu_l2_menu_kumus",
                 "info": {
                     "displayName": "L2MenuKumu"
                 },
@@ -11161,11 +10999,11 @@
         {
             "kind": "componentType",
             "componentCategory": "menu",
-            "collectionName": "l3_menu_kumus",
+            "collectionName": "components_menu_l3_menu_kumus",
             "displayName": "L3MenuKumu",
             "fileName": "l3-menu-kumu",
             "s4": {
-                "collectionName": "l3_menu_kumus",
+                "collectionName": "components_menu_l3_menu_kumus",
                 "info": {
                     "displayName": "L3MenuKumu"
                 },
@@ -11243,21 +11081,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_lang_items",
+            "collectionName": "components_article_trio_lang_items",
             "displayName": "TrioItemPoff",
             "fileName": "trio-lang-item",
             "s4": {
-                "collectionName": "trio_lang_items",
+                "collectionName": "components_article_trio_lang_items",
                 "info": {
                     "displayName": "TrioItemPoff"
                 },
                 "options": {},
                 "attributes": {
-                    "poffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::pof-fi-article.pof-fi-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11315,21 +11148,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_just_films",
+            "collectionName": "components_article_trio_item_just_films",
             "displayName": "TrioItemJustFilm",
             "fileName": "trio-item-just-film",
             "s4": {
-                "collectionName": "trio_item_just_films",
+                "collectionName": "components_article_trio_item_just_films",
                 "info": {
                     "displayName": "TrioItemJustFilm"
                 },
                 "options": {},
                 "attributes": {
-                    "just_filmi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::just-filmi-article.just-filmi-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11387,21 +11215,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_shorts",
+            "collectionName": "components_article_trio_item_shorts",
             "displayName": "TrioItemShorts",
             "fileName": "trio-item-shorts",
             "s4": {
-                "collectionName": "trio_item_shorts",
+                "collectionName": "components_article_trio_item_shorts",
                 "info": {
                     "displayName": "TrioItemShorts"
                 },
                 "options": {},
                 "attributes": {
-                    "shortsi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::shortsi-article.shortsi-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11459,21 +11282,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_industry",
+            "collectionName": "components_article_trio_item_industry",
             "displayName": "TrioItemIndustry",
             "fileName": "trio-item-industry",
             "s4": {
-                "collectionName": "trio_item_industry",
+                "collectionName": "components_article_trio_item_industry",
                 "info": {
                     "displayName": "TrioItemIndustry"
                 },
                 "options": {},
                 "attributes": {
-                    "industry_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::industry-article.industry-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11533,21 +11351,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_kinoff",
+            "collectionName": "components_article_trio_item_kinoff",
             "displayName": "TrioItemKinoff",
             "fileName": "trio-item-kinoff",
             "s4": {
-                "collectionName": "trio_item_kinoff",
+                "collectionName": "components_article_trio_item_kinoff",
                 "info": {
                     "displayName": "TrioItemKinoff"
                 },
                 "options": {},
                 "attributes": {
-                    "kinoffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::kinoffi-article.kinoffi-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11607,21 +11420,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_hoffs",
+            "collectionName": "components_article_trio_item_hoffs",
             "displayName": "TrioItemHoff",
             "fileName": "trio-item-hoff",
             "s4": {
-                "collectionName": "trio_item_hoffs",
+                "collectionName": "components_article_trio_item_hoffs",
                 "info": {
                     "displayName": "TrioItemHoff"
                 },
                 "options": {},
                 "attributes": {
-                    "hoffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::hof-fi-article.hof-fi-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11679,21 +11487,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_tartuffs",
+            "collectionName": "components_article_trio_item_tartuffs",
             "displayName": "TrioItemTartuff",
             "fileName": "trio-item-tartuff",
             "s4": {
-                "collectionName": "trio_item_tartuffs",
+                "collectionName": "components_article_trio_item_tartuffs",
                 "info": {
                     "displayName": "TrioItemTartuff"
                 },
                 "options": {},
                 "attributes": {
-                    "tartuffi_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::tartuffi-article.tartuffi-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11751,11 +11554,11 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_kumu",
+            "collectionName": "components_article_trio_item_kumu",
             "displayName": "TrioItemKumu",
             "fileName": "trio-item-kumu",
             "s4": {
-                "collectionName": "trio_item_kumu",
+                "collectionName": "components_article_trio_item_kumu",
                 "info": {
                     "displayName": "TrioItemKumu"
                 },
@@ -11823,21 +11626,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_bruno",
+            "collectionName": "components_article_trio_item_bruno",
             "displayName": "TrioItemBruno",
             "fileName": "trio-item-bruno",
             "s4": {
-                "collectionName": "trio_item_bruno",
+                "collectionName": "components_article_trio_item_bruno",
                 "info": {
                     "displayName": "TrioItemBruno"
                 },
                 "options": {},
                 "attributes": {
-                    "bruno_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::bruno-article.bruno-article"
-                    },
                     "title": {
                         "type": "string"
                     },
@@ -11895,11 +11693,11 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_filmikools",
+            "collectionName": "components_article_trio_item_filmikools",
             "displayName": "TrioItemFilmikool",
             "fileName": "trio-item-filmikool",
             "s4": {
-                "collectionName": "trio_item_filmikools",
+                "collectionName": "components_article_trio_item_filmikools",
                 "info": {
                     "displayName": "TrioItemFilmikool"
                 },
@@ -11923,11 +11721,6 @@
                     },
                     "lead": {
                         "type": "string"
-                    },
-                    "filmikooli_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::filmikooli-article.filmikooli-article"
                     }
                 }
             }
@@ -11969,21 +11762,16 @@
         {
             "kind": "componentType",
             "componentCategory": "article",
-            "collectionName": "trio_item_dis_camps",
+            "collectionName": "components_article_trio_item_dis_camps",
             "displayName": "TrioItemDisCamp",
             "fileName": "trio-item-dis-camp",
             "s4": {
-                "collectionName": "trio_item_dis_camps",
+                "collectionName": "components_article_trio_item_dis_camps",
                 "info": {
                     "displayName": "TrioItemDisCamp"
                 },
                 "options": {},
                 "attributes": {
-                    "discamp_article": {
-                        "type": "relation",
-                        "relation": "oneToOne",
-                        "target": "api::dis-camp-article.dis-camp-article"
-                    },
                     "title": {
                         "type": "string"
                     },

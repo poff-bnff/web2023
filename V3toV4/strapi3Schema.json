@@ -407,25 +407,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -623,7 +637,9 @@
                     "component": "translated.translated-long"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "tags": {
                     "type": "component",
@@ -643,7 +659,9 @@
                     "targetField": "title_ru"
                 },
                 "presenters": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "remoteId": {
                     "type": "uid"
@@ -654,24 +672,28 @@
                     "component": "film.ordered-films"
                 },
                 "stills": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "posters": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "trailer": {
                     "type": "component",
@@ -757,23 +779,6 @@
                 }
             },
             "s3DisplayName": "Cinema"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "colours",
-            "collectionName": "colours",
-            "displayName": "Colour",
-            "attributes": {
-                "name_et": {
-                    "type": "string"
-                },
-                "name_en": {
-                    "type": "string"
-                },
-                "name_ru": {
-                    "type": "string"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -869,7 +874,9 @@
                     "component": "tags.course-tags"
                 },
                 "languages": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "credentials": {
                     "type": "component",
@@ -890,34 +897,43 @@
                     "type": "text"
                 },
                 "events": {
-                    "collection": "event",
-                    "via": "course"
+                    "via": "course",
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "course",
+                    "target": "api::event.event"
                 },
                 "volume": {
                     "type": "string"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "stills": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "posters": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "trailer": {
                     "type": "component",
@@ -934,7 +950,10 @@
                 },
                 "product_categories": {
                     "via": "courses",
-                    "collection": "product-category"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "courses",
+                    "target": "api::product-category.product-category"
                 }
             },
             "s3DisplayName": "Course"
@@ -1012,10 +1031,14 @@
                     "component": "film.credentials-new"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "event_mode": {
                     "type": "relation",
@@ -1028,7 +1051,9 @@
                     "component": "media.trailers"
                 },
                 "industry_categories": {
-                    "collection": "industry-category"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::industry-category.industry-category"
                 },
                 "is_live_event": {
                     "type": "boolean"
@@ -1041,13 +1066,14 @@
                     "default": false
                 },
                 "preconditions": {
-                    "collection": "course-event"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::course-event.course-event"
                 },
                 "moodle_id": {
                     "type": "uid"
                 },
                 "posters": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -1056,10 +1082,12 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -1068,7 +1096,10 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "video_url": {
                     "type": "string"
@@ -1086,12 +1117,17 @@
                     "type": "uid"
                 },
                 "product_categories": {
-                    "collection": "product-category",
                     "via": "course_events",
-                    "dominant": true
+                    "dominant": true,
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "course_events",
+                    "target": "api::product-category.product-category"
                 },
                 "industry_projects": {
-                    "collection": "industry-project"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::industry-project.industry-project"
                 },
                 "publishFrom": {
                     "type": "datetime"
@@ -1110,10 +1146,14 @@
                     "component": "film.presented-by"
                 },
                 "languages": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "event_types": {
-                    "collection": "event-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::event-type.event-type"
                 },
                 "event_access": {
                     "type": "relation",
@@ -1129,7 +1169,9 @@
                     "component": "button.button"
                 },
                 "industry_people": {
-                    "collection": "industry-person"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::industry-person.industry-person"
                 }
             },
             "s3DisplayName": "CourseEvent"
@@ -1264,31 +1306,49 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "discamp_people": {
-                    "collection": "dis-camp-person"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::dis-camp-person.dis-camp-person"
                 },
                 "people": {
-                    "collection": "person"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::person.person"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "publishFrom": {
                     "type": "datetime"
@@ -1340,7 +1400,6 @@
                     "type": "uid"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -1349,7 +1408,10 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "location": {
                     "type": "relation",
@@ -1363,7 +1425,9 @@
                     "type": "richtext"
                 },
                 "discamp_categories": {
-                    "collection": "dis-camp-category"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::dis-camp-category.dis-camp-category"
                 },
                 "project_type": {
                     "type": "relation",
@@ -1388,10 +1452,14 @@
                     "type": "time"
                 },
                 "discamp_people": {
-                    "collection": "dis-camp-person"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::dis-camp-person.dis-camp-person"
                 },
                 "discamp_projects": {
-                    "collection": "dis-camp-project"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::dis-camp-project.dis-camp-project"
                 },
                 "isLiveEvent": {
                     "type": "boolean"
@@ -1532,7 +1600,9 @@
                     "target": "api::file.file"
                 },
                 "role_at_films": {
-                    "collection": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "emailAtDC": {
                     "type": "email"
@@ -1544,7 +1614,6 @@
                     "type": "richtext"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -1553,7 +1622,10 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "clipUrl": {
                     "type": "string"
@@ -1567,7 +1639,9 @@
                     "component": "film.filmography"
                 },
                 "discamp_person_types": {
-                    "collection": "dis-camp-person-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::dis-camp-person-type.dis-camp-person-type"
                 },
                 "lookingFor": {
                     "type": "richtext"
@@ -1576,10 +1650,14 @@
                     "type": "string"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "tag_looking_fors": {
-                    "collection": "tag-looking-for"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-looking-for.tag-looking-for"
                 }
             },
             "s3DisplayName": "DisCampPerson"
@@ -1612,19 +1690,27 @@
                     "type": "string"
                 },
                 "countries": {
-                    "collection": "country"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::country.country"
                 },
                 "languages": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "project_types": {
-                    "collection": "project-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::project-type.project-type"
                 },
                 "logline": {
                     "type": "string"
                 },
                 "project_statuses": {
-                    "collection": "project-status"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::project-status.project-status"
                 },
                 "completionDate": {
                     "type": "datetime"
@@ -1639,7 +1725,9 @@
                     "type": "integer"
                 },
                 "broadcasters": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "plannedPremiere": {
                     "type": "datetime"
@@ -1661,7 +1749,9 @@
                     "type": "integer"
                 },
                 "attached_partners": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "lookingFor": {
                     "type": "richtext"
@@ -1690,7 +1780,6 @@
                     "type": "string"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images",
@@ -1699,7 +1788,10 @@
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "clipUrl": {
                     "type": "string"
@@ -1708,13 +1800,19 @@
                     "type": "uid"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "tag_looking_fors": {
-                    "collection": "tag-looking-for"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-looking-for.tag-looking-for"
                 },
                 "public": {
                     "type": "boolean",
@@ -1995,13 +2093,15 @@
                     "target": "api::file.file"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "clipUrl": {
                     "type": "string"
@@ -2046,7 +2146,9 @@
                     "type": "datetime"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "festival": {
                     "type": "relation",
@@ -2070,11 +2172,17 @@
                 },
                 "projects": {
                     "via": "editions",
-                    "collection": "industry-project"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "editions",
+                    "target": "api::industry-project.industry-project"
                 },
                 "awardings": {
                     "via": "festival_edition",
-                    "collection": "awarding"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "festival_edition",
+                    "target": "api::awarding.awarding"
                 }
             },
             "s3DisplayName": "FestivalEdition"
@@ -2171,7 +2279,9 @@
                     "targetField": "title_ru"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "credentials": {
                     "type": "component",
@@ -2184,16 +2294,22 @@
                     "component": "film.presented-by"
                 },
                 "world_sales": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "subtitles": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "remoteId": {
                     "type": "uid"
                 },
                 "languages": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "order": {
                     "type": "integer"
@@ -2216,34 +2332,43 @@
                     "default": false
                 },
                 "awardings": {
-                    "collection": "awarding",
-                    "via": "film"
+                    "via": "film",
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "film",
+                    "target": "api::awarding.awarding"
                 },
                 "other_festivals": {
-                    "collection": "festival"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival.festival"
                 },
                 "vialog_id": {
                     "type": "string"
                 },
                 "stills": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "posters": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "trailer": {
                     "type": "component",
@@ -2368,22 +2493,34 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "publishUntil": {
                     "type": "datetime"
@@ -2490,10 +2627,14 @@
                     "type": "string"
                 },
                 "tag_film_types": {
-                    "collection": "tag-film-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-film-type.tag-film-type"
                 },
                 "role_at_films": {
-                    "collection": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "actor_role": {
                     "type": "string"
@@ -2547,13 +2688,19 @@
                     "type": "string"
                 },
                 "course_events_et": {
-                    "collection": "course-event"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::course-event.course-event"
                 },
                 "course_events_en": {
-                    "collection": "course-event"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::course-event.course-event"
                 },
                 "course_events_ru": {
-                    "collection": "course-event"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::course-event.course-event"
                 }
             },
             "s3DisplayName": "FrontPageCourses"
@@ -2991,25 +3138,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -3198,35 +3359,60 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "industry_people": {
-                    "collection": "industry-person"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::industry-person.industry-person"
                 },
                 "people": {
-                    "collection": "person"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::person.person"
                 },
                 "public": {
                     "type": "boolean",
                     "default": true
+                },
+                "industry_categories": {
+                    "via": "industry_article",
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "industry_article",
+                    "target": "api::industry-category.industry-category"
                 }
             },
             "s3DisplayName": "IndustryArticle"
@@ -3265,7 +3451,10 @@
                 },
                 "awardings": {
                     "via": "award",
-                    "collection": "awarding"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "award",
+                    "target": "api::awarding.awarding"
                 }
             },
             "s3DisplayName": "Award"
@@ -3281,6 +3470,12 @@
                 },
                 "description": {
                     "type": "richtext"
+                },
+                "industry_article": {
+                    "via": "industry_categories",
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::industry-article.industry-article"
                 }
             },
             "s3DisplayName": "IndustryCategory"
@@ -3315,9 +3510,7 @@
                     "pluginOptions": {}
                 },
                 "location": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::location.location"
+                    "model": "location"
                 },
                 "lead": {
                     "type": "richtext"
@@ -3329,9 +3522,7 @@
                     "collection": "industry-category"
                 },
                 "project_type": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::project-type.project-type"
+                    "model": "project-type"
                 },
                 "publishFrom": {
                     "type": "datetime"
@@ -3343,9 +3534,7 @@
                     "type": "boolean"
                 },
                 "channel": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::channel.channel"
+                    "model": "channel"
                 },
                 "durationTime": {
                     "type": "time"
@@ -3369,9 +3558,7 @@
                     "collection": "festival-edition"
                 },
                 "event_mode": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::event-mode.event-mode"
+                    "model": "event-mode"
                 },
                 "domains": {
                     "collection": "domain"
@@ -3396,8 +3583,7 @@
                     "via": "industry_events",
                     "collection": "product"
                 }
-            },
-            "s3DisplayName": "IndustryEvent"
+            }
         },
         {
             "kind": "collectionType",
@@ -3521,7 +3707,9 @@
                     "target": "api::file.file"
                 },
                 "role_at_films": {
-                    "collection": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "emailAtInd": {
                     "type": "email"
@@ -3533,14 +3721,16 @@
                     "type": "richtext"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "clipUrl": {
                     "type": "string"
@@ -3554,7 +3744,9 @@
                     "component": "film.filmography"
                 },
                 "industry_person_types": {
-                    "collection": "industry-person-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::industry-person-type.industry-person-type"
                 },
                 "lookingFor": {
                     "type": "text"
@@ -3571,18 +3763,19 @@
                     "required": true
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "tag_looking_fors": {
-                    "collection": "tag-looking-for"
-                },
-                "actor_info_set": {
-                    "type": "component",
-                    "repeatable": false,
-                    "component": "person.actor-info-set"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-looking-for.tag-looking-for"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "public": {
                     "type": "boolean",
@@ -3619,19 +3812,27 @@
                     "type": "string"
                 },
                 "countries": {
-                    "collection": "country"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::country.country"
                 },
                 "languages": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "project_types": {
-                    "collection": "project-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::project-type.project-type"
                 },
                 "logline": {
                     "type": "text"
                 },
                 "project_statuses": {
-                    "collection": "project-status"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::project-status.project-status"
                 },
                 "completionDate": {
                     "type": "datetime"
@@ -3646,7 +3847,9 @@
                     "type": "integer"
                 },
                 "broadcasters": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "plannedPremiere": {
                     "type": "date"
@@ -3668,7 +3871,9 @@
                     "type": "decimal"
                 },
                 "attached_partners": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "lookingFor": {
                     "type": "text"
@@ -3697,14 +3902,16 @@
                     "type": "string"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "clipUrl": {
                     "type": "string"
@@ -3715,7 +3922,9 @@
                     "required": true
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "completionYear": {
                     "type": "integer"
@@ -3724,16 +3933,24 @@
                     "type": "string"
                 },
                 "editions": {
-                    "collection": "festival-edition",
                     "via": "projects",
-                    "dominant": true
+                    "dominant": true,
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "projects",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "awardings": {
                     "via": "project",
-                    "collection": "awarding"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "project",
+                    "target": "api::awarding.awarding"
                 },
                 "tag_looking_fors": {
-                    "collection": "tag-looking-for"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-looking-for.tag-looking-for"
                 },
                 "public": {
                     "type": "boolean",
@@ -3885,25 +4102,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -4027,25 +4258,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -4237,25 +4482,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -4642,10 +4901,14 @@
                     "type": "uid"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "profile_img": {
                     "via": "related",
@@ -4659,20 +4922,24 @@
                     "target": "api::file.file"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "public": {
                     "type": "boolean"
                 },
                 "tag_secrets": {
-                    "collection": "tag-secret"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-secret.tag-secret"
                 },
                 "repr_p_name": {
                     "type": "string"
@@ -4690,16 +4957,22 @@
                     "type": "string"
                 },
                 "tag_categories": {
-                    "collection": "tag-category"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-category.tag-category"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "showreel": {
                     "type": "string"
                 },
                 "tag_locations": {
-                    "collection": "tag-location"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-location.tag-location"
                 },
                 "origin": {
                     "type": "relation",
@@ -4730,14 +5003,16 @@
                     "component": "translated.translated-long"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "type": {
                     "type": "enumeration",
@@ -4790,14 +5065,21 @@
                     "type": "string"
                 },
                 "awardings": {
-                    "collection": "awarding",
-                    "via": "organisation"
+                    "via": "organisation",
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "organisation",
+                    "target": "api::awarding.awarding"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "profile_img": {
                     "via": "related",
@@ -4811,7 +5093,9 @@
                     "target": "api::file.file"
                 },
                 "role_at_films": {
-                    "collection": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "addr_coll": {
                     "type": "relation",
@@ -4861,7 +5145,9 @@
                     "target": "api::origin.origin"
                 },
                 "tag_looking_fors": {
-                    "collection": "tag-looking-for"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-looking-for.tag-looking-for"
                 },
                 "looking_for": {
                     "type": "text"
@@ -4964,7 +5250,9 @@
                     "type": "date"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "profession": {
                     "type": "string"
@@ -4989,17 +5277,26 @@
                     "type": "string"
                 },
                 "awardings": {
-                    "collection": "awarding",
-                    "via": "person"
+                    "via": "person",
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "person",
+                    "target": "api::awarding.awarding"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "role_at_films": {
-                    "collection": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "height_cm": {
                     "type": "integer"
@@ -5097,17 +5394,21 @@
                     "target": "api::language.language"
                 },
                 "other_lang": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "showreel": {
                     "type": "string"
@@ -5148,16 +5449,22 @@
                     "type": "string"
                 },
                 "tag_secrets": {
-                    "collection": "tag-secret"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-secret.tag-secret"
                 },
                 "webpage_url": {
                     "type": "string"
                 },
                 "industry_person_types": {
-                    "collection": "industry-person-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::industry-person-type.industry-person-type"
                 },
                 "tag_looking_fors": {
-                    "collection": "tag-looking-for"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-looking-for.tag-looking-for"
                 },
                 "slug_et": {
                     "type": "uid",
@@ -5202,8 +5509,11 @@
                     "type": "richtext"
                 },
                 "filmographies": {
-                    "collection": "filmography",
-                    "via": "person"
+                    "via": "person",
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "person",
+                    "target": "api::filmography.filmography"
                 },
                 "origin": {
                     "type": "relation",
@@ -5211,7 +5521,9 @@
                     "target": "api::origin.origin"
                 },
                 "industry_categories": {
-                    "collection": "industry-category"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::industry-category.industry-category"
                 },
                 "looking_for": {
                     "type": "text"
@@ -5396,25 +5708,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -5654,9 +5980,12 @@
                     "component": "media.imgs"
                 },
                 "user_roles": {
-                    "collection": "user-role",
                     "via": "product_categories",
-                    "dominant": true
+                    "dominant": true,
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "product_categories",
+                    "target": "api::user-role.user-role"
                 },
                 "validity_period_relative": {
                     "type": "component",
@@ -5678,13 +6007,19 @@
                     "target": "api::business-profile.business-profile"
                 },
                 "courses": {
-                    "collection": "course",
                     "via": "product_categories",
-                    "dominant": true
+                    "dominant": true,
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "product_categories",
+                    "target": "api::course.course"
                 },
                 "course_events": {
                     "via": "product_categories",
-                    "collection": "course-event"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "product_categories",
+                    "target": "api::course-event.course-event"
                 },
                 "transferable": {
                     "type": "boolean",
@@ -5695,13 +6030,15 @@
                     "default": false
                 },
                 "product_types": {
-                    "collection": "product-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::product-type.product-type"
                 },
                 "hidden": {
                     "type": "boolean"
                 }
             },
-            "s3DisplayName": "ProductCategory"
+            "s3DisplayName": "Product_Category"
         },
         {
             "kind": "collectionType",
@@ -5732,20 +6069,26 @@
                     "component": "translated.translated-long"
                 },
                 "festival_editions": {
-                    "collection": "festival-edition"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::festival-edition.festival-edition"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 },
                 "order": {
                     "type": "integer"
@@ -5834,7 +6177,10 @@
                 },
                 "person_pros": {
                     "via": "role_at_films",
-                    "collection": "person-pro"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "role_at_films",
+                    "target": "api::person-pro.person-pro"
                 }
             },
             "s3DisplayName": "RoleAtFilm"
@@ -5924,7 +6270,9 @@
                     "target": "api::location.location"
                 },
                 "screening_types": {
-                    "collection": "screening-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::screening-type.screening-type"
                 },
                 "screening_mode": {
                     "type": "relation",
@@ -5932,7 +6280,9 @@
                     "target": "api::event-mode.event-mode"
                 },
                 "subtitles": {
-                    "collection": "language"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::language.language"
                 },
                 "cassette": {
                     "type": "relation",
@@ -6045,7 +6395,9 @@
                     "component": "translated.translated-long"
                 },
                 "domains": {
-                    "collection": "domain"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::domain.domain"
                 }
             },
             "s3DisplayName": "Shop"
@@ -6127,25 +6479,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -6285,22 +6651,34 @@
                     "type": "string"
                 },
                 "films_et": {
-                    "collection": "film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::film.film"
                 },
                 "films_en": {
-                    "collection": "film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::film.film"
                 },
                 "films_ru": {
-                    "collection": "film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::film.film"
                 },
                 "cassettes_et": {
-                    "collection": "cassette"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::cassette.cassette"
                 },
                 "cassettes_en": {
-                    "collection": "cassette"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::cassette.cassette"
                 },
                 "cassettes_ru": {
-                    "collection": "cassette"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::cassette.cassette"
                 }
             },
             "s3DisplayName": "SixFilms"
@@ -6344,77 +6722,6 @@
                 }
             },
             "s3DisplayName": "Stature"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "sub-level2-item",
-            "collectionName": "sub_level2_items",
-            "displayName": "SubLevel2Item",
-            "attributes": {
-                "name_et": {
-                    "type": "string"
-                },
-                "name_en": {
-                    "type": "string"
-                },
-                "name_ru": {
-                    "type": "string"
-                },
-                "order": {
-                    "type": "integer"
-                },
-                "customUrl_et": {
-                    "type": "string"
-                },
-                "customUrl_en": {
-                    "type": "string"
-                },
-                "customUrl_ru": {
-                    "type": "string"
-                },
-                "namePrivate": {
-                    "type": "string"
-                },
-                "publish": {
-                    "type": "boolean"
-                },
-                "bruno_article": {
-                    "model": "bruno-article"
-                },
-                "discamp_article": {
-                    "model": "dis-camp-article"
-                },
-                "filmikooli_article": {
-                    "model": "filmikooli-article"
-                },
-                "hoffi_article": {
-                    "model": "hof-fi-article"
-                },
-                "industry_article": {
-                    "model": "industry-article"
-                },
-                "kinoffi_article": {
-                    "model": "kinoffi-article"
-                },
-                "just_filmi_article": {
-                    "model": "just-filmi-article"
-                },
-                "kumu_article": {
-                    "model": "kumu-article"
-                },
-                "poffi_article": {
-                    "model": "pof-fi-article"
-                },
-                "shortsi_article": {
-                    "model": "shortsi-article"
-                },
-                "tartuffi_article": {
-                    "model": "tartuffi-article"
-                },
-                "domains": {
-                    "collection": "domain"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -6538,9 +6845,12 @@
                     "type": "boolean"
                 },
                 "tag_locations": {
-                    "collection": "tag-location",
                     "via": "tag_categories",
-                    "dominant": true
+                    "dominant": true,
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "tag_categories",
+                    "target": "api::tag-location.tag-location"
                 }
             },
             "s3DisplayName": "TagCategory"
@@ -6619,7 +6929,10 @@
                 },
                 "tag_categories": {
                     "via": "tag_locations",
-                    "collection": "tag-category"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "tag_locations",
+                    "target": "api::tag-category.tag-category"
                 }
             },
             "s3DisplayName": "TagLocation"
@@ -6756,25 +7069,39 @@
                     "component": "button.button"
                 },
                 "article_types": {
-                    "collection": "article-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::article-type.article-type"
                 },
                 "tag_premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "tag_genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "tag_keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "web_authors": {
-                    "collection": "web-author"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::web-author.web-author"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 },
                 "public": {
                     "type": "boolean",
@@ -7689,40 +8016,48 @@
             "options": {},
             "attributes": {
                 "imageDefault": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "image_et": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "image_en": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "image_ru": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "clipUrlDefault": {
                     "type": "string"
@@ -7804,7 +8139,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-bruno",
-            "collectionName": "trio_item_bruno",
+            "collectionName": "components_article_trio_item_bruno",
             "displayName": "TrioItemBruno",
             "options": {},
             "attributes": {
@@ -7838,7 +8173,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-dis-camp",
-            "collectionName": "trio_item_dis_camps",
+            "collectionName": "components_article_trio_item_dis_camps",
             "displayName": "TrioItemDisCamp",
             "options": {},
             "attributes": {
@@ -7875,7 +8210,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-filmikool",
-            "collectionName": "trio_item_filmikools",
+            "collectionName": "components_article_trio_item_filmikools",
             "displayName": "TrioItemFilmikool",
             "options": {},
             "attributes": {
@@ -7911,7 +8246,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-hoff",
-            "collectionName": "trio_item_hoffs",
+            "collectionName": "components_article_trio_item_hoffs",
             "displayName": "TrioItemHoff",
             "options": {},
             "attributes": {
@@ -7945,7 +8280,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-industry",
-            "collectionName": "trio_item_industry",
+            "collectionName": "components_article_trio_item_industry",
             "displayName": "TrioItemIndustry",
             "options": {},
             "attributes": {
@@ -7981,7 +8316,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-just-film",
-            "collectionName": "trio_item_just_films",
+            "collectionName": "components_article_trio_item_just_films",
             "displayName": "TrioItemJustFilm",
             "options": {},
             "attributes": {
@@ -8015,7 +8350,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-kinoff",
-            "collectionName": "trio_item_kinoff",
+            "collectionName": "components_article_trio_item_kinoff",
             "displayName": "TrioItemKinoff",
             "options": {},
             "attributes": {
@@ -8051,7 +8386,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-kumu",
-            "collectionName": "trio_item_kumu",
+            "collectionName": "components_article_trio_item_kumu",
             "displayName": "TrioItemKumu",
             "options": {},
             "attributes": {
@@ -8085,7 +8420,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-shorts",
-            "collectionName": "trio_item_shorts",
+            "collectionName": "components_article_trio_item_shorts",
             "displayName": "TrioItemShorts",
             "options": {},
             "attributes": {
@@ -8119,7 +8454,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-item-tartuff",
-            "collectionName": "trio_item_tartuffs",
+            "collectionName": "components_article_trio_item_tartuffs",
             "displayName": "TrioItemTartuff",
             "options": {},
             "attributes": {
@@ -8215,7 +8550,7 @@
             "kind": "componentType",
             "componentCategory": "article",
             "modelName": "trio-lang-item",
-            "collectionName": "trio_lang_items",
+            "collectionName": "components_article_trio_lang_items",
             "displayName": "TrioItemPoff",
             "options": {},
             "attributes": {
@@ -8526,14 +8861,16 @@
                     "type": "richtext"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "video_url": {
                     "type": "string"
@@ -8710,7 +9047,7 @@
             "kind": "componentType",
             "componentCategory": "film",
             "modelName": "film-in-filmography",
-            "collectionName": "film_in_filmographies",
+            "collectionName": "components_film_film_in_filmographies",
             "displayName": "filmInFilmography",
             "options": {},
             "attributes": {
@@ -8750,20 +9087,24 @@
                     "type": "richtext"
                 },
                 "images": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
                     "required": false,
-                    "pluginOptions": {}
+                    "pluginOptions": {},
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "trailerUrl": {
                     "type": "string"
                 },
                 "roles_of_person": {
-                    "collection": "role-at-film"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::role-at-film.role-at-film"
                 },
                 "person_of_role": {
                     "type": "relation",
@@ -8840,7 +9181,9 @@
                     "component": "translated.translated-short"
                 },
                 "organisations": {
-                    "collection": "organisation"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::organisation.organisation"
                 }
             }
         },
@@ -8942,7 +9285,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-bruno",
-            "collectionName": "sup_bruno",
+            "collectionName": "components_footer_sup_bruno",
             "displayName": "SupBruno",
             "options": {},
             "attributes": {
@@ -8993,14 +9336,11 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-dis-camp",
-            "collectionName": "sup_dis_camps",
+            "collectionName": "components_footer_sup_dis_camps",
             "displayName": "SupDisCamp",
             "options": {},
             "attributes": {
                 "name": {
-                    "type": "string"
-                },
-                "custom_url": {
                     "type": "string"
                 },
                 "discamp_article": {
@@ -9056,7 +9396,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-filmikool",
-            "collectionName": "sup_filmikools",
+            "collectionName": "components_footer_sup_filmikools",
             "displayName": "SupFilmikool",
             "options": {},
             "attributes": {
@@ -9113,7 +9453,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-hoff",
-            "collectionName": "sup_hoffs",
+            "collectionName": "components_footer_sup_hoffs",
             "displayName": "SupHoff",
             "options": {},
             "attributes": {
@@ -9164,7 +9504,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-industry",
-            "collectionName": "sup_industry",
+            "collectionName": "components_footer_sup_industry",
             "displayName": "SupIndustry",
             "options": {},
             "attributes": {
@@ -9221,7 +9561,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-just",
-            "collectionName": "sup_justs",
+            "collectionName": "components_footer_sup_justs",
             "displayName": "supJust",
             "options": {},
             "attributes": {
@@ -9272,7 +9612,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-kinoff",
-            "collectionName": "sup_kinoffs",
+            "collectionName": "components_footer_sup_kinoffs",
             "displayName": "supKinoff",
             "options": {},
             "attributes": {
@@ -9323,7 +9663,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-kumu",
-            "collectionName": "sup_kumu",
+            "collectionName": "components_footer_sup_kumu",
             "displayName": "SupKumu",
             "options": {},
             "attributes": {
@@ -9374,7 +9714,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-poff",
-            "collectionName": "sup_poffs",
+            "collectionName": "components_footer_sup_poffs",
             "displayName": "supPoff",
             "options": {},
             "attributes": {
@@ -9425,7 +9765,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-bruno",
-            "collectionName": "sup_sec_bruno",
+            "collectionName": "components_footer_sup_sec_bruno",
             "displayName": "SupSecBruno",
             "options": {},
             "attributes": {
@@ -9448,7 +9788,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-dis-camp",
-            "collectionName": "sup_sec_dis_camps",
+            "collectionName": "components_footer_sup_sec_dis_camps",
             "displayName": "SupSecDisCamp",
             "options": {},
             "attributes": {
@@ -9471,7 +9811,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-filmikool",
-            "collectionName": "sup_sec_filmikools",
+            "collectionName": "components_footer_sup_sec_filmikools",
             "displayName": "SupSecFilmikool",
             "options": {},
             "attributes": {
@@ -9494,7 +9834,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-hoff",
-            "collectionName": "sup_sec_hoffs",
+            "collectionName": "components_footer_sup_sec_hoffs",
             "displayName": "SupSecHoff",
             "options": {},
             "attributes": {
@@ -9517,7 +9857,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-industry",
-            "collectionName": "sup_sec_industry",
+            "collectionName": "components_footer_sup_sec_industry",
             "displayName": "SupSecIndustry",
             "options": {},
             "attributes": {
@@ -9540,7 +9880,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-just",
-            "collectionName": "sup_sec_justs",
+            "collectionName": "components_footer_sup_sec_justs",
             "displayName": "supSecJust",
             "options": {},
             "attributes": {
@@ -9563,7 +9903,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-kinoff",
-            "collectionName": "sup_sec_kinoff",
+            "collectionName": "components_footer_sup_sec_kinoff",
             "displayName": "SupSecKinoff",
             "options": {},
             "attributes": {
@@ -9586,7 +9926,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-kumu",
-            "collectionName": "sup_sec_kumu",
+            "collectionName": "components_footer_sup_sec_kumu",
             "displayName": "SupSecKumu",
             "options": {},
             "attributes": {
@@ -9609,7 +9949,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-poff",
-            "collectionName": "sup_sec_poffs",
+            "collectionName": "components_footer_sup_sec_poffs",
             "displayName": "supSecPoff",
             "options": {},
             "attributes": {
@@ -9632,7 +9972,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-shorts",
-            "collectionName": "sup_sec_shorts",
+            "collectionName": "components_footer_sup_sec_shorts",
             "displayName": "supSecShorts",
             "options": {},
             "attributes": {
@@ -9655,7 +9995,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-sec-tartuff",
-            "collectionName": "sup_sec_tartuffs",
+            "collectionName": "components_footer_sup_sec_tartuffs",
             "displayName": "SupSecTartuff",
             "options": {},
             "attributes": {
@@ -9678,7 +10018,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-shorts",
-            "collectionName": "sup_shorts",
+            "collectionName": "components_footer_sup_shorts",
             "displayName": "supShorts",
             "options": {},
             "attributes": {
@@ -9729,7 +10069,7 @@
             "kind": "componentType",
             "componentCategory": "footer",
             "modelName": "sup-tartuff",
-            "collectionName": "sup_tartuffs",
+            "collectionName": "components_footer_sup_tartuffs",
             "displayName": "SupTartuff",
             "options": {},
             "attributes": {
@@ -10127,7 +10467,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "bruno-sub-menu-item",
-            "collectionName": "bruno_sub_menu_items",
+            "collectionName": "components_menu_bruno_sub_menu_items",
             "displayName": "BrunoSubMenuItem",
             "options": {},
             "attributes": {
@@ -10155,9 +10495,6 @@
                 "publish": {
                     "type": "boolean",
                     "default": true
-                },
-                "sub_level2_items": {
-                    "collection": "sub-level2-item"
                 }
             }
         },
@@ -10165,7 +10502,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "dis-camp-sub-menu-item",
-            "collectionName": "dis_camp_sub_menu_items",
+            "collectionName": "components_menu_dis_camp_sub_menu_items",
             "displayName": "DisCampSubMenuItem",
             "options": {},
             "attributes": {
@@ -10200,7 +10537,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "filmikooli-sub-menu-item",
-            "collectionName": "filmikooli_sub_menu_items",
+            "collectionName": "components_menu_filmikooli_sub_menu_items",
             "displayName": "FilmikooliSubMenuItem",
             "options": {},
             "attributes": {
@@ -10235,7 +10572,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "hoffi-sub-menu-item",
-            "collectionName": "hoffi_sub_menu_items",
+            "collectionName": "components_menu_hoffi_sub_menu_items",
             "displayName": "hoffiSubMenuItem",
             "options": {},
             "attributes": {
@@ -10270,7 +10607,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "industry-sub-menu-item",
-            "collectionName": "industry_sub_menu_items",
+            "collectionName": "components_menu_industry_sub_menu_items",
             "displayName": "IndustrySubMenuItem",
             "options": {},
             "attributes": {
@@ -10305,7 +10642,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "just-filmi-sub-menu-item",
-            "collectionName": "just_filmi_sub_menu_items",
+            "collectionName": "components_menu_just_filmi_sub_menu_items",
             "displayName": "JustFilmiSubMenuItem",
             "options": {},
             "attributes": {
@@ -10340,7 +10677,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "kinoffi-sub-menu-item",
-            "collectionName": "kinoffi_sub_menu_items",
+            "collectionName": "components_menu_kinoffi_sub_menu_items",
             "displayName": "KinoffiSubMenuItem",
             "options": {},
             "attributes": {
@@ -10375,7 +10712,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "kumu-sub-menu-item",
-            "collectionName": "kumu_sub_menu_items",
+            "collectionName": "components_menu_kumu_sub_menu_items",
             "displayName": "KumuSubMenuItem",
             "options": {},
             "attributes": {
@@ -10410,7 +10747,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "l2-menu-industry",
-            "collectionName": "menu_l2_menu_industries",
+            "collectionName": "components_menu_l2_menu_industries",
             "displayName": "L2MenuIndustry",
             "options": {},
             "attributes": {
@@ -10457,7 +10794,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "l2-menu-item",
-            "collectionName": "l2_menu_items",
+            "collectionName": "components_menu_l2_menu_items",
             "displayName": "L2MenuItem",
             "options": {},
             "attributes": {
@@ -10503,7 +10840,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "l2-menu-kumu",
-            "collectionName": "l2_menu_kumus",
+            "collectionName": "components_menu_l2_menu_kumus",
             "displayName": "L2MenuKumu",
             "options": {},
             "attributes": {
@@ -10550,7 +10887,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "l3-menu-industry",
-            "collectionName": "menu_l3_menu_industries",
+            "collectionName": "components_menu_l3_menu_industries",
             "displayName": "L3MenuIndustry",
             "options": {},
             "attributes": {
@@ -10592,7 +10929,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "l3-menu-item",
-            "collectionName": "l3_menu_items",
+            "collectionName": "components_menu_l3_menu_items",
             "displayName": "L3MenuItem",
             "options": {},
             "attributes": {
@@ -10633,7 +10970,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "l3-menu-kumu",
-            "collectionName": "l3_menu_kumus",
+            "collectionName": "components_menu_l3_menu_kumus",
             "displayName": "L3MenuKumu",
             "options": {},
             "attributes": {
@@ -10675,7 +11012,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "menu-item",
-            "collectionName": "menu_items",
+            "collectionName": "components_menu_menu_items",
             "displayName": "poffiSubMenuItem",
             "options": {},
             "attributes": {
@@ -10710,7 +11047,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "shortsi-sub-menu-item",
-            "collectionName": "shortsi_sub_menu_items",
+            "collectionName": "components_menu_shortsi_sub_menu_items",
             "displayName": "ShortsiSubMenuItem",
             "options": {},
             "attributes": {
@@ -10745,7 +11082,7 @@
             "kind": "componentType",
             "componentCategory": "menu",
             "modelName": "tartuffi-sub-menu-item",
-            "collectionName": "tartuffi_sub_menu_items",
+            "collectionName": "components_menu_tartuffi_sub_menu_items",
             "displayName": "TartuffiSubMenuItem",
             "options": {},
             "attributes": {
@@ -10773,64 +11110,6 @@
                 "publish": {
                     "type": "boolean",
                     "default": true
-                }
-            }
-        },
-        {
-            "kind": "componentType",
-            "componentCategory": "person",
-            "modelName": "actor-info-set",
-            "collectionName": "actor_info_sets",
-            "displayName": "Actor_Info_Set",
-            "options": {},
-            "attributes": {
-                "native_language": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::language.language"
-                },
-                "languages": {
-                    "collection": "language"
-                },
-                "height": {
-                    "type": "integer",
-                    "min": 50,
-                    "max": 240
-                },
-                "weight": {
-                    "type": "integer",
-                    "max": 500,
-                    "min": 20
-                },
-                "eye_colour": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::colours.colours"
-                },
-                "hair_colour": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::colours.colours"
-                },
-                "shoe_size": {
-                    "type": "relation",
-                    "relation": "oneToOne",
-                    "target": "api::shoe-size.shoe-size"
-                },
-                "circum_chest": {
-                    "type": "integer"
-                },
-                "circum_waist": {
-                    "type": "integer"
-                },
-                "circum_hip": {
-                    "type": "integer"
-                },
-                "particular_signs": {
-                    "type": "text"
-                },
-                "sport_activities": {
-                    "type": "text"
                 }
             }
         },
@@ -10961,7 +11240,9 @@
             "options": {},
             "attributes": {
                 "keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 }
             }
         },
@@ -10974,22 +11255,34 @@
             "options": {},
             "attributes": {
                 "premiere_types": {
-                    "collection": "tag-premiere-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-premiere-type.tag-premiere-type"
                 },
                 "genres": {
-                    "collection": "tag-genre"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-genre.tag-genre"
                 },
                 "keywords": {
-                    "collection": "tag-keyword"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-keyword.tag-keyword"
                 },
                 "programmes": {
-                    "collection": "programme"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::programme.programme"
                 },
                 "film_types": {
-                    "collection": "tag-film-type"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-film-type.tag-film-type"
                 },
                 "tag_secrets": {
-                    "collection": "tag-secret"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::tag-secret.tag-secret"
                 },
                 "age_restriction": {
                     "type": "relation",
@@ -10997,7 +11290,9 @@
                     "target": "api::age-restriction.age-restriction"
                 },
                 "trigger_warnings": {
-                    "collection": "trigger-warning"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::trigger-warning.trigger-warning"
                 }
             }
         },
@@ -11076,13 +11371,15 @@
                     "target": "api::person.person"
                 },
                 "pictureAtTeam": {
-                    "collection": "file",
                     "via": "related",
                     "allowedTypes": [
                         "images"
                     ],
                     "plugin": "upload",
-                    "required": false
+                    "required": false,
+                    "type": "relation",
+                    "inversedBy": "related",
+                    "target": "api::file.file"
                 },
                 "roleAtTeam_et": {
                     "type": "string"
@@ -11148,7 +11445,9 @@
                     "type": "string"
                 },
                 "countries": {
-                    "collection": "country"
+                    "type": "relation",
+                    "relation": "oneToMany",
+                    "target": "api::country.country"
                 },
                 "price": {
                     "type": "decimal"
@@ -11171,7 +11470,7 @@
             "kind": "componentType",
             "componentCategory": "ticketing",
             "modelName": "ordered-products",
-            "collectionName": "ticketing_ordered_products",
+            "collectionName": "components_ticketing_ordered_products",
             "displayName": "orderedProduct",
             "options": {},
             "attributes": {

@@ -4,7 +4,7 @@ const {
   STRAPI3_COLLECTIONS_PATH,
   STRAPI3_COMPONENTS_PATH,
 
-  STRAPI4_API_PATH, 
+  STRAPI4_API_PATH,
   STRAPI4_COMPONENT_PATH,
 
   STRAPI3_DATAMODEL_PATH
@@ -64,7 +64,7 @@ const strapi3Schema = {
     }, [])
 }
 
-const strapi4Schema = {
+const S_4_SCHEMA = {
   collections: [],
   components: []
 }
@@ -101,7 +101,7 @@ const addCollectionToS4Schema = (s3Collection) => {
       attributes: convertAttributes(s3Collection.attributes, s3Collection.modelName)
     }
   }
-  strapi4Schema.collections.push(s4Collection)
+  S_4_SCHEMA.collections.push(s4Collection)
   // console.log(`writeS4Collection: ${JSON.stringify(s3Collection, null, 2)}`)
 }
 
@@ -112,14 +112,14 @@ const addComponentsToS4Schema = (componentNames) => {
     const [componentCategory, modelFileName] = componentName.split('.')
     // console.log(`addComponentToS4Schema: ${componentName}=${componentCategory}+${modelFileName}`)
     // if component already in s4Schema, skip
-    if (strapi4Schema.components
+    if (S_4_SCHEMA.components
       .find((component) => {
         if (!component.fileName) {
-          console.log(`WARNING: component ${componentName} has no fileName`)  
+          console.log(`WARNING: component ${componentName} has no fileName`)
           return false
         }
         if (!component.componentCategory) {
-          console.log(`WARNING: component ${componentName} has no componentCategory`)  
+          console.log(`WARNING: component ${componentName} has no componentCategory`)
           return false
         }
         if (component.fileName !== modelFileName) {
@@ -153,6 +153,13 @@ const addComponentsToS4Schema = (componentNames) => {
   return addedComponentNames
 }
 
+const isCollectionInV4Schema = (modelName) => {
+  return S_4_SCHEMA.collections
+    .find((collection) => {
+      return collection.modelName === modelName
+    })
+}
+
 const convertAttributes = (s3Attributes, name) => {
   const s4Attributes = {}
   Object.keys(s3Attributes).forEach((attributeName) => {
@@ -163,6 +170,25 @@ const convertAttributes = (s3Attributes, name) => {
         s3Attribute.relation = 'oneToOne'
         s3Attribute.target = `api::${s3Attribute.model}.${s3Attribute.model}`
         delete s3Attribute.model
+      }
+      // if s3attribute has collection property:
+      // if s3attribute has via property, it is a manyToMany relation
+      // if s3attribute has no via property, it is a oneToMany relation
+      else if (s3Attribute.collection) { // 
+        // console.log(`I: ${name} has attribute ${attributeName} with oneToMany collection ${s3Attribute.collection}`)
+        if (!isCollectionInV4Schema(s3Attribute.collection)) {
+          console.log(`WARNING1: ${name} has attribute ${attributeName} with target ${s3Attribute.collection} which is not in s4Schema`)
+          // return
+        }
+        s3Attribute.type = 'relation'
+        if (s3Attribute.via) {
+          s3Attribute.relation = 'manyToMany'
+          s3Attribute.inversedBy = s3Attribute.via
+        } else {
+        s3Attribute.relation = 'oneToMany'
+        }
+        s3Attribute.target = `api::${s3Attribute.collection}.${s3Attribute.collection}`
+        delete s3Attribute.collection
       }
     }
     const s4Attribute = {
@@ -185,38 +211,22 @@ const convertAttributes = (s3Attributes, name) => {
     else if (s3Attribute.type === 'relation') {
       // if target is not in s3Schema, skip the attribute
       const targetName = s3Attribute.target.split('.')[1]
-      if (!strapi4Schema.collections.find((collection) => collection.modelName === targetName)) {
-        console.log(`WARNING: ${name} has attribute ${attributeName} with target ${s3Attribute.target} which is not in s4Schema`)
+      if (!isCollectionInV4Schema(targetName)) {
+        console.log(`WARNING2: ${name} has attribute ${attributeName} with target ${s3Attribute.target} which is not in s4Schema`)
         // Object.keys(s4Attribute).forEach((key) => delete s4Attribute[key])
-        return
+        // return
       }
       const maxNameLength = 45
       if (name.length + attributeName.length > maxNameLength) {
         console.log(`WARNING: ${name} has attribute ${attributeName} with name length ${name.length + attributeName.length} > ${maxNameLength}`)
         return
       }
-  
+
       s4Attribute.relation = s3Attribute.relation
       s4Attribute.target = s3Attribute.target
-    }
-    // if s3attribute has collection property, it is a oneToMany relation
-    else if (s3Attribute.collection) { // oneToMany
-      console.log(`I: ${name} has attribute ${attributeName} with oneToMany collection ${s3Attribute.collection}`)
-      const targetName = s3Attribute.collection
-      if (!strapi4Schema.collections.find((collection) => collection.modelName === targetName)) {
-        console.log(`WARNING: ${name} has attribute ${attributeName} with collection ${s3Attribute.collection} which is not in s4Schema`)
-        // Object.keys(s4Attribute).forEach((key) => delete s4Attribute[key])
-        return
+      if (s3Attribute.inversedBy) {
+        s4Attribute.inversedBy = s3Attribute.inversedBy
       }
-      const maxNameLength = 45
-      if (name.length + attributeName.length > maxNameLength) {
-        console.log(`WARNING: ${name} has attribute ${attributeName} with name length ${name.length + attributeName.length} > ${maxNameLength}`)
-        return
-      }
-      s4Attribute.type = 'relation'
-      s4Attribute.relation = 'oneToMany'
-      s4Attribute.target = `api::${s3Attribute.collection}.${s3Attribute.collection}`
-      delete s4Attribute.collection
     }
 
     if (s3Attribute.type === 'component') {
@@ -261,7 +271,7 @@ const addComponentToS4Schema = (s3Component) => {
       attributes: convertAttributes(s3Component.attributes, s3Component.collectionName)
     }
   }
-  strapi4Schema.components.push(s4Component)
+  S_4_SCHEMA.components.push(s4Component)
   const subComponentNames = getComponentNamesInAttributes(s3Component.attributes)
   const addedSubcomponentNames = addComponentsToS4Schema(subComponentNames)
   if (addedSubcomponentNames.length > 0) {
@@ -309,14 +319,14 @@ for (s3DislpayName in s3datamodel) {
 }
 
 fs.writeFileSync(path.join(__dirname, 'strapi3Schema.json'), JSON.stringify(strapi3Schema, null, 4))
-fs.writeFileSync(path.join(__dirname, 'strapi4Schema.json'), JSON.stringify(strapi4Schema, null, 4))
+fs.writeFileSync(path.join(__dirname, 'strapi4Schema.json'), JSON.stringify(S_4_SCHEMA, null, 4))
 
 // create components
-strapi4Schema.components.forEach((component) => {
-  const categoryName  = component.componentCategory
+S_4_SCHEMA.components.forEach((component) => {
+  const categoryName = component.componentCategory
   const categoryPath = path.join(STRAPI4_COMPONENT_PATH, categoryName)
   if (!fs.existsSync(categoryPath)) {
-    fs.mkdirSync(path.join(STRAPI4_COMPONENT_PATH, categoryName), { recursive: true }) 
+    fs.mkdirSync(path.join(STRAPI4_COMPONENT_PATH, categoryName), { recursive: true })
   }
 
   const modelFileName = component.fileName
@@ -330,7 +340,7 @@ strapi4Schema.components.forEach((component) => {
 })
 
 // create collections
-strapi4Schema.collections.forEach((collection) => {
+S_4_SCHEMA.collections.forEach((collection) => {
   const singularName = collection.modelName
   const s4APIPath = path.join(STRAPI4_API_PATH, singularName)
   const s4APISchemaPath = path.join(s4APIPath, 'content-types', singularName, 'schema.json')
