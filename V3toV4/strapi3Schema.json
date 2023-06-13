@@ -5533,87 +5533,6 @@
         },
         {
             "kind": "collectionType",
-            "modelName": "person-pro",
-            "collectionName": "person_pros",
-            "displayName": "PersonPro",
-            "attributes": {
-                "firstName": {
-                    "type": "string"
-                },
-                "lastName": {
-                    "type": "string"
-                },
-                "firstNameLastName": {
-                    "type": "string"
-                },
-                "dateOfBirth": {
-                    "type": "date"
-                },
-                "gender": {
-                    "model": "gender"
-                },
-                "picture": {
-                    "model": "file",
-                    "via": "related",
-                    "allowedTypes": [
-                        "images"
-                    ],
-                    "plugin": "upload",
-                    "required": false,
-                    "pluginOptions": {}
-                },
-                "countries": {
-                    "collection": "country"
-                },
-                "organisations": {
-                    "collection": "organisation"
-                },
-                "festival_editions": {
-                    "collection": "festival-edition"
-                },
-                "domains": {
-                    "collection": "domain"
-                },
-                "eMail": {
-                    "type": "email"
-                },
-                "eMailEventival": {
-                    "type": "email"
-                },
-                "phoneNr": {
-                    "type": "string"
-                },
-                "biography": {
-                    "type": "component",
-                    "repeatable": false,
-                    "component": "translated.translated-long"
-                },
-                "awardings": {
-                    "type": "component",
-                    "repeatable": true,
-                    "component": "creativegate.awarding"
-                },
-                "imdb_url": {
-                    "type": "string"
-                },
-                "efis_url": {
-                    "type": "string"
-                },
-                "webpage_url": {
-                    "type": "string"
-                },
-                "profession": {
-                    "type": "string"
-                },
-                "role_at_films": {
-                    "collection": "role-at-film",
-                    "via": "person_pros",
-                    "dominant": true
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
             "modelName": "pitch-of-voice",
             "collectionName": "pitch_of_voices",
             "displayName": "PitchOfVoice",
@@ -6174,13 +6093,6 @@
                 },
                 "remoteId": {
                     "type": "uid"
-                },
-                "person_pros": {
-                    "via": "role_at_films",
-                    "type": "relation",
-                    "relation": "manyToMany",
-                    "inversedBy": "role_at_films",
-                    "target": "api::person-pro.person-pro"
                 }
             },
             "s3DisplayName": "RoleAtFilm"

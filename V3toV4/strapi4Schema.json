@@ -775,12 +775,6 @@
                     },
                     "remoteId": {
                         "type": "uid"
-                    },
-                    "person_pros": {
-                        "type": "relation",
-                        "relation": "manyToMany",
-                        "target": "api::person-pro.person-pro",
-                        "inversedBy": "role_at_films"
                     }
                 }
             }
