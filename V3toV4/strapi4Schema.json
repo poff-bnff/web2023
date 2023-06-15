@@ -2,6 +2,164 @@
     "collections": [
         {
             "kind": "collectionType",
+            "modelName": "product-type",
+            "collectionName": "product_types",
+            "displayName": "ProductType",
+            "s3DisplayName": "ProductType",
+            "s4": {
+                "kind": "collectionType",
+                "collectionName": "product_types",
+                "info": {
+                    "singularName": "product-type",
+                    "pluralName": "product-types",
+                    "displayName": "ProductType"
+                },
+                "options": {
+                    "draftAndPublish": false
+                },
+                "pluginOptions": {},
+                "attributes": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "text"
+                    }
+                }
+            }
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "user-role",
+            "collectionName": "user_roles",
+            "displayName": "UserRole",
+            "s3DisplayName": "UserRole",
+            "s4": {
+                "kind": "collectionType",
+                "collectionName": "user_roles",
+                "info": {
+                    "singularName": "user-role",
+                    "pluralName": "user-roles",
+                    "displayName": "UserRole"
+                },
+                "options": {
+                    "draftAndPublish": false
+                },
+                "pluginOptions": {},
+                "attributes": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "user_right": {
+                        "type": "component",
+                        "repeatable": true,
+                        "component": "user.user-right"
+                    },
+                    "valid_from": {
+                        "type": "datetime"
+                    },
+                    "valid_to": {
+                        "type": "datetime"
+                    },
+                    "product_categories": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::product-category.product-category",
+                        "mappedBy": "user_roles"
+                    },
+                    "users": {
+                        "type": "relation",
+                        "relation": "manyToMany",
+                        "target": "api::user.user",
+                        "inversedBy": "user_roles"
+                    }
+                }
+            }
+        },
+        {
+            "kind": "collectionType",
+            "modelName": "business-profile",
+            "collectionName": "business_profiles",
+            "displayName": "BusinessProfile",
+            "s3DisplayName": "BusinessProfile",
+            "s4": {
+                "kind": "collectionType",
+                "collectionName": "business_profiles",
+                "info": {
+                    "singularName": "business-profile",
+                    "pluralName": "business-profiles",
+                    "displayName": "BusinessProfile"
+                },
+                "options": {
+                    "draftAndPublish": false
+                },
+                "pluginOptions": {},
+                "attributes": {
+                    "user": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::user.user"
+                    },
+                    "organisation": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::organisation.organisation"
+                    },
+                    "reg_code": {
+                        "type": "string"
+                    },
+                    "vat_code": {
+                        "type": "string"
+                    },
+                    "iban": {
+                        "type": "string"
+                    },
+                    "maksekeskus_id": {
+                        "type": "string"
+                    },
+                    "maksekeskus_secret": {
+                        "type": "string"
+                    },
+                    "address": {
+                        "type": "component",
+                        "component": "location.address"
+                    },
+                    "vat_percentage": {
+                        "type": "integer"
+                    },
+                    "bank_name": {
+                        "type": "string"
+                    },
+                    "bank_code": {
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "type": "string"
+                    },
+                    "firstNameLastName": {
+                        "type": "string"
+                    },
+                    "gender": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::gender.gender"
+                    },
+                    "birthdate": {
+                        "type": "date"
+                    },
+                    "terms_p": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::pof-fi-article.pof-fi-article"
+                    }
+                }
+            }
+        },
+        {
+            "kind": "collectionType",
             "modelName": "web-permission",
             "collectionName": "web_permissions",
             "displayName": "webPermission",
@@ -483,7 +641,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::tag-category.tag-category",
-                        "inversedBy": "tag_locations"
+                        "mappedBy": "tag_locations"
                     }
                 }
             }
@@ -499,7 +657,7 @@
                 "collectionName": "tag_categories",
                 "info": {
                     "singularName": "tag-category",
-                    "pluralName": "tag-categorys",
+                    "pluralName": "tag-categories",
                     "displayName": "TagCategory"
                 },
                 "options": {
@@ -620,7 +778,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::awarding.awarding",
-                        "inversedBy": "award"
+                        "mappedBy": "award"
                     }
                 }
             }
@@ -790,7 +948,7 @@
                 "collectionName": "countries",
                 "info": {
                     "singularName": "country",
-                    "pluralName": "countrys",
+                    "pluralName": "countries",
                     "displayName": "Country"
                 },
                 "options": {
@@ -958,7 +1116,7 @@
                 "collectionName": "counties",
                 "info": {
                     "singularName": "county",
-                    "pluralName": "countys",
+                    "pluralName": "counties",
                     "displayName": "County"
                 },
                 "options": {
@@ -1247,13 +1405,13 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::industry-project.industry-project",
-                        "inversedBy": "editions"
+                        "mappedBy": "editions"
                     },
                     "awardings": {
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::awarding.awarding",
-                        "inversedBy": "festival_edition"
+                        "mappedBy": "festival_edition"
                     }
                 }
             }
@@ -1341,7 +1499,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::awarding.awarding",
-                        "inversedBy": "organisation"
+                        "mappedBy": "organisation"
                     },
                     "festival_editions": {
                         "type": "relation",
@@ -3156,7 +3314,7 @@
                 "collectionName": "filmographies",
                 "info": {
                     "singularName": "filmography",
-                    "pluralName": "filmographys",
+                    "pluralName": "filmographies",
                     "displayName": "Filmography"
                 },
                 "options": {
@@ -3228,7 +3386,7 @@
                 "collectionName": "industry_categories",
                 "info": {
                     "singularName": "industry-category",
-                    "pluralName": "industry-categorys",
+                    "pluralName": "industry-categories",
                     "displayName": "IndustryCategory"
                 },
                 "options": {
@@ -3326,7 +3484,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::awarding.awarding",
-                        "inversedBy": "person"
+                        "mappedBy": "person"
                     },
                     "festival_editions": {
                         "type": "relation",
@@ -3544,7 +3702,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::filmography.filmography",
-                        "inversedBy": "person"
+                        "mappedBy": "person"
                     },
                     "origin": {
                         "type": "relation",
@@ -3879,7 +4037,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::awarding.awarding",
-                        "inversedBy": "film"
+                        "mappedBy": "film"
                     },
                     "other_festivals": {
                         "type": "relation",
@@ -4438,7 +4596,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::industry-category.industry-category",
-                        "inversedBy": "industry_article"
+                        "mappedBy": "industry_article"
                     }
                 }
             }
@@ -4688,7 +4846,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::awarding.awarding",
-                        "inversedBy": "project"
+                        "mappedBy": "project"
                     },
                     "tag_looking_fors": {
                         "type": "relation",
@@ -4927,7 +5085,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::event.event",
-                        "inversedBy": "course"
+                        "mappedBy": "course"
                     },
                     "volume": {
                         "type": "string"
@@ -4970,7 +5128,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::product-category.product-category",
-                        "inversedBy": "courses"
+                        "mappedBy": "courses"
                     }
                 }
             }
@@ -5040,7 +5198,7 @@
                 "collectionName": "deliveries",
                 "info": {
                     "singularName": "delivery",
-                    "pluralName": "deliverys",
+                    "pluralName": "deliveries",
                     "displayName": "Delivery"
                 },
                 "options": {
@@ -5074,7 +5232,7 @@
                 "collectionName": "product_categories",
                 "info": {
                     "singularName": "product-category",
-                    "pluralName": "product-categorys",
+                    "pluralName": "product-categories",
                     "displayName": "Product_Category"
                 },
                 "options": {
@@ -5168,7 +5326,7 @@
                         "type": "relation",
                         "relation": "manyToMany",
                         "target": "api::course-event.course-event",
-                        "inversedBy": "product_categories"
+                        "mappedBy": "product_categories"
                     },
                     "transferable": {
                         "type": "boolean"
@@ -5806,7 +5964,7 @@
                 "collectionName": "dis_camp_categories",
                 "info": {
                     "singularName": "dis-camp-category",
-                    "pluralName": "dis-camp-categorys",
+                    "pluralName": "dis-camp-categories",
                     "displayName": "DisCampCategory"
                 },
                 "options": {
@@ -7536,7 +7694,7 @@
                 "collectionName": "l1_menu_industries",
                 "info": {
                     "singularName": "l1-menu-industry",
-                    "pluralName": "l1-menu-industrys",
+                    "pluralName": "l1-menu-industries",
                     "displayName": "L1MenuIndustry"
                 },
                 "options": {
@@ -7765,7 +7923,7 @@
                 "collectionName": "hero_article_industries",
                 "info": {
                     "singularName": "hero-article-industry",
-                    "pluralName": "hero-article-industrys",
+                    "pluralName": "hero-article-industries",
                     "displayName": "HeroArticleIndustry"
                 },
                 "options": {
@@ -8163,7 +8321,7 @@
                 "collectionName": "trio_industries",
                 "info": {
                     "singularName": "trio-industry",
-                    "pluralName": "trio-industrys",
+                    "pluralName": "trio-industries",
                     "displayName": "TrioIndustry"
                 },
                 "options": {
@@ -8426,6 +8584,82 @@
         }
     ],
     "components": [
+        {
+            "kind": "componentType",
+            "componentCategory": "location",
+            "collectionName": "components_location_addresses",
+            "displayName": "Address",
+            "fileName": "address",
+            "s4": {
+                "collectionName": "components_location_addresses",
+                "info": {
+                    "displayName": "Address"
+                },
+                "options": {},
+                "attributes": {
+                    "country": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::country.country"
+                    },
+                    "county": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::county.county"
+                    },
+                    "settl_unit": {
+                        "type": "string"
+                    },
+                    "address_unit": {
+                        "type": "string"
+                    },
+                    "street_name": {
+                        "type": "string"
+                    },
+                    "address_number": {
+                        "type": "string"
+                    },
+                    "appartment": {
+                        "type": "string"
+                    },
+                    "postal_code": {
+                        "type": "string"
+                    },
+                    "n_dms": {
+                        "type": "string"
+                    },
+                    "e_dms": {
+                        "type": "string"
+                    },
+                    "n": {
+                        "type": "decimal"
+                    },
+                    "e": {
+                        "type": "decimal"
+                    },
+                    "l_est_x": {
+                        "type": "biginteger"
+                    },
+                    "l_est_y": {
+                        "type": "biginteger"
+                    },
+                    "add_county": {
+                        "type": "string"
+                    },
+                    "municipality": {
+                        "type": "relation",
+                        "relation": "oneToOne",
+                        "target": "api::populated-place.populated-place"
+                    },
+                    "add_municipality": {
+                        "type": "string"
+                    },
+                    "popul_place": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
         {
             "kind": "componentType",
             "componentCategory": "translated",

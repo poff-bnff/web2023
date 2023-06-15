@@ -562,10 +562,14 @@
                 "user": {
                     "via": "business_profiles",
                     "plugin": "users-permissions",
-                    "model": "user"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::user.user"
                 },
                 "organisation": {
-                    "model": "organisation"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::organisation.organisation"
                 },
                 "reg_code": {
                     "type": "string"
@@ -606,15 +610,20 @@
                     "type": "string"
                 },
                 "gender": {
-                    "model": "gender"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::gender.gender"
                 },
                 "birthdate": {
                     "type": "date"
                 },
                 "terms_p": {
-                    "model": "pof-fi-article"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::pof-fi-article.pof-fi-article"
                 }
-            }
+            },
+            "s3DisplayName": "BusinessProfile"
         },
         {
             "kind": "collectionType",
@@ -680,7 +689,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "posters": {
@@ -692,7 +701,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "trailer": {
@@ -714,20 +723,6 @@
                 }
             },
             "s3DisplayName": "Cassette"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "cep",
-            "collectionName": "ceps",
-            "displayName": "cep",
-            "attributes": {
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "richtext"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -900,7 +895,7 @@
                     "via": "course",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "course",
+                    "mappedBy": "course",
                     "target": "api::event.event"
                 },
                 "volume": {
@@ -920,7 +915,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "posters": {
@@ -932,7 +927,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "trailer": {
@@ -952,7 +947,7 @@
                     "via": "courses",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "courses",
+                    "mappedBy": "courses",
                     "target": "api::product-category.product-category"
                 }
             },
@@ -1084,7 +1079,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "images": {
@@ -1098,7 +1093,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "video_url": {
@@ -1410,7 +1405,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "location": {
@@ -1624,7 +1619,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "clipUrl": {
@@ -1790,7 +1785,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "clipUrl": {
@@ -1874,41 +1869,6 @@
                 }
             },
             "s3DisplayName": "Domain"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "dumb-folder",
-            "collectionName": "dumb_folders",
-            "displayName": "DumbFolder",
-            "attributes": {
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "text"
-                },
-                "films": {
-                    "collection": "film"
-                },
-                "cassettes": {
-                    "collection": "cassette"
-                },
-                "poffi_articles": {
-                    "collection": "pof-fi-article"
-                },
-                "just_filmi_articles": {
-                    "collection": "just-filmi-article"
-                },
-                "shortsi_articles": {
-                    "collection": "shortsi-article"
-                },
-                "industry_articles": {
-                    "collection": "industry-article"
-                },
-                "course_events": {
-                    "collection": "course-event"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -2100,7 +2060,7 @@
                     "plugin": "upload",
                     "required": false,
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "clipUrl": {
@@ -2174,60 +2134,18 @@
                     "via": "editions",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "editions",
+                    "mappedBy": "editions",
                     "target": "api::industry-project.industry-project"
                 },
                 "awardings": {
                     "via": "festival_edition",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "festival_edition",
+                    "mappedBy": "festival_edition",
                     "target": "api::awarding.awarding"
                 }
             },
             "s3DisplayName": "FestivalEdition"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "festival-pass",
-            "collectionName": "festival_passes",
-            "displayName": "Product_Pass",
-            "attributes": {
-                "product_category": {
-                    "model": "product-category"
-                },
-                "owner": {
-                    "model": "person"
-                },
-                "code": {
-                    "type": "string",
-                    "unique": true
-                },
-                "active": {
-                    "type": "boolean"
-                },
-                "transaction": {
-                    "model": "transaction"
-                },
-                "ticketingRight": {
-                    "type": "component",
-                    "repeatable": true,
-                    "component": "ticketing.ticketing-rights"
-                },
-                "reservation_time": {
-                    "type": "datetime"
-                },
-                "reserved_to": {
-                    "plugin": "users-permissions",
-                    "model": "user"
-                },
-                "reservation_expired": {
-                    "type": "datetime"
-                },
-                "reservation_price": {
-                    "type": "decimal"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -2335,7 +2253,7 @@
                     "via": "film",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "film",
+                    "mappedBy": "film",
                     "target": "api::awarding.awarding"
                 },
                 "other_festivals": {
@@ -2355,7 +2273,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "posters": {
@@ -2367,7 +2285,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "trailer": {
@@ -2704,25 +2622,6 @@
                 }
             },
             "s3DisplayName": "FrontPageCourses"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "function",
-            "collectionName": "functions",
-            "displayName": "UserFunction",
-            "attributes": {
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "text"
-                },
-                "function_parameters": {
-                    "type": "component",
-                    "repeatable": true,
-                    "component": "user.function-parameters"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -3411,7 +3310,7 @@
                     "via": "industry_article",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "industry_article",
+                    "mappedBy": "industry_article",
                     "target": "api::industry-category.industry-category"
                 }
             },
@@ -3453,7 +3352,7 @@
                     "via": "award",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "award",
+                    "mappedBy": "award",
                     "target": "api::awarding.awarding"
                 }
             },
@@ -3479,111 +3378,6 @@
                 }
             },
             "s3DisplayName": "IndustryCategory"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "industry-event",
-            "collectionName": "industry_events",
-            "displayName": "Industry_Event",
-            "attributes": {
-                "titlePrivate": {
-                    "type": "string"
-                },
-                "startTime": {
-                    "type": "datetime"
-                },
-                "title_en": {
-                    "type": "string"
-                },
-                "slug_en": {
-                    "type": "uid",
-                    "targetField": "title_en"
-                },
-                "images": {
-                    "collection": "file",
-                    "via": "related",
-                    "allowedTypes": [
-                        "images"
-                    ],
-                    "plugin": "upload",
-                    "required": false,
-                    "pluginOptions": {}
-                },
-                "location": {
-                    "model": "location"
-                },
-                "lead": {
-                    "type": "richtext"
-                },
-                "description": {
-                    "type": "richtext"
-                },
-                "industry_categories": {
-                    "collection": "industry-category"
-                },
-                "project_type": {
-                    "model": "project-type"
-                },
-                "publishFrom": {
-                    "type": "datetime"
-                },
-                "publishUntil": {
-                    "type": "datetime"
-                },
-                "publish": {
-                    "type": "boolean"
-                },
-                "channel": {
-                    "model": "channel"
-                },
-                "durationTime": {
-                    "type": "time"
-                },
-                "industry_people": {
-                    "collection": "industry-person"
-                },
-                "industry_projects": {
-                    "collection": "industry-project"
-                },
-                "videoUrl": {
-                    "type": "string"
-                },
-                "isLiveEvent": {
-                    "type": "boolean"
-                },
-                "isPublicEvent": {
-                    "type": "boolean"
-                },
-                "festival_editions": {
-                    "collection": "festival-edition"
-                },
-                "event_mode": {
-                    "model": "event-mode"
-                },
-                "domains": {
-                    "collection": "domain"
-                },
-                "public": {
-                    "type": "boolean",
-                    "default": false
-                },
-                "posters": {
-                    "collection": "file",
-                    "via": "related",
-                    "allowedTypes": [
-                        "images",
-                        "files",
-                        "videos"
-                    ],
-                    "plugin": "upload",
-                    "required": false,
-                    "pluginOptions": {}
-                },
-                "products": {
-                    "via": "industry_events",
-                    "collection": "product"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -3729,7 +3523,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "clipUrl": {
@@ -3910,7 +3704,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "clipUrl": {
@@ -3944,7 +3738,7 @@
                     "via": "project",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "project",
+                    "mappedBy": "project",
                     "target": "api::awarding.awarding"
                 },
                 "tag_looking_fors": {
@@ -4630,50 +4424,6 @@
         },
         {
             "kind": "collectionType",
-            "modelName": "l1-menu-default",
-            "collectionName": "l1_menu_defaults",
-            "displayName": "L1Menu_default",
-            "attributes": {
-                "namePrivate": {
-                    "type": "string"
-                },
-                "name_et": {
-                    "type": "string"
-                },
-                "name_en": {
-                    "type": "string"
-                },
-                "name_ru": {
-                    "type": "string"
-                },
-                "bruno_article": {
-                    "model": "bruno-article"
-                },
-                "customUrl_et": {
-                    "type": "string"
-                },
-                "customUrl_en": {
-                    "type": "string"
-                },
-                "customUrl_ru": {
-                    "type": "string"
-                },
-                "order": {
-                    "type": "integer"
-                },
-                "publish": {
-                    "type": "boolean",
-                    "default": true
-                },
-                "L2MenuItems": {
-                    "type": "component",
-                    "repeatable": true,
-                    "component": "menu.l2-menu-item"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
             "modelName": "l1-menu-industry",
             "collectionName": "l1_menu_industries",
             "displayName": "L1MenuIndustry",
@@ -4808,26 +4558,6 @@
         },
         {
             "kind": "collectionType",
-            "modelName": "local-government",
-            "collectionName": "local_governments",
-            "displayName": "LocalGovernment",
-            "attributes": {
-                "name_et": {
-                    "type": "string"
-                },
-                "name_en": {
-                    "type": "string"
-                },
-                "name_ru": {
-                    "type": "string"
-                },
-                "county": {
-                    "model": "county"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
             "modelName": "location",
             "collectionName": "locations",
             "displayName": "Location",
@@ -4930,7 +4660,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "public": {
@@ -5011,7 +4741,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "type": {
@@ -5068,7 +4798,7 @@
                     "via": "organisation",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "organisation",
+                    "mappedBy": "organisation",
                     "target": "api::awarding.awarding"
                 },
                 "festival_editions": {
@@ -5180,40 +4910,6 @@
         },
         {
             "kind": "collectionType",
-            "modelName": "pattern-collections",
-            "collectionName": "pattern_collections",
-            "displayName": "Pattern_Collections",
-            "attributes": {
-                "name": {
-                    "type": "string"
-                },
-                "pattern": {
-                    "type": "text"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "payment-parameters",
-            "collectionName": "payment_parameters",
-            "displayName": "PaymentParameters",
-            "attributes": {
-                "name": {
-                    "type": "string"
-                },
-                "maksekeskus_id": {
-                    "type": "string"
-                },
-                "maksekeskus_secret": {
-                    "type": "string"
-                },
-                "account_nr": {
-                    "type": "string"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
             "modelName": "person",
             "collectionName": "people",
             "displayName": "Person",
@@ -5280,7 +4976,7 @@
                     "via": "person",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "person",
+                    "mappedBy": "person",
                     "target": "api::awarding.awarding"
                 },
                 "festival_editions": {
@@ -5407,7 +5103,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "showreel": {
@@ -5512,7 +5208,7 @@
                     "via": "person",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "person",
+                    "mappedBy": "person",
                     "target": "api::filmography.filmography"
                 },
                 "origin": {
@@ -5819,11 +5515,6 @@
                 "valid_to": {
                     "type": "datetime"
                 },
-                "industry_events": {
-                    "collection": "industry-event",
-                    "via": "products",
-                    "dominant": true
-                },
                 "transferable": {
                     "type": "boolean"
                 },
@@ -5937,7 +5628,7 @@
                     "via": "product_categories",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "product_categories",
+                    "mappedBy": "product_categories",
                     "target": "api::course-event.course-event"
                 },
                 "transferable": {
@@ -5971,7 +5662,8 @@
                 "description": {
                     "type": "richtext"
                 }
-            }
+            },
+            "s3DisplayName": "ProductType"
         },
         {
             "kind": "collectionType",
@@ -6001,7 +5693,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "domains": {
@@ -6098,62 +5790,6 @@
             "s3DisplayName": "RoleAtFilm"
         },
         {
-            "kind": "singleType",
-            "modelName": "role-dialog",
-            "collectionName": "role_dialogs",
-            "displayName": "RoleDialog",
-            "attributes": {
-                "poffi_article": {
-                    "model": "simple-article"
-                },
-                "any_article": {
-                    "model": "simple-article"
-                },
-                "poffi_courseevent": {
-                    "model": "simple-article"
-                },
-                "any_courseevent": {
-                    "model": "simple-article"
-                },
-                "just_filmi_article": {
-                    "model": "simple-article"
-                },
-                "shortsi_article": {
-                    "model": "simple-article"
-                },
-                "bruno_article": {
-                    "model": "simple-article"
-                },
-                "filmikooli_article": {
-                    "model": "simple-article"
-                },
-                "discamp_article": {
-                    "model": "simple-article"
-                },
-                "hoffi_article": {
-                    "model": "simple-article"
-                },
-                "industry_article": {
-                    "model": "simple-article"
-                },
-                "kinoffi_article": {
-                    "model": "simple-article"
-                },
-                "kumu_article": {
-                    "model": "simple-article"
-                },
-                "tartuffi_article": {
-                    "model": "simple-article"
-                },
-                "industry_courseevent": {
-                    "model": "simple-article"
-                },
-                "discamp_courseevent": {
-                    "model": "simple-article"
-                }
-            }
-        },
-        {
             "kind": "collectionType",
             "modelName": "screening",
             "collectionName": "screenings",
@@ -6220,17 +5856,6 @@
                 }
             },
             "s3DisplayName": "Screening"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "screening-mode",
-            "collectionName": "screening_modes",
-            "displayName": "ScreeningMode",
-            "attributes": {
-                "name": {
-                    "type": "string"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -6506,40 +6131,6 @@
         },
         {
             "kind": "collectionType",
-            "modelName": "simple-article",
-            "collectionName": "simple_articles",
-            "displayName": "SimpleArticle",
-            "attributes": {
-                "title_private": {
-                    "type": "string"
-                },
-                "title_et": {
-                    "type": "string"
-                },
-                "title_en": {
-                    "type": "string"
-                },
-                "title_ru": {
-                    "type": "string"
-                },
-                "contents_et": {
-                    "type": "richtext"
-                },
-                "contents_en": {
-                    "type": "richtext"
-                },
-                "contents_ru": {
-                    "type": "richtext"
-                },
-                "media": {
-                    "type": "component",
-                    "repeatable": false,
-                    "component": "article.article-media"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
             "modelName": "six-films",
             "collectionName": "six_films",
             "displayName": "SixFilms",
@@ -6594,28 +6185,6 @@
                 }
             },
             "s3DisplayName": "SixFilms"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "smart-folder",
-            "collectionName": "smart_folders",
-            "displayName": "SmartFolder",
-            "attributes": {
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "text"
-                },
-                "pattern_collections": {
-                    "collection": "pattern-collections"
-                },
-                "conditions": {
-                    "type": "component",
-                    "repeatable": true,
-                    "component": "user.function-conditions"
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -6843,7 +6412,7 @@
                     "via": "tag_locations",
                     "type": "relation",
                     "relation": "manyToMany",
-                    "inversedBy": "tag_locations",
+                    "mappedBy": "tag_locations",
                     "target": "api::tag-category.tag-category"
                 }
             },
@@ -7185,43 +6754,6 @@
         },
         {
             "kind": "collectionType",
-            "modelName": "test-menu",
-            "collectionName": "test_menus",
-            "displayName": "testMenuDomain1",
-            "attributes": {
-                "namePrivate": {
-                    "type": "string"
-                },
-                "name_et": {
-                    "type": "text"
-                },
-                "parents": {
-                    "collection": "test-menu"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "time-units",
-            "collectionName": "time_units",
-            "displayName": "TimeUnits",
-            "attributes": {
-                "name_private": {
-                    "type": "string"
-                },
-                "name_et": {
-                    "type": "string"
-                },
-                "name_en": {
-                    "type": "string"
-                },
-                "name_ru": {
-                    "type": "string"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
             "modelName": "town",
             "collectionName": "towns",
             "displayName": "Town",
@@ -7242,97 +6774,6 @@
                 }
             },
             "s3DisplayName": "Town"
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "transaction",
-            "collectionName": "transactions",
-            "displayName": "transaction",
-            "attributes": {
-                "dateTime": {
-                    "type": "datetime"
-                },
-                "type": {
-                    "type": "enumeration",
-                    "enum": [
-                        "Purchase",
-                        "Refund",
-                        "Transfer"
-                    ],
-                    "default": "Purchase"
-                },
-                "user": {
-                    "plugin": "users-permissions",
-                    "model": "user"
-                },
-                "products": {
-                    "collection": "transactions-products",
-                    "via": "transaction"
-                },
-                "beneficiary": {
-                    "plugin": "users-permissions",
-                    "model": "user"
-                },
-                "transactor": {
-                    "via": "transactions",
-                    "plugin": "users-permissions",
-                    "model": "user"
-                },
-                "seller_business_profile": {
-                    "model": "business-profile"
-                },
-                "buyer_business_profile": {
-                    "model": "business-profile"
-                },
-                "status": {
-                    "type": "string"
-                },
-                "currency": {
-                    "type": "string"
-                },
-                "transaction": {
-                    "type": "string",
-                    "unique": true
-                },
-                "amount": {
-                    "type": "decimal"
-                },
-                "method": {
-                    "type": "enumeration",
-                    "enum": [
-                        "Maksekeskus",
-                        "Free"
-                    ]
-                },
-                "transfer_status": {
-                    "type": "enumeration",
-                    "enum": [
-                        "Pending",
-                        "Declined",
-                        "Accepted"
-                    ]
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "transactions-products",
-            "collectionName": "transactions_products",
-            "displayName": "TransactionsProducts",
-            "attributes": {
-                "product": {
-                    "via": "transactions",
-                    "model": "product"
-                },
-                "transaction": {
-                    "via": "products",
-                    "model": "transaction"
-                },
-                "value": {
-                    "type": "decimal",
-                    "default": 0
-                }
-            }
         },
         {
             "kind": "collectionType",
@@ -7579,29 +7020,6 @@
         },
         {
             "kind": "singleType",
-            "modelName": "trio-poff-2",
-            "collectionName": "trio_poff_2s",
-            "displayName": "trioPOFF2",
-            "attributes": {
-                "trioPoff_et": {
-                    "type": "component",
-                    "repeatable": false,
-                    "component": "article.trio-poff-et"
-                },
-                "trioPoff_en": {
-                    "type": "component",
-                    "repeatable": false,
-                    "component": "article.trio-poff-et"
-                },
-                "trioPoff_ru": {
-                    "type": "component",
-                    "repeatable": false,
-                    "component": "article.trio-poff-et"
-                }
-            }
-        },
-        {
-            "kind": "singleType",
             "modelName": "trio-shorts",
             "collectionName": "trio_shorts",
             "displayName": "TrioShorts",
@@ -7668,64 +7086,6 @@
         },
         {
             "kind": "collectionType",
-            "modelName": "user-persons-collection",
-            "collectionName": "user_persons_collections",
-            "displayName": "userPersonsCollection",
-            "attributes": {
-                "firstName": {
-                    "type": "string"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "user-profiles",
-            "collectionName": "user_profiles",
-            "displayName": "UserProfiles",
-            "attributes": {
-                "firstName": {
-                    "type": "string"
-                },
-                "lastName": {
-                    "type": "string"
-                },
-                "gender": {
-                    "type": "string"
-                },
-                "address": {
-                    "type": "string"
-                },
-                "birthdate": {
-                    "type": "date"
-                },
-                "picture": {
-                    "model": "file",
-                    "via": "related",
-                    "allowedTypes": [
-                        "images",
-                        "files",
-                        "videos"
-                    ],
-                    "plugin": "upload",
-                    "required": false,
-                    "pluginOptions": {}
-                },
-                "email": {
-                    "type": "email",
-                    "required": true
-                },
-                "phoneNr": {
-                    "type": "string"
-                },
-                "user": {
-                    "via": "user_profile",
-                    "plugin": "users-permissions",
-                    "model": "user"
-                }
-            }
-        },
-        {
-            "kind": "collectionType",
             "modelName": "user-role",
             "collectionName": "user_roles",
             "displayName": "UserRole",
@@ -7746,38 +7106,22 @@
                 },
                 "product_categories": {
                     "via": "user_roles",
-                    "collection": "product-category"
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "mappedBy": "user_roles",
+                    "target": "api::product-category.product-category"
                 },
                 "users": {
                     "via": "user_roles",
                     "plugin": "users-permissions",
-                    "collection": "user",
-                    "dominant": true
+                    "dominant": true,
+                    "type": "relation",
+                    "relation": "manyToMany",
+                    "inversedBy": "user_roles",
+                    "target": "api::user.user"
                 }
-            }
-        },
-        {
-            "kind": "collectionType",
-            "modelName": "users-providers",
-            "collectionName": "users_providers",
-            "displayName": "UsersProviders",
-            "attributes": {
-                "provider": {
-                    "type": "enumeration",
-                    "enum": [
-                        "Eventival",
-                        "Facebook",
-                        "Google",
-                        "local"
-                    ]
-                },
-                "UUID": {
-                    "type": "string"
-                },
-                "dateConnected": {
-                    "type": "datetime"
-                }
-            }
+            },
+            "s3DisplayName": "UserRole"
         },
         {
             "kind": "collectionType",
@@ -7935,7 +7279,7 @@
                     "plugin": "upload",
                     "required": false,
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "image_et": {
@@ -7946,7 +7290,7 @@
                     "plugin": "upload",
                     "required": false,
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "image_en": {
@@ -7957,7 +7301,7 @@
                     "plugin": "upload",
                     "required": false,
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "image_ru": {
@@ -7968,7 +7312,7 @@
                     "plugin": "upload",
                     "required": false,
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "clipUrlDefault": {
@@ -8781,7 +8125,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "video_url": {
@@ -9007,7 +8351,7 @@
                     "required": false,
                     "pluginOptions": {},
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "trailerUrl": {
@@ -10152,10 +9496,14 @@
             "options": {},
             "attributes": {
                 "country": {
-                    "model": "country"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::country.country"
                 },
                 "county": {
-                    "model": "county"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::county.county"
                 },
                 "settl_unit": {
                     "type": "string"
@@ -10197,7 +9545,9 @@
                     "type": "string"
                 },
                 "municipality": {
-                    "model": "populated-place"
+                    "type": "relation",
+                    "relation": "oneToOne",
+                    "target": "api::populated-place.populated-place"
                 },
                 "add_municipality": {
                     "type": "string"
@@ -11290,7 +10640,7 @@
                     "plugin": "upload",
                     "required": false,
                     "type": "relation",
-                    "inversedBy": "related",
+                    "mappedBy": "related",
                     "target": "api::file.file"
                 },
                 "roleAtTeam_et": {
@@ -11670,9 +11020,6 @@
                         "schedule",
                         "other"
                     ]
-                },
-                "industry_events": {
-                    "collection": "industry-event"
                 }
             }
         },
@@ -11739,28 +11086,6 @@
                 },
                 "course_events": {
                     "collection": "course-event"
-                }
-            }
-        },
-        {
-            "kind": "componentType",
-            "componentCategory": "user",
-            "modelName": "user-right",
-            "collectionName": "components_user_user_rights",
-            "displayName": "UserRight",
-            "options": {},
-            "attributes": {
-                "name": {
-                    "type": "string"
-                },
-                "functions": {
-                    "collection": "function"
-                },
-                "smart_folders": {
-                    "collection": "smart-folder"
-                },
-                "dumb_folders": {
-                    "collection": "dumb-folder"
                 }
             }
         }
