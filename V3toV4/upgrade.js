@@ -18,11 +18,18 @@
   1.2.1. Read collection types from /api folder
           - Skip the ones that are not in datamodel.yaml
           - mark the found ones as "isFound" in relevant collection types list
+          - Save to ./RelevantCollectionTypes.json
+              s3DatamodelKey: BusinessProfile
+              collectionName: business_profiles
+              kind: collectionType
+              s3FolderName: business-profile
+              s3InfoName: BusinessProfile
+              s3CollectionName: business_profiles
   
   1.3. Transform collections
   1.3.1. Transform collection types without attributes
           - Add v3 and v4 api paths to the collection type
-          - Save to ./V4schema.flat.collections.yaml
+          - Save to ./V4schema.flat.collections.json
   1.3.2. Transform collection types attributes
           - Throw an error on the ones that refer to collections 
             that are not in transformed collection types
@@ -35,7 +42,7 @@
         - If attribute refers to a component type that is not in the list of
           used component types, then append it to the list of used component types
         - Repeat until no new component types are added to the list of used component types
-        - Save the list without attributes to ./V4schema.flat.components.yaml
+        - Save the list without attributes to ./V4schema.flat.components.json
       
   1.5. Create schema files in target Strapi 4 folder structure
   1.5.1 Create ./api folder and /collectionName subfolders for each collection type
@@ -132,9 +139,11 @@ const transformSchema = async () => {
     })
     // model has to be in the list of relevant models
     .filter(item => relevantCollectionTypes.find(collType => collType.collectionName === item.collectionName || collType.s3DatamodelKey === item.info.name))
-    ;
-  // mark as found
-  V3CollectionTypes.forEach(item => { 
+
+    ; // TODO: this semicolon is required. Why?
+
+  // mark as found and populate with kind and s3* attributes
+  V3CollectionTypes.forEach(item => {
     const relevantCollection = relevantCollectionTypes
       .find(collType => (collType.collectionName === item.collectionName
         || collType.s3DatamodelKey === item.info.name))
@@ -145,13 +154,6 @@ const transformSchema = async () => {
     relevantCollection.s3CollectionName = item.collectionName
   })
 
-  fs.writeFileSync(path.join(__dirname, 'RelevantCollectionTypes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
-  // log out the ones that are not found
-  relevantCollectionTypes.forEach(item => {
-    if (item.isFound === false) {
-      console.log(`WARNING 1.1: Collection type ${item.collectionName} is not found in Strapi 3 folder structure`)
-    }
-  })
   // log out the ones that are not of kind collectionType or singleType
   V3CollectionTypes.forEach(item => {
     if (item.kind !== 'collectionType' && item.kind !== 'singleType') {
@@ -159,8 +161,15 @@ const transformSchema = async () => {
     }
   })
 
-  // Save to ./V3schema.flat.collections.yaml
-  fs.writeFileSync(path.join(__dirname, 'V3schema.flat.collections.yaml'), yaml.dump(V3CollectionTypes))
+  // log out the ones that are not found
+  relevantCollectionTypes.forEach(item => {
+    if (item.isFound === false) {
+      console.log(`WARNING 1.1: Collection type ${item.collectionName} is not found in Strapi 3 folder structure`)
+    }
+  })
+
+  // Save to ./RelevantCollectionTypes.json
+  fs.writeFileSync(path.join(__dirname, 'RelevantCollectionTypes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
 
   // 1.3. Transform collection types to Strapi 4 format
   // 1.3.1. Transform collection types without attributes
