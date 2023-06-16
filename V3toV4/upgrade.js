@@ -113,6 +113,9 @@ const transformSchema = async () => {
         isFound: false
       }
     })
+    ;
+  // for (const { s3DatamodelKey } of relevantCollectionTypes) console.log(s3DatamodelKey)
+
 
   // 1.2. Read actual models from Strapi 3 folder structure
   // 1.2.1. Read collection types from /api folder
@@ -128,13 +131,24 @@ const transformSchema = async () => {
       return settings
     })
     // model has to be in the list of relevant models
-    .filter(item => relevantCollectionTypes.find(collType => collType.collectionName === item.collectionName))
+    .filter(item => relevantCollectionTypes.find(collType => collType.collectionName === item.collectionName || collType.s3DatamodelKey === item.info.name))
     ;
   // mark as found
-  V3CollectionTypes.forEach(item => { item.isFound = true })
+  V3CollectionTypes.forEach(item => { 
+    const relevantCollection = relevantCollectionTypes
+      .find(collType => (collType.collectionName === item.collectionName
+        || collType.s3DatamodelKey === item.info.name))
+    delete relevantCollection.isFound
+    relevantCollection.kind = item.kind
+    relevantCollection.s3FolderName = item.s3FolderName
+    relevantCollection.s3InfoName = item.info.name
+    relevantCollection.s3CollectionName = item.collectionName
+  })
+
+  fs.writeFileSync(path.join(__dirname, 'RelevantCollectionTypes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
   // log out the ones that are not found
-  V3CollectionTypes.forEach(item => {
-    if (!item.isFound) {
+  relevantCollectionTypes.forEach(item => {
+    if (item.isFound === false) {
       console.log(`WARNING 1.1: Collection type ${item.collectionName} is not found in Strapi 3 folder structure`)
     }
   })
@@ -160,7 +174,7 @@ const transformSchema = async () => {
     const s4ApiPath = `/api/${collectionName}`
     const s3FolderName = `/api/${item.s3FolderName}`
     const s4FolderName = `/api/${item.s3FolderName}`
-    return {  
+    return {
       collectionName,
       s3ApiPath,
       s4ApiPath,
