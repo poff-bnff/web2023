@@ -22,7 +22,7 @@
               s3DatamodelKey: BusinessProfile
               collectionName: business_profiles
               kind: collectionType
-              s3FolderName: business-profile
+              folderName: business-profile
               s3InfoName: BusinessProfile
               s3CollectionName: business_profiles
   
@@ -97,6 +97,28 @@ const STRAPI4_ROOT = path.join(__dirname, '..', '..', 'web2023')
 const STRAPI4_API_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'api')
 const STRAPI4_COMPONENT_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'components')
 
+const transformer = require('./transformer')
+const attributeTransformer = transformer.attributeTransformer
+const collectionTransformer = transformer.collectionTransformer
+const componentTransformer = transformer.componentTransformer
+
+// pluralize. also make kebab-case
+const pluralize = (singular) => {
+  const kebab = singular.toLowerCase().replace(/_/g, '-')
+  if (kebab.endsWith('s')) {
+    return `${kebab}es`
+  }
+  if (kebab.endsWith('y')) {
+    return `${kebab.slice(0, -1)}ies`
+  }
+  return `${kebab}s`
+}
+const matchCollectionType = (v4CollectionType, v3Model) => {
+  return v4CollectionType.collectionName === v3Model.collectionName
+    || v4CollectionType.s3DatamodelKey === v3Model.info.name
+}
+
+
 const transformSchema = async () => {
   const s3DatamodelPathToCollectionName = (s3DatamodelPath) =>
     s3DatamodelPath.replace(/-/g, '_').split('/')[1]
@@ -134,22 +156,21 @@ const transformSchema = async () => {
     // map file name to actual description from settings.json
     .map(item => {
       const settings = JSON.parse(fs.readFileSync(path.join(STRAPI3_COLLECTIONS_PATH, item, 'models', `${item}.settings.json`), 'utf8'))
-      settings.s3FolderName = item
+      settings.folderName = item
       return settings
     })
     // model has to be in the list of relevant models
-    .filter(item => relevantCollectionTypes.find(collType => collType.collectionName === item.collectionName || collType.s3DatamodelKey === item.info.name))
+    .filter(item => relevantCollectionTypes.find(collType => matchCollectionType(collType, item)))
 
     ; // TODO: this semicolon is required. Why?
 
   // mark as found and populate with kind and s3* attributes
   V3CollectionTypes.forEach(item => {
     const relevantCollection = relevantCollectionTypes
-      .find(collType => (collType.collectionName === item.collectionName
-        || collType.s3DatamodelKey === item.info.name))
+      .find(collType => matchCollectionType(collType, item))
     delete relevantCollection.isFound
     relevantCollection.kind = item.kind
-    relevantCollection.s3FolderName = item.s3FolderName
+    relevantCollection.folderName = item.folderName
     relevantCollection.s3InfoName = item.info.name
     relevantCollection.s3CollectionName = item.collectionName
   })
@@ -170,34 +191,77 @@ const transformSchema = async () => {
 
   // Save to ./RelevantCollectionTypes.json
   fs.writeFileSync(path.join(__dirname, 'RelevantCollectionTypes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
-
+ 
   // 1.3. Transform collection types to Strapi 4 format
-  // 1.3.1. Transform collection types without attributes
+  // 1.3.1. Transform collection types without attributes and options
   // - Add v3 and v4 api paths to the collection type
-  // - Save to ./V4schema.flat.collections.yaml
-
-  const V4CollectionTypes = V3CollectionTypes.map(item => {
-    const collectionName = item.collectionName
-    const s3DatamodelKey = item.s3DatamodelKey
-    const s3ApiPath = `/${collectionName}`
-    const s4ApiPath = `/api/${collectionName}`
-    const s3FolderName = `/api/${item.s3FolderName}`
-    const s4FolderName = `/api/${item.s3FolderName}`
-    return {
-      collectionName,
-      s3ApiPath,
-      s4ApiPath,
-      s3FolderName,
-      s4FolderName,
-      s3DatamodelKey
+  // - Save to ./V4schema.flat.collections.json
+  relevantCollectionTypes.forEach(item => {
+    // Transfer to transformers
+    transformer.relevantCollectionType = item.collectionName
+    item.s3ApiPath = `/${item.folderName}`
+    item.s4ApiPath = `/api/${item.folderName}`
+    item.v4 = {
+      kind: item.kind,
+      collectionName: item.collectionName,
+      info: {
+        singularName: item.folderName,
+        pluralName: pluralize(item.folderName),
+        displayName: item.s3InfoName
+      }
     }
   })
-  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.collections.yaml'), yaml.dump(V4CollectionTypes))
+  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.collections.json'), JSON.stringify(relevantCollectionTypes, null, 2))
+
 
   // 1.3.2. Transform collection types attributes
   // - Throw an error on the ones that refer to collections 
   //   that are not in transformed collection types
   // - Collect the list of used component types
+  relevantCollectionTypes.forEach(collType => {
+    const V3Collection = V3CollectionTypes
+      .find(model => matchCollectionType(collType, model))
+    if (!V3Collection) {
+      throw new Error(`Collection ${collType.collectionName} not found in V3CollectionTypes`)
+    }
+
+    const attrNames = Object.keys(V3Collection.attributes)
+    collType.v4.attributes = {}
+    attrNames.forEach(attrName => {
+      const v3Attr = V3Collection.attributes[attrName]
+      // console.log(`Transforming attribute "${attrName}": ${JSON.stringify(v3Attr)}`)
+      try {
+        collType.v4.attributes[attrName] = attributeTransformer.transform(v3Attr)
+      } catch (error) {
+        throw new Error(`Attribute "${attrName}" of collection "${collType.collectionName}" is not resolved: ${error.message}`)        
+      }
+    })
+  })
+  
+  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.collections.withAttributes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
+  
+  // console.log('Used component types:', transformer.getUsedComponentTypes())
+  // console.log('Relevant collection types:', transformer.getRelevantCollectionTypes())
+  
+  // 1.4. Transform component types to Strapi 4 format
+  // Also, verify, that only relevant collection types are used in component attributes.
+  // - Add v3 and v4 api paths to the component type
+  const relevantComponentTypes = transformer.getUsedComponentTypes()
+    .map(componentFullName => {
+      const [folderName, componentName] = componentFullName.split('.')
+      const settings = JSON.parse(fs.readFileSync(path.join(STRAPI3_COMPONENTS_PATH, folderName, `${componentName}.json`), 'utf8'))
+      const v4 = componentTransformer.transform(settings)
+      return {
+        folderName: folderName,
+        componentName: componentName,
+        s3InfoName: settings.info.name,
+        s3ApiPath: `/components/${folderName}${componentName}`,
+        s4ApiPath: `/components/${folderName}${componentName}`,
+        v4: v4
+      }
+    })
+  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.components.json'), JSON.stringify(relevantComponentTypes, null, 2))  
+
 }
 
 const transportData = async () => {
@@ -215,3 +279,4 @@ const main = async () => {
 }
 
 main()
+

@@ -1,0 +1,2776 @@
+[
+  {
+    "s3DatamodelKey": "ProductType",
+    "collectionName": "product_types",
+    "kind": "collectionType",
+    "folderName": "product-type",
+    "s3InfoName": "ProductType",
+    "s3CollectionName": "product_types",
+    "s3ApiPath": "/product-type",
+    "s4ApiPath": "/api/product-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "product_types",
+      "info": {
+        "singularName": "product-type",
+        "pluralName": "product-types",
+        "displayName": "ProductType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "UserRole",
+    "collectionName": "user_roles",
+    "kind": "collectionType",
+    "folderName": "user-role",
+    "s3InfoName": "UserRole",
+    "s3CollectionName": "user_roles",
+    "s3ApiPath": "/user-role",
+    "s4ApiPath": "/api/user-role",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "user_roles",
+      "info": {
+        "singularName": "user-role",
+        "pluralName": "user-roles",
+        "displayName": "UserRole"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "BusinessProfile",
+    "collectionName": "business_profiles",
+    "kind": "collectionType",
+    "folderName": "business-profile",
+    "s3InfoName": "BusinessProfile",
+    "s3CollectionName": "business_profiles",
+    "s3ApiPath": "/business-profile",
+    "s4ApiPath": "/api/business-profile",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "business_profiles",
+      "info": {
+        "singularName": "business-profile",
+        "pluralName": "business-profiles",
+        "displayName": "BusinessProfile"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "WebPermission",
+    "collectionName": "web_permissions",
+    "kind": "collectionType",
+    "folderName": "web-permission",
+    "s3InfoName": "webPermission",
+    "s3CollectionName": "web_permissions",
+    "s3ApiPath": "/web-permission",
+    "s4ApiPath": "/api/web-permission",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "web_permissions",
+      "info": {
+        "singularName": "web-permission",
+        "pluralName": "web-permissions",
+        "displayName": "webPermission"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "WebRole",
+    "collectionName": "web_roles",
+    "kind": "collectionType",
+    "folderName": "web-role",
+    "s3InfoName": "webRole",
+    "s3CollectionName": "web_roles",
+    "s3ApiPath": "/web-role",
+    "s4ApiPath": "/api/web-role",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "web_roles",
+      "info": {
+        "singularName": "web-role",
+        "pluralName": "web-roles",
+        "displayName": "webRole"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "WebUser",
+    "collectionName": "web_users",
+    "kind": "collectionType",
+    "folderName": "web-user",
+    "s3InfoName": "webUser",
+    "s3CollectionName": "web_users",
+    "s3ApiPath": "/web-user",
+    "s4ApiPath": "/api/web-user",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "web_users",
+      "info": {
+        "singularName": "web-user",
+        "pluralName": "web-users",
+        "displayName": "webUser"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Domain",
+    "collectionName": "domains",
+    "kind": "collectionType",
+    "folderName": "domain",
+    "s3InfoName": "Domain",
+    "s3CollectionName": "Domeen",
+    "s3ApiPath": "/domain",
+    "s4ApiPath": "/api/domain",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "domains",
+      "info": {
+        "singularName": "domain",
+        "pluralName": "domains",
+        "displayName": "Domain"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Gender",
+    "collectionName": "genders",
+    "kind": "collectionType",
+    "folderName": "gender",
+    "s3InfoName": "Gender",
+    "s3CollectionName": "genders",
+    "s3ApiPath": "/gender",
+    "s4ApiPath": "/api/gender",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "genders",
+      "info": {
+        "singularName": "gender",
+        "pluralName": "genders",
+        "displayName": "Gender"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagAgeRestriction",
+    "collectionName": "age_restrictions",
+    "kind": "collectionType",
+    "folderName": "age-restriction",
+    "s3InfoName": "TagAgeRestriction",
+    "s3CollectionName": "age_restrictions",
+    "s3ApiPath": "/age-restriction",
+    "s4ApiPath": "/api/age-restriction",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "age_restrictions",
+      "info": {
+        "singularName": "age-restriction",
+        "pluralName": "age-restrictions",
+        "displayName": "TagAgeRestriction"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagGenre",
+    "collectionName": "tag_genres",
+    "kind": "collectionType",
+    "folderName": "tag-genre",
+    "s3InfoName": "TagGenre",
+    "s3CollectionName": "tag_genres",
+    "s3ApiPath": "/tag-genre",
+    "s4ApiPath": "/api/tag-genre",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_genres",
+      "info": {
+        "singularName": "tag-genre",
+        "pluralName": "tag-genres",
+        "displayName": "TagGenre"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagKeyword",
+    "collectionName": "tag_keywords",
+    "kind": "collectionType",
+    "folderName": "tag-keyword",
+    "s3InfoName": "TagKeyword",
+    "s3CollectionName": "tag_keywords",
+    "s3ApiPath": "/tag-keyword",
+    "s4ApiPath": "/api/tag-keyword",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_keywords",
+      "info": {
+        "singularName": "tag-keyword",
+        "pluralName": "tag-keywords",
+        "displayName": "TagKeyword"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagPremiereType",
+    "collectionName": "tag_premiere_types",
+    "kind": "collectionType",
+    "folderName": "tag-premiere-type",
+    "s3InfoName": "TagPremiereType",
+    "s3CollectionName": "tag_premiere_types",
+    "s3ApiPath": "/tag-premiere-type",
+    "s4ApiPath": "/api/tag-premiere-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_premiere_types",
+      "info": {
+        "singularName": "tag-premiere-type",
+        "pluralName": "tag-premiere-types",
+        "displayName": "TagPremiereType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagFilmType",
+    "collectionName": "tag_film_types",
+    "kind": "collectionType",
+    "folderName": "tag-film-type",
+    "s3InfoName": "TagFilmType",
+    "s3CollectionName": "tag_film_types",
+    "s3ApiPath": "/tag-film-type",
+    "s4ApiPath": "/api/tag-film-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_film_types",
+      "info": {
+        "singularName": "tag-film-type",
+        "pluralName": "tag-film-types",
+        "displayName": "TagFilmType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagLookingFor",
+    "collectionName": "tag_looking_fors",
+    "kind": "collectionType",
+    "folderName": "tag-looking-for",
+    "s3InfoName": "TagLookingFor",
+    "s3CollectionName": "tag_looking_fors",
+    "s3ApiPath": "/tag-looking-for",
+    "s4ApiPath": "/api/tag-looking-for",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_looking_fors",
+      "info": {
+        "singularName": "tag-looking-for",
+        "pluralName": "tag-looking-fors",
+        "displayName": "TagLookingFor"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagSecret",
+    "collectionName": "tag_secrets",
+    "kind": "collectionType",
+    "folderName": "tag-secret",
+    "s3InfoName": "TagSecret",
+    "s3CollectionName": "tag_secrets",
+    "s3ApiPath": "/tag-secret",
+    "s4ApiPath": "/api/tag-secret",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_secrets",
+      "info": {
+        "singularName": "tag-secret",
+        "pluralName": "tag-secrets",
+        "displayName": "TagSecret"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagLocation",
+    "collectionName": "tag_locations",
+    "kind": "collectionType",
+    "folderName": "tag-location",
+    "s3InfoName": "TagLocation",
+    "s3CollectionName": "tag_locations",
+    "s3ApiPath": "/tag-location",
+    "s4ApiPath": "/api/tag-location",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_locations",
+      "info": {
+        "singularName": "tag-location",
+        "pluralName": "tag-locations",
+        "displayName": "TagLocation"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagCategory",
+    "collectionName": "tag_categories",
+    "kind": "collectionType",
+    "folderName": "tag-category",
+    "s3InfoName": "TagCategory",
+    "s3CollectionName": "tag_categories",
+    "s3ApiPath": "/tag-category",
+    "s4ApiPath": "/api/tag-category",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tag_categories",
+      "info": {
+        "singularName": "tag-category",
+        "pluralName": "tag-categories",
+        "displayName": "TagCategory"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TagTriggerWarning",
+    "collectionName": "trigger_warnings",
+    "kind": "collectionType",
+    "folderName": "trigger-warning",
+    "s3InfoName": "TagTriggerWarning",
+    "s3CollectionName": "trigger_warnings",
+    "s3ApiPath": "/trigger-warning",
+    "s4ApiPath": "/api/trigger-warning",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "trigger_warnings",
+      "info": {
+        "singularName": "trigger-warning",
+        "pluralName": "trigger-warnings",
+        "displayName": "TagTriggerWarning"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Award",
+    "collectionName": "industry_awards",
+    "kind": "collectionType",
+    "folderName": "industry-award",
+    "s3InfoName": "Award",
+    "s3CollectionName": "industry_awards",
+    "s3ApiPath": "/industry-award",
+    "s4ApiPath": "/api/industry-award",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_awards",
+      "info": {
+        "singularName": "industry-award",
+        "pluralName": "industry-awards",
+        "displayName": "Award"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Awarding",
+    "collectionName": "awardings",
+    "kind": "collectionType",
+    "folderName": "awarding",
+    "s3InfoName": "Awarding",
+    "s3CollectionName": "awardings",
+    "s3ApiPath": "/awarding",
+    "s4ApiPath": "/api/awarding",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "awardings",
+      "info": {
+        "singularName": "awarding",
+        "pluralName": "awardings",
+        "displayName": "Awarding"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Origin",
+    "collectionName": "origins",
+    "kind": "collectionType",
+    "folderName": "origin",
+    "s3InfoName": "Origin",
+    "s3CollectionName": "origins",
+    "s3ApiPath": "/origin",
+    "s4ApiPath": "/api/origin",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "origins",
+      "info": {
+        "singularName": "origin",
+        "pluralName": "origins",
+        "displayName": "Origin"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "RoleAtFilm",
+    "collectionName": "role_at_films",
+    "kind": "collectionType",
+    "folderName": "role-at-film",
+    "s3InfoName": "RoleAtFilm",
+    "s3CollectionName": "role_at_films",
+    "s3ApiPath": "/role-at-film",
+    "s4ApiPath": "/api/role-at-film",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "role_at_films",
+      "info": {
+        "singularName": "role-at-film",
+        "pluralName": "role-at-films",
+        "displayName": "RoleAtFilm"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Country",
+    "collectionName": "countries",
+    "kind": "collectionType",
+    "folderName": "country",
+    "s3InfoName": "Country",
+    "s3CollectionName": "countries",
+    "s3ApiPath": "/country",
+    "s4ApiPath": "/api/country",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "countries",
+      "info": {
+        "singularName": "country",
+        "pluralName": "countries",
+        "displayName": "Country"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Town",
+    "collectionName": "towns",
+    "kind": "collectionType",
+    "folderName": "town",
+    "s3InfoName": "Town",
+    "s3CollectionName": "towns",
+    "s3ApiPath": "/town",
+    "s4ApiPath": "/api/town",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "towns",
+      "info": {
+        "singularName": "town",
+        "pluralName": "towns",
+        "displayName": "Town"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Cinema",
+    "collectionName": "cinemas",
+    "kind": "collectionType",
+    "folderName": "cinema",
+    "s3InfoName": "Cinema",
+    "s3CollectionName": "cinemas",
+    "s3ApiPath": "/cinema",
+    "s4ApiPath": "/api/cinema",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "cinemas",
+      "info": {
+        "singularName": "cinema",
+        "pluralName": "cinemas",
+        "displayName": "Cinema"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Hall",
+    "collectionName": "halls",
+    "kind": "collectionType",
+    "folderName": "hall",
+    "s3InfoName": "Hall",
+    "s3CollectionName": "halls",
+    "s3ApiPath": "/hall",
+    "s4ApiPath": "/api/hall",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "halls",
+      "info": {
+        "singularName": "hall",
+        "pluralName": "halls",
+        "displayName": "Hall"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "County",
+    "collectionName": "counties",
+    "kind": "collectionType",
+    "folderName": "county",
+    "s3InfoName": "County",
+    "s3CollectionName": "counties",
+    "s3ApiPath": "/county",
+    "s4ApiPath": "/api/county",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "counties",
+      "info": {
+        "singularName": "county",
+        "pluralName": "counties",
+        "displayName": "County"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Municipality",
+    "collectionName": "populated_places",
+    "kind": "collectionType",
+    "folderName": "populated-place",
+    "s3InfoName": "Municipality",
+    "s3CollectionName": "populated_places",
+    "s3ApiPath": "/populated-place",
+    "s4ApiPath": "/api/populated-place",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "populated_places",
+      "info": {
+        "singularName": "populated-place",
+        "pluralName": "populated-places",
+        "displayName": "Municipality"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Address",
+    "collectionName": "addresses",
+    "kind": "collectionType",
+    "folderName": "address",
+    "s3InfoName": "address",
+    "s3CollectionName": "addresses",
+    "s3ApiPath": "/address",
+    "s4ApiPath": "/api/address",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "addresses",
+      "info": {
+        "singularName": "address",
+        "pluralName": "addresses",
+        "displayName": "address"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Festival",
+    "collectionName": "festivals",
+    "kind": "collectionType",
+    "folderName": "festival",
+    "s3InfoName": "Festival",
+    "s3CollectionName": "FestivalCollectionName",
+    "s3ApiPath": "/festival",
+    "s4ApiPath": "/api/festival",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "festivals",
+      "info": {
+        "singularName": "festival",
+        "pluralName": "festivals",
+        "displayName": "Festival"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "FestivalEdition",
+    "collectionName": "festival_editions",
+    "kind": "collectionType",
+    "folderName": "festival-edition",
+    "s3InfoName": "FestivalEdition",
+    "s3CollectionName": "Edition",
+    "s3ApiPath": "/festival-edition",
+    "s4ApiPath": "/api/festival-edition",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "festival_editions",
+      "info": {
+        "singularName": "festival-edition",
+        "pluralName": "festival-editions",
+        "displayName": "FestivalEdition"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Organisation",
+    "collectionName": "organisations",
+    "kind": "collectionType",
+    "folderName": "organisation",
+    "s3InfoName": "Organisation",
+    "s3CollectionName": "organisations",
+    "s3ApiPath": "/organisation",
+    "s4ApiPath": "/api/organisation",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "organisations",
+      "info": {
+        "singularName": "organisation",
+        "pluralName": "organisations",
+        "displayName": "Organisation"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Programme",
+    "collectionName": "programmes",
+    "kind": "collectionType",
+    "folderName": "programme",
+    "s3InfoName": "Programme",
+    "s3CollectionName": "programmes",
+    "s3ApiPath": "/programme",
+    "s4ApiPath": "/api/programme",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "programmes",
+      "info": {
+        "singularName": "programme",
+        "pluralName": "programmes",
+        "displayName": "Programme"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "WebAuthor",
+    "collectionName": "web_authors",
+    "kind": "collectionType",
+    "folderName": "web-author",
+    "s3InfoName": "WebAuthor",
+    "s3CollectionName": "web_authors",
+    "s3ApiPath": "/web-author",
+    "s4ApiPath": "/api/web-author",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "web_authors",
+      "info": {
+        "singularName": "web-author",
+        "pluralName": "web-authors",
+        "displayName": "WebAuthor"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ArticleType",
+    "collectionName": "article_types",
+    "kind": "collectionType",
+    "folderName": "article-type",
+    "s3InfoName": "ArticleType",
+    "s3CollectionName": "article_types",
+    "s3ApiPath": "/article-type",
+    "s4ApiPath": "/api/article-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "article_types",
+      "info": {
+        "singularName": "article-type",
+        "pluralName": "article-types",
+        "displayName": "ArticleType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "POFFiArticle",
+    "collectionName": "pof_fi_articles",
+    "kind": "collectionType",
+    "folderName": "pof-fi-article",
+    "s3InfoName": "POFFi_Article",
+    "s3CollectionName": "pof_fi_articles",
+    "s3ApiPath": "/pof-fi-article",
+    "s4ApiPath": "/api/pof-fi-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "pof_fi_articles",
+      "info": {
+        "singularName": "pof-fi-article",
+        "pluralName": "pof-fi-articles",
+        "displayName": "POFFi_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "JustFilmiArticle",
+    "collectionName": "just_filmi_articles",
+    "kind": "collectionType",
+    "folderName": "just-filmi-article",
+    "s3InfoName": "JustFilmi_Article",
+    "s3CollectionName": "just_filmi_articles",
+    "s3ApiPath": "/just-filmi-article",
+    "s4ApiPath": "/api/just-filmi-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "just_filmi_articles",
+      "info": {
+        "singularName": "just-filmi-article",
+        "pluralName": "just-filmi-articles",
+        "displayName": "JustFilmi_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ShortsiArticle",
+    "collectionName": "shortsi_articles",
+    "kind": "collectionType",
+    "folderName": "shortsi-article",
+    "s3InfoName": "Shortsi_Article",
+    "s3CollectionName": "shortsi_articles",
+    "s3ApiPath": "/shortsi-article",
+    "s4ApiPath": "/api/shortsi-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "shortsi_articles",
+      "info": {
+        "singularName": "shortsi-article",
+        "pluralName": "shortsi-articles",
+        "displayName": "Shortsi_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KinoffiArticle",
+    "collectionName": "kinoffi_articles",
+    "kind": "collectionType",
+    "folderName": "kinoffi-article",
+    "s3InfoName": "Kinoffi_Article",
+    "s3CollectionName": "kinoffi_articles",
+    "s3ApiPath": "/kinoffi-article",
+    "s4ApiPath": "/api/kinoffi-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kinoffi_articles",
+      "info": {
+        "singularName": "kinoffi-article",
+        "pluralName": "kinoffi-articles",
+        "displayName": "Kinoffi_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HOFFiArticle",
+    "collectionName": "hof_fi_articles",
+    "kind": "collectionType",
+    "folderName": "hof-fi-article",
+    "s3InfoName": "HOFFi_Article",
+    "s3CollectionName": "hof_fi_articles",
+    "s3ApiPath": "/hof-fi-article",
+    "s4ApiPath": "/api/hof-fi-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "hof_fi_articles",
+      "info": {
+        "singularName": "hof-fi-article",
+        "pluralName": "hof-fi-articles",
+        "displayName": "HOFFi_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TartuffiArticle",
+    "collectionName": "tartuffi_articles",
+    "kind": "collectionType",
+    "folderName": "tartuffi-article",
+    "s3InfoName": "Tartuffi_Article",
+    "s3CollectionName": "tartuffi_articles",
+    "s3ApiPath": "/tartuffi-article",
+    "s4ApiPath": "/api/tartuffi-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tartuffi_articles",
+      "info": {
+        "singularName": "tartuffi-article",
+        "pluralName": "tartuffi-articles",
+        "displayName": "Tartuffi_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KumuArticle",
+    "collectionName": "kumu_articles",
+    "kind": "collectionType",
+    "folderName": "kumu-article",
+    "s3InfoName": "Kumu_Article",
+    "s3CollectionName": "kumu_articles",
+    "s3ApiPath": "/kumu-article",
+    "s4ApiPath": "/api/kumu-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kumu_articles",
+      "info": {
+        "singularName": "kumu-article",
+        "pluralName": "kumu-articles",
+        "displayName": "Kumu_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "BrunoArticle",
+    "collectionName": "bruno_articles",
+    "kind": "collectionType",
+    "folderName": "bruno-article",
+    "s3InfoName": "Bruno_Article",
+    "s3CollectionName": "bruno_articles",
+    "s3ApiPath": "/bruno-article",
+    "s4ApiPath": "/api/bruno-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "bruno_articles",
+      "info": {
+        "singularName": "bruno-article",
+        "pluralName": "bruno-articles",
+        "displayName": "Bruno_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "FilmikooliArticle",
+    "collectionName": "filmikooli_articles",
+    "kind": "collectionType",
+    "folderName": "filmikooli-article",
+    "s3InfoName": "Filmikooli_Article",
+    "s3CollectionName": "filmikooli_articles",
+    "s3ApiPath": "/filmikooli-article",
+    "s4ApiPath": "/api/filmikooli-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "filmikooli_articles",
+      "info": {
+        "singularName": "filmikooli-article",
+        "pluralName": "filmikooli-articles",
+        "displayName": "Filmikooli_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Location",
+    "collectionName": "locations",
+    "kind": "collectionType",
+    "folderName": "location",
+    "s3InfoName": "Location",
+    "s3CollectionName": "locations",
+    "s3ApiPath": "/location",
+    "s4ApiPath": "/api/location",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "locations",
+      "info": {
+        "singularName": "location",
+        "pluralName": "locations",
+        "displayName": "Location"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Language",
+    "collectionName": "languages",
+    "kind": "collectionType",
+    "folderName": "language",
+    "s3InfoName": "Language",
+    "s3CollectionName": "languages",
+    "s3ApiPath": "/language",
+    "s4ApiPath": "/api/language",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "languages",
+      "info": {
+        "singularName": "language",
+        "pluralName": "languages",
+        "displayName": "Language"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryPersonType",
+    "collectionName": "industry_person_types",
+    "kind": "collectionType",
+    "folderName": "industry-person-type",
+    "s3InfoName": "Industry_PersonType",
+    "s3CollectionName": "industry_person_types",
+    "s3ApiPath": "/industry-person-type",
+    "s4ApiPath": "/api/industry-person-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_person_types",
+      "info": {
+        "singularName": "industry-person-type",
+        "pluralName": "industry-person-types",
+        "displayName": "Industry_PersonType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ShoeSize",
+    "collectionName": "shoe_sizes",
+    "kind": "collectionType",
+    "folderName": "shoe-size",
+    "s3InfoName": "Shoe_Size",
+    "s3CollectionName": "shoe_sizes",
+    "s3ApiPath": "/shoe-size",
+    "s4ApiPath": "/api/shoe-size",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "shoe_sizes",
+      "info": {
+        "singularName": "shoe-size",
+        "pluralName": "shoe-sizes",
+        "displayName": "Shoe_Size"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HairColour",
+    "collectionName": "hair_colours",
+    "kind": "collectionType",
+    "folderName": "hair-colour",
+    "s3InfoName": "HairColour",
+    "s3CollectionName": "hair_colours",
+    "s3ApiPath": "/hair-colour",
+    "s4ApiPath": "/api/hair-colour",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "hair_colours",
+      "info": {
+        "singularName": "hair-colour",
+        "pluralName": "hair-colours",
+        "displayName": "HairColour"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HairLength",
+    "collectionName": "hair_lengths",
+    "kind": "collectionType",
+    "folderName": "hair-length",
+    "s3InfoName": "HairLength",
+    "s3CollectionName": "hair_lengths",
+    "s3ApiPath": "/hair-length",
+    "s4ApiPath": "/api/hair-length",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "hair_lengths",
+      "info": {
+        "singularName": "hair-length",
+        "pluralName": "hair-lengths",
+        "displayName": "HairLength"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "PitchOfVoice",
+    "collectionName": "pitch_of_voices",
+    "kind": "collectionType",
+    "folderName": "pitch-of-voice",
+    "s3InfoName": "PitchOfVoice",
+    "s3CollectionName": "pitch_of_voices",
+    "s3ApiPath": "/pitch-of-voice",
+    "s4ApiPath": "/api/pitch-of-voice",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "pitch_of_voices",
+      "info": {
+        "singularName": "pitch-of-voice",
+        "pluralName": "pitch-of-voices",
+        "displayName": "PitchOfVoice"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Stature",
+    "collectionName": "statures",
+    "kind": "collectionType",
+    "folderName": "stature",
+    "s3InfoName": "Stature",
+    "s3CollectionName": "statures",
+    "s3ApiPath": "/stature",
+    "s4ApiPath": "/api/stature",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "statures",
+      "info": {
+        "singularName": "stature",
+        "pluralName": "statures",
+        "displayName": "Stature"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TypeOfWork",
+    "collectionName": "type_of_works",
+    "kind": "collectionType",
+    "folderName": "type-of-work",
+    "s3InfoName": "TypeOfWork",
+    "s3CollectionName": "type_of_works",
+    "s3ApiPath": "/type-of-work",
+    "s4ApiPath": "/api/type-of-work",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "type_of_works",
+      "info": {
+        "singularName": "type-of-work",
+        "pluralName": "type-of-works",
+        "displayName": "TypeOfWork"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "EyeColour",
+    "collectionName": "eye_colours",
+    "kind": "collectionType",
+    "folderName": "eye-colour",
+    "s3InfoName": "EyeColour",
+    "s3CollectionName": "eye_colours",
+    "s3ApiPath": "/eye-colour",
+    "s4ApiPath": "/api/eye-colour",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "eye_colours",
+      "info": {
+        "singularName": "eye-colour",
+        "pluralName": "eye-colours",
+        "displayName": "EyeColour"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Filmography",
+    "collectionName": "filmographies",
+    "kind": "collectionType",
+    "folderName": "filmography",
+    "s3InfoName": "Filmography",
+    "s3CollectionName": "filmographies",
+    "s3ApiPath": "/filmography",
+    "s4ApiPath": "/api/filmography",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "filmographies",
+      "info": {
+        "singularName": "filmography",
+        "pluralName": "filmographies",
+        "displayName": "Filmography"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryCategory",
+    "collectionName": "industry_categories",
+    "kind": "collectionType",
+    "folderName": "industry-category",
+    "s3InfoName": "Industry_Category",
+    "s3CollectionName": "industry_categories",
+    "s3ApiPath": "/industry-category",
+    "s4ApiPath": "/api/industry-category",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_categories",
+      "info": {
+        "singularName": "industry-category",
+        "pluralName": "industry-categories",
+        "displayName": "Industry_Category"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Person",
+    "collectionName": "people",
+    "kind": "collectionType",
+    "folderName": "person",
+    "s3InfoName": "Person",
+    "s3CollectionName": "people",
+    "s3ApiPath": "/person",
+    "s4ApiPath": "/api/person",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "people",
+      "info": {
+        "singularName": "person",
+        "pluralName": "persons",
+        "displayName": "Person"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Team",
+    "collectionName": "teams",
+    "kind": "collectionType",
+    "folderName": "team",
+    "s3InfoName": "Team",
+    "s3CollectionName": "teams",
+    "s3ApiPath": "/team",
+    "s4ApiPath": "/api/team",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "teams",
+      "info": {
+        "singularName": "team",
+        "pluralName": "teams",
+        "displayName": "Team"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "EventMode",
+    "collectionName": "event_modes",
+    "kind": "collectionType",
+    "folderName": "event-mode",
+    "s3InfoName": "EventMode",
+    "s3CollectionName": "event_modes",
+    "s3ApiPath": "/event-mode",
+    "s4ApiPath": "/api/event-mode",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "event_modes",
+      "info": {
+        "singularName": "event-mode",
+        "pluralName": "event-modes",
+        "displayName": "EventMode"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "EventAccess",
+    "collectionName": "event_accesses",
+    "kind": "collectionType",
+    "folderName": "event-access",
+    "s3InfoName": "EventAccess",
+    "s3CollectionName": "event_accesses",
+    "s3ApiPath": "/event-access",
+    "s4ApiPath": "/api/event-access",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "event_accesses",
+      "info": {
+        "singularName": "event-access",
+        "pluralName": "event-accesses",
+        "displayName": "EventAccess"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "EventType",
+    "collectionName": "event_types",
+    "kind": "collectionType",
+    "folderName": "event-type",
+    "s3InfoName": "EventType",
+    "s3CollectionName": "event_types",
+    "s3ApiPath": "/event-type",
+    "s4ApiPath": "/api/event-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "event_types",
+      "info": {
+        "singularName": "event-type",
+        "pluralName": "event-types",
+        "displayName": "EventType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ScreeningType",
+    "collectionName": "screening_types",
+    "kind": "collectionType",
+    "folderName": "screening-type",
+    "s3InfoName": "ScreeningType",
+    "s3CollectionName": "screening_types",
+    "s3ApiPath": "/screening-type",
+    "s4ApiPath": "/api/screening-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "screening_types",
+      "info": {
+        "singularName": "screening-type",
+        "pluralName": "screening-types",
+        "displayName": "ScreeningType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Film",
+    "collectionName": "films",
+    "kind": "collectionType",
+    "folderName": "film",
+    "s3InfoName": "Film",
+    "s3CollectionName": "films",
+    "s3ApiPath": "/film",
+    "s4ApiPath": "/api/film",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "films",
+      "info": {
+        "singularName": "film",
+        "pluralName": "films",
+        "displayName": "Film"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Cassette",
+    "collectionName": "cassettes",
+    "kind": "collectionType",
+    "folderName": "cassette",
+    "s3InfoName": "Cassette",
+    "s3CollectionName": "cassettes",
+    "s3ApiPath": "/cassette",
+    "s4ApiPath": "/api/cassette",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "cassettes",
+      "info": {
+        "singularName": "cassette",
+        "pluralName": "cassettes",
+        "displayName": "Cassette"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Screening",
+    "collectionName": "screenings",
+    "kind": "collectionType",
+    "folderName": "screening",
+    "s3InfoName": "Screening",
+    "s3CollectionName": "screenings",
+    "s3ApiPath": "/screening",
+    "s4ApiPath": "/api/screening",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "screenings",
+      "info": {
+        "singularName": "screening",
+        "pluralName": "screenings",
+        "displayName": "Screening"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "SixFilms",
+    "collectionName": "six_films",
+    "kind": "collectionType",
+    "folderName": "six-films",
+    "s3InfoName": "SixFilms",
+    "s3CollectionName": "six_films",
+    "s3ApiPath": "/six-films",
+    "s4ApiPath": "/api/six-films",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "six_films",
+      "info": {
+        "singularName": "six-films",
+        "pluralName": "six-filmses",
+        "displayName": "SixFilms"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "LabelGroup",
+    "collectionName": "label_groups",
+    "kind": "collectionType",
+    "folderName": "label-group",
+    "s3InfoName": "LabelGroup",
+    "s3CollectionName": "label_groups",
+    "s3ApiPath": "/label-group",
+    "s4ApiPath": "/api/label-group",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "label_groups",
+      "info": {
+        "singularName": "label-group",
+        "pluralName": "label-groups",
+        "displayName": "LabelGroup"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryPerson",
+    "collectionName": "industry_people",
+    "kind": "collectionType",
+    "folderName": "industry-person",
+    "s3InfoName": "Industry_Person",
+    "s3CollectionName": "industry_people",
+    "s3ApiPath": "/industry-person",
+    "s4ApiPath": "/api/industry-person",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_people",
+      "info": {
+        "singularName": "industry-person",
+        "pluralName": "industry-persons",
+        "displayName": "Industry_Person"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryArticle",
+    "collectionName": "industry_articles",
+    "kind": "collectionType",
+    "folderName": "industry-article",
+    "s3InfoName": "Industry_Article",
+    "s3CollectionName": "industry_articles",
+    "s3ApiPath": "/industry-article",
+    "s4ApiPath": "/api/industry-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_articles",
+      "info": {
+        "singularName": "industry-article",
+        "pluralName": "industry-articles",
+        "displayName": "Industry_Article"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryGroup",
+    "collectionName": "industry_groups",
+    "kind": "collectionType",
+    "folderName": "industry-group",
+    "s3InfoName": "Industry_Group",
+    "s3CollectionName": "industry_groups",
+    "s3ApiPath": "/industry-group",
+    "s4ApiPath": "/api/industry-group",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_groups",
+      "info": {
+        "singularName": "industry-group",
+        "pluralName": "industry-groups",
+        "displayName": "Industry_Group"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ProjectType",
+    "collectionName": "project_types",
+    "kind": "collectionType",
+    "folderName": "project-type",
+    "s3InfoName": "Project_Type",
+    "s3CollectionName": "project_types",
+    "s3ApiPath": "/project-type",
+    "s4ApiPath": "/api/project-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "project_types",
+      "info": {
+        "singularName": "project-type",
+        "pluralName": "project-types",
+        "displayName": "Project_Type"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ProjectStatus",
+    "collectionName": "project_statuses",
+    "kind": "collectionType",
+    "folderName": "project-status",
+    "s3InfoName": "Project_Status",
+    "s3CollectionName": "project_statuses",
+    "s3ApiPath": "/project-status",
+    "s4ApiPath": "/api/project-status",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "project_statuses",
+      "info": {
+        "singularName": "project-status",
+        "pluralName": "project-statuses",
+        "displayName": "Project_Status"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryProject",
+    "collectionName": "industry_projects",
+    "kind": "collectionType",
+    "folderName": "industry-project",
+    "s3InfoName": "Industry_Project",
+    "s3CollectionName": "industry_projects",
+    "s3ApiPath": "/industry-project",
+    "s4ApiPath": "/api/industry-project",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_projects",
+      "info": {
+        "singularName": "industry-project",
+        "pluralName": "industry-projects",
+        "displayName": "Industry_Project"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Channel",
+    "collectionName": "channels",
+    "kind": "collectionType",
+    "folderName": "channel",
+    "s3InfoName": "Channel",
+    "s3CollectionName": "channels",
+    "s3ApiPath": "/channel",
+    "s4ApiPath": "/api/channel",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "channels",
+      "info": {
+        "singularName": "channel",
+        "pluralName": "channels",
+        "displayName": "Channel"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryMenu",
+    "collectionName": "industry_menus",
+    "kind": "collectionType",
+    "folderName": "industry-menu",
+    "s3InfoName": "Industry_Menu",
+    "s3CollectionName": "industry_menus",
+    "s3ApiPath": "/industry-menu",
+    "s4ApiPath": "/api/industry-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_menus",
+      "info": {
+        "singularName": "industry-menu",
+        "pluralName": "industry-menus",
+        "displayName": "Industry_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Event",
+    "collectionName": "events",
+    "kind": "collectionType",
+    "folderName": "event",
+    "s3InfoName": "Event",
+    "s3CollectionName": "events",
+    "s3ApiPath": "/event",
+    "s4ApiPath": "/api/event",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "events",
+      "info": {
+        "singularName": "event",
+        "pluralName": "events",
+        "displayName": "Event"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Course",
+    "collectionName": "courses",
+    "kind": "collectionType",
+    "folderName": "course",
+    "s3InfoName": "Course",
+    "s3CollectionName": "courses",
+    "s3ApiPath": "/course",
+    "s4ApiPath": "/api/course",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "courses",
+      "info": {
+        "singularName": "course",
+        "pluralName": "courses",
+        "displayName": "Course"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DeliveryType",
+    "collectionName": "delivery_types",
+    "kind": "collectionType",
+    "folderName": "delivery-type",
+    "s3InfoName": "DeliveryType",
+    "s3CollectionName": "delivery_types",
+    "s3ApiPath": "/delivery-type",
+    "s4ApiPath": "/api/delivery-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "delivery_types",
+      "info": {
+        "singularName": "delivery-type",
+        "pluralName": "delivery-types",
+        "displayName": "DeliveryType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Delivery",
+    "collectionName": "deliveries",
+    "kind": "collectionType",
+    "folderName": "delivery",
+    "s3InfoName": "Delivery",
+    "s3CollectionName": "deliveries",
+    "s3ApiPath": "/delivery",
+    "s4ApiPath": "/api/delivery",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "deliveries",
+      "info": {
+        "singularName": "delivery",
+        "pluralName": "deliveries",
+        "displayName": "Delivery"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Product_Category",
+    "collectionName": "product_categories",
+    "kind": "collectionType",
+    "folderName": "product-category",
+    "s3InfoName": "Product_Category",
+    "s3CollectionName": "product_categories",
+    "s3ApiPath": "/product-category",
+    "s4ApiPath": "/api/product-category",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "product_categories",
+      "info": {
+        "singularName": "product-category",
+        "pluralName": "product-categories",
+        "displayName": "Product_Category"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Shop",
+    "collectionName": "shops",
+    "kind": "collectionType",
+    "folderName": "shop",
+    "s3InfoName": "Shop",
+    "s3CollectionName": "shops",
+    "s3ApiPath": "/shop",
+    "s4ApiPath": "/api/shop",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "shops",
+      "info": {
+        "singularName": "shop",
+        "pluralName": "shops",
+        "displayName": "Shop"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "CourseEvent",
+    "collectionName": "course_events",
+    "kind": "collectionType",
+    "folderName": "course-event",
+    "s3InfoName": "CourseEvent",
+    "s3CollectionName": "course_events",
+    "s3ApiPath": "/course-event",
+    "s4ApiPath": "/api/course-event",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "course_events",
+      "info": {
+        "singularName": "course-event",
+        "pluralName": "course-events",
+        "displayName": "CourseEvent"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "FrontPageCourses",
+    "collectionName": "front_page_courses",
+    "kind": "collectionType",
+    "folderName": "front-page-courses",
+    "s3InfoName": "Front_Page_Courses",
+    "s3CollectionName": "front_page_courses",
+    "s3ApiPath": "/front-page-courses",
+    "s4ApiPath": "/api/front-page-courses",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "front_page_courses",
+      "info": {
+        "singularName": "front-page-courses",
+        "pluralName": "front-page-courseses",
+        "displayName": "Front_Page_Courses"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampPersonType",
+    "collectionName": "dis_camp_person_types",
+    "kind": "collectionType",
+    "folderName": "dis-camp-person-type",
+    "s3InfoName": "DisCampPersonType",
+    "s3CollectionName": "dis_camp_person_types",
+    "s3ApiPath": "/dis-camp-person-type",
+    "s4ApiPath": "/api/dis-camp-person-type",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_person_types",
+      "info": {
+        "singularName": "dis-camp-person-type",
+        "pluralName": "dis-camp-person-types",
+        "displayName": "DisCampPersonType"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampPerson",
+    "collectionName": "dis_camp_people",
+    "kind": "collectionType",
+    "folderName": "dis-camp-person",
+    "s3InfoName": "DisCampPerson",
+    "s3CollectionName": "dis_camp_people",
+    "s3ApiPath": "/dis-camp-person",
+    "s4ApiPath": "/api/dis-camp-person",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_people",
+      "info": {
+        "singularName": "dis-camp-person",
+        "pluralName": "dis-camp-persons",
+        "displayName": "DisCampPerson"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampArticle",
+    "collectionName": "dis_camp_articles",
+    "kind": "collectionType",
+    "folderName": "dis-camp-article",
+    "s3InfoName": "DisCampArticle",
+    "s3CollectionName": "dis_camp_articles",
+    "s3ApiPath": "/dis-camp-article",
+    "s4ApiPath": "/api/dis-camp-article",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_articles",
+      "info": {
+        "singularName": "dis-camp-article",
+        "pluralName": "dis-camp-articles",
+        "displayName": "DisCampArticle"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampGroup",
+    "collectionName": "dis_camp_groups",
+    "kind": "collectionType",
+    "folderName": "dis-camp-group",
+    "s3InfoName": "DisCampGroup",
+    "s3CollectionName": "dis_camp_groups",
+    "s3ApiPath": "/dis-camp-group",
+    "s4ApiPath": "/api/dis-camp-group",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_groups",
+      "info": {
+        "singularName": "dis-camp-group",
+        "pluralName": "dis-camp-groups",
+        "displayName": "DisCampGroup"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampCategory",
+    "collectionName": "dis_camp_categories",
+    "kind": "collectionType",
+    "folderName": "dis-camp-category",
+    "s3InfoName": "DisCampCategory",
+    "s3CollectionName": "dis_camp_categories",
+    "s3ApiPath": "/dis-camp-category",
+    "s4ApiPath": "/api/dis-camp-category",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_categories",
+      "info": {
+        "singularName": "dis-camp-category",
+        "pluralName": "dis-camp-categories",
+        "displayName": "DisCampCategory"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampProject",
+    "collectionName": "dis_camp_projects",
+    "kind": "collectionType",
+    "folderName": "dis-camp-project",
+    "s3InfoName": "DisCampProject",
+    "s3CollectionName": "dis_camp_projects",
+    "s3ApiPath": "/dis-camp-project",
+    "s4ApiPath": "/api/dis-camp-project",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_projects",
+      "info": {
+        "singularName": "dis-camp-project",
+        "pluralName": "dis-camp-projects",
+        "displayName": "DisCampProject"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampEvent",
+    "collectionName": "dis_camp_events",
+    "kind": "collectionType",
+    "folderName": "dis-camp-event",
+    "s3InfoName": "DisCampEvent",
+    "s3CollectionName": "dis_camp_events",
+    "s3ApiPath": "/dis-camp-event",
+    "s4ApiPath": "/api/dis-camp-event",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_events",
+      "info": {
+        "singularName": "dis-camp-event",
+        "pluralName": "dis-camp-events",
+        "displayName": "DisCampEvent"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampMenu",
+    "collectionName": "dis_camp_menus",
+    "kind": "collectionType",
+    "folderName": "dis-camp-menu",
+    "s3InfoName": "DisCampMenu",
+    "s3CollectionName": "dis_camp_menus",
+    "s3ApiPath": "/dis-camp-menu",
+    "s4ApiPath": "/api/dis-camp-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_menus",
+      "info": {
+        "singularName": "dis-camp-menu",
+        "pluralName": "dis-camp-menus",
+        "displayName": "DisCampMenu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "POFFiSupporter",
+    "collectionName": "supporters_pages",
+    "kind": "collectionType",
+    "folderName": "supporters-page",
+    "s3InfoName": "POFFi_Supporter",
+    "s3CollectionName": "supporters_pages",
+    "s3ApiPath": "/supporters-page",
+    "s4ApiPath": "/api/supporters-page",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "supporters_pages",
+      "info": {
+        "singularName": "supporters-page",
+        "pluralName": "supporters-pages",
+        "displayName": "POFFi_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "JustSupporter",
+    "collectionName": "supporters_justs",
+    "kind": "collectionType",
+    "folderName": "supporters-just",
+    "s3InfoName": "Just_Supporter",
+    "s3CollectionName": "supporters_justs",
+    "s3ApiPath": "/supporters-just",
+    "s4ApiPath": "/api/supporters-just",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "supporters_justs",
+      "info": {
+        "singularName": "supporters-just",
+        "pluralName": "supporters-justs",
+        "displayName": "Just_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ShortsSupporter",
+    "collectionName": "supporters_shorts",
+    "kind": "collectionType",
+    "folderName": "supporters-shorts",
+    "s3InfoName": "Shorts_Supporter",
+    "s3CollectionName": "supporters_shorts",
+    "s3ApiPath": "/supporters-shorts",
+    "s4ApiPath": "/api/supporters-shorts",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "supporters_shorts",
+      "info": {
+        "singularName": "supporters-shorts",
+        "pluralName": "supporters-shortses",
+        "displayName": "Shorts_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustrySupporter",
+    "collectionName": "industry_supporters",
+    "kind": "collectionType",
+    "folderName": "industry-supporter",
+    "s3InfoName": "Industry_Supporter",
+    "s3CollectionName": "industry_supporters",
+    "s3ApiPath": "/industry-supporter",
+    "s4ApiPath": "/api/industry-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_supporters",
+      "info": {
+        "singularName": "industry-supporter",
+        "pluralName": "industry-supporters",
+        "displayName": "Industry_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KinoffiSupporter",
+    "collectionName": "kinoffi_supporters",
+    "kind": "collectionType",
+    "folderName": "kinoffi-supporter",
+    "s3InfoName": "Kinoffi_Supporter",
+    "s3CollectionName": "kinoffi_supporters",
+    "s3ApiPath": "/kinoffi-supporter",
+    "s4ApiPath": "/api/kinoffi-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kinoffi_supporters",
+      "info": {
+        "singularName": "kinoffi-supporter",
+        "pluralName": "kinoffi-supporters",
+        "displayName": "Kinoffi_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HOFFiSupporter",
+    "collectionName": "hof_fi_supporters",
+    "kind": "collectionType",
+    "folderName": "hof-fi-supporter",
+    "s3InfoName": "HOFFi_Supporter",
+    "s3CollectionName": "hof_fi_supporters",
+    "s3ApiPath": "/hof-fi-supporter",
+    "s4ApiPath": "/api/hof-fi-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "hof_fi_supporters",
+      "info": {
+        "singularName": "hof-fi-supporter",
+        "pluralName": "hof-fi-supporters",
+        "displayName": "HOFFi_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TartuffiSupporter",
+    "collectionName": "tartuffi_supporters",
+    "kind": "collectionType",
+    "folderName": "tartuffi-supporter",
+    "s3InfoName": "Tartuffi_Supporter",
+    "s3CollectionName": "tartuffi_supporters",
+    "s3ApiPath": "/tartuffi-supporter",
+    "s4ApiPath": "/api/tartuffi-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tartuffi_supporters",
+      "info": {
+        "singularName": "tartuffi-supporter",
+        "pluralName": "tartuffi-supporters",
+        "displayName": "Tartuffi_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KumuSupporter",
+    "collectionName": "kumu_supporters",
+    "kind": "collectionType",
+    "folderName": "kumu-supporter",
+    "s3InfoName": "Kumu_Supporter",
+    "s3CollectionName": "kumu_supporters",
+    "s3ApiPath": "/kumu-supporter",
+    "s4ApiPath": "/api/kumu-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kumu_supporters",
+      "info": {
+        "singularName": "kumu-supporter",
+        "pluralName": "kumu-supporters",
+        "displayName": "Kumu_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "BrunoSupporter",
+    "collectionName": "bruno_supporters",
+    "kind": "collectionType",
+    "folderName": "bruno-supporter",
+    "s3InfoName": "Bruno_Supporter",
+    "s3CollectionName": "bruno_supporters",
+    "s3ApiPath": "/bruno-supporter",
+    "s4ApiPath": "/api/bruno-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "bruno_supporters",
+      "info": {
+        "singularName": "bruno-supporter",
+        "pluralName": "bruno-supporters",
+        "displayName": "Bruno_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "FilmikooliSupporter",
+    "collectionName": "filmikool_supporters",
+    "kind": "collectionType",
+    "folderName": "filmikool-supporter",
+    "s3InfoName": "Filmikooli_Supporter",
+    "s3CollectionName": "filmikool_supporters",
+    "s3ApiPath": "/filmikool-supporter",
+    "s4ApiPath": "/api/filmikool-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "filmikool_supporters",
+      "info": {
+        "singularName": "filmikool-supporter",
+        "pluralName": "filmikool-supporters",
+        "displayName": "Filmikooli_Supporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampSupporter",
+    "collectionName": "dis_camp_supporters",
+    "kind": "collectionType",
+    "folderName": "dis-camp-supporter",
+    "s3InfoName": "DisCampSupporter",
+    "s3CollectionName": "dis_camp_supporters",
+    "s3ApiPath": "/dis-camp-supporter",
+    "s4ApiPath": "/api/dis-camp-supporter",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_supporters",
+      "info": {
+        "singularName": "dis-camp-supporter",
+        "pluralName": "dis-camp-supporters",
+        "displayName": "DisCampSupporter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "POFFiFooter",
+    "collectionName": "pof_fi_footers",
+    "kind": "collectionType",
+    "folderName": "pof-fi-footer",
+    "s3InfoName": "POFFi_Footer",
+    "s3CollectionName": "pof_fi_footers",
+    "s3ApiPath": "/pof-fi-footer",
+    "s4ApiPath": "/api/pof-fi-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "pof_fi_footers",
+      "info": {
+        "singularName": "pof-fi-footer",
+        "pluralName": "pof-fi-footers",
+        "displayName": "POFFi_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "JustFilmFooter",
+    "collectionName": "just_film_footers",
+    "kind": "collectionType",
+    "folderName": "just-film-footer",
+    "s3InfoName": "JustFilm_Footer",
+    "s3CollectionName": "just_film_footers",
+    "s3ApiPath": "/just-film-footer",
+    "s4ApiPath": "/api/just-film-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "just_film_footers",
+      "info": {
+        "singularName": "just-film-footer",
+        "pluralName": "just-film-footers",
+        "displayName": "JustFilm_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ShortsiFooter",
+    "collectionName": "shortsi_footers",
+    "kind": "collectionType",
+    "folderName": "shortsi-footer",
+    "s3InfoName": "Shortsi_Footer",
+    "s3CollectionName": "shortsi_footers",
+    "s3ApiPath": "/shortsi-footer",
+    "s4ApiPath": "/api/shortsi-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "shortsi_footers",
+      "info": {
+        "singularName": "shortsi-footer",
+        "pluralName": "shortsi-footers",
+        "displayName": "Shortsi_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "IndustryFooter",
+    "collectionName": "industry_footers",
+    "kind": "collectionType",
+    "folderName": "industry-footer",
+    "s3InfoName": "Industry_Footer",
+    "s3CollectionName": "industry_footers",
+    "s3ApiPath": "/industry-footer",
+    "s4ApiPath": "/api/industry-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_footers",
+      "info": {
+        "singularName": "industry-footer",
+        "pluralName": "industry-footers",
+        "displayName": "Industry_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KinoffiFooter",
+    "collectionName": "kinoffi_footers",
+    "kind": "collectionType",
+    "folderName": "kinoffi-footer",
+    "s3InfoName": "Kinoffi_Footer",
+    "s3CollectionName": "kinoffi_footers",
+    "s3ApiPath": "/kinoffi-footer",
+    "s4ApiPath": "/api/kinoffi-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kinoffi_footers",
+      "info": {
+        "singularName": "kinoffi-footer",
+        "pluralName": "kinoffi-footers",
+        "displayName": "Kinoffi_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HOFFiFooter",
+    "collectionName": "hof_fi_footers",
+    "kind": "collectionType",
+    "folderName": "hof-fi-footer",
+    "s3InfoName": "HOFFi_Footer",
+    "s3CollectionName": "hof_fi_footers",
+    "s3ApiPath": "/hof-fi-footer",
+    "s4ApiPath": "/api/hof-fi-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "hof_fi_footers",
+      "info": {
+        "singularName": "hof-fi-footer",
+        "pluralName": "hof-fi-footers",
+        "displayName": "HOFFi_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TartuffiFooter",
+    "collectionName": "tartuffi_footers",
+    "kind": "collectionType",
+    "folderName": "tartuffi-footer",
+    "s3InfoName": "Tartuffi_Footer",
+    "s3CollectionName": "tartuffi_footers",
+    "s3ApiPath": "/tartuffi-footer",
+    "s4ApiPath": "/api/tartuffi-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tartuffi_footers",
+      "info": {
+        "singularName": "tartuffi-footer",
+        "pluralName": "tartuffi-footers",
+        "displayName": "Tartuffi_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KumuFooter",
+    "collectionName": "kumu_footers",
+    "kind": "collectionType",
+    "folderName": "kumu-footer",
+    "s3InfoName": "Kumu_Footer",
+    "s3CollectionName": "kumu_footers",
+    "s3ApiPath": "/kumu-footer",
+    "s4ApiPath": "/api/kumu-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kumu_footers",
+      "info": {
+        "singularName": "kumu-footer",
+        "pluralName": "kumu-footers",
+        "displayName": "Kumu_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "BrunoFooter",
+    "collectionName": "bruno_footers",
+    "kind": "collectionType",
+    "folderName": "bruno-footer",
+    "s3InfoName": "Bruno_Footer",
+    "s3CollectionName": "bruno_footers",
+    "s3ApiPath": "/bruno-footer",
+    "s4ApiPath": "/api/bruno-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "bruno_footers",
+      "info": {
+        "singularName": "bruno-footer",
+        "pluralName": "bruno-footers",
+        "displayName": "Bruno_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "FilmikooliFooter",
+    "collectionName": "filmikooli_footers",
+    "kind": "collectionType",
+    "folderName": "filmikooli-footer",
+    "s3InfoName": "Filmikooli_Footer",
+    "s3CollectionName": "filmikooli_footers",
+    "s3ApiPath": "/filmikooli-footer",
+    "s4ApiPath": "/api/filmikooli-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "filmikooli_footers",
+      "info": {
+        "singularName": "filmikooli-footer",
+        "pluralName": "filmikooli-footers",
+        "displayName": "Filmikooli_Footer"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DisCampFooter",
+    "collectionName": "dis_camp_footers",
+    "kind": "collectionType",
+    "folderName": "dis-camp-footer",
+    "s3InfoName": "DisCampFooter",
+    "s3CollectionName": "dis_camp_footers",
+    "s3ApiPath": "/dis-camp-footer",
+    "s4ApiPath": "/api/dis-camp-footer",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dis_camp_footers",
+      "info": {
+        "singularName": "dis-camp-footer",
+        "pluralName": "dis-camp-footers",
+        "displayName": "DisCampFooter"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "POFFiMenu",
+    "collectionName": "pof_fi_menus",
+    "kind": "collectionType",
+    "folderName": "pof-fi-menu",
+    "s3InfoName": "POFFi_Menu",
+    "s3CollectionName": "pof_fi_menus",
+    "s3ApiPath": "/pof-fi-menu",
+    "s4ApiPath": "/api/pof-fi-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "pof_fi_menus",
+      "info": {
+        "singularName": "pof-fi-menu",
+        "pluralName": "pof-fi-menus",
+        "displayName": "POFFi_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "JustFilmiMenu",
+    "collectionName": "just_filmi_menus",
+    "kind": "collectionType",
+    "folderName": "just-filmi-menu",
+    "s3InfoName": "JustFilmi_Menu",
+    "s3CollectionName": "just_filmi_menus",
+    "s3ApiPath": "/just-filmi-menu",
+    "s4ApiPath": "/api/just-filmi-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "just_filmi_menus",
+      "info": {
+        "singularName": "just-filmi-menu",
+        "pluralName": "just-filmi-menus",
+        "displayName": "JustFilmi_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "ShortsiMenu",
+    "collectionName": "shortsi_menus",
+    "kind": "collectionType",
+    "folderName": "shortsi-menu",
+    "s3InfoName": "Shortsi_Menu",
+    "s3CollectionName": "shortsi_menus",
+    "s3ApiPath": "/shortsi-menu",
+    "s4ApiPath": "/api/shortsi-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "shortsi_menus",
+      "info": {
+        "singularName": "shortsi-menu",
+        "pluralName": "shortsi-menus",
+        "displayName": "Shortsi_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KinoffiMenu",
+    "collectionName": "kinoffi_menus",
+    "kind": "collectionType",
+    "folderName": "kinoffi-menu",
+    "s3InfoName": "Kinoffi_Menu",
+    "s3CollectionName": "kinoffi_menus",
+    "s3ApiPath": "/kinoffi-menu",
+    "s4ApiPath": "/api/kinoffi-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kinoffi_menus",
+      "info": {
+        "singularName": "kinoffi-menu",
+        "pluralName": "kinoffi-menus",
+        "displayName": "Kinoffi_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HOFFiMenu",
+    "collectionName": "hof_fi_menus",
+    "kind": "collectionType",
+    "folderName": "hof-fi-menu",
+    "s3InfoName": "HOFFi_Menu",
+    "s3CollectionName": "hof_fi_menus",
+    "s3ApiPath": "/hof-fi-menu",
+    "s4ApiPath": "/api/hof-fi-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "hof_fi_menus",
+      "info": {
+        "singularName": "hof-fi-menu",
+        "pluralName": "hof-fi-menus",
+        "displayName": "HOFFi_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TartuffiMenu",
+    "collectionName": "tartuffi_menus",
+    "kind": "collectionType",
+    "folderName": "tartuffi-menu",
+    "s3InfoName": "Tartuffi_Menu",
+    "s3CollectionName": "tartuffi_menus",
+    "s3ApiPath": "/tartuffi-menu",
+    "s4ApiPath": "/api/tartuffi-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "tartuffi_menus",
+      "info": {
+        "singularName": "tartuffi-menu",
+        "pluralName": "tartuffi-menus",
+        "displayName": "Tartuffi_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "KumuMenu",
+    "collectionName": "kumu_menus",
+    "kind": "collectionType",
+    "folderName": "kumu-menu",
+    "s3InfoName": "Kumu_Menu",
+    "s3CollectionName": "kumu_menus",
+    "s3ApiPath": "/kumu-menu",
+    "s4ApiPath": "/api/kumu-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "kumu_menus",
+      "info": {
+        "singularName": "kumu-menu",
+        "pluralName": "kumu-menus",
+        "displayName": "Kumu_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "BrunoMenu",
+    "collectionName": "bruno_menus",
+    "kind": "collectionType",
+    "folderName": "bruno-menu",
+    "s3InfoName": "Bruno_Menu",
+    "s3CollectionName": "bruno_menus",
+    "s3ApiPath": "/bruno-menu",
+    "s4ApiPath": "/api/bruno-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "bruno_menus",
+      "info": {
+        "singularName": "bruno-menu",
+        "pluralName": "bruno-menus",
+        "displayName": "Bruno_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "FilmikooliMenu",
+    "collectionName": "filmikooli_menus",
+    "kind": "collectionType",
+    "folderName": "filmikooli-menu",
+    "s3InfoName": "Filmikooli_Menu",
+    "s3CollectionName": "filmikooli_menus",
+    "s3ApiPath": "/filmikooli-menu",
+    "s4ApiPath": "/api/filmikooli-menu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "filmikooli_menus",
+      "info": {
+        "singularName": "filmikooli-menu",
+        "pluralName": "filmikooli-menus",
+        "displayName": "Filmikooli_Menu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "L1MenuIndustry",
+    "collectionName": "l_1_menu_industries",
+    "kind": "collectionType",
+    "folderName": "l1-menu-industry",
+    "s3InfoName": "L1MenuIndustry",
+    "s3CollectionName": "l1_menu_industries",
+    "s3ApiPath": "/l1-menu-industry",
+    "s4ApiPath": "/api/l1-menu-industry",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "l_1_menu_industries",
+      "info": {
+        "singularName": "l1-menu-industry",
+        "pluralName": "l1-menu-industries",
+        "displayName": "L1MenuIndustry"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "L1MenuKumu",
+    "collectionName": "l_1_menu_kumus",
+    "kind": "collectionType",
+    "folderName": "l1-menu-kumu",
+    "s3InfoName": "L1MenuKumu",
+    "s3CollectionName": "l1_menu_kumus",
+    "s3ApiPath": "/l1-menu-kumu",
+    "s4ApiPath": "/api/l1-menu-kumu",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "l_1_menu_kumus",
+      "info": {
+        "singularName": "l1-menu-kumu",
+        "pluralName": "l1-menu-kumus",
+        "displayName": "L1MenuKumu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticlePoff",
+    "collectionName": "article_hero",
+    "kind": "singleType",
+    "folderName": "article-hero",
+    "s3InfoName": "HeroArticlePoff",
+    "s3CollectionName": "article_heroes",
+    "s3ApiPath": "/article-hero",
+    "s4ApiPath": "/api/article-hero",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "article_hero",
+      "info": {
+        "singularName": "article-hero",
+        "pluralName": "article-heros",
+        "displayName": "HeroArticlePoff"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleJustFilm",
+    "collectionName": "hero_article_just_film",
+    "kind": "singleType",
+    "folderName": "hero-article-just-film",
+    "s3InfoName": "HeroArticleJustFilm",
+    "s3CollectionName": "hero_article_just_films",
+    "s3ApiPath": "/hero-article-just-film",
+    "s4ApiPath": "/api/hero-article-just-film",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_just_film",
+      "info": {
+        "singularName": "hero-article-just-film",
+        "pluralName": "hero-article-just-films",
+        "displayName": "HeroArticleJustFilm"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleShorts",
+    "collectionName": "hero_article_shorts",
+    "kind": "singleType",
+    "folderName": "hero-article-shorts",
+    "s3InfoName": "HeroArticleShorts",
+    "s3CollectionName": "hero_article_shorts",
+    "s3ApiPath": "/hero-article-shorts",
+    "s4ApiPath": "/api/hero-article-shorts",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_shorts",
+      "info": {
+        "singularName": "hero-article-shorts",
+        "pluralName": "hero-article-shortses",
+        "displayName": "HeroArticleShorts"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleIndustry",
+    "collectionName": "hero_article_industry",
+    "kind": "singleType",
+    "folderName": "hero-article-industry",
+    "s3InfoName": "HeroArticleIndustry",
+    "s3CollectionName": "hero_article_industries",
+    "s3ApiPath": "/hero-article-industry",
+    "s4ApiPath": "/api/hero-article-industry",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_industry",
+      "info": {
+        "singularName": "hero-article-industry",
+        "pluralName": "hero-article-industries",
+        "displayName": "HeroArticleIndustry"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleKinoff",
+    "collectionName": "hero_article_kinoff",
+    "kind": "singleType",
+    "folderName": "hero-article-kinoff",
+    "s3InfoName": "HeroArticleKinoff",
+    "s3CollectionName": "hero_article_kinoffs",
+    "s3ApiPath": "/hero-article-kinoff",
+    "s4ApiPath": "/api/hero-article-kinoff",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_kinoff",
+      "info": {
+        "singularName": "hero-article-kinoff",
+        "pluralName": "hero-article-kinoffs",
+        "displayName": "HeroArticleKinoff"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleHoff",
+    "collectionName": "hero_article_hoff",
+    "kind": "singleType",
+    "folderName": "hero-article-hoff",
+    "s3InfoName": "HeroArticleHoff",
+    "s3CollectionName": "hero_article_hoffs",
+    "s3ApiPath": "/hero-article-hoff",
+    "s4ApiPath": "/api/hero-article-hoff",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_hoff",
+      "info": {
+        "singularName": "hero-article-hoff",
+        "pluralName": "hero-article-hoffs",
+        "displayName": "HeroArticleHoff"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleTartuff",
+    "collectionName": "hero_article_tartuff",
+    "kind": "singleType",
+    "folderName": "hero-article-tartuff",
+    "s3InfoName": "HeroArticleTartuff",
+    "s3CollectionName": "hero_article_tartuffs",
+    "s3ApiPath": "/hero-article-tartuff",
+    "s4ApiPath": "/api/hero-article-tartuff",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_tartuff",
+      "info": {
+        "singularName": "hero-article-tartuff",
+        "pluralName": "hero-article-tartuffs",
+        "displayName": "HeroArticleTartuff"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleKumu",
+    "collectionName": "hero_article_kumu",
+    "kind": "singleType",
+    "folderName": "hero-article-kumu",
+    "s3InfoName": "HeroArticleKumu",
+    "s3CollectionName": "hero_article_kumu",
+    "s3ApiPath": "/hero-article-kumu",
+    "s4ApiPath": "/api/hero-article-kumu",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_kumu",
+      "info": {
+        "singularName": "hero-article-kumu",
+        "pluralName": "hero-article-kumus",
+        "displayName": "HeroArticleKumu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleBruno",
+    "collectionName": "hero_article_bruno",
+    "kind": "singleType",
+    "folderName": "hero-article-bruno",
+    "s3InfoName": "HeroArticleBruno",
+    "s3CollectionName": "hero_article_bruno",
+    "s3ApiPath": "/hero-article-bruno",
+    "s4ApiPath": "/api/hero-article-bruno",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_bruno",
+      "info": {
+        "singularName": "hero-article-bruno",
+        "pluralName": "hero-article-brunos",
+        "displayName": "HeroArticleBruno"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleFilmikool",
+    "collectionName": "hero_article_filmikool",
+    "kind": "singleType",
+    "folderName": "hero-article-filmikool",
+    "s3InfoName": "HeroArticleFilmikool",
+    "s3CollectionName": "hero_article_filmikools",
+    "s3ApiPath": "/hero-article-filmikool",
+    "s4ApiPath": "/api/hero-article-filmikool",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_filmikool",
+      "info": {
+        "singularName": "hero-article-filmikool",
+        "pluralName": "hero-article-filmikools",
+        "displayName": "HeroArticleFilmikool"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "HeroArticleDisCamp",
+    "collectionName": "hero_article_dis_camp",
+    "kind": "singleType",
+    "folderName": "hero-article-dis-camp",
+    "s3InfoName": "HeroArticleDisCamp",
+    "s3CollectionName": "hero_article_dis_camps",
+    "s3ApiPath": "/hero-article-dis-camp",
+    "s4ApiPath": "/api/hero-article-dis-camp",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "hero_article_dis_camp",
+      "info": {
+        "singularName": "hero-article-dis-camp",
+        "pluralName": "hero-article-dis-camps",
+        "displayName": "HeroArticleDisCamp"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioPOFF",
+    "collectionName": "trio_p_oe_ff",
+    "kind": "singleType",
+    "folderName": "trio-p-oe-ff",
+    "s3InfoName": "TrioPOFF",
+    "s3CollectionName": "trio_p_oe_ffs",
+    "s3ApiPath": "/trio-p-oe-ff",
+    "s4ApiPath": "/api/trio-p-oe-ff",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_p_oe_ff",
+      "info": {
+        "singularName": "trio-p-oe-ff",
+        "pluralName": "trio-p-oe-ffs",
+        "displayName": "TrioPOFF"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioJustFilm",
+    "collectionName": "trio_just_film",
+    "kind": "singleType",
+    "folderName": "trio-just-film",
+    "s3InfoName": "TrioJustFilm",
+    "s3CollectionName": "trio_just_films",
+    "s3ApiPath": "/trio-just-film",
+    "s4ApiPath": "/api/trio-just-film",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_just_film",
+      "info": {
+        "singularName": "trio-just-film",
+        "pluralName": "trio-just-films",
+        "displayName": "TrioJustFilm"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioShorts",
+    "collectionName": "trio_shorts",
+    "kind": "singleType",
+    "folderName": "trio-shorts",
+    "s3InfoName": "TrioShorts",
+    "s3CollectionName": "trio_shorts",
+    "s3ApiPath": "/trio-shorts",
+    "s4ApiPath": "/api/trio-shorts",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_shorts",
+      "info": {
+        "singularName": "trio-shorts",
+        "pluralName": "trio-shortses",
+        "displayName": "TrioShorts"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioIndustry",
+    "collectionName": "trio_industry",
+    "kind": "singleType",
+    "folderName": "trio-industry",
+    "s3InfoName": "TrioIndustry",
+    "s3CollectionName": "trio_industries",
+    "s3ApiPath": "/trio-industry",
+    "s4ApiPath": "/api/trio-industry",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_industry",
+      "info": {
+        "singularName": "trio-industry",
+        "pluralName": "trio-industries",
+        "displayName": "TrioIndustry"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioKinoff",
+    "collectionName": "trio_kinoff",
+    "kind": "singleType",
+    "folderName": "trio-kinoff",
+    "s3InfoName": "TrioKinoff",
+    "s3CollectionName": "trio_kinoffs",
+    "s3ApiPath": "/trio-kinoff",
+    "s4ApiPath": "/api/trio-kinoff",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_kinoff",
+      "info": {
+        "singularName": "trio-kinoff",
+        "pluralName": "trio-kinoffs",
+        "displayName": "TrioKinoff"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioHOFF",
+    "collectionName": "trio_hoff",
+    "kind": "singleType",
+    "folderName": "trio-hoff",
+    "s3InfoName": "TrioHOFF",
+    "s3CollectionName": "trio_hoffs",
+    "s3ApiPath": "/trio-hoff",
+    "s4ApiPath": "/api/trio-hoff",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_hoff",
+      "info": {
+        "singularName": "trio-hoff",
+        "pluralName": "trio-hoffs",
+        "displayName": "TrioHOFF"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioTartuff",
+    "collectionName": "trio_tartuff",
+    "kind": "singleType",
+    "folderName": "trio-tartuff",
+    "s3InfoName": "TrioTartuff",
+    "s3CollectionName": "trio_tartuffs",
+    "s3ApiPath": "/trio-tartuff",
+    "s4ApiPath": "/api/trio-tartuff",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_tartuff",
+      "info": {
+        "singularName": "trio-tartuff",
+        "pluralName": "trio-tartuffs",
+        "displayName": "TrioTartuff"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioKumu",
+    "collectionName": "trio_kumu",
+    "kind": "singleType",
+    "folderName": "trio-kumu",
+    "s3InfoName": "TrioKumu",
+    "s3CollectionName": "trio_kumu",
+    "s3ApiPath": "/trio-kumu",
+    "s4ApiPath": "/api/trio-kumu",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_kumu",
+      "info": {
+        "singularName": "trio-kumu",
+        "pluralName": "trio-kumus",
+        "displayName": "TrioKumu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioBruno",
+    "collectionName": "trio_bruno",
+    "kind": "singleType",
+    "folderName": "trio-bruno",
+    "s3InfoName": "TrioBruno",
+    "s3CollectionName": "trio_bruno",
+    "s3ApiPath": "/trio-bruno",
+    "s4ApiPath": "/api/trio-bruno",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_bruno",
+      "info": {
+        "singularName": "trio-bruno",
+        "pluralName": "trio-brunos",
+        "displayName": "TrioBruno"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioFilmikool",
+    "collectionName": "trio_filmikool",
+    "kind": "singleType",
+    "folderName": "trio-filmikool",
+    "s3InfoName": "TrioFilmikool",
+    "s3CollectionName": "trio_filmikools",
+    "s3ApiPath": "/trio-filmikool",
+    "s4ApiPath": "/api/trio-filmikool",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_filmikool",
+      "info": {
+        "singularName": "trio-filmikool",
+        "pluralName": "trio-filmikools",
+        "displayName": "TrioFilmikool"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TrioDisCamp",
+    "collectionName": "trio_dis_camp",
+    "kind": "singleType",
+    "folderName": "trio-dis-camp",
+    "s3InfoName": "TrioDisCamp",
+    "s3CollectionName": "trio_dis_camps",
+    "s3ApiPath": "/trio-dis-camp",
+    "s4ApiPath": "/api/trio-dis-camp",
+    "v4": {
+      "kind": "singleType",
+      "collectionName": "trio_dis_camp",
+      "info": {
+        "singularName": "trio-dis-camp",
+        "pluralName": "trio-dis-camps",
+        "displayName": "TrioDisCamp"
+      }
+    }
+  }
+]

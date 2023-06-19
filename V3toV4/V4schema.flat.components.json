@@ -1,0 +1,1090 @@
+[
+  {
+    "folderName": "user",
+    "componentName": "user-right",
+    "s3InfoName": "UserRight",
+    "s3ApiPath": "/components/useruser-right",
+    "s4ApiPath": "/components/useruser-right",
+    "v4": {
+      "collectionName": "components_user_user_rights",
+      "info": {
+        "displayName": "UserRight"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "location",
+    "componentName": "address",
+    "s3InfoName": "Address",
+    "s3ApiPath": "/components/locationaddress",
+    "s4ApiPath": "/components/locationaddress",
+    "v4": {
+      "collectionName": "components_location_addresses",
+      "info": {
+        "displayName": "Address"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "translated",
+    "componentName": "translated-long",
+    "s3InfoName": "Translated Long",
+    "s3ApiPath": "/components/translatedtranslated-long",
+    "s4ApiPath": "/components/translatedtranslated-long",
+    "v4": {
+      "collectionName": "components_translated_translated_longs",
+      "info": {
+        "displayName": "Translated Long"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "translated",
+    "componentName": "translated-short",
+    "s3InfoName": "Translated Short",
+    "s3ApiPath": "/components/translatedtranslated-short",
+    "s4ApiPath": "/components/translatedtranslated-short",
+    "v4": {
+      "collectionName": "components_translated_translated_shorts",
+      "info": {
+        "displayName": "Translated Short"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "media",
+    "componentName": "remote-img",
+    "s3InfoName": "RemoteImg",
+    "s3ApiPath": "/components/mediaremote-img",
+    "s4ApiPath": "/components/mediaremote-img",
+    "v4": {
+      "collectionName": "components_media_remote_imgs",
+      "info": {
+        "displayName": "RemoteImg"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "film",
+    "componentName": "presented-by",
+    "s3InfoName": "presentedBy",
+    "s3ApiPath": "/components/filmpresented-by",
+    "s4ApiPath": "/components/filmpresented-by",
+    "v4": {
+      "collectionName": "components_film_presented_bies",
+      "info": {
+        "displayName": "presentedBy"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "article-media",
+    "s3InfoName": "ArticleMedia",
+    "s3ApiPath": "/components/articlearticle-media",
+    "s4ApiPath": "/components/articlearticle-media",
+    "v4": {
+      "collectionName": "components_article_article_medias",
+      "info": {
+        "displayName": "ArticleMedia"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "button",
+    "componentName": "button",
+    "s3InfoName": "Button",
+    "s3ApiPath": "/components/buttonbutton",
+    "s4ApiPath": "/components/buttonbutton",
+    "v4": {
+      "collectionName": "components_button_buttons",
+      "info": {
+        "displayName": "Button"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "teams",
+    "componentName": "test-team",
+    "s3InfoName": "subTeam",
+    "s3ApiPath": "/components/teamstest-team",
+    "s4ApiPath": "/components/teamstest-team",
+    "v4": {
+      "collectionName": "components_teams_test_teams",
+      "info": {
+        "displayName": "subTeam"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "tags",
+    "componentName": "tags",
+    "s3InfoName": "Tags",
+    "s3ApiPath": "/components/tagstags",
+    "s4ApiPath": "/components/tagstags",
+    "v4": {
+      "collectionName": "components_tags_tags",
+      "info": {
+        "displayName": "Tags"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "film",
+    "componentName": "credentials-new",
+    "s3InfoName": "credentials",
+    "s3ApiPath": "/components/filmcredentials-new",
+    "s4ApiPath": "/components/filmcredentials-new",
+    "v4": {
+      "collectionName": "components_film_credentials_news",
+      "info": {
+        "displayName": "credentials"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "film",
+    "componentName": "ordered-countries",
+    "s3InfoName": "orderedCountries",
+    "s3ApiPath": "/components/filmordered-countries",
+    "s4ApiPath": "/components/filmordered-countries",
+    "v4": {
+      "collectionName": "components_film_ordered_countries",
+      "info": {
+        "displayName": "orderedCountries"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "media",
+    "componentName": "trailers",
+    "s3InfoName": "Trailer",
+    "s3ApiPath": "/components/mediatrailers",
+    "s4ApiPath": "/components/mediatrailers",
+    "v4": {
+      "collectionName": "components_media_trailers",
+      "info": {
+        "displayName": "Trailer"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "media",
+    "componentName": "qa-clip",
+    "s3InfoName": "QaClip",
+    "s3ApiPath": "/components/mediaqa-clip",
+    "s4ApiPath": "/components/mediaqa-clip",
+    "v4": {
+      "collectionName": "components_media_qa_clips",
+      "info": {
+        "displayName": "QaClip"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "film",
+    "componentName": "ordered-films",
+    "s3InfoName": "orderedFilms",
+    "s3ApiPath": "/components/filmordered-films",
+    "s4ApiPath": "/components/filmordered-films",
+    "v4": {
+      "collectionName": "components_film_ordered_films",
+      "info": {
+        "displayName": "orderedFilms"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "screening",
+    "componentName": "intro-conversation-qand-a",
+    "s3InfoName": "Intro_Conversation_QandA",
+    "s3ApiPath": "/components/screeningintro-conversation-qand-a",
+    "s4ApiPath": "/components/screeningintro-conversation-qand-a",
+    "v4": {
+      "collectionName": "components_screening_intro_conversation_qand_as",
+      "info": {
+        "displayName": "Intro_Conversation_QandA"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "label",
+    "componentName": "label",
+    "s3InfoName": "label",
+    "s3ApiPath": "/components/labellabel",
+    "s4ApiPath": "/components/labellabel",
+    "v4": {
+      "collectionName": "components_label_labels",
+      "info": {
+        "displayName": "label"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "film",
+    "componentName": "filmography",
+    "s3InfoName": "filmography",
+    "s3ApiPath": "/components/filmfilmography",
+    "s4ApiPath": "/components/filmfilmography",
+    "v4": {
+      "collectionName": "components_film_filmographies",
+      "info": {
+        "displayName": "filmography"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "industry-sub-menu-item",
+    "s3InfoName": "IndustrySubMenuItem",
+    "s3ApiPath": "/components/menuindustry-sub-menu-item",
+    "s4ApiPath": "/components/menuindustry-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_industry_sub_menu_items",
+      "info": {
+        "displayName": "IndustrySubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "tags",
+    "componentName": "course-tags",
+    "s3InfoName": "CourseTags",
+    "s3ApiPath": "/components/tagscourse-tags",
+    "s4ApiPath": "/components/tagscourse-tags",
+    "v4": {
+      "collectionName": "components_tags_course_tags",
+      "info": {
+        "displayName": "CourseTags"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "ticketing",
+    "componentName": "delivery-price",
+    "s3InfoName": "DeliveryPrice",
+    "s3ApiPath": "/components/ticketingdelivery-price",
+    "s4ApiPath": "/components/ticketingdelivery-price",
+    "v4": {
+      "collectionName": "components_ticketing_delivery_prices",
+      "info": {
+        "displayName": "DeliveryPrice"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "time",
+    "componentName": "period",
+    "s3InfoName": "period",
+    "s3ApiPath": "/components/timeperiod",
+    "s4ApiPath": "/components/timeperiod",
+    "v4": {
+      "collectionName": "components_time_periods",
+      "info": {
+        "displayName": "period"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "ticketing",
+    "componentName": "ticketing-rights",
+    "s3InfoName": "ticketingRight",
+    "s3ApiPath": "/components/ticketingticketing-rights",
+    "s4ApiPath": "/components/ticketingticketing-rights",
+    "v4": {
+      "collectionName": "components_ticketing_ticketing_rights",
+      "info": {
+        "displayName": "ticketingRight"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "ticketing",
+    "componentName": "price-with-time",
+    "s3InfoName": "priceAtPeriod",
+    "s3ApiPath": "/components/ticketingprice-with-time",
+    "s4ApiPath": "/components/ticketingprice-with-time",
+    "v4": {
+      "collectionName": "components_ticketing_price_with_times",
+      "info": {
+        "displayName": "priceAtPeriod"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "media",
+    "componentName": "imgs",
+    "s3InfoName": "imgs",
+    "s3ApiPath": "/components/mediaimgs",
+    "s4ApiPath": "/components/mediaimgs",
+    "v4": {
+      "collectionName": "components_media_imgs",
+      "info": {
+        "displayName": "imgs"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "time",
+    "componentName": "period-relative",
+    "s3InfoName": "PeriodRelative",
+    "s3ApiPath": "/components/timeperiod-relative",
+    "s4ApiPath": "/components/timeperiod-relative",
+    "v4": {
+      "collectionName": "components_time_period_relatives",
+      "info": {
+        "displayName": "PeriodRelative"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "ticketing",
+    "componentName": "prod-cat-list",
+    "s3InfoName": "prodCatList",
+    "s3ApiPath": "/components/ticketingprod-cat-list",
+    "s4ApiPath": "/components/ticketingprod-cat-list",
+    "v4": {
+      "collectionName": "components_ticketing_prod_cat_lists",
+      "info": {
+        "displayName": "prodCatList"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "course",
+    "componentName": "course-module",
+    "s3InfoName": "CourseModule",
+    "s3ApiPath": "/components/coursecourse-module",
+    "s4ApiPath": "/components/coursecourse-module",
+    "v4": {
+      "collectionName": "components_course_course_modules",
+      "info": {
+        "displayName": "CourseModule"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "dis-camp-sub-menu-item",
+    "s3InfoName": "DisCampSubMenuItem",
+    "s3ApiPath": "/components/menudis-camp-sub-menu-item",
+    "s4ApiPath": "/components/menudis-camp-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_dis_camp_sub_menu_items",
+      "info": {
+        "displayName": "DisCampSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-poff",
+    "s3InfoName": "supSecPoff",
+    "s3ApiPath": "/components/footersup-sec-poff",
+    "s4ApiPath": "/components/footersup-sec-poff",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_poffs",
+      "info": {
+        "displayName": "supSecPoff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-just",
+    "s3InfoName": "supSecJust",
+    "s3ApiPath": "/components/footersup-sec-just",
+    "s4ApiPath": "/components/footersup-sec-just",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_justs",
+      "info": {
+        "displayName": "supSecJust"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-shorts",
+    "s3InfoName": "supSecShorts",
+    "s3ApiPath": "/components/footersup-sec-shorts",
+    "s4ApiPath": "/components/footersup-sec-shorts",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_shorts",
+      "info": {
+        "displayName": "supSecShorts"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-industry",
+    "s3InfoName": "SupSecIndustry",
+    "s3ApiPath": "/components/footersup-sec-industry",
+    "s4ApiPath": "/components/footersup-sec-industry",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_industry",
+      "info": {
+        "displayName": "SupSecIndustry"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-kinoff",
+    "s3InfoName": "SupSecKinoff",
+    "s3ApiPath": "/components/footersup-sec-kinoff",
+    "s4ApiPath": "/components/footersup-sec-kinoff",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_kinoff",
+      "info": {
+        "displayName": "SupSecKinoff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-hoff",
+    "s3InfoName": "SupSecHoff",
+    "s3ApiPath": "/components/footersup-sec-hoff",
+    "s4ApiPath": "/components/footersup-sec-hoff",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_hoffs",
+      "info": {
+        "displayName": "SupSecHoff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-tartuff",
+    "s3InfoName": "SupSecTartuff",
+    "s3ApiPath": "/components/footersup-sec-tartuff",
+    "s4ApiPath": "/components/footersup-sec-tartuff",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_tartuffs",
+      "info": {
+        "displayName": "SupSecTartuff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-kumu",
+    "s3InfoName": "SupSecKumu",
+    "s3ApiPath": "/components/footersup-sec-kumu",
+    "s4ApiPath": "/components/footersup-sec-kumu",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_kumu",
+      "info": {
+        "displayName": "SupSecKumu"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-bruno",
+    "s3InfoName": "SupSecBruno",
+    "s3ApiPath": "/components/footersup-sec-bruno",
+    "s4ApiPath": "/components/footersup-sec-bruno",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_bruno",
+      "info": {
+        "displayName": "SupSecBruno"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-filmikool",
+    "s3InfoName": "SupSecFilmikool",
+    "s3ApiPath": "/components/footersup-sec-filmikool",
+    "s4ApiPath": "/components/footersup-sec-filmikool",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_filmikools",
+      "info": {
+        "displayName": "SupSecFilmikool"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "sup-sec-dis-camp",
+    "s3InfoName": "SupSecDisCamp",
+    "s3ApiPath": "/components/footersup-sec-dis-camp",
+    "s4ApiPath": "/components/footersup-sec-dis-camp",
+    "v4": {
+      "collectionName": "components_footer_sup_sec_dis_camps",
+      "info": {
+        "displayName": "SupSecDisCamp"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "social",
+    "componentName": "social-group",
+    "s3InfoName": "SocialGroup",
+    "s3ApiPath": "/components/socialsocial-group",
+    "s4ApiPath": "/components/socialsocial-group",
+    "v4": {
+      "collectionName": "components_social_social_groups",
+      "info": {
+        "displayName": "SocialGroup"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "footer",
+    "componentName": "footer-item-nav",
+    "s3InfoName": "footerItemNav",
+    "s3ApiPath": "/components/footerfooter-item-nav",
+    "s4ApiPath": "/components/footerfooter-item-nav",
+    "v4": {
+      "collectionName": "components_footer_footer_item_navs",
+      "info": {
+        "displayName": "footerItemNav"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "menu-item",
+    "s3InfoName": "poffiSubMenuItem",
+    "s3ApiPath": "/components/menumenu-item",
+    "s4ApiPath": "/components/menumenu-item",
+    "v4": {
+      "collectionName": "components_menu_menu_items",
+      "info": {
+        "displayName": "poffiSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "just-filmi-sub-menu-item",
+    "s3InfoName": "JustFilmiSubMenuItem",
+    "s3ApiPath": "/components/menujust-filmi-sub-menu-item",
+    "s4ApiPath": "/components/menujust-filmi-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_just_filmi_sub_menu_items",
+      "info": {
+        "displayName": "JustFilmiSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "shortsi-sub-menu-item",
+    "s3InfoName": "ShortsiSubMenuItem",
+    "s3ApiPath": "/components/menushortsi-sub-menu-item",
+    "s4ApiPath": "/components/menushortsi-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_shortsi_sub_menu_items",
+      "info": {
+        "displayName": "ShortsiSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "kinoffi-sub-menu-item",
+    "s3InfoName": "KinoffiSubMenuItem",
+    "s3ApiPath": "/components/menukinoffi-sub-menu-item",
+    "s4ApiPath": "/components/menukinoffi-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_kinoffi_sub_menu_items",
+      "info": {
+        "displayName": "KinoffiSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "hoffi-sub-menu-item",
+    "s3InfoName": "hoffiSubMenuItem",
+    "s3ApiPath": "/components/menuhoffi-sub-menu-item",
+    "s4ApiPath": "/components/menuhoffi-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_hoffi_sub_menu_items",
+      "info": {
+        "displayName": "hoffiSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "tartuffi-sub-menu-item",
+    "s3InfoName": "TartuffiSubMenuItem",
+    "s3ApiPath": "/components/menutartuffi-sub-menu-item",
+    "s4ApiPath": "/components/menutartuffi-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_tartuffi_sub_menu_items",
+      "info": {
+        "displayName": "TartuffiSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "kumu-sub-menu-item",
+    "s3InfoName": "KumuSubMenuItem",
+    "s3ApiPath": "/components/menukumu-sub-menu-item",
+    "s4ApiPath": "/components/menukumu-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_kumu_sub_menu_items",
+      "info": {
+        "displayName": "KumuSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "bruno-sub-menu-item",
+    "s3InfoName": "BrunoSubMenuItem",
+    "s3ApiPath": "/components/menubruno-sub-menu-item",
+    "s4ApiPath": "/components/menubruno-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_bruno_sub_menu_items",
+      "info": {
+        "displayName": "BrunoSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "filmikooli-sub-menu-item",
+    "s3InfoName": "FilmikooliSubMenuItem",
+    "s3ApiPath": "/components/menufilmikooli-sub-menu-item",
+    "s4ApiPath": "/components/menufilmikooli-sub-menu-item",
+    "v4": {
+      "collectionName": "components_menu_filmikooli_sub_menu_items",
+      "info": {
+        "displayName": "FilmikooliSubMenuItem"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "l2-menu-industry",
+    "s3InfoName": "L2MenuIndustry",
+    "s3ApiPath": "/components/menul2-menu-industry",
+    "s4ApiPath": "/components/menul2-menu-industry",
+    "v4": {
+      "collectionName": "components_menu_l2_menu_industries",
+      "info": {
+        "displayName": "L2MenuIndustry"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "menu",
+    "componentName": "l2-menu-kumu",
+    "s3InfoName": "L2MenuKumu",
+    "s3ApiPath": "/components/menul2-menu-kumu",
+    "s4ApiPath": "/components/menul2-menu-kumu",
+    "v4": {
+      "collectionName": "components_menu_l2_menu_kumus",
+      "info": {
+        "displayName": "L2MenuKumu"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trio-poff-et",
+    "s3InfoName": "Triopoff",
+    "s3ApiPath": "/components/articletrio-poff-et",
+    "s4ApiPath": "/components/articletrio-poff-et",
+    "v4": {
+      "collectionName": "components_article_trio_poff_ets",
+      "info": {
+        "displayName": "Triopoff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trio-just-film",
+    "s3InfoName": "Triojustfilm",
+    "s3ApiPath": "/components/articletrio-just-film",
+    "s4ApiPath": "/components/articletrio-just-film",
+    "v4": {
+      "collectionName": "components_article_trio_just_films",
+      "info": {
+        "displayName": "Triojustfilm"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trio-shorts",
+    "s3InfoName": "Trioshorts",
+    "s3ApiPath": "/components/articletrio-shorts",
+    "s4ApiPath": "/components/articletrio-shorts",
+    "v4": {
+      "collectionName": "components_article_trio_shorts",
+      "info": {
+        "displayName": "Trioshorts"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trioindustry",
+    "s3InfoName": "Trioindustry",
+    "s3ApiPath": "/components/articletrioindustry",
+    "s4ApiPath": "/components/articletrioindustry",
+    "v4": {
+      "collectionName": "components_article_trio_industry",
+      "info": {
+        "displayName": "Trioindustry"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "triokinoff",
+    "s3InfoName": "Triokinoff",
+    "s3ApiPath": "/components/articletriokinoff",
+    "s4ApiPath": "/components/articletriokinoff",
+    "v4": {
+      "collectionName": "components_article_trio_kinoff",
+      "info": {
+        "displayName": "Triokinoff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trio-hoff",
+    "s3InfoName": "TrioHoff",
+    "s3ApiPath": "/components/articletrio-hoff",
+    "s4ApiPath": "/components/articletrio-hoff",
+    "v4": {
+      "collectionName": "components_article_trio_hoffs",
+      "info": {
+        "displayName": "TrioHoff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trio-tartuff",
+    "s3InfoName": "Triotartuff",
+    "s3ApiPath": "/components/articletrio-tartuff",
+    "s4ApiPath": "/components/articletrio-tartuff",
+    "v4": {
+      "collectionName": "components_article_trio_tartuffs",
+      "info": {
+        "displayName": "Triotartuff"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trio-kumu",
+    "s3InfoName": "Triokumu",
+    "s3ApiPath": "/components/articletrio-kumu",
+    "s4ApiPath": "/components/articletrio-kumu",
+    "v4": {
+      "collectionName": "components_article_trio_kumu",
+      "info": {
+        "displayName": "Triokumu"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "trio-bruno",
+    "s3InfoName": "Triobruno",
+    "s3ApiPath": "/components/articletrio-bruno",
+    "s4ApiPath": "/components/articletrio-bruno",
+    "v4": {
+      "collectionName": "components_article_trio_bruno",
+      "info": {
+        "displayName": "Triobruno"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "triofilmikool",
+    "s3InfoName": "Triofilmikool",
+    "s3ApiPath": "/components/articletriofilmikool",
+    "s4ApiPath": "/components/articletriofilmikool",
+    "v4": {
+      "collectionName": "components_article_triofilmikools",
+      "info": {
+        "displayName": "Triofilmikool"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  },
+  {
+    "folderName": "article",
+    "componentName": "triodiscamp",
+    "s3InfoName": "Triodiscamp",
+    "s3ApiPath": "/components/articletriodiscamp",
+    "s4ApiPath": "/components/articletriodiscamp",
+    "v4": {
+      "collectionName": "components_article_triodiscamps",
+      "info": {
+        "displayName": "Triodiscamp"
+      },
+      "options": {},
+      "attributes": {
+        "undefined": {}
+      }
+    }
+  }
+]

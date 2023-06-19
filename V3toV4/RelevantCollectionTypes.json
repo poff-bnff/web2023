@@ -3,7 +3,7 @@
     "s3DatamodelKey": "ProductType",
     "collectionName": "product_types",
     "kind": "collectionType",
-    "s3FolderName": "product-type",
+    "folderName": "product-type",
     "s3InfoName": "ProductType",
     "s3CollectionName": "product_types"
   },
@@ -11,7 +11,7 @@
     "s3DatamodelKey": "UserRole",
     "collectionName": "user_roles",
     "kind": "collectionType",
-    "s3FolderName": "user-role",
+    "folderName": "user-role",
     "s3InfoName": "UserRole",
     "s3CollectionName": "user_roles"
   },
@@ -19,7 +19,7 @@
     "s3DatamodelKey": "BusinessProfile",
     "collectionName": "business_profiles",
     "kind": "collectionType",
-    "s3FolderName": "business-profile",
+    "folderName": "business-profile",
     "s3InfoName": "BusinessProfile",
     "s3CollectionName": "business_profiles"
   },
@@ -27,7 +27,7 @@
     "s3DatamodelKey": "WebPermission",
     "collectionName": "web_permissions",
     "kind": "collectionType",
-    "s3FolderName": "web-permission",
+    "folderName": "web-permission",
     "s3InfoName": "webPermission",
     "s3CollectionName": "web_permissions"
   },
@@ -35,7 +35,7 @@
     "s3DatamodelKey": "WebRole",
     "collectionName": "web_roles",
     "kind": "collectionType",
-    "s3FolderName": "web-role",
+    "folderName": "web-role",
     "s3InfoName": "webRole",
     "s3CollectionName": "web_roles"
   },
@@ -43,7 +43,7 @@
     "s3DatamodelKey": "WebUser",
     "collectionName": "web_users",
     "kind": "collectionType",
-    "s3FolderName": "web-user",
+    "folderName": "web-user",
     "s3InfoName": "webUser",
     "s3CollectionName": "web_users"
   },
@@ -51,7 +51,7 @@
     "s3DatamodelKey": "Domain",
     "collectionName": "domains",
     "kind": "collectionType",
-    "s3FolderName": "domain",
+    "folderName": "domain",
     "s3InfoName": "Domain",
     "s3CollectionName": "Domeen"
   },
@@ -59,7 +59,7 @@
     "s3DatamodelKey": "Gender",
     "collectionName": "genders",
     "kind": "collectionType",
-    "s3FolderName": "gender",
+    "folderName": "gender",
     "s3InfoName": "Gender",
     "s3CollectionName": "genders"
   },
@@ -67,7 +67,7 @@
     "s3DatamodelKey": "TagAgeRestriction",
     "collectionName": "age_restrictions",
     "kind": "collectionType",
-    "s3FolderName": "age-restriction",
+    "folderName": "age-restriction",
     "s3InfoName": "TagAgeRestriction",
     "s3CollectionName": "age_restrictions"
   },
@@ -75,7 +75,7 @@
     "s3DatamodelKey": "TagGenre",
     "collectionName": "tag_genres",
     "kind": "collectionType",
-    "s3FolderName": "tag-genre",
+    "folderName": "tag-genre",
     "s3InfoName": "TagGenre",
     "s3CollectionName": "tag_genres"
   },
@@ -83,7 +83,7 @@
     "s3DatamodelKey": "TagKeyword",
     "collectionName": "tag_keywords",
     "kind": "collectionType",
-    "s3FolderName": "tag-keyword",
+    "folderName": "tag-keyword",
     "s3InfoName": "TagKeyword",
     "s3CollectionName": "tag_keywords"
   },
@@ -91,7 +91,7 @@
     "s3DatamodelKey": "TagPremiereType",
     "collectionName": "tag_premiere_types",
     "kind": "collectionType",
-    "s3FolderName": "tag-premiere-type",
+    "folderName": "tag-premiere-type",
     "s3InfoName": "TagPremiereType",
     "s3CollectionName": "tag_premiere_types"
   },
@@ -99,7 +99,7 @@
     "s3DatamodelKey": "TagFilmType",
     "collectionName": "tag_film_types",
     "kind": "collectionType",
-    "s3FolderName": "tag-film-type",
+    "folderName": "tag-film-type",
     "s3InfoName": "TagFilmType",
     "s3CollectionName": "tag_film_types"
   },
@@ -107,7 +107,7 @@
     "s3DatamodelKey": "TagLookingFor",
     "collectionName": "tag_looking_fors",
     "kind": "collectionType",
-    "s3FolderName": "tag-looking-for",
+    "folderName": "tag-looking-for",
     "s3InfoName": "TagLookingFor",
     "s3CollectionName": "tag_looking_fors"
   },
@@ -115,7 +115,7 @@
     "s3DatamodelKey": "TagSecret",
     "collectionName": "tag_secrets",
     "kind": "collectionType",
-    "s3FolderName": "tag-secret",
+    "folderName": "tag-secret",
     "s3InfoName": "TagSecret",
     "s3CollectionName": "tag_secrets"
   },
@@ -123,7 +123,7 @@
     "s3DatamodelKey": "TagLocation",
     "collectionName": "tag_locations",
     "kind": "collectionType",
-    "s3FolderName": "tag-location",
+    "folderName": "tag-location",
     "s3InfoName": "TagLocation",
     "s3CollectionName": "tag_locations"
   },
@@ -131,7 +131,7 @@
     "s3DatamodelKey": "TagCategory",
     "collectionName": "tag_categories",
     "kind": "collectionType",
-    "s3FolderName": "tag-category",
+    "folderName": "tag-category",
     "s3InfoName": "TagCategory",
     "s3CollectionName": "tag_categories"
   },
@@ -139,7 +139,7 @@
     "s3DatamodelKey": "TagTriggerWarning",
     "collectionName": "trigger_warnings",
     "kind": "collectionType",
-    "s3FolderName": "trigger-warning",
+    "folderName": "trigger-warning",
     "s3InfoName": "TagTriggerWarning",
     "s3CollectionName": "trigger_warnings"
   },
@@ -147,7 +147,7 @@
     "s3DatamodelKey": "Award",
     "collectionName": "industry_awards",
     "kind": "collectionType",
-    "s3FolderName": "industry-award",
+    "folderName": "industry-award",
     "s3InfoName": "Award",
     "s3CollectionName": "industry_awards"
   },
@@ -155,7 +155,7 @@
     "s3DatamodelKey": "Awarding",
     "collectionName": "awardings",
     "kind": "collectionType",
-    "s3FolderName": "awarding",
+    "folderName": "awarding",
     "s3InfoName": "Awarding",
     "s3CollectionName": "awardings"
   },
@@ -163,7 +163,7 @@
     "s3DatamodelKey": "Origin",
     "collectionName": "origins",
     "kind": "collectionType",
-    "s3FolderName": "origin",
+    "folderName": "origin",
     "s3InfoName": "Origin",
     "s3CollectionName": "origins"
   },
@@ -171,7 +171,7 @@
     "s3DatamodelKey": "RoleAtFilm",
     "collectionName": "role_at_films",
     "kind": "collectionType",
-    "s3FolderName": "role-at-film",
+    "folderName": "role-at-film",
     "s3InfoName": "RoleAtFilm",
     "s3CollectionName": "role_at_films"
   },
@@ -179,7 +179,7 @@
     "s3DatamodelKey": "Country",
     "collectionName": "countries",
     "kind": "collectionType",
-    "s3FolderName": "country",
+    "folderName": "country",
     "s3InfoName": "Country",
     "s3CollectionName": "countries"
   },
@@ -187,7 +187,7 @@
     "s3DatamodelKey": "Town",
     "collectionName": "towns",
     "kind": "collectionType",
-    "s3FolderName": "town",
+    "folderName": "town",
     "s3InfoName": "Town",
     "s3CollectionName": "towns"
   },
@@ -195,7 +195,7 @@
     "s3DatamodelKey": "Cinema",
     "collectionName": "cinemas",
     "kind": "collectionType",
-    "s3FolderName": "cinema",
+    "folderName": "cinema",
     "s3InfoName": "Cinema",
     "s3CollectionName": "cinemas"
   },
@@ -203,7 +203,7 @@
     "s3DatamodelKey": "Hall",
     "collectionName": "halls",
     "kind": "collectionType",
-    "s3FolderName": "hall",
+    "folderName": "hall",
     "s3InfoName": "Hall",
     "s3CollectionName": "halls"
   },
@@ -211,7 +211,7 @@
     "s3DatamodelKey": "County",
     "collectionName": "counties",
     "kind": "collectionType",
-    "s3FolderName": "county",
+    "folderName": "county",
     "s3InfoName": "County",
     "s3CollectionName": "counties"
   },
@@ -219,7 +219,7 @@
     "s3DatamodelKey": "Municipality",
     "collectionName": "populated_places",
     "kind": "collectionType",
-    "s3FolderName": "populated-place",
+    "folderName": "populated-place",
     "s3InfoName": "Municipality",
     "s3CollectionName": "populated_places"
   },
@@ -227,7 +227,7 @@
     "s3DatamodelKey": "Address",
     "collectionName": "addresses",
     "kind": "collectionType",
-    "s3FolderName": "address",
+    "folderName": "address",
     "s3InfoName": "address",
     "s3CollectionName": "addresses"
   },
@@ -235,7 +235,7 @@
     "s3DatamodelKey": "Festival",
     "collectionName": "festivals",
     "kind": "collectionType",
-    "s3FolderName": "festival",
+    "folderName": "festival",
     "s3InfoName": "Festival",
     "s3CollectionName": "FestivalCollectionName"
   },
@@ -243,7 +243,7 @@
     "s3DatamodelKey": "FestivalEdition",
     "collectionName": "festival_editions",
     "kind": "collectionType",
-    "s3FolderName": "festival-edition",
+    "folderName": "festival-edition",
     "s3InfoName": "FestivalEdition",
     "s3CollectionName": "Edition"
   },
@@ -251,7 +251,7 @@
     "s3DatamodelKey": "Organisation",
     "collectionName": "organisations",
     "kind": "collectionType",
-    "s3FolderName": "organisation",
+    "folderName": "organisation",
     "s3InfoName": "Organisation",
     "s3CollectionName": "organisations"
   },
@@ -259,7 +259,7 @@
     "s3DatamodelKey": "Programme",
     "collectionName": "programmes",
     "kind": "collectionType",
-    "s3FolderName": "programme",
+    "folderName": "programme",
     "s3InfoName": "Programme",
     "s3CollectionName": "programmes"
   },
@@ -267,7 +267,7 @@
     "s3DatamodelKey": "WebAuthor",
     "collectionName": "web_authors",
     "kind": "collectionType",
-    "s3FolderName": "web-author",
+    "folderName": "web-author",
     "s3InfoName": "WebAuthor",
     "s3CollectionName": "web_authors"
   },
@@ -275,7 +275,7 @@
     "s3DatamodelKey": "ArticleType",
     "collectionName": "article_types",
     "kind": "collectionType",
-    "s3FolderName": "article-type",
+    "folderName": "article-type",
     "s3InfoName": "ArticleType",
     "s3CollectionName": "article_types"
   },
@@ -283,7 +283,7 @@
     "s3DatamodelKey": "POFFiArticle",
     "collectionName": "pof_fi_articles",
     "kind": "collectionType",
-    "s3FolderName": "pof-fi-article",
+    "folderName": "pof-fi-article",
     "s3InfoName": "POFFi_Article",
     "s3CollectionName": "pof_fi_articles"
   },
@@ -291,7 +291,7 @@
     "s3DatamodelKey": "JustFilmiArticle",
     "collectionName": "just_filmi_articles",
     "kind": "collectionType",
-    "s3FolderName": "just-filmi-article",
+    "folderName": "just-filmi-article",
     "s3InfoName": "JustFilmi_Article",
     "s3CollectionName": "just_filmi_articles"
   },
@@ -299,7 +299,7 @@
     "s3DatamodelKey": "ShortsiArticle",
     "collectionName": "shortsi_articles",
     "kind": "collectionType",
-    "s3FolderName": "shortsi-article",
+    "folderName": "shortsi-article",
     "s3InfoName": "Shortsi_Article",
     "s3CollectionName": "shortsi_articles"
   },
@@ -307,7 +307,7 @@
     "s3DatamodelKey": "KinoffiArticle",
     "collectionName": "kinoffi_articles",
     "kind": "collectionType",
-    "s3FolderName": "kinoffi-article",
+    "folderName": "kinoffi-article",
     "s3InfoName": "Kinoffi_Article",
     "s3CollectionName": "kinoffi_articles"
   },
@@ -315,7 +315,7 @@
     "s3DatamodelKey": "HOFFiArticle",
     "collectionName": "hof_fi_articles",
     "kind": "collectionType",
-    "s3FolderName": "hof-fi-article",
+    "folderName": "hof-fi-article",
     "s3InfoName": "HOFFi_Article",
     "s3CollectionName": "hof_fi_articles"
   },
@@ -323,7 +323,7 @@
     "s3DatamodelKey": "TartuffiArticle",
     "collectionName": "tartuffi_articles",
     "kind": "collectionType",
-    "s3FolderName": "tartuffi-article",
+    "folderName": "tartuffi-article",
     "s3InfoName": "Tartuffi_Article",
     "s3CollectionName": "tartuffi_articles"
   },
@@ -331,7 +331,7 @@
     "s3DatamodelKey": "KumuArticle",
     "collectionName": "kumu_articles",
     "kind": "collectionType",
-    "s3FolderName": "kumu-article",
+    "folderName": "kumu-article",
     "s3InfoName": "Kumu_Article",
     "s3CollectionName": "kumu_articles"
   },
@@ -339,7 +339,7 @@
     "s3DatamodelKey": "BrunoArticle",
     "collectionName": "bruno_articles",
     "kind": "collectionType",
-    "s3FolderName": "bruno-article",
+    "folderName": "bruno-article",
     "s3InfoName": "Bruno_Article",
     "s3CollectionName": "bruno_articles"
   },
@@ -347,7 +347,7 @@
     "s3DatamodelKey": "FilmikooliArticle",
     "collectionName": "filmikooli_articles",
     "kind": "collectionType",
-    "s3FolderName": "filmikooli-article",
+    "folderName": "filmikooli-article",
     "s3InfoName": "Filmikooli_Article",
     "s3CollectionName": "filmikooli_articles"
   },
@@ -355,7 +355,7 @@
     "s3DatamodelKey": "Location",
     "collectionName": "locations",
     "kind": "collectionType",
-    "s3FolderName": "location",
+    "folderName": "location",
     "s3InfoName": "Location",
     "s3CollectionName": "locations"
   },
@@ -363,7 +363,7 @@
     "s3DatamodelKey": "Language",
     "collectionName": "languages",
     "kind": "collectionType",
-    "s3FolderName": "language",
+    "folderName": "language",
     "s3InfoName": "Language",
     "s3CollectionName": "languages"
   },
@@ -371,7 +371,7 @@
     "s3DatamodelKey": "IndustryPersonType",
     "collectionName": "industry_person_types",
     "kind": "collectionType",
-    "s3FolderName": "industry-person-type",
+    "folderName": "industry-person-type",
     "s3InfoName": "Industry_PersonType",
     "s3CollectionName": "industry_person_types"
   },
@@ -379,7 +379,7 @@
     "s3DatamodelKey": "ShoeSize",
     "collectionName": "shoe_sizes",
     "kind": "collectionType",
-    "s3FolderName": "shoe-size",
+    "folderName": "shoe-size",
     "s3InfoName": "Shoe_Size",
     "s3CollectionName": "shoe_sizes"
   },
@@ -387,7 +387,7 @@
     "s3DatamodelKey": "HairColour",
     "collectionName": "hair_colours",
     "kind": "collectionType",
-    "s3FolderName": "hair-colour",
+    "folderName": "hair-colour",
     "s3InfoName": "HairColour",
     "s3CollectionName": "hair_colours"
   },
@@ -395,7 +395,7 @@
     "s3DatamodelKey": "HairLength",
     "collectionName": "hair_lengths",
     "kind": "collectionType",
-    "s3FolderName": "hair-length",
+    "folderName": "hair-length",
     "s3InfoName": "HairLength",
     "s3CollectionName": "hair_lengths"
   },
@@ -403,7 +403,7 @@
     "s3DatamodelKey": "PitchOfVoice",
     "collectionName": "pitch_of_voices",
     "kind": "collectionType",
-    "s3FolderName": "pitch-of-voice",
+    "folderName": "pitch-of-voice",
     "s3InfoName": "PitchOfVoice",
     "s3CollectionName": "pitch_of_voices"
   },
@@ -411,7 +411,7 @@
     "s3DatamodelKey": "Stature",
     "collectionName": "statures",
     "kind": "collectionType",
-    "s3FolderName": "stature",
+    "folderName": "stature",
     "s3InfoName": "Stature",
     "s3CollectionName": "statures"
   },
@@ -419,7 +419,7 @@
     "s3DatamodelKey": "TypeOfWork",
     "collectionName": "type_of_works",
     "kind": "collectionType",
-    "s3FolderName": "type-of-work",
+    "folderName": "type-of-work",
     "s3InfoName": "TypeOfWork",
     "s3CollectionName": "type_of_works"
   },
@@ -427,7 +427,7 @@
     "s3DatamodelKey": "EyeColour",
     "collectionName": "eye_colours",
     "kind": "collectionType",
-    "s3FolderName": "eye-colour",
+    "folderName": "eye-colour",
     "s3InfoName": "EyeColour",
     "s3CollectionName": "eye_colours"
   },
@@ -435,7 +435,7 @@
     "s3DatamodelKey": "Filmography",
     "collectionName": "filmographies",
     "kind": "collectionType",
-    "s3FolderName": "filmography",
+    "folderName": "filmography",
     "s3InfoName": "Filmography",
     "s3CollectionName": "filmographies"
   },
@@ -443,7 +443,7 @@
     "s3DatamodelKey": "IndustryCategory",
     "collectionName": "industry_categories",
     "kind": "collectionType",
-    "s3FolderName": "industry-category",
+    "folderName": "industry-category",
     "s3InfoName": "Industry_Category",
     "s3CollectionName": "industry_categories"
   },
@@ -451,7 +451,7 @@
     "s3DatamodelKey": "Person",
     "collectionName": "people",
     "kind": "collectionType",
-    "s3FolderName": "person",
+    "folderName": "person",
     "s3InfoName": "Person",
     "s3CollectionName": "people"
   },
@@ -459,7 +459,7 @@
     "s3DatamodelKey": "Team",
     "collectionName": "teams",
     "kind": "collectionType",
-    "s3FolderName": "team",
+    "folderName": "team",
     "s3InfoName": "Team",
     "s3CollectionName": "teams"
   },
@@ -467,7 +467,7 @@
     "s3DatamodelKey": "EventMode",
     "collectionName": "event_modes",
     "kind": "collectionType",
-    "s3FolderName": "event-mode",
+    "folderName": "event-mode",
     "s3InfoName": "EventMode",
     "s3CollectionName": "event_modes"
   },
@@ -475,7 +475,7 @@
     "s3DatamodelKey": "EventAccess",
     "collectionName": "event_accesses",
     "kind": "collectionType",
-    "s3FolderName": "event-access",
+    "folderName": "event-access",
     "s3InfoName": "EventAccess",
     "s3CollectionName": "event_accesses"
   },
@@ -483,7 +483,7 @@
     "s3DatamodelKey": "EventType",
     "collectionName": "event_types",
     "kind": "collectionType",
-    "s3FolderName": "event-type",
+    "folderName": "event-type",
     "s3InfoName": "EventType",
     "s3CollectionName": "event_types"
   },
@@ -491,7 +491,7 @@
     "s3DatamodelKey": "ScreeningType",
     "collectionName": "screening_types",
     "kind": "collectionType",
-    "s3FolderName": "screening-type",
+    "folderName": "screening-type",
     "s3InfoName": "ScreeningType",
     "s3CollectionName": "screening_types"
   },
@@ -499,7 +499,7 @@
     "s3DatamodelKey": "Film",
     "collectionName": "films",
     "kind": "collectionType",
-    "s3FolderName": "film",
+    "folderName": "film",
     "s3InfoName": "Film",
     "s3CollectionName": "films"
   },
@@ -507,7 +507,7 @@
     "s3DatamodelKey": "Cassette",
     "collectionName": "cassettes",
     "kind": "collectionType",
-    "s3FolderName": "cassette",
+    "folderName": "cassette",
     "s3InfoName": "Cassette",
     "s3CollectionName": "cassettes"
   },
@@ -515,7 +515,7 @@
     "s3DatamodelKey": "Screening",
     "collectionName": "screenings",
     "kind": "collectionType",
-    "s3FolderName": "screening",
+    "folderName": "screening",
     "s3InfoName": "Screening",
     "s3CollectionName": "screenings"
   },
@@ -523,7 +523,7 @@
     "s3DatamodelKey": "SixFilms",
     "collectionName": "six_films",
     "kind": "collectionType",
-    "s3FolderName": "six-films",
+    "folderName": "six-films",
     "s3InfoName": "SixFilms",
     "s3CollectionName": "six_films"
   },
@@ -531,7 +531,7 @@
     "s3DatamodelKey": "LabelGroup",
     "collectionName": "label_groups",
     "kind": "collectionType",
-    "s3FolderName": "label-group",
+    "folderName": "label-group",
     "s3InfoName": "LabelGroup",
     "s3CollectionName": "label_groups"
   },
@@ -539,7 +539,7 @@
     "s3DatamodelKey": "IndustryPerson",
     "collectionName": "industry_people",
     "kind": "collectionType",
-    "s3FolderName": "industry-person",
+    "folderName": "industry-person",
     "s3InfoName": "Industry_Person",
     "s3CollectionName": "industry_people"
   },
@@ -547,7 +547,7 @@
     "s3DatamodelKey": "IndustryArticle",
     "collectionName": "industry_articles",
     "kind": "collectionType",
-    "s3FolderName": "industry-article",
+    "folderName": "industry-article",
     "s3InfoName": "Industry_Article",
     "s3CollectionName": "industry_articles"
   },
@@ -555,7 +555,7 @@
     "s3DatamodelKey": "IndustryGroup",
     "collectionName": "industry_groups",
     "kind": "collectionType",
-    "s3FolderName": "industry-group",
+    "folderName": "industry-group",
     "s3InfoName": "Industry_Group",
     "s3CollectionName": "industry_groups"
   },
@@ -563,7 +563,7 @@
     "s3DatamodelKey": "ProjectType",
     "collectionName": "project_types",
     "kind": "collectionType",
-    "s3FolderName": "project-type",
+    "folderName": "project-type",
     "s3InfoName": "Project_Type",
     "s3CollectionName": "project_types"
   },
@@ -571,7 +571,7 @@
     "s3DatamodelKey": "ProjectStatus",
     "collectionName": "project_statuses",
     "kind": "collectionType",
-    "s3FolderName": "project-status",
+    "folderName": "project-status",
     "s3InfoName": "Project_Status",
     "s3CollectionName": "project_statuses"
   },
@@ -579,7 +579,7 @@
     "s3DatamodelKey": "IndustryProject",
     "collectionName": "industry_projects",
     "kind": "collectionType",
-    "s3FolderName": "industry-project",
+    "folderName": "industry-project",
     "s3InfoName": "Industry_Project",
     "s3CollectionName": "industry_projects"
   },
@@ -587,7 +587,7 @@
     "s3DatamodelKey": "Channel",
     "collectionName": "channels",
     "kind": "collectionType",
-    "s3FolderName": "channel",
+    "folderName": "channel",
     "s3InfoName": "Channel",
     "s3CollectionName": "channels"
   },
@@ -595,7 +595,7 @@
     "s3DatamodelKey": "IndustryMenu",
     "collectionName": "industry_menus",
     "kind": "collectionType",
-    "s3FolderName": "industry-menu",
+    "folderName": "industry-menu",
     "s3InfoName": "Industry_Menu",
     "s3CollectionName": "industry_menus"
   },
@@ -603,7 +603,7 @@
     "s3DatamodelKey": "Event",
     "collectionName": "events",
     "kind": "collectionType",
-    "s3FolderName": "event",
+    "folderName": "event",
     "s3InfoName": "Event",
     "s3CollectionName": "events"
   },
@@ -611,7 +611,7 @@
     "s3DatamodelKey": "Course",
     "collectionName": "courses",
     "kind": "collectionType",
-    "s3FolderName": "course",
+    "folderName": "course",
     "s3InfoName": "Course",
     "s3CollectionName": "courses"
   },
@@ -619,7 +619,7 @@
     "s3DatamodelKey": "DeliveryType",
     "collectionName": "delivery_types",
     "kind": "collectionType",
-    "s3FolderName": "delivery-type",
+    "folderName": "delivery-type",
     "s3InfoName": "DeliveryType",
     "s3CollectionName": "delivery_types"
   },
@@ -627,7 +627,7 @@
     "s3DatamodelKey": "Delivery",
     "collectionName": "deliveries",
     "kind": "collectionType",
-    "s3FolderName": "delivery",
+    "folderName": "delivery",
     "s3InfoName": "Delivery",
     "s3CollectionName": "deliveries"
   },
@@ -635,7 +635,7 @@
     "s3DatamodelKey": "Product_Category",
     "collectionName": "product_categories",
     "kind": "collectionType",
-    "s3FolderName": "product-category",
+    "folderName": "product-category",
     "s3InfoName": "Product_Category",
     "s3CollectionName": "product_categories"
   },
@@ -643,7 +643,7 @@
     "s3DatamodelKey": "Shop",
     "collectionName": "shops",
     "kind": "collectionType",
-    "s3FolderName": "shop",
+    "folderName": "shop",
     "s3InfoName": "Shop",
     "s3CollectionName": "shops"
   },
@@ -651,7 +651,7 @@
     "s3DatamodelKey": "CourseEvent",
     "collectionName": "course_events",
     "kind": "collectionType",
-    "s3FolderName": "course-event",
+    "folderName": "course-event",
     "s3InfoName": "CourseEvent",
     "s3CollectionName": "course_events"
   },
@@ -659,7 +659,7 @@
     "s3DatamodelKey": "FrontPageCourses",
     "collectionName": "front_page_courses",
     "kind": "collectionType",
-    "s3FolderName": "front-page-courses",
+    "folderName": "front-page-courses",
     "s3InfoName": "Front_Page_Courses",
     "s3CollectionName": "front_page_courses"
   },
@@ -667,7 +667,7 @@
     "s3DatamodelKey": "DisCampPersonType",
     "collectionName": "dis_camp_person_types",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-person-type",
+    "folderName": "dis-camp-person-type",
     "s3InfoName": "DisCampPersonType",
     "s3CollectionName": "dis_camp_person_types"
   },
@@ -675,7 +675,7 @@
     "s3DatamodelKey": "DisCampPerson",
     "collectionName": "dis_camp_people",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-person",
+    "folderName": "dis-camp-person",
     "s3InfoName": "DisCampPerson",
     "s3CollectionName": "dis_camp_people"
   },
@@ -683,7 +683,7 @@
     "s3DatamodelKey": "DisCampArticle",
     "collectionName": "dis_camp_articles",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-article",
+    "folderName": "dis-camp-article",
     "s3InfoName": "DisCampArticle",
     "s3CollectionName": "dis_camp_articles"
   },
@@ -691,7 +691,7 @@
     "s3DatamodelKey": "DisCampGroup",
     "collectionName": "dis_camp_groups",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-group",
+    "folderName": "dis-camp-group",
     "s3InfoName": "DisCampGroup",
     "s3CollectionName": "dis_camp_groups"
   },
@@ -699,7 +699,7 @@
     "s3DatamodelKey": "DisCampCategory",
     "collectionName": "dis_camp_categories",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-category",
+    "folderName": "dis-camp-category",
     "s3InfoName": "DisCampCategory",
     "s3CollectionName": "dis_camp_categories"
   },
@@ -707,7 +707,7 @@
     "s3DatamodelKey": "DisCampProject",
     "collectionName": "dis_camp_projects",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-project",
+    "folderName": "dis-camp-project",
     "s3InfoName": "DisCampProject",
     "s3CollectionName": "dis_camp_projects"
   },
@@ -715,7 +715,7 @@
     "s3DatamodelKey": "DisCampEvent",
     "collectionName": "dis_camp_events",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-event",
+    "folderName": "dis-camp-event",
     "s3InfoName": "DisCampEvent",
     "s3CollectionName": "dis_camp_events"
   },
@@ -723,7 +723,7 @@
     "s3DatamodelKey": "DisCampMenu",
     "collectionName": "dis_camp_menus",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-menu",
+    "folderName": "dis-camp-menu",
     "s3InfoName": "DisCampMenu",
     "s3CollectionName": "dis_camp_menus"
   },
@@ -731,7 +731,7 @@
     "s3DatamodelKey": "POFFiSupporter",
     "collectionName": "supporters_pages",
     "kind": "collectionType",
-    "s3FolderName": "supporters-page",
+    "folderName": "supporters-page",
     "s3InfoName": "POFFi_Supporter",
     "s3CollectionName": "supporters_pages"
   },
@@ -739,7 +739,7 @@
     "s3DatamodelKey": "JustSupporter",
     "collectionName": "supporters_justs",
     "kind": "collectionType",
-    "s3FolderName": "supporters-just",
+    "folderName": "supporters-just",
     "s3InfoName": "Just_Supporter",
     "s3CollectionName": "supporters_justs"
   },
@@ -747,7 +747,7 @@
     "s3DatamodelKey": "ShortsSupporter",
     "collectionName": "supporters_shorts",
     "kind": "collectionType",
-    "s3FolderName": "supporters-shorts",
+    "folderName": "supporters-shorts",
     "s3InfoName": "Shorts_Supporter",
     "s3CollectionName": "supporters_shorts"
   },
@@ -755,7 +755,7 @@
     "s3DatamodelKey": "IndustrySupporter",
     "collectionName": "industry_supporters",
     "kind": "collectionType",
-    "s3FolderName": "industry-supporter",
+    "folderName": "industry-supporter",
     "s3InfoName": "Industry_Supporter",
     "s3CollectionName": "industry_supporters"
   },
@@ -763,7 +763,7 @@
     "s3DatamodelKey": "KinoffiSupporter",
     "collectionName": "kinoffi_supporters",
     "kind": "collectionType",
-    "s3FolderName": "kinoffi-supporter",
+    "folderName": "kinoffi-supporter",
     "s3InfoName": "Kinoffi_Supporter",
     "s3CollectionName": "kinoffi_supporters"
   },
@@ -771,7 +771,7 @@
     "s3DatamodelKey": "HOFFiSupporter",
     "collectionName": "hof_fi_supporters",
     "kind": "collectionType",
-    "s3FolderName": "hof-fi-supporter",
+    "folderName": "hof-fi-supporter",
     "s3InfoName": "HOFFi_Supporter",
     "s3CollectionName": "hof_fi_supporters"
   },
@@ -779,7 +779,7 @@
     "s3DatamodelKey": "TartuffiSupporter",
     "collectionName": "tartuffi_supporters",
     "kind": "collectionType",
-    "s3FolderName": "tartuffi-supporter",
+    "folderName": "tartuffi-supporter",
     "s3InfoName": "Tartuffi_Supporter",
     "s3CollectionName": "tartuffi_supporters"
   },
@@ -787,7 +787,7 @@
     "s3DatamodelKey": "KumuSupporter",
     "collectionName": "kumu_supporters",
     "kind": "collectionType",
-    "s3FolderName": "kumu-supporter",
+    "folderName": "kumu-supporter",
     "s3InfoName": "Kumu_Supporter",
     "s3CollectionName": "kumu_supporters"
   },
@@ -795,7 +795,7 @@
     "s3DatamodelKey": "BrunoSupporter",
     "collectionName": "bruno_supporters",
     "kind": "collectionType",
-    "s3FolderName": "bruno-supporter",
+    "folderName": "bruno-supporter",
     "s3InfoName": "Bruno_Supporter",
     "s3CollectionName": "bruno_supporters"
   },
@@ -803,7 +803,7 @@
     "s3DatamodelKey": "FilmikooliSupporter",
     "collectionName": "filmikool_supporters",
     "kind": "collectionType",
-    "s3FolderName": "filmikool-supporter",
+    "folderName": "filmikool-supporter",
     "s3InfoName": "Filmikooli_Supporter",
     "s3CollectionName": "filmikool_supporters"
   },
@@ -811,7 +811,7 @@
     "s3DatamodelKey": "DisCampSupporter",
     "collectionName": "dis_camp_supporters",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-supporter",
+    "folderName": "dis-camp-supporter",
     "s3InfoName": "DisCampSupporter",
     "s3CollectionName": "dis_camp_supporters"
   },
@@ -819,7 +819,7 @@
     "s3DatamodelKey": "POFFiFooter",
     "collectionName": "pof_fi_footers",
     "kind": "collectionType",
-    "s3FolderName": "pof-fi-footer",
+    "folderName": "pof-fi-footer",
     "s3InfoName": "POFFi_Footer",
     "s3CollectionName": "pof_fi_footers"
   },
@@ -827,7 +827,7 @@
     "s3DatamodelKey": "JustFilmFooter",
     "collectionName": "just_film_footers",
     "kind": "collectionType",
-    "s3FolderName": "just-film-footer",
+    "folderName": "just-film-footer",
     "s3InfoName": "JustFilm_Footer",
     "s3CollectionName": "just_film_footers"
   },
@@ -835,7 +835,7 @@
     "s3DatamodelKey": "ShortsiFooter",
     "collectionName": "shortsi_footers",
     "kind": "collectionType",
-    "s3FolderName": "shortsi-footer",
+    "folderName": "shortsi-footer",
     "s3InfoName": "Shortsi_Footer",
     "s3CollectionName": "shortsi_footers"
   },
@@ -843,7 +843,7 @@
     "s3DatamodelKey": "IndustryFooter",
     "collectionName": "industry_footers",
     "kind": "collectionType",
-    "s3FolderName": "industry-footer",
+    "folderName": "industry-footer",
     "s3InfoName": "Industry_Footer",
     "s3CollectionName": "industry_footers"
   },
@@ -851,7 +851,7 @@
     "s3DatamodelKey": "KinoffiFooter",
     "collectionName": "kinoffi_footers",
     "kind": "collectionType",
-    "s3FolderName": "kinoffi-footer",
+    "folderName": "kinoffi-footer",
     "s3InfoName": "Kinoffi_Footer",
     "s3CollectionName": "kinoffi_footers"
   },
@@ -859,7 +859,7 @@
     "s3DatamodelKey": "HOFFiFooter",
     "collectionName": "hof_fi_footers",
     "kind": "collectionType",
-    "s3FolderName": "hof-fi-footer",
+    "folderName": "hof-fi-footer",
     "s3InfoName": "HOFFi_Footer",
     "s3CollectionName": "hof_fi_footers"
   },
@@ -867,7 +867,7 @@
     "s3DatamodelKey": "TartuffiFooter",
     "collectionName": "tartuffi_footers",
     "kind": "collectionType",
-    "s3FolderName": "tartuffi-footer",
+    "folderName": "tartuffi-footer",
     "s3InfoName": "Tartuffi_Footer",
     "s3CollectionName": "tartuffi_footers"
   },
@@ -875,7 +875,7 @@
     "s3DatamodelKey": "KumuFooter",
     "collectionName": "kumu_footers",
     "kind": "collectionType",
-    "s3FolderName": "kumu-footer",
+    "folderName": "kumu-footer",
     "s3InfoName": "Kumu_Footer",
     "s3CollectionName": "kumu_footers"
   },
@@ -883,7 +883,7 @@
     "s3DatamodelKey": "BrunoFooter",
     "collectionName": "bruno_footers",
     "kind": "collectionType",
-    "s3FolderName": "bruno-footer",
+    "folderName": "bruno-footer",
     "s3InfoName": "Bruno_Footer",
     "s3CollectionName": "bruno_footers"
   },
@@ -891,7 +891,7 @@
     "s3DatamodelKey": "FilmikooliFooter",
     "collectionName": "filmikooli_footers",
     "kind": "collectionType",
-    "s3FolderName": "filmikooli-footer",
+    "folderName": "filmikooli-footer",
     "s3InfoName": "Filmikooli_Footer",
     "s3CollectionName": "filmikooli_footers"
   },
@@ -899,7 +899,7 @@
     "s3DatamodelKey": "DisCampFooter",
     "collectionName": "dis_camp_footers",
     "kind": "collectionType",
-    "s3FolderName": "dis-camp-footer",
+    "folderName": "dis-camp-footer",
     "s3InfoName": "DisCampFooter",
     "s3CollectionName": "dis_camp_footers"
   },
@@ -907,7 +907,7 @@
     "s3DatamodelKey": "POFFiMenu",
     "collectionName": "pof_fi_menus",
     "kind": "collectionType",
-    "s3FolderName": "pof-fi-menu",
+    "folderName": "pof-fi-menu",
     "s3InfoName": "POFFi_Menu",
     "s3CollectionName": "pof_fi_menus"
   },
@@ -915,7 +915,7 @@
     "s3DatamodelKey": "JustFilmiMenu",
     "collectionName": "just_filmi_menus",
     "kind": "collectionType",
-    "s3FolderName": "just-filmi-menu",
+    "folderName": "just-filmi-menu",
     "s3InfoName": "JustFilmi_Menu",
     "s3CollectionName": "just_filmi_menus"
   },
@@ -923,7 +923,7 @@
     "s3DatamodelKey": "ShortsiMenu",
     "collectionName": "shortsi_menus",
     "kind": "collectionType",
-    "s3FolderName": "shortsi-menu",
+    "folderName": "shortsi-menu",
     "s3InfoName": "Shortsi_Menu",
     "s3CollectionName": "shortsi_menus"
   },
@@ -931,7 +931,7 @@
     "s3DatamodelKey": "KinoffiMenu",
     "collectionName": "kinoffi_menus",
     "kind": "collectionType",
-    "s3FolderName": "kinoffi-menu",
+    "folderName": "kinoffi-menu",
     "s3InfoName": "Kinoffi_Menu",
     "s3CollectionName": "kinoffi_menus"
   },
@@ -939,7 +939,7 @@
     "s3DatamodelKey": "HOFFiMenu",
     "collectionName": "hof_fi_menus",
     "kind": "collectionType",
-    "s3FolderName": "hof-fi-menu",
+    "folderName": "hof-fi-menu",
     "s3InfoName": "HOFFi_Menu",
     "s3CollectionName": "hof_fi_menus"
   },
@@ -947,7 +947,7 @@
     "s3DatamodelKey": "TartuffiMenu",
     "collectionName": "tartuffi_menus",
     "kind": "collectionType",
-    "s3FolderName": "tartuffi-menu",
+    "folderName": "tartuffi-menu",
     "s3InfoName": "Tartuffi_Menu",
     "s3CollectionName": "tartuffi_menus"
   },
@@ -955,7 +955,7 @@
     "s3DatamodelKey": "KumuMenu",
     "collectionName": "kumu_menus",
     "kind": "collectionType",
-    "s3FolderName": "kumu-menu",
+    "folderName": "kumu-menu",
     "s3InfoName": "Kumu_Menu",
     "s3CollectionName": "kumu_menus"
   },
@@ -963,7 +963,7 @@
     "s3DatamodelKey": "BrunoMenu",
     "collectionName": "bruno_menus",
     "kind": "collectionType",
-    "s3FolderName": "bruno-menu",
+    "folderName": "bruno-menu",
     "s3InfoName": "Bruno_Menu",
     "s3CollectionName": "bruno_menus"
   },
@@ -971,7 +971,7 @@
     "s3DatamodelKey": "FilmikooliMenu",
     "collectionName": "filmikooli_menus",
     "kind": "collectionType",
-    "s3FolderName": "filmikooli-menu",
+    "folderName": "filmikooli-menu",
     "s3InfoName": "Filmikooli_Menu",
     "s3CollectionName": "filmikooli_menus"
   },
@@ -979,7 +979,7 @@
     "s3DatamodelKey": "L1MenuIndustry",
     "collectionName": "l_1_menu_industries",
     "kind": "collectionType",
-    "s3FolderName": "l1-menu-industry",
+    "folderName": "l1-menu-industry",
     "s3InfoName": "L1MenuIndustry",
     "s3CollectionName": "l1_menu_industries"
   },
@@ -987,7 +987,7 @@
     "s3DatamodelKey": "L1MenuKumu",
     "collectionName": "l_1_menu_kumus",
     "kind": "collectionType",
-    "s3FolderName": "l1-menu-kumu",
+    "folderName": "l1-menu-kumu",
     "s3InfoName": "L1MenuKumu",
     "s3CollectionName": "l1_menu_kumus"
   },
@@ -995,7 +995,7 @@
     "s3DatamodelKey": "HeroArticlePoff",
     "collectionName": "article_hero",
     "kind": "singleType",
-    "s3FolderName": "article-hero",
+    "folderName": "article-hero",
     "s3InfoName": "HeroArticlePoff",
     "s3CollectionName": "article_heroes"
   },
@@ -1003,7 +1003,7 @@
     "s3DatamodelKey": "HeroArticleJustFilm",
     "collectionName": "hero_article_just_film",
     "kind": "singleType",
-    "s3FolderName": "hero-article-just-film",
+    "folderName": "hero-article-just-film",
     "s3InfoName": "HeroArticleJustFilm",
     "s3CollectionName": "hero_article_just_films"
   },
@@ -1011,7 +1011,7 @@
     "s3DatamodelKey": "HeroArticleShorts",
     "collectionName": "hero_article_shorts",
     "kind": "singleType",
-    "s3FolderName": "hero-article-shorts",
+    "folderName": "hero-article-shorts",
     "s3InfoName": "HeroArticleShorts",
     "s3CollectionName": "hero_article_shorts"
   },
@@ -1019,7 +1019,7 @@
     "s3DatamodelKey": "HeroArticleIndustry",
     "collectionName": "hero_article_industry",
     "kind": "singleType",
-    "s3FolderName": "hero-article-industry",
+    "folderName": "hero-article-industry",
     "s3InfoName": "HeroArticleIndustry",
     "s3CollectionName": "hero_article_industries"
   },
@@ -1027,7 +1027,7 @@
     "s3DatamodelKey": "HeroArticleKinoff",
     "collectionName": "hero_article_kinoff",
     "kind": "singleType",
-    "s3FolderName": "hero-article-kinoff",
+    "folderName": "hero-article-kinoff",
     "s3InfoName": "HeroArticleKinoff",
     "s3CollectionName": "hero_article_kinoffs"
   },
@@ -1035,7 +1035,7 @@
     "s3DatamodelKey": "HeroArticleHoff",
     "collectionName": "hero_article_hoff",
     "kind": "singleType",
-    "s3FolderName": "hero-article-hoff",
+    "folderName": "hero-article-hoff",
     "s3InfoName": "HeroArticleHoff",
     "s3CollectionName": "hero_article_hoffs"
   },
@@ -1043,7 +1043,7 @@
     "s3DatamodelKey": "HeroArticleTartuff",
     "collectionName": "hero_article_tartuff",
     "kind": "singleType",
-    "s3FolderName": "hero-article-tartuff",
+    "folderName": "hero-article-tartuff",
     "s3InfoName": "HeroArticleTartuff",
     "s3CollectionName": "hero_article_tartuffs"
   },
@@ -1051,7 +1051,7 @@
     "s3DatamodelKey": "HeroArticleKumu",
     "collectionName": "hero_article_kumu",
     "kind": "singleType",
-    "s3FolderName": "hero-article-kumu",
+    "folderName": "hero-article-kumu",
     "s3InfoName": "HeroArticleKumu",
     "s3CollectionName": "hero_article_kumu"
   },
@@ -1059,7 +1059,7 @@
     "s3DatamodelKey": "HeroArticleBruno",
     "collectionName": "hero_article_bruno",
     "kind": "singleType",
-    "s3FolderName": "hero-article-bruno",
+    "folderName": "hero-article-bruno",
     "s3InfoName": "HeroArticleBruno",
     "s3CollectionName": "hero_article_bruno"
   },
@@ -1067,7 +1067,7 @@
     "s3DatamodelKey": "HeroArticleFilmikool",
     "collectionName": "hero_article_filmikool",
     "kind": "singleType",
-    "s3FolderName": "hero-article-filmikool",
+    "folderName": "hero-article-filmikool",
     "s3InfoName": "HeroArticleFilmikool",
     "s3CollectionName": "hero_article_filmikools"
   },
@@ -1075,7 +1075,7 @@
     "s3DatamodelKey": "HeroArticleDisCamp",
     "collectionName": "hero_article_dis_camp",
     "kind": "singleType",
-    "s3FolderName": "hero-article-dis-camp",
+    "folderName": "hero-article-dis-camp",
     "s3InfoName": "HeroArticleDisCamp",
     "s3CollectionName": "hero_article_dis_camps"
   },
@@ -1083,7 +1083,7 @@
     "s3DatamodelKey": "TrioPOFF",
     "collectionName": "trio_p_oe_ff",
     "kind": "singleType",
-    "s3FolderName": "trio-p-oe-ff",
+    "folderName": "trio-p-oe-ff",
     "s3InfoName": "TrioPOFF",
     "s3CollectionName": "trio_p_oe_ffs"
   },
@@ -1091,7 +1091,7 @@
     "s3DatamodelKey": "TrioJustFilm",
     "collectionName": "trio_just_film",
     "kind": "singleType",
-    "s3FolderName": "trio-just-film",
+    "folderName": "trio-just-film",
     "s3InfoName": "TrioJustFilm",
     "s3CollectionName": "trio_just_films"
   },
@@ -1099,7 +1099,7 @@
     "s3DatamodelKey": "TrioShorts",
     "collectionName": "trio_shorts",
     "kind": "singleType",
-    "s3FolderName": "trio-shorts",
+    "folderName": "trio-shorts",
     "s3InfoName": "TrioShorts",
     "s3CollectionName": "trio_shorts"
   },
@@ -1107,7 +1107,7 @@
     "s3DatamodelKey": "TrioIndustry",
     "collectionName": "trio_industry",
     "kind": "singleType",
-    "s3FolderName": "trio-industry",
+    "folderName": "trio-industry",
     "s3InfoName": "TrioIndustry",
     "s3CollectionName": "trio_industries"
   },
@@ -1115,7 +1115,7 @@
     "s3DatamodelKey": "TrioKinoff",
     "collectionName": "trio_kinoff",
     "kind": "singleType",
-    "s3FolderName": "trio-kinoff",
+    "folderName": "trio-kinoff",
     "s3InfoName": "TrioKinoff",
     "s3CollectionName": "trio_kinoffs"
   },
@@ -1123,7 +1123,7 @@
     "s3DatamodelKey": "TrioHOFF",
     "collectionName": "trio_hoff",
     "kind": "singleType",
-    "s3FolderName": "trio-hoff",
+    "folderName": "trio-hoff",
     "s3InfoName": "TrioHOFF",
     "s3CollectionName": "trio_hoffs"
   },
@@ -1131,7 +1131,7 @@
     "s3DatamodelKey": "TrioTartuff",
     "collectionName": "trio_tartuff",
     "kind": "singleType",
-    "s3FolderName": "trio-tartuff",
+    "folderName": "trio-tartuff",
     "s3InfoName": "TrioTartuff",
     "s3CollectionName": "trio_tartuffs"
   },
@@ -1139,7 +1139,7 @@
     "s3DatamodelKey": "TrioKumu",
     "collectionName": "trio_kumu",
     "kind": "singleType",
-    "s3FolderName": "trio-kumu",
+    "folderName": "trio-kumu",
     "s3InfoName": "TrioKumu",
     "s3CollectionName": "trio_kumu"
   },
@@ -1147,7 +1147,7 @@
     "s3DatamodelKey": "TrioBruno",
     "collectionName": "trio_bruno",
     "kind": "singleType",
-    "s3FolderName": "trio-bruno",
+    "folderName": "trio-bruno",
     "s3InfoName": "TrioBruno",
     "s3CollectionName": "trio_bruno"
   },
@@ -1155,7 +1155,7 @@
     "s3DatamodelKey": "TrioFilmikool",
     "collectionName": "trio_filmikool",
     "kind": "singleType",
-    "s3FolderName": "trio-filmikool",
+    "folderName": "trio-filmikool",
     "s3InfoName": "TrioFilmikool",
     "s3CollectionName": "trio_filmikools"
   },
@@ -1163,7 +1163,7 @@
     "s3DatamodelKey": "TrioDisCamp",
     "collectionName": "trio_dis_camp",
     "kind": "singleType",
-    "s3FolderName": "trio-dis-camp",
+    "folderName": "trio-dis-camp",
     "s3InfoName": "TrioDisCamp",
     "s3CollectionName": "trio_dis_camps"
   }
