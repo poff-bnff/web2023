@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_footer_sup_tartuffs",
+  "info": {
+    "displayName": "SupTartuff"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoColour": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoBlack": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tartuffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
+    }
+  }
+}

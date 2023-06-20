@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_article_trio_item_tartuffs",
+  "info": {
+    "displayName": "TrioItemTartuff"
+  },
+  "options": {},
+  "attributes": {
+    "tartuffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tartuffi-article.tartuffi-article"
+    },
+    "title": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

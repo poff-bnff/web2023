@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_article_trio_lang_items",
+  "info": {
+    "displayName": "TrioItemPoff"
+  },
+  "options": {},
+  "attributes": {
+    "poffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pof-fi-article.pof-fi-article"
+    },
+    "title": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

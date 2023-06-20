@@ -12,15 +12,46 @@ const Transformer = class {
   getUsedComponentTypes() {
     return this.usedComponentTypes
   }
-
   /**
-   * @param {string} componentType
+   * @param {string} componentType // i.e. "film.role-person"
    */
   set useComponentType(componentType) {
-    if (!this.usedComponentTypes.includes(componentType)) {
-      this.usedComponentTypes.push(componentType)
+    if (!this.usedComponentTypes
+      .map(ct => ct.componentType)
+      .includes(componentType)) {
+      this.usedComponentTypes.push({ componentType: componentType, isParsed: false });
     }
   }
+  /** returns undefined if componentType is not used
+   * @param {string} componentType
+   * @returns {boolean}
+   * */
+  isParsedComponentType(componentType) {
+    return this.usedComponentTypes.find(ct => ct.componentType === componentType)?.isParsed  
+  }
+
+  /** returns false, if there is none left
+   * @returns {string} componentType
+   * */
+  getUnparsedComponentType() {
+    const ct = this.usedComponentTypes.find(ct => !ct.isParsed)
+    if (ct) {
+      return ct.componentType
+    }
+    return false
+  }
+  /** returns undefined if componentType is not used
+   * @param {string} componentType
+   * @returns {boolean}
+   * */
+  markComponentTypeAsParsed(componentType) {
+    const ct = this.usedComponentTypes.find(ct => ct.componentType === componentType)
+    if (ct) {
+      return ct.isParsed = true
+    }
+    return undefined
+  }
+
 
   /**
    * @returns {Array<Object>}
@@ -28,7 +59,6 @@ const Transformer = class {
   getRelevantCollectionTypes() {
     return this.relevantCollectionTypes
   }
-
   /**
    * @returns {Array<string>}
    * */
@@ -141,7 +171,7 @@ const AttributeTransformer = class {
 
     if (s3Attribute.type === 'component') {
       // console.log('component', s3Attribute)
-      this.useComponentType = s3Attribute.component
+      this.transformer.useComponentType = s3Attribute.component
       s4Attribute.repeatable = s3Attribute.repeatable || undefined
       s4Attribute.component = s3Attribute.component
       return s4Attribute
@@ -158,33 +188,18 @@ const AttributeTransformer = class {
 
     throw new Error(`Attribute of type "${s3Attribute.type}" is not resolved`)
   }
-
-  getUsedComponentTypes() {
-    return this.transformer.getUsedComponentTypes()
-  }
-
-  set useComponentType(componentType) {
-    this.transformer.useComponentType = componentType
-  }
-
-  getRelevantCollectionTypes() {
-    return this.transformer.getRelevantCollectionTypes()
-  }
-
-  set relevantCollectionType(collectionType) {
-    this.transformer.relevantCollectionType = collectionType
-  }
 }
 
 
 const ComponentTransformer = class {
   constructor(transformer) {
     this.transformer = transformer
+    this.tooLongComponentNamesMap = require('./too-long-component-names-map.json')
   }
 
   transform(s3Component) {
     const s4Component = {
-      collectionName: s3Component.collectionName,
+      collectionName: this.fixIfTooLong(s3Component.collectionName),
       info: {
         displayName: s3Component.info.name,
       },
@@ -199,6 +214,13 @@ const ComponentTransformer = class {
       }
     })
     return s4Component
+  }
+
+  fixIfTooLong(componentName) {
+    if (this.tooLongComponentNamesMap[componentName]) {
+      return this.tooLongComponentNamesMap[componentName]
+    }
+    return componentName
   }
 }
 

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_teams_team_members",
+  "info": {
+    "displayName": "teamMember"
+  },
+  "options": {},
+  "attributes": {
+    "person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
+    },
+    "pictureAtTeam": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "roleAtTeam_et": {
+      "type": "string"
+    },
+    "roleAtTeam_en": {
+      "type": "string"
+    },
+    "roleAtTeam_ru": {
+      "type": "string"
+    },
+    "emailAtTeam": {
+      "type": "email"
+    },
+    "phoneAtTeam": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

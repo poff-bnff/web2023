@@ -246,25 +246,28 @@ const transformSchema = async () => {
   // 1.4. Transform component types to Strapi 4 format
   // Also, verify, that only relevant collection types are used in component attributes.
   // - Add v3 and v4 api paths to the component type
-  const relevantComponentTypes = transformer.getUsedComponentTypes()
-    .map(componentFullName => {
-      const [folderName, componentName] = componentFullName.split('.')
-      const settings = JSON.parse(fs.readFileSync(path.join(STRAPI3_COMPONENTS_PATH, folderName, `${componentName}.json`), 'utf8'))
-      try {
-        const v4 = componentTransformer.transform(settings)
-        return {
-          folderName: folderName,
-          componentName: componentName,
-          s3InfoName: settings.info.name,
-          s3ApiPath: `/components/${folderName}/${componentName}`,
-          s4ApiPath: `/components/${folderName}/${componentName}`,
-          v4: v4
-        }
-      } catch (error) {
-        throw new Error(`Component "${componentFullName}" is not resolved: ${error.message}`)
-      }
-    })
-  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.components.json'), JSON.stringify(relevantComponentTypes, null, 2))
+  const v4Components = []
+  let unparsedComponentPath = transformer.getUnparsedComponentType() // i.e. 'film.role-person'
+  while (unparsedComponentPath) {
+    const [folderName, componentName] = unparsedComponentPath.split('.')
+    const settings = JSON.parse(fs.readFileSync(path.join(STRAPI3_COMPONENTS_PATH, folderName, `${componentName}.json`), 'utf8'))
+    try {
+      const v4 = componentTransformer.transform(settings)
+      transformer.markComponentTypeAsParsed(unparsedComponentPath)
+      v4Components.push({
+        folderName: folderName,
+        componentName: componentName,
+        s3InfoName: settings.info.name,
+        s3ApiPath: `/components/${folderName}/${componentName}`,
+        s4ApiPath: `/components/${folderName}/${componentName}`,
+        v4: v4
+      })
+    } catch (error) {
+      throw new Error(`Component "${unparsedComponentPath}" is not resolved: ${error.message}`)
+    }
+    unparsedComponentPath = transformer.getUnparsedComponentType()
+  }
+  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.components.json'), JSON.stringify(v4Components, null, 2))
 
   // 1.5. Create schema files in target Strapi 4 folder structure
   // 1.5.1 Create ./api folder and /collectionName subfolders for each collection type
@@ -289,7 +292,7 @@ const transformSchema = async () => {
   //        - create component-name.json files for each component type and save them to 
   //          ./components/component-group-name/ folder
   fs.mkdirSync(STRAPI4_COMPONENTS_PATH, { recursive: true })
-  relevantComponentTypes.forEach(compType => {
+  v4Components.forEach(compType => {
     const compGroupFolder = path.join(STRAPI4_COMPONENTS_PATH, compType.folderName)
     fs.mkdirSync(compGroupFolder, { recursive: true })
     fs.writeFileSync(path.join(compGroupFolder, `${compType.componentName}.json`), JSON.stringify(compType.v4, null, 2))

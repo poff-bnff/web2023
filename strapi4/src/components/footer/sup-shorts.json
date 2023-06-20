@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_footer_sup_shorts",
+  "info": {
+    "displayName": "supShorts"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoColour": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoBlack": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "shortsi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shortsi-article.shortsi-article"
+    }
+  }
+}

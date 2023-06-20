@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_footer_sup_dis_camps",
+  "info": {
+    "displayName": "SupDisCamp"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "discamp_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dis-camp-article.dis-camp-article"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "logoColour": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "logoBlack": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_footer_sup_filmikools",
+  "info": {
+    "displayName": "SupFilmikool"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "logoColour": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "logoBlack": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "filmikooli_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::filmikooli-article.filmikooli-article"
+    }
+  }
+}

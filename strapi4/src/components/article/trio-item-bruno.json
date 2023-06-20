@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_article_trio_item_bruno",
+  "info": {
+    "displayName": "TrioItemBruno"
+  },
+  "options": {},
+  "attributes": {
+    "bruno_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bruno-article.bruno-article"
+    },
+    "title": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

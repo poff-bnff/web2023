@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_article_trio_item_dis_camps",
+  "info": {
+    "displayName": "TrioItemDisCamp"
+  },
+  "options": {},
+  "attributes": {
+    "discamp_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dis-camp-article.dis-camp-article"
+    },
+    "title": {
+      "type": "string"
+    },
+    "custom_url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "lead": {
+      "type": "string"
+    }
+  }
+}

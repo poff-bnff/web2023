@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_footer_sup_kinoffs",
+  "info": {
+    "displayName": "supKinoff"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "customUrl": {
+      "type": "string"
+    },
+    "logoWhite": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoColour": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoBlack": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "kinoffi_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kinoffi-article.kinoffi-article"
+    }
+  }
+}
