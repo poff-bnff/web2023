@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "hero_article_dis_camps",
+  "collectionName": "hero_article_dis_camp",
   "info": {
     "singularName": "hero-article-dis-camp",
     "pluralName": "hero-article-dis-camps",
     "displayName": "HeroArticleDisCamp"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_et": {
       "type": "relation",

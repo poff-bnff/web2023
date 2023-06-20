@@ -6,10 +6,6 @@
     "pluralName": "trio-shortses",
     "displayName": "TrioShorts"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioShorts_et": {
       "type": "component",

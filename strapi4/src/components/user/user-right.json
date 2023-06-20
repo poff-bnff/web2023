@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_user_user_rights",
+  "info": {
+    "displayName": "UserRight"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "functions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::function.function"
+    },
+    "smart_folders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::smart-folder.smart-folder"
+    },
+    "dumb_folders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dumb-folder.dumb-folder"
+    }
+  }
+}

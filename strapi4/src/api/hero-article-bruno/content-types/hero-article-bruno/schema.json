@@ -6,10 +6,6 @@
     "pluralName": "hero-article-brunos",
     "displayName": "HeroArticleBruno"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_en": {
       "type": "relation",

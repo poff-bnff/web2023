@@ -6,10 +6,6 @@
     "pluralName": "industry-awards",
     "displayName": "Award"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title_en": {
       "type": "string"
@@ -33,6 +29,12 @@
     },
     "slug_ru": {
       "type": "uid"
+    },
+    "awardings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::awarding.awarding",
+      "mappedBy": "award"
     }
   }
 }

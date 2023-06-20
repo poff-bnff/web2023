@@ -6,10 +6,6 @@
     "pluralName": "programmes",
     "displayName": "Programme"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"
@@ -25,11 +21,10 @@
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "domains": {
       "type": "relation",

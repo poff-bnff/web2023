@@ -6,10 +6,6 @@
     "pluralName": "dis-camp-events",
     "displayName": "DisCampEvent"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "titlePrivate": {
       "type": "string"
@@ -28,13 +24,12 @@
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "multiple": true
+      ]
     },
     "location": {
       "type": "relation",
@@ -42,10 +37,10 @@
       "target": "api::location.location"
     },
     "lead": {
-      "type": "text"
+      "type": "richtext"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     },
     "discamp_categories": {
       "type": "relation",

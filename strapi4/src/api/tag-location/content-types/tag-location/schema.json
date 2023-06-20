@@ -6,10 +6,6 @@
     "pluralName": "tag-locations",
     "displayName": "TagLocation"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"
@@ -22,6 +18,12 @@
     },
     "order": {
       "type": "integer"
+    },
+    "tag_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag-category.tag-category",
+      "mappedBy": "tag_locations"
     }
   }
 }

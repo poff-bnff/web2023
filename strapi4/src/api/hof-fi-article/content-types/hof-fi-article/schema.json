@@ -4,12 +4,8 @@
   "info": {
     "singularName": "hof-fi-article",
     "pluralName": "hof-fi-articles",
-    "displayName": "HOFFiArticle"
+    "displayName": "HOFFi_Article"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "titlePrivate": {
       "type": "string"
@@ -33,22 +29,22 @@
       "type": "uid"
     },
     "lead_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "lead_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "lead_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "media": {
       "type": "component",

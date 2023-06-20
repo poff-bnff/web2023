@@ -6,10 +6,6 @@
     "pluralName": "screening-types",
     "displayName": "ScreeningType"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"

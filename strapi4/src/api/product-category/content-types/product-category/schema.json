@@ -3,13 +3,9 @@
   "collectionName": "product_categories",
   "info": {
     "singularName": "product-category",
-    "pluralName": "product-categorys",
-    "displayName": "ProductCategory"
+    "pluralName": "product-categories",
+    "displayName": "Product_Category"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"
@@ -63,6 +59,12 @@
       "type": "component",
       "component": "media.imgs"
     },
+    "user_roles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::user-role.user-role",
+      "inversedBy": "product_categories"
+    },
     "validity_period_relative": {
       "type": "component",
       "component": "time.period-relative"
@@ -76,16 +78,33 @@
     "name_ru": {
       "type": "string"
     },
+    "business_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::business-profile.business-profile"
+    },
     "courses": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::course.course"
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "inversedBy": "product_categories"
+    },
+    "course_events": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course-event.course-event",
+      "mappedBy": "product_categories"
     },
     "transferable": {
       "type": "boolean"
     },
     "free": {
       "type": "boolean"
+    },
+    "product_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-type.product-type"
     },
     "hidden": {
       "type": "boolean"

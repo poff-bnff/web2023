@@ -6,10 +6,6 @@
     "pluralName": "films",
     "displayName": "Film"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title_et": {
       "type": "string"
@@ -97,8 +93,9 @@
     },
     "awardings": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::awarding.awarding"
+      "relation": "manyToMany",
+      "target": "api::awarding.awarding",
+      "mappedBy": "film"
     },
     "other_festivals": {
       "type": "relation",
@@ -110,19 +107,17 @@
     },
     "stills": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "posters": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "trailer": {
       "type": "component",

@@ -6,10 +6,6 @@
     "pluralName": "screenings",
     "displayName": "Screening"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "codeAndTitle": {
       "type": "string"

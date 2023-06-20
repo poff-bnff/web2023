@@ -4,18 +4,14 @@
   "info": {
     "singularName": "project-status",
     "pluralName": "project-statuses",
-    "displayName": "ProjectStatus"
+    "displayName": "Project_Status"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "status": {
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

@@ -6,10 +6,6 @@
     "pluralName": "pitch-of-voices",
     "displayName": "PitchOfVoice"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

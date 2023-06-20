@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_industries",
+  "collectionName": "trio_industry",
   "info": {
     "singularName": "trio-industry",
-    "pluralName": "trio-industrys",
+    "pluralName": "trio-industries",
     "displayName": "TrioIndustry"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioIndustry_et": {
       "type": "component",

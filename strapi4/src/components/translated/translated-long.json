@@ -6,13 +6,13 @@
   "options": {},
   "attributes": {
     "et": {
-      "type": "text"
+      "type": "richtext"
     },
     "en": {
-      "type": "text"
+      "type": "richtext"
     },
     "ru": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

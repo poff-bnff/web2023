@@ -4,12 +4,8 @@
   "info": {
     "singularName": "shoe-size",
     "pluralName": "shoe-sizes",
-    "displayName": "ShoeSize"
+    "displayName": "Shoe_Size"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"

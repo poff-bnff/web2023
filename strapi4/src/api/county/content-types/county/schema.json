@@ -3,13 +3,9 @@
   "collectionName": "counties",
   "info": {
     "singularName": "county",
-    "pluralName": "countys",
+    "pluralName": "counties",
     "displayName": "County"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

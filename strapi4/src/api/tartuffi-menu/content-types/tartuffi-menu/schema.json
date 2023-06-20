@@ -4,12 +4,8 @@
   "info": {
     "singularName": "tartuffi-menu",
     "pluralName": "tartuffi-menus",
-    "displayName": "TartuffiMenu"
+    "displayName": "Tartuffi_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

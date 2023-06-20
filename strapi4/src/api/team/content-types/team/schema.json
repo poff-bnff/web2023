@@ -6,10 +6,6 @@
     "pluralName": "teams",
     "displayName": "Team"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "subTeam": {
       "type": "component",

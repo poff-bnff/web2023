@@ -4,12 +4,8 @@
   "info": {
     "singularName": "industry-menu",
     "pluralName": "industry-menus",
-    "displayName": "IndustryMenu"
+    "displayName": "Industry_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

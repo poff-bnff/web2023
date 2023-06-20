@@ -4,18 +4,14 @@
   "info": {
     "singularName": "project-type",
     "pluralName": "project-types",
-    "displayName": "ProjectType"
+    "displayName": "Project_Type"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "type": {
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

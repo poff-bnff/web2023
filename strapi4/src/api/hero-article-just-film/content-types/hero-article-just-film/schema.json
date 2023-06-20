@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "hero_article_just_films",
+  "collectionName": "hero_article_just_film",
   "info": {
     "singularName": "hero-article-just-film",
     "pluralName": "hero-article-just-films",
     "displayName": "HeroArticleJustFilm"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_et": {
       "type": "relation",

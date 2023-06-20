@@ -6,10 +6,6 @@
     "pluralName": "label-groups",
     "displayName": "LabelGroup"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",

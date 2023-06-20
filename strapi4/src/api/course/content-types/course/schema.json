@@ -6,10 +6,6 @@
     "pluralName": "courses",
     "displayName": "Course"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "titleOriginal": {
       "type": "string"
@@ -67,8 +63,9 @@
     },
     "events": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::event.event"
+      "relation": "manyToMany",
+      "target": "api::event.event",
+      "mappedBy": "course"
     },
     "volume": {
       "type": "string"
@@ -80,19 +77,17 @@
     },
     "stills": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "posters": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "trailer": {
       "type": "component",
@@ -106,6 +101,12 @@
     },
     "moodle_id": {
       "type": "uid"
+    },
+    "product_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-category.product-category",
+      "mappedBy": "courses"
     }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_user_function_conditions",
+  "info": {
+    "displayName": "Conditions"
+  },
+  "options": {},
+  "attributes": {
+    "property": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

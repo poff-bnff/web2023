@@ -6,13 +6,34 @@
     "pluralName": "awardings",
     "displayName": "Awarding"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "date": {
       "type": "date"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-project.industry-project"
+    },
+    "film": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::film.film"
+    },
+    "person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
+    },
+    "organisation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::organisation.organisation"
+    },
+    "festival_edition": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::festival-edition.festival-edition"
     },
     "titlePrivate": {
       "type": "string"
@@ -27,13 +48,13 @@
       "type": "string"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "slug_et": {
       "type": "uid"

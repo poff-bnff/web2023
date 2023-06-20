@@ -1,15 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "FestivalCollectionName",
+  "collectionName": "festivals",
   "info": {
     "singularName": "festival",
     "pluralName": "festivals",
     "displayName": "Festival"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"
@@ -21,29 +17,26 @@
       "type": "string"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "logo": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "clipUrl": {
       "type": "string"

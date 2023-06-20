@@ -4,12 +4,8 @@
   "info": {
     "singularName": "front-page-courses",
     "pluralName": "front-page-courseses",
-    "displayName": "FrontPageCourses"
+    "displayName": "Front_Page_Courses"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "component",

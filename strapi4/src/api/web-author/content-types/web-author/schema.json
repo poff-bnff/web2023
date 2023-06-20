@@ -6,10 +6,6 @@
     "pluralName": "web-authors",
     "displayName": "WebAuthor"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

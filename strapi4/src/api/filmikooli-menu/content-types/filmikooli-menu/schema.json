@@ -4,12 +4,8 @@
   "info": {
     "singularName": "filmikooli-menu",
     "pluralName": "filmikooli-menus",
-    "displayName": "FilmikooliMenu"
+    "displayName": "Filmikooli_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

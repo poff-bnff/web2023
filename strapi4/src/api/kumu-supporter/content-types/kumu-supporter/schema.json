@@ -4,12 +4,8 @@
   "info": {
     "singularName": "kumu-supporter",
     "pluralName": "kumu-supporters",
-    "displayName": "KumuSupporter"
+    "displayName": "Kumu_Supporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "component",

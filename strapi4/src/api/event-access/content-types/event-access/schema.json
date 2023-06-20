@@ -6,10 +6,6 @@
     "pluralName": "event-accesses",
     "displayName": "EventAccess"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"
@@ -21,13 +17,13 @@
       "type": "string"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

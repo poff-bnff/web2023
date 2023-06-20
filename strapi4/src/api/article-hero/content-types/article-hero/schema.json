@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "article_heroes",
+  "collectionName": "article_hero",
   "info": {
     "singularName": "article-hero",
     "pluralName": "article-heros",
     "displayName": "HeroArticlePoff"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_en": {
       "type": "relation",

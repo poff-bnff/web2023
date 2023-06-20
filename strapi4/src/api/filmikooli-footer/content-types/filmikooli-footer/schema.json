@@ -4,12 +4,8 @@
   "info": {
     "singularName": "filmikooli-footer",
     "pluralName": "filmikooli-footers",
-    "displayName": "FilmikooliFooter"
+    "displayName": "Filmikooli_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

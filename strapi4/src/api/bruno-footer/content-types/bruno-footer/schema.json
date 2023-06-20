@@ -4,12 +4,8 @@
   "info": {
     "singularName": "bruno-footer",
     "pluralName": "bruno-footers",
-    "displayName": "BrunoFooter"
+    "displayName": "Bruno_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

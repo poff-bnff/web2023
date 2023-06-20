@@ -6,10 +6,6 @@
     "pluralName": "origins",
     "displayName": "Origin"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"

@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_profiles",
+  "info": {
+    "singularName": "business-profile",
+    "pluralName": "business-profiles",
+    "displayName": "BusinessProfile"
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "organisation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::organisation.organisation"
+    },
+    "reg_code": {
+      "type": "string"
+    },
+    "vat_code": {
+      "type": "string"
+    },
+    "iban": {
+      "type": "string"
+    },
+    "maksekeskus_id": {
+      "type": "string"
+    },
+    "maksekeskus_secret": {
+      "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "component": "location.address"
+    },
+    "vat_percentage": {
+      "type": "integer"
+    },
+    "bank_name": {
+      "type": "string"
+    },
+    "bank_code": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "firstNameLastName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gender.gender"
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "terms_p": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pof-fi-article.pof-fi-article"
+    }
+  }
+}

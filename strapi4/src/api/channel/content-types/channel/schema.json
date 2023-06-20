@@ -6,10 +6,6 @@
     "pluralName": "channels",
     "displayName": "Channel"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

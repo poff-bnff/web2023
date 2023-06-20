@@ -13,6 +13,8 @@ const {
 
 const {
   s3datamodel,
+  relevantCollectionNames,
+  getRelevantS3DatamodelKey,
   isCollectionRelevant,
   isModelPathRelevant,
   pluralize,
@@ -20,23 +22,24 @@ const {
 
 const discardedModelNames = []
 const S_3_COLLECTIONS = fs.readdirSync(STRAPI3_COLLECTIONS_PATH)
-  .filter((modelName) => { // keep only directories
-    if (fs.statSync(path.join(STRAPI3_COLLECTIONS_PATH, modelName)).isDirectory()) {
+  .filter((datamodelKey) => { // keep only directories
+    if (fs.statSync(path.join(STRAPI3_COLLECTIONS_PATH, datamodelKey)).isDirectory()) {
       return true
     }
     return false
   })
-  .filter((modelName) => { // if model has no settings.json, it is not relevant
-    if (fs.existsSync(path.join(STRAPI3_COLLECTIONS_PATH, modelName, 'models', `${modelName}.settings.json`))) {
+  .filter((datamodelKey) => { // if model has no settings.json, it is not relevant
+    if (fs.existsSync(path.join(STRAPI3_COLLECTIONS_PATH, datamodelKey, 'models', `${datamodelKey}.settings.json`))) {
       return true
     }
     return false
   })
-  .filter((modelName) => { // if model is not listed in datamodel.yaml, it is not relevant
-    if (isModelPathRelevant(modelName)) {
+  .filter((datamodelKey) => { // if model is not listed in datamodel.yaml, it is not relevant
+    const s3DatamodelKey = getRelevantS3DatamodelKey(datamodelKey)
+    if (s3DatamodelKey) {
       return true
     }
-    discardedModelNames.push(modelName)
+    discardedModelNames.push(datamodelKey)
     return false
   })
   .map((modelName) => { // convert model name to collection
@@ -100,20 +103,16 @@ const S_3_COMPONENTS = fs.readdirSync(STRAPI3_COMPONENTS_PATH)
     return componentsGroupArray.concat(newComponentsGroupArray)
   }, [])
 
-console.log(`INFO 3: ${S_3_COLLECTIONS.length} collections and ${S_3_COMPONENTS.length} components to be converted`)
 const S_3_SCHEMA = {
   collections: S_3_COLLECTIONS,
   components: S_3_COMPONENTS,
 }
 
-const S_4_SCHEMA = {
-  collections: [],
-  components: [],
-}
+console.log(`INFO 3: ${S_3_COLLECTIONS.length} collections and ${S_3_COMPONENTS.length} components to be converted`)
 
+const S_4_SCHEMA = { collections: [], components: [] }
 
-
-const addCollectionToS4Schema = (s3Collection) => {
+S_4_SCHEMA.collections = S_3_SCHEMA.collections.map((s3Collection) => {
   // hard copy s3Collection to s4Collection to avoid side effects
   const s4Collection = {
     kind: s3Collection.kind,
@@ -121,6 +120,7 @@ const addCollectionToS4Schema = (s3Collection) => {
     collectionName: s3Collection.collectionName,
     displayName: s3Collection.displayName,
     s3DisplayName: s3Collection.s3DisplayName,
+    s3attributes: s3Collection.attributes,
     s4: {
       kind: s3Collection.kind,
       collectionName: s3Collection.collectionName,
@@ -132,12 +132,16 @@ const addCollectionToS4Schema = (s3Collection) => {
       options: {
         draftAndPublish: false
       },
-      pluginOptions: {},
-      attributes: convertAttributes(s3Collection.attributes, s3Collection.modelName)
+      pluginOptions: {}
     }
   }
-  S_4_SCHEMA.collections.push(s4Collection)
-  // console.log(`writeS4Collection: ${JSON.stringify(s3Collection, null, 2)}`)
+  return s4Collection
+})
+
+const addAttributesToS4CollectionsInS4Schema = () => {
+  S_4_SCHEMA.collections.forEach((s4Collection) => {
+    s4Collection.s4.attributes = convertAttributes(s4Collection.s3attributes, s4Collection.modelName)
+  })
 }
 
 const addComponentsToS4Schema = (componentNames) => {
@@ -213,7 +217,7 @@ const convertAttributes = (s3Attributes, name) => {
         // console.log(`I: ${name} has attribute ${attributeName} with oneToMany collection ${s3Attribute.collection}`)
         if (!isCollectionInV4Schema(s3Attribute.collection)) {
           console.log(`WARNING 4.1: ${name} has attribute ${attributeName} with target ${s3Attribute.collection} which is not in s4Schema`)
-          // return
+          return
         }
         s3Attribute.type = 'relation'
         if (s3Attribute.via) {
@@ -253,7 +257,7 @@ const convertAttributes = (s3Attributes, name) => {
       if (!isCollectionInV4Schema(targetName)) {
         console.log(`WARNING 4.2: ${name} has attribute ${attributeName} with target ${s3Attribute.target} which is not in s4Schema`)
         // Object.keys(s4Attribute).forEach((key) => delete s4Attribute[key])
-        // return
+        return
       }
       const maxNameLength = 45
       if (name.length + attributeName.length > maxNameLength) {
@@ -333,35 +337,46 @@ const getComponentNamesInAttributes = (attributes) => {
   return uniqueNames
 }
 
+
+const S_4_SCHEMA = {
+  collections: [],
+  components: [],
+}
+
+
 // enrich strapi3Schema.collections with displaynames from s3datamodel
 for (s3DislpayName in s3datamodel) {
+  continue
   const element = s3datamodel[s3DislpayName]
-  if (element._path) {
-    const modelName = element._path.split('/')[1]
-    if (!modelName) {
-      console.log(`ERROR 1: ${s3DislpayName} has bad _path: ${element._path}`)
-      continue
-    }
-    const collectionName = modelName.replace(/-/g, '_')
-    // find a collection in strapi3Schema.collections, where modelName or collectionName matches
-    const s3Collection = S_3_SCHEMA.collections.find((collection) => {
-      return collection.modelName === modelName
-        || collection.collectionName === collectionName
-        || collection.displayName === s3DislpayName
-    })
-    if (s3Collection) {
-      s3Collection.s3DisplayName = s3DislpayName
-      addCollectionToS4Schema(s3Collection)
-      const componentNamesInCollection = getComponentNamesInAttributes(s3Collection.attributes)
-      addComponentsToS4Schema(componentNamesInCollection)
-    } else {
-      console.log(`WARNING 6: nor ${modelName} nor ${collectionName} nor ${s3DislpayName} was not found in strapi3Schema.collections`)
-    }
-    // console.log(`model: ${s3DislpayName}, modelName: ${modelName}, collectionName: ${collectionName}, collection: ${JSON.stringify(collection, null, 2)}`) // collection or singleType
-  } else {
-    // console.log(`WARNING: ${s3DislpayName} is a component`)
+  if (!element._path) {
+    console.log(`ERROR 1: ${s3DislpayName} has no _path`)
+    continue
   }
+  const modelName = element._path.split('/')[1]
+  if (!modelName) {
+    console.log(`ERROR 1: ${s3DislpayName} has bad _path: ${element._path}`)
+    continue
+  }
+  const collectionName = modelName.replace(/-/g, '_')
+  // find a collection in strapi3Schema.collections, where modelName or collectionName matches
+  const s3Collection = S_3_SCHEMA.collections.find((collection) => {
+    return collection.modelName === modelName
+      || collection.collectionName === collectionName
+      || collection.displayName === s3DislpayName
+  })
+  if (s3Collection) {
+    s3Collection.s3DisplayName = s3DislpayName
+    addCollectionToS4Schema(s3Collection)
+    const componentNamesInCollection = getComponentNamesInAttributes(s3Collection.attributes)
+    addComponentsToS4Schema(componentNamesInCollection)
+  } else {
+    console.log(`WARNING 6: nor ${modelName} nor ${collectionName} nor ${s3DislpayName} was not found in strapi3Schema.collections`)
+  }
+  // console.log(`model: ${s3DislpayName}, modelName: ${modelName}, collectionName: ${collectionName}, collection: ${JSON.stringify(collection, null, 2)}`) // collection or singleType
 }
+
+console.log(S_4_SCHEMA.collections.map((collection) => collection.s3DisplayName).join(', '))
+addAttributesToS4CollectionsInS4Schema()
 
 fs.writeFileSync(path.join(__dirname, 'strapi3Schema.json'), JSON.stringify(S_3_SCHEMA, null, 4))
 fs.writeFileSync(path.join(__dirname, 'strapi4Schema.json'), JSON.stringify(S_4_SCHEMA, null, 4))
@@ -422,4 +437,3 @@ S_4_SCHEMA.collections.forEach((collection) => {
   fs.writeFileSync(path.join(s4APIServicePath, `${singularName}.js`), `'use strict'\n\nconst { createCoreService } = require('@strapi/strapi').factories\n\nmodule.exports = createCoreService('api::${singularName}.${singularName}')`)
 
 })
-

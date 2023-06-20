@@ -4,12 +4,8 @@
   "info": {
     "singularName": "shortsi-menu",
     "pluralName": "shortsi-menus",
-    "displayName": "ShortsiMenu"
+    "displayName": "Shortsi_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

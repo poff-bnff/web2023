@@ -4,12 +4,8 @@
   "info": {
     "singularName": "supporters-page",
     "pluralName": "supporters-pages",
-    "displayName": "POFFiSupporter"
+    "displayName": "POFFi_Supporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "component",

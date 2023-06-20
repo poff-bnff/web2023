@@ -4,12 +4,8 @@
   "info": {
     "singularName": "industry-article",
     "pluralName": "industry-articles",
-    "displayName": "IndustryArticle"
+    "displayName": "Industry_Article"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "titlePrivate": {
       "type": "string"
@@ -33,22 +29,22 @@
       "type": "uid"
     },
     "lead_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "lead_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "lead_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "media": {
       "type": "component",
@@ -121,6 +117,12 @@
     },
     "public": {
       "type": "boolean"
+    },
+    "industry_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::industry-category.industry-category",
+      "mappedBy": "industry_article"
     }
   }
 }

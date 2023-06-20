@@ -3,13 +3,9 @@
   "collectionName": "deliveries",
   "info": {
     "singularName": "delivery",
-    "pluralName": "deliverys",
+    "pluralName": "deliveries",
     "displayName": "Delivery"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_private": {
       "type": "string"

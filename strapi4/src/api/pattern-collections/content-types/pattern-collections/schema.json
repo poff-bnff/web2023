@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pattern_collections",
+  "info": {
+    "singularName": "pattern-collections",
+    "pluralName": "pattern-collectionses",
+    "displayName": "Pattern_Collections"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pattern": {
+      "type": "text"
+    }
+  }
+}

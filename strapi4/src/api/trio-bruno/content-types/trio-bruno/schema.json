@@ -6,10 +6,6 @@
     "pluralName": "trio-brunos",
     "displayName": "TrioBruno"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioBruno_et": {
       "type": "component",

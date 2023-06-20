@@ -1,0 +1,69 @@
+{
+  "collectionName": "components_location_addresses",
+  "info": {
+    "displayName": "Address"
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "county": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::county.county"
+    },
+    "settl_unit": {
+      "type": "string"
+    },
+    "address_unit": {
+      "type": "string"
+    },
+    "street_name": {
+      "type": "string"
+    },
+    "address_number": {
+      "type": "string"
+    },
+    "appartment": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "n_dms": {
+      "type": "string"
+    },
+    "e_dms": {
+      "type": "string"
+    },
+    "n": {
+      "type": "decimal"
+    },
+    "e": {
+      "type": "decimal"
+    },
+    "l_est_x": {
+      "type": "biginteger"
+    },
+    "l_est_y": {
+      "type": "biginteger"
+    },
+    "add_county": {
+      "type": "string"
+    },
+    "municipality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::populated-place.populated-place"
+    },
+    "add_municipality": {
+      "type": "string"
+    },
+    "popul_place": {
+      "type": "string"
+    }
+  }
+}

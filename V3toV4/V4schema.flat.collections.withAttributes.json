@@ -27,6 +27,197 @@
     }
   },
   {
+    "s3DatamodelKey": "Function",
+    "collectionName": "functions",
+    "kind": "collectionType",
+    "folderName": "function",
+    "s3InfoName": "UserFunction",
+    "s3CollectionName": "functions",
+    "s3ApiPath": "/function",
+    "s4ApiPath": "/api/function",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "functions",
+      "info": {
+        "singularName": "function",
+        "pluralName": "functions",
+        "displayName": "UserFunction"
+      },
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "function_parameters": {
+          "type": "component",
+          "repeatable": true,
+          "component": "user.function-parameters"
+        }
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "SmartFolder",
+    "collectionName": "smart_folders",
+    "kind": "collectionType",
+    "folderName": "smart-folder",
+    "s3InfoName": "SmartFolder",
+    "s3CollectionName": "smart_folders",
+    "s3ApiPath": "/smart-folder",
+    "s4ApiPath": "/api/smart-folder",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "smart_folders",
+      "info": {
+        "singularName": "smart-folder",
+        "pluralName": "smart-folders",
+        "displayName": "SmartFolder"
+      },
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "pattern_collections": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::pattern-collections.pattern-collections"
+        },
+        "conditions": {
+          "type": "component",
+          "repeatable": true,
+          "component": "user.function-conditions"
+        }
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DumbFolder",
+    "collectionName": "dumb_folders",
+    "kind": "collectionType",
+    "folderName": "dumb-folder",
+    "s3InfoName": "DumbFolder",
+    "s3CollectionName": "dumb_folders",
+    "s3ApiPath": "/dumb-folder",
+    "s4ApiPath": "/api/dumb-folder",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dumb_folders",
+      "info": {
+        "singularName": "dumb-folder",
+        "pluralName": "dumb-folders",
+        "displayName": "DumbFolder"
+      },
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "films": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::film.film"
+        },
+        "cassettes": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::cassette.cassette"
+        },
+        "poffi_articles": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::pof-fi-article.pof-fi-article"
+        },
+        "just_filmi_articles": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::just-filmi-article.just-filmi-article"
+        },
+        "shortsi_articles": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::shortsi-article.shortsi-article"
+        },
+        "industry_articles": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::industry-article.industry-article"
+        },
+        "course_events": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::course-event.course-event"
+        }
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "PatternCollection",
+    "collectionName": "pattern_collections",
+    "kind": "collectionType",
+    "folderName": "pattern-collections",
+    "s3InfoName": "Pattern_Collections",
+    "s3CollectionName": "pattern_collections",
+    "s3ApiPath": "/pattern-collections",
+    "s4ApiPath": "/api/pattern-collections",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "pattern_collections",
+      "info": {
+        "singularName": "pattern-collections",
+        "pluralName": "pattern-collectionses",
+        "displayName": "Pattern_Collections"
+      },
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "pattern": {
+          "type": "text"
+        }
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TimeUnits",
+    "collectionName": "time_units",
+    "kind": "collectionType",
+    "folderName": "time-units",
+    "s3InfoName": "TimeUnits",
+    "s3CollectionName": "time_units",
+    "s3ApiPath": "/time-units",
+    "s4ApiPath": "/api/time-units",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "time_units",
+      "info": {
+        "singularName": "time-units",
+        "pluralName": "time-unitses",
+        "displayName": "TimeUnits"
+      },
+      "attributes": {
+        "name_private": {
+          "type": "string"
+        },
+        "name_et": {
+          "type": "string"
+        },
+        "name_en": {
+          "type": "string"
+        },
+        "name_ru": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
     "s3DatamodelKey": "UserRole",
     "collectionName": "user_roles",
     "kind": "collectionType",
@@ -49,8 +240,8 @@
         },
         "user_right": {
           "type": "component",
-          "component": "user.user-right",
-          "repeatable": true
+          "repeatable": true,
+          "component": "user.user-right"
         },
         "valid_from": {
           "type": "datetime"
@@ -67,8 +258,8 @@
         "users": {
           "type": "relation",
           "relation": "manyToMany",
-          "target": "api::user.user",
-          "inversedBy": "user_roles"
+          "inversedBy": "user_roles",
+          "target": "plugin::users-permissions.user"
         }
       }
     }
@@ -94,7 +285,7 @@
         "user": {
           "type": "relation",
           "relation": "oneToOne",
-          "target": "api::user.user"
+          "target": "plugin::users-permissions.user"
         },
         "organisation": {
           "type": "relation",
@@ -118,8 +309,7 @@
         },
         "address": {
           "type": "component",
-          "component": "location.address",
-          "repeatable": false
+          "component": "location.address"
         },
         "vat_percentage": {
           "type": "integer"
@@ -378,32 +568,24 @@
         },
         "icon_default": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
         },
         "icon_et": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
         },
         "icon_en": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
         },
         "icon_ru": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
@@ -737,8 +919,8 @@
         },
         "description": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": true
+          "repeatable": true,
+          "component": "translated.translated-long"
         },
         "title_et": {
           "type": "string"
@@ -904,8 +1086,7 @@
         },
         "roleName": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
@@ -1281,15 +1462,12 @@
         },
         "logo": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -1409,17 +1587,14 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "description": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -1441,24 +1616,18 @@
         },
         "logoWhite": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
         },
         "logoBlack": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
         },
         "logoColour": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
@@ -1484,8 +1653,6 @@
         },
         "profile_img": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
@@ -1505,8 +1672,6 @@
         },
         "audioreel": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "files"
           ]
@@ -1531,8 +1696,8 @@
         },
         "remote_img": {
           "type": "component",
-          "component": "media.remote-img",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.remote-img"
         },
         "origin": {
           "type": "relation",
@@ -1584,8 +1749,7 @@
         },
         "description": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "festival_editions": {
           "type": "relation",
@@ -1594,7 +1758,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -1610,8 +1773,7 @@
         },
         "presentedBy": {
           "type": "component",
-          "component": "film.presented-by",
-          "repeatable": false
+          "component": "film.presented-by"
         },
         "remoteId": {
           "type": "uid"
@@ -1660,8 +1822,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         }
       }
     }
@@ -1770,8 +1931,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -1790,8 +1950,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -1896,8 +2056,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -1916,8 +2075,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2022,8 +2181,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -2042,8 +2200,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2145,8 +2303,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -2165,8 +2322,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2268,8 +2425,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -2288,8 +2444,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2357,22 +2513,19 @@
           "type": "string"
         },
         "slug_et": {
-          "type": "uid",
-          "required": false
+          "type": "uid"
         },
         "title_en": {
           "type": "string"
         },
         "slug_en": {
-          "type": "uid",
-          "required": false
+          "type": "uid"
         },
         "title_ru": {
           "type": "string"
         },
         "slug_ru": {
-          "type": "uid",
-          "required": false
+          "type": "uid"
         },
         "lead_et": {
           "type": "richtext"
@@ -2394,8 +2547,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -2414,8 +2566,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2520,8 +2672,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -2540,8 +2691,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2646,8 +2797,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -2666,8 +2816,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2769,8 +2919,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -2786,8 +2935,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -2922,15 +3071,12 @@
         },
         "profile_img": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -3393,8 +3539,6 @@
         },
         "picture": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
@@ -3426,13 +3570,11 @@
         },
         "biography": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "filmography": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "remoteId": {
           "type": "uid"
@@ -3523,8 +3665,6 @@
         },
         "profile_img": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
@@ -3560,7 +3700,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -3571,8 +3710,6 @@
         },
         "audioreel": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "files"
           ]
@@ -3700,13 +3837,12 @@
       "attributes": {
         "subTeam": {
           "type": "component",
-          "component": "teams.test-team",
-          "repeatable": true
+          "repeatable": true,
+          "component": "teams.test-team"
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "domain": {
           "type": "relation",
@@ -3924,13 +4060,11 @@
         },
         "synopsis": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "tags": {
           "type": "component",
-          "component": "tags.tags",
-          "repeatable": false
+          "component": "tags.tags"
         },
         "slug_et": {
           "type": "uid"
@@ -3948,13 +4082,11 @@
         },
         "credentials": {
           "type": "component",
-          "component": "film.credentials-new",
-          "repeatable": false
+          "component": "film.credentials-new"
         },
         "presentedBy": {
           "type": "component",
-          "component": "film.presented-by",
-          "repeatable": false
+          "component": "film.presented-by"
         },
         "world_sales": {
           "type": "relation",
@@ -3979,13 +4111,12 @@
         },
         "orderedCountries": {
           "type": "component",
-          "component": "film.ordered-countries",
-          "repeatable": true
+          "repeatable": true,
+          "component": "film.ordered-countries"
         },
         "additInfo": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "foreignUrl": {
           "type": "string"
@@ -4009,7 +4140,6 @@
         },
         "stills": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -4017,7 +4147,6 @@
         },
         "posters": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -4025,13 +4154,13 @@
         },
         "trailer": {
           "type": "component",
-          "component": "media.trailers",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.trailers"
         },
         "QaClip": {
           "type": "component",
-          "component": "media.qa-clip",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.qa-clip"
         },
         "chat_w_name": {
           "type": "string"
@@ -4071,8 +4200,7 @@
         },
         "synopsis": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "festival_editions": {
           "type": "relation",
@@ -4081,8 +4209,7 @@
         },
         "tags": {
           "type": "component",
-          "component": "tags.tags",
-          "repeatable": false
+          "component": "tags.tags"
         },
         "slug_et": {
           "type": "uid"
@@ -4103,12 +4230,11 @@
         },
         "orderedFilms": {
           "type": "component",
-          "component": "film.ordered-films",
-          "repeatable": true
+          "repeatable": true,
+          "component": "film.ordered-films"
         },
         "stills": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -4116,7 +4242,6 @@
         },
         "posters": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -4124,13 +4249,13 @@
         },
         "trailer": {
           "type": "component",
-          "component": "media.trailers",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.trailers"
         },
         "QaClip": {
           "type": "component",
-          "component": "media.qa-clip",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.qa-clip"
         },
         "chat_w_name": {
           "type": "string"
@@ -4170,8 +4295,8 @@
         },
         "introQaConversation": {
           "type": "component",
-          "component": "screening.intro-conversation-qand-a",
-          "repeatable": true
+          "repeatable": true,
+          "component": "screening.intro-conversation-qand-a"
         },
         "durationTotal": {
           "type": "integer"
@@ -4206,8 +4331,7 @@
         },
         "extraInfo": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "code": {
           "type": "string"
@@ -4241,13 +4365,11 @@
       "attributes": {
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "lead": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "domain": {
           "type": "relation",
@@ -4314,8 +4436,8 @@
         },
         "label": {
           "type": "component",
-          "component": "label.label",
-          "repeatable": true
+          "repeatable": true,
+          "component": "label.label"
         }
       }
     }
@@ -4345,8 +4467,6 @@
         },
         "profilePicAtInd": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images"
           ]
@@ -4367,7 +4487,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -4381,8 +4500,7 @@
         },
         "filmography": {
           "type": "component",
-          "component": "film.filmography",
-          "repeatable": false
+          "component": "film.filmography"
         },
         "industry_person_types": {
           "type": "relation",
@@ -4482,8 +4600,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publishFrom": {
           "type": "datetime"
@@ -4502,8 +4619,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -4728,8 +4845,7 @@
         },
         "teamCredentials": {
           "type": "component",
-          "component": "film.credentials-new",
-          "repeatable": false
+          "component": "film.credentials-new"
         },
         "budget": {
           "type": "decimal"
@@ -4770,7 +4886,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -4840,13 +4955,11 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "description": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "embedCode": {
           "type": "string"
@@ -4877,8 +4990,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "industry_article": {
           "type": "relation",
@@ -4887,16 +4999,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.industry-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.industry-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -4941,8 +5052,7 @@
         },
         "extraInfo": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "bookingUrl": {
           "type": "text"
@@ -4957,8 +5067,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "namePrivate": {
           "type": "string"
@@ -5019,8 +5128,7 @@
         },
         "tags": {
           "type": "component",
-          "component": "tags.course-tags",
-          "repeatable": false
+          "component": "tags.course-tags"
         },
         "languages": {
           "type": "relation",
@@ -5029,18 +5137,15 @@
         },
         "credentials": {
           "type": "component",
-          "component": "film.credentials-new",
-          "repeatable": false
+          "component": "film.credentials-new"
         },
         "presentedBy": {
           "type": "component",
-          "component": "film.presented-by",
-          "repeatable": false
+          "component": "film.presented-by"
         },
         "additInfo": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "foreignUrl": {
           "type": "text"
@@ -5061,7 +5166,6 @@
         },
         "stills": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -5069,7 +5173,6 @@
         },
         "posters": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images"
@@ -5077,13 +5180,13 @@
         },
         "trailer": {
           "type": "component",
-          "component": "media.trailers",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.trailers"
         },
         "QaClip": {
           "type": "component",
-          "component": "media.qa-clip",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.qa-clip"
         },
         "moodle_id": {
           "type": "uid"
@@ -5141,8 +5244,8 @@
         },
         "delivery_prices": {
           "type": "component",
-          "component": "ticketing.delivery-price",
-          "repeatable": true
+          "repeatable": true,
+          "component": "ticketing.delivery-price"
         },
         "days_before": {
           "type": "integer"
@@ -5206,8 +5309,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "festival_edition": {
           "type": "relation",
@@ -5216,28 +5318,27 @@
         },
         "description": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "validityPeriod": {
           "type": "component",
-          "component": "time.period",
-          "repeatable": true
+          "repeatable": true,
+          "component": "time.period"
         },
         "salesPeriod": {
           "type": "component",
-          "component": "time.period",
-          "repeatable": true
+          "repeatable": true,
+          "component": "time.period"
         },
         "ticketingRight": {
           "type": "component",
-          "component": "ticketing.ticketing-rights",
-          "repeatable": true
+          "repeatable": true,
+          "component": "ticketing.ticketing-rights"
         },
         "priceAtPeriod": {
           "type": "component",
-          "component": "ticketing.price-with-time",
-          "repeatable": true
+          "repeatable": true,
+          "component": "ticketing.price-with-time"
         },
         "codePrefix": {
           "type": "string"
@@ -5253,8 +5354,7 @@
         },
         "images": {
           "type": "component",
-          "component": "media.imgs",
-          "repeatable": false
+          "component": "media.imgs"
         },
         "user_roles": {
           "type": "relation",
@@ -5264,8 +5364,7 @@
         },
         "validity_period_relative": {
           "type": "component",
-          "component": "time.period-relative",
-          "repeatable": false
+          "component": "time.period-relative"
         },
         "name_et": {
           "type": "string"
@@ -5333,23 +5432,20 @@
         },
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "prodCatList": {
           "type": "component",
-          "component": "ticketing.prod-cat-list",
-          "repeatable": true
+          "repeatable": true,
+          "component": "ticketing.prod-cat-list"
         },
         "shopRules": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "domains": {
           "type": "relation",
@@ -5432,13 +5528,12 @@
         },
         "course_module": {
           "type": "component",
-          "component": "course.course-module",
-          "repeatable": true
+          "repeatable": true,
+          "component": "course.course-module"
         },
         "credentials": {
           "type": "component",
-          "component": "film.credentials-new",
-          "repeatable": false
+          "component": "film.credentials-new"
         },
         "festival_editions": {
           "type": "relation",
@@ -5457,8 +5552,8 @@
         },
         "trailer": {
           "type": "component",
-          "component": "media.trailers",
-          "repeatable": true
+          "repeatable": true,
+          "component": "media.trailers"
         },
         "industry_categories": {
           "type": "relation",
@@ -5484,7 +5579,6 @@
         },
         "posters": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images",
@@ -5494,7 +5588,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images",
@@ -5536,13 +5629,11 @@
         },
         "tags": {
           "type": "component",
-          "component": "tags.course-tags",
-          "repeatable": false
+          "component": "tags.course-tags"
         },
         "presentedBy": {
           "type": "component",
-          "component": "film.presented-by",
-          "repeatable": false
+          "component": "film.presented-by"
         },
         "languages": {
           "type": "relation",
@@ -5564,8 +5655,7 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": false
+          "component": "button.button"
         },
         "industry_people": {
           "type": "relation",
@@ -5595,13 +5685,11 @@
       "attributes": {
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "lead": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "domain": {
           "type": "relation",
@@ -5684,8 +5772,6 @@
         },
         "profilePicAtDC": {
           "type": "media",
-          "required": false,
-          "multiple": false,
           "allowedTypes": [
             "images",
             "files",
@@ -5708,7 +5794,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images",
@@ -5724,8 +5809,7 @@
         },
         "filmography": {
           "type": "component",
-          "component": "film.filmography",
-          "repeatable": false
+          "component": "film.filmography"
         },
         "discamp_person_types": {
           "type": "relation",
@@ -5810,8 +5894,7 @@
         },
         "media": {
           "type": "component",
-          "component": "article.article-media",
-          "repeatable": false
+          "component": "article.article-media"
         },
         "publish_et": {
           "type": "boolean"
@@ -5824,8 +5907,8 @@
         },
         "button": {
           "type": "component",
-          "component": "button.button",
-          "repeatable": true
+          "repeatable": true,
+          "component": "button.button"
         },
         "article_types": {
           "type": "relation",
@@ -6023,8 +6106,7 @@
         },
         "teamCredentials": {
           "type": "component",
-          "component": "film.credentials-new",
-          "repeatable": false
+          "component": "film.credentials-new"
         },
         "budget": {
           "type": "integer"
@@ -6065,7 +6147,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images",
@@ -6135,7 +6216,6 @@
         },
         "images": {
           "type": "media",
-          "required": false,
           "multiple": true,
           "allowedTypes": [
             "images",
@@ -6226,21 +6306,19 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.dis-camp-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.dis-camp-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -6273,13 +6351,11 @@
       "attributes": {
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "namePrivate": {
           "type": "string"
@@ -6291,8 +6367,8 @@
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-poff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-poff"
         }
       }
     }
@@ -6325,18 +6401,16 @@
         },
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-just",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-just"
         }
       }
     }
@@ -6369,18 +6443,16 @@
         },
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-shorts",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-shorts"
         }
       }
     }
@@ -6413,18 +6485,16 @@
         },
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-industry",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-industry"
         }
       }
     }
@@ -6457,18 +6527,16 @@
         },
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-kinoff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-kinoff"
         }
       }
     }
@@ -6493,13 +6561,11 @@
       "attributes": {
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "namePrivate": {
           "type": "string"
@@ -6511,8 +6577,8 @@
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-hoff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-hoff"
         }
       }
     }
@@ -6537,13 +6603,11 @@
       "attributes": {
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "namePrivate": {
           "type": "string"
@@ -6555,8 +6619,8 @@
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-tartuff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-tartuff"
         }
       }
     }
@@ -6581,13 +6645,11 @@
       "attributes": {
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "namePrivate": {
           "type": "string"
@@ -6599,8 +6661,8 @@
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-kumu",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-kumu"
         }
       }
     }
@@ -6625,13 +6687,11 @@
       "attributes": {
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "namePrivate": {
           "type": "string"
@@ -6643,8 +6703,8 @@
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-bruno",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-bruno"
         }
       }
     }
@@ -6677,18 +6737,16 @@
         },
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-filmikool",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-filmikool"
         }
       }
     }
@@ -6721,18 +6779,16 @@
         },
         "title": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "intro": {
           "type": "component",
-          "component": "translated.translated-long",
-          "repeatable": false
+          "component": "translated.translated-long"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-dis-camp",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-dis-camp"
         }
       }
     }
@@ -6765,18 +6821,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-poff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-poff"
         }
       }
     }
@@ -6809,18 +6864,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-just",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-just"
         }
       }
     }
@@ -6853,18 +6907,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-shorts",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-shorts"
         }
       }
     }
@@ -6897,18 +6950,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-industry",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-industry"
         }
       }
     }
@@ -6941,18 +6993,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-kinoff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-kinoff"
         }
       }
     }
@@ -6985,18 +7036,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-hoff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-hoff"
         }
       }
     }
@@ -7029,18 +7079,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-tartuff",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-tartuff"
         }
       }
     }
@@ -7073,18 +7122,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-kumu",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-kumu"
         }
       }
     }
@@ -7117,18 +7165,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-bruno",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-bruno"
         }
       }
     }
@@ -7161,18 +7208,17 @@
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-filmikool",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-filmikool"
         }
       }
     }
@@ -7202,21 +7248,20 @@
         },
         "item": {
           "type": "component",
-          "component": "footer.footer-item-nav",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.footer-item-nav"
         },
         "supporters": {
           "type": "component",
-          "component": "footer.sup-sec-dis-camp",
-          "repeatable": true
+          "repeatable": true,
+          "component": "footer.sup-sec-dis-camp"
         },
         "namePrivate": {
           "type": "string"
         },
         "socialGroup": {
           "type": "component",
-          "component": "social.social-group",
-          "repeatable": false
+          "component": "social.social-group"
         }
       }
     }
@@ -7244,8 +7289,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "poffi_article": {
           "type": "relation",
@@ -7254,16 +7298,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7294,8 +7337,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "just_filmi_article": {
           "type": "relation",
@@ -7304,16 +7346,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.just-filmi-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.just-filmi-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7344,8 +7385,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "shortsi_article": {
           "type": "relation",
@@ -7354,16 +7394,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.shortsi-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.shortsi-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7394,8 +7433,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "kinoffi_article": {
           "type": "relation",
@@ -7404,16 +7442,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.kinoffi-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.kinoffi-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7444,8 +7481,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "hoffi_article": {
           "type": "relation",
@@ -7454,16 +7490,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.hoffi-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.hoffi-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7494,8 +7529,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "tartuffi_article": {
           "type": "relation",
@@ -7504,16 +7538,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.tartuffi-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.tartuffi-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7544,8 +7577,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "kumu_article": {
           "type": "relation",
@@ -7554,16 +7586,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.kumu-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.kumu-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7594,8 +7625,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "bruno_article": {
           "type": "relation",
@@ -7604,16 +7634,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.bruno-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.bruno-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7644,8 +7673,7 @@
         },
         "name": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "filmikooli_article": {
           "type": "relation",
@@ -7654,16 +7682,15 @@
         },
         "customUrl": {
           "type": "component",
-          "component": "translated.translated-short",
-          "repeatable": false
+          "component": "translated.translated-short"
         },
         "order": {
           "type": "integer"
         },
         "subMenuItem": {
           "type": "component",
-          "component": "menu.filmikooli-sub-menu-item",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.filmikooli-sub-menu-item"
         },
         "publish": {
           "type": "boolean"
@@ -7723,8 +7750,8 @@
         },
         "L2MenuItems": {
           "type": "component",
-          "component": "menu.l2-menu-industry",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.l2-menu-industry"
         }
       }
     }
@@ -7781,8 +7808,8 @@
         },
         "L2MenuItems": {
           "type": "component",
-          "component": "menu.l2-menu-kumu",
-          "repeatable": true
+          "repeatable": true,
+          "component": "menu.l2-menu-kumu"
         }
       }
     }
@@ -8203,18 +8230,15 @@
       "attributes": {
         "trioPoff_et": {
           "type": "component",
-          "component": "article.trio-poff-et",
-          "repeatable": false
+          "component": "article.trio-poff-et"
         },
         "trioPoff_en": {
           "type": "component",
-          "component": "article.trio-poff-et",
-          "repeatable": false
+          "component": "article.trio-poff-et"
         },
         "trioPoff_ru": {
           "type": "component",
-          "component": "article.trio-poff-et",
-          "repeatable": false
+          "component": "article.trio-poff-et"
         }
       }
     }
@@ -8239,18 +8263,15 @@
       "attributes": {
         "trioJustFilm_et": {
           "type": "component",
-          "component": "article.trio-just-film",
-          "repeatable": false
+          "component": "article.trio-just-film"
         },
         "trioJustFilm_en": {
           "type": "component",
-          "component": "article.trio-just-film",
-          "repeatable": false
+          "component": "article.trio-just-film"
         },
         "trioJustFilm_ru": {
           "type": "component",
-          "component": "article.trio-just-film",
-          "repeatable": false
+          "component": "article.trio-just-film"
         }
       }
     }
@@ -8275,18 +8296,15 @@
       "attributes": {
         "trioShorts_et": {
           "type": "component",
-          "component": "article.trio-shorts",
-          "repeatable": false
+          "component": "article.trio-shorts"
         },
         "trioShorts_en": {
           "type": "component",
-          "component": "article.trio-shorts",
-          "repeatable": false
+          "component": "article.trio-shorts"
         },
         "trioShorts_ru": {
           "type": "component",
-          "component": "article.trio-shorts",
-          "repeatable": false
+          "component": "article.trio-shorts"
         }
       }
     }
@@ -8311,18 +8329,15 @@
       "attributes": {
         "trioIndustry_et": {
           "type": "component",
-          "component": "article.trioindustry",
-          "repeatable": false
+          "component": "article.trioindustry"
         },
         "trioIndustry_en": {
           "type": "component",
-          "component": "article.trioindustry",
-          "repeatable": false
+          "component": "article.trioindustry"
         },
         "trioIndustry_ru": {
           "type": "component",
-          "component": "article.trioindustry",
-          "repeatable": false
+          "component": "article.trioindustry"
         }
       }
     }
@@ -8347,18 +8362,15 @@
       "attributes": {
         "trioKinoff_et": {
           "type": "component",
-          "component": "article.triokinoff",
-          "repeatable": false
+          "component": "article.triokinoff"
         },
         "trioKinoff_en": {
           "type": "component",
-          "component": "article.triokinoff",
-          "repeatable": false
+          "component": "article.triokinoff"
         },
         "trioKinoff_ru": {
           "type": "component",
-          "component": "article.triokinoff",
-          "repeatable": false
+          "component": "article.triokinoff"
         }
       }
     }
@@ -8383,18 +8395,15 @@
       "attributes": {
         "trioHoff_et": {
           "type": "component",
-          "component": "article.trio-hoff",
-          "repeatable": false
+          "component": "article.trio-hoff"
         },
         "trioHoff_en": {
           "type": "component",
-          "component": "article.trio-hoff",
-          "repeatable": false
+          "component": "article.trio-hoff"
         },
         "trioHoff_ru": {
           "type": "component",
-          "component": "article.trio-hoff",
-          "repeatable": false
+          "component": "article.trio-hoff"
         }
       }
     }
@@ -8419,18 +8428,15 @@
       "attributes": {
         "trioTartuff_et": {
           "type": "component",
-          "component": "article.trio-tartuff",
-          "repeatable": false
+          "component": "article.trio-tartuff"
         },
         "trioTartuff_en": {
           "type": "component",
-          "component": "article.trio-tartuff",
-          "repeatable": false
+          "component": "article.trio-tartuff"
         },
         "trioTartuff_ru": {
           "type": "component",
-          "component": "article.trio-tartuff",
-          "repeatable": false
+          "component": "article.trio-tartuff"
         }
       }
     }
@@ -8455,18 +8461,15 @@
       "attributes": {
         "trioKumu_et": {
           "type": "component",
-          "component": "article.trio-kumu",
-          "repeatable": false
+          "component": "article.trio-kumu"
         },
         "trioKumu_en": {
           "type": "component",
-          "component": "article.trio-kumu",
-          "repeatable": false
+          "component": "article.trio-kumu"
         },
         "trioKumu_ru": {
           "type": "component",
-          "component": "article.trio-kumu",
-          "repeatable": false
+          "component": "article.trio-kumu"
         }
       }
     }
@@ -8491,18 +8494,15 @@
       "attributes": {
         "trioBruno_et": {
           "type": "component",
-          "component": "article.trio-bruno",
-          "repeatable": false
+          "component": "article.trio-bruno"
         },
         "trioBruno_en": {
           "type": "component",
-          "component": "article.trio-bruno",
-          "repeatable": false
+          "component": "article.trio-bruno"
         },
         "trioBruno_ru": {
           "type": "component",
-          "component": "article.trio-bruno",
-          "repeatable": false
+          "component": "article.trio-bruno"
         }
       }
     }
@@ -8527,18 +8527,15 @@
       "attributes": {
         "trioFilmikool_et": {
           "type": "component",
-          "component": "article.triofilmikool",
-          "repeatable": false
+          "component": "article.triofilmikool"
         },
         "trioFilmikool_en": {
           "type": "component",
-          "component": "article.triofilmikool",
-          "repeatable": false
+          "component": "article.triofilmikool"
         },
         "trioFilmikool_ru": {
           "type": "component",
-          "component": "article.triofilmikool",
-          "repeatable": false
+          "component": "article.triofilmikool"
         }
       }
     }
@@ -8563,18 +8560,15 @@
       "attributes": {
         "trioDiscamp_et": {
           "type": "component",
-          "component": "article.triodiscamp",
-          "repeatable": false
+          "component": "article.triodiscamp"
         },
         "trioDiscamp_en": {
           "type": "component",
-          "component": "article.triodiscamp",
-          "repeatable": false
+          "component": "article.triodiscamp"
         },
         "trioDiscamp_ru": {
           "type": "component",
-          "component": "article.triodiscamp",
-          "repeatable": false
+          "component": "article.triodiscamp"
         }
       }
     }

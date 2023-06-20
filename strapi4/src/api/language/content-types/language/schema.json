@@ -6,10 +6,6 @@
     "pluralName": "languages",
     "displayName": "Language"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "code": {
       "type": "string"

@@ -6,10 +6,6 @@
     "pluralName": "hero-article-kumus",
     "displayName": "HeroArticleKumu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_en": {
       "type": "relation",

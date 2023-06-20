@@ -4,12 +4,8 @@
   "info": {
     "singularName": "just-filmi-menu",
     "pluralName": "just-filmi-menus",
-    "displayName": "JustFilmiMenu"
+    "displayName": "JustFilmi_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

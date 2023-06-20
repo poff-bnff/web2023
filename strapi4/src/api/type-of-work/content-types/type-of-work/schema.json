@@ -6,10 +6,6 @@
     "pluralName": "type-of-works",
     "displayName": "TypeOfWork"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

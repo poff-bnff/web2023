@@ -3,13 +3,9 @@
   "collectionName": "filmographies",
   "info": {
     "singularName": "filmography",
-    "pluralName": "filmographys",
+    "pluralName": "filmographies",
     "displayName": "Filmography"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "type_of_work": {
       "type": "relation",
@@ -55,6 +51,11 @@
     },
     "work_director": {
       "type": "string"
+    },
+    "person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
     }
   }
 }

@@ -6,10 +6,6 @@
     "pluralName": "halls",
     "displayName": "Hall"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

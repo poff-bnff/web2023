@@ -6,10 +6,6 @@
     "pluralName": "tag-premiere-types",
     "displayName": "TagPremiereType"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"

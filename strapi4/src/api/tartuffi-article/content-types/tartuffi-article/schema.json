@@ -4,12 +4,8 @@
   "info": {
     "singularName": "tartuffi-article",
     "pluralName": "tartuffi-articles",
-    "displayName": "TartuffiArticle"
+    "displayName": "Tartuffi_Article"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "titlePrivate": {
       "type": "string"
@@ -18,40 +14,37 @@
       "type": "string"
     },
     "slug_et": {
-      "type": "uid",
-      "required": false
+      "type": "uid"
     },
     "title_en": {
       "type": "string"
     },
     "slug_en": {
-      "type": "uid",
-      "required": false
+      "type": "uid"
     },
     "title_ru": {
       "type": "string"
     },
     "slug_ru": {
-      "type": "uid",
-      "required": false
+      "type": "uid"
     },
     "lead_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "lead_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "lead_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "media": {
       "type": "component",

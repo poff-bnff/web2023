@@ -6,10 +6,6 @@
     "pluralName": "delivery-types",
     "displayName": "DeliveryType"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_private": {
       "type": "string"
@@ -24,13 +20,13 @@
       "type": "string"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "active": {
       "type": "boolean"

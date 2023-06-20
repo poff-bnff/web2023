@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "hero_article_kinoffs",
+  "collectionName": "hero_article_kinoff",
   "info": {
     "singularName": "hero-article-kinoff",
     "pluralName": "hero-article-kinoffs",
     "displayName": "HeroArticleKinoff"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_et": {
       "type": "relation",

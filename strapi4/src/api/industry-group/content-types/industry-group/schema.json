@@ -4,12 +4,8 @@
   "info": {
     "singularName": "industry-group",
     "pluralName": "industry-groups",
-    "displayName": "IndustryGroup"
+    "displayName": "Industry_Group"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"
@@ -26,7 +22,7 @@
       "type": "uid"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

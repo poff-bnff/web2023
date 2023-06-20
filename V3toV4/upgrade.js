@@ -95,7 +95,7 @@ const STRAPI3_DATAMODEL_PATH = path.join(STRAPI3_ROOT, 'ssg', 'docs', 'datamodel
 
 const STRAPI4_ROOT = path.join(__dirname, '..', '..', 'web2023')
 const STRAPI4_API_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'api')
-const STRAPI4_COMPONENT_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'components')
+const STRAPI4_COMPONENTS_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'components')
 
 const transformer = require('./transformer')
 const attributeTransformer = transformer.attributeTransformer
@@ -191,14 +191,14 @@ const transformSchema = async () => {
 
   // Save to ./RelevantCollectionTypes.json
   fs.writeFileSync(path.join(__dirname, 'RelevantCollectionTypes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
- 
+
   // 1.3. Transform collection types to Strapi 4 format
   // 1.3.1. Transform collection types without attributes and options
   // - Add v3 and v4 api paths to the collection type
   // - Save to ./V4schema.flat.collections.json
   relevantCollectionTypes.forEach(item => {
     // Transfer to transformers
-    transformer.relevantCollectionType = item.collectionName
+    transformer.relevantCollectionType = item
     item.s3ApiPath = `/${item.folderName}`
     item.s4ApiPath = `/api/${item.folderName}`
     item.v4 = {
@@ -233,16 +233,16 @@ const transformSchema = async () => {
       try {
         collType.v4.attributes[attrName] = attributeTransformer.transform(v3Attr)
       } catch (error) {
-        throw new Error(`Attribute "${attrName}" of collection "${collType.collectionName}" is not resolved: ${error.message}`)        
+        throw new Error(`Attribute "${attrName}" of collection "${collType.collectionName}" is not resolved: ${error.message}`)
       }
     })
   })
-  
+
   fs.writeFileSync(path.join(__dirname, 'V4schema.flat.collections.withAttributes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
-  
+
   // console.log('Used component types:', transformer.getUsedComponentTypes())
   // console.log('Relevant collection types:', transformer.getRelevantCollectionTypes())
-  
+
   // 1.4. Transform component types to Strapi 4 format
   // Also, verify, that only relevant collection types are used in component attributes.
   // - Add v3 and v4 api paths to the component type
@@ -250,17 +250,50 @@ const transformSchema = async () => {
     .map(componentFullName => {
       const [folderName, componentName] = componentFullName.split('.')
       const settings = JSON.parse(fs.readFileSync(path.join(STRAPI3_COMPONENTS_PATH, folderName, `${componentName}.json`), 'utf8'))
-      const v4 = componentTransformer.transform(settings)
-      return {
-        folderName: folderName,
-        componentName: componentName,
-        s3InfoName: settings.info.name,
-        s3ApiPath: `/components/${folderName}${componentName}`,
-        s4ApiPath: `/components/${folderName}${componentName}`,
-        v4: v4
+      try {
+        const v4 = componentTransformer.transform(settings)
+        return {
+          folderName: folderName,
+          componentName: componentName,
+          s3InfoName: settings.info.name,
+          s3ApiPath: `/components/${folderName}/${componentName}`,
+          s4ApiPath: `/components/${folderName}/${componentName}`,
+          v4: v4
+        }
+      } catch (error) {
+        throw new Error(`Component "${componentFullName}" is not resolved: ${error.message}`)
       }
     })
-  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.components.json'), JSON.stringify(relevantComponentTypes, null, 2))  
+  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.components.json'), JSON.stringify(relevantComponentTypes, null, 2))
+
+  // 1.5. Create schema files in target Strapi 4 folder structure
+  // 1.5.1 Create ./api folder and /collectionName subfolders for each collection type
+  fs.mkdirSync(STRAPI4_API_PATH, { recursive: true })
+  relevantCollectionTypes.forEach(collType => {
+    const schemaFolder = path.join(STRAPI4_API_PATH, collType.folderName, 'content-types', collType.folderName)
+    fs.mkdirSync(schemaFolder, { recursive: true })
+    fs.writeFileSync(path.join(schemaFolder, 'schema.json'), JSON.stringify(collType.v4, null, 2))
+    fs.mkdirSync(path.join(STRAPI4_API_PATH, collType.folderName, 'controllers'), { recursive: true })
+    fs.mkdirSync(path.join(STRAPI4_API_PATH, collType.folderName, 'routes'), { recursive: true })
+    fs.mkdirSync(path.join(STRAPI4_API_PATH, collType.folderName, 'services'), { recursive: true })
+    fs.writeFileSync(path.join(STRAPI4_API_PATH, collType.folderName, 'controllers', `${collType.folderName}.js`),
+      `'use strict'\n\nconst { createCoreController } = require('@strapi/strapi').factories\n\nmodule.exports = createCoreController('api::${collType.folderName}.${collType.folderName}')`)
+    fs.writeFileSync(path.join(STRAPI4_API_PATH, collType.folderName, 'routes', `${collType.folderName}.js`),
+      `'use strict'\n\nconst { createCoreRouter } = require('@strapi/strapi').factories\n\nmodule.exports = createCoreRouter('api::${collType.folderName}.${collType.folderName}')`)
+    fs.writeFileSync(path.join(STRAPI4_API_PATH, collType.folderName, 'services', `${collType.folderName}.js`),
+      `'use strict'\n\nconst { createCoreService } = require('@strapi/strapi').factories\n\nmodule.exports = createCoreService('api::${collType.folderName}.${collType.folderName}')`)
+  })
+  //        - Create controllers, routes, services folders and respective files
+
+  // 1.5.2 Create ./components folder
+  //        - create component-name.json files for each component type and save them to 
+  //          ./components/component-group-name/ folder
+  fs.mkdirSync(STRAPI4_COMPONENTS_PATH, { recursive: true })
+  relevantComponentTypes.forEach(compType => {
+    const compGroupFolder = path.join(STRAPI4_COMPONENTS_PATH, compType.folderName)
+    fs.mkdirSync(compGroupFolder, { recursive: true })
+    fs.writeFileSync(path.join(compGroupFolder, `${compType.componentName}.json`), JSON.stringify(compType.v4, null, 2))
+  })
 
 }
 

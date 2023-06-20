@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "hero_article_hoffs",
+  "collectionName": "hero_article_hoff",
   "info": {
     "singularName": "hero-article-hoff",
     "pluralName": "hero-article-hoffs",
     "displayName": "HeroArticleHoff"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_et": {
       "type": "relation",

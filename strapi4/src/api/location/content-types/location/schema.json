@@ -6,10 +6,6 @@
     "pluralName": "locations",
     "displayName": "Location"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "country": {
       "type": "relation",
@@ -52,13 +48,13 @@
       "target": "api::address.address"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "webpage_url": {
       "type": "string"
@@ -87,19 +83,16 @@
     },
     "profile_img": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "public": {
       "type": "boolean"

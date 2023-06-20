@@ -6,10 +6,6 @@
     "pluralName": "dis-camp-menus",
     "displayName": "DisCampMenu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

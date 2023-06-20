@@ -4,12 +4,8 @@
   "info": {
     "singularName": "industry-footer",
     "pluralName": "industry-footers",
-    "displayName": "IndustryFooter"
+    "displayName": "Industry_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

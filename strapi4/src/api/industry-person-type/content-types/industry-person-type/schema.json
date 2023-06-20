@@ -4,18 +4,14 @@
   "info": {
     "singularName": "industry-person-type",
     "pluralName": "industry-person-types",
-    "displayName": "IndustryPersonType"
+    "displayName": "Industry_PersonType"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "type": {
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

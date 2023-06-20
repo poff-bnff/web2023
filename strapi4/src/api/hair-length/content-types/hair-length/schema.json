@@ -6,10 +6,6 @@
     "pluralName": "hair-lengths",
     "displayName": "HairLength"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

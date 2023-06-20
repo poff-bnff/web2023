@@ -4,12 +4,8 @@
   "info": {
     "singularName": "web-permission",
     "pluralName": "web-permissions",
-    "displayName": "WebPermission"
+    "displayName": "webPermission"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "type": {
       "type": "string"

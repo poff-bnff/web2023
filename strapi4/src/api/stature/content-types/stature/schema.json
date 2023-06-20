@@ -6,10 +6,6 @@
     "pluralName": "statures",
     "displayName": "Stature"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

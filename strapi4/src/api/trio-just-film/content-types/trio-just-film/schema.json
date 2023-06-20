@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_just_films",
+  "collectionName": "trio_just_film",
   "info": {
     "singularName": "trio-just-film",
     "pluralName": "trio-just-films",
     "displayName": "TrioJustFilm"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioJustFilm_et": {
       "type": "component",

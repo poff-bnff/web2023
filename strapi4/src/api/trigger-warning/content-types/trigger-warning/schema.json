@@ -6,10 +6,6 @@
     "pluralName": "trigger-warnings",
     "displayName": "TagTriggerWarning"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

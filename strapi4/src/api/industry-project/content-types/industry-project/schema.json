@@ -4,12 +4,8 @@
   "info": {
     "singularName": "industry-project",
     "pluralName": "industry-projects",
-    "displayName": "IndustryProject"
+    "displayName": "Industry_Project"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title_en": {
       "type": "string"
@@ -84,10 +80,10 @@
       "type": "text"
     },
     "synopsis": {
-      "type": "text"
+      "type": "richtext"
     },
     "directorsNote": {
-      "type": "text"
+      "type": "richtext"
     },
     "contactName": {
       "type": "string"
@@ -108,11 +104,10 @@
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "clipUrl": {
       "type": "string"
@@ -134,13 +129,15 @@
     },
     "editions": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::festival-edition.festival-edition"
+      "relation": "manyToMany",
+      "target": "api::festival-edition.festival-edition",
+      "inversedBy": "projects"
     },
     "awardings": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::awarding.awarding"
+      "relation": "manyToMany",
+      "target": "api::awarding.awarding",
+      "mappedBy": "project"
     },
     "tag_looking_fors": {
       "type": "relation",

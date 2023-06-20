@@ -4,12 +4,8 @@
   "info": {
     "singularName": "bruno-supporter",
     "pluralName": "bruno-supporters",
-    "displayName": "BrunoSupporter"
+    "displayName": "Bruno_Supporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "component",

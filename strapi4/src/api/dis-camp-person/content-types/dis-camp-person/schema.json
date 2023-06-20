@@ -6,10 +6,6 @@
     "pluralName": "dis-camp-persons",
     "displayName": "DisCampPerson"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "slug": {
       "type": "uid"
@@ -21,13 +17,11 @@
     },
     "profilePicAtDC": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "multiple": false
+      ]
     },
     "role_at_films": {
       "type": "relation",
@@ -41,17 +35,16 @@
       "type": "string"
     },
     "about_text": {
-      "type": "text"
+      "type": "richtext"
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "multiple": true
+      ]
     },
     "clipUrl": {
       "type": "string"
@@ -69,7 +62,7 @@
       "target": "api::dis-camp-person-type.dis-camp-person-type"
     },
     "lookingFor": {
-      "type": "text"
+      "type": "richtext"
     },
     "contactAtEvent": {
       "type": "string"

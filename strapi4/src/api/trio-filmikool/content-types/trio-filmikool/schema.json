@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_filmikools",
+  "collectionName": "trio_filmikool",
   "info": {
     "singularName": "trio-filmikool",
     "pluralName": "trio-filmikools",
     "displayName": "TrioFilmikool"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioFilmikool_et": {
       "type": "component",

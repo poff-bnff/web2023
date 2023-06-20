@@ -6,10 +6,6 @@
     "pluralName": "cassettes",
     "displayName": "Cassette"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title_et": {
       "type": "string"
@@ -57,19 +53,17 @@
     },
     "stills": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "posters": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "trailer": {
       "type": "component",

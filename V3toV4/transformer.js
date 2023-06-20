@@ -23,14 +23,27 @@ const Transformer = class {
   }
 
   /**
-   * @returns {Array<string>}
+   * @returns {Array<Object>}
    * */
   getRelevantCollectionTypes() {
     return this.relevantCollectionTypes
   }
 
+  /**
+   * @returns {Array<string>}
+   * */
+  getRelevantCollectionNames() {
+    return this.relevantCollectionTypes.map(collectionType => collectionType.collectionName)
+  }
+  /**
+   * @returns {Array<string>}
+   * */
+  getRelCollFolderNames() {
+    return this.relevantCollectionTypes.map(collectionType => collectionType.folderName).sort()
+  }
+
   /**	
-   * @param {string} collectionType
+   * @param {Object} collectionType
    * */
   set relevantCollectionType(collectionType) {
     if (!this.relevantCollectionTypes.includes(collectionType)) {
@@ -55,6 +68,7 @@ const AttributeTransformer = class {
       'date': 'date',
       'time': 'time',
       'integer': 'integer',
+      'biginteger': 'biginteger',
       'float': 'float',
       'decimal': 'decimal',
       'boolean': 'boolean',
@@ -67,7 +81,7 @@ const AttributeTransformer = class {
   transform(s3Attribute) {
     const s4Attribute = {
       type: s3Attribute.type,
-      required: s3Attribute.required,
+      required: s3Attribute.required || undefined,
     }
     // If s3 attribute has no type, it is a relation to another model or file.
     // Here 'model' seems to indicate a oneToOne relation, 'collection' a oneToMany relation. If 'via' is set, it is a manyToMany relation.
@@ -75,8 +89,30 @@ const AttributeTransformer = class {
     if (!s3Attribute.type) {
       if (s3Attribute.model === 'file' || s3Attribute.collection === 'file') {
         s4Attribute.type = 'media'
-        s4Attribute.multiple = s3Attribute.collection === 'file'
+        s4Attribute.multiple = s3Attribute.collection === 'file' || undefined
         s4Attribute.allowedTypes = s3Attribute.allowedTypes
+        // return early as there is no need to further handle media relations
+        return s4Attribute
+      }
+      else if (s3Attribute.plugin) {
+        s4Attribute.type = 'relation'
+        if (s3Attribute.model) {
+          s4Attribute.relation = 'oneToOne'
+          s4Attribute.target = `plugin::${s3Attribute.plugin}.${s3Attribute.model}`
+        } else if (s3Attribute.collection) {
+          s4Attribute.relation = 'oneToMany'
+          if (s3Attribute.via) {
+            s4Attribute.relation = 'manyToMany'
+            if (s3Attribute.dominant === true) {
+              s4Attribute.inversedBy = s3Attribute.via
+            } else {
+              s4Attribute.mappedBy = s3Attribute.via
+            }
+          }
+          s4Attribute.target = `plugin::${s3Attribute.plugin}.${s3Attribute.collection}`
+        }
+        // return early as I dont know, how to further handle plugin relations
+        return s4Attribute
       }
       else if (s3Attribute.model) {
         s4Attribute.type = 'relation'
@@ -96,14 +132,18 @@ const AttributeTransformer = class {
           }
         }
       }
+      // If related model is not in relevant collection types, throw an error
+      if (!this.transformer.getRelCollFolderNames().includes(s4Attribute.target.split('.')[1])) {
+        throw new Error(`Related model "${s4Attribute.target}" is not in relevant collection types ${this.transformer.getRelCollFolderNames()}`)
+      }
       return s4Attribute
     }
 
     if (s3Attribute.type === 'component') {
       // console.log('component', s3Attribute)
       this.useComponentType = s3Attribute.component
+      s4Attribute.repeatable = s3Attribute.repeatable || undefined
       s4Attribute.component = s3Attribute.component
-      s4Attribute.repeatable = s3Attribute.repeatable
       return s4Attribute
     }
     if (s3Attribute.type === 'enumeration') {
@@ -138,8 +178,8 @@ const AttributeTransformer = class {
 
 
 const ComponentTransformer = class {
-  constructor() {
-    this.attributeTransformer = new AttributeTransformer()
+  constructor(transformer) {
+    this.transformer = transformer
   }
 
   transform(s3Component) {
@@ -151,11 +191,11 @@ const ComponentTransformer = class {
       options: s3Component.options,
       attributes: {},
     }
-    Object.keys(s3Component.attributes).forEach(s3Attribute => {
+    Object.keys(s3Component.attributes).forEach(s3AttributeName => {
       try {
-        s4Component.attributes[s3Attribute.name] = this.attributeTransformer.transform(s3Attribute)
+        s4Component.attributes[s3AttributeName] = this.transformer.attributeTransformer.transform(s3Component.attributes[s3AttributeName])
       } catch (error) {
-        throw new Error(`Attribute "${s3Attribute.name}" of component "${s3Component.collectionName}" could not be transformed: ${error.message}`)
+        throw new Error(`Attribute "${s3AttributeName.name}" of component "${s3Component.collectionName}" could not be transformed: ${error.message}`)
       }
     })
     return s4Component

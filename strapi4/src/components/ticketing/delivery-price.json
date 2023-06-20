@@ -17,13 +17,13 @@
       "type": "decimal"
     },
     "info_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "info_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "info_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "days_before": {
       "type": "integer"

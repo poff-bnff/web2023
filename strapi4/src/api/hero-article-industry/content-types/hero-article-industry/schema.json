@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "hero_article_industries",
+  "collectionName": "hero_article_industry",
   "info": {
     "singularName": "hero-article-industry",
-    "pluralName": "hero-article-industrys",
+    "pluralName": "hero-article-industries",
     "displayName": "HeroArticleIndustry"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_et": {
       "type": "relation",

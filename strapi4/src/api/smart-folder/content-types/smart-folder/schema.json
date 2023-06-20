@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "smart_folders",
+  "info": {
+    "singularName": "smart-folder",
+    "pluralName": "smart-folders",
+    "displayName": "SmartFolder"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "pattern_collections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pattern-collections.pattern-collections"
+    },
+    "conditions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user.function-conditions"
+    }
+  }
+}

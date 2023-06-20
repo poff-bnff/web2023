@@ -4,12 +4,8 @@
   "info": {
     "singularName": "shortsi-footer",
     "pluralName": "shortsi-footers",
-    "displayName": "ShortsiFooter"
+    "displayName": "Shortsi_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

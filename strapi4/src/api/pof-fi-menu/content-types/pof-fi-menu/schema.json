@@ -4,12 +4,8 @@
   "info": {
     "singularName": "pof-fi-menu",
     "pluralName": "pof-fi-menus",
-    "displayName": "POFFiMenu"
+    "displayName": "POFFi_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

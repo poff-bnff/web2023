@@ -4,12 +4,8 @@
   "info": {
     "singularName": "just-film-footer",
     "pluralName": "just-film-footers",
-    "displayName": "JustFilmFooter"
+    "displayName": "JustFilm_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

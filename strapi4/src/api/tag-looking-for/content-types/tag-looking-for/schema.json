@@ -6,10 +6,6 @@
     "pluralName": "tag-looking-fors",
     "displayName": "TagLookingFor"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"

@@ -4,12 +4,8 @@
   "info": {
     "singularName": "supporters-shorts",
     "pluralName": "supporters-shortses",
-    "displayName": "ShortsSupporter"
+    "displayName": "Shorts_Supporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

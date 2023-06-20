@@ -1,10 +1,54 @@
 [
   {
     "folderName": "user",
+    "componentName": "function-parameters",
+    "s3InfoName": "FunctionParameters",
+    "s3ApiPath": "/components/user/function-parameters",
+    "s4ApiPath": "/components/user/function-parameters",
+    "v4": {
+      "collectionName": "components_user_function_parameters",
+      "info": {
+        "displayName": "FunctionParameters"
+      },
+      "options": {},
+      "attributes": {
+        "property": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
+    "componentName": "function-conditions",
+    "s3InfoName": "Conditions",
+    "s3ApiPath": "/components/user/function-conditions",
+    "s4ApiPath": "/components/user/function-conditions",
+    "v4": {
+      "collectionName": "components_user_function_conditions",
+      "info": {
+        "displayName": "Conditions"
+      },
+      "options": {},
+      "attributes": {
+        "property": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
     "componentName": "user-right",
     "s3InfoName": "UserRight",
-    "s3ApiPath": "/components/useruser-right",
-    "s4ApiPath": "/components/useruser-right",
+    "s3ApiPath": "/components/user/user-right",
+    "s4ApiPath": "/components/user/user-right",
     "v4": {
       "collectionName": "components_user_user_rights",
       "info": {
@@ -12,7 +56,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "functions": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::function.function"
+        },
+        "smart_folders": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::smart-folder.smart-folder"
+        },
+        "dumb_folders": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::dumb-folder.dumb-folder"
+        }
       }
     }
   },
@@ -20,8 +81,8 @@
     "folderName": "location",
     "componentName": "address",
     "s3InfoName": "Address",
-    "s3ApiPath": "/components/locationaddress",
-    "s4ApiPath": "/components/locationaddress",
+    "s3ApiPath": "/components/location/address",
+    "s4ApiPath": "/components/location/address",
     "v4": {
       "collectionName": "components_location_addresses",
       "info": {
@@ -29,7 +90,66 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "country": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::country.country"
+        },
+        "county": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::county.county"
+        },
+        "settl_unit": {
+          "type": "string"
+        },
+        "address_unit": {
+          "type": "string"
+        },
+        "street_name": {
+          "type": "string"
+        },
+        "address_number": {
+          "type": "string"
+        },
+        "appartment": {
+          "type": "string"
+        },
+        "postal_code": {
+          "type": "string"
+        },
+        "n_dms": {
+          "type": "string"
+        },
+        "e_dms": {
+          "type": "string"
+        },
+        "n": {
+          "type": "decimal"
+        },
+        "e": {
+          "type": "decimal"
+        },
+        "l_est_x": {
+          "type": "biginteger"
+        },
+        "l_est_y": {
+          "type": "biginteger"
+        },
+        "add_county": {
+          "type": "string"
+        },
+        "municipality": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::populated-place.populated-place"
+        },
+        "add_municipality": {
+          "type": "string"
+        },
+        "popul_place": {
+          "type": "string"
+        }
       }
     }
   },
@@ -37,8 +157,8 @@
     "folderName": "translated",
     "componentName": "translated-long",
     "s3InfoName": "Translated Long",
-    "s3ApiPath": "/components/translatedtranslated-long",
-    "s4ApiPath": "/components/translatedtranslated-long",
+    "s3ApiPath": "/components/translated/translated-long",
+    "s4ApiPath": "/components/translated/translated-long",
     "v4": {
       "collectionName": "components_translated_translated_longs",
       "info": {
@@ -46,7 +166,15 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "et": {
+          "type": "richtext"
+        },
+        "en": {
+          "type": "richtext"
+        },
+        "ru": {
+          "type": "richtext"
+        }
       }
     }
   },
@@ -54,8 +182,8 @@
     "folderName": "translated",
     "componentName": "translated-short",
     "s3InfoName": "Translated Short",
-    "s3ApiPath": "/components/translatedtranslated-short",
-    "s4ApiPath": "/components/translatedtranslated-short",
+    "s3ApiPath": "/components/translated/translated-short",
+    "s4ApiPath": "/components/translated/translated-short",
     "v4": {
       "collectionName": "components_translated_translated_shorts",
       "info": {
@@ -63,7 +191,15 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "et": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        },
+        "ru": {
+          "type": "string"
+        }
       }
     }
   },
@@ -71,8 +207,8 @@
     "folderName": "media",
     "componentName": "remote-img",
     "s3InfoName": "RemoteImg",
-    "s3ApiPath": "/components/mediaremote-img",
-    "s4ApiPath": "/components/mediaremote-img",
+    "s3ApiPath": "/components/media/remote-img",
+    "s4ApiPath": "/components/media/remote-img",
     "v4": {
       "collectionName": "components_media_remote_imgs",
       "info": {
@@ -80,7 +216,9 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "img_url": {
+          "type": "string"
+        }
       }
     }
   },
@@ -88,8 +226,8 @@
     "folderName": "film",
     "componentName": "presented-by",
     "s3InfoName": "presentedBy",
-    "s3ApiPath": "/components/filmpresented-by",
-    "s4ApiPath": "/components/filmpresented-by",
+    "s3ApiPath": "/components/film/presented-by",
+    "s4ApiPath": "/components/film/presented-by",
     "v4": {
       "collectionName": "components_film_presented_bies",
       "info": {
@@ -97,7 +235,15 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "presentedByText": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "organisations": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::organisation.organisation"
+        }
       }
     }
   },
@@ -105,8 +251,8 @@
     "folderName": "article",
     "componentName": "article-media",
     "s3InfoName": "ArticleMedia",
-    "s3ApiPath": "/components/articlearticle-media",
-    "s4ApiPath": "/components/articlearticle-media",
+    "s3ApiPath": "/components/article/article-media",
+    "s4ApiPath": "/components/article/article-media",
     "v4": {
       "collectionName": "components_article_article_medias",
       "info": {
@@ -114,7 +260,46 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "imageDefault": {
+          "type": "media",
+          "multiple": true,
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_et": {
+          "type": "media",
+          "multiple": true,
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_en": {
+          "type": "media",
+          "multiple": true,
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_ru": {
+          "type": "media",
+          "multiple": true,
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "clipUrlDefault": {
+          "type": "string"
+        },
+        "clipUrl_et": {
+          "type": "string"
+        },
+        "clipUrl_en": {
+          "type": "string"
+        },
+        "clipUrl_ru": {
+          "type": "string"
+        }
       }
     }
   },
@@ -122,8 +307,8 @@
     "folderName": "button",
     "componentName": "button",
     "s3InfoName": "Button",
-    "s3ApiPath": "/components/buttonbutton",
-    "s4ApiPath": "/components/buttonbutton",
+    "s3ApiPath": "/components/button/button",
+    "s4ApiPath": "/components/button/button",
     "v4": {
       "collectionName": "components_button_buttons",
       "info": {
@@ -131,7 +316,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "text_et": {
+          "type": "string"
+        },
+        "url_et": {
+          "type": "string"
+        },
+        "text_en": {
+          "type": "string"
+        },
+        "url_en": {
+          "type": "string"
+        },
+        "text_ru": {
+          "type": "string"
+        },
+        "url_ru": {
+          "type": "string"
+        }
       }
     }
   },
@@ -139,8 +341,8 @@
     "folderName": "teams",
     "componentName": "test-team",
     "s3InfoName": "subTeam",
-    "s3ApiPath": "/components/teamstest-team",
-    "s4ApiPath": "/components/teamstest-team",
+    "s3ApiPath": "/components/teams/test-team",
+    "s4ApiPath": "/components/teams/test-team",
     "v4": {
       "collectionName": "components_teams_test_teams",
       "info": {
@@ -148,7 +350,26 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "teamMember": {
+          "type": "component",
+          "repeatable": true,
+          "component": "teams.team-member"
+        },
+        "juryMember": {
+          "type": "component",
+          "repeatable": true,
+          "component": "teams.jury-member"
+        }
       }
     }
   },
@@ -156,8 +377,8 @@
     "folderName": "tags",
     "componentName": "tags",
     "s3InfoName": "Tags",
-    "s3ApiPath": "/components/tagstags",
-    "s4ApiPath": "/components/tagstags",
+    "s3ApiPath": "/components/tags/tags",
+    "s4ApiPath": "/components/tags/tags",
     "v4": {
       "collectionName": "components_tags_tags",
       "info": {
@@ -165,7 +386,46 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "premiere_types": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::tag-premiere-type.tag-premiere-type"
+        },
+        "genres": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::tag-genre.tag-genre"
+        },
+        "keywords": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::tag-keyword.tag-keyword"
+        },
+        "programmes": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::programme.programme"
+        },
+        "film_types": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::tag-film-type.tag-film-type"
+        },
+        "tag_secrets": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::tag-secret.tag-secret"
+        },
+        "age_restriction": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::age-restriction.age-restriction"
+        },
+        "trigger_warnings": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::trigger-warning.trigger-warning"
+        }
       }
     }
   },
@@ -173,8 +433,8 @@
     "folderName": "film",
     "componentName": "credentials-new",
     "s3InfoName": "credentials",
-    "s3ApiPath": "/components/filmcredentials-new",
-    "s4ApiPath": "/components/filmcredentials-new",
+    "s3ApiPath": "/components/film/credentials-new",
+    "s4ApiPath": "/components/film/credentials-new",
     "v4": {
       "collectionName": "components_film_credentials_news",
       "info": {
@@ -182,7 +442,16 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "rolePerson": {
+          "type": "component",
+          "repeatable": true,
+          "component": "film.role-person"
+        },
+        "roleCompany": {
+          "type": "component",
+          "repeatable": true,
+          "component": "film.role-company"
+        }
       }
     }
   },
@@ -190,8 +459,8 @@
     "folderName": "film",
     "componentName": "ordered-countries",
     "s3InfoName": "orderedCountries",
-    "s3ApiPath": "/components/filmordered-countries",
-    "s4ApiPath": "/components/filmordered-countries",
+    "s3ApiPath": "/components/film/ordered-countries",
+    "s4ApiPath": "/components/film/ordered-countries",
     "v4": {
       "collectionName": "components_film_ordered_countries",
       "info": {
@@ -199,7 +468,14 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "order": {
+          "type": "integer"
+        },
+        "country": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::country.country"
+        }
       }
     }
   },
@@ -207,8 +483,8 @@
     "folderName": "media",
     "componentName": "trailers",
     "s3InfoName": "Trailer",
-    "s3ApiPath": "/components/mediatrailers",
-    "s4ApiPath": "/components/mediatrailers",
+    "s3ApiPath": "/components/media/trailers",
+    "s4ApiPath": "/components/media/trailers",
     "v4": {
       "collectionName": "components_media_trailers",
       "info": {
@@ -216,7 +492,16 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "url": {
+          "type": "string"
+        },
+        "source": {
+          "type": "enumeration",
+          "enum": [
+            "YouTube",
+            "Vimeo"
+          ]
+        }
       }
     }
   },
@@ -224,8 +509,8 @@
     "folderName": "media",
     "componentName": "qa-clip",
     "s3InfoName": "QaClip",
-    "s3ApiPath": "/components/mediaqa-clip",
-    "s4ApiPath": "/components/mediaqa-clip",
+    "s3ApiPath": "/components/media/qa-clip",
+    "s4ApiPath": "/components/media/qa-clip",
     "v4": {
       "collectionName": "components_media_qa_clips",
       "info": {
@@ -233,7 +518,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "url": {
+          "type": "string"
+        },
+        "type": {
+          "type": "enumeration",
+          "enum": [
+            "Intro",
+            "Conversation",
+            "QandA",
+            "Film"
+          ]
+        }
       }
     }
   },
@@ -241,8 +537,8 @@
     "folderName": "film",
     "componentName": "ordered-films",
     "s3InfoName": "orderedFilms",
-    "s3ApiPath": "/components/filmordered-films",
-    "s4ApiPath": "/components/filmordered-films",
+    "s3ApiPath": "/components/film/ordered-films",
+    "s4ApiPath": "/components/film/ordered-films",
     "v4": {
       "collectionName": "components_film_ordered_films",
       "info": {
@@ -250,7 +546,14 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "order": {
+          "type": "integer"
+        },
+        "film": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::film.film"
+        }
       }
     }
   },
@@ -258,8 +561,8 @@
     "folderName": "screening",
     "componentName": "intro-conversation-qand-a",
     "s3InfoName": "Intro_Conversation_QandA",
-    "s3ApiPath": "/components/screeningintro-conversation-qand-a",
-    "s4ApiPath": "/components/screeningintro-conversation-qand-a",
+    "s3ApiPath": "/components/screening/intro-conversation-qand-a",
+    "s4ApiPath": "/components/screening/intro-conversation-qand-a",
     "v4": {
       "collectionName": "components_screening_intro_conversation_qand_as",
       "info": {
@@ -267,7 +570,41 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "yesNo": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "enumeration",
+          "enum": [
+            "Intro",
+            "QandA",
+            "Conversation"
+          ]
+        },
+        "mode": {
+          "type": "enumeration",
+          "enum": [
+            "OnSite_Live",
+            "OnLine_Live_Stream",
+            "OnLine_Recorded"
+          ]
+        },
+        "presenter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "translated.translated-short"
+        },
+        "guest": {
+          "type": "component",
+          "repeatable": true,
+          "component": "translated.translated-short"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "clipUrl": {
+          "type": "string"
+        }
       }
     }
   },
@@ -275,8 +612,8 @@
     "folderName": "label",
     "componentName": "label",
     "s3InfoName": "label",
-    "s3ApiPath": "/components/labellabel",
-    "s4ApiPath": "/components/labellabel",
+    "s3ApiPath": "/components/label/label",
+    "s4ApiPath": "/components/label/label",
     "v4": {
       "collectionName": "components_label_labels",
       "info": {
@@ -284,7 +621,19 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "value_et": {
+          "type": "string"
+        },
+        "value_en": {
+          "type": "string"
+        },
+        "value_ru": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        }
       }
     }
   },
@@ -292,8 +641,8 @@
     "folderName": "film",
     "componentName": "filmography",
     "s3InfoName": "filmography",
-    "s3ApiPath": "/components/filmfilmography",
-    "s4ApiPath": "/components/filmfilmography",
+    "s3ApiPath": "/components/film/filmography",
+    "s4ApiPath": "/components/film/filmography",
     "v4": {
       "collectionName": "components_film_filmographies",
       "info": {
@@ -301,7 +650,14 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "text": {
+          "type": "richtext"
+        },
+        "film": {
+          "type": "component",
+          "repeatable": true,
+          "component": "film.film-in-filmography"
+        }
       }
     }
   },
@@ -309,8 +665,8 @@
     "folderName": "menu",
     "componentName": "industry-sub-menu-item",
     "s3InfoName": "IndustrySubMenuItem",
-    "s3ApiPath": "/components/menuindustry-sub-menu-item",
-    "s4ApiPath": "/components/menuindustry-sub-menu-item",
+    "s3ApiPath": "/components/menu/industry-sub-menu-item",
+    "s4ApiPath": "/components/menu/industry-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_industry_sub_menu_items",
       "info": {
@@ -318,7 +674,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "industry_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::industry-article.industry-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -326,8 +703,8 @@
     "folderName": "tags",
     "componentName": "course-tags",
     "s3InfoName": "CourseTags",
-    "s3ApiPath": "/components/tagscourse-tags",
-    "s4ApiPath": "/components/tagscourse-tags",
+    "s3ApiPath": "/components/tags/course-tags",
+    "s4ApiPath": "/components/tags/course-tags",
     "v4": {
       "collectionName": "components_tags_course_tags",
       "info": {
@@ -335,7 +712,11 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "keywords": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::tag-keyword.tag-keyword"
+        }
       }
     }
   },
@@ -343,8 +724,8 @@
     "folderName": "ticketing",
     "componentName": "delivery-price",
     "s3InfoName": "DeliveryPrice",
-    "s3ApiPath": "/components/ticketingdelivery-price",
-    "s4ApiPath": "/components/ticketingdelivery-price",
+    "s3ApiPath": "/components/ticketing/delivery-price",
+    "s4ApiPath": "/components/ticketing/delivery-price",
     "v4": {
       "collectionName": "components_ticketing_delivery_prices",
       "info": {
@@ -352,7 +733,29 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name_private": {
+          "type": "string"
+        },
+        "countries": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::country.country"
+        },
+        "price": {
+          "type": "decimal"
+        },
+        "info_et": {
+          "type": "richtext"
+        },
+        "info_en": {
+          "type": "richtext"
+        },
+        "info_ru": {
+          "type": "richtext"
+        },
+        "days_before": {
+          "type": "integer"
+        }
       }
     }
   },
@@ -360,8 +763,8 @@
     "folderName": "time",
     "componentName": "period",
     "s3InfoName": "period",
-    "s3ApiPath": "/components/timeperiod",
-    "s4ApiPath": "/components/timeperiod",
+    "s3ApiPath": "/components/time/period",
+    "s4ApiPath": "/components/time/period",
     "v4": {
       "collectionName": "components_time_periods",
       "info": {
@@ -369,7 +772,12 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "startDateTime": {
+          "type": "datetime"
+        },
+        "endDateTime": {
+          "type": "datetime"
+        }
       }
     }
   },
@@ -377,8 +785,8 @@
     "folderName": "ticketing",
     "componentName": "ticketing-rights",
     "s3InfoName": "ticketingRight",
-    "s3ApiPath": "/components/ticketingticketing-rights",
-    "s4ApiPath": "/components/ticketingticketing-rights",
+    "s3ApiPath": "/components/ticketing/ticketing-rights",
+    "s4ApiPath": "/components/ticketing/ticketing-rights",
     "v4": {
       "collectionName": "components_ticketing_ticketing_rights",
       "info": {
@@ -386,7 +794,15 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "ticketType": {
+          "type": "string"
+        },
+        "rightLimit": {
+          "type": "integer"
+        },
+        "rightUsed": {
+          "type": "integer"
+        }
       }
     }
   },
@@ -394,8 +810,8 @@
     "folderName": "ticketing",
     "componentName": "price-with-time",
     "s3InfoName": "priceAtPeriod",
-    "s3ApiPath": "/components/ticketingprice-with-time",
-    "s4ApiPath": "/components/ticketingprice-with-time",
+    "s3ApiPath": "/components/ticketing/price-with-time",
+    "s4ApiPath": "/components/ticketing/price-with-time",
     "v4": {
       "collectionName": "components_ticketing_price_with_times",
       "info": {
@@ -403,7 +819,15 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "price": {
+          "type": "decimal"
+        },
+        "startDateTime": {
+          "type": "datetime"
+        },
+        "endDateTime": {
+          "type": "datetime"
+        }
       }
     }
   },
@@ -411,8 +835,8 @@
     "folderName": "media",
     "componentName": "imgs",
     "s3InfoName": "imgs",
-    "s3ApiPath": "/components/mediaimgs",
-    "s4ApiPath": "/components/mediaimgs",
+    "s3ApiPath": "/components/media/imgs",
+    "s4ApiPath": "/components/media/imgs",
     "v4": {
       "collectionName": "components_media_imgs",
       "info": {
@@ -420,7 +844,30 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "imageDefault": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_et": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_en": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_ru": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        }
       }
     }
   },
@@ -428,8 +875,8 @@
     "folderName": "time",
     "componentName": "period-relative",
     "s3InfoName": "PeriodRelative",
-    "s3ApiPath": "/components/timeperiod-relative",
-    "s4ApiPath": "/components/timeperiod-relative",
+    "s3ApiPath": "/components/time/period-relative",
+    "s4ApiPath": "/components/time/period-relative",
     "v4": {
       "collectionName": "components_time_period_relatives",
       "info": {
@@ -437,7 +884,14 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "number_of_time_units": {
+          "type": "integer"
+        },
+        "time_unit": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::time-units.time-units"
+        }
       }
     }
   },
@@ -445,8 +899,8 @@
     "folderName": "ticketing",
     "componentName": "prod-cat-list",
     "s3InfoName": "prodCatList",
-    "s3ApiPath": "/components/ticketingprod-cat-list",
-    "s4ApiPath": "/components/ticketingprod-cat-list",
+    "s3ApiPath": "/components/ticketing/prod-cat-list",
+    "s4ApiPath": "/components/ticketing/prod-cat-list",
     "v4": {
       "collectionName": "components_ticketing_prod_cat_lists",
       "info": {
@@ -454,7 +908,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "namePrivate": {
+          "type": "string"
+        },
+        "orderedProductCategories": {
+          "type": "component",
+          "repeatable": true,
+          "component": "ticketing.ordered-products"
+        },
+        "title": {
+          "type": "component",
+          "component": "translated.translated-short"
+        }
       }
     }
   },
@@ -462,8 +927,8 @@
     "folderName": "course",
     "componentName": "course-module",
     "s3InfoName": "CourseModule",
-    "s3ApiPath": "/components/coursecourse-module",
-    "s4ApiPath": "/components/coursecourse-module",
+    "s3ApiPath": "/components/course/course-module",
+    "s4ApiPath": "/components/course/course-module",
     "v4": {
       "collectionName": "components_course_course_modules",
       "info": {
@@ -471,7 +936,61 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "title_private": {
+          "type": "string"
+        },
+        "title_et": {
+          "type": "string"
+        },
+        "title_en": {
+          "type": "string"
+        },
+        "title_ru": {
+          "type": "string"
+        },
+        "contents_et": {
+          "type": "richtext"
+        },
+        "contents_en": {
+          "type": "richtext"
+        },
+        "contents_ru": {
+          "type": "richtext"
+        },
+        "images": {
+          "type": "media",
+          "multiple": true,
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "video_url": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "public": {
+          "type": "boolean"
+        },
+        "publish_et": {
+          "type": "boolean"
+        },
+        "publish_en": {
+          "type": "boolean"
+        },
+        "publish_ru": {
+          "type": "boolean"
+        },
+        "start_time": {
+          "type": "datetime"
+        },
+        "duration_time": {
+          "type": "time"
+        },
+        "end_time": {
+          "type": "datetime"
+        }
       }
     }
   },
@@ -479,8 +998,8 @@
     "folderName": "menu",
     "componentName": "dis-camp-sub-menu-item",
     "s3InfoName": "DisCampSubMenuItem",
-    "s3ApiPath": "/components/menudis-camp-sub-menu-item",
-    "s4ApiPath": "/components/menudis-camp-sub-menu-item",
+    "s3ApiPath": "/components/menu/dis-camp-sub-menu-item",
+    "s4ApiPath": "/components/menu/dis-camp-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_dis_camp_sub_menu_items",
       "info": {
@@ -488,7 +1007,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "discamp_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::dis-camp-article.dis-camp-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -496,8 +1036,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-poff",
     "s3InfoName": "supSecPoff",
-    "s3ApiPath": "/components/footersup-sec-poff",
-    "s4ApiPath": "/components/footersup-sec-poff",
+    "s3ApiPath": "/components/footer/sup-sec-poff",
+    "s4ApiPath": "/components/footer/sup-sec-poff",
     "v4": {
       "collectionName": "components_footer_sup_sec_poffs",
       "info": {
@@ -505,7 +1045,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-poff"
+        }
       }
     }
   },
@@ -513,8 +1064,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-just",
     "s3InfoName": "supSecJust",
-    "s3ApiPath": "/components/footersup-sec-just",
-    "s4ApiPath": "/components/footersup-sec-just",
+    "s3ApiPath": "/components/footer/sup-sec-just",
+    "s4ApiPath": "/components/footer/sup-sec-just",
     "v4": {
       "collectionName": "components_footer_sup_sec_justs",
       "info": {
@@ -522,7 +1073,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-just"
+        }
       }
     }
   },
@@ -530,8 +1092,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-shorts",
     "s3InfoName": "supSecShorts",
-    "s3ApiPath": "/components/footersup-sec-shorts",
-    "s4ApiPath": "/components/footersup-sec-shorts",
+    "s3ApiPath": "/components/footer/sup-sec-shorts",
+    "s4ApiPath": "/components/footer/sup-sec-shorts",
     "v4": {
       "collectionName": "components_footer_sup_sec_shorts",
       "info": {
@@ -539,7 +1101,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-shorts"
+        }
       }
     }
   },
@@ -547,8 +1120,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-industry",
     "s3InfoName": "SupSecIndustry",
-    "s3ApiPath": "/components/footersup-sec-industry",
-    "s4ApiPath": "/components/footersup-sec-industry",
+    "s3ApiPath": "/components/footer/sup-sec-industry",
+    "s4ApiPath": "/components/footer/sup-sec-industry",
     "v4": {
       "collectionName": "components_footer_sup_sec_industry",
       "info": {
@@ -556,7 +1129,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-industry"
+        }
       }
     }
   },
@@ -564,8 +1148,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-kinoff",
     "s3InfoName": "SupSecKinoff",
-    "s3ApiPath": "/components/footersup-sec-kinoff",
-    "s4ApiPath": "/components/footersup-sec-kinoff",
+    "s3ApiPath": "/components/footer/sup-sec-kinoff",
+    "s4ApiPath": "/components/footer/sup-sec-kinoff",
     "v4": {
       "collectionName": "components_footer_sup_sec_kinoff",
       "info": {
@@ -573,7 +1157,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-kinoff"
+        }
       }
     }
   },
@@ -581,8 +1176,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-hoff",
     "s3InfoName": "SupSecHoff",
-    "s3ApiPath": "/components/footersup-sec-hoff",
-    "s4ApiPath": "/components/footersup-sec-hoff",
+    "s3ApiPath": "/components/footer/sup-sec-hoff",
+    "s4ApiPath": "/components/footer/sup-sec-hoff",
     "v4": {
       "collectionName": "components_footer_sup_sec_hoffs",
       "info": {
@@ -590,7 +1185,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-hoff"
+        }
       }
     }
   },
@@ -598,8 +1204,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-tartuff",
     "s3InfoName": "SupSecTartuff",
-    "s3ApiPath": "/components/footersup-sec-tartuff",
-    "s4ApiPath": "/components/footersup-sec-tartuff",
+    "s3ApiPath": "/components/footer/sup-sec-tartuff",
+    "s4ApiPath": "/components/footer/sup-sec-tartuff",
     "v4": {
       "collectionName": "components_footer_sup_sec_tartuffs",
       "info": {
@@ -607,7 +1213,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-tartuff"
+        }
       }
     }
   },
@@ -615,8 +1232,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-kumu",
     "s3InfoName": "SupSecKumu",
-    "s3ApiPath": "/components/footersup-sec-kumu",
-    "s4ApiPath": "/components/footersup-sec-kumu",
+    "s3ApiPath": "/components/footer/sup-sec-kumu",
+    "s4ApiPath": "/components/footer/sup-sec-kumu",
     "v4": {
       "collectionName": "components_footer_sup_sec_kumu",
       "info": {
@@ -624,7 +1241,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-kumu"
+        }
       }
     }
   },
@@ -632,8 +1260,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-bruno",
     "s3InfoName": "SupSecBruno",
-    "s3ApiPath": "/components/footersup-sec-bruno",
-    "s4ApiPath": "/components/footersup-sec-bruno",
+    "s3ApiPath": "/components/footer/sup-sec-bruno",
+    "s4ApiPath": "/components/footer/sup-sec-bruno",
     "v4": {
       "collectionName": "components_footer_sup_sec_bruno",
       "info": {
@@ -641,7 +1269,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-bruno"
+        }
       }
     }
   },
@@ -649,8 +1288,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-filmikool",
     "s3InfoName": "SupSecFilmikool",
-    "s3ApiPath": "/components/footersup-sec-filmikool",
-    "s4ApiPath": "/components/footersup-sec-filmikool",
+    "s3ApiPath": "/components/footer/sup-sec-filmikool",
+    "s4ApiPath": "/components/footer/sup-sec-filmikool",
     "v4": {
       "collectionName": "components_footer_sup_sec_filmikools",
       "info": {
@@ -658,7 +1297,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-filmikool"
+        }
       }
     }
   },
@@ -666,8 +1316,8 @@
     "folderName": "footer",
     "componentName": "sup-sec-dis-camp",
     "s3InfoName": "SupSecDisCamp",
-    "s3ApiPath": "/components/footersup-sec-dis-camp",
-    "s4ApiPath": "/components/footersup-sec-dis-camp",
+    "s3ApiPath": "/components/footer/sup-sec-dis-camp",
+    "s4ApiPath": "/components/footer/sup-sec-dis-camp",
     "v4": {
       "collectionName": "components_footer_sup_sec_dis_camps",
       "info": {
@@ -675,7 +1325,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "supporter": {
+          "type": "component",
+          "repeatable": true,
+          "component": "footer.sup-dis-camp"
+        }
       }
     }
   },
@@ -683,8 +1344,8 @@
     "folderName": "social",
     "componentName": "social-group",
     "s3InfoName": "SocialGroup",
-    "s3ApiPath": "/components/socialsocial-group",
-    "s4ApiPath": "/components/socialsocial-group",
+    "s3ApiPath": "/components/social/social-group",
+    "s4ApiPath": "/components/social/social-group",
     "v4": {
       "collectionName": "components_social_social_groups",
       "info": {
@@ -692,7 +1353,18 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "namePrivate": {
+          "type": "string"
+        },
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "items": {
+          "type": "component",
+          "repeatable": true,
+          "component": "social.social-item"
+        }
       }
     }
   },
@@ -700,8 +1372,8 @@
     "folderName": "footer",
     "componentName": "footer-item-nav",
     "s3InfoName": "footerItemNav",
-    "s3ApiPath": "/components/footerfooter-item-nav",
-    "s4ApiPath": "/components/footerfooter-item-nav",
+    "s3ApiPath": "/components/footer/footer-item-nav",
+    "s4ApiPath": "/components/footer/footer-item-nav",
     "v4": {
       "collectionName": "components_footer_footer_item_navs",
       "info": {
@@ -709,7 +1381,33 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "namePrivate": {
+          "type": "string"
+        },
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "button": {
+          "type": "component",
+          "repeatable": true,
+          "component": "button.button"
+        },
+        "text": {
+          "type": "component",
+          "component": "translated.translated-long"
+        },
+        "image": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "svgItem": {
+          "type": "component",
+          "repeatable": true,
+          "component": "social.social-item"
+        }
       }
     }
   },
@@ -717,8 +1415,8 @@
     "folderName": "menu",
     "componentName": "menu-item",
     "s3InfoName": "poffiSubMenuItem",
-    "s3ApiPath": "/components/menumenu-item",
-    "s4ApiPath": "/components/menumenu-item",
+    "s3ApiPath": "/components/menu/menu-item",
+    "s4ApiPath": "/components/menu/menu-item",
     "v4": {
       "collectionName": "components_menu_menu_items",
       "info": {
@@ -726,7 +1424,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "poffi_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::pof-fi-article.pof-fi-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -734,8 +1453,8 @@
     "folderName": "menu",
     "componentName": "just-filmi-sub-menu-item",
     "s3InfoName": "JustFilmiSubMenuItem",
-    "s3ApiPath": "/components/menujust-filmi-sub-menu-item",
-    "s4ApiPath": "/components/menujust-filmi-sub-menu-item",
+    "s3ApiPath": "/components/menu/just-filmi-sub-menu-item",
+    "s4ApiPath": "/components/menu/just-filmi-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_just_filmi_sub_menu_items",
       "info": {
@@ -743,7 +1462,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "just_filmi_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::just-filmi-article.just-filmi-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -751,8 +1491,8 @@
     "folderName": "menu",
     "componentName": "shortsi-sub-menu-item",
     "s3InfoName": "ShortsiSubMenuItem",
-    "s3ApiPath": "/components/menushortsi-sub-menu-item",
-    "s4ApiPath": "/components/menushortsi-sub-menu-item",
+    "s3ApiPath": "/components/menu/shortsi-sub-menu-item",
+    "s4ApiPath": "/components/menu/shortsi-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_shortsi_sub_menu_items",
       "info": {
@@ -760,7 +1500,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "shortsi_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::shortsi-article.shortsi-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -768,8 +1529,8 @@
     "folderName": "menu",
     "componentName": "kinoffi-sub-menu-item",
     "s3InfoName": "KinoffiSubMenuItem",
-    "s3ApiPath": "/components/menukinoffi-sub-menu-item",
-    "s4ApiPath": "/components/menukinoffi-sub-menu-item",
+    "s3ApiPath": "/components/menu/kinoffi-sub-menu-item",
+    "s4ApiPath": "/components/menu/kinoffi-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_kinoffi_sub_menu_items",
       "info": {
@@ -777,7 +1538,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "kinoffi_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::kinoffi-article.kinoffi-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -785,8 +1567,8 @@
     "folderName": "menu",
     "componentName": "hoffi-sub-menu-item",
     "s3InfoName": "hoffiSubMenuItem",
-    "s3ApiPath": "/components/menuhoffi-sub-menu-item",
-    "s4ApiPath": "/components/menuhoffi-sub-menu-item",
+    "s3ApiPath": "/components/menu/hoffi-sub-menu-item",
+    "s4ApiPath": "/components/menu/hoffi-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_hoffi_sub_menu_items",
       "info": {
@@ -794,7 +1576,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "hoffi_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::hof-fi-article.hof-fi-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -802,8 +1605,8 @@
     "folderName": "menu",
     "componentName": "tartuffi-sub-menu-item",
     "s3InfoName": "TartuffiSubMenuItem",
-    "s3ApiPath": "/components/menutartuffi-sub-menu-item",
-    "s4ApiPath": "/components/menutartuffi-sub-menu-item",
+    "s3ApiPath": "/components/menu/tartuffi-sub-menu-item",
+    "s4ApiPath": "/components/menu/tartuffi-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_tartuffi_sub_menu_items",
       "info": {
@@ -811,7 +1614,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "tartuffi_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::tartuffi-article.tartuffi-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -819,8 +1643,8 @@
     "folderName": "menu",
     "componentName": "kumu-sub-menu-item",
     "s3InfoName": "KumuSubMenuItem",
-    "s3ApiPath": "/components/menukumu-sub-menu-item",
-    "s4ApiPath": "/components/menukumu-sub-menu-item",
+    "s3ApiPath": "/components/menu/kumu-sub-menu-item",
+    "s4ApiPath": "/components/menu/kumu-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_kumu_sub_menu_items",
       "info": {
@@ -828,7 +1652,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "kumu_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::kumu-article.kumu-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -836,8 +1681,8 @@
     "folderName": "menu",
     "componentName": "bruno-sub-menu-item",
     "s3InfoName": "BrunoSubMenuItem",
-    "s3ApiPath": "/components/menubruno-sub-menu-item",
-    "s4ApiPath": "/components/menubruno-sub-menu-item",
+    "s3ApiPath": "/components/menu/bruno-sub-menu-item",
+    "s4ApiPath": "/components/menu/bruno-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_bruno_sub_menu_items",
       "info": {
@@ -845,7 +1690,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "bruno_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::bruno-article.bruno-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -853,8 +1719,8 @@
     "folderName": "menu",
     "componentName": "filmikooli-sub-menu-item",
     "s3InfoName": "FilmikooliSubMenuItem",
-    "s3ApiPath": "/components/menufilmikooli-sub-menu-item",
-    "s4ApiPath": "/components/menufilmikooli-sub-menu-item",
+    "s3ApiPath": "/components/menu/filmikooli-sub-menu-item",
+    "s4ApiPath": "/components/menu/filmikooli-sub-menu-item",
     "v4": {
       "collectionName": "components_menu_filmikooli_sub_menu_items",
       "info": {
@@ -862,7 +1728,28 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "filmikooli_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::filmikooli-article.filmikooli-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl": {
+          "type": "component",
+          "component": "translated.translated-short"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        }
       }
     }
   },
@@ -870,8 +1757,8 @@
     "folderName": "menu",
     "componentName": "l2-menu-industry",
     "s3InfoName": "L2MenuIndustry",
-    "s3ApiPath": "/components/menul2-menu-industry",
-    "s4ApiPath": "/components/menul2-menu-industry",
+    "s3ApiPath": "/components/menu/l2-menu-industry",
+    "s4ApiPath": "/components/menu/l2-menu-industry",
     "v4": {
       "collectionName": "components_menu_l2_menu_industries",
       "info": {
@@ -879,7 +1766,43 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name_et": {
+          "type": "string"
+        },
+        "name_en": {
+          "type": "string"
+        },
+        "name_ru": {
+          "type": "string"
+        },
+        "industry_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::industry-article.industry-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl_et": {
+          "type": "string"
+        },
+        "customUrl_en": {
+          "type": "string"
+        },
+        "customUrl_ru": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "L3MenuItems": {
+          "type": "component",
+          "repeatable": true,
+          "component": "menu.l3-menu-industry"
+        }
       }
     }
   },
@@ -887,8 +1810,8 @@
     "folderName": "menu",
     "componentName": "l2-menu-kumu",
     "s3InfoName": "L2MenuKumu",
-    "s3ApiPath": "/components/menul2-menu-kumu",
-    "s4ApiPath": "/components/menul2-menu-kumu",
+    "s3ApiPath": "/components/menu/l2-menu-kumu",
+    "s4ApiPath": "/components/menu/l2-menu-kumu",
     "v4": {
       "collectionName": "components_menu_l2_menu_kumus",
       "info": {
@@ -896,7 +1819,43 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name_et": {
+          "type": "string"
+        },
+        "name_en": {
+          "type": "string"
+        },
+        "name_ru": {
+          "type": "string"
+        },
+        "kumu_article": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::kumu-article.kumu-article"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "customUrl_et": {
+          "type": "string"
+        },
+        "customUrl_en": {
+          "type": "string"
+        },
+        "customUrl_ru": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        },
+        "namePrivate": {
+          "type": "string"
+        },
+        "L3MenuItems": {
+          "type": "component",
+          "repeatable": true,
+          "component": "menu.l3-menu-kumu"
+        }
       }
     }
   },
@@ -904,8 +1863,8 @@
     "folderName": "article",
     "componentName": "trio-poff-et",
     "s3InfoName": "Triopoff",
-    "s3ApiPath": "/components/articletrio-poff-et",
-    "s4ApiPath": "/components/articletrio-poff-et",
+    "s3ApiPath": "/components/article/trio-poff-et",
+    "s4ApiPath": "/components/article/trio-poff-et",
     "v4": {
       "collectionName": "components_article_trio_poff_ets",
       "info": {
@@ -913,7 +1872,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-lang-item"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-lang-item"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-lang-item"
+        },
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        }
       }
     }
   },
@@ -921,8 +1897,8 @@
     "folderName": "article",
     "componentName": "trio-just-film",
     "s3InfoName": "Triojustfilm",
-    "s3ApiPath": "/components/articletrio-just-film",
-    "s4ApiPath": "/components/articletrio-just-film",
+    "s3ApiPath": "/components/article/trio-just-film",
+    "s4ApiPath": "/components/article/trio-just-film",
     "v4": {
       "collectionName": "components_article_trio_just_films",
       "info": {
@@ -930,7 +1906,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        },
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-just-film"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-just-film"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-just-film"
+        }
       }
     }
   },
@@ -938,8 +1931,8 @@
     "folderName": "article",
     "componentName": "trio-shorts",
     "s3InfoName": "Trioshorts",
-    "s3ApiPath": "/components/articletrio-shorts",
-    "s4ApiPath": "/components/articletrio-shorts",
+    "s3ApiPath": "/components/article/trio-shorts",
+    "s4ApiPath": "/components/article/trio-shorts",
     "v4": {
       "collectionName": "components_article_trio_shorts",
       "info": {
@@ -947,7 +1940,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        },
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-shorts"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-shorts"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-shorts"
+        }
       }
     }
   },
@@ -955,8 +1965,8 @@
     "folderName": "article",
     "componentName": "trioindustry",
     "s3InfoName": "Trioindustry",
-    "s3ApiPath": "/components/articletrioindustry",
-    "s4ApiPath": "/components/articletrioindustry",
+    "s3ApiPath": "/components/article/trioindustry",
+    "s4ApiPath": "/components/article/trioindustry",
     "v4": {
       "collectionName": "components_article_trio_industry",
       "info": {
@@ -964,7 +1974,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        },
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-industry"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-industry"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-industry"
+        }
       }
     }
   },
@@ -972,8 +1999,8 @@
     "folderName": "article",
     "componentName": "triokinoff",
     "s3InfoName": "Triokinoff",
-    "s3ApiPath": "/components/articletriokinoff",
-    "s4ApiPath": "/components/articletriokinoff",
+    "s3ApiPath": "/components/article/triokinoff",
+    "s4ApiPath": "/components/article/triokinoff",
     "v4": {
       "collectionName": "components_article_trio_kinoff",
       "info": {
@@ -981,7 +2008,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        },
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-kinoff"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-kinoff"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-kinoff"
+        }
       }
     }
   },
@@ -989,8 +2033,8 @@
     "folderName": "article",
     "componentName": "trio-hoff",
     "s3InfoName": "TrioHoff",
-    "s3ApiPath": "/components/articletrio-hoff",
-    "s4ApiPath": "/components/articletrio-hoff",
+    "s3ApiPath": "/components/article/trio-hoff",
+    "s4ApiPath": "/components/article/trio-hoff",
     "v4": {
       "collectionName": "components_article_trio_hoffs",
       "info": {
@@ -998,7 +2042,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        },
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-hoff"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-hoff"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-hoff"
+        }
       }
     }
   },
@@ -1006,8 +2067,8 @@
     "folderName": "article",
     "componentName": "trio-tartuff",
     "s3InfoName": "Triotartuff",
-    "s3ApiPath": "/components/articletrio-tartuff",
-    "s4ApiPath": "/components/articletrio-tartuff",
+    "s3ApiPath": "/components/article/trio-tartuff",
+    "s4ApiPath": "/components/article/trio-tartuff",
     "v4": {
       "collectionName": "components_article_trio_tartuffs",
       "info": {
@@ -1015,7 +2076,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-tartuff"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-tartuff"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-tartuff"
+        },
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        }
       }
     }
   },
@@ -1023,8 +2101,8 @@
     "folderName": "article",
     "componentName": "trio-kumu",
     "s3InfoName": "Triokumu",
-    "s3ApiPath": "/components/articletrio-kumu",
-    "s4ApiPath": "/components/articletrio-kumu",
+    "s3ApiPath": "/components/article/trio-kumu",
+    "s4ApiPath": "/components/article/trio-kumu",
     "v4": {
       "collectionName": "components_article_trio_kumu",
       "info": {
@@ -1032,7 +2110,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-kumu"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-kumu"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-kumu"
+        },
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        }
       }
     }
   },
@@ -1040,8 +2135,8 @@
     "folderName": "article",
     "componentName": "trio-bruno",
     "s3InfoName": "Triobruno",
-    "s3ApiPath": "/components/articletrio-bruno",
-    "s4ApiPath": "/components/articletrio-bruno",
+    "s3ApiPath": "/components/article/trio-bruno",
+    "s4ApiPath": "/components/article/trio-bruno",
     "v4": {
       "collectionName": "components_article_trio_bruno",
       "info": {
@@ -1049,7 +2144,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-bruno"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-bruno"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-bruno"
+        },
+        "name": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string"
+        }
       }
     }
   },
@@ -1057,8 +2169,8 @@
     "folderName": "article",
     "componentName": "triofilmikool",
     "s3InfoName": "Triofilmikool",
-    "s3ApiPath": "/components/articletriofilmikool",
-    "s4ApiPath": "/components/articletriofilmikool",
+    "s3ApiPath": "/components/article/triofilmikool",
+    "s4ApiPath": "/components/article/triofilmikool",
     "v4": {
       "collectionName": "components_article_triofilmikools",
       "info": {
@@ -1066,7 +2178,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-filmikool"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-filmikool"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-filmikool"
+        },
+        "lead": {
+          "type": "string"
+        }
       }
     }
   },
@@ -1074,8 +2203,8 @@
     "folderName": "article",
     "componentName": "triodiscamp",
     "s3InfoName": "Triodiscamp",
-    "s3ApiPath": "/components/articletriodiscamp",
-    "s4ApiPath": "/components/articletriodiscamp",
+    "s3ApiPath": "/components/article/triodiscamp",
+    "s4ApiPath": "/components/article/triodiscamp",
     "v4": {
       "collectionName": "components_article_triodiscamps",
       "info": {
@@ -1083,7 +2212,24 @@
       },
       "options": {},
       "attributes": {
-        "undefined": {}
+        "name": {
+          "type": "string"
+        },
+        "trioItem_1": {
+          "type": "component",
+          "component": "article.trio-item-dis-camp"
+        },
+        "trioItem_2": {
+          "type": "component",
+          "component": "article.trio-item-dis-camp"
+        },
+        "trioItem_3": {
+          "type": "component",
+          "component": "article.trio-item-dis-camp"
+        },
+        "lead": {
+          "type": "string"
+        }
       }
     }
   }

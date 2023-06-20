@@ -6,10 +6,6 @@
     "pluralName": "genders",
     "displayName": "Gender"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"

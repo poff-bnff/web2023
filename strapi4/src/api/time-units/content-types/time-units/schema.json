@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_units",
+  "info": {
+    "singularName": "time-units",
+    "pluralName": "time-unitses",
+    "displayName": "TimeUnits"
+  },
+  "attributes": {
+    "name_private": {
+      "type": "string"
+    },
+    "name_et": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_ru": {
+      "type": "string"
+    }
+  }
+}

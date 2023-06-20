@@ -6,10 +6,6 @@
     "pluralName": "eye-colours",
     "displayName": "EyeColour"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

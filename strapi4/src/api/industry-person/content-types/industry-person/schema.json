@@ -4,12 +4,8 @@
   "info": {
     "singularName": "industry-person",
     "pluralName": "industry-persons",
-    "displayName": "IndustryPerson"
+    "displayName": "Industry_Person"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "person": {
       "type": "relation",
@@ -18,11 +14,9 @@
     },
     "profilePicAtInd": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "role_at_films": {
       "type": "relation",
@@ -36,15 +30,14 @@
       "type": "string"
     },
     "aboutText": {
-      "type": "text"
+      "type": "richtext"
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "clipUrl": {
       "type": "string"
@@ -83,10 +76,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag-looking-for.tag-looking-for"
-    },
-    "actor_info_set": {
-      "type": "component",
-      "component": "person.actor-info-set"
     },
     "domains": {
       "type": "relation",

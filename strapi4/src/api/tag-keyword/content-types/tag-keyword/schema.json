@@ -6,10 +6,6 @@
     "pluralName": "tag-keywords",
     "displayName": "TagKeyword"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"

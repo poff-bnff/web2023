@@ -6,10 +6,6 @@
     "pluralName": "hero-article-shortses",
     "displayName": "HeroArticleShorts"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_et": {
       "type": "relation",

@@ -6,7 +6,7 @@
   "options": {},
   "attributes": {
     "text": {
-      "type": "text"
+      "type": "richtext"
     },
     "film": {
       "type": "component",

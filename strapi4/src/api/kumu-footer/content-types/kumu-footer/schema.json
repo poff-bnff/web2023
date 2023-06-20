@@ -4,12 +4,8 @@
   "info": {
     "singularName": "kumu-footer",
     "pluralName": "kumu-footers",
-    "displayName": "KumuFooter"
+    "displayName": "Kumu_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

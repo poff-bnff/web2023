@@ -4,12 +4,8 @@
   "info": {
     "singularName": "kinoffi-footer",
     "pluralName": "kinoffi-footers",
-    "displayName": "KinoffiFooter"
+    "displayName": "Kinoffi_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

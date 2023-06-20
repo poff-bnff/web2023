@@ -6,10 +6,6 @@
     "pluralName": "dis-camp-footers",
     "displayName": "DisCampFooter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "domain": {
       "type": "relation",

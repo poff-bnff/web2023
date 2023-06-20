@@ -6,10 +6,6 @@
     "pluralName": "hair-colours",
     "displayName": "HairColour"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

@@ -1,15 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "l1_menu_industries",
+  "collectionName": "l_1_menu_industries",
   "info": {
     "singularName": "l1-menu-industry",
-    "pluralName": "l1-menu-industrys",
+    "pluralName": "l1-menu-industries",
     "displayName": "L1MenuIndustry"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

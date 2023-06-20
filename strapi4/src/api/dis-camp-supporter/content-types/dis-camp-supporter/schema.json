@@ -6,10 +6,6 @@
     "pluralName": "dis-camp-supporters",
     "displayName": "DisCampSupporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_private": {
       "type": "string"

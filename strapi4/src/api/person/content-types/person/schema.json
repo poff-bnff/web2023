@@ -6,10 +6,6 @@
     "pluralName": "persons",
     "displayName": "Person"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "firstName": {
       "type": "string"
@@ -19,11 +15,9 @@
     },
     "picture": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "gender": {
       "type": "relation",
@@ -66,8 +60,9 @@
     },
     "awardings": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::awarding.awarding"
+      "relation": "manyToMany",
+      "target": "api::awarding.awarding",
+      "mappedBy": "person"
     },
     "festival_editions": {
       "type": "relation",
@@ -136,21 +131,19 @@
       "type": "string"
     },
     "bio_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "bio_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "bio_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "profile_img": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "ev_professions": {
       "type": "string"
@@ -183,22 +176,19 @@
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "showreel": {
       "type": "string"
     },
     "audioreel": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "multiple": false
+      ]
     },
     "acting_age_from": {
       "type": "integer"
@@ -273,18 +263,19 @@
       "type": "string"
     },
     "skills_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "skills_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "skills_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "filmographies": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::filmography.filmography"
+      "relation": "manyToMany",
+      "target": "api::filmography.filmography",
+      "mappedBy": "person"
     },
     "origin": {
       "type": "relation",

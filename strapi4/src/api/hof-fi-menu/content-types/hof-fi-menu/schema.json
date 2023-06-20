@@ -4,12 +4,8 @@
   "info": {
     "singularName": "hof-fi-menu",
     "pluralName": "hof-fi-menus",
-    "displayName": "HOFFiMenu"
+    "displayName": "HOFFi_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

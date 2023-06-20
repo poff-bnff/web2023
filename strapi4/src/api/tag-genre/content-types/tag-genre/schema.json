@@ -6,10 +6,6 @@
     "pluralName": "tag-genres",
     "displayName": "TagGenre"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"

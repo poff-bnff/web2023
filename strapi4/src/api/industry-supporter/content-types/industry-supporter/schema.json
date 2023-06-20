@@ -4,12 +4,8 @@
   "info": {
     "singularName": "industry-supporter",
     "pluralName": "industry-supporters",
-    "displayName": "IndustrySupporter"
+    "displayName": "Industry_Supporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

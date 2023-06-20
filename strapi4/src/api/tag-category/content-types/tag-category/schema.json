@@ -3,13 +3,9 @@
   "collectionName": "tag_categories",
   "info": {
     "singularName": "tag-category",
-    "pluralName": "tag-categorys",
+    "pluralName": "tag-categories",
     "displayName": "TagCategory"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"
@@ -31,8 +27,9 @@
     },
     "tag_locations": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag-location.tag-location"
+      "relation": "manyToMany",
+      "target": "api::tag-location.tag-location",
+      "inversedBy": "tag_categories"
     }
   }
 }

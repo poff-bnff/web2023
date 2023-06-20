@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "functions",
+  "info": {
+    "singularName": "function",
+    "pluralName": "functions",
+    "displayName": "UserFunction"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "function_parameters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user.function-parameters"
+    }
+  }
+}

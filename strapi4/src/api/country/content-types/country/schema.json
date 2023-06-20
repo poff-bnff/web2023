@@ -3,13 +3,9 @@
   "collectionName": "countries",
   "info": {
     "singularName": "country",
-    "pluralName": "countrys",
+    "pluralName": "countries",
     "displayName": "Country"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

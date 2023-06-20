@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dumb_folders",
+  "info": {
+    "singularName": "dumb-folder",
+    "pluralName": "dumb-folders",
+    "displayName": "DumbFolder"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::film.film"
+    },
+    "cassettes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cassette.cassette"
+    },
+    "poffi_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pof-fi-article.pof-fi-article"
+    },
+    "just_filmi_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::just-filmi-article.just-filmi-article"
+    },
+    "shortsi_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shortsi-article.shortsi-article"
+    },
+    "industry_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-article.industry-article"
+    },
+    "course_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-event.course-event"
+    }
+  }
+}

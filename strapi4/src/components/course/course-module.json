@@ -18,21 +18,20 @@
       "type": "string"
     },
     "contents_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "contents_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "video_url": {
       "type": "string"

@@ -3,19 +3,20 @@
   "collectionName": "industry_categories",
   "info": {
     "singularName": "industry-category",
-    "pluralName": "industry-categorys",
-    "displayName": "IndustryCategory"
+    "pluralName": "industry-categories",
+    "displayName": "Industry_Category"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
+    },
+    "industry_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-article.industry-article"
     }
   }
 }

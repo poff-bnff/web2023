@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_kinoffs",
+  "collectionName": "trio_kinoff",
   "info": {
     "singularName": "trio-kinoff",
     "pluralName": "trio-kinoffs",
     "displayName": "TrioKinoff"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioKinoff_et": {
       "type": "component",

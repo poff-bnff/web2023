@@ -4,12 +4,8 @@
   "info": {
     "singularName": "tartuffi-supporter",
     "pluralName": "tartuffi-supporters",
-    "displayName": "TartuffiSupporter"
+    "displayName": "Tartuffi_Supporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "component",

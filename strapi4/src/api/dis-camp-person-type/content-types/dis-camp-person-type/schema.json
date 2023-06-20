@@ -6,16 +6,12 @@
     "pluralName": "dis-camp-person-types",
     "displayName": "DisCampPersonType"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "type": {
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

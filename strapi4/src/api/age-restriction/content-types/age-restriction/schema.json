@@ -6,10 +6,6 @@
     "pluralName": "age-restrictions",
     "displayName": "TagAgeRestriction"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"
@@ -31,35 +27,27 @@
     },
     "icon_default": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "icon_et": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "icon_en": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "icon_ru": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     }
   }
 }

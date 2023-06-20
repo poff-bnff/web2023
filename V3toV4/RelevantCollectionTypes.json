@@ -8,6 +8,46 @@
     "s3CollectionName": "product_types"
   },
   {
+    "s3DatamodelKey": "Function",
+    "collectionName": "functions",
+    "kind": "collectionType",
+    "folderName": "function",
+    "s3InfoName": "UserFunction",
+    "s3CollectionName": "functions"
+  },
+  {
+    "s3DatamodelKey": "SmartFolder",
+    "collectionName": "smart_folders",
+    "kind": "collectionType",
+    "folderName": "smart-folder",
+    "s3InfoName": "SmartFolder",
+    "s3CollectionName": "smart_folders"
+  },
+  {
+    "s3DatamodelKey": "DumbFolder",
+    "collectionName": "dumb_folders",
+    "kind": "collectionType",
+    "folderName": "dumb-folder",
+    "s3InfoName": "DumbFolder",
+    "s3CollectionName": "dumb_folders"
+  },
+  {
+    "s3DatamodelKey": "PatternCollection",
+    "collectionName": "pattern_collections",
+    "kind": "collectionType",
+    "folderName": "pattern-collections",
+    "s3InfoName": "Pattern_Collections",
+    "s3CollectionName": "pattern_collections"
+  },
+  {
+    "s3DatamodelKey": "TimeUnits",
+    "collectionName": "time_units",
+    "kind": "collectionType",
+    "folderName": "time-units",
+    "s3InfoName": "TimeUnits",
+    "s3CollectionName": "time_units"
+  },
+  {
     "s3DatamodelKey": "UserRole",
     "collectionName": "user_roles",
     "kind": "collectionType",

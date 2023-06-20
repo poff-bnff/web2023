@@ -6,10 +6,6 @@
     "pluralName": "role-at-films",
     "displayName": "RoleAtFilm"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "roleNamePrivate": {
       "type": "string"

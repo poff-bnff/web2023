@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_dis_camps",
+  "collectionName": "trio_dis_camp",
   "info": {
     "singularName": "trio-dis-camp",
     "pluralName": "trio-dis-camps",
     "displayName": "TrioDisCamp"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioDiscamp_et": {
       "type": "component",

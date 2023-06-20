@@ -4,12 +4,8 @@
   "info": {
     "singularName": "web-user",
     "pluralName": "web-users",
-    "displayName": "WebUser"
+    "displayName": "webUser"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "username": {
       "type": "string"

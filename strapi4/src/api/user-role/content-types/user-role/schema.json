@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_roles",
+  "info": {
+    "singularName": "user-role",
+    "pluralName": "user-roles",
+    "displayName": "UserRole"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "user_right": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user.user-right"
+    },
+    "valid_from": {
+      "type": "datetime"
+    },
+    "valid_to": {
+      "type": "datetime"
+    },
+    "product_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-category.product-category",
+      "mappedBy": "user_roles"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "inversedBy": "user_roles",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

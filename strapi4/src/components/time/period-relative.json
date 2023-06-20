@@ -7,6 +7,11 @@
   "attributes": {
     "number_of_time_units": {
       "type": "integer"
+    },
+    "time_unit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::time-units.time-units"
     }
   }
 }

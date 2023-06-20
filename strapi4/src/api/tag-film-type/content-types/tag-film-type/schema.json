@@ -6,10 +6,6 @@
     "pluralName": "tag-film-types",
     "displayName": "TagFilmType"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"

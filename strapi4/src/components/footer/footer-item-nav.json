@@ -23,11 +23,9 @@
     },
     "image": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "svgItem": {
       "type": "component",

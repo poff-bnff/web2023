@@ -6,10 +6,6 @@
     "pluralName": "event-modes",
     "displayName": "EventMode"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_private": {
       "type": "string"

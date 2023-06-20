@@ -6,10 +6,6 @@
     "pluralName": "cinemas",
     "displayName": "Cinema"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "town": {
       "type": "relation",

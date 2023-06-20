@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_p_oe_ffs",
+  "collectionName": "trio_p_oe_ff",
   "info": {
     "singularName": "trio-p-oe-ff",
     "pluralName": "trio-p-oe-ffs",
     "displayName": "TrioPOFF"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioPoff_et": {
       "type": "component",

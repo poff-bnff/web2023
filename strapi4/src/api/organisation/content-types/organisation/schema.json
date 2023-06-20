@@ -6,10 +6,6 @@
     "pluralName": "organisations",
     "displayName": "Organisation"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"
@@ -24,11 +20,10 @@
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true
+      ]
     },
     "type": {
       "type": "enumeration",
@@ -46,35 +41,30 @@
     },
     "logoWhite": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "logoBlack": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "logoColour": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "homepageUrl": {
       "type": "string"
     },
     "awardings": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::awarding.awarding"
+      "relation": "manyToMany",
+      "target": "api::awarding.awarding",
+      "mappedBy": "organisation"
     },
     "festival_editions": {
       "type": "relation",
@@ -88,11 +78,9 @@
     },
     "profile_img": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false
+      ]
     },
     "role_at_films": {
       "type": "relation",
@@ -109,11 +97,9 @@
     },
     "audioreel": {
       "type": "media",
-      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "multiple": false
+      ]
     },
     "name_et": {
       "type": "string"
@@ -125,13 +111,13 @@
       "type": "string"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "remote_img": {
       "type": "component",

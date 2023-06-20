@@ -4,12 +4,8 @@
   "info": {
     "singularName": "web-role",
     "pluralName": "web-roles",
-    "displayName": "WebRole"
+    "displayName": "webRole"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"

@@ -4,12 +4,8 @@
   "info": {
     "singularName": "kumu-menu",
     "pluralName": "kumu-menus",
-    "displayName": "KumuMenu"
+    "displayName": "Kumu_Menu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

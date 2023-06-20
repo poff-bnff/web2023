@@ -1,15 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "l1_menu_kumus",
+  "collectionName": "l_1_menu_kumus",
   "info": {
     "singularName": "l1-menu-kumu",
     "pluralName": "l1-menu-kumus",
     "displayName": "L1MenuKumu"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

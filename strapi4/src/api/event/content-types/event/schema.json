@@ -6,10 +6,6 @@
     "pluralName": "events",
     "displayName": "Event"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "code": {
       "type": "integer"
@@ -34,6 +30,11 @@
     },
     "bookingUrl": {
       "type": "text"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
     },
     "endDate": {
       "type": "datetime"

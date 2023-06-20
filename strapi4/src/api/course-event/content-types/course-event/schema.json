@@ -6,10 +6,6 @@
     "pluralName": "course-events",
     "displayName": "CourseEvent"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title_private": {
       "type": "string"
@@ -42,13 +38,13 @@
       "type": "text"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "start_time": {
       "type": "datetime"
@@ -107,28 +103,31 @@
     "public": {
       "type": "boolean"
     },
+    "preconditions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-event.course-event"
+    },
     "moodle_id": {
       "type": "uid"
     },
     "posters": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "multiple": true
+      ]
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "multiple": true
+      ]
     },
     "video_url": {
       "type": "string"
@@ -147,8 +146,9 @@
     },
     "product_categories": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product-category.product-category"
+      "relation": "manyToMany",
+      "target": "api::product-category.product-category",
+      "inversedBy": "course_events"
     },
     "industry_projects": {
       "type": "relation",

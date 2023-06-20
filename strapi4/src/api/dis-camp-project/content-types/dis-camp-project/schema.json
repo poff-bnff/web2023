@@ -6,10 +6,6 @@
     "pluralName": "dis-camp-projects",
     "displayName": "DisCampProject"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title_en": {
       "type": "string"
@@ -81,13 +77,13 @@
       "target": "api::organisation.organisation"
     },
     "lookingFor": {
-      "type": "text"
+      "type": "richtext"
     },
     "synopsis": {
-      "type": "text"
+      "type": "richtext"
     },
     "directorsNote": {
-      "type": "text"
+      "type": "richtext"
     },
     "contactName": {
       "type": "string"
@@ -108,13 +104,12 @@
     },
     "images": {
       "type": "media",
-      "required": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "multiple": true
+      ]
     },
     "clipUrl": {
       "type": "string"

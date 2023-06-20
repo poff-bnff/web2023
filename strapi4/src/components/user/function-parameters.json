@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_user_function_parameters",
+  "info": {
+    "displayName": "FunctionParameters"
+  },
+  "options": {},
+  "attributes": {
+    "property": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

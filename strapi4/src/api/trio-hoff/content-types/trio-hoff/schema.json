@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_hoffs",
+  "collectionName": "trio_hoff",
   "info": {
     "singularName": "trio-hoff",
     "pluralName": "trio-hoffs",
     "displayName": "TrioHOFF"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioHoff_et": {
       "type": "component",

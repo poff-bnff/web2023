@@ -6,10 +6,6 @@
     "pluralName": "towns",
     "displayName": "Town"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

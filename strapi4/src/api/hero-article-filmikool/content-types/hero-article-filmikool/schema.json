@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "hero_article_filmikools",
+  "collectionName": "hero_article_filmikool",
   "info": {
     "singularName": "hero-article-filmikool",
     "pluralName": "hero-article-filmikools",
     "displayName": "HeroArticleFilmikool"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "article_et": {
       "type": "relation",

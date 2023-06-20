@@ -6,10 +6,6 @@
     "pluralName": "populated-places",
     "displayName": "Municipality"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "name_et": {
       "type": "string"

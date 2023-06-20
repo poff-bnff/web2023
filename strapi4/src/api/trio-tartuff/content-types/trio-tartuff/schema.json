@@ -1,15 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "trio_tartuffs",
+  "collectionName": "trio_tartuff",
   "info": {
     "singularName": "trio-tartuff",
     "pluralName": "trio-tartuffs",
     "displayName": "TrioTartuff"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "trioTartuff_et": {
       "type": "component",

@@ -6,10 +6,6 @@
     "pluralName": "tag-secrets",
     "displayName": "TagSecret"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "et": {
       "type": "string"

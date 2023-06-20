@@ -4,12 +4,8 @@
   "info": {
     "singularName": "hof-fi-footer",
     "pluralName": "hof-fi-footers",
-    "displayName": "HOFFiFooter"
+    "displayName": "HOFFi_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"

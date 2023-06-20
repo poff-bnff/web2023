@@ -1,15 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "Edition",
+  "collectionName": "festival_editions",
   "info": {
     "singularName": "festival-edition",
     "pluralName": "festival-editions",
     "displayName": "FestivalEdition"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "number": {
       "type": "integer"
@@ -27,13 +23,13 @@
       "type": "string"
     },
     "description_et": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_en": {
-      "type": "text"
+      "type": "richtext"
     },
     "description_ru": {
-      "type": "text"
+      "type": "richtext"
     },
     "startDate": {
       "type": "datetime"
@@ -63,10 +59,17 @@
     "remoteId": {
       "type": "uid"
     },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::industry-project.industry-project",
+      "mappedBy": "editions"
+    },
     "awardings": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::awarding.awarding"
+      "relation": "manyToMany",
+      "target": "api::awarding.awarding",
+      "mappedBy": "festival_edition"
     }
   }
 }

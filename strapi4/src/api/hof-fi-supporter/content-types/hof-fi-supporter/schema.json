@@ -4,12 +4,8 @@
   "info": {
     "singularName": "hof-fi-supporter",
     "pluralName": "hof-fi-supporters",
-    "displayName": "HOFFiSupporter"
+    "displayName": "HOFFi_Supporter"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "component",

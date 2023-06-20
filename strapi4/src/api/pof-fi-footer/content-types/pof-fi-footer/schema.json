@@ -4,12 +4,8 @@
   "info": {
     "singularName": "pof-fi-footer",
     "pluralName": "pof-fi-footers",
-    "displayName": "POFFiFooter"
+    "displayName": "POFFi_Footer"
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
   "attributes": {
     "namePrivate": {
       "type": "string"
