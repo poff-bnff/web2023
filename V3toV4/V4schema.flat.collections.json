@@ -19,6 +19,101 @@
     }
   },
   {
+    "s3DatamodelKey": "Function",
+    "collectionName": "functions",
+    "kind": "collectionType",
+    "folderName": "function",
+    "s3InfoName": "UserFunction",
+    "s3CollectionName": "functions",
+    "s3ApiPath": "/function",
+    "s4ApiPath": "/api/function",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "functions",
+      "info": {
+        "singularName": "function",
+        "pluralName": "functions",
+        "displayName": "UserFunction"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "SmartFolder",
+    "collectionName": "smart_folders",
+    "kind": "collectionType",
+    "folderName": "smart-folder",
+    "s3InfoName": "SmartFolder",
+    "s3CollectionName": "smart_folders",
+    "s3ApiPath": "/smart-folder",
+    "s4ApiPath": "/api/smart-folder",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "smart_folders",
+      "info": {
+        "singularName": "smart-folder",
+        "pluralName": "smart-folders",
+        "displayName": "SmartFolder"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "DumbFolder",
+    "collectionName": "dumb_folders",
+    "kind": "collectionType",
+    "folderName": "dumb-folder",
+    "s3InfoName": "DumbFolder",
+    "s3CollectionName": "dumb_folders",
+    "s3ApiPath": "/dumb-folder",
+    "s4ApiPath": "/api/dumb-folder",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "dumb_folders",
+      "info": {
+        "singularName": "dumb-folder",
+        "pluralName": "dumb-folders",
+        "displayName": "DumbFolder"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "PatternCollection",
+    "collectionName": "pattern_collections",
+    "kind": "collectionType",
+    "folderName": "pattern-collections",
+    "s3InfoName": "Pattern_Collections",
+    "s3CollectionName": "pattern_collections",
+    "s3ApiPath": "/pattern-collections",
+    "s4ApiPath": "/api/pattern-collections",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "pattern_collections",
+      "info": {
+        "singularName": "pattern-collections",
+        "pluralName": "pattern-collectionses",
+        "displayName": "Pattern_Collections"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "TimeUnits",
+    "collectionName": "time_units",
+    "kind": "collectionType",
+    "folderName": "time-units",
+    "s3InfoName": "TimeUnits",
+    "s3CollectionName": "time_units",
+    "s3ApiPath": "/time-units",
+    "s4ApiPath": "/api/time-units",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "time_units",
+      "info": {
+        "singularName": "time-units",
+        "pluralName": "time-unitses",
+        "displayName": "TimeUnits"
+      }
+    }
+  },
+  {
     "s3DatamodelKey": "UserRole",
     "collectionName": "user_roles",
     "kind": "collectionType",
