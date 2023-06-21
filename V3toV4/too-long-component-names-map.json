@@ -8,5 +8,16 @@
   "components_menu_kinoffi_sub_menu_items": "components_menu_kinoffi_items",
   "components_menu_kumu_sub_menu_items": "components_menu_kumu_items",
   "components_menu_shortsi_sub_menu_items": "components_menu_shortsi_items",
-  "components_menu_tartuffi_sub_menu_items": "components_menu_tartuffi_items"
+  "components_menu_tartuffi_sub_menu_items": "components_menu_tartuffi_items",
+
+  "components_article_trio_item_bruno": "components_artcl_trtm_bruno",
+  "components_article_trio_item_dis_camps": "components_artcl_trtm_dis_camps",
+  "components_article_trio_item_filmikools": "components_artcl_trtm_filmikools",
+  "components_article_trio_item_hoffs": "components_artcl_trtm_hoffs",
+  "components_article_trio_item_industry": "components_artcl_trtm_industry",
+  "components_article_trio_item_just_films": "components_artcl_trtm_just_films",
+  "components_article_trio_item_kinoff": "components_artcl_trtm_kinoff",
+  "components_article_trio_item_kumu": "components_artcl_trtm_kumu",
+  "components_article_trio_item_shorts": "components_artcl_trtm_shorts",
+  "components_article_trio_item_tartuffs": "components_artcl_trtm_tartuffs"
 }

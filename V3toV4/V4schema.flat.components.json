@@ -3190,7 +3190,7 @@
     "s3ApiPath": "/components/article/trio-item-just-film",
     "s4ApiPath": "/components/article/trio-item-just-film",
     "v4": {
-      "collectionName": "components_article_trio_item_just_films",
+      "collectionName": "components_artcl_trtm_just_films",
       "info": {
         "displayName": "TrioItemJustFilm"
       },
@@ -3226,7 +3226,7 @@
     "s3ApiPath": "/components/article/trio-item-shorts",
     "s4ApiPath": "/components/article/trio-item-shorts",
     "v4": {
-      "collectionName": "components_article_trio_item_shorts",
+      "collectionName": "components_artcl_trtm_shorts",
       "info": {
         "displayName": "TrioItemShorts"
       },
@@ -3262,7 +3262,7 @@
     "s3ApiPath": "/components/article/trio-item-industry",
     "s4ApiPath": "/components/article/trio-item-industry",
     "v4": {
-      "collectionName": "components_article_trio_item_industry",
+      "collectionName": "components_artcl_trtm_industry",
       "info": {
         "displayName": "TrioItemIndustry"
       },
@@ -3300,7 +3300,7 @@
     "s3ApiPath": "/components/article/trio-item-kinoff",
     "s4ApiPath": "/components/article/trio-item-kinoff",
     "v4": {
-      "collectionName": "components_article_trio_item_kinoff",
+      "collectionName": "components_artcl_trtm_kinoff",
       "info": {
         "displayName": "TrioItemKinoff"
       },
@@ -3338,7 +3338,7 @@
     "s3ApiPath": "/components/article/trio-item-hoff",
     "s4ApiPath": "/components/article/trio-item-hoff",
     "v4": {
-      "collectionName": "components_article_trio_item_hoffs",
+      "collectionName": "components_artcl_trtm_hoffs",
       "info": {
         "displayName": "TrioItemHoff"
       },
@@ -3374,7 +3374,7 @@
     "s3ApiPath": "/components/article/trio-item-tartuff",
     "s4ApiPath": "/components/article/trio-item-tartuff",
     "v4": {
-      "collectionName": "components_article_trio_item_tartuffs",
+      "collectionName": "components_artcl_trtm_tartuffs",
       "info": {
         "displayName": "TrioItemTartuff"
       },
@@ -3410,7 +3410,7 @@
     "s3ApiPath": "/components/article/trio-item-kumu",
     "s4ApiPath": "/components/article/trio-item-kumu",
     "v4": {
-      "collectionName": "components_article_trio_item_kumu",
+      "collectionName": "components_artcl_trtm_kumu",
       "info": {
         "displayName": "TrioItemKumu"
       },
@@ -3446,7 +3446,7 @@
     "s3ApiPath": "/components/article/trio-item-bruno",
     "s4ApiPath": "/components/article/trio-item-bruno",
     "v4": {
-      "collectionName": "components_article_trio_item_bruno",
+      "collectionName": "components_artcl_trtm_bruno",
       "info": {
         "displayName": "TrioItemBruno"
       },
@@ -3482,7 +3482,7 @@
     "s3ApiPath": "/components/article/trio-item-filmikool",
     "s4ApiPath": "/components/article/trio-item-filmikool",
     "v4": {
-      "collectionName": "components_article_trio_item_filmikools",
+      "collectionName": "components_artcl_trtm_filmikools",
       "info": {
         "displayName": "TrioItemFilmikool"
       },
@@ -3520,7 +3520,7 @@
     "s3ApiPath": "/components/article/trio-item-dis-camp",
     "s4ApiPath": "/components/article/trio-item-dis-camp",
     "v4": {
-      "collectionName": "components_article_trio_item_dis_camps",
+      "collectionName": "components_artcl_trtm_dis_camps",
       "info": {
         "displayName": "TrioItemDisCamp"
       },
