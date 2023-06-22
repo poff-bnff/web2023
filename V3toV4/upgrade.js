@@ -97,6 +97,9 @@ const STRAPI4_ROOT = path.join(__dirname, '..', '..', 'web2023')
 const STRAPI4_API_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'api')
 const STRAPI4_COMPONENTS_PATH = path.join(STRAPI4_ROOT, 'strapi4', 'src', 'components')
 
+const V4_SCHEMA_FILE = 'V4schema.flat.collections.withAttributes.json'
+
+const transporter = require('./transporter')
 const transformer = require('./transformer')
 const attributeTransformer = transformer.attributeTransformer
 const collectionTransformer = transformer.collectionTransformer
@@ -106,6 +109,7 @@ const componentTransformer = transformer.componentTransformer
 const pluralize = (singular) => {
   const kebab = singular.toLowerCase().replace(/_/g, '-')
   if (kebab.endsWith('s')) {
+    // return `${kebab}`
     return `${kebab}es`
   }
   if (kebab.endsWith('y')) {
@@ -153,9 +157,13 @@ const transformSchema = async () => {
     .filter(item => fs.statSync(path.join(STRAPI3_COLLECTIONS_PATH, item)).isDirectory())
     // if model has no settings.json, it is not relevant
     .filter(item => fs.existsSync(path.join(STRAPI3_COLLECTIONS_PATH, item, 'models', `${item}.settings.json`)))
+    // if model has no routes.json, it is not relevant
+    .filter(item => fs.existsSync(path.join(STRAPI3_COLLECTIONS_PATH, item, 'config', 'routes.json')))
     // map file name to actual description from settings.json
     .map(item => {
       const settings = JSON.parse(fs.readFileSync(path.join(STRAPI3_COLLECTIONS_PATH, item, 'models', `${item}.settings.json`), 'utf8'))
+      const routes = require(path.join(STRAPI3_COLLECTIONS_PATH, item, 'config', 'routes.json'))
+      settings.s3ApiPath = routes.routes[0].path
       settings.folderName = item
       return settings
     })
@@ -171,6 +179,7 @@ const transformSchema = async () => {
     delete relevantCollection.isFound
     relevantCollection.kind = item.kind
     relevantCollection.folderName = item.folderName
+    relevantCollection.s3ApiPath = item.s3ApiPath
     relevantCollection.s3InfoName = item.info.name
     relevantCollection.s3CollectionName = item.collectionName
   })
@@ -199,8 +208,8 @@ const transformSchema = async () => {
   relevantCollectionTypes.forEach(item => {
     // Transfer to transformers
     transformer.relevantCollectionType = item
-    item.s3ApiPath = `/${item.folderName}`
-    item.s4ApiPath = `/api/${item.folderName}`
+    // item.s3ApiPath = `/${pluralize(item.folderName)}`
+    item.s4ApiPath = `/api${item.s3ApiPath}`
     item.v4 = {
       kind: item.kind,
       collectionName: item.collectionName,
@@ -238,7 +247,7 @@ const transformSchema = async () => {
     })
   })
 
-  fs.writeFileSync(path.join(__dirname, 'V4schema.flat.collections.withAttributes.json'), JSON.stringify(relevantCollectionTypes, null, 2))
+  fs.writeFileSync(path.join(__dirname, V4_SCHEMA_FILE), JSON.stringify(relevantCollectionTypes, null, 2))
 
   // console.log('Used component types:', transformer.getUsedComponentTypes())
   // console.log('Relevant collection types:', transformer.getRelevantCollectionTypes())
@@ -301,6 +310,14 @@ const transformSchema = async () => {
 }
 
 const transportData = async () => {
+  const collectionTypes = require('./V4schema.flat.collections.withAttributes.json')
+  const firstFiveCollectionTypes = collectionTypes //.slice(3, 4)
+  for (const collectionType of firstFiveCollectionTypes) {
+    console.log(`Transporting collection type "${collectionType.collectionName}"...`) 
+    const count = await transporter.transportCollectionType(collectionType)
+    console.log(`Collection type "${collectionType.collectionName}" has been transported. ${count} entries have been created.`)
+  }
+
   return true
 }
 
@@ -309,9 +326,15 @@ const validateData = async () => {
 }
 
 const main = async () => {
+  // - Strapi 3 schema gets converted to Strapi 4 schema;
+  // - Strapi 4 schema files get created;
+  // - V4 schema is saved to V4_SCHEMA_FILE file;
   await transformSchema()
-  await transportData()
-  await validateData()
+  // Now Strapi4 should be able to start with the new schema,
+  // automatically creating the database tables.
+  
+  // await transportData()
+  // await validateData()
 }
 
 main()
