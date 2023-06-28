@@ -10,24 +10,24 @@
     "date": {
       "type": "date"
     },
-    "project": {
+    "projects": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::industry-project.industry-project"
     },
-    "film": {
+    "films": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::film.film"
     },
-    "person": {
+    "people": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::person.person"
     },
-    "organisation": {
+    "organisations": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::organisation.organisation"
     },
     "festival_edition": {

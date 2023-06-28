@@ -209,7 +209,7 @@ const transformSchema = async () => {
     // Transfer to transformers
     transformer.relevantCollectionType = item
     // item.s3ApiPath = `/${pluralize(item.folderName)}`
-    item.s4ApiPath = `/api${item.s3ApiPath}`
+    item.s4ApiPath = `/api/${pluralize(item.folderName)}`
     item.v4 = {
       kind: item.kind,
       collectionName: item.collectionName,
@@ -310,15 +310,99 @@ const transformSchema = async () => {
 }
 
 const transportData = async () => {
-  const collectionTypes = require('./V4schema.flat.collections.withAttributes.json')
-  const firstFiveCollectionTypes = collectionTypes //.slice(3, 4)
-  for (const collectionType of firstFiveCollectionTypes) {
-    console.log(`Transporting collection type "${collectionType.collectionName}"...`) 
-    const count = await transporter.transportCollectionType(collectionType)
-    console.log(`Collection type "${collectionType.collectionName}" has been transported. ${count} entries have been created.`)
+
+  const readRequiredAttributes = (collectionType) => {
+    const required = []
+    Object.keys(collectionType.v4.attributes).forEach(attrName => {
+      const attr = collectionType.v4.attributes[attrName]
+      if (attr.required) {
+        required.push(attrName)
+      }
+    })
+    return required
   }
 
-  return true
+  const collectionTypes = require('./V4schema.flat.collections.withAttributes.json')
+  const firstFiveCollectionTypes = collectionTypes//.slice(15, -1)
+
+  for (const collectionType of firstFiveCollectionTypes) {
+    console.log(`Reading entries for collection type "${collectionType.collectionName}"...`)
+    const nonRelationAttributes = Object.keys(collectionType.v4.attributes)
+      .filter(key => collectionType.v4.attributes[key].type !== 'relation')
+    const relationAttributes = Object.keys(collectionType.v4.attributes)
+      .filter(key => collectionType.v4.attributes[key].type === 'relation')
+    const s3RequiredDataFileName = path.join(__dirname, 's3data', `s3.${collectionType.collectionName}.required.json`)
+    const s3DataFileName = path.join(__dirname, 's3data', `s3.${collectionType.collectionName}.json`)
+    const s3DataFromFile = fs.existsSync(s3DataFileName) ? JSON.parse(fs.readFileSync(s3DataFileName, 'utf8')) : false
+
+    const s3read = s3DataFromFile || await transporter.readS3(collectionType)
+    // reduce relation attributes to contain just IDs
+    s3read.s3data
+      .forEach(entry => {
+        // console.log(`entry: ${JSON.stringify(entry, null, 2)}`)
+        for (const attr of relationAttributes) {
+          // console.log(`attr: ${attr}`)
+          if (entry[attr] && entry[attr].id) {
+            entry[attr] = entry[attr].id
+          }
+        }
+        return entry
+      })
+
+    fs.writeFileSync(s3DataFileName, JSON.stringify(s3read, null, 2))
+
+    const requiredAttributes = readRequiredAttributes(collectionType)
+    const s3RequiredOnly = {
+      s3ApiPath: s3read.s3ApiPath,
+      s4ApiPath: s3read.s4ApiPath,
+      s3data: s3read.s3data.map(entry => {
+        const newEntry = { id: entry.id }
+        for (const attrName of Object.keys(entry)) {
+          if (requiredAttributes.includes(attrName)) {
+            newEntry[attrName] = entry[attrName]
+          }
+
+        }
+        return newEntry
+      })
+    }
+
+    fs.writeFileSync(s3RequiredDataFileName, JSON.stringify(s3RequiredOnly, null, 2))
+
+    console.log(`Saved entries for collection type "${collectionType.collectionName}"...`)
+  }
+  // delete s4 entries. Loop over s3DataFromFile.s3data
+  // await deleteFromS4(firstFiveCollectionTypes)
+
+  // import entries. Loop over s3DataFromFile.s3data
+  // await seedS4Entries(firstFiveCollectionTypes)
+
+  async function seedS4Entries(collectionTypes) {
+    for (const collectionType of collectionTypes) {
+      console.log(`Creating entries for collection type "${collectionType.collectionName}"...`)
+      const relationAttributes = Object.keys(collectionType.v4.attributes)
+        .filter(key => collectionType.v4.attributes[key].type === 'relation')
+
+      const s3DataFileName = path.join(__dirname, 's3data', `s3.${collectionType.collectionName}.required.json`)
+      const s3DataFromFile = JSON.parse(fs.readFileSync(s3DataFileName, 'utf8'))
+
+      // import entries. Loop over s3DataFromFile.s3data
+      for (const entry of s3DataFromFile.s3data) {
+        await transporter.createEntry(s3DataFromFile.s4ApiPath, entry)
+      }
+    }
+  }
+
+  async function deleteFromS4(collectionTypes) {
+    for (const collectionType of collectionTypes) {
+      console.log(`Deleting entries for collection type "${collectionType.collectionName}"...`)
+      const s3DataFileName = path.join(__dirname, 's3data', `s3.${collectionType.collectionName}.json`)
+      const s3DataFromFile = fs.existsSync(s3DataFileName) ? JSON.parse(fs.readFileSync(s3DataFileName, 'utf8')) : false
+      for (const entry of s3DataFromFile.s3data) {
+        await transporter.deleteEntry(s3DataFromFile.s4ApiPath, entry.id)
+      }
+    }
+  }
 }
 
 const validateData = async () => {
@@ -329,13 +413,38 @@ const main = async () => {
   // - Strapi 3 schema gets converted to Strapi 4 schema;
   // - Strapi 4 schema files get created;
   // - V4 schema is saved to V4_SCHEMA_FILE file;
-  await transformSchema()
+  // await transformSchema()
   // Now Strapi4 should be able to start with the new schema,
   // automatically creating the database tables.
-  
-  // await transportData()
+
+  await transportData()
   // await validateData()
 }
 
-main()
+main(); return
+
+// experiments and tests
+
+// distill V4Schema.
+// leave only bidirectional attributes
+// leave only collection types with bidirectional attributes ( attributes that have "mappedBy" or "inversedBy" properties )
+const bidirectionalCollectionTypes = require('./V4schema.flat.collections.withAttributes.json')
+  .filter(collType => Object.values(collType.v4.attributes).some(attr => attr.mappedBy || attr.inversedBy))
+  // leave only bidirectional attributes
+  .map(collType => {
+    const distilledCollection = {
+      collectionDisplayName: collType.s3InfoName,
+      attributes: {}
+    }
+    Object.keys(collType.v4.attributes).forEach(attrName => {
+      const attr = collType.v4.attributes[attrName]
+      if (attr.mappedBy || attr.inversedBy) {
+        distilledCollection.attributes[attrName] = attr
+        delete attr.relation
+        delete attr.type
+      }
+    })
+    return distilledCollection
+  })
+fs.writeFileSync(path.join(__dirname, 'V4schema.with.bidirectional.Attributes.json'), JSON.stringify(bidirectionalCollectionTypes, null, 2))
 

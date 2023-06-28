@@ -58,12 +58,6 @@
     "pageUrl": {
       "type": "string"
     },
-    "awardings": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::awarding.awarding",
-      "mappedBy": "person"
-    },
     "festival_editions": {
       "type": "relation",
       "relation": "oneToMany",

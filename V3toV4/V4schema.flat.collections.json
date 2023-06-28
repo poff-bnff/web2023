@@ -83,7 +83,7 @@
     "s3ApiPath": "/pattern-collections",
     "s3InfoName": "Pattern_Collections",
     "s3CollectionName": "pattern_collections",
-    "s4ApiPath": "/api/pattern-collections",
+    "s4ApiPath": "/api/pattern-collectionses",
     "v4": {
       "kind": "collectionType",
       "collectionName": "pattern_collections",
@@ -102,7 +102,7 @@
     "s3ApiPath": "/time-units",
     "s3InfoName": "TimeUnits",
     "s3CollectionName": "time_units",
-    "s4ApiPath": "/api/time-units",
+    "s4ApiPath": "/api/time-unitses",
     "v4": {
       "kind": "collectionType",
       "collectionName": "time_units",
@@ -1166,7 +1166,7 @@
     "s3ApiPath": "/people",
     "s3InfoName": "Person",
     "s3CollectionName": "people",
-    "s4ApiPath": "/api/people",
+    "s4ApiPath": "/api/persons",
     "v4": {
       "kind": "collectionType",
       "collectionName": "people",
@@ -1337,7 +1337,7 @@
     "s3ApiPath": "/six-films",
     "s3InfoName": "SixFilms",
     "s3CollectionName": "six_films",
-    "s4ApiPath": "/api/six-films",
+    "s4ApiPath": "/api/six-filmses",
     "v4": {
       "kind": "collectionType",
       "collectionName": "six_films",
@@ -1375,7 +1375,7 @@
     "s3ApiPath": "/industry-people",
     "s3InfoName": "Industry_Person",
     "s3CollectionName": "industry_people",
-    "s4ApiPath": "/api/industry-people",
+    "s4ApiPath": "/api/industry-persons",
     "v4": {
       "kind": "collectionType",
       "collectionName": "industry_people",
@@ -1660,7 +1660,7 @@
     "s3ApiPath": "/front-page-courses",
     "s3InfoName": "Front_Page_Courses",
     "s3CollectionName": "front_page_courses",
-    "s4ApiPath": "/api/front-page-courses",
+    "s4ApiPath": "/api/front-page-courseses",
     "v4": {
       "kind": "collectionType",
       "collectionName": "front_page_courses",
@@ -1698,7 +1698,7 @@
     "s3ApiPath": "/dis-camp-people",
     "s3InfoName": "DisCampPerson",
     "s3CollectionName": "dis_camp_people",
-    "s4ApiPath": "/api/dis-camp-people",
+    "s4ApiPath": "/api/dis-camp-persons",
     "v4": {
       "kind": "collectionType",
       "collectionName": "dis_camp_people",
@@ -1869,7 +1869,7 @@
     "s3ApiPath": "/supporters-shorts",
     "s3InfoName": "Shorts_Supporter",
     "s3CollectionName": "supporters_shorts",
-    "s4ApiPath": "/api/supporters-shorts",
+    "s4ApiPath": "/api/supporters-shortses",
     "v4": {
       "kind": "collectionType",
       "collectionName": "supporters_shorts",
@@ -2420,7 +2420,7 @@
     "s3ApiPath": "/l-1-menu-industries",
     "s3InfoName": "L1MenuIndustry",
     "s3CollectionName": "l1_menu_industries",
-    "s4ApiPath": "/api/l-1-menu-industries",
+    "s4ApiPath": "/api/l1-menu-industries",
     "v4": {
       "kind": "collectionType",
       "collectionName": "l_1_menu_industries",
@@ -2439,7 +2439,7 @@
     "s3ApiPath": "/l-1-menu-kumus",
     "s3InfoName": "L1MenuKumu",
     "s3CollectionName": "l1_menu_kumus",
-    "s4ApiPath": "/api/l-1-menu-kumus",
+    "s4ApiPath": "/api/l1-menu-kumus",
     "v4": {
       "kind": "collectionType",
       "collectionName": "l_1_menu_kumus",
@@ -2458,7 +2458,7 @@
     "s3ApiPath": "/article-hero",
     "s3InfoName": "HeroArticlePoff",
     "s3CollectionName": "article_heroes",
-    "s4ApiPath": "/api/article-hero",
+    "s4ApiPath": "/api/article-heros",
     "v4": {
       "kind": "singleType",
       "collectionName": "article_hero",
@@ -2477,7 +2477,7 @@
     "s3ApiPath": "/hero-article-just-film",
     "s3InfoName": "HeroArticleJustFilm",
     "s3CollectionName": "hero_article_just_films",
-    "s4ApiPath": "/api/hero-article-just-film",
+    "s4ApiPath": "/api/hero-article-just-films",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_just_film",
@@ -2496,7 +2496,7 @@
     "s3ApiPath": "/hero-article-shorts",
     "s3InfoName": "HeroArticleShorts",
     "s3CollectionName": "hero_article_shorts",
-    "s4ApiPath": "/api/hero-article-shorts",
+    "s4ApiPath": "/api/hero-article-shortses",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_shorts",
@@ -2515,7 +2515,7 @@
     "s3ApiPath": "/hero-article-industry",
     "s3InfoName": "HeroArticleIndustry",
     "s3CollectionName": "hero_article_industries",
-    "s4ApiPath": "/api/hero-article-industry",
+    "s4ApiPath": "/api/hero-article-industries",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_industry",
@@ -2534,7 +2534,7 @@
     "s3ApiPath": "/hero-article-kinoff",
     "s3InfoName": "HeroArticleKinoff",
     "s3CollectionName": "hero_article_kinoffs",
-    "s4ApiPath": "/api/hero-article-kinoff",
+    "s4ApiPath": "/api/hero-article-kinoffs",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_kinoff",
@@ -2553,7 +2553,7 @@
     "s3ApiPath": "/hero-article-hoff",
     "s3InfoName": "HeroArticleHoff",
     "s3CollectionName": "hero_article_hoffs",
-    "s4ApiPath": "/api/hero-article-hoff",
+    "s4ApiPath": "/api/hero-article-hoffs",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_hoff",
@@ -2572,7 +2572,7 @@
     "s3ApiPath": "/hero-article-tartuff",
     "s3InfoName": "HeroArticleTartuff",
     "s3CollectionName": "hero_article_tartuffs",
-    "s4ApiPath": "/api/hero-article-tartuff",
+    "s4ApiPath": "/api/hero-article-tartuffs",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_tartuff",
@@ -2591,7 +2591,7 @@
     "s3ApiPath": "/hero-article-kumu",
     "s3InfoName": "HeroArticleKumu",
     "s3CollectionName": "hero_article_kumu",
-    "s4ApiPath": "/api/hero-article-kumu",
+    "s4ApiPath": "/api/hero-article-kumus",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_kumu",
@@ -2610,7 +2610,7 @@
     "s3ApiPath": "/hero-article-bruno",
     "s3InfoName": "HeroArticleBruno",
     "s3CollectionName": "hero_article_bruno",
-    "s4ApiPath": "/api/hero-article-bruno",
+    "s4ApiPath": "/api/hero-article-brunos",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_bruno",
@@ -2629,7 +2629,7 @@
     "s3ApiPath": "/hero-article-filmikool",
     "s3InfoName": "HeroArticleFilmikool",
     "s3CollectionName": "hero_article_filmikools",
-    "s4ApiPath": "/api/hero-article-filmikool",
+    "s4ApiPath": "/api/hero-article-filmikools",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_filmikool",
@@ -2648,7 +2648,7 @@
     "s3ApiPath": "/hero-article-dis-camp",
     "s3InfoName": "HeroArticleDisCamp",
     "s3CollectionName": "hero_article_dis_camps",
-    "s4ApiPath": "/api/hero-article-dis-camp",
+    "s4ApiPath": "/api/hero-article-dis-camps",
     "v4": {
       "kind": "singleType",
       "collectionName": "hero_article_dis_camp",
@@ -2667,7 +2667,7 @@
     "s3ApiPath": "/trio-p-oe-ff",
     "s3InfoName": "TrioPOFF",
     "s3CollectionName": "trio_p_oe_ffs",
-    "s4ApiPath": "/api/trio-p-oe-ff",
+    "s4ApiPath": "/api/trio-p-oe-ffs",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_p_oe_ff",
@@ -2686,7 +2686,7 @@
     "s3ApiPath": "/trio-just-film",
     "s3InfoName": "TrioJustFilm",
     "s3CollectionName": "trio_just_films",
-    "s4ApiPath": "/api/trio-just-film",
+    "s4ApiPath": "/api/trio-just-films",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_just_film",
@@ -2705,7 +2705,7 @@
     "s3ApiPath": "/trio-shorts",
     "s3InfoName": "TrioShorts",
     "s3CollectionName": "trio_shorts",
-    "s4ApiPath": "/api/trio-shorts",
+    "s4ApiPath": "/api/trio-shortses",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_shorts",
@@ -2724,7 +2724,7 @@
     "s3ApiPath": "/trio-industry",
     "s3InfoName": "TrioIndustry",
     "s3CollectionName": "trio_industries",
-    "s4ApiPath": "/api/trio-industry",
+    "s4ApiPath": "/api/trio-industries",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_industry",
@@ -2743,7 +2743,7 @@
     "s3ApiPath": "/trio-kinoff",
     "s3InfoName": "TrioKinoff",
     "s3CollectionName": "trio_kinoffs",
-    "s4ApiPath": "/api/trio-kinoff",
+    "s4ApiPath": "/api/trio-kinoffs",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_kinoff",
@@ -2762,7 +2762,7 @@
     "s3ApiPath": "/trio-hoff",
     "s3InfoName": "TrioHOFF",
     "s3CollectionName": "trio_hoffs",
-    "s4ApiPath": "/api/trio-hoff",
+    "s4ApiPath": "/api/trio-hoffs",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_hoff",
@@ -2781,7 +2781,7 @@
     "s3ApiPath": "/trio-tartuff",
     "s3InfoName": "TrioTartuff",
     "s3CollectionName": "trio_tartuffs",
-    "s4ApiPath": "/api/trio-tartuff",
+    "s4ApiPath": "/api/trio-tartuffs",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_tartuff",
@@ -2800,7 +2800,7 @@
     "s3ApiPath": "/trio-kumu",
     "s3InfoName": "TrioKumu",
     "s3CollectionName": "trio_kumu",
-    "s4ApiPath": "/api/trio-kumu",
+    "s4ApiPath": "/api/trio-kumus",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_kumu",
@@ -2819,7 +2819,7 @@
     "s3ApiPath": "/trio-bruno",
     "s3InfoName": "TrioBruno",
     "s3CollectionName": "trio_bruno",
-    "s4ApiPath": "/api/trio-bruno",
+    "s4ApiPath": "/api/trio-brunos",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_bruno",
@@ -2838,7 +2838,7 @@
     "s3ApiPath": "/trio-filmikool",
     "s3InfoName": "TrioFilmikool",
     "s3CollectionName": "trio_filmikools",
-    "s4ApiPath": "/api/trio-filmikool",
+    "s4ApiPath": "/api/trio-filmikools",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_filmikool",
@@ -2857,7 +2857,7 @@
     "s3ApiPath": "/trio-dis-camp",
     "s3InfoName": "TrioDisCamp",
     "s3CollectionName": "trio_dis_camps",
-    "s4ApiPath": "/api/trio-dis-camp",
+    "s4ApiPath": "/api/trio-dis-camps",
     "v4": {
       "kind": "singleType",
       "collectionName": "trio_dis_camp",

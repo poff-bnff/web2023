@@ -133,12 +133,6 @@
       "target": "api::festival-edition.festival-edition",
       "inversedBy": "projects"
     },
-    "awardings": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::awarding.awarding",
-      "mappedBy": "project"
-    },
     "tag_looking_fors": {
       "type": "relation",
       "relation": "oneToMany",

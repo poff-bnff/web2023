@@ -64,12 +64,6 @@
       "relation": "manyToMany",
       "target": "api::industry-project.industry-project",
       "mappedBy": "editions"
-    },
-    "awardings": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::awarding.awarding",
-      "mappedBy": "festival_edition"
     }
   }
 }

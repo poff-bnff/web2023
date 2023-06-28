@@ -29,12 +29,6 @@
     },
     "slug_ru": {
       "type": "uid"
-    },
-    "awardings": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::awarding.awarding",
-      "mappedBy": "award"
     }
   }
 }

@@ -91,12 +91,6 @@
     "multi_and_single": {
       "type": "boolean"
     },
-    "awardings": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::awarding.awarding",
-      "mappedBy": "film"
-    },
     "other_festivals": {
       "type": "relation",
       "relation": "oneToMany",

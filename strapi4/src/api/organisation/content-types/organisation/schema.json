@@ -60,12 +60,6 @@
     "homepageUrl": {
       "type": "string"
     },
-    "awardings": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::awarding.awarding",
-      "mappedBy": "organisation"
-    },
     "festival_editions": {
       "type": "relation",
       "relation": "oneToMany",
