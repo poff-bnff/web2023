@@ -11,9 +11,8 @@ const fs = require('fs')
 const path = require('path')
 const yaml = require('js-yaml')
 
-const STRAPI3_ROOT = path.join(__dirname, '..', '..', 'web2021')
+const STRAPI3_ROOT = path.join(__dirname, '..', '..', '..', 'web2021')
 const STRAPI3_COLLECTIONS_PATH = path.join(STRAPI3_ROOT, 'strapi', 'strapi-development', 'api')
-const STRAPI3_COMPONENTS_PATH = path.join(STRAPI3_ROOT, 'strapi', 'strapi-development', 'components')
 
 const STRAPI3_DATAMODEL_PATH = path.join(__dirname, 'datamodel.yaml')
 const datamodel = yaml.load(fs.readFileSync(STRAPI3_DATAMODEL_PATH, 'utf8'))
@@ -109,7 +108,7 @@ relevantCollectionTypes.forEach(item => {
 })
 
 // Save to ./RelevantCollectionTypes.json for sanity check
-fs.writeFileSync(path.join(__dirname, 'datamodelCollections.json'), JSON.stringify(relevantCollectionTypes, null, 2))
+// fs.writeFileSync(path.join(__dirname, 'datamodelCollections.json'), JSON.stringify(relevantCollectionTypes, null, 2))
 
 // Transform collection types to Strapi 4 format
 // - Add v3 and v4 api paths to the collection type
@@ -127,7 +126,9 @@ relevantCollectionTypes.forEach(item => {
     }
   }
 })
-fs.writeFileSync(path.join(__dirname, 'V3V4map.json'), JSON.stringify(relevantCollectionTypes, null, 2))
+fs.writeFileSync(path.join(__dirname, 'V3V4map-generated.json'), JSON.stringify(relevantCollectionTypes, null, 2))
+// also in yaml
+fs.writeFileSync(path.join(__dirname, 'V3V4map-generated.yaml'), yaml.dump(relevantCollectionTypes))
 // also in CSV
 const flatModel = relevantCollectionTypes.map(item => {
   return {
@@ -146,7 +147,7 @@ const flatModel = relevantCollectionTypes.map(item => {
 
 const csv = require('csv-writer').createObjectCsvWriter;
 const csvWriter = csv({
-  path: path.join(__dirname, 'V3V4map.csv'),
+  path: path.join(__dirname, 'V3V4map-generated.csv'),
   header: [
     { id: 'datamodelKey', title: 'datamodelKey' },
     { id: 's3.folderName', title: 's3.folderName' },
