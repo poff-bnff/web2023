@@ -1,4 +1,5 @@
 - datamodelKey: Address
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: addresses
     folderName: address
@@ -13,6 +14,7 @@
       pluralName: addresses
       displayName: Address
 - datamodelKey: ArticleType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: article_types
     folderName: article-type
@@ -27,6 +29,7 @@
       pluralName: article-types
       displayName: ArticleType
 - datamodelKey: Award
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_awards
     folderName: industry-award
@@ -41,6 +44,7 @@
       pluralName: industry-awards
       displayName: Award
 - datamodelKey: Awarding
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: awardings
     folderName: awarding
@@ -55,6 +59,7 @@
       pluralName: awardings
       displayName: Awarding
 - datamodelKey: BannerGroup
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: banner
     folderName: banner
@@ -69,6 +74,7 @@
       pluralName: banners
       displayName: BannerGroup
 - datamodelKey: BrunoArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: bruno_articles
     folderName: bruno-article
@@ -83,6 +89,7 @@
       pluralName: bruno-articles
       displayName: BrunoArticle
 - datamodelKey: BrunoFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: bruno_footers
     folderName: bruno-footer
@@ -97,6 +104,7 @@
       pluralName: bruno-footers
       displayName: BrunoFooter
 - datamodelKey: BrunoMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: bruno_menus
     folderName: bruno-menu
@@ -111,6 +119,7 @@
       pluralName: bruno-menus
       displayName: BrunoMenu
 - datamodelKey: BrunoSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: bruno_supporters
     folderName: bruno-supporter
@@ -125,6 +134,7 @@
       pluralName: bruno-supporters
       displayName: BrunoSupporter
 - datamodelKey: BusinessProfile
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: business_profiles
     folderName: business-profile
@@ -139,6 +149,7 @@
       pluralName: business-profiles
       displayName: BusinessProfile
 - datamodelKey: Cassette
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: cassettes
     folderName: cassette
@@ -153,6 +164,7 @@
       pluralName: cassettes
       displayName: Cassette
 - datamodelKey: Channel
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: channels
     folderName: channel
@@ -167,6 +179,7 @@
       pluralName: channels
       displayName: Channel
 - datamodelKey: Cinema
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: cinemas
     folderName: cinema
@@ -181,6 +194,7 @@
       pluralName: cinemas
       displayName: Cinema
 - datamodelKey: Country
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: countries
     folderName: country
@@ -195,6 +209,7 @@
       pluralName: countries
       displayName: Country
 - datamodelKey: County
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: counties
     folderName: county
@@ -209,6 +224,7 @@
       pluralName: counties
       displayName: County
 - datamodelKey: Course
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: courses
     folderName: course
@@ -223,6 +239,7 @@
       pluralName: courses
       displayName: Course
 - datamodelKey: CourseEvent
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: course_events
     folderName: course-event
@@ -237,6 +254,7 @@
       pluralName: course-events
       displayName: CourseEvent
 - datamodelKey: Delivery
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: deliveries
     folderName: delivery
@@ -251,6 +269,7 @@
       pluralName: deliveries
       displayName: Delivery
 - datamodelKey: DeliveryType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: delivery_types
     folderName: delivery-type
@@ -265,6 +284,7 @@
       pluralName: delivery-types
       displayName: DeliveryType
 - datamodelKey: DisCampArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_articles
     folderName: dis-camp-article
@@ -279,6 +299,7 @@
       pluralName: dis-camp-articles
       displayName: DisCampArticle
 - datamodelKey: DisCampCategory
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_categories
     folderName: dis-camp-category
@@ -293,6 +314,7 @@
       pluralName: dis-camp-categories
       displayName: DisCampCategory
 - datamodelKey: DisCampEvent
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_events
     folderName: dis-camp-event
@@ -307,6 +329,7 @@
       pluralName: dis-camp-events
       displayName: DisCampEvent
 - datamodelKey: DisCampFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_footers
     folderName: dis-camp-footer
@@ -321,6 +344,7 @@
       pluralName: dis-camp-footers
       displayName: DisCampFooter
 - datamodelKey: DisCampGroup
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_groups
     folderName: dis-camp-group
@@ -335,6 +359,7 @@
       pluralName: dis-camp-groups
       displayName: DisCampGroup
 - datamodelKey: DisCampMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_menus
     folderName: dis-camp-menu
@@ -349,6 +374,7 @@
       pluralName: dis-camp-menus
       displayName: DisCampMenu
 - datamodelKey: DisCampPerson
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_people
     folderName: dis-camp-person
@@ -363,6 +389,7 @@
       pluralName: dis-camp-persons
       displayName: DisCampPerson
 - datamodelKey: DisCampPersonType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_person_types
     folderName: dis-camp-person-type
@@ -377,6 +404,7 @@
       pluralName: dis-camp-person-types
       displayName: DisCampPersonType
 - datamodelKey: DisCampProject
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_projects
     folderName: dis-camp-project
@@ -391,6 +419,7 @@
       pluralName: dis-camp-projects
       displayName: DisCampProject
 - datamodelKey: DisCampSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dis_camp_supporters
     folderName: dis-camp-supporter
@@ -405,6 +434,7 @@
       pluralName: dis-camp-supporters
       displayName: DisCampSupporter
 - datamodelKey: Domain
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: domains
     folderName: domain
@@ -419,6 +449,7 @@
       pluralName: domains
       displayName: Domain
 - datamodelKey: DumbFolder
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: dumb_folders
     folderName: dumb-folder
@@ -433,6 +464,7 @@
       pluralName: dumb-folders
       displayName: DumbFolder
 - datamodelKey: Event
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: events
     folderName: event
@@ -447,6 +479,7 @@
       pluralName: events
       displayName: Event
 - datamodelKey: EventAccess
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: event_accesses
     folderName: event-access
@@ -461,6 +494,7 @@
       pluralName: event-accesses
       displayName: EventAccess
 - datamodelKey: EventMode
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: event_modes
     folderName: event-mode
@@ -475,6 +509,7 @@
       pluralName: event-modes
       displayName: EventMode
 - datamodelKey: EventType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: event_types
     folderName: event-type
@@ -489,6 +524,7 @@
       pluralName: event-types
       displayName: EventType
 - datamodelKey: EyeColour
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: eye_colours
     folderName: eye-colour
@@ -503,6 +539,7 @@
       pluralName: eye-colours
       displayName: EyeColour
 - datamodelKey: Festival
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: festivals
     folderName: festival
@@ -517,6 +554,7 @@
       pluralName: festivals
       displayName: Festival
 - datamodelKey: FestivalEdition
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: festival_editions
     folderName: festival-edition
@@ -531,6 +569,7 @@
       pluralName: festival-editions
       displayName: FestivalEdition
 - datamodelKey: Film
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: films
     folderName: film
@@ -545,6 +584,7 @@
       pluralName: films
       displayName: Film
 - datamodelKey: FilmikooliArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: filmikooli_articles
     folderName: filmikooli-article
@@ -559,6 +599,7 @@
       pluralName: filmikooli-articles
       displayName: FilmikooliArticle
 - datamodelKey: FilmikooliFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: filmikooli_footers
     folderName: filmikooli-footer
@@ -573,6 +614,7 @@
       pluralName: filmikooli-footers
       displayName: FilmikooliFooter
 - datamodelKey: FilmikooliMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: filmikooli_menus
     folderName: filmikooli-menu
@@ -587,6 +629,7 @@
       pluralName: filmikooli-menus
       displayName: FilmikooliMenu
 - datamodelKey: FilmikooliSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: filmikool_supporters
     folderName: filmikool-supporter
@@ -601,6 +644,7 @@
       pluralName: filmikool-supporters
       displayName: FilmikooliSupporter
 - datamodelKey: Filmography
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: filmographies
     folderName: filmography
@@ -615,6 +659,7 @@
       pluralName: filmographies
       displayName: Filmography
 - datamodelKey: FrontPageCourses
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: front_page_courses
     folderName: front-page-courses
@@ -629,6 +674,7 @@
       pluralName: front-page-courseses
       displayName: FrontPageCourses
 - datamodelKey: Function
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: functions
     folderName: function
@@ -643,6 +689,7 @@
       pluralName: functions
       displayName: Function
 - datamodelKey: Gender
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: genders
     folderName: gender
@@ -657,6 +704,7 @@
       pluralName: genders
       displayName: Gender
 - datamodelKey: HOFFiArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: hof_fi_articles
     folderName: hof-fi-article
@@ -671,6 +719,7 @@
       pluralName: hof-fi-articles
       displayName: HOFFiArticle
 - datamodelKey: HOFFiFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: hof_fi_footers
     folderName: hof-fi-footer
@@ -685,6 +734,7 @@
       pluralName: hof-fi-footers
       displayName: HOFFiFooter
 - datamodelKey: HOFFiMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: hof_fi_menus
     folderName: hof-fi-menu
@@ -699,6 +749,7 @@
       pluralName: hof-fi-menus
       displayName: HOFFiMenu
 - datamodelKey: HOFFiSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: hof_fi_supporters
     folderName: hof-fi-supporter
@@ -713,6 +764,7 @@
       pluralName: hof-fi-supporters
       displayName: HOFFiSupporter
 - datamodelKey: HairColour
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: hair_colours
     folderName: hair-colour
@@ -727,6 +779,7 @@
       pluralName: hair-colours
       displayName: HairColour
 - datamodelKey: HairLength
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: hair_lengths
     folderName: hair-length
@@ -741,6 +794,7 @@
       pluralName: hair-lengths
       displayName: HairLength
 - datamodelKey: Hall
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: halls
     folderName: hall
@@ -755,6 +809,7 @@
       pluralName: halls
       displayName: Hall
 - datamodelKey: HeroArticleBruno
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_bruno
     folderName: hero-article-bruno
@@ -769,6 +824,7 @@
       pluralName: hero-article-brunos
       displayName: HeroArticleBruno
 - datamodelKey: HeroArticleDisCamp
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_dis_camp
     folderName: hero-article-dis-camp
@@ -783,6 +839,7 @@
       pluralName: hero-article-dis-camps
       displayName: HeroArticleDisCamp
 - datamodelKey: HeroArticleFilmikool
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_filmikool
     folderName: hero-article-filmikool
@@ -797,6 +854,7 @@
       pluralName: hero-article-filmikools
       displayName: HeroArticleFilmikool
 - datamodelKey: HeroArticleHoff
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_hoff
     folderName: hero-article-hoff
@@ -811,6 +869,7 @@
       pluralName: hero-article-hoffs
       displayName: HeroArticleHoff
 - datamodelKey: HeroArticleIndustry
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_industry
     folderName: hero-article-industry
@@ -825,6 +884,7 @@
       pluralName: hero-article-industries
       displayName: HeroArticleIndustry
 - datamodelKey: HeroArticleJustFilm
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_just_film
     folderName: hero-article-just-film
@@ -839,6 +899,7 @@
       pluralName: hero-article-just-films
       displayName: HeroArticleJustFilm
 - datamodelKey: HeroArticleKinoff
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_kinoff
     folderName: hero-article-kinoff
@@ -853,6 +914,7 @@
       pluralName: hero-article-kinoffs
       displayName: HeroArticleKinoff
 - datamodelKey: HeroArticleKumu
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_kumu
     folderName: hero-article-kumu
@@ -867,6 +929,7 @@
       pluralName: hero-article-kumus
       displayName: HeroArticleKumu
 - datamodelKey: HeroArticlePoff
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: article_hero
     folderName: article-hero
@@ -881,6 +944,7 @@
       pluralName: article-heros
       displayName: HeroArticlePoff
 - datamodelKey: HeroArticleShorts
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_shorts
     folderName: hero-article-shorts
@@ -895,6 +959,7 @@
       pluralName: hero-article-shortses
       displayName: HeroArticleShorts
 - datamodelKey: HeroArticleTartuff
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: hero_article_tartuff
     folderName: hero-article-tartuff
@@ -909,6 +974,7 @@
       pluralName: hero-article-tartuffs
       displayName: HeroArticleTartuff
 - datamodelKey: IndustryArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_articles
     folderName: industry-article
@@ -923,6 +989,7 @@
       pluralName: industry-articles
       displayName: IndustryArticle
 - datamodelKey: IndustryCategory
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_categories
     folderName: industry-category
@@ -937,6 +1004,7 @@
       pluralName: industry-categories
       displayName: IndustryCategory
 - datamodelKey: IndustryEvent
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_events
     folderName: industry-event
@@ -951,6 +1019,7 @@
       pluralName: industry-events
       displayName: IndustryEvent
 - datamodelKey: IndustryFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_footers
     folderName: industry-footer
@@ -965,6 +1034,7 @@
       pluralName: industry-footers
       displayName: IndustryFooter
 - datamodelKey: IndustryGroup
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_groups
     folderName: industry-group
@@ -979,6 +1049,7 @@
       pluralName: industry-groups
       displayName: IndustryGroup
 - datamodelKey: IndustryMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_menus
     folderName: industry-menu
@@ -993,6 +1064,7 @@
       pluralName: industry-menus
       displayName: IndustryMenu
 - datamodelKey: IndustryPerson
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_people
     folderName: industry-person
@@ -1007,6 +1079,7 @@
       pluralName: industry-persons
       displayName: IndustryPerson
 - datamodelKey: IndustryPersonType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_person_types
     folderName: industry-person-type
@@ -1021,6 +1094,7 @@
       pluralName: industry-person-types
       displayName: IndustryPersonType
 - datamodelKey: IndustryProject
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_projects
     folderName: industry-project
@@ -1035,6 +1109,7 @@
       pluralName: industry-projects
       displayName: IndustryProject
 - datamodelKey: IndustrySupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: industry_supporters
     folderName: industry-supporter
@@ -1049,6 +1124,7 @@
       pluralName: industry-supporters
       displayName: IndustrySupporter
 - datamodelKey: JustFilmFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: just_film_footers
     folderName: just-film-footer
@@ -1063,6 +1139,7 @@
       pluralName: just-film-footers
       displayName: JustFilmFooter
 - datamodelKey: JustFilmiArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: just_filmi_articles
     folderName: just-filmi-article
@@ -1077,6 +1154,7 @@
       pluralName: just-filmi-articles
       displayName: JustFilmiArticle
 - datamodelKey: JustFilmiMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: just_filmi_menus
     folderName: just-filmi-menu
@@ -1091,6 +1169,7 @@
       pluralName: just-filmi-menus
       displayName: JustFilmiMenu
 - datamodelKey: JustSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: supporters_justs
     folderName: supporters-just
@@ -1105,6 +1184,7 @@
       pluralName: supporters-justs
       displayName: JustSupporter
 - datamodelKey: KinoffiArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kinoffi_articles
     folderName: kinoffi-article
@@ -1119,6 +1199,7 @@
       pluralName: kinoffi-articles
       displayName: KinoffiArticle
 - datamodelKey: KinoffiFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kinoffi_footers
     folderName: kinoffi-footer
@@ -1133,6 +1214,7 @@
       pluralName: kinoffi-footers
       displayName: KinoffiFooter
 - datamodelKey: KinoffiMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kinoffi_menus
     folderName: kinoffi-menu
@@ -1147,6 +1229,7 @@
       pluralName: kinoffi-menus
       displayName: KinoffiMenu
 - datamodelKey: KinoffiSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kinoffi_supporters
     folderName: kinoffi-supporter
@@ -1161,6 +1244,7 @@
       pluralName: kinoffi-supporters
       displayName: KinoffiSupporter
 - datamodelKey: KumuArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kumu_articles
     folderName: kumu-article
@@ -1175,6 +1259,7 @@
       pluralName: kumu-articles
       displayName: KumuArticle
 - datamodelKey: KumuFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kumu_footers
     folderName: kumu-footer
@@ -1189,6 +1274,7 @@
       pluralName: kumu-footers
       displayName: KumuFooter
 - datamodelKey: KumuMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kumu_menus
     folderName: kumu-menu
@@ -1203,6 +1289,7 @@
       pluralName: kumu-menus
       displayName: KumuMenu
 - datamodelKey: KumuSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: kumu_supporters
     folderName: kumu-supporter
@@ -1217,6 +1304,7 @@
       pluralName: kumu-supporters
       displayName: KumuSupporter
 - datamodelKey: L1MenuIndustry
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: l_1_menu_industries
     folderName: l1-menu-industry
@@ -1231,6 +1319,7 @@
       pluralName: l1-menu-industries
       displayName: L1MenuIndustry
 - datamodelKey: L1MenuKumu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: l_1_menu_kumus
     folderName: l1-menu-kumu
@@ -1245,6 +1334,7 @@
       pluralName: l1-menu-kumus
       displayName: L1MenuKumu
 - datamodelKey: LabelGroup
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: label_groups
     folderName: label-group
@@ -1259,6 +1349,7 @@
       pluralName: label-groups
       displayName: LabelGroup
 - datamodelKey: Language
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: languages
     folderName: language
@@ -1273,6 +1364,7 @@
       pluralName: languages
       displayName: Language
 - datamodelKey: Location
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: locations
     folderName: location
@@ -1287,6 +1379,7 @@
       pluralName: locations
       displayName: Location
 - datamodelKey: Municipality
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: populated_places
     folderName: populated-place
@@ -1301,6 +1394,7 @@
       pluralName: populated-places
       displayName: Municipality
 - datamodelKey: Organisation
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: organisations
     folderName: organisation
@@ -1315,6 +1409,7 @@
       pluralName: organisations
       displayName: Organisation
 - datamodelKey: Origin
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: origins
     folderName: origin
@@ -1329,6 +1424,7 @@
       pluralName: origins
       displayName: Origin
 - datamodelKey: POFFiArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: pof_fi_articles
     folderName: pof-fi-article
@@ -1343,6 +1439,7 @@
       pluralName: pof-fi-articles
       displayName: POFFiArticle
 - datamodelKey: POFFiFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: pof_fi_footers
     folderName: pof-fi-footer
@@ -1357,6 +1454,7 @@
       pluralName: pof-fi-footers
       displayName: POFFiFooter
 - datamodelKey: POFFiMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: pof_fi_menus
     folderName: pof-fi-menu
@@ -1371,6 +1469,7 @@
       pluralName: pof-fi-menus
       displayName: POFFiMenu
 - datamodelKey: POFFiSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: supporters_pages
     folderName: supporters-page
@@ -1385,6 +1484,7 @@
       pluralName: supporters-pages
       displayName: POFFiSupporter
 - datamodelKey: PatternCollection
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: pattern_collections
     folderName: pattern-collections
@@ -1399,6 +1499,7 @@
       pluralName: pattern-collectionses
       displayName: PatternCollection
 - datamodelKey: Person
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: people
     folderName: person
@@ -1413,6 +1514,7 @@
       pluralName: persons
       displayName: Person
 - datamodelKey: PitchOfVoice
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: pitch_of_voices
     folderName: pitch-of-voice
@@ -1427,6 +1529,7 @@
       pluralName: pitch-of-voices
       displayName: PitchOfVoice
 - datamodelKey: Product
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: product
     folderName: product
@@ -1441,6 +1544,7 @@
       pluralName: products
       displayName: Product
 - datamodelKey: ProductType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: product_types
     folderName: product-type
@@ -1455,6 +1559,7 @@
       pluralName: product-types
       displayName: ProductType
 - datamodelKey: Product_Category
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: product_categories
     folderName: product-category
@@ -1469,6 +1574,7 @@
       pluralName: product-categories
       displayName: Product_Category
 - datamodelKey: Programme
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: programmes
     folderName: programme
@@ -1483,6 +1589,7 @@
       pluralName: programmes
       displayName: Programme
 - datamodelKey: ProjectStatus
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: project_statuses
     folderName: project-status
@@ -1497,6 +1604,7 @@
       pluralName: project-statuses
       displayName: ProjectStatus
 - datamodelKey: ProjectType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: project_types
     folderName: project-type
@@ -1511,6 +1619,7 @@
       pluralName: project-types
       displayName: ProjectType
 - datamodelKey: RoleAtFilm
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: role_at_films
     folderName: role-at-film
@@ -1525,6 +1634,7 @@
       pluralName: role-at-films
       displayName: RoleAtFilm
 - datamodelKey: Screening
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: screenings
     folderName: screening
@@ -1539,6 +1649,7 @@
       pluralName: screenings
       displayName: Screening
 - datamodelKey: ScreeningType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: screening_types
     folderName: screening-type
@@ -1553,6 +1664,7 @@
       pluralName: screening-types
       displayName: ScreeningType
 - datamodelKey: ShoeSize
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: shoe_sizes
     folderName: shoe-size
@@ -1567,6 +1679,7 @@
       pluralName: shoe-sizes
       displayName: ShoeSize
 - datamodelKey: Shop
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: shops
     folderName: shop
@@ -1581,6 +1694,7 @@
       pluralName: shops
       displayName: Shop
 - datamodelKey: ShortsSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: supporters_shorts
     folderName: supporters-shorts
@@ -1595,6 +1709,7 @@
       pluralName: supporters-shortses
       displayName: ShortsSupporter
 - datamodelKey: ShortsiArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: shortsi_articles
     folderName: shortsi-article
@@ -1609,6 +1724,7 @@
       pluralName: shortsi-articles
       displayName: ShortsiArticle
 - datamodelKey: ShortsiFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: shortsi_footers
     folderName: shortsi-footer
@@ -1623,6 +1739,7 @@
       pluralName: shortsi-footers
       displayName: ShortsiFooter
 - datamodelKey: ShortsiMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: shortsi_menus
     folderName: shortsi-menu
@@ -1637,6 +1754,7 @@
       pluralName: shortsi-menus
       displayName: ShortsiMenu
 - datamodelKey: SixFilms
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: six_films
     folderName: six-films
@@ -1651,6 +1769,7 @@
       pluralName: six-filmses
       displayName: SixFilms
 - datamodelKey: SmartFolder
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: smart_folders
     folderName: smart-folder
@@ -1665,6 +1784,7 @@
       pluralName: smart-folders
       displayName: SmartFolder
 - datamodelKey: Stature
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: statures
     folderName: stature
@@ -1679,6 +1799,7 @@
       pluralName: statures
       displayName: Stature
 - datamodelKey: TagAgeRestriction
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: age_restrictions
     folderName: age-restriction
@@ -1693,6 +1814,7 @@
       pluralName: age-restrictions
       displayName: TagAgeRestriction
 - datamodelKey: TagCategory
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_categories
     folderName: tag-category
@@ -1707,6 +1829,7 @@
       pluralName: tag-categories
       displayName: TagCategory
 - datamodelKey: TagFilmType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_film_types
     folderName: tag-film-type
@@ -1721,6 +1844,7 @@
       pluralName: tag-film-types
       displayName: TagFilmType
 - datamodelKey: TagGenre
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_genres
     folderName: tag-genre
@@ -1735,6 +1859,7 @@
       pluralName: tag-genres
       displayName: TagGenre
 - datamodelKey: TagKeyword
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_keywords
     folderName: tag-keyword
@@ -1749,6 +1874,7 @@
       pluralName: tag-keywords
       displayName: TagKeyword
 - datamodelKey: TagLocation
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_locations
     folderName: tag-location
@@ -1763,6 +1889,7 @@
       pluralName: tag-locations
       displayName: TagLocation
 - datamodelKey: TagLookingFor
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_looking_fors
     folderName: tag-looking-for
@@ -1777,6 +1904,7 @@
       pluralName: tag-looking-fors
       displayName: TagLookingFor
 - datamodelKey: TagPremiereType
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_premiere_types
     folderName: tag-premiere-type
@@ -1791,6 +1919,7 @@
       pluralName: tag-premiere-types
       displayName: TagPremiereType
 - datamodelKey: TagSecret
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tag_secrets
     folderName: tag-secret
@@ -1805,6 +1934,7 @@
       pluralName: tag-secrets
       displayName: TagSecret
 - datamodelKey: TagTriggerWarning
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: trigger_warnings
     folderName: trigger-warning
@@ -1819,6 +1949,7 @@
       pluralName: trigger-warnings
       displayName: TagTriggerWarning
 - datamodelKey: TartuffiArticle
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tartuffi_articles
     folderName: tartuffi-article
@@ -1833,6 +1964,7 @@
       pluralName: tartuffi-articles
       displayName: TartuffiArticle
 - datamodelKey: TartuffiFooter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tartuffi_footers
     folderName: tartuffi-footer
@@ -1847,6 +1979,7 @@
       pluralName: tartuffi-footers
       displayName: TartuffiFooter
 - datamodelKey: TartuffiMenu
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tartuffi_menus
     folderName: tartuffi-menu
@@ -1861,6 +1994,7 @@
       pluralName: tartuffi-menus
       displayName: TartuffiMenu
 - datamodelKey: TartuffiSupporter
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: tartuffi_supporters
     folderName: tartuffi-supporter
@@ -1875,6 +2009,7 @@
       pluralName: tartuffi-supporters
       displayName: TartuffiSupporter
 - datamodelKey: Team
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: teams
     folderName: team
@@ -1889,6 +2024,7 @@
       pluralName: teams
       displayName: Team
 - datamodelKey: TimeUnits
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: time_units
     folderName: time-units
@@ -1903,6 +2039,7 @@
       pluralName: time-unitses
       displayName: TimeUnits
 - datamodelKey: Town
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: towns
     folderName: town
@@ -1917,6 +2054,7 @@
       pluralName: towns
       displayName: Town
 - datamodelKey: Transaction
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: transactions
     folderName: transaction
@@ -1931,6 +2069,7 @@
       pluralName: transactions
       displayName: Transaction
 - datamodelKey: TransactionProduct
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: transactions_products
     folderName: transactions-products
@@ -1945,6 +2084,7 @@
       pluralName: transactions-productses
       displayName: TransactionProduct
 - datamodelKey: TrioBruno
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_bruno
     folderName: trio-bruno
@@ -1959,6 +2099,7 @@
       pluralName: trio-brunos
       displayName: TrioBruno
 - datamodelKey: TrioDisCamp
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_dis_camp
     folderName: trio-dis-camp
@@ -1973,6 +2114,7 @@
       pluralName: trio-dis-camps
       displayName: TrioDisCamp
 - datamodelKey: TrioFilmikool
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_filmikool
     folderName: trio-filmikool
@@ -1987,6 +2129,7 @@
       pluralName: trio-filmikools
       displayName: TrioFilmikool
 - datamodelKey: TrioHOFF
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_hoff
     folderName: trio-hoff
@@ -2001,6 +2144,7 @@
       pluralName: trio-hoffs
       displayName: TrioHOFF
 - datamodelKey: TrioIndustry
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_industry
     folderName: trio-industry
@@ -2015,6 +2159,7 @@
       pluralName: trio-industries
       displayName: TrioIndustry
 - datamodelKey: TrioJustFilm
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_just_film
     folderName: trio-just-film
@@ -2029,6 +2174,7 @@
       pluralName: trio-just-films
       displayName: TrioJustFilm
 - datamodelKey: TrioKinoff
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_kinoff
     folderName: trio-kinoff
@@ -2043,6 +2189,7 @@
       pluralName: trio-kinoffs
       displayName: TrioKinoff
 - datamodelKey: TrioKumu
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_kumu
     folderName: trio-kumu
@@ -2057,6 +2204,7 @@
       pluralName: trio-kumus
       displayName: TrioKumu
 - datamodelKey: TrioPOFF
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_p_oe_ff
     folderName: trio-p-oe-ff
@@ -2071,6 +2219,7 @@
       pluralName: trio-p-oe-ffs
       displayName: TrioPOFF
 - datamodelKey: TrioShorts
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_shorts
     folderName: trio-shorts
@@ -2085,6 +2234,7 @@
       pluralName: trio-shortses
       displayName: TrioShorts
 - datamodelKey: TrioTartuff
+  kind: singleType
   s3:
     collectionNameFromDatamodelPath: trio_tartuff
     folderName: trio-tartuff
@@ -2099,6 +2249,7 @@
       pluralName: trio-tartuffs
       displayName: TrioTartuff
 - datamodelKey: TypeOfWork
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: type_of_works
     folderName: type-of-work
@@ -2113,6 +2264,7 @@
       pluralName: type-of-works
       displayName: TypeOfWork
 - datamodelKey: UserProfile
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: user_profiles
     folderName: user-profiles
@@ -2127,6 +2279,7 @@
       pluralName: user-profileses
       displayName: UserProfile
 - datamodelKey: UserRole
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: user_roles
     folderName: user-role
@@ -2141,6 +2294,7 @@
       pluralName: user-roles
       displayName: UserRole
 - datamodelKey: WebAuthor
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: web_authors
     folderName: web-author
@@ -2155,6 +2309,7 @@
       pluralName: web-authors
       displayName: WebAuthor
 - datamodelKey: WebPermission
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: web_permissions
     folderName: web-permission
@@ -2169,6 +2324,7 @@
       pluralName: web-permissions
       displayName: WebPermission
 - datamodelKey: WebRole
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: web_roles
     folderName: web-role
@@ -2183,6 +2339,7 @@
       pluralName: web-roles
       displayName: WebRole
 - datamodelKey: WebUser
+  kind: collectionType
   s3:
     collectionNameFromDatamodelPath: web_users
     folderName: web-user

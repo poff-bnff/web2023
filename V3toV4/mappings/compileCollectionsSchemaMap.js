@@ -49,6 +49,7 @@ const relevantCollectionTypes = Object.keys(datamodel)
     const collectionName = s3DatamodelPathToCollectionName(item.model._path)
     return {
       datamodelKey: item.key,
+      kind: 'placeholder',
       s3: {
         collectionNameFromDatamodelPath: collectionName
       },
@@ -87,6 +88,7 @@ V3CollectionTypes.forEach(item => {
     .find(collType => matchCollectionType(collType, item))
   // console.log(`INFO 1.1: Found collection type ${item.collectionName} as relevant: ${relevantCollection !== undefined}`)
   delete relevantCollection.isFound
+  relevantCollection.kind = item.kind
   relevantCollection.s3.folderName = item.folderName
   relevantCollection.s3.apiPath = item.s3ApiPath
   relevantCollection.s3.infoName = item.info.name
@@ -126,13 +128,14 @@ relevantCollectionTypes.forEach(item => {
     }
   }
 })
-fs.writeFileSync(path.join(__dirname, 'V3V4map-generated.json'), JSON.stringify(relevantCollectionTypes, null, 2))
+fs.writeFileSync(path.join(__dirname, 'V3V4collectionsMap-generated.json'), JSON.stringify(relevantCollectionTypes, null, 2))
 // also in yaml
-fs.writeFileSync(path.join(__dirname, 'V3V4map-generated.yaml'), yaml.dump(relevantCollectionTypes))
+fs.writeFileSync(path.join(__dirname, 'V3V4collectionsMap-generated.yaml'), yaml.dump(relevantCollectionTypes))
 // also in CSV
 const flatModel = relevantCollectionTypes.map(item => {
   return {
     datamodelKey: item.datamodelKey,
+    kind: item.kind,
     's3.folderName': item.s3.folderName,
     's3.apiPath': item.s3.apiPath,
     's3.collectionName': item.s3.collectionName,
@@ -147,9 +150,10 @@ const flatModel = relevantCollectionTypes.map(item => {
 
 const csv = require('csv-writer').createObjectCsvWriter;
 const csvWriter = csv({
-  path: path.join(__dirname, 'V3V4map-generated.csv'),
+  path: path.join(__dirname, 'V3V4collectionsMap-generated.csv'),
   header: [
     { id: 'datamodelKey', title: 'datamodelKey' },
+    { id: 'kind', title: 'kind' },
     { id: 's3.folderName', title: 's3.folderName' },
     { id: 's3.apiPath', title: 's3.apiPath' },
     { id: 's3.collectionName', title: 's3.collectionName' },

@@ -2,11 +2,10 @@
   {
     "datamodelKey": "Address",
     "s3": {
-      "collectionNameFromDatamodelPath": "addresses",
       "folderName": "address",
       "apiPath": "/addresses",
-      "infoName": "address",
-      "collectionName": "addresses"
+      "collectionName": "addresses",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/addresses",
@@ -21,11 +20,10 @@
   {
     "datamodelKey": "ArticleType",
     "s3": {
-      "collectionNameFromDatamodelPath": "article_types",
       "folderName": "article-type",
       "apiPath": "/article-types",
-      "infoName": "ArticleType",
-      "collectionName": "article_types"
+      "collectionName": "article_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/article-types",
@@ -33,18 +31,17 @@
       "info": {
         "singularName": "article-type",
         "pluralName": "article-types",
-        "displayName": "ArticleType"
+        "displayName": "Article Type"
       }
     }
   },
   {
     "datamodelKey": "Award",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_awards",
       "folderName": "industry-award",
       "apiPath": "/industry-awards",
-      "infoName": "Award",
-      "collectionName": "industry_awards"
+      "collectionName": "industry_awards",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-awards",
@@ -59,11 +56,10 @@
   {
     "datamodelKey": "Awarding",
     "s3": {
-      "collectionNameFromDatamodelPath": "awardings",
       "folderName": "awarding",
       "apiPath": "/awardings",
-      "infoName": "Awarding",
-      "collectionName": "awardings"
+      "collectionName": "awardings",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/awardings",
@@ -78,11 +74,10 @@
   {
     "datamodelKey": "BannerGroup",
     "s3": {
-      "collectionNameFromDatamodelPath": "banner",
       "folderName": "banner",
       "apiPath": "/banners",
-      "infoName": "BannerGroup",
-      "collectionName": "banners"
+      "collectionName": "banners",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/banners",
@@ -90,18 +85,17 @@
       "info": {
         "singularName": "banner",
         "pluralName": "banners",
-        "displayName": "BannerGroup"
+        "displayName": "Banner Group"
       }
     }
   },
   {
     "datamodelKey": "BrunoArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "bruno_articles",
       "folderName": "bruno-article",
       "apiPath": "/bruno-articles",
-      "infoName": "Bruno_Article",
-      "collectionName": "bruno_articles"
+      "collectionName": "bruno_articles",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/bruno-articles",
@@ -109,18 +103,17 @@
       "info": {
         "singularName": "bruno-article",
         "pluralName": "bruno-articles",
-        "displayName": "BrunoArticle"
+        "displayName": "Bruno Article"
       }
     }
   },
   {
     "datamodelKey": "BrunoFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "bruno_footers",
       "folderName": "bruno-footer",
       "apiPath": "/bruno-footers",
-      "infoName": "Bruno_Footer",
-      "collectionName": "bruno_footers"
+      "collectionName": "bruno_footers",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/bruno-footers",
@@ -128,18 +121,17 @@
       "info": {
         "singularName": "bruno-footer",
         "pluralName": "bruno-footers",
-        "displayName": "BrunoFooter"
+        "displayName": "Bruno Footer"
       }
     }
   },
   {
     "datamodelKey": "BrunoMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "bruno_menus",
       "folderName": "bruno-menu",
       "apiPath": "/bruno-menus",
-      "infoName": "Bruno_Menu",
-      "collectionName": "bruno_menus"
+      "collectionName": "bruno_menus",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/bruno-menus",
@@ -147,18 +139,17 @@
       "info": {
         "singularName": "bruno-menu",
         "pluralName": "bruno-menus",
-        "displayName": "BrunoMenu"
+        "displayName": "Bruno Menu"
       }
     }
   },
   {
     "datamodelKey": "BrunoSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "bruno_supporters",
       "folderName": "bruno-supporter",
       "apiPath": "/bruno-supporters",
-      "infoName": "Bruno_Supporter",
-      "collectionName": "bruno_supporters"
+      "collectionName": "bruno_supporters",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/bruno-supporters",
@@ -166,18 +157,17 @@
       "info": {
         "singularName": "bruno-supporter",
         "pluralName": "bruno-supporters",
-        "displayName": "BrunoSupporter"
+        "displayName": "Bruno Supporter"
       }
     }
   },
   {
     "datamodelKey": "BusinessProfile",
     "s3": {
-      "collectionNameFromDatamodelPath": "business_profiles",
       "folderName": "business-profile",
       "apiPath": "/business-profiles",
-      "infoName": "BusinessProfile",
-      "collectionName": "business_profiles"
+      "collectionName": "business_profiles",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/business-profiles",
@@ -185,18 +175,17 @@
       "info": {
         "singularName": "business-profile",
         "pluralName": "business-profiles",
-        "displayName": "BusinessProfile"
+        "displayName": "Business Profile"
       }
     }
   },
   {
     "datamodelKey": "Cassette",
     "s3": {
-      "collectionNameFromDatamodelPath": "cassettes",
       "folderName": "cassette",
       "apiPath": "/cassettes",
-      "infoName": "Cassette",
-      "collectionName": "cassettes"
+      "collectionName": "cassettes",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/cassettes",
@@ -211,11 +200,10 @@
   {
     "datamodelKey": "Channel",
     "s3": {
-      "collectionNameFromDatamodelPath": "channels",
       "folderName": "channel",
       "apiPath": "/channels",
-      "infoName": "Channel",
-      "collectionName": "channels"
+      "collectionName": "channels",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/channels",
@@ -230,11 +218,10 @@
   {
     "datamodelKey": "Cinema",
     "s3": {
-      "collectionNameFromDatamodelPath": "cinemas",
       "folderName": "cinema",
       "apiPath": "/cinemas",
-      "infoName": "Cinema",
-      "collectionName": "cinemas"
+      "collectionName": "cinemas",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/cinemas",
@@ -249,11 +236,10 @@
   {
     "datamodelKey": "Country",
     "s3": {
-      "collectionNameFromDatamodelPath": "countries",
       "folderName": "country",
       "apiPath": "/countries",
-      "infoName": "Country",
-      "collectionName": "countries"
+      "collectionName": "countries",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/countries",
@@ -268,11 +254,10 @@
   {
     "datamodelKey": "County",
     "s3": {
-      "collectionNameFromDatamodelPath": "counties",
       "folderName": "county",
       "apiPath": "/counties",
-      "infoName": "County",
-      "collectionName": "counties"
+      "collectionName": "counties",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/counties",
@@ -287,11 +272,10 @@
   {
     "datamodelKey": "Course",
     "s3": {
-      "collectionNameFromDatamodelPath": "courses",
       "folderName": "course",
       "apiPath": "/courses",
-      "infoName": "Course",
-      "collectionName": "courses"
+      "collectionName": "courses",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/courses",
@@ -306,11 +290,10 @@
   {
     "datamodelKey": "CourseEvent",
     "s3": {
-      "collectionNameFromDatamodelPath": "course_events",
       "folderName": "course-event",
       "apiPath": "/course-events",
-      "infoName": "CourseEvent",
-      "collectionName": "course_events"
+      "collectionName": "course_events",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/course-events",
@@ -318,18 +301,17 @@
       "info": {
         "singularName": "course-event",
         "pluralName": "course-events",
-        "displayName": "CourseEvent"
+        "displayName": "Course Event"
       }
     }
   },
   {
     "datamodelKey": "Delivery",
     "s3": {
-      "collectionNameFromDatamodelPath": "deliveries",
       "folderName": "delivery",
       "apiPath": "/deliveries",
-      "infoName": "Delivery",
-      "collectionName": "deliveries"
+      "collectionName": "deliveries",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/deliveries",
@@ -344,11 +326,10 @@
   {
     "datamodelKey": "DeliveryType",
     "s3": {
-      "collectionNameFromDatamodelPath": "delivery_types",
       "folderName": "delivery-type",
       "apiPath": "/delivery-types",
-      "infoName": "DeliveryType",
-      "collectionName": "delivery_types"
+      "collectionName": "delivery_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/delivery-types",
@@ -356,212 +337,201 @@
       "info": {
         "singularName": "delivery-type",
         "pluralName": "delivery-types",
-        "displayName": "DeliveryType"
+        "displayName": "Delivery Type"
       }
     }
   },
   {
     "datamodelKey": "DisCampArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_articles",
       "folderName": "dis-camp-article",
       "apiPath": "/dis-camp-articles",
-      "infoName": "DisCampArticle",
-      "collectionName": "dis_camp_articles"
+      "collectionName": "dis_camp_articles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-articles",
-      "collectionName": "dis_camp_articles",
+      "apiPath": "/api/discamp-articles",
+      "collectionName": "discamp_articles",
       "info": {
-        "singularName": "dis-camp-article",
-        "pluralName": "dis-camp-articles",
-        "displayName": "DisCampArticle"
+        "singularName": "discamp-article",
+        "pluralName": "discamp-articles",
+        "displayName": "DisCamp Article"
       }
     }
   },
   {
     "datamodelKey": "DisCampCategory",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_categories",
       "folderName": "dis-camp-category",
       "apiPath": "/dis-camp-categories",
-      "infoName": "DisCampCategory",
-      "collectionName": "dis_camp_categories"
+      "collectionName": "dis_camp_categories",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-categories",
-      "collectionName": "dis_camp_categories",
+      "apiPath": "/api/discamp-categories",
+      "collectionName": "discamp_categories",
       "info": {
-        "singularName": "dis-camp-category",
-        "pluralName": "dis-camp-categories",
-        "displayName": "DisCampCategory"
+        "singularName": "discamp-category",
+        "pluralName": "discamp-categories",
+        "displayName": "DisCamp Category"
       }
     }
   },
   {
     "datamodelKey": "DisCampEvent",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_events",
       "folderName": "dis-camp-event",
       "apiPath": "/dis-camp-events",
-      "infoName": "DisCampEvent",
-      "collectionName": "dis_camp_events"
+      "collectionName": "dis_camp_events",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-events",
-      "collectionName": "dis_camp_events",
+      "apiPath": "/api/discamp-events",
+      "collectionName": "discamp_events",
       "info": {
-        "singularName": "dis-camp-event",
-        "pluralName": "dis-camp-events",
-        "displayName": "DisCampEvent"
+        "singularName": "discamp-event",
+        "pluralName": "discamp-events",
+        "displayName": "DisCamp Event"
       }
     }
   },
   {
     "datamodelKey": "DisCampFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_footers",
       "folderName": "dis-camp-footer",
       "apiPath": "/dis-camp-footers",
-      "infoName": "DisCampFooter",
-      "collectionName": "dis_camp_footers"
+      "collectionName": "dis_camp_footers",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-footers",
-      "collectionName": "dis_camp_footers",
+      "apiPath": "/api/discamp-footers",
+      "collectionName": "discamp_footers",
       "info": {
-        "singularName": "dis-camp-footer",
-        "pluralName": "dis-camp-footers",
-        "displayName": "DisCampFooter"
+        "singularName": "discamp-footer",
+        "pluralName": "discamp-footers",
+        "displayName": "DisCamp Footer"
       }
     }
   },
   {
     "datamodelKey": "DisCampGroup",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_groups",
       "folderName": "dis-camp-group",
       "apiPath": "/dis-camp-groups",
-      "infoName": "DisCampGroup",
-      "collectionName": "dis_camp_groups"
+      "collectionName": "dis_camp_groups",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-groups",
-      "collectionName": "dis_camp_groups",
+      "apiPath": "/api/discamp-groups",
+      "collectionName": "discamp_groups",
       "info": {
-        "singularName": "dis-camp-group",
-        "pluralName": "dis-camp-groups",
-        "displayName": "DisCampGroup"
+        "singularName": "discamp-group",
+        "pluralName": "discamp-groups",
+        "displayName": "DisCamp Group"
       }
     }
   },
   {
     "datamodelKey": "DisCampMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_menus",
       "folderName": "dis-camp-menu",
       "apiPath": "/dis-camp-menus",
-      "infoName": "DisCampMenu",
-      "collectionName": "dis_camp_menus"
+      "collectionName": "dis_camp_menus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-menus",
-      "collectionName": "dis_camp_menus",
+      "apiPath": "/api/discamp-menus",
+      "collectionName": "discamp_menus",
       "info": {
-        "singularName": "dis-camp-menu",
-        "pluralName": "dis-camp-menus",
-        "displayName": "DisCampMenu"
+        "singularName": "discamp-menu",
+        "pluralName": "discamp-menus",
+        "displayName": "DisCamp Menu"
       }
     }
   },
   {
     "datamodelKey": "DisCampPerson",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_people",
       "folderName": "dis-camp-person",
       "apiPath": "/dis-camp-people",
-      "infoName": "DisCampPerson",
-      "collectionName": "dis_camp_people"
+      "collectionName": "dis_camp_people",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-persons",
-      "collectionName": "dis_camp_people",
+      "apiPath": "/api/discamp-persons",
+      "collectionName": "discamp_people",
       "info": {
-        "singularName": "dis-camp-person",
-        "pluralName": "dis-camp-persons",
-        "displayName": "DisCampPerson"
+        "singularName": "discamp-person",
+        "pluralName": "discamp-persons",
+        "displayName": "DisCamp Person"
       }
     }
   },
   {
     "datamodelKey": "DisCampPersonType",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_person_types",
       "folderName": "dis-camp-person-type",
       "apiPath": "/dis-camp-person-types",
-      "infoName": "DisCampPersonType",
-      "collectionName": "dis_camp_person_types"
+      "collectionName": "dis_camp_person_types",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-person-types",
-      "collectionName": "dis_camp_person_types",
+      "apiPath": "/api/discamp-person-types",
+      "collectionName": "discamp_person_types",
       "info": {
-        "singularName": "dis-camp-person-type",
-        "pluralName": "dis-camp-person-types",
-        "displayName": "DisCampPersonType"
+        "singularName": "discamp-person-type",
+        "pluralName": "discamp-person-types",
+        "displayName": "DisCamp Person Type"
       }
     }
   },
   {
     "datamodelKey": "DisCampProject",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_projects",
       "folderName": "dis-camp-project",
       "apiPath": "/dis-camp-projects",
-      "infoName": "DisCampProject",
-      "collectionName": "dis_camp_projects"
+      "collectionName": "dis_camp_projects",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-projects",
-      "collectionName": "dis_camp_projects",
+      "apiPath": "/api/discamp-projects",
+      "collectionName": "discamp_projects",
       "info": {
-        "singularName": "dis-camp-project",
-        "pluralName": "dis-camp-projects",
-        "displayName": "DisCampProject"
+        "singularName": "discamp-project",
+        "pluralName": "discamp-projects",
+        "displayName": "DisCamp Project"
       }
     }
   },
   {
     "datamodelKey": "DisCampSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "dis_camp_supporters",
       "folderName": "dis-camp-supporter",
       "apiPath": "/dis-camp-supporters",
-      "infoName": "DisCampSupporter",
-      "collectionName": "dis_camp_supporters"
+      "collectionName": "dis_camp_supporters",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/dis-camp-supporters",
-      "collectionName": "dis_camp_supporters",
+      "apiPath": "/api/discamp-supporters",
+      "collectionName": "discamp_supporters",
       "info": {
-        "singularName": "dis-camp-supporter",
-        "pluralName": "dis-camp-supporters",
-        "displayName": "DisCampSupporter"
+        "singularName": "discamp-supporter",
+        "pluralName": "discamp-supporters",
+        "displayName": "DisCamp Supporter"
       }
     }
   },
   {
     "datamodelKey": "Domain",
     "s3": {
-      "collectionNameFromDatamodelPath": "domains",
       "folderName": "domain",
       "apiPath": "/domains",
-      "infoName": "Domain",
-      "collectionName": "Domeen"
+      "collectionName": "Domeen",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/domains",
-      "collectionName": "Domeen",
+      "collectionName": "domains",
       "info": {
         "singularName": "domain",
         "pluralName": "domains",
@@ -572,11 +542,10 @@
   {
     "datamodelKey": "DumbFolder",
     "s3": {
-      "collectionNameFromDatamodelPath": "dumb_folders",
       "folderName": "dumb-folder",
       "apiPath": "/dumb-folders",
-      "infoName": "DumbFolder",
-      "collectionName": "dumb_folders"
+      "collectionName": "dumb_folders",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/dumb-folders",
@@ -584,18 +553,17 @@
       "info": {
         "singularName": "dumb-folder",
         "pluralName": "dumb-folders",
-        "displayName": "DumbFolder"
+        "displayName": "Dumb Folder"
       }
     }
   },
   {
     "datamodelKey": "Event",
     "s3": {
-      "collectionNameFromDatamodelPath": "events",
       "folderName": "event",
       "apiPath": "/events",
-      "infoName": "Event",
-      "collectionName": "events"
+      "collectionName": "events",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/events",
@@ -610,11 +578,10 @@
   {
     "datamodelKey": "EventAccess",
     "s3": {
-      "collectionNameFromDatamodelPath": "event_accesses",
       "folderName": "event-access",
       "apiPath": "/event-accesses",
-      "infoName": "EventAccess",
-      "collectionName": "event_accesses"
+      "collectionName": "event_accesses",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/event-accesses",
@@ -622,18 +589,17 @@
       "info": {
         "singularName": "event-access",
         "pluralName": "event-accesses",
-        "displayName": "EventAccess"
+        "displayName": "Event Access"
       }
     }
   },
   {
     "datamodelKey": "EventMode",
     "s3": {
-      "collectionNameFromDatamodelPath": "event_modes",
       "folderName": "event-mode",
       "apiPath": "/event-modes",
-      "infoName": "EventMode",
-      "collectionName": "event_modes"
+      "collectionName": "event_modes",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/event-modes",
@@ -641,18 +607,17 @@
       "info": {
         "singularName": "event-mode",
         "pluralName": "event-modes",
-        "displayName": "EventMode"
+        "displayName": "Event Mode"
       }
     }
   },
   {
     "datamodelKey": "EventType",
     "s3": {
-      "collectionNameFromDatamodelPath": "event_types",
       "folderName": "event-type",
       "apiPath": "/event-types",
-      "infoName": "EventType",
-      "collectionName": "event_types"
+      "collectionName": "event_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/event-types",
@@ -660,18 +625,17 @@
       "info": {
         "singularName": "event-type",
         "pluralName": "event-types",
-        "displayName": "EventType"
+        "displayName": "Event Type"
       }
     }
   },
   {
     "datamodelKey": "EyeColour",
     "s3": {
-      "collectionNameFromDatamodelPath": "eye_colours",
       "folderName": "eye-colour",
       "apiPath": "/eye-colours",
-      "infoName": "EyeColour",
-      "collectionName": "eye_colours"
+      "collectionName": "eye_colours",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/eye-colours",
@@ -679,22 +643,21 @@
       "info": {
         "singularName": "eye-colour",
         "pluralName": "eye-colours",
-        "displayName": "EyeColour"
+        "displayName": "Eye Colour"
       }
     }
   },
   {
     "datamodelKey": "Festival",
     "s3": {
-      "collectionNameFromDatamodelPath": "festivals",
       "folderName": "festival",
       "apiPath": "/festivals",
-      "infoName": "Festival",
-      "collectionName": "FestivalCollectionName"
+      "collectionName": "FestivalCollectionName",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/festivals",
-      "collectionName": "FestivalCollectionName",
+      "collectionName": "festivals",
       "info": {
         "singularName": "festival",
         "pluralName": "festivals",
@@ -705,30 +668,28 @@
   {
     "datamodelKey": "FestivalEdition",
     "s3": {
-      "collectionNameFromDatamodelPath": "festival_editions",
       "folderName": "festival-edition",
       "apiPath": "/festival-editions",
-      "infoName": "FestivalEdition",
-      "collectionName": "Edition"
+      "collectionName": "Edition",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/festival-editions",
-      "collectionName": "Edition",
+      "collectionName": "festival_editions",
       "info": {
         "singularName": "festival-edition",
         "pluralName": "festival-editions",
-        "displayName": "FestivalEdition"
+        "displayName": "Festival Edition"
       }
     }
   },
   {
     "datamodelKey": "Film",
     "s3": {
-      "collectionNameFromDatamodelPath": "films",
       "folderName": "film",
       "apiPath": "/films",
-      "infoName": "Film",
-      "collectionName": "films"
+      "collectionName": "films",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/films",
@@ -743,68 +704,64 @@
   {
     "datamodelKey": "FilmikooliArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "filmikooli_articles",
       "folderName": "filmikooli-article",
       "apiPath": "/filmikooli-articles",
-      "infoName": "Filmikooli_Article",
-      "collectionName": "filmikooli_articles"
+      "collectionName": "filmikooli_articles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/filmikooli-articles",
-      "collectionName": "filmikooli_articles",
+      "apiPath": "/api/filmikool-articles",
+      "collectionName": "filmikool_articles",
       "info": {
-        "singularName": "filmikooli-article",
-        "pluralName": "filmikooli-articles",
-        "displayName": "FilmikooliArticle"
+        "singularName": "filmikool-article",
+        "pluralName": "filmikool-articles",
+        "displayName": "Filmikool Article"
       }
     }
   },
   {
     "datamodelKey": "FilmikooliFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "filmikooli_footers",
       "folderName": "filmikooli-footer",
       "apiPath": "/filmikooli-footers",
-      "infoName": "Filmikooli_Footer",
-      "collectionName": "filmikooli_footers"
+      "collectionName": "filmikooli_footers",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/filmikooli-footers",
-      "collectionName": "filmikooli_footers",
+      "apiPath": "/api/filmikool-footers",
+      "collectionName": "filmikool_footers",
       "info": {
-        "singularName": "filmikooli-footer",
-        "pluralName": "filmikooli-footers",
-        "displayName": "FilmikooliFooter"
+        "singularName": "filmikool-footer",
+        "pluralName": "filmikool-footers",
+        "displayName": "Filmikool Footer"
       }
     }
   },
   {
     "datamodelKey": "FilmikooliMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "filmikooli_menus",
       "folderName": "filmikooli-menu",
       "apiPath": "/filmikooli-menus",
-      "infoName": "Filmikooli_Menu",
-      "collectionName": "filmikooli_menus"
+      "collectionName": "filmikooli_menus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/filmikooli-menus",
-      "collectionName": "filmikooli_menus",
+      "apiPath": "/api/filmikool-menus",
+      "collectionName": "filmikool_menus",
       "info": {
-        "singularName": "filmikooli-menu",
-        "pluralName": "filmikooli-menus",
-        "displayName": "FilmikooliMenu"
+        "singularName": "filmikool-menu",
+        "pluralName": "filmikool-menus",
+        "displayName": "Filmikool Menu"
       }
     }
   },
   {
     "datamodelKey": "FilmikooliSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "filmikool_supporters",
       "folderName": "filmikool-supporter",
       "apiPath": "/filmikool-supporters",
-      "infoName": "Filmikooli_Supporter",
-      "collectionName": "filmikool_supporters"
+      "collectionName": "filmikool_supporters",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/filmikool-supporters",
@@ -812,18 +769,17 @@
       "info": {
         "singularName": "filmikool-supporter",
         "pluralName": "filmikool-supporters",
-        "displayName": "FilmikooliSupporter"
+        "displayName": "Filmikool Supporter"
       }
     }
   },
   {
     "datamodelKey": "Filmography",
     "s3": {
-      "collectionNameFromDatamodelPath": "filmographies",
       "folderName": "filmography",
       "apiPath": "/filmographies",
-      "infoName": "Filmography",
-      "collectionName": "filmographies"
+      "collectionName": "filmographies",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/filmographies",
@@ -838,11 +794,10 @@
   {
     "datamodelKey": "FrontPageCourses",
     "s3": {
-      "collectionNameFromDatamodelPath": "front_page_courses",
       "folderName": "front-page-courses",
       "apiPath": "/front-page-courses",
-      "infoName": "Front_Page_Courses",
-      "collectionName": "front_page_courses"
+      "collectionName": "front_page_courses",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/front-page-courseses",
@@ -850,18 +805,17 @@
       "info": {
         "singularName": "front-page-courses",
         "pluralName": "front-page-courseses",
-        "displayName": "FrontPageCourses"
+        "displayName": "FrontPage Courses"
       }
     }
   },
   {
     "datamodelKey": "Function",
     "s3": {
-      "collectionNameFromDatamodelPath": "functions",
       "folderName": "function",
       "apiPath": "/functions",
-      "infoName": "UserFunction",
-      "collectionName": "functions"
+      "collectionName": "functions",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/functions",
@@ -876,11 +830,10 @@
   {
     "datamodelKey": "Gender",
     "s3": {
-      "collectionNameFromDatamodelPath": "genders",
       "folderName": "gender",
       "apiPath": "/genders",
-      "infoName": "Gender",
-      "collectionName": "genders"
+      "collectionName": "genders",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/genders",
@@ -895,87 +848,82 @@
   {
     "datamodelKey": "HOFFiArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "hof_fi_articles",
       "folderName": "hof-fi-article",
       "apiPath": "/hof-fi-articles",
-      "infoName": "HOFFi_Article",
-      "collectionName": "hof_fi_articles"
+      "collectionName": "hof_fi_articles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hof-fi-articles",
-      "collectionName": "hof_fi_articles",
+      "apiPath": "/api/hoff-articles",
+      "collectionName": "hoff_articles",
       "info": {
-        "singularName": "hof-fi-article",
-        "pluralName": "hof-fi-articles",
-        "displayName": "HOFFiArticle"
+        "singularName": "hoff-article",
+        "pluralName": "hoff-articles",
+        "displayName": "HOFF Article"
       }
     }
   },
   {
     "datamodelKey": "HOFFiFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "hof_fi_footers",
       "folderName": "hof-fi-footer",
       "apiPath": "/hof-fi-footers",
-      "infoName": "HOFFi_Footer",
-      "collectionName": "hof_fi_footers"
+      "collectionName": "hof_fi_footers",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hof-fi-footers",
-      "collectionName": "hof_fi_footers",
+      "apiPath": "/api/hoff-footers",
+      "collectionName": "hoff_footers",
       "info": {
-        "singularName": "hof-fi-footer",
-        "pluralName": "hof-fi-footers",
-        "displayName": "HOFFiFooter"
+        "singularName": "hoff-footer",
+        "pluralName": "hoff-footers",
+        "displayName": "HOFF Footer"
       }
     }
   },
   {
     "datamodelKey": "HOFFiMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "hof_fi_menus",
       "folderName": "hof-fi-menu",
       "apiPath": "/hof-fi-menus",
-      "infoName": "HOFFi_Menu",
-      "collectionName": "hof_fi_menus"
+      "collectionName": "hof_fi_menus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hof-fi-menus",
-      "collectionName": "hof_fi_menus",
+      "apiPath": "/api/hoff-menus",
+      "collectionName": "hoff_menus",
       "info": {
-        "singularName": "hof-fi-menu",
-        "pluralName": "hof-fi-menus",
-        "displayName": "HOFFiMenu"
+        "singularName": "hoff-menu",
+        "pluralName": "hoff-menus",
+        "displayName": "HOFF Menu"
       }
     }
   },
   {
     "datamodelKey": "HOFFiSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "hof_fi_supporters",
       "folderName": "hof-fi-supporter",
       "apiPath": "/hof-fi-supporters",
-      "infoName": "HOFFi_Supporter",
-      "collectionName": "hof_fi_supporters"
+      "collectionName": "hof_fi_supporters",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hof-fi-supporters",
-      "collectionName": "hof_fi_supporters",
+      "apiPath": "/api/hoff-supporters",
+      "collectionName": "hoff_supporters",
       "info": {
-        "singularName": "hof-fi-supporter",
-        "pluralName": "hof-fi-supporters",
-        "displayName": "HOFFiSupporter"
+        "singularName": "hoff-supporter",
+        "pluralName": "hoff-supporters",
+        "displayName": "HOFF Supporter"
       }
     }
   },
   {
     "datamodelKey": "HairColour",
     "s3": {
-      "collectionNameFromDatamodelPath": "hair_colours",
       "folderName": "hair-colour",
       "apiPath": "/hair-colours",
-      "infoName": "HairColour",
-      "collectionName": "hair_colours"
+      "collectionName": "hair_colours",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/hair-colours",
@@ -983,18 +931,17 @@
       "info": {
         "singularName": "hair-colour",
         "pluralName": "hair-colours",
-        "displayName": "HairColour"
+        "displayName": "Hair Colour"
       }
     }
   },
   {
     "datamodelKey": "HairLength",
     "s3": {
-      "collectionNameFromDatamodelPath": "hair_lengths",
       "folderName": "hair-length",
       "apiPath": "/hair-lengths",
-      "infoName": "HairLength",
-      "collectionName": "hair_lengths"
+      "collectionName": "hair_lengths",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/hair-lengths",
@@ -1002,18 +949,17 @@
       "info": {
         "singularName": "hair-length",
         "pluralName": "hair-lengths",
-        "displayName": "HairLength"
+        "displayName": "Hair Length"
       }
     }
   },
   {
     "datamodelKey": "Hall",
     "s3": {
-      "collectionNameFromDatamodelPath": "halls",
       "folderName": "hall",
       "apiPath": "/halls",
-      "infoName": "Hall",
-      "collectionName": "halls"
+      "collectionName": "halls",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/halls",
@@ -1028,220 +974,208 @@
   {
     "datamodelKey": "HeroArticleBruno",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_bruno",
       "folderName": "hero-article-bruno",
       "apiPath": "/hero-article-bruno",
-      "infoName": "HeroArticleBruno",
-      "collectionName": "hero_article_bruno"
+      "collectionName": "hero_article_bruno",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-brunos",
-      "collectionName": "hero_article_bruno",
+      "apiPath": "/api/bruno-heroarticles",
+      "collectionName": "bruno_heroarticles",
       "info": {
-        "singularName": "hero-article-bruno",
-        "pluralName": "hero-article-brunos",
-        "displayName": "HeroArticleBruno"
+        "singularName": "bruno-heroarticle",
+        "pluralName": "bruno-heroarticles",
+        "displayName": "Bruno HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleDisCamp",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_dis_camp",
       "folderName": "hero-article-dis-camp",
       "apiPath": "/hero-article-dis-camp",
-      "infoName": "HeroArticleDisCamp",
-      "collectionName": "hero_article_dis_camps"
+      "collectionName": "hero_article_dis_camps",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-dis-camps",
-      "collectionName": "hero_article_dis_camps",
+      "apiPath": "/api/discamp-heroarticles",
+      "collectionName": "discamp_heroarticles",
       "info": {
-        "singularName": "hero-article-dis-camp",
-        "pluralName": "hero-article-dis-camps",
-        "displayName": "HeroArticleDisCamp"
+        "singularName": "discamp-heroarticle",
+        "pluralName": "discamp-heroarticles",
+        "displayName": "DisCamp HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleFilmikool",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_filmikool",
       "folderName": "hero-article-filmikool",
       "apiPath": "/hero-article-filmikool",
-      "infoName": "HeroArticleFilmikool",
-      "collectionName": "hero_article_filmikools"
+      "collectionName": "hero_article_filmikools",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-filmikools",
-      "collectionName": "hero_article_filmikools",
+      "apiPath": "/api/filmikool-heroarticles",
+      "collectionName": "filmikool_heroarticles",
       "info": {
-        "singularName": "hero-article-filmikool",
-        "pluralName": "hero-article-filmikools",
-        "displayName": "HeroArticleFilmikool"
+        "singularName": "filmikool-heroarticle",
+        "pluralName": "filmikool-heroarticles",
+        "displayName": "Filmikool HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleHoff",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_hoff",
       "folderName": "hero-article-hoff",
       "apiPath": "/hero-article-hoff",
-      "infoName": "HeroArticleHoff",
-      "collectionName": "hero_article_hoffs"
+      "collectionName": "hero_article_hoffs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-hoffs",
-      "collectionName": "hero_article_hoffs",
+      "apiPath": "/api/hoff-heroarticles",
+      "collectionName": "hoff_heroarticles",
       "info": {
-        "singularName": "hero-article-hoff",
-        "pluralName": "hero-article-hoffs",
-        "displayName": "HeroArticleHoff"
+        "singularName": "hoff-heroarticle",
+        "pluralName": "hoff-heroarticles",
+        "displayName": "Hoff HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleIndustry",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_industry",
       "folderName": "hero-article-industry",
       "apiPath": "/hero-article-industry",
-      "infoName": "HeroArticleIndustry",
-      "collectionName": "hero_article_industries"
+      "collectionName": "hero_article_industries",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-industries",
-      "collectionName": "hero_article_industries",
+      "apiPath": "/api/industry-heroarticles",
+      "collectionName": "industry_heroarticles",
       "info": {
-        "singularName": "hero-article-industry",
-        "pluralName": "hero-article-industries",
-        "displayName": "HeroArticleIndustry"
+        "singularName": "industry-heroarticle",
+        "pluralName": "industry-heroarticles",
+        "displayName": "Industry HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleJustFilm",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_just_film",
       "folderName": "hero-article-just-film",
       "apiPath": "/hero-article-just-film",
-      "infoName": "HeroArticleJustFilm",
-      "collectionName": "hero_article_just_films"
+      "collectionName": "hero_article_just_films",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-just-films",
-      "collectionName": "hero_article_just_films",
+      "apiPath": "/api/justfilm-heroarticles",
+      "collectionName": "justfilm_heroarticles",
       "info": {
-        "singularName": "hero-article-just-film",
-        "pluralName": "hero-article-just-films",
-        "displayName": "HeroArticleJustFilm"
+        "singularName": "justfilm-heroarticle",
+        "pluralName": "justfilm-heroarticles",
+        "displayName": "JustFilm HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleKinoff",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_kinoff",
       "folderName": "hero-article-kinoff",
       "apiPath": "/hero-article-kinoff",
-      "infoName": "HeroArticleKinoff",
-      "collectionName": "hero_article_kinoffs"
+      "collectionName": "hero_article_kinoffs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-kinoffs",
-      "collectionName": "hero_article_kinoffs",
+      "apiPath": "/api/kinoff-heroarticles",
+      "collectionName": "kinoff_heroarticles",
       "info": {
-        "singularName": "hero-article-kinoff",
-        "pluralName": "hero-article-kinoffs",
-        "displayName": "HeroArticleKinoff"
+        "singularName": "kinoff-heroarticle",
+        "pluralName": "kinoff-heroarticles",
+        "displayName": "Kinoff HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleKumu",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_kumu",
       "folderName": "hero-article-kumu",
       "apiPath": "/hero-article-kumu",
-      "infoName": "HeroArticleKumu",
-      "collectionName": "hero_article_kumu"
+      "collectionName": "hero_article_kumu",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-kumus",
-      "collectionName": "hero_article_kumu",
+      "apiPath": "/api/kumu-heroarticles",
+      "collectionName": "kumu_heroarticles",
       "info": {
-        "singularName": "hero-article-kumu",
-        "pluralName": "hero-article-kumus",
-        "displayName": "HeroArticleKumu"
+        "singularName": "kumu-heroarticle",
+        "pluralName": "kumu-heroarticles",
+        "displayName": "Kumu HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticlePoff",
     "s3": {
-      "collectionNameFromDatamodelPath": "article_hero",
       "folderName": "article-hero",
       "apiPath": "/article-hero",
-      "infoName": "HeroArticlePoff",
-      "collectionName": "article_heroes"
+      "collectionName": "article_heroes",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/article-heros",
-      "collectionName": "article_heroes",
+      "apiPath": "/api/poff-heroarticles",
+      "collectionName": "poff_heroarticles",
       "info": {
-        "singularName": "article-hero",
-        "pluralName": "article-heros",
-        "displayName": "HeroArticlePoff"
+        "singularName": "poff-heroarticle",
+        "pluralName": "poff-heroarticles",
+        "displayName": "PÖFF HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleShorts",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_shorts",
       "folderName": "hero-article-shorts",
       "apiPath": "/hero-article-shorts",
-      "infoName": "HeroArticleShorts",
-      "collectionName": "hero_article_shorts"
+      "collectionName": "hero_article_shorts",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-shortses",
-      "collectionName": "hero_article_shorts",
+      "apiPath": "/api/shorts-heroarticles",
+      "collectionName": "shorts_heroarticles",
       "info": {
-        "singularName": "hero-article-shorts",
-        "pluralName": "hero-article-shortses",
-        "displayName": "HeroArticleShorts"
+        "singularName": "shorts-heroarticle",
+        "pluralName": "shorts-heroarticles",
+        "displayName": "Shorts HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "HeroArticleTartuff",
     "s3": {
-      "collectionNameFromDatamodelPath": "hero_article_tartuff",
       "folderName": "hero-article-tartuff",
       "apiPath": "/hero-article-tartuff",
-      "infoName": "HeroArticleTartuff",
-      "collectionName": "hero_article_tartuffs"
+      "collectionName": "hero_article_tartuffs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/hero-article-tartuffs",
-      "collectionName": "hero_article_tartuffs",
+      "apiPath": "/api/tartuff-heroarticles",
+      "collectionName": "tartuff_heroarticles",
       "info": {
-        "singularName": "hero-article-tartuff",
-        "pluralName": "hero-article-tartuffs",
-        "displayName": "HeroArticleTartuff"
+        "singularName": "tartuff-heroarticle",
+        "pluralName": "tartuff-heroarticles",
+        "displayName": "Tartuff HeroArticle"
       }
     }
   },
   {
     "datamodelKey": "IndustryArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_articles",
       "folderName": "industry-article",
       "apiPath": "/industry-articles",
-      "infoName": "Industry_Article",
-      "collectionName": "industry_articles"
+      "collectionName": "industry_articles",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-articles",
@@ -1249,18 +1183,17 @@
       "info": {
         "singularName": "industry-article",
         "pluralName": "industry-articles",
-        "displayName": "IndustryArticle"
+        "displayName": "Industry Article"
       }
     }
   },
   {
     "datamodelKey": "IndustryCategory",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_categories",
       "folderName": "industry-category",
       "apiPath": "/industry-categories",
-      "infoName": "Industry_Category",
-      "collectionName": "industry_categories"
+      "collectionName": "industry_categories",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-categories",
@@ -1268,18 +1201,17 @@
       "info": {
         "singularName": "industry-category",
         "pluralName": "industry-categories",
-        "displayName": "IndustryCategory"
+        "displayName": "Industry Category"
       }
     }
   },
   {
     "datamodelKey": "IndustryEvent",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_events",
       "folderName": "industry-event",
       "apiPath": "/industry-events",
-      "infoName": "Industry_Event",
-      "collectionName": "industry_events"
+      "collectionName": "industry_events",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-events",
@@ -1287,18 +1219,17 @@
       "info": {
         "singularName": "industry-event",
         "pluralName": "industry-events",
-        "displayName": "IndustryEvent"
+        "displayName": "Industry Event"
       }
     }
   },
   {
     "datamodelKey": "IndustryFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_footers",
       "folderName": "industry-footer",
       "apiPath": "/industry-footers",
-      "infoName": "Industry_Footer",
-      "collectionName": "industry_footers"
+      "collectionName": "industry_footers",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-footers",
@@ -1306,18 +1237,17 @@
       "info": {
         "singularName": "industry-footer",
         "pluralName": "industry-footers",
-        "displayName": "IndustryFooter"
+        "displayName": "Industry Footer"
       }
     }
   },
   {
     "datamodelKey": "IndustryGroup",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_groups",
       "folderName": "industry-group",
       "apiPath": "/industry-groups",
-      "infoName": "Industry_Group",
-      "collectionName": "industry_groups"
+      "collectionName": "industry_groups",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-groups",
@@ -1332,11 +1262,10 @@
   {
     "datamodelKey": "IndustryMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_menus",
       "folderName": "industry-menu",
       "apiPath": "/industry-menus",
-      "infoName": "Industry_Menu",
-      "collectionName": "industry_menus"
+      "collectionName": "industry_menus",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-menus",
@@ -1344,18 +1273,17 @@
       "info": {
         "singularName": "industry-menu",
         "pluralName": "industry-menus",
-        "displayName": "IndustryMenu"
+        "displayName": "Industry Menu"
       }
     }
   },
   {
     "datamodelKey": "IndustryPerson",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_people",
       "folderName": "industry-person",
       "apiPath": "/industry-people",
-      "infoName": "Industry_Person",
-      "collectionName": "industry_people"
+      "collectionName": "industry_people",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-persons",
@@ -1363,18 +1291,17 @@
       "info": {
         "singularName": "industry-person",
         "pluralName": "industry-persons",
-        "displayName": "IndustryPerson"
+        "displayName": "Industry Person"
       }
     }
   },
   {
     "datamodelKey": "IndustryPersonType",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_person_types",
       "folderName": "industry-person-type",
       "apiPath": "/industry-person-types",
-      "infoName": "Industry_PersonType",
-      "collectionName": "industry_person_types"
+      "collectionName": "industry_person_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-person-types",
@@ -1382,18 +1309,17 @@
       "info": {
         "singularName": "industry-person-type",
         "pluralName": "industry-person-types",
-        "displayName": "IndustryPersonType"
+        "displayName": "Industry Person Type"
       }
     }
   },
   {
     "datamodelKey": "IndustryProject",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_projects",
       "folderName": "industry-project",
       "apiPath": "/industry-projects",
-      "infoName": "Industry_Project",
-      "collectionName": "industry_projects"
+      "collectionName": "industry_projects",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-projects",
@@ -1401,18 +1327,17 @@
       "info": {
         "singularName": "industry-project",
         "pluralName": "industry-projects",
-        "displayName": "IndustryProject"
+        "displayName": "Industry Project"
       }
     }
   },
   {
     "datamodelKey": "IndustrySupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "industry_supporters",
       "folderName": "industry-supporter",
       "apiPath": "/industry-supporters",
-      "infoName": "Industry_Supporter",
-      "collectionName": "industry_supporters"
+      "collectionName": "industry_supporters",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/industry-supporters",
@@ -1420,170 +1345,161 @@
       "info": {
         "singularName": "industry-supporter",
         "pluralName": "industry-supporters",
-        "displayName": "IndustrySupporter"
+        "displayName": "Industry Supporter"
       }
     }
   },
   {
     "datamodelKey": "JustFilmFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "just_film_footers",
       "folderName": "just-film-footer",
       "apiPath": "/just-film-footers",
-      "infoName": "JustFilm_Footer",
-      "collectionName": "just_film_footers"
+      "collectionName": "just_film_footers",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/just-film-footers",
-      "collectionName": "just_film_footers",
+      "apiPath": "/api/justfilm-footers",
+      "collectionName": "justfilm_footers",
       "info": {
-        "singularName": "just-film-footer",
-        "pluralName": "just-film-footers",
-        "displayName": "JustFilmFooter"
+        "singularName": "justfilm-footer",
+        "pluralName": "justfilm-footers",
+        "displayName": "JustFilm Footer"
       }
     }
   },
   {
     "datamodelKey": "JustFilmiArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "just_filmi_articles",
       "folderName": "just-filmi-article",
       "apiPath": "/just-filmi-articles",
-      "infoName": "JustFilmi_Article",
-      "collectionName": "just_filmi_articles"
+      "collectionName": "just_filmi_articles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/just-filmi-articles",
-      "collectionName": "just_filmi_articles",
+      "apiPath": "/api/justfilm-articles",
+      "collectionName": "justfilm_articles",
       "info": {
-        "singularName": "just-filmi-article",
-        "pluralName": "just-filmi-articles",
-        "displayName": "JustFilmiArticle"
+        "singularName": "justfilm-article",
+        "pluralName": "justfilm-articles",
+        "displayName": "JustFilm Article"
       }
     }
   },
   {
     "datamodelKey": "JustFilmiMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "just_filmi_menus",
       "folderName": "just-filmi-menu",
       "apiPath": "/just-filmi-menus",
-      "infoName": "JustFilmi_Menu",
-      "collectionName": "just_filmi_menus"
+      "collectionName": "just_filmi_menus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/just-filmi-menus",
-      "collectionName": "just_filmi_menus",
+      "apiPath": "/api/justfilm-menus",
+      "collectionName": "justfilm_menus",
       "info": {
-        "singularName": "just-filmi-menu",
-        "pluralName": "just-filmi-menus",
-        "displayName": "JustFilmiMenu"
+        "singularName": "justfilm-menu",
+        "pluralName": "justfilm-menus",
+        "displayName": "JustFilm Menu"
       }
     }
   },
   {
     "datamodelKey": "JustSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "supporters_justs",
       "folderName": "supporters-just",
       "apiPath": "/supporters-justs",
-      "infoName": "Just_Supporter",
-      "collectionName": "supporters_justs"
+      "collectionName": "supporters_justs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/supporters-justs",
-      "collectionName": "supporters_justs",
+      "apiPath": "/api/justfilm-supporters",
+      "collectionName": "justfilm_supporters",
       "info": {
-        "singularName": "supporters-just",
-        "pluralName": "supporters-justs",
-        "displayName": "JustSupporter"
+        "singularName": "justfilm-supporter",
+        "pluralName": "justfilm-supporters",
+        "displayName": "JustFilm Supporter"
       }
     }
   },
   {
     "datamodelKey": "KinoffiArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "kinoffi_articles",
       "folderName": "kinoffi-article",
       "apiPath": "/kinoffi-articles",
-      "infoName": "Kinoffi_Article",
-      "collectionName": "kinoffi_articles"
+      "collectionName": "kinoffi_articles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/kinoffi-articles",
-      "collectionName": "kinoffi_articles",
+      "apiPath": "/api/kinoff-articles",
+      "collectionName": "kinoff_articles",
       "info": {
-        "singularName": "kinoffi-article",
-        "pluralName": "kinoffi-articles",
-        "displayName": "KinoffiArticle"
+        "singularName": "kinoff-article",
+        "pluralName": "kinoff-articles",
+        "displayName": "Kinoff Article"
       }
     }
   },
   {
     "datamodelKey": "KinoffiFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "kinoffi_footers",
       "folderName": "kinoffi-footer",
       "apiPath": "/kinoffi-footers",
-      "infoName": "Kinoffi_Footer",
-      "collectionName": "kinoffi_footers"
+      "collectionName": "kinoffi_footers",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/kinoffi-footers",
-      "collectionName": "kinoffi_footers",
+      "apiPath": "/api/kinoff-footers",
+      "collectionName": "kinoff_footers",
       "info": {
-        "singularName": "kinoffi-footer",
-        "pluralName": "kinoffi-footers",
-        "displayName": "KinoffiFooter"
+        "singularName": "kinoff-footer",
+        "pluralName": "kinoff-footers",
+        "displayName": "Kinoff Footer"
       }
     }
   },
   {
     "datamodelKey": "KinoffiMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "kinoffi_menus",
       "folderName": "kinoffi-menu",
       "apiPath": "/kinoffi-menus",
-      "infoName": "Kinoffi_Menu",
-      "collectionName": "kinoffi_menus"
+      "collectionName": "kinoffi_menus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/kinoffi-menus",
-      "collectionName": "kinoffi_menus",
+      "apiPath": "/api/kinoff-menus",
+      "collectionName": "kinoff_menus",
       "info": {
-        "singularName": "kinoffi-menu",
-        "pluralName": "kinoffi-menus",
-        "displayName": "KinoffiMenu"
+        "singularName": "kinoff-menu",
+        "pluralName": "kinoff-menus",
+        "displayName": "Kinoff Menu"
       }
     }
   },
   {
     "datamodelKey": "KinoffiSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "kinoffi_supporters",
       "folderName": "kinoffi-supporter",
       "apiPath": "/kinoffi-supporters",
-      "infoName": "Kinoffi_Supporter",
-      "collectionName": "kinoffi_supporters"
+      "collectionName": "kinoffi_supporters",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/kinoffi-supporters",
-      "collectionName": "kinoffi_supporters",
+      "apiPath": "/api/kinoff-supporters",
+      "collectionName": "kinoff_supporters",
       "info": {
-        "singularName": "kinoffi-supporter",
-        "pluralName": "kinoffi-supporters",
-        "displayName": "KinoffiSupporter"
+        "singularName": "kinoff-supporter",
+        "pluralName": "kinoff-supporters",
+        "displayName": "Kinoff Supporter"
       }
     }
   },
   {
     "datamodelKey": "KumuArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "kumu_articles",
       "folderName": "kumu-article",
       "apiPath": "/kumu-articles",
-      "infoName": "Kumu_Article",
-      "collectionName": "kumu_articles"
+      "collectionName": "kumu_articles",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/kumu-articles",
@@ -1591,18 +1507,17 @@
       "info": {
         "singularName": "kumu-article",
         "pluralName": "kumu-articles",
-        "displayName": "KumuArticle"
+        "displayName": "Kumu Article"
       }
     }
   },
   {
     "datamodelKey": "KumuFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "kumu_footers",
       "folderName": "kumu-footer",
       "apiPath": "/kumu-footers",
-      "infoName": "Kumu_Footer",
-      "collectionName": "kumu_footers"
+      "collectionName": "kumu_footers",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/kumu-footers",
@@ -1610,18 +1525,17 @@
       "info": {
         "singularName": "kumu-footer",
         "pluralName": "kumu-footers",
-        "displayName": "KumuFooter"
+        "displayName": "Kumu Footer"
       }
     }
   },
   {
     "datamodelKey": "KumuMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "kumu_menus",
       "folderName": "kumu-menu",
       "apiPath": "/kumu-menus",
-      "infoName": "Kumu_Menu",
-      "collectionName": "kumu_menus"
+      "collectionName": "kumu_menus",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/kumu-menus",
@@ -1629,18 +1543,17 @@
       "info": {
         "singularName": "kumu-menu",
         "pluralName": "kumu-menus",
-        "displayName": "KumuMenu"
+        "displayName": "Kumu Menu"
       }
     }
   },
   {
     "datamodelKey": "KumuSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "kumu_supporters",
       "folderName": "kumu-supporter",
       "apiPath": "/kumu-supporters",
-      "infoName": "Kumu_Supporter",
-      "collectionName": "kumu_supporters"
+      "collectionName": "kumu_supporters",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/kumu-supporters",
@@ -1648,56 +1561,53 @@
       "info": {
         "singularName": "kumu-supporter",
         "pluralName": "kumu-supporters",
-        "displayName": "KumuSupporter"
+        "displayName": "Kumu Supporter"
       }
     }
   },
   {
     "datamodelKey": "L1MenuIndustry",
     "s3": {
-      "collectionNameFromDatamodelPath": "l_1_menu_industries",
       "folderName": "l1-menu-industry",
       "apiPath": "/l-1-menu-industries",
-      "infoName": "L1MenuIndustry",
-      "collectionName": "l1_menu_industries"
+      "collectionName": "l1_menu_industries",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/l1-menu-industries",
-      "collectionName": "l1_menu_industries",
+      "apiPath": "/api/industry-l1menus",
+      "collectionName": "industry_l1menus",
       "info": {
-        "singularName": "l1-menu-industry",
-        "pluralName": "l1-menu-industries",
-        "displayName": "L1MenuIndustry"
+        "singularName": "industry-l1menu",
+        "pluralName": "industry-l1menus",
+        "displayName": "Industry L1 Menu"
       }
     }
   },
   {
     "datamodelKey": "L1MenuKumu",
     "s3": {
-      "collectionNameFromDatamodelPath": "l_1_menu_kumus",
       "folderName": "l1-menu-kumu",
       "apiPath": "/l-1-menu-kumus",
-      "infoName": "L1MenuKumu",
-      "collectionName": "l1_menu_kumus"
+      "collectionName": "l1_menu_kumus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/l1-menu-kumus",
-      "collectionName": "l1_menu_kumus",
+      "apiPath": "/api/kumu-l1menus",
+      "collectionName": "kumu_l1menus",
       "info": {
-        "singularName": "l1-menu-kumu",
-        "pluralName": "l1-menu-kumus",
-        "displayName": "L1MenuKumu"
+        "singularName": "kumu-l1menu",
+        "pluralName": "kumu-l1menus",
+        "displayName": "Kumu L1 Menu"
       }
     }
   },
   {
     "datamodelKey": "LabelGroup",
     "s3": {
-      "collectionNameFromDatamodelPath": "label_groups",
       "folderName": "label-group",
       "apiPath": "/label-groups",
-      "infoName": "LabelGroup",
-      "collectionName": "label_groups"
+      "collectionName": "label_groups",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/label-groups",
@@ -1705,18 +1615,17 @@
       "info": {
         "singularName": "label-group",
         "pluralName": "label-groups",
-        "displayName": "LabelGroup"
+        "displayName": "Label Group"
       }
     }
   },
   {
     "datamodelKey": "Language",
     "s3": {
-      "collectionNameFromDatamodelPath": "languages",
       "folderName": "language",
       "apiPath": "/languages",
-      "infoName": "Language",
-      "collectionName": "languages"
+      "collectionName": "languages",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/languages",
@@ -1731,11 +1640,10 @@
   {
     "datamodelKey": "Location",
     "s3": {
-      "collectionNameFromDatamodelPath": "locations",
       "folderName": "location",
       "apiPath": "/locations",
-      "infoName": "Location",
-      "collectionName": "locations"
+      "collectionName": "locations",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/locations",
@@ -1750,11 +1658,10 @@
   {
     "datamodelKey": "Municipality",
     "s3": {
-      "collectionNameFromDatamodelPath": "populated_places",
       "folderName": "populated-place",
       "apiPath": "/populated-places",
-      "infoName": "Municipality",
-      "collectionName": "populated_places"
+      "collectionName": "populated_places",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/populated-places",
@@ -1769,11 +1676,10 @@
   {
     "datamodelKey": "Organisation",
     "s3": {
-      "collectionNameFromDatamodelPath": "organisations",
       "folderName": "organisation",
       "apiPath": "/organisations",
-      "infoName": "Organisation",
-      "collectionName": "organisations"
+      "collectionName": "organisations",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/organisations",
@@ -1788,11 +1694,10 @@
   {
     "datamodelKey": "Origin",
     "s3": {
-      "collectionNameFromDatamodelPath": "origins",
       "folderName": "origin",
       "apiPath": "/origins",
-      "infoName": "Origin",
-      "collectionName": "origins"
+      "collectionName": "origins",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/origins",
@@ -1807,113 +1712,107 @@
   {
     "datamodelKey": "POFFiArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "pof_fi_articles",
       "folderName": "pof-fi-article",
       "apiPath": "/pof-fi-articles",
-      "infoName": "POFFi_Article",
-      "collectionName": "pof_fi_articles"
+      "collectionName": "pof_fi_articles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/pof-fi-articles",
-      "collectionName": "pof_fi_articles",
+      "apiPath": "/api/poff-articles",
+      "collectionName": "poff_articles",
       "info": {
-        "singularName": "pof-fi-article",
-        "pluralName": "pof-fi-articles",
-        "displayName": "POFFiArticle"
+        "singularName": "poff-article",
+        "pluralName": "poff-articles",
+        "displayName": "POFF Article"
       }
     }
   },
   {
     "datamodelKey": "POFFiFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "pof_fi_footers",
       "folderName": "pof-fi-footer",
       "apiPath": "/pof-fi-footers",
-      "infoName": "POFFi_Footer",
-      "collectionName": "pof_fi_footers"
+      "collectionName": "pof_fi_footers",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/pof-fi-footers",
-      "collectionName": "pof_fi_footers",
+      "apiPath": "/api/poff-footers",
+      "collectionName": "poff_footers",
       "info": {
-        "singularName": "pof-fi-footer",
-        "pluralName": "pof-fi-footers",
-        "displayName": "POFFiFooter"
+        "singularName": "poff-footer",
+        "pluralName": "poff-footers",
+        "displayName": "POFF Footer"
       }
     }
   },
   {
     "datamodelKey": "POFFiMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "pof_fi_menus",
       "folderName": "pof-fi-menu",
       "apiPath": "/pof-fi-menus",
-      "infoName": "POFFi_Menu",
-      "collectionName": "pof_fi_menus"
+      "collectionName": "pof_fi_menus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/pof-fi-menus",
-      "collectionName": "pof_fi_menus",
+      "apiPath": "/api/poff-menus",
+      "collectionName": "poff_menus",
       "info": {
-        "singularName": "pof-fi-menu",
-        "pluralName": "pof-fi-menus",
-        "displayName": "POFFiMenu"
+        "singularName": "poff-menu",
+        "pluralName": "poff-menus",
+        "displayName": "POFF Menu"
       }
     }
   },
   {
     "datamodelKey": "POFFiSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "supporters_pages",
       "folderName": "supporters-page",
       "apiPath": "/supporters-pages",
-      "infoName": "POFFi_Supporter",
-      "collectionName": "supporters_pages"
+      "collectionName": "supporters_pages",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/supporters-pages",
-      "collectionName": "supporters_pages",
+      "apiPath": "/api/poff-supporters",
+      "collectionName": "poff_supporters",
       "info": {
-        "singularName": "supporters-page",
-        "pluralName": "supporters-pages",
-        "displayName": "POFFiSupporter"
+        "singularName": "poff-supporter",
+        "pluralName": "poff-supporters",
+        "displayName": "POFF Supporter"
       }
     }
   },
   {
     "datamodelKey": "PatternCollection",
     "s3": {
-      "collectionNameFromDatamodelPath": "pattern_collections",
       "folderName": "pattern-collections",
       "apiPath": "/pattern-collections",
-      "infoName": "Pattern_Collections",
-      "collectionName": "pattern_collections"
+      "collectionName": "pattern_collections",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/pattern-collectionses",
+      "apiPath": "/api/pattern-collections",
       "collectionName": "pattern_collections",
       "info": {
-        "singularName": "pattern-collections",
-        "pluralName": "pattern-collectionses",
-        "displayName": "PatternCollection"
+        "singularName": "pattern-collection",
+        "pluralName": "pattern-collections",
+        "displayName": "Pattern Collection"
       }
     }
   },
   {
     "datamodelKey": "Person",
     "s3": {
-      "collectionNameFromDatamodelPath": "people",
       "folderName": "person",
       "apiPath": "/people",
-      "infoName": "Person",
-      "collectionName": "people"
+      "collectionName": "people",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/persons",
+      "apiPath": "/api/people",
       "collectionName": "people",
       "info": {
         "singularName": "person",
-        "pluralName": "persons",
+        "pluralName": "people",
         "displayName": "Person"
       }
     }
@@ -1921,11 +1820,10 @@
   {
     "datamodelKey": "PitchOfVoice",
     "s3": {
-      "collectionNameFromDatamodelPath": "pitch_of_voices",
       "folderName": "pitch-of-voice",
       "apiPath": "/pitch-of-voices",
-      "infoName": "PitchOfVoice",
-      "collectionName": "pitch_of_voices"
+      "collectionName": "pitch_of_voices",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/pitch-of-voices",
@@ -1933,18 +1831,17 @@
       "info": {
         "singularName": "pitch-of-voice",
         "pluralName": "pitch-of-voices",
-        "displayName": "PitchOfVoice"
+        "displayName": "Pitch Of Voice"
       }
     }
   },
   {
     "datamodelKey": "Product",
     "s3": {
-      "collectionNameFromDatamodelPath": "product",
       "folderName": "product",
       "apiPath": "/products",
-      "infoName": "Product",
-      "collectionName": "products"
+      "collectionName": "products",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/products",
@@ -1959,11 +1856,10 @@
   {
     "datamodelKey": "ProductType",
     "s3": {
-      "collectionNameFromDatamodelPath": "product_types",
       "folderName": "product-type",
       "apiPath": "/product-types",
-      "infoName": "ProductType",
-      "collectionName": "product_types"
+      "collectionName": "product_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/product-types",
@@ -1971,18 +1867,17 @@
       "info": {
         "singularName": "product-type",
         "pluralName": "product-types",
-        "displayName": "ProductType"
+        "displayName": "Product Type"
       }
     }
   },
   {
     "datamodelKey": "Product_Category",
     "s3": {
-      "collectionNameFromDatamodelPath": "product_categories",
       "folderName": "product-category",
       "apiPath": "/product-categories",
-      "infoName": "Product_Category",
-      "collectionName": "product_categories"
+      "collectionName": "product_categories",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/product-categories",
@@ -1990,18 +1885,17 @@
       "info": {
         "singularName": "product-category",
         "pluralName": "product-categories",
-        "displayName": "Product_Category"
+        "displayName": "Product Category"
       }
     }
   },
   {
     "datamodelKey": "Programme",
     "s3": {
-      "collectionNameFromDatamodelPath": "programmes",
       "folderName": "programme",
       "apiPath": "/programmes",
-      "infoName": "Programme",
-      "collectionName": "programmes"
+      "collectionName": "programmes",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/programmes",
@@ -2016,11 +1910,10 @@
   {
     "datamodelKey": "ProjectStatus",
     "s3": {
-      "collectionNameFromDatamodelPath": "project_statuses",
       "folderName": "project-status",
       "apiPath": "/project-statuses",
-      "infoName": "Project_Status",
-      "collectionName": "project_statuses"
+      "collectionName": "project_statuses",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/project-statuses",
@@ -2028,18 +1921,17 @@
       "info": {
         "singularName": "project-status",
         "pluralName": "project-statuses",
-        "displayName": "ProjectStatus"
+        "displayName": "Project Status"
       }
     }
   },
   {
     "datamodelKey": "ProjectType",
     "s3": {
-      "collectionNameFromDatamodelPath": "project_types",
       "folderName": "project-type",
       "apiPath": "/project-types",
-      "infoName": "Project_Type",
-      "collectionName": "project_types"
+      "collectionName": "project_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/project-types",
@@ -2047,18 +1939,17 @@
       "info": {
         "singularName": "project-type",
         "pluralName": "project-types",
-        "displayName": "ProjectType"
+        "displayName": "Project Type"
       }
     }
   },
   {
     "datamodelKey": "RoleAtFilm",
     "s3": {
-      "collectionNameFromDatamodelPath": "role_at_films",
       "folderName": "role-at-film",
       "apiPath": "/role-at-films",
-      "infoName": "RoleAtFilm",
-      "collectionName": "role_at_films"
+      "collectionName": "role_at_films",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/role-at-films",
@@ -2066,18 +1957,17 @@
       "info": {
         "singularName": "role-at-film",
         "pluralName": "role-at-films",
-        "displayName": "RoleAtFilm"
+        "displayName": "Role at Film"
       }
     }
   },
   {
     "datamodelKey": "Screening",
     "s3": {
-      "collectionNameFromDatamodelPath": "screenings",
       "folderName": "screening",
       "apiPath": "/screenings",
-      "infoName": "Screening",
-      "collectionName": "screenings"
+      "collectionName": "screenings",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/screenings",
@@ -2092,11 +1982,10 @@
   {
     "datamodelKey": "ScreeningType",
     "s3": {
-      "collectionNameFromDatamodelPath": "screening_types",
       "folderName": "screening-type",
       "apiPath": "/screening-types",
-      "infoName": "ScreeningType",
-      "collectionName": "screening_types"
+      "collectionName": "screening_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/screening-types",
@@ -2104,18 +1993,17 @@
       "info": {
         "singularName": "screening-type",
         "pluralName": "screening-types",
-        "displayName": "ScreeningType"
+        "displayName": "Screening Type"
       }
     }
   },
   {
     "datamodelKey": "ShoeSize",
     "s3": {
-      "collectionNameFromDatamodelPath": "shoe_sizes",
       "folderName": "shoe-size",
       "apiPath": "/shoe-sizes",
-      "infoName": "Shoe_Size",
-      "collectionName": "shoe_sizes"
+      "collectionName": "shoe_sizes",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/shoe-sizes",
@@ -2123,18 +2011,17 @@
       "info": {
         "singularName": "shoe-size",
         "pluralName": "shoe-sizes",
-        "displayName": "ShoeSize"
+        "displayName": "Shoe Size"
       }
     }
   },
   {
     "datamodelKey": "Shop",
     "s3": {
-      "collectionNameFromDatamodelPath": "shops",
       "folderName": "shop",
       "apiPath": "/shops",
-      "infoName": "Shop",
-      "collectionName": "shops"
+      "collectionName": "shops",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/shops",
@@ -2149,106 +2036,100 @@
   {
     "datamodelKey": "ShortsSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "supporters_shorts",
       "folderName": "supporters-shorts",
       "apiPath": "/supporters-shorts",
-      "infoName": "Shorts_Supporter",
-      "collectionName": "supporters_shorts"
+      "collectionName": "supporters_shorts",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/supporters-shortses",
-      "collectionName": "supporters_shorts",
+      "apiPath": "/api/shorts-supporters",
+      "collectionName": "shorts_supporters",
       "info": {
-        "singularName": "supporters-shorts",
-        "pluralName": "supporters-shortses",
-        "displayName": "ShortsSupporter"
+        "singularName": "shorts-supporter",
+        "pluralName": "shorts-supporters",
+        "displayName": "Shorts Supporter"
       }
     }
   },
   {
     "datamodelKey": "ShortsiArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "shortsi_articles",
       "folderName": "shortsi-article",
       "apiPath": "/shortsi-articles",
-      "infoName": "Shortsi_Article",
-      "collectionName": "shortsi_articles"
+      "collectionName": "shortsi_articles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/shortsi-articles",
-      "collectionName": "shortsi_articles",
+      "apiPath": "/api/shorts-articles",
+      "collectionName": "shorts_articles",
       "info": {
-        "singularName": "shortsi-article",
-        "pluralName": "shortsi-articles",
-        "displayName": "ShortsiArticle"
+        "singularName": "shorts-article",
+        "pluralName": "shorts-articles",
+        "displayName": "Shorts Article"
       }
     }
   },
   {
     "datamodelKey": "ShortsiFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "shortsi_footers",
       "folderName": "shortsi-footer",
       "apiPath": "/shortsi-footers",
-      "infoName": "Shortsi_Footer",
-      "collectionName": "shortsi_footers"
+      "collectionName": "shortsi_footers",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/shortsi-footers",
-      "collectionName": "shortsi_footers",
+      "apiPath": "/api/shorts-footers",
+      "collectionName": "shorts_footers",
       "info": {
-        "singularName": "shortsi-footer",
-        "pluralName": "shortsi-footers",
-        "displayName": "ShortsiFooter"
+        "singularName": "shorts-footer",
+        "pluralName": "shorts-footers",
+        "displayName": "Shorts Footer"
       }
     }
   },
   {
     "datamodelKey": "ShortsiMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "shortsi_menus",
       "folderName": "shortsi-menu",
       "apiPath": "/shortsi-menus",
-      "infoName": "Shortsi_Menu",
-      "collectionName": "shortsi_menus"
+      "collectionName": "shortsi_menus",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/shortsi-menus",
-      "collectionName": "shortsi_menus",
+      "apiPath": "/api/shorts-menus",
+      "collectionName": "shorts_menus",
       "info": {
-        "singularName": "shortsi-menu",
-        "pluralName": "shortsi-menus",
-        "displayName": "ShortsiMenu"
+        "singularName": "shorts-menu",
+        "pluralName": "shorts-menus",
+        "displayName": "Shorts Menu"
       }
     }
   },
   {
     "datamodelKey": "SixFilms",
     "s3": {
-      "collectionNameFromDatamodelPath": "six_films",
       "folderName": "six-films",
       "apiPath": "/six-films",
-      "infoName": "SixFilms",
-      "collectionName": "six_films"
+      "collectionName": "six_films",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/six-filmses",
+      "apiPath": "/api/six-films",
       "collectionName": "six_films",
       "info": {
-        "singularName": "six-films",
-        "pluralName": "six-filmses",
-        "displayName": "SixFilms"
+        "singularName": "six-film",
+        "pluralName": "six-films",
+        "displayName": "SixFilm"
       }
     }
   },
   {
     "datamodelKey": "SmartFolder",
     "s3": {
-      "collectionNameFromDatamodelPath": "smart_folders",
       "folderName": "smart-folder",
       "apiPath": "/smart-folders",
-      "infoName": "SmartFolder",
-      "collectionName": "smart_folders"
+      "collectionName": "smart_folders",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/smart-folders",
@@ -2256,18 +2137,17 @@
       "info": {
         "singularName": "smart-folder",
         "pluralName": "smart-folders",
-        "displayName": "SmartFolder"
+        "displayName": "Smart Folder"
       }
     }
   },
   {
     "datamodelKey": "Stature",
     "s3": {
-      "collectionNameFromDatamodelPath": "statures",
       "folderName": "stature",
       "apiPath": "/statures",
-      "infoName": "Stature",
-      "collectionName": "statures"
+      "collectionName": "statures",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/statures",
@@ -2282,11 +2162,10 @@
   {
     "datamodelKey": "TagAgeRestriction",
     "s3": {
-      "collectionNameFromDatamodelPath": "age_restrictions",
       "folderName": "age-restriction",
       "apiPath": "/age-restrictions",
-      "infoName": "TagAgeRestriction",
-      "collectionName": "age_restrictions"
+      "collectionName": "age_restrictions",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/age-restrictions",
@@ -2294,18 +2173,17 @@
       "info": {
         "singularName": "age-restriction",
         "pluralName": "age-restrictions",
-        "displayName": "TagAgeRestriction"
+        "displayName": "Tag AgeRestriction"
       }
     }
   },
   {
     "datamodelKey": "TagCategory",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_categories",
       "folderName": "tag-category",
       "apiPath": "/tag-categories",
-      "infoName": "TagCategory",
-      "collectionName": "tag_categories"
+      "collectionName": "tag_categories",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-categories",
@@ -2313,18 +2191,17 @@
       "info": {
         "singularName": "tag-category",
         "pluralName": "tag-categories",
-        "displayName": "TagCategory"
+        "displayName": "Tag Category"
       }
     }
   },
   {
     "datamodelKey": "TagFilmType",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_film_types",
       "folderName": "tag-film-type",
       "apiPath": "/tag-film-types",
-      "infoName": "TagFilmType",
-      "collectionName": "tag_film_types"
+      "collectionName": "tag_film_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-film-types",
@@ -2332,18 +2209,17 @@
       "info": {
         "singularName": "tag-film-type",
         "pluralName": "tag-film-types",
-        "displayName": "TagFilmType"
+        "displayName": "Tag FilmType"
       }
     }
   },
   {
     "datamodelKey": "TagGenre",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_genres",
       "folderName": "tag-genre",
       "apiPath": "/tag-genres",
-      "infoName": "TagGenre",
-      "collectionName": "tag_genres"
+      "collectionName": "tag_genres",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-genres",
@@ -2351,18 +2227,17 @@
       "info": {
         "singularName": "tag-genre",
         "pluralName": "tag-genres",
-        "displayName": "TagGenre"
+        "displayName": "Tag Genre"
       }
     }
   },
   {
     "datamodelKey": "TagKeyword",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_keywords",
       "folderName": "tag-keyword",
       "apiPath": "/tag-keywords",
-      "infoName": "TagKeyword",
-      "collectionName": "tag_keywords"
+      "collectionName": "tag_keywords",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-keywords",
@@ -2370,18 +2245,17 @@
       "info": {
         "singularName": "tag-keyword",
         "pluralName": "tag-keywords",
-        "displayName": "TagKeyword"
+        "displayName": "Tag Keyword"
       }
     }
   },
   {
     "datamodelKey": "TagLocation",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_locations",
       "folderName": "tag-location",
       "apiPath": "/tag-locations",
-      "infoName": "TagLocation",
-      "collectionName": "tag_locations"
+      "collectionName": "tag_locations",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-locations",
@@ -2389,18 +2263,17 @@
       "info": {
         "singularName": "tag-location",
         "pluralName": "tag-locations",
-        "displayName": "TagLocation"
+        "displayName": "Tag Location"
       }
     }
   },
   {
     "datamodelKey": "TagLookingFor",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_looking_fors",
       "folderName": "tag-looking-for",
       "apiPath": "/tag-looking-fors",
-      "infoName": "TagLookingFor",
-      "collectionName": "tag_looking_fors"
+      "collectionName": "tag_looking_fors",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-looking-fors",
@@ -2408,18 +2281,17 @@
       "info": {
         "singularName": "tag-looking-for",
         "pluralName": "tag-looking-fors",
-        "displayName": "TagLookingFor"
+        "displayName": "Tag LookingFor"
       }
     }
   },
   {
     "datamodelKey": "TagPremiereType",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_premiere_types",
       "folderName": "tag-premiere-type",
       "apiPath": "/tag-premiere-types",
-      "infoName": "TagPremiereType",
-      "collectionName": "tag_premiere_types"
+      "collectionName": "tag_premiere_types",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-premiere-types",
@@ -2427,18 +2299,17 @@
       "info": {
         "singularName": "tag-premiere-type",
         "pluralName": "tag-premiere-types",
-        "displayName": "TagPremiereType"
+        "displayName": "Tag of Premiere Type"
       }
     }
   },
   {
     "datamodelKey": "TagSecret",
     "s3": {
-      "collectionNameFromDatamodelPath": "tag_secrets",
       "folderName": "tag-secret",
       "apiPath": "/tag-secrets",
-      "infoName": "TagSecret",
-      "collectionName": "tag_secrets"
+      "collectionName": "tag_secrets",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tag-secrets",
@@ -2446,18 +2317,17 @@
       "info": {
         "singularName": "tag-secret",
         "pluralName": "tag-secrets",
-        "displayName": "TagSecret"
+        "displayName": "Tag Secret"
       }
     }
   },
   {
     "datamodelKey": "TagTriggerWarning",
     "s3": {
-      "collectionNameFromDatamodelPath": "trigger_warnings",
       "folderName": "trigger-warning",
       "apiPath": "/trigger-warnings",
-      "infoName": "TagTriggerWarning",
-      "collectionName": "trigger_warnings"
+      "collectionName": "trigger_warnings",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/trigger-warnings",
@@ -2465,18 +2335,17 @@
       "info": {
         "singularName": "trigger-warning",
         "pluralName": "trigger-warnings",
-        "displayName": "TagTriggerWarning"
+        "displayName": "Tag TriggerWarning"
       }
     }
   },
   {
     "datamodelKey": "TartuffiArticle",
     "s3": {
-      "collectionNameFromDatamodelPath": "tartuffi_articles",
       "folderName": "tartuffi-article",
       "apiPath": "/tartuffi-articles",
-      "infoName": "Tartuffi_Article",
-      "collectionName": "tartuffi_articles"
+      "collectionName": "tartuffi_articles",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tartuffi-articles",
@@ -2484,18 +2353,17 @@
       "info": {
         "singularName": "tartuffi-article",
         "pluralName": "tartuffi-articles",
-        "displayName": "TartuffiArticle"
+        "displayName": "Tartuff Article"
       }
     }
   },
   {
     "datamodelKey": "TartuffiFooter",
     "s3": {
-      "collectionNameFromDatamodelPath": "tartuffi_footers",
       "folderName": "tartuffi-footer",
       "apiPath": "/tartuffi-footers",
-      "infoName": "Tartuffi_Footer",
-      "collectionName": "tartuffi_footers"
+      "collectionName": "tartuffi_footers",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tartuffi-footers",
@@ -2503,18 +2371,17 @@
       "info": {
         "singularName": "tartuffi-footer",
         "pluralName": "tartuffi-footers",
-        "displayName": "TartuffiFooter"
+        "displayName": "Tartuff Footer"
       }
     }
   },
   {
     "datamodelKey": "TartuffiMenu",
     "s3": {
-      "collectionNameFromDatamodelPath": "tartuffi_menus",
       "folderName": "tartuffi-menu",
       "apiPath": "/tartuffi-menus",
-      "infoName": "Tartuffi_Menu",
-      "collectionName": "tartuffi_menus"
+      "collectionName": "tartuffi_menus",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tartuffi-menus",
@@ -2522,18 +2389,17 @@
       "info": {
         "singularName": "tartuffi-menu",
         "pluralName": "tartuffi-menus",
-        "displayName": "TartuffiMenu"
+        "displayName": "Tartuff Menu"
       }
     }
   },
   {
     "datamodelKey": "TartuffiSupporter",
     "s3": {
-      "collectionNameFromDatamodelPath": "tartuffi_supporters",
       "folderName": "tartuffi-supporter",
       "apiPath": "/tartuffi-supporters",
-      "infoName": "Tartuffi_Supporter",
-      "collectionName": "tartuffi_supporters"
+      "collectionName": "tartuffi_supporters",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/tartuffi-supporters",
@@ -2541,18 +2407,17 @@
       "info": {
         "singularName": "tartuffi-supporter",
         "pluralName": "tartuffi-supporters",
-        "displayName": "TartuffiSupporter"
+        "displayName": "Tartuff Supporter"
       }
     }
   },
   {
     "datamodelKey": "Team",
     "s3": {
-      "collectionNameFromDatamodelPath": "teams",
       "folderName": "team",
       "apiPath": "/teams",
-      "infoName": "Team",
-      "collectionName": "teams"
+      "collectionName": "teams",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/teams",
@@ -2567,30 +2432,28 @@
   {
     "datamodelKey": "TimeUnits",
     "s3": {
-      "collectionNameFromDatamodelPath": "time_units",
       "folderName": "time-units",
       "apiPath": "/time-units",
-      "infoName": "TimeUnits",
-      "collectionName": "time_units"
+      "collectionName": "time_units",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/time-unitses",
+      "apiPath": "/api/time-units",
       "collectionName": "time_units",
       "info": {
-        "singularName": "time-units",
-        "pluralName": "time-unitses",
-        "displayName": "TimeUnits"
+        "singularName": "time-unit",
+        "pluralName": "time-units",
+        "displayName": "Time Units"
       }
     }
   },
   {
     "datamodelKey": "Town",
     "s3": {
-      "collectionNameFromDatamodelPath": "towns",
       "folderName": "town",
       "apiPath": "/towns",
-      "infoName": "Town",
-      "collectionName": "towns"
+      "collectionName": "towns",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/towns",
@@ -2605,11 +2468,10 @@
   {
     "datamodelKey": "Transaction",
     "s3": {
-      "collectionNameFromDatamodelPath": "transactions",
       "folderName": "transaction",
       "apiPath": "/transactions",
-      "infoName": "transaction",
-      "collectionName": "transactions"
+      "collectionName": "transactions",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/transactions",
@@ -2624,239 +2486,226 @@
   {
     "datamodelKey": "TransactionProduct",
     "s3": {
-      "collectionNameFromDatamodelPath": "transactions_products",
       "folderName": "transactions-products",
       "apiPath": "/transactions-products",
-      "infoName": "TransactionsProducts",
-      "collectionName": "transactions_products"
+      "collectionName": "transactions_products",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/transactions-productses",
+      "apiPath": "/api/transactions-products",
       "collectionName": "transactions_products",
       "info": {
-        "singularName": "transactions-products",
-        "pluralName": "transactions-productses",
-        "displayName": "TransactionProduct"
+        "singularName": "transaction-product",
+        "pluralName": "transactions-products",
+        "displayName": "Transaction-Product"
       }
     }
   },
   {
     "datamodelKey": "TrioBruno",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_bruno",
       "folderName": "trio-bruno",
       "apiPath": "/trio-bruno",
-      "infoName": "TrioBruno",
-      "collectionName": "trio_bruno"
+      "collectionName": "trio_bruno",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-brunos",
-      "collectionName": "trio_bruno",
+      "apiPath": "/api/bruno-trios",
+      "collectionName": "bruno_trios",
       "info": {
-        "singularName": "trio-bruno",
-        "pluralName": "trio-brunos",
-        "displayName": "TrioBruno"
+        "singularName": "bruno-trio",
+        "pluralName": "bruno-trios",
+        "displayName": "Bruno Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioDisCamp",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_dis_camp",
       "folderName": "trio-dis-camp",
       "apiPath": "/trio-dis-camp",
-      "infoName": "TrioDisCamp",
-      "collectionName": "trio_dis_camps"
+      "collectionName": "trio_dis_camps",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-dis-camps",
-      "collectionName": "trio_dis_camps",
+      "apiPath": "/api/discamp-trios",
+      "collectionName": "discamp_trios",
       "info": {
-        "singularName": "trio-dis-camp",
-        "pluralName": "trio-dis-camps",
-        "displayName": "TrioDisCamp"
+        "singularName": "discamp-trio",
+        "pluralName": "discamp-trios",
+        "displayName": "DisCamp Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioFilmikool",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_filmikool",
       "folderName": "trio-filmikool",
       "apiPath": "/trio-filmikool",
-      "infoName": "TrioFilmikool",
-      "collectionName": "trio_filmikools"
+      "collectionName": "trio_filmikools",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-filmikools",
-      "collectionName": "trio_filmikools",
+      "apiPath": "/api/filmikool-trios",
+      "collectionName": "filmikool_trios",
       "info": {
-        "singularName": "trio-filmikool",
-        "pluralName": "trio-filmikools",
-        "displayName": "TrioFilmikool"
+        "singularName": "filmikool-trio",
+        "pluralName": "filmikool-trios",
+        "displayName": "Filmikool Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioHOFF",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_hoff",
       "folderName": "trio-hoff",
       "apiPath": "/trio-hoff",
-      "infoName": "TrioHOFF",
-      "collectionName": "trio_hoffs"
+      "collectionName": "trio_hoffs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-hoffs",
-      "collectionName": "trio_hoffs",
+      "apiPath": "/api/hoff-trios",
+      "collectionName": "hoff_trios",
       "info": {
-        "singularName": "trio-hoff",
-        "pluralName": "trio-hoffs",
-        "displayName": "TrioHOFF"
+        "singularName": "hoff-trio",
+        "pluralName": "hoff-trios",
+        "displayName": "HOFF Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioIndustry",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_industry",
       "folderName": "trio-industry",
       "apiPath": "/trio-industry",
-      "infoName": "TrioIndustry",
-      "collectionName": "trio_industries"
+      "collectionName": "trio_industries",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-industries",
-      "collectionName": "trio_industries",
+      "apiPath": "/api/industry-trios",
+      "collectionName": "industry_trios",
       "info": {
-        "singularName": "trio-industry",
-        "pluralName": "trio-industries",
-        "displayName": "TrioIndustry"
+        "singularName": "industry-trio",
+        "pluralName": "industry-trios",
+        "displayName": "Industry Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioJustFilm",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_just_film",
       "folderName": "trio-just-film",
       "apiPath": "/trio-just-film",
-      "infoName": "TrioJustFilm",
-      "collectionName": "trio_just_films"
+      "collectionName": "trio_just_films",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-just-films",
-      "collectionName": "trio_just_films",
+      "apiPath": "/api/justfilm-trios",
+      "collectionName": "justfilm_trios",
       "info": {
-        "singularName": "trio-just-film",
-        "pluralName": "trio-just-films",
-        "displayName": "TrioJustFilm"
+        "singularName": "justfilm-trio",
+        "pluralName": "justfilm-trios",
+        "displayName": "JustFilm Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioKinoff",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_kinoff",
       "folderName": "trio-kinoff",
       "apiPath": "/trio-kinoff",
-      "infoName": "TrioKinoff",
-      "collectionName": "trio_kinoffs"
+      "collectionName": "trio_kinoffs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-kinoffs",
-      "collectionName": "trio_kinoffs",
+      "apiPath": "/api/kinoff-trios",
+      "collectionName": "kinoff_trios",
       "info": {
-        "singularName": "trio-kinoff",
-        "pluralName": "trio-kinoffs",
-        "displayName": "TrioKinoff"
+        "singularName": "kinoff-trio",
+        "pluralName": "kinoff-trios",
+        "displayName": "Kinoff Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioKumu",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_kumu",
       "folderName": "trio-kumu",
       "apiPath": "/trio-kumu",
-      "infoName": "TrioKumu",
-      "collectionName": "trio_kumu"
+      "collectionName": "trio_kumu",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-kumus",
-      "collectionName": "trio_kumu",
+      "apiPath": "/api/kumu-trios",
+      "collectionName": "kumu_trios",
       "info": {
-        "singularName": "trio-kumu",
-        "pluralName": "trio-kumus",
-        "displayName": "TrioKumu"
+        "singularName": "kumu-trio",
+        "pluralName": "kumu-trios",
+        "displayName": "Kumu Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioPOFF",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_p_oe_ff",
       "folderName": "trio-p-oe-ff",
       "apiPath": "/trio-p-oe-ff",
-      "infoName": "TrioPOFF",
-      "collectionName": "trio_p_oe_ffs"
+      "collectionName": "trio_p_oe_ffs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-p-oe-ffs",
-      "collectionName": "trio_p_oe_ffs",
+      "apiPath": "/api/poff-trios",
+      "collectionName": "poff_trios",
       "info": {
-        "singularName": "trio-p-oe-ff",
-        "pluralName": "trio-p-oe-ffs",
-        "displayName": "TrioPOFF"
+        "singularName": "poff-trio",
+        "pluralName": "poff-trios",
+        "displayName": "POFF Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioShorts",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_shorts",
       "folderName": "trio-shorts",
       "apiPath": "/trio-shorts",
-      "infoName": "TrioShorts",
-      "collectionName": "trio_shorts"
+      "collectionName": "trio_shorts",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-shortses",
-      "collectionName": "trio_shorts",
+      "apiPath": "/api/shorts-trios",
+      "collectionName": "shorts_trios",
       "info": {
-        "singularName": "trio-shorts",
-        "pluralName": "trio-shortses",
-        "displayName": "TrioShorts"
+        "singularName": "shorts-trio",
+        "pluralName": "shorts-trios",
+        "displayName": "Shorts Trio"
       }
     }
   },
   {
     "datamodelKey": "TrioTartuff",
     "s3": {
-      "collectionNameFromDatamodelPath": "trio_tartuff",
       "folderName": "trio-tartuff",
       "apiPath": "/trio-tartuff",
-      "infoName": "TrioTartuff",
-      "collectionName": "trio_tartuffs"
+      "collectionName": "trio_tartuffs",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/trio-tartuffs",
-      "collectionName": "trio_tartuffs",
+      "apiPath": "/api/tartuff-trios",
+      "collectionName": "tartuff_trios",
       "info": {
-        "singularName": "trio-tartuff",
-        "pluralName": "trio-tartuffs",
-        "displayName": "TrioTartuff"
+        "singularName": "tartuff-trio",
+        "pluralName": "tartuff-trios",
+        "displayName": "Tartuff Trio"
       }
     }
   },
   {
     "datamodelKey": "TypeOfWork",
     "s3": {
-      "collectionNameFromDatamodelPath": "type_of_works",
       "folderName": "type-of-work",
       "apiPath": "/type-of-works",
-      "infoName": "TypeOfWork",
-      "collectionName": "type_of_works"
+      "collectionName": "type_of_works",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/type-of-works",
@@ -2871,30 +2720,28 @@
   {
     "datamodelKey": "UserProfile",
     "s3": {
-      "collectionNameFromDatamodelPath": "user_profiles",
       "folderName": "user-profiles",
       "apiPath": "/user-profiles",
-      "infoName": "UserProfiles",
-      "collectionName": "user_profiles"
+      "collectionName": "user_profiles",
+      "info": {}
     },
     "s4": {
-      "apiPath": "/api/user-profileses",
+      "apiPath": "/api/user-profiles",
       "collectionName": "user_profiles",
       "info": {
-        "singularName": "user-profiles",
-        "pluralName": "user-profileses",
-        "displayName": "UserProfile"
+        "singularName": "user-profile",
+        "pluralName": "user-profiles",
+        "displayName": "User Profile"
       }
     }
   },
   {
     "datamodelKey": "UserRole",
     "s3": {
-      "collectionNameFromDatamodelPath": "user_roles",
       "folderName": "user-role",
       "apiPath": "/user-roles",
-      "infoName": "UserRole",
-      "collectionName": "user_roles"
+      "collectionName": "user_roles",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/user-roles",
@@ -2902,18 +2749,17 @@
       "info": {
         "singularName": "user-role",
         "pluralName": "user-roles",
-        "displayName": "UserRole"
+        "displayName": "User Role"
       }
     }
   },
   {
     "datamodelKey": "WebAuthor",
     "s3": {
-      "collectionNameFromDatamodelPath": "web_authors",
       "folderName": "web-author",
       "apiPath": "/web-authors",
-      "infoName": "WebAuthor",
-      "collectionName": "web_authors"
+      "collectionName": "web_authors",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/web-authors",
@@ -2921,18 +2767,17 @@
       "info": {
         "singularName": "web-author",
         "pluralName": "web-authors",
-        "displayName": "WebAuthor"
+        "displayName": "Web Author"
       }
     }
   },
   {
     "datamodelKey": "WebPermission",
     "s3": {
-      "collectionNameFromDatamodelPath": "web_permissions",
       "folderName": "web-permission",
       "apiPath": "/web-permissions",
-      "infoName": "webPermission",
-      "collectionName": "web_permissions"
+      "collectionName": "web_permissions",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/web-permissions",
@@ -2940,18 +2785,17 @@
       "info": {
         "singularName": "web-permission",
         "pluralName": "web-permissions",
-        "displayName": "WebPermission"
+        "displayName": "Web Permission"
       }
     }
   },
   {
     "datamodelKey": "WebRole",
     "s3": {
-      "collectionNameFromDatamodelPath": "web_roles",
       "folderName": "web-role",
       "apiPath": "/web-roles",
-      "infoName": "webRole",
-      "collectionName": "web_roles"
+      "collectionName": "web_roles",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/web-roles",
@@ -2959,18 +2803,17 @@
       "info": {
         "singularName": "web-role",
         "pluralName": "web-roles",
-        "displayName": "WebRole"
+        "displayName": "Web Role"
       }
     }
   },
   {
     "datamodelKey": "WebUser",
     "s3": {
-      "collectionNameFromDatamodelPath": "web_users",
       "folderName": "web-user",
       "apiPath": "/web-users",
-      "infoName": "webUser",
-      "collectionName": "web_users"
+      "collectionName": "web_users",
+      "info": {}
     },
     "s4": {
       "apiPath": "/api/web-users",
@@ -2978,7 +2821,7 @@
       "info": {
         "singularName": "web-user",
         "pluralName": "web-users",
-        "displayName": "WebUser"
+        "displayName": "Web User"
       }
     }
   }
