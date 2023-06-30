@@ -1,0 +1,158 @@
+datamodelKey,s3.folderName,s3.apiPath,s3.collectionName,s3.infoName,s4.apiPath,s4.collectionName,s4.info.singularName,s4.info.pluralName,s4.info.displayName
+Address,address,/addresses,addresses,address,/api/addresses,addresses,address,addresses,Address
+ArticleType,article-type,/article-types,article_types,ArticleType,/api/article-types,article_types,article-type,article-types,Article Type
+Award,industry-award,/industry-awards,industry_awards,Award,/api/industry-awards,industry_awards,industry-award,industry-awards,Award
+Awarding,awarding,/awardings,awardings,Awarding,/api/awardings,awardings,awarding,awardings,Awarding
+BannerGroup,banner,/banners,banners,BannerGroup,/api/banners,banners,banner,banners,Banner Group
+BrunoArticle,bruno-article,/bruno-articles,bruno_articles,Bruno_Article,/api/bruno-articles,bruno_articles,bruno-article,bruno-articles,Bruno Article
+BrunoFooter,bruno-footer,/bruno-footers,bruno_footers,Bruno_Footer,/api/bruno-footers,bruno_footers,bruno-footer,bruno-footers,Bruno Footer
+BrunoMenu,bruno-menu,/bruno-menus,bruno_menus,Bruno_Menu,/api/bruno-menus,bruno_menus,bruno-menu,bruno-menus,Bruno Menu
+BrunoSupporter,bruno-supporter,/bruno-supporters,bruno_supporters,Bruno_Supporter,/api/bruno-supporters,bruno_supporters,bruno-supporter,bruno-supporters,Bruno Supporter
+BusinessProfile,business-profile,/business-profiles,business_profiles,BusinessProfile,/api/business-profiles,business_profiles,business-profile,business-profiles,Business Profile
+Cassette,cassette,/cassettes,cassettes,Cassette,/api/cassettes,cassettes,cassette,cassettes,Cassette
+Channel,channel,/channels,channels,Channel,/api/channels,channels,channel,channels,Channel
+Cinema,cinema,/cinemas,cinemas,Cinema,/api/cinemas,cinemas,cinema,cinemas,Cinema
+Country,country,/countries,countries,Country,/api/countries,countries,country,countries,Country
+County,county,/counties,counties,County,/api/counties,counties,county,counties,County
+Course,course,/courses,courses,Course,/api/courses,courses,course,courses,Course
+CourseEvent,course-event,/course-events,course_events,CourseEvent,/api/course-events,course_events,course-event,course-events,Course Event
+Delivery,delivery,/deliveries,deliveries,Delivery,/api/deliveries,deliveries,delivery,deliveries,Delivery
+DeliveryType,delivery-type,/delivery-types,delivery_types,DeliveryType,/api/delivery-types,delivery_types,delivery-type,delivery-types,Delivery Type
+DisCampArticle,dis-camp-article,/dis-camp-articles,dis_camp_articles,DisCampArticle,/api/discamp-articles,discamp_articles,discamp-article,discamp-articles,DisCamp Article
+DisCampCategory,dis-camp-category,/dis-camp-categories,dis_camp_categories,DisCampCategory,/api/discamp-categories,discamp_categories,discamp-category,discamp-categories,DisCamp Category
+DisCampEvent,dis-camp-event,/dis-camp-events,dis_camp_events,DisCampEvent,/api/discamp-events,discamp_events,discamp-event,discamp-events,DisCamp Event
+DisCampFooter,dis-camp-footer,/dis-camp-footers,dis_camp_footers,DisCampFooter,/api/discamp-footers,discamp_footers,discamp-footer,discamp-footers,DisCamp Footer
+DisCampGroup,dis-camp-group,/dis-camp-groups,dis_camp_groups,DisCampGroup,/api/discamp-groups,discamp_groups,discamp-group,discamp-groups,DisCamp Group
+DisCampMenu,dis-camp-menu,/dis-camp-menus,dis_camp_menus,DisCampMenu,/api/discamp-menus,discamp_menus,discamp-menu,discamp-menus,DisCamp Menu
+DisCampPerson,dis-camp-person,/dis-camp-people,dis_camp_people,DisCampPerson,/api/discamp-persons,discamp_people,discamp-person,discamp-persons,DisCamp Person
+DisCampPersonType,dis-camp-person-type,/dis-camp-person-types,dis_camp_person_types,DisCampPersonType,/api/discamp-person-types,discamp_person_types,discamp-person-type,discamp-person-types,DisCamp Person Type
+DisCampProject,dis-camp-project,/dis-camp-projects,dis_camp_projects,DisCampProject,/api/discamp-projects,discamp_projects,discamp-project,discamp-projects,DisCamp Project
+DisCampSupporter,dis-camp-supporter,/dis-camp-supporters,dis_camp_supporters,DisCampSupporter,/api/discamp-supporters,discamp_supporters,discamp-supporter,discamp-supporters,DisCamp Supporter
+Domain,domain,/domains,Domeen,Domain,/api/domains,domains,domain,domains,Domain
+DumbFolder,dumb-folder,/dumb-folders,dumb_folders,DumbFolder,/api/dumb-folders,dumb_folders,dumb-folder,dumb-folders,Dumb Folder
+Event,event,/events,events,Event,/api/events,events,event,events,Event
+EventAccess,event-access,/event-accesses,event_accesses,EventAccess,/api/event-accesses,event_accesses,event-access,event-accesses,Event Access
+EventMode,event-mode,/event-modes,event_modes,EventMode,/api/event-modes,event_modes,event-mode,event-modes,Event Mode
+EventType,event-type,/event-types,event_types,EventType,/api/event-types,event_types,event-type,event-types,Event Type
+EyeColour,eye-colour,/eye-colours,eye_colours,EyeColour,/api/eye-colours,eye_colours,eye-colour,eye-colours,Eye Colour
+Festival,festival,/festivals,FestivalCollectionName,Festival,/api/festivals,festivals,festival,festivals,Festival
+FestivalEdition,festival-edition,/festival-editions,Edition,FestivalEdition,/api/festival-editions,festival_editions,festival-edition,festival-editions,Festival Edition
+Film,film,/films,films,Film,/api/films,films,film,films,Film
+FilmikooliArticle,filmikooli-article,/filmikooli-articles,filmikooli_articles,Filmikooli_Article,/api/filmikool-articles,filmikool_articles,filmikool-article,filmikool-articles,Filmikool Article
+FilmikooliFooter,filmikooli-footer,/filmikooli-footers,filmikooli_footers,Filmikooli_Footer,/api/filmikool-footers,filmikool_footers,filmikool-footer,filmikool-footers,Filmikool Footer
+FilmikooliMenu,filmikooli-menu,/filmikooli-menus,filmikooli_menus,Filmikooli_Menu,/api/filmikool-menus,filmikool_menus,filmikool-menu,filmikool-menus,Filmikool Menu
+FilmikooliSupporter,filmikool-supporter,/filmikool-supporters,filmikool_supporters,Filmikooli_Supporter,/api/filmikool-supporters,filmikool_supporters,filmikool-supporter,filmikool-supporters,Filmikool Supporter
+Filmography,filmography,/filmographies,filmographies,Filmography,/api/filmographies,filmographies,filmography,filmographies,Filmography
+FrontPageCourses,front-page-courses,/front-page-courses,front_page_courses,Front_Page_Courses,/api/front-page-courseses,front_page_courses,front-page-courses,front-page-courseses,FrontPage Courses
+Function,function,/functions,functions,UserFunction,/api/functions,functions,function,functions,Function
+Gender,gender,/genders,genders,Gender,/api/genders,genders,gender,genders,Gender
+HOFFiArticle,hof-fi-article,/hof-fi-articles,hof_fi_articles,HOFFi_Article,/api/hoff-articles,hoff_articles,hoff-article,hoff-articles,HOFF Article
+HOFFiFooter,hof-fi-footer,/hof-fi-footers,hof_fi_footers,HOFFi_Footer,/api/hoff-footers,hoff_footers,hoff-footer,hoff-footers,HOFF Footer
+HOFFiMenu,hof-fi-menu,/hof-fi-menus,hof_fi_menus,HOFFi_Menu,/api/hoff-menus,hoff_menus,hoff-menu,hoff-menus,HOFF Menu
+HOFFiSupporter,hof-fi-supporter,/hof-fi-supporters,hof_fi_supporters,HOFFi_Supporter,/api/hoff-supporters,hoff_supporters,hoff-supporter,hoff-supporters,HOFF Supporter
+HairColour,hair-colour,/hair-colours,hair_colours,HairColour,/api/hair-colours,hair_colours,hair-colour,hair-colours,Hair Colour
+HairLength,hair-length,/hair-lengths,hair_lengths,HairLength,/api/hair-lengths,hair_lengths,hair-length,hair-lengths,Hair Length
+Hall,hall,/halls,halls,Hall,/api/halls,halls,hall,halls,Hall
+HeroArticleBruno,hero-article-bruno,/hero-article-bruno,hero_article_bruno,HeroArticleBruno,/api/bruno-heroarticles,bruno_heroarticles,bruno-heroarticle,bruno-heroarticles,Bruno HeroArticle
+HeroArticleDisCamp,hero-article-dis-camp,/hero-article-dis-camp,hero_article_dis_camps,HeroArticleDisCamp,/api/discamp-heroarticles,discamp_heroarticles,discamp-heroarticle,discamp-heroarticles,DisCamp HeroArticle
+HeroArticleFilmikool,hero-article-filmikool,/hero-article-filmikool,hero_article_filmikools,HeroArticleFilmikool,/api/filmikool-heroarticles,filmikool_heroarticles,filmikool-heroarticle,filmikool-heroarticles,Filmikool HeroArticle
+HeroArticleHoff,hero-article-hoff,/hero-article-hoff,hero_article_hoffs,HeroArticleHoff,/api/hoff-heroarticles,hoff_heroarticles,hoff-heroarticle,hoff-heroarticles,Hoff HeroArticle
+HeroArticleIndustry,hero-article-industry,/hero-article-industry,hero_article_industries,HeroArticleIndustry,/api/industry-heroarticles,industry_heroarticles,industry-heroarticle,industry-heroarticles,Industry HeroArticle
+HeroArticleJustFilm,hero-article-just-film,/hero-article-just-film,hero_article_just_films,HeroArticleJustFilm,/api/justfilm-heroarticles,justfilm_heroarticles,justfilm-heroarticle,justfilm-heroarticles,JustFilm HeroArticle
+HeroArticleKinoff,hero-article-kinoff,/hero-article-kinoff,hero_article_kinoffs,HeroArticleKinoff,/api/kinoff-heroarticles,kinoff_heroarticles,kinoff-heroarticle,kinoff-heroarticles,Kinoff HeroArticle
+HeroArticleKumu,hero-article-kumu,/hero-article-kumu,hero_article_kumu,HeroArticleKumu,/api/kumu-heroarticles,kumu_heroarticles,kumu-heroarticle,kumu-heroarticles,Kumu HeroArticle
+HeroArticlePoff,article-hero,/article-hero,article_heroes,HeroArticlePoff,/api/poff-heroarticles,poff_heroarticles,poff-heroarticle,poff-heroarticles,PÖFF HeroArticle
+HeroArticleShorts,hero-article-shorts,/hero-article-shorts,hero_article_shorts,HeroArticleShorts,/api/shorts-heroarticles,shorts_heroarticles,shorts-heroarticle,shorts-heroarticles,Shorts HeroArticle
+HeroArticleTartuff,hero-article-tartuff,/hero-article-tartuff,hero_article_tartuffs,HeroArticleTartuff,/api/tartuff-heroarticles,tartuff_heroarticles,tartuff-heroarticle,tartuff-heroarticles,Tartuff HeroArticle
+IndustryArticle,industry-article,/industry-articles,industry_articles,Industry_Article,/api/industry-articles,industry_articles,industry-article,industry-articles,Industry Article
+IndustryCategory,industry-category,/industry-categories,industry_categories,Industry_Category,/api/industry-categories,industry_categories,industry-category,industry-categories,Industry Category
+IndustryEvent,industry-event,/industry-events,industry_events,Industry_Event,/api/industry-events,industry_events,industry-event,industry-events,Industry Event
+IndustryFooter,industry-footer,/industry-footers,industry_footers,Industry_Footer,/api/industry-footers,industry_footers,industry-footer,industry-footers,Industry Footer
+IndustryGroup,industry-group,/industry-groups,industry_groups,Industry_Group,/api/industry-groups,industry_groups,industry-group,industry-groups,IndustryGroup
+IndustryMenu,industry-menu,/industry-menus,industry_menus,Industry_Menu,/api/industry-menus,industry_menus,industry-menu,industry-menus,Industry Menu
+IndustryPerson,industry-person,/industry-people,industry_people,Industry_Person,/api/industry-persons,industry_people,industry-person,industry-persons,Industry Person
+IndustryPersonType,industry-person-type,/industry-person-types,industry_person_types,Industry_PersonType,/api/industry-person-types,industry_person_types,industry-person-type,industry-person-types,Industry Person Type
+IndustryProject,industry-project,/industry-projects,industry_projects,Industry_Project,/api/industry-projects,industry_projects,industry-project,industry-projects,Industry Project
+IndustrySupporter,industry-supporter,/industry-supporters,industry_supporters,Industry_Supporter,/api/industry-supporters,industry_supporters,industry-supporter,industry-supporters,Industry Supporter
+JustFilmFooter,just-film-footer,/just-film-footers,just_film_footers,JustFilm_Footer,/api/justfilm-footers,justfilm_footers,justfilm-footer,justfilm-footers,JustFilm Footer
+JustFilmiArticle,just-filmi-article,/just-filmi-articles,just_filmi_articles,JustFilmi_Article,/api/justfilm-articles,justfilm_articles,justfilm-article,justfilm-articles,JustFilm Article
+JustFilmiMenu,just-filmi-menu,/just-filmi-menus,just_filmi_menus,JustFilmi_Menu,/api/justfilm-menus,justfilm_menus,justfilm-menu,justfilm-menus,JustFilm Menu
+JustSupporter,supporters-just,/supporters-justs,supporters_justs,Just_Supporter,/api/justfilm-supporters,justfilm_supporters,justfilm-supporter,justfilm-supporters,JustFilm Supporter
+KinoffiArticle,kinoffi-article,/kinoffi-articles,kinoffi_articles,Kinoffi_Article,/api/kinoff-articles,kinoff_articles,kinoff-article,kinoff-articles,Kinoff Article
+KinoffiFooter,kinoffi-footer,/kinoffi-footers,kinoffi_footers,Kinoffi_Footer,/api/kinoff-footers,kinoff_footers,kinoff-footer,kinoff-footers,Kinoff Footer
+KinoffiMenu,kinoffi-menu,/kinoffi-menus,kinoffi_menus,Kinoffi_Menu,/api/kinoff-menus,kinoff_menus,kinoff-menu,kinoff-menus,Kinoff Menu
+KinoffiSupporter,kinoffi-supporter,/kinoffi-supporters,kinoffi_supporters,Kinoffi_Supporter,/api/kinoff-supporters,kinoff_supporters,kinoff-supporter,kinoff-supporters,Kinoff Supporter
+KumuArticle,kumu-article,/kumu-articles,kumu_articles,Kumu_Article,/api/kumu-articles,kumu_articles,kumu-article,kumu-articles,Kumu Article
+KumuFooter,kumu-footer,/kumu-footers,kumu_footers,Kumu_Footer,/api/kumu-footers,kumu_footers,kumu-footer,kumu-footers,Kumu Footer
+KumuMenu,kumu-menu,/kumu-menus,kumu_menus,Kumu_Menu,/api/kumu-menus,kumu_menus,kumu-menu,kumu-menus,Kumu Menu
+KumuSupporter,kumu-supporter,/kumu-supporters,kumu_supporters,Kumu_Supporter,/api/kumu-supporters,kumu_supporters,kumu-supporter,kumu-supporters,Kumu Supporter
+L1MenuIndustry,l1-menu-industry,/l-1-menu-industries,l1_menu_industries,L1MenuIndustry,/api/industry-l1menus,industry_l1menus,industry-l1menu,industry-l1menus,Industry L1 Menu
+L1MenuKumu,l1-menu-kumu,/l-1-menu-kumus,l1_menu_kumus,L1MenuKumu,/api/kumu-l1menus,kumu_l1menus,kumu-l1menu,kumu-l1menus,Kumu L1 Menu
+LabelGroup,label-group,/label-groups,label_groups,LabelGroup,/api/label-groups,label_groups,label-group,label-groups,Label Group
+Language,language,/languages,languages,Language,/api/languages,languages,language,languages,Language
+Location,location,/locations,locations,Location,/api/locations,locations,location,locations,Location
+Municipality,populated-place,/populated-places,populated_places,Municipality,/api/populated-places,populated_places,populated-place,populated-places,Municipality
+Organisation,organisation,/organisations,organisations,Organisation,/api/organisations,organisations,organisation,organisations,Organisation
+Origin,origin,/origins,origins,Origin,/api/origins,origins,origin,origins,Origin
+POFFiArticle,pof-fi-article,/pof-fi-articles,pof_fi_articles,POFFi_Article,/api/poff-articles,poff_articles,poff-article,poff-articles,POFF Article
+POFFiFooter,pof-fi-footer,/pof-fi-footers,pof_fi_footers,POFFi_Footer,/api/poff-footers,poff_footers,poff-footer,poff-footers,POFF Footer
+POFFiMenu,pof-fi-menu,/pof-fi-menus,pof_fi_menus,POFFi_Menu,/api/poff-menus,poff_menus,poff-menu,poff-menus,POFF Menu
+POFFiSupporter,supporters-page,/supporters-pages,supporters_pages,POFFi_Supporter,/api/poff-supporters,poff_supporters,poff-supporter,poff-supporters,POFF Supporter
+PatternCollection,pattern-collections,/pattern-collections,pattern_collections,Pattern_Collections,/api/pattern-collections,pattern_collections,pattern-collection,pattern-collections,Pattern Collection
+Person,person,/people,people,Person,/api/people,people,person,people,Person
+PitchOfVoice,pitch-of-voice,/pitch-of-voices,pitch_of_voices,PitchOfVoice,/api/pitch-of-voices,pitch_of_voices,pitch-of-voice,pitch-of-voices,Pitch Of Voice
+Product,product,/products,products,Product,/api/products,products,product,products,Product
+ProductType,product-type,/product-types,product_types,ProductType,/api/product-types,product_types,product-type,product-types,Product Type
+Product_Category,product-category,/product-categories,product_categories,Product_Category,/api/product-categories,product_categories,product-category,product-categories,Product Category
+Programme,programme,/programmes,programmes,Programme,/api/programmes,programmes,programme,programmes,Programme
+ProjectStatus,project-status,/project-statuses,project_statuses,Project_Status,/api/project-statuses,project_statuses,project-status,project-statuses,Project Status
+ProjectType,project-type,/project-types,project_types,Project_Type,/api/project-types,project_types,project-type,project-types,Project Type
+RoleAtFilm,role-at-film,/role-at-films,role_at_films,RoleAtFilm,/api/role-at-films,role_at_films,role-at-film,role-at-films,Role at Film
+Screening,screening,/screenings,screenings,Screening,/api/screenings,screenings,screening,screenings,Screening
+ScreeningType,screening-type,/screening-types,screening_types,ScreeningType,/api/screening-types,screening_types,screening-type,screening-types,Screening Type
+ShoeSize,shoe-size,/shoe-sizes,shoe_sizes,Shoe_Size,/api/shoe-sizes,shoe_sizes,shoe-size,shoe-sizes,Shoe Size
+Shop,shop,/shops,shops,Shop,/api/shops,shops,shop,shops,Shop
+ShortsSupporter,supporters-shorts,/supporters-shorts,supporters_shorts,Shorts_Supporter,/api/shorts-supporters,shorts_supporters,shorts-supporter,shorts-supporters,Shorts Supporter
+ShortsiArticle,shortsi-article,/shortsi-articles,shortsi_articles,Shortsi_Article,/api/shorts-articles,shorts_articles,shorts-article,shorts-articles,Shorts Article
+ShortsiFooter,shortsi-footer,/shortsi-footers,shortsi_footers,Shortsi_Footer,/api/shorts-footers,shorts_footers,shorts-footer,shorts-footers,Shorts Footer
+ShortsiMenu,shortsi-menu,/shortsi-menus,shortsi_menus,Shortsi_Menu,/api/shorts-menus,shorts_menus,shorts-menu,shorts-menus,Shorts Menu
+SixFilms,six-films,/six-films,six_films,SixFilms,/api/six-films,six_films,six-film,six-films,SixFilm
+SmartFolder,smart-folder,/smart-folders,smart_folders,SmartFolder,/api/smart-folders,smart_folders,smart-folder,smart-folders,Smart Folder
+Stature,stature,/statures,statures,Stature,/api/statures,statures,stature,statures,Stature
+TagAgeRestriction,age-restriction,/age-restrictions,age_restrictions,TagAgeRestriction,/api/age-restrictions,age_restrictions,age-restriction,age-restrictions,Tag AgeRestriction
+TagCategory,tag-category,/tag-categories,tag_categories,TagCategory,/api/tag-categories,tag_categories,tag-category,tag-categories,Tag Category
+TagFilmType,tag-film-type,/tag-film-types,tag_film_types,TagFilmType,/api/tag-film-types,tag_film_types,tag-film-type,tag-film-types,Tag FilmType
+TagGenre,tag-genre,/tag-genres,tag_genres,TagGenre,/api/tag-genres,tag_genres,tag-genre,tag-genres,Tag Genre
+TagKeyword,tag-keyword,/tag-keywords,tag_keywords,TagKeyword,/api/tag-keywords,tag_keywords,tag-keyword,tag-keywords,Tag Keyword
+TagLocation,tag-location,/tag-locations,tag_locations,TagLocation,/api/tag-locations,tag_locations,tag-location,tag-locations,Tag Location
+TagLookingFor,tag-looking-for,/tag-looking-fors,tag_looking_fors,TagLookingFor,/api/tag-looking-fors,tag_looking_fors,tag-looking-for,tag-looking-fors,Tag LookingFor
+TagPremiereType,tag-premiere-type,/tag-premiere-types,tag_premiere_types,TagPremiereType,/api/tag-premiere-types,tag_premiere_types,tag-premiere-type,tag-premiere-types,Tag of Premiere Type
+TagSecret,tag-secret,/tag-secrets,tag_secrets,TagSecret,/api/tag-secrets,tag_secrets,tag-secret,tag-secrets,Tag Secret
+TagTriggerWarning,trigger-warning,/trigger-warnings,trigger_warnings,TagTriggerWarning,/api/trigger-warnings,trigger_warnings,trigger-warning,trigger-warnings,Tag TriggerWarning
+TartuffiArticle,tartuffi-article,/tartuffi-articles,tartuffi_articles,Tartuffi_Article,/api/tartuffi-articles,tartuffi_articles,tartuffi-article,tartuffi-articles,Tartuff Article
+TartuffiFooter,tartuffi-footer,/tartuffi-footers,tartuffi_footers,Tartuffi_Footer,/api/tartuffi-footers,tartuffi_footers,tartuffi-footer,tartuffi-footers,Tartuff Footer
+TartuffiMenu,tartuffi-menu,/tartuffi-menus,tartuffi_menus,Tartuffi_Menu,/api/tartuffi-menus,tartuffi_menus,tartuffi-menu,tartuffi-menus,Tartuff Menu
+TartuffiSupporter,tartuffi-supporter,/tartuffi-supporters,tartuffi_supporters,Tartuffi_Supporter,/api/tartuffi-supporters,tartuffi_supporters,tartuffi-supporter,tartuffi-supporters,Tartuff Supporter
+Team,team,/teams,teams,Team,/api/teams,teams,team,teams,Team
+TimeUnits,time-units,/time-units,time_units,TimeUnits,/api/time-units,time_units,time-unit,time-units,Time Units
+Town,town,/towns,towns,Town,/api/towns,towns,town,towns,Town
+Transaction,transaction,/transactions,transactions,transaction,/api/transactions,transactions,transaction,transactions,Transaction
+TransactionProduct,transactions-products,/transactions-products,transactions_products,TransactionsProducts,/api/transactions-products,transactions_products,transaction-product,transactions-products,Transaction-Product
+TrioBruno,trio-bruno,/trio-bruno,trio_bruno,TrioBruno,/api/bruno-trios,bruno_trios,bruno-trio,bruno-trios,Bruno Trio
+TrioDisCamp,trio-dis-camp,/trio-dis-camp,trio_dis_camps,TrioDisCamp,/api/discamp-trios,discamp_trios,discamp-trio,discamp-trios,DisCamp Trio
+TrioFilmikool,trio-filmikool,/trio-filmikool,trio_filmikools,TrioFilmikool,/api/filmikool-trios,filmikool_trios,filmikool-trio,filmikool-trios,Filmikool Trio
+TrioHOFF,trio-hoff,/trio-hoff,trio_hoffs,TrioHOFF,/api/hoff-trios,hoff_trios,hoff-trio,hoff-trios,HOFF Trio
+TrioIndustry,trio-industry,/trio-industry,trio_industries,TrioIndustry,/api/industry-trios,industry_trios,industry-trio,industry-trios,Industry Trio
+TrioJustFilm,trio-just-film,/trio-just-film,trio_just_films,TrioJustFilm,/api/justfilm-trios,justfilm_trios,justfilm-trio,justfilm-trios,JustFilm Trio
+TrioKinoff,trio-kinoff,/trio-kinoff,trio_kinoffs,TrioKinoff,/api/kinoff-trios,kinoff_trios,kinoff-trio,kinoff-trios,Kinoff Trio
+TrioKumu,trio-kumu,/trio-kumu,trio_kumu,TrioKumu,/api/kumu-trios,kumu_trios,kumu-trio,kumu-trios,Kumu Trio
+TrioPOFF,trio-p-oe-ff,/trio-p-oe-ff,trio_p_oe_ffs,TrioPOFF,/api/poff-trios,poff_trios,poff-trio,poff-trios,POFF Trio
+TrioShorts,trio-shorts,/trio-shorts,trio_shorts,TrioShorts,/api/shorts-trios,shorts_trios,shorts-trio,shorts-trios,Shorts Trio
+TrioTartuff,trio-tartuff,/trio-tartuff,trio_tartuffs,TrioTartuff,/api/tartuff-trios,tartuff_trios,tartuff-trio,tartuff-trios,Tartuff Trio
+TypeOfWork,type-of-work,/type-of-works,type_of_works,TypeOfWork,/api/type-of-works,type_of_works,type-of-work,type-of-works,TypeOfWork
+UserProfile,user-profiles,/user-profiles,user_profiles,UserProfiles,/api/user-profiles,user_profiles,user-profile,user-profiles,User Profile
+UserRole,user-role,/user-roles,user_roles,UserRole,/api/user-roles,user_roles,user-role,user-roles,User Role
+WebAuthor,web-author,/web-authors,web_authors,WebAuthor,/api/web-authors,web_authors,web-author,web-authors,Web Author
+WebPermission,web-permission,/web-permissions,web_permissions,webPermission,/api/web-permissions,web_permissions,web-permission,web-permissions,Web Permission
+WebRole,web-role,/web-roles,web_roles,webRole,/api/web-roles,web_roles,web-role,web-roles,Web Role
+WebUser,web-user,/web-users,web_users,webUser,/api/web-users,web_users,web-user,web-users,Web User
