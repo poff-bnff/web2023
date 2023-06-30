@@ -128,8 +128,6 @@ relevantCollectionTypes.forEach(item => {
   }
 })
 fs.writeFileSync(path.join(__dirname, 'V3V4map.json'), JSON.stringify(relevantCollectionTypes, null, 2))
-// also in yaml
-fs.writeFileSync(path.join(__dirname, 'V3V4map.yaml'), yaml.dump(relevantCollectionTypes))
 // also in CSV
 const flatModel = relevantCollectionTypes.map(item => {
   return {
