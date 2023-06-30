@@ -1,0 +1,2198 @@
+- datamodelKey: Address
+  s3:
+    collectionNameFromDatamodelPath: addresses
+    folderName: address
+    apiPath: /addresses
+    infoName: address
+    collectionName: addresses
+  s4:
+    apiPath: /api/addresses
+    collectionName: addresses
+    info:
+      singularName: address
+      pluralName: addresses
+      displayName: Address
+- datamodelKey: ArticleType
+  s3:
+    collectionNameFromDatamodelPath: article_types
+    folderName: article-type
+    apiPath: /article-types
+    infoName: ArticleType
+    collectionName: article_types
+  s4:
+    apiPath: /api/article-types
+    collectionName: article_types
+    info:
+      singularName: article-type
+      pluralName: article-types
+      displayName: ArticleType
+- datamodelKey: Award
+  s3:
+    collectionNameFromDatamodelPath: industry_awards
+    folderName: industry-award
+    apiPath: /industry-awards
+    infoName: Award
+    collectionName: industry_awards
+  s4:
+    apiPath: /api/industry-awards
+    collectionName: industry_awards
+    info:
+      singularName: industry-award
+      pluralName: industry-awards
+      displayName: Award
+- datamodelKey: Awarding
+  s3:
+    collectionNameFromDatamodelPath: awardings
+    folderName: awarding
+    apiPath: /awardings
+    infoName: Awarding
+    collectionName: awardings
+  s4:
+    apiPath: /api/awardings
+    collectionName: awardings
+    info:
+      singularName: awarding
+      pluralName: awardings
+      displayName: Awarding
+- datamodelKey: BannerGroup
+  s3:
+    collectionNameFromDatamodelPath: banner
+    folderName: banner
+    apiPath: /banners
+    infoName: BannerGroup
+    collectionName: banners
+  s4:
+    apiPath: /api/banners
+    collectionName: banners
+    info:
+      singularName: banner
+      pluralName: banners
+      displayName: BannerGroup
+- datamodelKey: BrunoArticle
+  s3:
+    collectionNameFromDatamodelPath: bruno_articles
+    folderName: bruno-article
+    apiPath: /bruno-articles
+    infoName: Bruno_Article
+    collectionName: bruno_articles
+  s4:
+    apiPath: /api/bruno-articles
+    collectionName: bruno_articles
+    info:
+      singularName: bruno-article
+      pluralName: bruno-articles
+      displayName: BrunoArticle
+- datamodelKey: BrunoFooter
+  s3:
+    collectionNameFromDatamodelPath: bruno_footers
+    folderName: bruno-footer
+    apiPath: /bruno-footers
+    infoName: Bruno_Footer
+    collectionName: bruno_footers
+  s4:
+    apiPath: /api/bruno-footers
+    collectionName: bruno_footers
+    info:
+      singularName: bruno-footer
+      pluralName: bruno-footers
+      displayName: BrunoFooter
+- datamodelKey: BrunoMenu
+  s3:
+    collectionNameFromDatamodelPath: bruno_menus
+    folderName: bruno-menu
+    apiPath: /bruno-menus
+    infoName: Bruno_Menu
+    collectionName: bruno_menus
+  s4:
+    apiPath: /api/bruno-menus
+    collectionName: bruno_menus
+    info:
+      singularName: bruno-menu
+      pluralName: bruno-menus
+      displayName: BrunoMenu
+- datamodelKey: BrunoSupporter
+  s3:
+    collectionNameFromDatamodelPath: bruno_supporters
+    folderName: bruno-supporter
+    apiPath: /bruno-supporters
+    infoName: Bruno_Supporter
+    collectionName: bruno_supporters
+  s4:
+    apiPath: /api/bruno-supporters
+    collectionName: bruno_supporters
+    info:
+      singularName: bruno-supporter
+      pluralName: bruno-supporters
+      displayName: BrunoSupporter
+- datamodelKey: BusinessProfile
+  s3:
+    collectionNameFromDatamodelPath: business_profiles
+    folderName: business-profile
+    apiPath: /business-profiles
+    infoName: BusinessProfile
+    collectionName: business_profiles
+  s4:
+    apiPath: /api/business-profiles
+    collectionName: business_profiles
+    info:
+      singularName: business-profile
+      pluralName: business-profiles
+      displayName: BusinessProfile
+- datamodelKey: Cassette
+  s3:
+    collectionNameFromDatamodelPath: cassettes
+    folderName: cassette
+    apiPath: /cassettes
+    infoName: Cassette
+    collectionName: cassettes
+  s4:
+    apiPath: /api/cassettes
+    collectionName: cassettes
+    info:
+      singularName: cassette
+      pluralName: cassettes
+      displayName: Cassette
+- datamodelKey: Channel
+  s3:
+    collectionNameFromDatamodelPath: channels
+    folderName: channel
+    apiPath: /channels
+    infoName: Channel
+    collectionName: channels
+  s4:
+    apiPath: /api/channels
+    collectionName: channels
+    info:
+      singularName: channel
+      pluralName: channels
+      displayName: Channel
+- datamodelKey: Cinema
+  s3:
+    collectionNameFromDatamodelPath: cinemas
+    folderName: cinema
+    apiPath: /cinemas
+    infoName: Cinema
+    collectionName: cinemas
+  s4:
+    apiPath: /api/cinemas
+    collectionName: cinemas
+    info:
+      singularName: cinema
+      pluralName: cinemas
+      displayName: Cinema
+- datamodelKey: Country
+  s3:
+    collectionNameFromDatamodelPath: countries
+    folderName: country
+    apiPath: /countries
+    infoName: Country
+    collectionName: countries
+  s4:
+    apiPath: /api/countries
+    collectionName: countries
+    info:
+      singularName: country
+      pluralName: countries
+      displayName: Country
+- datamodelKey: County
+  s3:
+    collectionNameFromDatamodelPath: counties
+    folderName: county
+    apiPath: /counties
+    infoName: County
+    collectionName: counties
+  s4:
+    apiPath: /api/counties
+    collectionName: counties
+    info:
+      singularName: county
+      pluralName: counties
+      displayName: County
+- datamodelKey: Course
+  s3:
+    collectionNameFromDatamodelPath: courses
+    folderName: course
+    apiPath: /courses
+    infoName: Course
+    collectionName: courses
+  s4:
+    apiPath: /api/courses
+    collectionName: courses
+    info:
+      singularName: course
+      pluralName: courses
+      displayName: Course
+- datamodelKey: CourseEvent
+  s3:
+    collectionNameFromDatamodelPath: course_events
+    folderName: course-event
+    apiPath: /course-events
+    infoName: CourseEvent
+    collectionName: course_events
+  s4:
+    apiPath: /api/course-events
+    collectionName: course_events
+    info:
+      singularName: course-event
+      pluralName: course-events
+      displayName: CourseEvent
+- datamodelKey: Delivery
+  s3:
+    collectionNameFromDatamodelPath: deliveries
+    folderName: delivery
+    apiPath: /deliveries
+    infoName: Delivery
+    collectionName: deliveries
+  s4:
+    apiPath: /api/deliveries
+    collectionName: deliveries
+    info:
+      singularName: delivery
+      pluralName: deliveries
+      displayName: Delivery
+- datamodelKey: DeliveryType
+  s3:
+    collectionNameFromDatamodelPath: delivery_types
+    folderName: delivery-type
+    apiPath: /delivery-types
+    infoName: DeliveryType
+    collectionName: delivery_types
+  s4:
+    apiPath: /api/delivery-types
+    collectionName: delivery_types
+    info:
+      singularName: delivery-type
+      pluralName: delivery-types
+      displayName: DeliveryType
+- datamodelKey: DisCampArticle
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_articles
+    folderName: dis-camp-article
+    apiPath: /dis-camp-articles
+    infoName: DisCampArticle
+    collectionName: dis_camp_articles
+  s4:
+    apiPath: /api/dis-camp-articles
+    collectionName: dis_camp_articles
+    info:
+      singularName: dis-camp-article
+      pluralName: dis-camp-articles
+      displayName: DisCampArticle
+- datamodelKey: DisCampCategory
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_categories
+    folderName: dis-camp-category
+    apiPath: /dis-camp-categories
+    infoName: DisCampCategory
+    collectionName: dis_camp_categories
+  s4:
+    apiPath: /api/dis-camp-categories
+    collectionName: dis_camp_categories
+    info:
+      singularName: dis-camp-category
+      pluralName: dis-camp-categories
+      displayName: DisCampCategory
+- datamodelKey: DisCampEvent
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_events
+    folderName: dis-camp-event
+    apiPath: /dis-camp-events
+    infoName: DisCampEvent
+    collectionName: dis_camp_events
+  s4:
+    apiPath: /api/dis-camp-events
+    collectionName: dis_camp_events
+    info:
+      singularName: dis-camp-event
+      pluralName: dis-camp-events
+      displayName: DisCampEvent
+- datamodelKey: DisCampFooter
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_footers
+    folderName: dis-camp-footer
+    apiPath: /dis-camp-footers
+    infoName: DisCampFooter
+    collectionName: dis_camp_footers
+  s4:
+    apiPath: /api/dis-camp-footers
+    collectionName: dis_camp_footers
+    info:
+      singularName: dis-camp-footer
+      pluralName: dis-camp-footers
+      displayName: DisCampFooter
+- datamodelKey: DisCampGroup
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_groups
+    folderName: dis-camp-group
+    apiPath: /dis-camp-groups
+    infoName: DisCampGroup
+    collectionName: dis_camp_groups
+  s4:
+    apiPath: /api/dis-camp-groups
+    collectionName: dis_camp_groups
+    info:
+      singularName: dis-camp-group
+      pluralName: dis-camp-groups
+      displayName: DisCampGroup
+- datamodelKey: DisCampMenu
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_menus
+    folderName: dis-camp-menu
+    apiPath: /dis-camp-menus
+    infoName: DisCampMenu
+    collectionName: dis_camp_menus
+  s4:
+    apiPath: /api/dis-camp-menus
+    collectionName: dis_camp_menus
+    info:
+      singularName: dis-camp-menu
+      pluralName: dis-camp-menus
+      displayName: DisCampMenu
+- datamodelKey: DisCampPerson
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_people
+    folderName: dis-camp-person
+    apiPath: /dis-camp-people
+    infoName: DisCampPerson
+    collectionName: dis_camp_people
+  s4:
+    apiPath: /api/dis-camp-persons
+    collectionName: dis_camp_people
+    info:
+      singularName: dis-camp-person
+      pluralName: dis-camp-persons
+      displayName: DisCampPerson
+- datamodelKey: DisCampPersonType
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_person_types
+    folderName: dis-camp-person-type
+    apiPath: /dis-camp-person-types
+    infoName: DisCampPersonType
+    collectionName: dis_camp_person_types
+  s4:
+    apiPath: /api/dis-camp-person-types
+    collectionName: dis_camp_person_types
+    info:
+      singularName: dis-camp-person-type
+      pluralName: dis-camp-person-types
+      displayName: DisCampPersonType
+- datamodelKey: DisCampProject
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_projects
+    folderName: dis-camp-project
+    apiPath: /dis-camp-projects
+    infoName: DisCampProject
+    collectionName: dis_camp_projects
+  s4:
+    apiPath: /api/dis-camp-projects
+    collectionName: dis_camp_projects
+    info:
+      singularName: dis-camp-project
+      pluralName: dis-camp-projects
+      displayName: DisCampProject
+- datamodelKey: DisCampSupporter
+  s3:
+    collectionNameFromDatamodelPath: dis_camp_supporters
+    folderName: dis-camp-supporter
+    apiPath: /dis-camp-supporters
+    infoName: DisCampSupporter
+    collectionName: dis_camp_supporters
+  s4:
+    apiPath: /api/dis-camp-supporters
+    collectionName: dis_camp_supporters
+    info:
+      singularName: dis-camp-supporter
+      pluralName: dis-camp-supporters
+      displayName: DisCampSupporter
+- datamodelKey: Domain
+  s3:
+    collectionNameFromDatamodelPath: domains
+    folderName: domain
+    apiPath: /domains
+    infoName: Domain
+    collectionName: Domeen
+  s4:
+    apiPath: /api/domains
+    collectionName: Domeen
+    info:
+      singularName: domain
+      pluralName: domains
+      displayName: Domain
+- datamodelKey: DumbFolder
+  s3:
+    collectionNameFromDatamodelPath: dumb_folders
+    folderName: dumb-folder
+    apiPath: /dumb-folders
+    infoName: DumbFolder
+    collectionName: dumb_folders
+  s4:
+    apiPath: /api/dumb-folders
+    collectionName: dumb_folders
+    info:
+      singularName: dumb-folder
+      pluralName: dumb-folders
+      displayName: DumbFolder
+- datamodelKey: Event
+  s3:
+    collectionNameFromDatamodelPath: events
+    folderName: event
+    apiPath: /events
+    infoName: Event
+    collectionName: events
+  s4:
+    apiPath: /api/events
+    collectionName: events
+    info:
+      singularName: event
+      pluralName: events
+      displayName: Event
+- datamodelKey: EventAccess
+  s3:
+    collectionNameFromDatamodelPath: event_accesses
+    folderName: event-access
+    apiPath: /event-accesses
+    infoName: EventAccess
+    collectionName: event_accesses
+  s4:
+    apiPath: /api/event-accesses
+    collectionName: event_accesses
+    info:
+      singularName: event-access
+      pluralName: event-accesses
+      displayName: EventAccess
+- datamodelKey: EventMode
+  s3:
+    collectionNameFromDatamodelPath: event_modes
+    folderName: event-mode
+    apiPath: /event-modes
+    infoName: EventMode
+    collectionName: event_modes
+  s4:
+    apiPath: /api/event-modes
+    collectionName: event_modes
+    info:
+      singularName: event-mode
+      pluralName: event-modes
+      displayName: EventMode
+- datamodelKey: EventType
+  s3:
+    collectionNameFromDatamodelPath: event_types
+    folderName: event-type
+    apiPath: /event-types
+    infoName: EventType
+    collectionName: event_types
+  s4:
+    apiPath: /api/event-types
+    collectionName: event_types
+    info:
+      singularName: event-type
+      pluralName: event-types
+      displayName: EventType
+- datamodelKey: EyeColour
+  s3:
+    collectionNameFromDatamodelPath: eye_colours
+    folderName: eye-colour
+    apiPath: /eye-colours
+    infoName: EyeColour
+    collectionName: eye_colours
+  s4:
+    apiPath: /api/eye-colours
+    collectionName: eye_colours
+    info:
+      singularName: eye-colour
+      pluralName: eye-colours
+      displayName: EyeColour
+- datamodelKey: Festival
+  s3:
+    collectionNameFromDatamodelPath: festivals
+    folderName: festival
+    apiPath: /festivals
+    infoName: Festival
+    collectionName: FestivalCollectionName
+  s4:
+    apiPath: /api/festivals
+    collectionName: FestivalCollectionName
+    info:
+      singularName: festival
+      pluralName: festivals
+      displayName: Festival
+- datamodelKey: FestivalEdition
+  s3:
+    collectionNameFromDatamodelPath: festival_editions
+    folderName: festival-edition
+    apiPath: /festival-editions
+    infoName: FestivalEdition
+    collectionName: Edition
+  s4:
+    apiPath: /api/festival-editions
+    collectionName: Edition
+    info:
+      singularName: festival-edition
+      pluralName: festival-editions
+      displayName: FestivalEdition
+- datamodelKey: Film
+  s3:
+    collectionNameFromDatamodelPath: films
+    folderName: film
+    apiPath: /films
+    infoName: Film
+    collectionName: films
+  s4:
+    apiPath: /api/films
+    collectionName: films
+    info:
+      singularName: film
+      pluralName: films
+      displayName: Film
+- datamodelKey: FilmikooliArticle
+  s3:
+    collectionNameFromDatamodelPath: filmikooli_articles
+    folderName: filmikooli-article
+    apiPath: /filmikooli-articles
+    infoName: Filmikooli_Article
+    collectionName: filmikooli_articles
+  s4:
+    apiPath: /api/filmikooli-articles
+    collectionName: filmikooli_articles
+    info:
+      singularName: filmikooli-article
+      pluralName: filmikooli-articles
+      displayName: FilmikooliArticle
+- datamodelKey: FilmikooliFooter
+  s3:
+    collectionNameFromDatamodelPath: filmikooli_footers
+    folderName: filmikooli-footer
+    apiPath: /filmikooli-footers
+    infoName: Filmikooli_Footer
+    collectionName: filmikooli_footers
+  s4:
+    apiPath: /api/filmikooli-footers
+    collectionName: filmikooli_footers
+    info:
+      singularName: filmikooli-footer
+      pluralName: filmikooli-footers
+      displayName: FilmikooliFooter
+- datamodelKey: FilmikooliMenu
+  s3:
+    collectionNameFromDatamodelPath: filmikooli_menus
+    folderName: filmikooli-menu
+    apiPath: /filmikooli-menus
+    infoName: Filmikooli_Menu
+    collectionName: filmikooli_menus
+  s4:
+    apiPath: /api/filmikooli-menus
+    collectionName: filmikooli_menus
+    info:
+      singularName: filmikooli-menu
+      pluralName: filmikooli-menus
+      displayName: FilmikooliMenu
+- datamodelKey: FilmikooliSupporter
+  s3:
+    collectionNameFromDatamodelPath: filmikool_supporters
+    folderName: filmikool-supporter
+    apiPath: /filmikool-supporters
+    infoName: Filmikooli_Supporter
+    collectionName: filmikool_supporters
+  s4:
+    apiPath: /api/filmikool-supporters
+    collectionName: filmikool_supporters
+    info:
+      singularName: filmikool-supporter
+      pluralName: filmikool-supporters
+      displayName: FilmikooliSupporter
+- datamodelKey: Filmography
+  s3:
+    collectionNameFromDatamodelPath: filmographies
+    folderName: filmography
+    apiPath: /filmographies
+    infoName: Filmography
+    collectionName: filmographies
+  s4:
+    apiPath: /api/filmographies
+    collectionName: filmographies
+    info:
+      singularName: filmography
+      pluralName: filmographies
+      displayName: Filmography
+- datamodelKey: FrontPageCourses
+  s3:
+    collectionNameFromDatamodelPath: front_page_courses
+    folderName: front-page-courses
+    apiPath: /front-page-courses
+    infoName: Front_Page_Courses
+    collectionName: front_page_courses
+  s4:
+    apiPath: /api/front-page-courseses
+    collectionName: front_page_courses
+    info:
+      singularName: front-page-courses
+      pluralName: front-page-courseses
+      displayName: FrontPageCourses
+- datamodelKey: Function
+  s3:
+    collectionNameFromDatamodelPath: functions
+    folderName: function
+    apiPath: /functions
+    infoName: UserFunction
+    collectionName: functions
+  s4:
+    apiPath: /api/functions
+    collectionName: functions
+    info:
+      singularName: function
+      pluralName: functions
+      displayName: Function
+- datamodelKey: Gender
+  s3:
+    collectionNameFromDatamodelPath: genders
+    folderName: gender
+    apiPath: /genders
+    infoName: Gender
+    collectionName: genders
+  s4:
+    apiPath: /api/genders
+    collectionName: genders
+    info:
+      singularName: gender
+      pluralName: genders
+      displayName: Gender
+- datamodelKey: HOFFiArticle
+  s3:
+    collectionNameFromDatamodelPath: hof_fi_articles
+    folderName: hof-fi-article
+    apiPath: /hof-fi-articles
+    infoName: HOFFi_Article
+    collectionName: hof_fi_articles
+  s4:
+    apiPath: /api/hof-fi-articles
+    collectionName: hof_fi_articles
+    info:
+      singularName: hof-fi-article
+      pluralName: hof-fi-articles
+      displayName: HOFFiArticle
+- datamodelKey: HOFFiFooter
+  s3:
+    collectionNameFromDatamodelPath: hof_fi_footers
+    folderName: hof-fi-footer
+    apiPath: /hof-fi-footers
+    infoName: HOFFi_Footer
+    collectionName: hof_fi_footers
+  s4:
+    apiPath: /api/hof-fi-footers
+    collectionName: hof_fi_footers
+    info:
+      singularName: hof-fi-footer
+      pluralName: hof-fi-footers
+      displayName: HOFFiFooter
+- datamodelKey: HOFFiMenu
+  s3:
+    collectionNameFromDatamodelPath: hof_fi_menus
+    folderName: hof-fi-menu
+    apiPath: /hof-fi-menus
+    infoName: HOFFi_Menu
+    collectionName: hof_fi_menus
+  s4:
+    apiPath: /api/hof-fi-menus
+    collectionName: hof_fi_menus
+    info:
+      singularName: hof-fi-menu
+      pluralName: hof-fi-menus
+      displayName: HOFFiMenu
+- datamodelKey: HOFFiSupporter
+  s3:
+    collectionNameFromDatamodelPath: hof_fi_supporters
+    folderName: hof-fi-supporter
+    apiPath: /hof-fi-supporters
+    infoName: HOFFi_Supporter
+    collectionName: hof_fi_supporters
+  s4:
+    apiPath: /api/hof-fi-supporters
+    collectionName: hof_fi_supporters
+    info:
+      singularName: hof-fi-supporter
+      pluralName: hof-fi-supporters
+      displayName: HOFFiSupporter
+- datamodelKey: HairColour
+  s3:
+    collectionNameFromDatamodelPath: hair_colours
+    folderName: hair-colour
+    apiPath: /hair-colours
+    infoName: HairColour
+    collectionName: hair_colours
+  s4:
+    apiPath: /api/hair-colours
+    collectionName: hair_colours
+    info:
+      singularName: hair-colour
+      pluralName: hair-colours
+      displayName: HairColour
+- datamodelKey: HairLength
+  s3:
+    collectionNameFromDatamodelPath: hair_lengths
+    folderName: hair-length
+    apiPath: /hair-lengths
+    infoName: HairLength
+    collectionName: hair_lengths
+  s4:
+    apiPath: /api/hair-lengths
+    collectionName: hair_lengths
+    info:
+      singularName: hair-length
+      pluralName: hair-lengths
+      displayName: HairLength
+- datamodelKey: Hall
+  s3:
+    collectionNameFromDatamodelPath: halls
+    folderName: hall
+    apiPath: /halls
+    infoName: Hall
+    collectionName: halls
+  s4:
+    apiPath: /api/halls
+    collectionName: halls
+    info:
+      singularName: hall
+      pluralName: halls
+      displayName: Hall
+- datamodelKey: HeroArticleBruno
+  s3:
+    collectionNameFromDatamodelPath: hero_article_bruno
+    folderName: hero-article-bruno
+    apiPath: /hero-article-bruno
+    infoName: HeroArticleBruno
+    collectionName: hero_article_bruno
+  s4:
+    apiPath: /api/hero-article-brunos
+    collectionName: hero_article_bruno
+    info:
+      singularName: hero-article-bruno
+      pluralName: hero-article-brunos
+      displayName: HeroArticleBruno
+- datamodelKey: HeroArticleDisCamp
+  s3:
+    collectionNameFromDatamodelPath: hero_article_dis_camp
+    folderName: hero-article-dis-camp
+    apiPath: /hero-article-dis-camp
+    infoName: HeroArticleDisCamp
+    collectionName: hero_article_dis_camps
+  s4:
+    apiPath: /api/hero-article-dis-camps
+    collectionName: hero_article_dis_camps
+    info:
+      singularName: hero-article-dis-camp
+      pluralName: hero-article-dis-camps
+      displayName: HeroArticleDisCamp
+- datamodelKey: HeroArticleFilmikool
+  s3:
+    collectionNameFromDatamodelPath: hero_article_filmikool
+    folderName: hero-article-filmikool
+    apiPath: /hero-article-filmikool
+    infoName: HeroArticleFilmikool
+    collectionName: hero_article_filmikools
+  s4:
+    apiPath: /api/hero-article-filmikools
+    collectionName: hero_article_filmikools
+    info:
+      singularName: hero-article-filmikool
+      pluralName: hero-article-filmikools
+      displayName: HeroArticleFilmikool
+- datamodelKey: HeroArticleHoff
+  s3:
+    collectionNameFromDatamodelPath: hero_article_hoff
+    folderName: hero-article-hoff
+    apiPath: /hero-article-hoff
+    infoName: HeroArticleHoff
+    collectionName: hero_article_hoffs
+  s4:
+    apiPath: /api/hero-article-hoffs
+    collectionName: hero_article_hoffs
+    info:
+      singularName: hero-article-hoff
+      pluralName: hero-article-hoffs
+      displayName: HeroArticleHoff
+- datamodelKey: HeroArticleIndustry
+  s3:
+    collectionNameFromDatamodelPath: hero_article_industry
+    folderName: hero-article-industry
+    apiPath: /hero-article-industry
+    infoName: HeroArticleIndustry
+    collectionName: hero_article_industries
+  s4:
+    apiPath: /api/hero-article-industries
+    collectionName: hero_article_industries
+    info:
+      singularName: hero-article-industry
+      pluralName: hero-article-industries
+      displayName: HeroArticleIndustry
+- datamodelKey: HeroArticleJustFilm
+  s3:
+    collectionNameFromDatamodelPath: hero_article_just_film
+    folderName: hero-article-just-film
+    apiPath: /hero-article-just-film
+    infoName: HeroArticleJustFilm
+    collectionName: hero_article_just_films
+  s4:
+    apiPath: /api/hero-article-just-films
+    collectionName: hero_article_just_films
+    info:
+      singularName: hero-article-just-film
+      pluralName: hero-article-just-films
+      displayName: HeroArticleJustFilm
+- datamodelKey: HeroArticleKinoff
+  s3:
+    collectionNameFromDatamodelPath: hero_article_kinoff
+    folderName: hero-article-kinoff
+    apiPath: /hero-article-kinoff
+    infoName: HeroArticleKinoff
+    collectionName: hero_article_kinoffs
+  s4:
+    apiPath: /api/hero-article-kinoffs
+    collectionName: hero_article_kinoffs
+    info:
+      singularName: hero-article-kinoff
+      pluralName: hero-article-kinoffs
+      displayName: HeroArticleKinoff
+- datamodelKey: HeroArticleKumu
+  s3:
+    collectionNameFromDatamodelPath: hero_article_kumu
+    folderName: hero-article-kumu
+    apiPath: /hero-article-kumu
+    infoName: HeroArticleKumu
+    collectionName: hero_article_kumu
+  s4:
+    apiPath: /api/hero-article-kumus
+    collectionName: hero_article_kumu
+    info:
+      singularName: hero-article-kumu
+      pluralName: hero-article-kumus
+      displayName: HeroArticleKumu
+- datamodelKey: HeroArticlePoff
+  s3:
+    collectionNameFromDatamodelPath: article_hero
+    folderName: article-hero
+    apiPath: /article-hero
+    infoName: HeroArticlePoff
+    collectionName: article_heroes
+  s4:
+    apiPath: /api/article-heros
+    collectionName: article_heroes
+    info:
+      singularName: article-hero
+      pluralName: article-heros
+      displayName: HeroArticlePoff
+- datamodelKey: HeroArticleShorts
+  s3:
+    collectionNameFromDatamodelPath: hero_article_shorts
+    folderName: hero-article-shorts
+    apiPath: /hero-article-shorts
+    infoName: HeroArticleShorts
+    collectionName: hero_article_shorts
+  s4:
+    apiPath: /api/hero-article-shortses
+    collectionName: hero_article_shorts
+    info:
+      singularName: hero-article-shorts
+      pluralName: hero-article-shortses
+      displayName: HeroArticleShorts
+- datamodelKey: HeroArticleTartuff
+  s3:
+    collectionNameFromDatamodelPath: hero_article_tartuff
+    folderName: hero-article-tartuff
+    apiPath: /hero-article-tartuff
+    infoName: HeroArticleTartuff
+    collectionName: hero_article_tartuffs
+  s4:
+    apiPath: /api/hero-article-tartuffs
+    collectionName: hero_article_tartuffs
+    info:
+      singularName: hero-article-tartuff
+      pluralName: hero-article-tartuffs
+      displayName: HeroArticleTartuff
+- datamodelKey: IndustryArticle
+  s3:
+    collectionNameFromDatamodelPath: industry_articles
+    folderName: industry-article
+    apiPath: /industry-articles
+    infoName: Industry_Article
+    collectionName: industry_articles
+  s4:
+    apiPath: /api/industry-articles
+    collectionName: industry_articles
+    info:
+      singularName: industry-article
+      pluralName: industry-articles
+      displayName: IndustryArticle
+- datamodelKey: IndustryCategory
+  s3:
+    collectionNameFromDatamodelPath: industry_categories
+    folderName: industry-category
+    apiPath: /industry-categories
+    infoName: Industry_Category
+    collectionName: industry_categories
+  s4:
+    apiPath: /api/industry-categories
+    collectionName: industry_categories
+    info:
+      singularName: industry-category
+      pluralName: industry-categories
+      displayName: IndustryCategory
+- datamodelKey: IndustryEvent
+  s3:
+    collectionNameFromDatamodelPath: industry_events
+    folderName: industry-event
+    apiPath: /industry-events
+    infoName: Industry_Event
+    collectionName: industry_events
+  s4:
+    apiPath: /api/industry-events
+    collectionName: industry_events
+    info:
+      singularName: industry-event
+      pluralName: industry-events
+      displayName: IndustryEvent
+- datamodelKey: IndustryFooter
+  s3:
+    collectionNameFromDatamodelPath: industry_footers
+    folderName: industry-footer
+    apiPath: /industry-footers
+    infoName: Industry_Footer
+    collectionName: industry_footers
+  s4:
+    apiPath: /api/industry-footers
+    collectionName: industry_footers
+    info:
+      singularName: industry-footer
+      pluralName: industry-footers
+      displayName: IndustryFooter
+- datamodelKey: IndustryGroup
+  s3:
+    collectionNameFromDatamodelPath: industry_groups
+    folderName: industry-group
+    apiPath: /industry-groups
+    infoName: Industry_Group
+    collectionName: industry_groups
+  s4:
+    apiPath: /api/industry-groups
+    collectionName: industry_groups
+    info:
+      singularName: industry-group
+      pluralName: industry-groups
+      displayName: IndustryGroup
+- datamodelKey: IndustryMenu
+  s3:
+    collectionNameFromDatamodelPath: industry_menus
+    folderName: industry-menu
+    apiPath: /industry-menus
+    infoName: Industry_Menu
+    collectionName: industry_menus
+  s4:
+    apiPath: /api/industry-menus
+    collectionName: industry_menus
+    info:
+      singularName: industry-menu
+      pluralName: industry-menus
+      displayName: IndustryMenu
+- datamodelKey: IndustryPerson
+  s3:
+    collectionNameFromDatamodelPath: industry_people
+    folderName: industry-person
+    apiPath: /industry-people
+    infoName: Industry_Person
+    collectionName: industry_people
+  s4:
+    apiPath: /api/industry-persons
+    collectionName: industry_people
+    info:
+      singularName: industry-person
+      pluralName: industry-persons
+      displayName: IndustryPerson
+- datamodelKey: IndustryPersonType
+  s3:
+    collectionNameFromDatamodelPath: industry_person_types
+    folderName: industry-person-type
+    apiPath: /industry-person-types
+    infoName: Industry_PersonType
+    collectionName: industry_person_types
+  s4:
+    apiPath: /api/industry-person-types
+    collectionName: industry_person_types
+    info:
+      singularName: industry-person-type
+      pluralName: industry-person-types
+      displayName: IndustryPersonType
+- datamodelKey: IndustryProject
+  s3:
+    collectionNameFromDatamodelPath: industry_projects
+    folderName: industry-project
+    apiPath: /industry-projects
+    infoName: Industry_Project
+    collectionName: industry_projects
+  s4:
+    apiPath: /api/industry-projects
+    collectionName: industry_projects
+    info:
+      singularName: industry-project
+      pluralName: industry-projects
+      displayName: IndustryProject
+- datamodelKey: IndustrySupporter
+  s3:
+    collectionNameFromDatamodelPath: industry_supporters
+    folderName: industry-supporter
+    apiPath: /industry-supporters
+    infoName: Industry_Supporter
+    collectionName: industry_supporters
+  s4:
+    apiPath: /api/industry-supporters
+    collectionName: industry_supporters
+    info:
+      singularName: industry-supporter
+      pluralName: industry-supporters
+      displayName: IndustrySupporter
+- datamodelKey: JustFilmFooter
+  s3:
+    collectionNameFromDatamodelPath: just_film_footers
+    folderName: just-film-footer
+    apiPath: /just-film-footers
+    infoName: JustFilm_Footer
+    collectionName: just_film_footers
+  s4:
+    apiPath: /api/just-film-footers
+    collectionName: just_film_footers
+    info:
+      singularName: just-film-footer
+      pluralName: just-film-footers
+      displayName: JustFilmFooter
+- datamodelKey: JustFilmiArticle
+  s3:
+    collectionNameFromDatamodelPath: just_filmi_articles
+    folderName: just-filmi-article
+    apiPath: /just-filmi-articles
+    infoName: JustFilmi_Article
+    collectionName: just_filmi_articles
+  s4:
+    apiPath: /api/just-filmi-articles
+    collectionName: just_filmi_articles
+    info:
+      singularName: just-filmi-article
+      pluralName: just-filmi-articles
+      displayName: JustFilmiArticle
+- datamodelKey: JustFilmiMenu
+  s3:
+    collectionNameFromDatamodelPath: just_filmi_menus
+    folderName: just-filmi-menu
+    apiPath: /just-filmi-menus
+    infoName: JustFilmi_Menu
+    collectionName: just_filmi_menus
+  s4:
+    apiPath: /api/just-filmi-menus
+    collectionName: just_filmi_menus
+    info:
+      singularName: just-filmi-menu
+      pluralName: just-filmi-menus
+      displayName: JustFilmiMenu
+- datamodelKey: JustSupporter
+  s3:
+    collectionNameFromDatamodelPath: supporters_justs
+    folderName: supporters-just
+    apiPath: /supporters-justs
+    infoName: Just_Supporter
+    collectionName: supporters_justs
+  s4:
+    apiPath: /api/supporters-justs
+    collectionName: supporters_justs
+    info:
+      singularName: supporters-just
+      pluralName: supporters-justs
+      displayName: JustSupporter
+- datamodelKey: KinoffiArticle
+  s3:
+    collectionNameFromDatamodelPath: kinoffi_articles
+    folderName: kinoffi-article
+    apiPath: /kinoffi-articles
+    infoName: Kinoffi_Article
+    collectionName: kinoffi_articles
+  s4:
+    apiPath: /api/kinoffi-articles
+    collectionName: kinoffi_articles
+    info:
+      singularName: kinoffi-article
+      pluralName: kinoffi-articles
+      displayName: KinoffiArticle
+- datamodelKey: KinoffiFooter
+  s3:
+    collectionNameFromDatamodelPath: kinoffi_footers
+    folderName: kinoffi-footer
+    apiPath: /kinoffi-footers
+    infoName: Kinoffi_Footer
+    collectionName: kinoffi_footers
+  s4:
+    apiPath: /api/kinoffi-footers
+    collectionName: kinoffi_footers
+    info:
+      singularName: kinoffi-footer
+      pluralName: kinoffi-footers
+      displayName: KinoffiFooter
+- datamodelKey: KinoffiMenu
+  s3:
+    collectionNameFromDatamodelPath: kinoffi_menus
+    folderName: kinoffi-menu
+    apiPath: /kinoffi-menus
+    infoName: Kinoffi_Menu
+    collectionName: kinoffi_menus
+  s4:
+    apiPath: /api/kinoffi-menus
+    collectionName: kinoffi_menus
+    info:
+      singularName: kinoffi-menu
+      pluralName: kinoffi-menus
+      displayName: KinoffiMenu
+- datamodelKey: KinoffiSupporter
+  s3:
+    collectionNameFromDatamodelPath: kinoffi_supporters
+    folderName: kinoffi-supporter
+    apiPath: /kinoffi-supporters
+    infoName: Kinoffi_Supporter
+    collectionName: kinoffi_supporters
+  s4:
+    apiPath: /api/kinoffi-supporters
+    collectionName: kinoffi_supporters
+    info:
+      singularName: kinoffi-supporter
+      pluralName: kinoffi-supporters
+      displayName: KinoffiSupporter
+- datamodelKey: KumuArticle
+  s3:
+    collectionNameFromDatamodelPath: kumu_articles
+    folderName: kumu-article
+    apiPath: /kumu-articles
+    infoName: Kumu_Article
+    collectionName: kumu_articles
+  s4:
+    apiPath: /api/kumu-articles
+    collectionName: kumu_articles
+    info:
+      singularName: kumu-article
+      pluralName: kumu-articles
+      displayName: KumuArticle
+- datamodelKey: KumuFooter
+  s3:
+    collectionNameFromDatamodelPath: kumu_footers
+    folderName: kumu-footer
+    apiPath: /kumu-footers
+    infoName: Kumu_Footer
+    collectionName: kumu_footers
+  s4:
+    apiPath: /api/kumu-footers
+    collectionName: kumu_footers
+    info:
+      singularName: kumu-footer
+      pluralName: kumu-footers
+      displayName: KumuFooter
+- datamodelKey: KumuMenu
+  s3:
+    collectionNameFromDatamodelPath: kumu_menus
+    folderName: kumu-menu
+    apiPath: /kumu-menus
+    infoName: Kumu_Menu
+    collectionName: kumu_menus
+  s4:
+    apiPath: /api/kumu-menus
+    collectionName: kumu_menus
+    info:
+      singularName: kumu-menu
+      pluralName: kumu-menus
+      displayName: KumuMenu
+- datamodelKey: KumuSupporter
+  s3:
+    collectionNameFromDatamodelPath: kumu_supporters
+    folderName: kumu-supporter
+    apiPath: /kumu-supporters
+    infoName: Kumu_Supporter
+    collectionName: kumu_supporters
+  s4:
+    apiPath: /api/kumu-supporters
+    collectionName: kumu_supporters
+    info:
+      singularName: kumu-supporter
+      pluralName: kumu-supporters
+      displayName: KumuSupporter
+- datamodelKey: L1MenuIndustry
+  s3:
+    collectionNameFromDatamodelPath: l_1_menu_industries
+    folderName: l1-menu-industry
+    apiPath: /l-1-menu-industries
+    infoName: L1MenuIndustry
+    collectionName: l1_menu_industries
+  s4:
+    apiPath: /api/l1-menu-industries
+    collectionName: l1_menu_industries
+    info:
+      singularName: l1-menu-industry
+      pluralName: l1-menu-industries
+      displayName: L1MenuIndustry
+- datamodelKey: L1MenuKumu
+  s3:
+    collectionNameFromDatamodelPath: l_1_menu_kumus
+    folderName: l1-menu-kumu
+    apiPath: /l-1-menu-kumus
+    infoName: L1MenuKumu
+    collectionName: l1_menu_kumus
+  s4:
+    apiPath: /api/l1-menu-kumus
+    collectionName: l1_menu_kumus
+    info:
+      singularName: l1-menu-kumu
+      pluralName: l1-menu-kumus
+      displayName: L1MenuKumu
+- datamodelKey: LabelGroup
+  s3:
+    collectionNameFromDatamodelPath: label_groups
+    folderName: label-group
+    apiPath: /label-groups
+    infoName: LabelGroup
+    collectionName: label_groups
+  s4:
+    apiPath: /api/label-groups
+    collectionName: label_groups
+    info:
+      singularName: label-group
+      pluralName: label-groups
+      displayName: LabelGroup
+- datamodelKey: Language
+  s3:
+    collectionNameFromDatamodelPath: languages
+    folderName: language
+    apiPath: /languages
+    infoName: Language
+    collectionName: languages
+  s4:
+    apiPath: /api/languages
+    collectionName: languages
+    info:
+      singularName: language
+      pluralName: languages
+      displayName: Language
+- datamodelKey: Location
+  s3:
+    collectionNameFromDatamodelPath: locations
+    folderName: location
+    apiPath: /locations
+    infoName: Location
+    collectionName: locations
+  s4:
+    apiPath: /api/locations
+    collectionName: locations
+    info:
+      singularName: location
+      pluralName: locations
+      displayName: Location
+- datamodelKey: Municipality
+  s3:
+    collectionNameFromDatamodelPath: populated_places
+    folderName: populated-place
+    apiPath: /populated-places
+    infoName: Municipality
+    collectionName: populated_places
+  s4:
+    apiPath: /api/populated-places
+    collectionName: populated_places
+    info:
+      singularName: populated-place
+      pluralName: populated-places
+      displayName: Municipality
+- datamodelKey: Organisation
+  s3:
+    collectionNameFromDatamodelPath: organisations
+    folderName: organisation
+    apiPath: /organisations
+    infoName: Organisation
+    collectionName: organisations
+  s4:
+    apiPath: /api/organisations
+    collectionName: organisations
+    info:
+      singularName: organisation
+      pluralName: organisations
+      displayName: Organisation
+- datamodelKey: Origin
+  s3:
+    collectionNameFromDatamodelPath: origins
+    folderName: origin
+    apiPath: /origins
+    infoName: Origin
+    collectionName: origins
+  s4:
+    apiPath: /api/origins
+    collectionName: origins
+    info:
+      singularName: origin
+      pluralName: origins
+      displayName: Origin
+- datamodelKey: POFFiArticle
+  s3:
+    collectionNameFromDatamodelPath: pof_fi_articles
+    folderName: pof-fi-article
+    apiPath: /pof-fi-articles
+    infoName: POFFi_Article
+    collectionName: pof_fi_articles
+  s4:
+    apiPath: /api/pof-fi-articles
+    collectionName: pof_fi_articles
+    info:
+      singularName: pof-fi-article
+      pluralName: pof-fi-articles
+      displayName: POFFiArticle
+- datamodelKey: POFFiFooter
+  s3:
+    collectionNameFromDatamodelPath: pof_fi_footers
+    folderName: pof-fi-footer
+    apiPath: /pof-fi-footers
+    infoName: POFFi_Footer
+    collectionName: pof_fi_footers
+  s4:
+    apiPath: /api/pof-fi-footers
+    collectionName: pof_fi_footers
+    info:
+      singularName: pof-fi-footer
+      pluralName: pof-fi-footers
+      displayName: POFFiFooter
+- datamodelKey: POFFiMenu
+  s3:
+    collectionNameFromDatamodelPath: pof_fi_menus
+    folderName: pof-fi-menu
+    apiPath: /pof-fi-menus
+    infoName: POFFi_Menu
+    collectionName: pof_fi_menus
+  s4:
+    apiPath: /api/pof-fi-menus
+    collectionName: pof_fi_menus
+    info:
+      singularName: pof-fi-menu
+      pluralName: pof-fi-menus
+      displayName: POFFiMenu
+- datamodelKey: POFFiSupporter
+  s3:
+    collectionNameFromDatamodelPath: supporters_pages
+    folderName: supporters-page
+    apiPath: /supporters-pages
+    infoName: POFFi_Supporter
+    collectionName: supporters_pages
+  s4:
+    apiPath: /api/supporters-pages
+    collectionName: supporters_pages
+    info:
+      singularName: supporters-page
+      pluralName: supporters-pages
+      displayName: POFFiSupporter
+- datamodelKey: PatternCollection
+  s3:
+    collectionNameFromDatamodelPath: pattern_collections
+    folderName: pattern-collections
+    apiPath: /pattern-collections
+    infoName: Pattern_Collections
+    collectionName: pattern_collections
+  s4:
+    apiPath: /api/pattern-collectionses
+    collectionName: pattern_collections
+    info:
+      singularName: pattern-collections
+      pluralName: pattern-collectionses
+      displayName: PatternCollection
+- datamodelKey: Person
+  s3:
+    collectionNameFromDatamodelPath: people
+    folderName: person
+    apiPath: /people
+    infoName: Person
+    collectionName: people
+  s4:
+    apiPath: /api/persons
+    collectionName: people
+    info:
+      singularName: person
+      pluralName: persons
+      displayName: Person
+- datamodelKey: PitchOfVoice
+  s3:
+    collectionNameFromDatamodelPath: pitch_of_voices
+    folderName: pitch-of-voice
+    apiPath: /pitch-of-voices
+    infoName: PitchOfVoice
+    collectionName: pitch_of_voices
+  s4:
+    apiPath: /api/pitch-of-voices
+    collectionName: pitch_of_voices
+    info:
+      singularName: pitch-of-voice
+      pluralName: pitch-of-voices
+      displayName: PitchOfVoice
+- datamodelKey: Product
+  s3:
+    collectionNameFromDatamodelPath: product
+    folderName: product
+    apiPath: /products
+    infoName: Product
+    collectionName: products
+  s4:
+    apiPath: /api/products
+    collectionName: products
+    info:
+      singularName: product
+      pluralName: products
+      displayName: Product
+- datamodelKey: ProductType
+  s3:
+    collectionNameFromDatamodelPath: product_types
+    folderName: product-type
+    apiPath: /product-types
+    infoName: ProductType
+    collectionName: product_types
+  s4:
+    apiPath: /api/product-types
+    collectionName: product_types
+    info:
+      singularName: product-type
+      pluralName: product-types
+      displayName: ProductType
+- datamodelKey: Product_Category
+  s3:
+    collectionNameFromDatamodelPath: product_categories
+    folderName: product-category
+    apiPath: /product-categories
+    infoName: Product_Category
+    collectionName: product_categories
+  s4:
+    apiPath: /api/product-categories
+    collectionName: product_categories
+    info:
+      singularName: product-category
+      pluralName: product-categories
+      displayName: Product_Category
+- datamodelKey: Programme
+  s3:
+    collectionNameFromDatamodelPath: programmes
+    folderName: programme
+    apiPath: /programmes
+    infoName: Programme
+    collectionName: programmes
+  s4:
+    apiPath: /api/programmes
+    collectionName: programmes
+    info:
+      singularName: programme
+      pluralName: programmes
+      displayName: Programme
+- datamodelKey: ProjectStatus
+  s3:
+    collectionNameFromDatamodelPath: project_statuses
+    folderName: project-status
+    apiPath: /project-statuses
+    infoName: Project_Status
+    collectionName: project_statuses
+  s4:
+    apiPath: /api/project-statuses
+    collectionName: project_statuses
+    info:
+      singularName: project-status
+      pluralName: project-statuses
+      displayName: ProjectStatus
+- datamodelKey: ProjectType
+  s3:
+    collectionNameFromDatamodelPath: project_types
+    folderName: project-type
+    apiPath: /project-types
+    infoName: Project_Type
+    collectionName: project_types
+  s4:
+    apiPath: /api/project-types
+    collectionName: project_types
+    info:
+      singularName: project-type
+      pluralName: project-types
+      displayName: ProjectType
+- datamodelKey: RoleAtFilm
+  s3:
+    collectionNameFromDatamodelPath: role_at_films
+    folderName: role-at-film
+    apiPath: /role-at-films
+    infoName: RoleAtFilm
+    collectionName: role_at_films
+  s4:
+    apiPath: /api/role-at-films
+    collectionName: role_at_films
+    info:
+      singularName: role-at-film
+      pluralName: role-at-films
+      displayName: RoleAtFilm
+- datamodelKey: Screening
+  s3:
+    collectionNameFromDatamodelPath: screenings
+    folderName: screening
+    apiPath: /screenings
+    infoName: Screening
+    collectionName: screenings
+  s4:
+    apiPath: /api/screenings
+    collectionName: screenings
+    info:
+      singularName: screening
+      pluralName: screenings
+      displayName: Screening
+- datamodelKey: ScreeningType
+  s3:
+    collectionNameFromDatamodelPath: screening_types
+    folderName: screening-type
+    apiPath: /screening-types
+    infoName: ScreeningType
+    collectionName: screening_types
+  s4:
+    apiPath: /api/screening-types
+    collectionName: screening_types
+    info:
+      singularName: screening-type
+      pluralName: screening-types
+      displayName: ScreeningType
+- datamodelKey: ShoeSize
+  s3:
+    collectionNameFromDatamodelPath: shoe_sizes
+    folderName: shoe-size
+    apiPath: /shoe-sizes
+    infoName: Shoe_Size
+    collectionName: shoe_sizes
+  s4:
+    apiPath: /api/shoe-sizes
+    collectionName: shoe_sizes
+    info:
+      singularName: shoe-size
+      pluralName: shoe-sizes
+      displayName: ShoeSize
+- datamodelKey: Shop
+  s3:
+    collectionNameFromDatamodelPath: shops
+    folderName: shop
+    apiPath: /shops
+    infoName: Shop
+    collectionName: shops
+  s4:
+    apiPath: /api/shops
+    collectionName: shops
+    info:
+      singularName: shop
+      pluralName: shops
+      displayName: Shop
+- datamodelKey: ShortsSupporter
+  s3:
+    collectionNameFromDatamodelPath: supporters_shorts
+    folderName: supporters-shorts
+    apiPath: /supporters-shorts
+    infoName: Shorts_Supporter
+    collectionName: supporters_shorts
+  s4:
+    apiPath: /api/supporters-shortses
+    collectionName: supporters_shorts
+    info:
+      singularName: supporters-shorts
+      pluralName: supporters-shortses
+      displayName: ShortsSupporter
+- datamodelKey: ShortsiArticle
+  s3:
+    collectionNameFromDatamodelPath: shortsi_articles
+    folderName: shortsi-article
+    apiPath: /shortsi-articles
+    infoName: Shortsi_Article
+    collectionName: shortsi_articles
+  s4:
+    apiPath: /api/shortsi-articles
+    collectionName: shortsi_articles
+    info:
+      singularName: shortsi-article
+      pluralName: shortsi-articles
+      displayName: ShortsiArticle
+- datamodelKey: ShortsiFooter
+  s3:
+    collectionNameFromDatamodelPath: shortsi_footers
+    folderName: shortsi-footer
+    apiPath: /shortsi-footers
+    infoName: Shortsi_Footer
+    collectionName: shortsi_footers
+  s4:
+    apiPath: /api/shortsi-footers
+    collectionName: shortsi_footers
+    info:
+      singularName: shortsi-footer
+      pluralName: shortsi-footers
+      displayName: ShortsiFooter
+- datamodelKey: ShortsiMenu
+  s3:
+    collectionNameFromDatamodelPath: shortsi_menus
+    folderName: shortsi-menu
+    apiPath: /shortsi-menus
+    infoName: Shortsi_Menu
+    collectionName: shortsi_menus
+  s4:
+    apiPath: /api/shortsi-menus
+    collectionName: shortsi_menus
+    info:
+      singularName: shortsi-menu
+      pluralName: shortsi-menus
+      displayName: ShortsiMenu
+- datamodelKey: SixFilms
+  s3:
+    collectionNameFromDatamodelPath: six_films
+    folderName: six-films
+    apiPath: /six-films
+    infoName: SixFilms
+    collectionName: six_films
+  s4:
+    apiPath: /api/six-filmses
+    collectionName: six_films
+    info:
+      singularName: six-films
+      pluralName: six-filmses
+      displayName: SixFilms
+- datamodelKey: SmartFolder
+  s3:
+    collectionNameFromDatamodelPath: smart_folders
+    folderName: smart-folder
+    apiPath: /smart-folders
+    infoName: SmartFolder
+    collectionName: smart_folders
+  s4:
+    apiPath: /api/smart-folders
+    collectionName: smart_folders
+    info:
+      singularName: smart-folder
+      pluralName: smart-folders
+      displayName: SmartFolder
+- datamodelKey: Stature
+  s3:
+    collectionNameFromDatamodelPath: statures
+    folderName: stature
+    apiPath: /statures
+    infoName: Stature
+    collectionName: statures
+  s4:
+    apiPath: /api/statures
+    collectionName: statures
+    info:
+      singularName: stature
+      pluralName: statures
+      displayName: Stature
+- datamodelKey: TagAgeRestriction
+  s3:
+    collectionNameFromDatamodelPath: age_restrictions
+    folderName: age-restriction
+    apiPath: /age-restrictions
+    infoName: TagAgeRestriction
+    collectionName: age_restrictions
+  s4:
+    apiPath: /api/age-restrictions
+    collectionName: age_restrictions
+    info:
+      singularName: age-restriction
+      pluralName: age-restrictions
+      displayName: TagAgeRestriction
+- datamodelKey: TagCategory
+  s3:
+    collectionNameFromDatamodelPath: tag_categories
+    folderName: tag-category
+    apiPath: /tag-categories
+    infoName: TagCategory
+    collectionName: tag_categories
+  s4:
+    apiPath: /api/tag-categories
+    collectionName: tag_categories
+    info:
+      singularName: tag-category
+      pluralName: tag-categories
+      displayName: TagCategory
+- datamodelKey: TagFilmType
+  s3:
+    collectionNameFromDatamodelPath: tag_film_types
+    folderName: tag-film-type
+    apiPath: /tag-film-types
+    infoName: TagFilmType
+    collectionName: tag_film_types
+  s4:
+    apiPath: /api/tag-film-types
+    collectionName: tag_film_types
+    info:
+      singularName: tag-film-type
+      pluralName: tag-film-types
+      displayName: TagFilmType
+- datamodelKey: TagGenre
+  s3:
+    collectionNameFromDatamodelPath: tag_genres
+    folderName: tag-genre
+    apiPath: /tag-genres
+    infoName: TagGenre
+    collectionName: tag_genres
+  s4:
+    apiPath: /api/tag-genres
+    collectionName: tag_genres
+    info:
+      singularName: tag-genre
+      pluralName: tag-genres
+      displayName: TagGenre
+- datamodelKey: TagKeyword
+  s3:
+    collectionNameFromDatamodelPath: tag_keywords
+    folderName: tag-keyword
+    apiPath: /tag-keywords
+    infoName: TagKeyword
+    collectionName: tag_keywords
+  s4:
+    apiPath: /api/tag-keywords
+    collectionName: tag_keywords
+    info:
+      singularName: tag-keyword
+      pluralName: tag-keywords
+      displayName: TagKeyword
+- datamodelKey: TagLocation
+  s3:
+    collectionNameFromDatamodelPath: tag_locations
+    folderName: tag-location
+    apiPath: /tag-locations
+    infoName: TagLocation
+    collectionName: tag_locations
+  s4:
+    apiPath: /api/tag-locations
+    collectionName: tag_locations
+    info:
+      singularName: tag-location
+      pluralName: tag-locations
+      displayName: TagLocation
+- datamodelKey: TagLookingFor
+  s3:
+    collectionNameFromDatamodelPath: tag_looking_fors
+    folderName: tag-looking-for
+    apiPath: /tag-looking-fors
+    infoName: TagLookingFor
+    collectionName: tag_looking_fors
+  s4:
+    apiPath: /api/tag-looking-fors
+    collectionName: tag_looking_fors
+    info:
+      singularName: tag-looking-for
+      pluralName: tag-looking-fors
+      displayName: TagLookingFor
+- datamodelKey: TagPremiereType
+  s3:
+    collectionNameFromDatamodelPath: tag_premiere_types
+    folderName: tag-premiere-type
+    apiPath: /tag-premiere-types
+    infoName: TagPremiereType
+    collectionName: tag_premiere_types
+  s4:
+    apiPath: /api/tag-premiere-types
+    collectionName: tag_premiere_types
+    info:
+      singularName: tag-premiere-type
+      pluralName: tag-premiere-types
+      displayName: TagPremiereType
+- datamodelKey: TagSecret
+  s3:
+    collectionNameFromDatamodelPath: tag_secrets
+    folderName: tag-secret
+    apiPath: /tag-secrets
+    infoName: TagSecret
+    collectionName: tag_secrets
+  s4:
+    apiPath: /api/tag-secrets
+    collectionName: tag_secrets
+    info:
+      singularName: tag-secret
+      pluralName: tag-secrets
+      displayName: TagSecret
+- datamodelKey: TagTriggerWarning
+  s3:
+    collectionNameFromDatamodelPath: trigger_warnings
+    folderName: trigger-warning
+    apiPath: /trigger-warnings
+    infoName: TagTriggerWarning
+    collectionName: trigger_warnings
+  s4:
+    apiPath: /api/trigger-warnings
+    collectionName: trigger_warnings
+    info:
+      singularName: trigger-warning
+      pluralName: trigger-warnings
+      displayName: TagTriggerWarning
+- datamodelKey: TartuffiArticle
+  s3:
+    collectionNameFromDatamodelPath: tartuffi_articles
+    folderName: tartuffi-article
+    apiPath: /tartuffi-articles
+    infoName: Tartuffi_Article
+    collectionName: tartuffi_articles
+  s4:
+    apiPath: /api/tartuffi-articles
+    collectionName: tartuffi_articles
+    info:
+      singularName: tartuffi-article
+      pluralName: tartuffi-articles
+      displayName: TartuffiArticle
+- datamodelKey: TartuffiFooter
+  s3:
+    collectionNameFromDatamodelPath: tartuffi_footers
+    folderName: tartuffi-footer
+    apiPath: /tartuffi-footers
+    infoName: Tartuffi_Footer
+    collectionName: tartuffi_footers
+  s4:
+    apiPath: /api/tartuffi-footers
+    collectionName: tartuffi_footers
+    info:
+      singularName: tartuffi-footer
+      pluralName: tartuffi-footers
+      displayName: TartuffiFooter
+- datamodelKey: TartuffiMenu
+  s3:
+    collectionNameFromDatamodelPath: tartuffi_menus
+    folderName: tartuffi-menu
+    apiPath: /tartuffi-menus
+    infoName: Tartuffi_Menu
+    collectionName: tartuffi_menus
+  s4:
+    apiPath: /api/tartuffi-menus
+    collectionName: tartuffi_menus
+    info:
+      singularName: tartuffi-menu
+      pluralName: tartuffi-menus
+      displayName: TartuffiMenu
+- datamodelKey: TartuffiSupporter
+  s3:
+    collectionNameFromDatamodelPath: tartuffi_supporters
+    folderName: tartuffi-supporter
+    apiPath: /tartuffi-supporters
+    infoName: Tartuffi_Supporter
+    collectionName: tartuffi_supporters
+  s4:
+    apiPath: /api/tartuffi-supporters
+    collectionName: tartuffi_supporters
+    info:
+      singularName: tartuffi-supporter
+      pluralName: tartuffi-supporters
+      displayName: TartuffiSupporter
+- datamodelKey: Team
+  s3:
+    collectionNameFromDatamodelPath: teams
+    folderName: team
+    apiPath: /teams
+    infoName: Team
+    collectionName: teams
+  s4:
+    apiPath: /api/teams
+    collectionName: teams
+    info:
+      singularName: team
+      pluralName: teams
+      displayName: Team
+- datamodelKey: TimeUnits
+  s3:
+    collectionNameFromDatamodelPath: time_units
+    folderName: time-units
+    apiPath: /time-units
+    infoName: TimeUnits
+    collectionName: time_units
+  s4:
+    apiPath: /api/time-unitses
+    collectionName: time_units
+    info:
+      singularName: time-units
+      pluralName: time-unitses
+      displayName: TimeUnits
+- datamodelKey: Town
+  s3:
+    collectionNameFromDatamodelPath: towns
+    folderName: town
+    apiPath: /towns
+    infoName: Town
+    collectionName: towns
+  s4:
+    apiPath: /api/towns
+    collectionName: towns
+    info:
+      singularName: town
+      pluralName: towns
+      displayName: Town
+- datamodelKey: Transaction
+  s3:
+    collectionNameFromDatamodelPath: transactions
+    folderName: transaction
+    apiPath: /transactions
+    infoName: transaction
+    collectionName: transactions
+  s4:
+    apiPath: /api/transactions
+    collectionName: transactions
+    info:
+      singularName: transaction
+      pluralName: transactions
+      displayName: Transaction
+- datamodelKey: TransactionProduct
+  s3:
+    collectionNameFromDatamodelPath: transactions_products
+    folderName: transactions-products
+    apiPath: /transactions-products
+    infoName: TransactionsProducts
+    collectionName: transactions_products
+  s4:
+    apiPath: /api/transactions-productses
+    collectionName: transactions_products
+    info:
+      singularName: transactions-products
+      pluralName: transactions-productses
+      displayName: TransactionProduct
+- datamodelKey: TrioBruno
+  s3:
+    collectionNameFromDatamodelPath: trio_bruno
+    folderName: trio-bruno
+    apiPath: /trio-bruno
+    infoName: TrioBruno
+    collectionName: trio_bruno
+  s4:
+    apiPath: /api/trio-brunos
+    collectionName: trio_bruno
+    info:
+      singularName: trio-bruno
+      pluralName: trio-brunos
+      displayName: TrioBruno
+- datamodelKey: TrioDisCamp
+  s3:
+    collectionNameFromDatamodelPath: trio_dis_camp
+    folderName: trio-dis-camp
+    apiPath: /trio-dis-camp
+    infoName: TrioDisCamp
+    collectionName: trio_dis_camps
+  s4:
+    apiPath: /api/trio-dis-camps
+    collectionName: trio_dis_camps
+    info:
+      singularName: trio-dis-camp
+      pluralName: trio-dis-camps
+      displayName: TrioDisCamp
+- datamodelKey: TrioFilmikool
+  s3:
+    collectionNameFromDatamodelPath: trio_filmikool
+    folderName: trio-filmikool
+    apiPath: /trio-filmikool
+    infoName: TrioFilmikool
+    collectionName: trio_filmikools
+  s4:
+    apiPath: /api/trio-filmikools
+    collectionName: trio_filmikools
+    info:
+      singularName: trio-filmikool
+      pluralName: trio-filmikools
+      displayName: TrioFilmikool
+- datamodelKey: TrioHOFF
+  s3:
+    collectionNameFromDatamodelPath: trio_hoff
+    folderName: trio-hoff
+    apiPath: /trio-hoff
+    infoName: TrioHOFF
+    collectionName: trio_hoffs
+  s4:
+    apiPath: /api/trio-hoffs
+    collectionName: trio_hoffs
+    info:
+      singularName: trio-hoff
+      pluralName: trio-hoffs
+      displayName: TrioHOFF
+- datamodelKey: TrioIndustry
+  s3:
+    collectionNameFromDatamodelPath: trio_industry
+    folderName: trio-industry
+    apiPath: /trio-industry
+    infoName: TrioIndustry
+    collectionName: trio_industries
+  s4:
+    apiPath: /api/trio-industries
+    collectionName: trio_industries
+    info:
+      singularName: trio-industry
+      pluralName: trio-industries
+      displayName: TrioIndustry
+- datamodelKey: TrioJustFilm
+  s3:
+    collectionNameFromDatamodelPath: trio_just_film
+    folderName: trio-just-film
+    apiPath: /trio-just-film
+    infoName: TrioJustFilm
+    collectionName: trio_just_films
+  s4:
+    apiPath: /api/trio-just-films
+    collectionName: trio_just_films
+    info:
+      singularName: trio-just-film
+      pluralName: trio-just-films
+      displayName: TrioJustFilm
+- datamodelKey: TrioKinoff
+  s3:
+    collectionNameFromDatamodelPath: trio_kinoff
+    folderName: trio-kinoff
+    apiPath: /trio-kinoff
+    infoName: TrioKinoff
+    collectionName: trio_kinoffs
+  s4:
+    apiPath: /api/trio-kinoffs
+    collectionName: trio_kinoffs
+    info:
+      singularName: trio-kinoff
+      pluralName: trio-kinoffs
+      displayName: TrioKinoff
+- datamodelKey: TrioKumu
+  s3:
+    collectionNameFromDatamodelPath: trio_kumu
+    folderName: trio-kumu
+    apiPath: /trio-kumu
+    infoName: TrioKumu
+    collectionName: trio_kumu
+  s4:
+    apiPath: /api/trio-kumus
+    collectionName: trio_kumu
+    info:
+      singularName: trio-kumu
+      pluralName: trio-kumus
+      displayName: TrioKumu
+- datamodelKey: TrioPOFF
+  s3:
+    collectionNameFromDatamodelPath: trio_p_oe_ff
+    folderName: trio-p-oe-ff
+    apiPath: /trio-p-oe-ff
+    infoName: TrioPOFF
+    collectionName: trio_p_oe_ffs
+  s4:
+    apiPath: /api/trio-p-oe-ffs
+    collectionName: trio_p_oe_ffs
+    info:
+      singularName: trio-p-oe-ff
+      pluralName: trio-p-oe-ffs
+      displayName: TrioPOFF
+- datamodelKey: TrioShorts
+  s3:
+    collectionNameFromDatamodelPath: trio_shorts
+    folderName: trio-shorts
+    apiPath: /trio-shorts
+    infoName: TrioShorts
+    collectionName: trio_shorts
+  s4:
+    apiPath: /api/trio-shortses
+    collectionName: trio_shorts
+    info:
+      singularName: trio-shorts
+      pluralName: trio-shortses
+      displayName: TrioShorts
+- datamodelKey: TrioTartuff
+  s3:
+    collectionNameFromDatamodelPath: trio_tartuff
+    folderName: trio-tartuff
+    apiPath: /trio-tartuff
+    infoName: TrioTartuff
+    collectionName: trio_tartuffs
+  s4:
+    apiPath: /api/trio-tartuffs
+    collectionName: trio_tartuffs
+    info:
+      singularName: trio-tartuff
+      pluralName: trio-tartuffs
+      displayName: TrioTartuff
+- datamodelKey: TypeOfWork
+  s3:
+    collectionNameFromDatamodelPath: type_of_works
+    folderName: type-of-work
+    apiPath: /type-of-works
+    infoName: TypeOfWork
+    collectionName: type_of_works
+  s4:
+    apiPath: /api/type-of-works
+    collectionName: type_of_works
+    info:
+      singularName: type-of-work
+      pluralName: type-of-works
+      displayName: TypeOfWork
+- datamodelKey: UserProfile
+  s3:
+    collectionNameFromDatamodelPath: user_profiles
+    folderName: user-profiles
+    apiPath: /user-profiles
+    infoName: UserProfiles
+    collectionName: user_profiles
+  s4:
+    apiPath: /api/user-profileses
+    collectionName: user_profiles
+    info:
+      singularName: user-profiles
+      pluralName: user-profileses
+      displayName: UserProfile
+- datamodelKey: UserRole
+  s3:
+    collectionNameFromDatamodelPath: user_roles
+    folderName: user-role
+    apiPath: /user-roles
+    infoName: UserRole
+    collectionName: user_roles
+  s4:
+    apiPath: /api/user-roles
+    collectionName: user_roles
+    info:
+      singularName: user-role
+      pluralName: user-roles
+      displayName: UserRole
+- datamodelKey: WebAuthor
+  s3:
+    collectionNameFromDatamodelPath: web_authors
+    folderName: web-author
+    apiPath: /web-authors
+    infoName: WebAuthor
+    collectionName: web_authors
+  s4:
+    apiPath: /api/web-authors
+    collectionName: web_authors
+    info:
+      singularName: web-author
+      pluralName: web-authors
+      displayName: WebAuthor
+- datamodelKey: WebPermission
+  s3:
+    collectionNameFromDatamodelPath: web_permissions
+    folderName: web-permission
+    apiPath: /web-permissions
+    infoName: webPermission
+    collectionName: web_permissions
+  s4:
+    apiPath: /api/web-permissions
+    collectionName: web_permissions
+    info:
+      singularName: web-permission
+      pluralName: web-permissions
+      displayName: WebPermission
+- datamodelKey: WebRole
+  s3:
+    collectionNameFromDatamodelPath: web_roles
+    folderName: web-role
+    apiPath: /web-roles
+    infoName: webRole
+    collectionName: web_roles
+  s4:
+    apiPath: /api/web-roles
+    collectionName: web_roles
+    info:
+      singularName: web-role
+      pluralName: web-roles
+      displayName: WebRole
+- datamodelKey: WebUser
+  s3:
+    collectionNameFromDatamodelPath: web_users
+    folderName: web-user
+    apiPath: /web-users
+    infoName: webUser
+    collectionName: web_users
+  s4:
+    apiPath: /api/web-users
+    collectionName: web_users
+    info:
+      singularName: web-user
+      pluralName: web-users
+      displayName: WebUser

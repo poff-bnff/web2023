@@ -1,0 +1,1572 @@
+[
+  {
+    "datamodelKey": "Address",
+    "s3": {
+      "collectionNameFromDatamodelPath": "addresses",
+      "folderName": "address",
+      "apiPath": "/addresses",
+      "infoName": "address",
+      "collectionName": "addresses"
+    }
+  },
+  {
+    "datamodelKey": "ArticleType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "article_types",
+      "folderName": "article-type",
+      "apiPath": "/article-types",
+      "infoName": "ArticleType",
+      "collectionName": "article_types"
+    }
+  },
+  {
+    "datamodelKey": "Award",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_awards",
+      "folderName": "industry-award",
+      "apiPath": "/industry-awards",
+      "infoName": "Award",
+      "collectionName": "industry_awards"
+    }
+  },
+  {
+    "datamodelKey": "Awarding",
+    "s3": {
+      "collectionNameFromDatamodelPath": "awardings",
+      "folderName": "awarding",
+      "apiPath": "/awardings",
+      "infoName": "Awarding",
+      "collectionName": "awardings"
+    }
+  },
+  {
+    "datamodelKey": "BannerGroup",
+    "s3": {
+      "collectionNameFromDatamodelPath": "banner",
+      "folderName": "banner",
+      "apiPath": "/banners",
+      "infoName": "BannerGroup",
+      "collectionName": "banners"
+    }
+  },
+  {
+    "datamodelKey": "BrunoArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "bruno_articles",
+      "folderName": "bruno-article",
+      "apiPath": "/bruno-articles",
+      "infoName": "Bruno_Article",
+      "collectionName": "bruno_articles"
+    }
+  },
+  {
+    "datamodelKey": "BrunoFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "bruno_footers",
+      "folderName": "bruno-footer",
+      "apiPath": "/bruno-footers",
+      "infoName": "Bruno_Footer",
+      "collectionName": "bruno_footers"
+    }
+  },
+  {
+    "datamodelKey": "BrunoMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "bruno_menus",
+      "folderName": "bruno-menu",
+      "apiPath": "/bruno-menus",
+      "infoName": "Bruno_Menu",
+      "collectionName": "bruno_menus"
+    }
+  },
+  {
+    "datamodelKey": "BrunoSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "bruno_supporters",
+      "folderName": "bruno-supporter",
+      "apiPath": "/bruno-supporters",
+      "infoName": "Bruno_Supporter",
+      "collectionName": "bruno_supporters"
+    }
+  },
+  {
+    "datamodelKey": "BusinessProfile",
+    "s3": {
+      "collectionNameFromDatamodelPath": "business_profiles",
+      "folderName": "business-profile",
+      "apiPath": "/business-profiles",
+      "infoName": "BusinessProfile",
+      "collectionName": "business_profiles"
+    }
+  },
+  {
+    "datamodelKey": "Cassette",
+    "s3": {
+      "collectionNameFromDatamodelPath": "cassettes",
+      "folderName": "cassette",
+      "apiPath": "/cassettes",
+      "infoName": "Cassette",
+      "collectionName": "cassettes"
+    }
+  },
+  {
+    "datamodelKey": "Channel",
+    "s3": {
+      "collectionNameFromDatamodelPath": "channels",
+      "folderName": "channel",
+      "apiPath": "/channels",
+      "infoName": "Channel",
+      "collectionName": "channels"
+    }
+  },
+  {
+    "datamodelKey": "Cinema",
+    "s3": {
+      "collectionNameFromDatamodelPath": "cinemas",
+      "folderName": "cinema",
+      "apiPath": "/cinemas",
+      "infoName": "Cinema",
+      "collectionName": "cinemas"
+    }
+  },
+  {
+    "datamodelKey": "Country",
+    "s3": {
+      "collectionNameFromDatamodelPath": "countries",
+      "folderName": "country",
+      "apiPath": "/countries",
+      "infoName": "Country",
+      "collectionName": "countries"
+    }
+  },
+  {
+    "datamodelKey": "County",
+    "s3": {
+      "collectionNameFromDatamodelPath": "counties",
+      "folderName": "county",
+      "apiPath": "/counties",
+      "infoName": "County",
+      "collectionName": "counties"
+    }
+  },
+  {
+    "datamodelKey": "Course",
+    "s3": {
+      "collectionNameFromDatamodelPath": "courses",
+      "folderName": "course",
+      "apiPath": "/courses",
+      "infoName": "Course",
+      "collectionName": "courses"
+    }
+  },
+  {
+    "datamodelKey": "CourseEvent",
+    "s3": {
+      "collectionNameFromDatamodelPath": "course_events",
+      "folderName": "course-event",
+      "apiPath": "/course-events",
+      "infoName": "CourseEvent",
+      "collectionName": "course_events"
+    }
+  },
+  {
+    "datamodelKey": "Delivery",
+    "s3": {
+      "collectionNameFromDatamodelPath": "deliveries",
+      "folderName": "delivery",
+      "apiPath": "/deliveries",
+      "infoName": "Delivery",
+      "collectionName": "deliveries"
+    }
+  },
+  {
+    "datamodelKey": "DeliveryType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "delivery_types",
+      "folderName": "delivery-type",
+      "apiPath": "/delivery-types",
+      "infoName": "DeliveryType",
+      "collectionName": "delivery_types"
+    }
+  },
+  {
+    "datamodelKey": "DisCampArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_articles",
+      "folderName": "dis-camp-article",
+      "apiPath": "/dis-camp-articles",
+      "infoName": "DisCampArticle",
+      "collectionName": "dis_camp_articles"
+    }
+  },
+  {
+    "datamodelKey": "DisCampCategory",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_categories",
+      "folderName": "dis-camp-category",
+      "apiPath": "/dis-camp-categories",
+      "infoName": "DisCampCategory",
+      "collectionName": "dis_camp_categories"
+    }
+  },
+  {
+    "datamodelKey": "DisCampEvent",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_events",
+      "folderName": "dis-camp-event",
+      "apiPath": "/dis-camp-events",
+      "infoName": "DisCampEvent",
+      "collectionName": "dis_camp_events"
+    }
+  },
+  {
+    "datamodelKey": "DisCampFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_footers",
+      "folderName": "dis-camp-footer",
+      "apiPath": "/dis-camp-footers",
+      "infoName": "DisCampFooter",
+      "collectionName": "dis_camp_footers"
+    }
+  },
+  {
+    "datamodelKey": "DisCampGroup",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_groups",
+      "folderName": "dis-camp-group",
+      "apiPath": "/dis-camp-groups",
+      "infoName": "DisCampGroup",
+      "collectionName": "dis_camp_groups"
+    }
+  },
+  {
+    "datamodelKey": "DisCampMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_menus",
+      "folderName": "dis-camp-menu",
+      "apiPath": "/dis-camp-menus",
+      "infoName": "DisCampMenu",
+      "collectionName": "dis_camp_menus"
+    }
+  },
+  {
+    "datamodelKey": "DisCampPerson",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_people",
+      "folderName": "dis-camp-person",
+      "apiPath": "/dis-camp-people",
+      "infoName": "DisCampPerson",
+      "collectionName": "dis_camp_people"
+    }
+  },
+  {
+    "datamodelKey": "DisCampPersonType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_person_types",
+      "folderName": "dis-camp-person-type",
+      "apiPath": "/dis-camp-person-types",
+      "infoName": "DisCampPersonType",
+      "collectionName": "dis_camp_person_types"
+    }
+  },
+  {
+    "datamodelKey": "DisCampProject",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_projects",
+      "folderName": "dis-camp-project",
+      "apiPath": "/dis-camp-projects",
+      "infoName": "DisCampProject",
+      "collectionName": "dis_camp_projects"
+    }
+  },
+  {
+    "datamodelKey": "DisCampSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dis_camp_supporters",
+      "folderName": "dis-camp-supporter",
+      "apiPath": "/dis-camp-supporters",
+      "infoName": "DisCampSupporter",
+      "collectionName": "dis_camp_supporters"
+    }
+  },
+  {
+    "datamodelKey": "Domain",
+    "s3": {
+      "collectionNameFromDatamodelPath": "domains",
+      "folderName": "domain",
+      "apiPath": "/domains",
+      "infoName": "Domain",
+      "collectionName": "Domeen"
+    }
+  },
+  {
+    "datamodelKey": "DumbFolder",
+    "s3": {
+      "collectionNameFromDatamodelPath": "dumb_folders",
+      "folderName": "dumb-folder",
+      "apiPath": "/dumb-folders",
+      "infoName": "DumbFolder",
+      "collectionName": "dumb_folders"
+    }
+  },
+  {
+    "datamodelKey": "Event",
+    "s3": {
+      "collectionNameFromDatamodelPath": "events",
+      "folderName": "event",
+      "apiPath": "/events",
+      "infoName": "Event",
+      "collectionName": "events"
+    }
+  },
+  {
+    "datamodelKey": "EventAccess",
+    "s3": {
+      "collectionNameFromDatamodelPath": "event_accesses",
+      "folderName": "event-access",
+      "apiPath": "/event-accesses",
+      "infoName": "EventAccess",
+      "collectionName": "event_accesses"
+    }
+  },
+  {
+    "datamodelKey": "EventMode",
+    "s3": {
+      "collectionNameFromDatamodelPath": "event_modes",
+      "folderName": "event-mode",
+      "apiPath": "/event-modes",
+      "infoName": "EventMode",
+      "collectionName": "event_modes"
+    }
+  },
+  {
+    "datamodelKey": "EventType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "event_types",
+      "folderName": "event-type",
+      "apiPath": "/event-types",
+      "infoName": "EventType",
+      "collectionName": "event_types"
+    }
+  },
+  {
+    "datamodelKey": "EyeColour",
+    "s3": {
+      "collectionNameFromDatamodelPath": "eye_colours",
+      "folderName": "eye-colour",
+      "apiPath": "/eye-colours",
+      "infoName": "EyeColour",
+      "collectionName": "eye_colours"
+    }
+  },
+  {
+    "datamodelKey": "Festival",
+    "s3": {
+      "collectionNameFromDatamodelPath": "festivals",
+      "folderName": "festival",
+      "apiPath": "/festivals",
+      "infoName": "Festival",
+      "collectionName": "FestivalCollectionName"
+    }
+  },
+  {
+    "datamodelKey": "FestivalEdition",
+    "s3": {
+      "collectionNameFromDatamodelPath": "festival_editions",
+      "folderName": "festival-edition",
+      "apiPath": "/festival-editions",
+      "infoName": "FestivalEdition",
+      "collectionName": "Edition"
+    }
+  },
+  {
+    "datamodelKey": "Film",
+    "s3": {
+      "collectionNameFromDatamodelPath": "films",
+      "folderName": "film",
+      "apiPath": "/films",
+      "infoName": "Film",
+      "collectionName": "films"
+    }
+  },
+  {
+    "datamodelKey": "FilmikooliArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "filmikooli_articles",
+      "folderName": "filmikooli-article",
+      "apiPath": "/filmikooli-articles",
+      "infoName": "Filmikooli_Article",
+      "collectionName": "filmikooli_articles"
+    }
+  },
+  {
+    "datamodelKey": "FilmikooliFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "filmikooli_footers",
+      "folderName": "filmikooli-footer",
+      "apiPath": "/filmikooli-footers",
+      "infoName": "Filmikooli_Footer",
+      "collectionName": "filmikooli_footers"
+    }
+  },
+  {
+    "datamodelKey": "FilmikooliMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "filmikooli_menus",
+      "folderName": "filmikooli-menu",
+      "apiPath": "/filmikooli-menus",
+      "infoName": "Filmikooli_Menu",
+      "collectionName": "filmikooli_menus"
+    }
+  },
+  {
+    "datamodelKey": "FilmikooliSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "filmikool_supporters",
+      "folderName": "filmikool-supporter",
+      "apiPath": "/filmikool-supporters",
+      "infoName": "Filmikooli_Supporter",
+      "collectionName": "filmikool_supporters"
+    }
+  },
+  {
+    "datamodelKey": "Filmography",
+    "s3": {
+      "collectionNameFromDatamodelPath": "filmographies",
+      "folderName": "filmography",
+      "apiPath": "/filmographies",
+      "infoName": "Filmography",
+      "collectionName": "filmographies"
+    }
+  },
+  {
+    "datamodelKey": "FrontPageCourses",
+    "s3": {
+      "collectionNameFromDatamodelPath": "front_page_courses",
+      "folderName": "front-page-courses",
+      "apiPath": "/front-page-courses",
+      "infoName": "Front_Page_Courses",
+      "collectionName": "front_page_courses"
+    }
+  },
+  {
+    "datamodelKey": "Function",
+    "s3": {
+      "collectionNameFromDatamodelPath": "functions",
+      "folderName": "function",
+      "apiPath": "/functions",
+      "infoName": "UserFunction",
+      "collectionName": "functions"
+    }
+  },
+  {
+    "datamodelKey": "Gender",
+    "s3": {
+      "collectionNameFromDatamodelPath": "genders",
+      "folderName": "gender",
+      "apiPath": "/genders",
+      "infoName": "Gender",
+      "collectionName": "genders"
+    }
+  },
+  {
+    "datamodelKey": "HOFFiArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hof_fi_articles",
+      "folderName": "hof-fi-article",
+      "apiPath": "/hof-fi-articles",
+      "infoName": "HOFFi_Article",
+      "collectionName": "hof_fi_articles"
+    }
+  },
+  {
+    "datamodelKey": "HOFFiFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hof_fi_footers",
+      "folderName": "hof-fi-footer",
+      "apiPath": "/hof-fi-footers",
+      "infoName": "HOFFi_Footer",
+      "collectionName": "hof_fi_footers"
+    }
+  },
+  {
+    "datamodelKey": "HOFFiMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hof_fi_menus",
+      "folderName": "hof-fi-menu",
+      "apiPath": "/hof-fi-menus",
+      "infoName": "HOFFi_Menu",
+      "collectionName": "hof_fi_menus"
+    }
+  },
+  {
+    "datamodelKey": "HOFFiSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hof_fi_supporters",
+      "folderName": "hof-fi-supporter",
+      "apiPath": "/hof-fi-supporters",
+      "infoName": "HOFFi_Supporter",
+      "collectionName": "hof_fi_supporters"
+    }
+  },
+  {
+    "datamodelKey": "HairColour",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hair_colours",
+      "folderName": "hair-colour",
+      "apiPath": "/hair-colours",
+      "infoName": "HairColour",
+      "collectionName": "hair_colours"
+    }
+  },
+  {
+    "datamodelKey": "HairLength",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hair_lengths",
+      "folderName": "hair-length",
+      "apiPath": "/hair-lengths",
+      "infoName": "HairLength",
+      "collectionName": "hair_lengths"
+    }
+  },
+  {
+    "datamodelKey": "Hall",
+    "s3": {
+      "collectionNameFromDatamodelPath": "halls",
+      "folderName": "hall",
+      "apiPath": "/halls",
+      "infoName": "Hall",
+      "collectionName": "halls"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleBruno",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_bruno",
+      "folderName": "hero-article-bruno",
+      "apiPath": "/hero-article-bruno",
+      "infoName": "HeroArticleBruno",
+      "collectionName": "hero_article_bruno"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleDisCamp",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_dis_camp",
+      "folderName": "hero-article-dis-camp",
+      "apiPath": "/hero-article-dis-camp",
+      "infoName": "HeroArticleDisCamp",
+      "collectionName": "hero_article_dis_camps"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleFilmikool",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_filmikool",
+      "folderName": "hero-article-filmikool",
+      "apiPath": "/hero-article-filmikool",
+      "infoName": "HeroArticleFilmikool",
+      "collectionName": "hero_article_filmikools"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleHoff",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_hoff",
+      "folderName": "hero-article-hoff",
+      "apiPath": "/hero-article-hoff",
+      "infoName": "HeroArticleHoff",
+      "collectionName": "hero_article_hoffs"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleIndustry",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_industry",
+      "folderName": "hero-article-industry",
+      "apiPath": "/hero-article-industry",
+      "infoName": "HeroArticleIndustry",
+      "collectionName": "hero_article_industries"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleJustFilm",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_just_film",
+      "folderName": "hero-article-just-film",
+      "apiPath": "/hero-article-just-film",
+      "infoName": "HeroArticleJustFilm",
+      "collectionName": "hero_article_just_films"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleKinoff",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_kinoff",
+      "folderName": "hero-article-kinoff",
+      "apiPath": "/hero-article-kinoff",
+      "infoName": "HeroArticleKinoff",
+      "collectionName": "hero_article_kinoffs"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleKumu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_kumu",
+      "folderName": "hero-article-kumu",
+      "apiPath": "/hero-article-kumu",
+      "infoName": "HeroArticleKumu",
+      "collectionName": "hero_article_kumu"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticlePoff",
+    "s3": {
+      "collectionNameFromDatamodelPath": "article_hero",
+      "folderName": "article-hero",
+      "apiPath": "/article-hero",
+      "infoName": "HeroArticlePoff",
+      "collectionName": "article_heroes"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleShorts",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_shorts",
+      "folderName": "hero-article-shorts",
+      "apiPath": "/hero-article-shorts",
+      "infoName": "HeroArticleShorts",
+      "collectionName": "hero_article_shorts"
+    }
+  },
+  {
+    "datamodelKey": "HeroArticleTartuff",
+    "s3": {
+      "collectionNameFromDatamodelPath": "hero_article_tartuff",
+      "folderName": "hero-article-tartuff",
+      "apiPath": "/hero-article-tartuff",
+      "infoName": "HeroArticleTartuff",
+      "collectionName": "hero_article_tartuffs"
+    }
+  },
+  {
+    "datamodelKey": "IndustryArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_articles",
+      "folderName": "industry-article",
+      "apiPath": "/industry-articles",
+      "infoName": "Industry_Article",
+      "collectionName": "industry_articles"
+    }
+  },
+  {
+    "datamodelKey": "IndustryCategory",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_categories",
+      "folderName": "industry-category",
+      "apiPath": "/industry-categories",
+      "infoName": "Industry_Category",
+      "collectionName": "industry_categories"
+    }
+  },
+  {
+    "datamodelKey": "IndustryEvent",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_events",
+      "folderName": "industry-event",
+      "apiPath": "/industry-events",
+      "infoName": "Industry_Event",
+      "collectionName": "industry_events"
+    }
+  },
+  {
+    "datamodelKey": "IndustryFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_footers",
+      "folderName": "industry-footer",
+      "apiPath": "/industry-footers",
+      "infoName": "Industry_Footer",
+      "collectionName": "industry_footers"
+    }
+  },
+  {
+    "datamodelKey": "IndustryGroup",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_groups",
+      "folderName": "industry-group",
+      "apiPath": "/industry-groups",
+      "infoName": "Industry_Group",
+      "collectionName": "industry_groups"
+    }
+  },
+  {
+    "datamodelKey": "IndustryMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_menus",
+      "folderName": "industry-menu",
+      "apiPath": "/industry-menus",
+      "infoName": "Industry_Menu",
+      "collectionName": "industry_menus"
+    }
+  },
+  {
+    "datamodelKey": "IndustryPerson",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_people",
+      "folderName": "industry-person",
+      "apiPath": "/industry-people",
+      "infoName": "Industry_Person",
+      "collectionName": "industry_people"
+    }
+  },
+  {
+    "datamodelKey": "IndustryPersonType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_person_types",
+      "folderName": "industry-person-type",
+      "apiPath": "/industry-person-types",
+      "infoName": "Industry_PersonType",
+      "collectionName": "industry_person_types"
+    }
+  },
+  {
+    "datamodelKey": "IndustryProject",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_projects",
+      "folderName": "industry-project",
+      "apiPath": "/industry-projects",
+      "infoName": "Industry_Project",
+      "collectionName": "industry_projects"
+    }
+  },
+  {
+    "datamodelKey": "IndustrySupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "industry_supporters",
+      "folderName": "industry-supporter",
+      "apiPath": "/industry-supporters",
+      "infoName": "Industry_Supporter",
+      "collectionName": "industry_supporters"
+    }
+  },
+  {
+    "datamodelKey": "JustFilmFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "just_film_footers",
+      "folderName": "just-film-footer",
+      "apiPath": "/just-film-footers",
+      "infoName": "JustFilm_Footer",
+      "collectionName": "just_film_footers"
+    }
+  },
+  {
+    "datamodelKey": "JustFilmiArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "just_filmi_articles",
+      "folderName": "just-filmi-article",
+      "apiPath": "/just-filmi-articles",
+      "infoName": "JustFilmi_Article",
+      "collectionName": "just_filmi_articles"
+    }
+  },
+  {
+    "datamodelKey": "JustFilmiMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "just_filmi_menus",
+      "folderName": "just-filmi-menu",
+      "apiPath": "/just-filmi-menus",
+      "infoName": "JustFilmi_Menu",
+      "collectionName": "just_filmi_menus"
+    }
+  },
+  {
+    "datamodelKey": "JustSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "supporters_justs",
+      "folderName": "supporters-just",
+      "apiPath": "/supporters-justs",
+      "infoName": "Just_Supporter",
+      "collectionName": "supporters_justs"
+    }
+  },
+  {
+    "datamodelKey": "KinoffiArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kinoffi_articles",
+      "folderName": "kinoffi-article",
+      "apiPath": "/kinoffi-articles",
+      "infoName": "Kinoffi_Article",
+      "collectionName": "kinoffi_articles"
+    }
+  },
+  {
+    "datamodelKey": "KinoffiFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kinoffi_footers",
+      "folderName": "kinoffi-footer",
+      "apiPath": "/kinoffi-footers",
+      "infoName": "Kinoffi_Footer",
+      "collectionName": "kinoffi_footers"
+    }
+  },
+  {
+    "datamodelKey": "KinoffiMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kinoffi_menus",
+      "folderName": "kinoffi-menu",
+      "apiPath": "/kinoffi-menus",
+      "infoName": "Kinoffi_Menu",
+      "collectionName": "kinoffi_menus"
+    }
+  },
+  {
+    "datamodelKey": "KinoffiSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kinoffi_supporters",
+      "folderName": "kinoffi-supporter",
+      "apiPath": "/kinoffi-supporters",
+      "infoName": "Kinoffi_Supporter",
+      "collectionName": "kinoffi_supporters"
+    }
+  },
+  {
+    "datamodelKey": "KumuArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kumu_articles",
+      "folderName": "kumu-article",
+      "apiPath": "/kumu-articles",
+      "infoName": "Kumu_Article",
+      "collectionName": "kumu_articles"
+    }
+  },
+  {
+    "datamodelKey": "KumuFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kumu_footers",
+      "folderName": "kumu-footer",
+      "apiPath": "/kumu-footers",
+      "infoName": "Kumu_Footer",
+      "collectionName": "kumu_footers"
+    }
+  },
+  {
+    "datamodelKey": "KumuMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kumu_menus",
+      "folderName": "kumu-menu",
+      "apiPath": "/kumu-menus",
+      "infoName": "Kumu_Menu",
+      "collectionName": "kumu_menus"
+    }
+  },
+  {
+    "datamodelKey": "KumuSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "kumu_supporters",
+      "folderName": "kumu-supporter",
+      "apiPath": "/kumu-supporters",
+      "infoName": "Kumu_Supporter",
+      "collectionName": "kumu_supporters"
+    }
+  },
+  {
+    "datamodelKey": "L1MenuIndustry",
+    "s3": {
+      "collectionNameFromDatamodelPath": "l_1_menu_industries",
+      "folderName": "l1-menu-industry",
+      "apiPath": "/l-1-menu-industries",
+      "infoName": "L1MenuIndustry",
+      "collectionName": "l1_menu_industries"
+    }
+  },
+  {
+    "datamodelKey": "L1MenuKumu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "l_1_menu_kumus",
+      "folderName": "l1-menu-kumu",
+      "apiPath": "/l-1-menu-kumus",
+      "infoName": "L1MenuKumu",
+      "collectionName": "l1_menu_kumus"
+    }
+  },
+  {
+    "datamodelKey": "LabelGroup",
+    "s3": {
+      "collectionNameFromDatamodelPath": "label_groups",
+      "folderName": "label-group",
+      "apiPath": "/label-groups",
+      "infoName": "LabelGroup",
+      "collectionName": "label_groups"
+    }
+  },
+  {
+    "datamodelKey": "Language",
+    "s3": {
+      "collectionNameFromDatamodelPath": "languages",
+      "folderName": "language",
+      "apiPath": "/languages",
+      "infoName": "Language",
+      "collectionName": "languages"
+    }
+  },
+  {
+    "datamodelKey": "Location",
+    "s3": {
+      "collectionNameFromDatamodelPath": "locations",
+      "folderName": "location",
+      "apiPath": "/locations",
+      "infoName": "Location",
+      "collectionName": "locations"
+    }
+  },
+  {
+    "datamodelKey": "Municipality",
+    "s3": {
+      "collectionNameFromDatamodelPath": "populated_places",
+      "folderName": "populated-place",
+      "apiPath": "/populated-places",
+      "infoName": "Municipality",
+      "collectionName": "populated_places"
+    }
+  },
+  {
+    "datamodelKey": "Organisation",
+    "s3": {
+      "collectionNameFromDatamodelPath": "organisations",
+      "folderName": "organisation",
+      "apiPath": "/organisations",
+      "infoName": "Organisation",
+      "collectionName": "organisations"
+    }
+  },
+  {
+    "datamodelKey": "Origin",
+    "s3": {
+      "collectionNameFromDatamodelPath": "origins",
+      "folderName": "origin",
+      "apiPath": "/origins",
+      "infoName": "Origin",
+      "collectionName": "origins"
+    }
+  },
+  {
+    "datamodelKey": "POFFiArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "pof_fi_articles",
+      "folderName": "pof-fi-article",
+      "apiPath": "/pof-fi-articles",
+      "infoName": "POFFi_Article",
+      "collectionName": "pof_fi_articles"
+    }
+  },
+  {
+    "datamodelKey": "POFFiFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "pof_fi_footers",
+      "folderName": "pof-fi-footer",
+      "apiPath": "/pof-fi-footers",
+      "infoName": "POFFi_Footer",
+      "collectionName": "pof_fi_footers"
+    }
+  },
+  {
+    "datamodelKey": "POFFiMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "pof_fi_menus",
+      "folderName": "pof-fi-menu",
+      "apiPath": "/pof-fi-menus",
+      "infoName": "POFFi_Menu",
+      "collectionName": "pof_fi_menus"
+    }
+  },
+  {
+    "datamodelKey": "POFFiSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "supporters_pages",
+      "folderName": "supporters-page",
+      "apiPath": "/supporters-pages",
+      "infoName": "POFFi_Supporter",
+      "collectionName": "supporters_pages"
+    }
+  },
+  {
+    "datamodelKey": "PatternCollection",
+    "s3": {
+      "collectionNameFromDatamodelPath": "pattern_collections",
+      "folderName": "pattern-collections",
+      "apiPath": "/pattern-collections",
+      "infoName": "Pattern_Collections",
+      "collectionName": "pattern_collections"
+    }
+  },
+  {
+    "datamodelKey": "Person",
+    "s3": {
+      "collectionNameFromDatamodelPath": "people",
+      "folderName": "person",
+      "apiPath": "/people",
+      "infoName": "Person",
+      "collectionName": "people"
+    }
+  },
+  {
+    "datamodelKey": "PitchOfVoice",
+    "s3": {
+      "collectionNameFromDatamodelPath": "pitch_of_voices",
+      "folderName": "pitch-of-voice",
+      "apiPath": "/pitch-of-voices",
+      "infoName": "PitchOfVoice",
+      "collectionName": "pitch_of_voices"
+    }
+  },
+  {
+    "datamodelKey": "Product",
+    "s3": {
+      "collectionNameFromDatamodelPath": "product",
+      "folderName": "product",
+      "apiPath": "/products",
+      "infoName": "Product",
+      "collectionName": "products"
+    }
+  },
+  {
+    "datamodelKey": "ProductType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "product_types",
+      "folderName": "product-type",
+      "apiPath": "/product-types",
+      "infoName": "ProductType",
+      "collectionName": "product_types"
+    }
+  },
+  {
+    "datamodelKey": "Product_Category",
+    "s3": {
+      "collectionNameFromDatamodelPath": "product_categories",
+      "folderName": "product-category",
+      "apiPath": "/product-categories",
+      "infoName": "Product_Category",
+      "collectionName": "product_categories"
+    }
+  },
+  {
+    "datamodelKey": "Programme",
+    "s3": {
+      "collectionNameFromDatamodelPath": "programmes",
+      "folderName": "programme",
+      "apiPath": "/programmes",
+      "infoName": "Programme",
+      "collectionName": "programmes"
+    }
+  },
+  {
+    "datamodelKey": "ProjectStatus",
+    "s3": {
+      "collectionNameFromDatamodelPath": "project_statuses",
+      "folderName": "project-status",
+      "apiPath": "/project-statuses",
+      "infoName": "Project_Status",
+      "collectionName": "project_statuses"
+    }
+  },
+  {
+    "datamodelKey": "ProjectType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "project_types",
+      "folderName": "project-type",
+      "apiPath": "/project-types",
+      "infoName": "Project_Type",
+      "collectionName": "project_types"
+    }
+  },
+  {
+    "datamodelKey": "RoleAtFilm",
+    "s3": {
+      "collectionNameFromDatamodelPath": "role_at_films",
+      "folderName": "role-at-film",
+      "apiPath": "/role-at-films",
+      "infoName": "RoleAtFilm",
+      "collectionName": "role_at_films"
+    }
+  },
+  {
+    "datamodelKey": "Screening",
+    "s3": {
+      "collectionNameFromDatamodelPath": "screenings",
+      "folderName": "screening",
+      "apiPath": "/screenings",
+      "infoName": "Screening",
+      "collectionName": "screenings"
+    }
+  },
+  {
+    "datamodelKey": "ScreeningType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "screening_types",
+      "folderName": "screening-type",
+      "apiPath": "/screening-types",
+      "infoName": "ScreeningType",
+      "collectionName": "screening_types"
+    }
+  },
+  {
+    "datamodelKey": "ShoeSize",
+    "s3": {
+      "collectionNameFromDatamodelPath": "shoe_sizes",
+      "folderName": "shoe-size",
+      "apiPath": "/shoe-sizes",
+      "infoName": "Shoe_Size",
+      "collectionName": "shoe_sizes"
+    }
+  },
+  {
+    "datamodelKey": "Shop",
+    "s3": {
+      "collectionNameFromDatamodelPath": "shops",
+      "folderName": "shop",
+      "apiPath": "/shops",
+      "infoName": "Shop",
+      "collectionName": "shops"
+    }
+  },
+  {
+    "datamodelKey": "ShortsSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "supporters_shorts",
+      "folderName": "supporters-shorts",
+      "apiPath": "/supporters-shorts",
+      "infoName": "Shorts_Supporter",
+      "collectionName": "supporters_shorts"
+    }
+  },
+  {
+    "datamodelKey": "ShortsiArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "shortsi_articles",
+      "folderName": "shortsi-article",
+      "apiPath": "/shortsi-articles",
+      "infoName": "Shortsi_Article",
+      "collectionName": "shortsi_articles"
+    }
+  },
+  {
+    "datamodelKey": "ShortsiFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "shortsi_footers",
+      "folderName": "shortsi-footer",
+      "apiPath": "/shortsi-footers",
+      "infoName": "Shortsi_Footer",
+      "collectionName": "shortsi_footers"
+    }
+  },
+  {
+    "datamodelKey": "ShortsiMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "shortsi_menus",
+      "folderName": "shortsi-menu",
+      "apiPath": "/shortsi-menus",
+      "infoName": "Shortsi_Menu",
+      "collectionName": "shortsi_menus"
+    }
+  },
+  {
+    "datamodelKey": "SixFilms",
+    "s3": {
+      "collectionNameFromDatamodelPath": "six_films",
+      "folderName": "six-films",
+      "apiPath": "/six-films",
+      "infoName": "SixFilms",
+      "collectionName": "six_films"
+    }
+  },
+  {
+    "datamodelKey": "SmartFolder",
+    "s3": {
+      "collectionNameFromDatamodelPath": "smart_folders",
+      "folderName": "smart-folder",
+      "apiPath": "/smart-folders",
+      "infoName": "SmartFolder",
+      "collectionName": "smart_folders"
+    }
+  },
+  {
+    "datamodelKey": "Stature",
+    "s3": {
+      "collectionNameFromDatamodelPath": "statures",
+      "folderName": "stature",
+      "apiPath": "/statures",
+      "infoName": "Stature",
+      "collectionName": "statures"
+    }
+  },
+  {
+    "datamodelKey": "TagAgeRestriction",
+    "s3": {
+      "collectionNameFromDatamodelPath": "age_restrictions",
+      "folderName": "age-restriction",
+      "apiPath": "/age-restrictions",
+      "infoName": "TagAgeRestriction",
+      "collectionName": "age_restrictions"
+    }
+  },
+  {
+    "datamodelKey": "TagCategory",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_categories",
+      "folderName": "tag-category",
+      "apiPath": "/tag-categories",
+      "infoName": "TagCategory",
+      "collectionName": "tag_categories"
+    }
+  },
+  {
+    "datamodelKey": "TagFilmType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_film_types",
+      "folderName": "tag-film-type",
+      "apiPath": "/tag-film-types",
+      "infoName": "TagFilmType",
+      "collectionName": "tag_film_types"
+    }
+  },
+  {
+    "datamodelKey": "TagGenre",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_genres",
+      "folderName": "tag-genre",
+      "apiPath": "/tag-genres",
+      "infoName": "TagGenre",
+      "collectionName": "tag_genres"
+    }
+  },
+  {
+    "datamodelKey": "TagKeyword",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_keywords",
+      "folderName": "tag-keyword",
+      "apiPath": "/tag-keywords",
+      "infoName": "TagKeyword",
+      "collectionName": "tag_keywords"
+    }
+  },
+  {
+    "datamodelKey": "TagLocation",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_locations",
+      "folderName": "tag-location",
+      "apiPath": "/tag-locations",
+      "infoName": "TagLocation",
+      "collectionName": "tag_locations"
+    }
+  },
+  {
+    "datamodelKey": "TagLookingFor",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_looking_fors",
+      "folderName": "tag-looking-for",
+      "apiPath": "/tag-looking-fors",
+      "infoName": "TagLookingFor",
+      "collectionName": "tag_looking_fors"
+    }
+  },
+  {
+    "datamodelKey": "TagPremiereType",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_premiere_types",
+      "folderName": "tag-premiere-type",
+      "apiPath": "/tag-premiere-types",
+      "infoName": "TagPremiereType",
+      "collectionName": "tag_premiere_types"
+    }
+  },
+  {
+    "datamodelKey": "TagSecret",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tag_secrets",
+      "folderName": "tag-secret",
+      "apiPath": "/tag-secrets",
+      "infoName": "TagSecret",
+      "collectionName": "tag_secrets"
+    }
+  },
+  {
+    "datamodelKey": "TagTriggerWarning",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trigger_warnings",
+      "folderName": "trigger-warning",
+      "apiPath": "/trigger-warnings",
+      "infoName": "TagTriggerWarning",
+      "collectionName": "trigger_warnings"
+    }
+  },
+  {
+    "datamodelKey": "TartuffiArticle",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tartuffi_articles",
+      "folderName": "tartuffi-article",
+      "apiPath": "/tartuffi-articles",
+      "infoName": "Tartuffi_Article",
+      "collectionName": "tartuffi_articles"
+    }
+  },
+  {
+    "datamodelKey": "TartuffiFooter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tartuffi_footers",
+      "folderName": "tartuffi-footer",
+      "apiPath": "/tartuffi-footers",
+      "infoName": "Tartuffi_Footer",
+      "collectionName": "tartuffi_footers"
+    }
+  },
+  {
+    "datamodelKey": "TartuffiMenu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tartuffi_menus",
+      "folderName": "tartuffi-menu",
+      "apiPath": "/tartuffi-menus",
+      "infoName": "Tartuffi_Menu",
+      "collectionName": "tartuffi_menus"
+    }
+  },
+  {
+    "datamodelKey": "TartuffiSupporter",
+    "s3": {
+      "collectionNameFromDatamodelPath": "tartuffi_supporters",
+      "folderName": "tartuffi-supporter",
+      "apiPath": "/tartuffi-supporters",
+      "infoName": "Tartuffi_Supporter",
+      "collectionName": "tartuffi_supporters"
+    }
+  },
+  {
+    "datamodelKey": "Team",
+    "s3": {
+      "collectionNameFromDatamodelPath": "teams",
+      "folderName": "team",
+      "apiPath": "/teams",
+      "infoName": "Team",
+      "collectionName": "teams"
+    }
+  },
+  {
+    "datamodelKey": "TimeUnits",
+    "s3": {
+      "collectionNameFromDatamodelPath": "time_units",
+      "folderName": "time-units",
+      "apiPath": "/time-units",
+      "infoName": "TimeUnits",
+      "collectionName": "time_units"
+    }
+  },
+  {
+    "datamodelKey": "Town",
+    "s3": {
+      "collectionNameFromDatamodelPath": "towns",
+      "folderName": "town",
+      "apiPath": "/towns",
+      "infoName": "Town",
+      "collectionName": "towns"
+    }
+  },
+  {
+    "datamodelKey": "Transaction",
+    "s3": {
+      "collectionNameFromDatamodelPath": "transactions",
+      "folderName": "transaction",
+      "apiPath": "/transactions",
+      "infoName": "transaction",
+      "collectionName": "transactions"
+    }
+  },
+  {
+    "datamodelKey": "TransactionProduct",
+    "s3": {
+      "collectionNameFromDatamodelPath": "transactions_products",
+      "folderName": "transactions-products",
+      "apiPath": "/transactions-products",
+      "infoName": "TransactionsProducts",
+      "collectionName": "transactions_products"
+    }
+  },
+  {
+    "datamodelKey": "TrioBruno",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_bruno",
+      "folderName": "trio-bruno",
+      "apiPath": "/trio-bruno",
+      "infoName": "TrioBruno",
+      "collectionName": "trio_bruno"
+    }
+  },
+  {
+    "datamodelKey": "TrioDisCamp",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_dis_camp",
+      "folderName": "trio-dis-camp",
+      "apiPath": "/trio-dis-camp",
+      "infoName": "TrioDisCamp",
+      "collectionName": "trio_dis_camps"
+    }
+  },
+  {
+    "datamodelKey": "TrioFilmikool",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_filmikool",
+      "folderName": "trio-filmikool",
+      "apiPath": "/trio-filmikool",
+      "infoName": "TrioFilmikool",
+      "collectionName": "trio_filmikools"
+    }
+  },
+  {
+    "datamodelKey": "TrioHOFF",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_hoff",
+      "folderName": "trio-hoff",
+      "apiPath": "/trio-hoff",
+      "infoName": "TrioHOFF",
+      "collectionName": "trio_hoffs"
+    }
+  },
+  {
+    "datamodelKey": "TrioIndustry",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_industry",
+      "folderName": "trio-industry",
+      "apiPath": "/trio-industry",
+      "infoName": "TrioIndustry",
+      "collectionName": "trio_industries"
+    }
+  },
+  {
+    "datamodelKey": "TrioJustFilm",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_just_film",
+      "folderName": "trio-just-film",
+      "apiPath": "/trio-just-film",
+      "infoName": "TrioJustFilm",
+      "collectionName": "trio_just_films"
+    }
+  },
+  {
+    "datamodelKey": "TrioKinoff",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_kinoff",
+      "folderName": "trio-kinoff",
+      "apiPath": "/trio-kinoff",
+      "infoName": "TrioKinoff",
+      "collectionName": "trio_kinoffs"
+    }
+  },
+  {
+    "datamodelKey": "TrioKumu",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_kumu",
+      "folderName": "trio-kumu",
+      "apiPath": "/trio-kumu",
+      "infoName": "TrioKumu",
+      "collectionName": "trio_kumu"
+    }
+  },
+  {
+    "datamodelKey": "TrioPOFF",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_p_oe_ff",
+      "folderName": "trio-p-oe-ff",
+      "apiPath": "/trio-p-oe-ff",
+      "infoName": "TrioPOFF",
+      "collectionName": "trio_p_oe_ffs"
+    }
+  },
+  {
+    "datamodelKey": "TrioShorts",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_shorts",
+      "folderName": "trio-shorts",
+      "apiPath": "/trio-shorts",
+      "infoName": "TrioShorts",
+      "collectionName": "trio_shorts"
+    }
+  },
+  {
+    "datamodelKey": "TrioTartuff",
+    "s3": {
+      "collectionNameFromDatamodelPath": "trio_tartuff",
+      "folderName": "trio-tartuff",
+      "apiPath": "/trio-tartuff",
+      "infoName": "TrioTartuff",
+      "collectionName": "trio_tartuffs"
+    }
+  },
+  {
+    "datamodelKey": "TypeOfWork",
+    "s3": {
+      "collectionNameFromDatamodelPath": "type_of_works",
+      "folderName": "type-of-work",
+      "apiPath": "/type-of-works",
+      "infoName": "TypeOfWork",
+      "collectionName": "type_of_works"
+    }
+  },
+  {
+    "datamodelKey": "UserProfile",
+    "s3": {
+      "collectionNameFromDatamodelPath": "user_profiles",
+      "folderName": "user-profiles",
+      "apiPath": "/user-profiles",
+      "infoName": "UserProfiles",
+      "collectionName": "user_profiles"
+    }
+  },
+  {
+    "datamodelKey": "UserRole",
+    "s3": {
+      "collectionNameFromDatamodelPath": "user_roles",
+      "folderName": "user-role",
+      "apiPath": "/user-roles",
+      "infoName": "UserRole",
+      "collectionName": "user_roles"
+    }
+  },
+  {
+    "datamodelKey": "WebAuthor",
+    "s3": {
+      "collectionNameFromDatamodelPath": "web_authors",
+      "folderName": "web-author",
+      "apiPath": "/web-authors",
+      "infoName": "WebAuthor",
+      "collectionName": "web_authors"
+    }
+  },
+  {
+    "datamodelKey": "WebPermission",
+    "s3": {
+      "collectionNameFromDatamodelPath": "web_permissions",
+      "folderName": "web-permission",
+      "apiPath": "/web-permissions",
+      "infoName": "webPermission",
+      "collectionName": "web_permissions"
+    }
+  },
+  {
+    "datamodelKey": "WebRole",
+    "s3": {
+      "collectionNameFromDatamodelPath": "web_roles",
+      "folderName": "web-role",
+      "apiPath": "/web-roles",
+      "infoName": "webRole",
+      "collectionName": "web_roles"
+    }
+  },
+  {
+    "datamodelKey": "WebUser",
+    "s3": {
+      "collectionNameFromDatamodelPath": "web_users",
+      "folderName": "web-user",
+      "apiPath": "/web-users",
+      "infoName": "webUser",
+      "collectionName": "web_users"
+    }
+  }
+]
