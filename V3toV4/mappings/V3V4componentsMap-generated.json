@@ -4,15 +4,15 @@
     "kind": "component",
     "s3": {
       "folderName": "location",
+      "fileName": "address",
       "collectionName": "components_location_addresses",
-      "infoName": "Address"
+      "displayName": "Address"
     },
     "s4": {
       "folderName": "location",
+      "fileName": "address",
       "collectionName": "components_location_addresses",
-      "info": {
-        "displayName": "Address"
-      }
+      "displayName": "Address"
     }
   },
   {
@@ -20,15 +20,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "article-media",
       "collectionName": "components_article_article_medias",
-      "infoName": "ArticleMedia"
+      "displayName": "ArticleMedia"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "article-media",
       "collectionName": "components_article_article_medias",
-      "info": {
-        "displayName": "ArticleMedia"
-      }
+      "displayName": "ArticleMedia"
     }
   },
   {
@@ -36,15 +36,15 @@
     "kind": "component",
     "s3": {
       "folderName": "frontpage",
+      "fileName": "banner",
       "collectionName": "components_frontpage_banners",
-      "infoName": "Banner"
+      "displayName": "Banner"
     },
     "s4": {
       "folderName": "frontpage",
+      "fileName": "banner",
       "collectionName": "components_frontpage_banners",
-      "info": {
-        "displayName": "Banner"
-      }
+      "displayName": "Banner"
     }
   },
   {
@@ -52,15 +52,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "bruno-sub-menu-item",
       "collectionName": "components_menu_bruno_items",
-      "infoName": "BrunoSubMenuItem"
+      "displayName": "BrunoSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "bruno-sub-menu-item",
       "collectionName": "components_menu_bruno_items",
-      "info": {
-        "displayName": "BrunoSubMenuItem"
-      }
+      "displayName": "BrunoSubMenuItem"
     }
   },
   {
@@ -68,15 +68,15 @@
     "kind": "component",
     "s3": {
       "folderName": "button",
+      "fileName": "button",
       "collectionName": "components_button_buttons",
-      "infoName": "Button"
+      "displayName": "Button"
     },
     "s4": {
       "folderName": "button",
+      "fileName": "button",
       "collectionName": "components_button_buttons",
-      "info": {
-        "displayName": "Button"
-      }
+      "displayName": "Button"
     }
   },
   {
@@ -84,15 +84,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "function-conditions",
       "collectionName": "components_user_function_conditions",
-      "infoName": "Conditions"
+      "displayName": "Conditions"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "function-conditions",
       "collectionName": "components_user_function_conditions",
-      "info": {
-        "displayName": "Conditions"
-      }
+      "displayName": "Conditions"
     }
   },
   {
@@ -100,15 +100,15 @@
     "kind": "component",
     "s3": {
       "folderName": "course",
+      "fileName": "course-module",
       "collectionName": "components_course_course_modules",
-      "infoName": "CourseModule"
+      "displayName": "CourseModule"
     },
     "s4": {
       "folderName": "course",
+      "fileName": "course-module",
       "collectionName": "components_course_course_modules",
-      "info": {
-        "displayName": "CourseModule"
-      }
+      "displayName": "CourseModule"
     }
   },
   {
@@ -116,15 +116,15 @@
     "kind": "component",
     "s3": {
       "folderName": "tags",
+      "fileName": "course-tags",
       "collectionName": "components_tags_course_tags",
-      "infoName": "CourseTags"
+      "displayName": "CourseTags"
     },
     "s4": {
       "folderName": "tags",
+      "fileName": "course-tags",
       "collectionName": "components_tags_course_tags",
-      "info": {
-        "displayName": "CourseTags"
-      }
+      "displayName": "CourseTags"
     }
   },
   {
@@ -132,15 +132,15 @@
     "kind": "component",
     "s3": {
       "folderName": "ticketing",
+      "fileName": "delivery-price",
       "collectionName": "components_ticketing_delivery_prices",
-      "infoName": "DeliveryPrice"
+      "displayName": "DeliveryPrice"
     },
     "s4": {
       "folderName": "ticketing",
+      "fileName": "delivery-price",
       "collectionName": "components_ticketing_delivery_prices",
-      "info": {
-        "displayName": "DeliveryPrice"
-      }
+      "displayName": "DeliveryPrice"
     }
   },
   {
@@ -148,15 +148,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "dis-camp-sub-menu-item",
       "collectionName": "components_menu_dis_camp_items",
-      "infoName": "DisCampSubMenuItem"
+      "displayName": "DisCampSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "dis-camp-sub-menu-item",
       "collectionName": "components_menu_dis_camp_items",
-      "info": {
-        "displayName": "DisCampSubMenuItem"
-      }
+      "displayName": "DisCampSubMenuItem"
     }
   },
   {
@@ -164,15 +164,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "filmikooli-sub-menu-item",
       "collectionName": "components_menu_filmikooli_items",
-      "infoName": "FilmikooliSubMenuItem"
+      "displayName": "FilmikooliSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "filmikooli-sub-menu-item",
       "collectionName": "components_menu_filmikooli_items",
-      "info": {
-        "displayName": "FilmikooliSubMenuItem"
-      }
+      "displayName": "FilmikooliSubMenuItem"
     }
   },
   {
@@ -180,15 +180,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "function-parameters",
       "collectionName": "components_user_function_parameters",
-      "infoName": "FunctionParameters"
+      "displayName": "FunctionParameters"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "function-parameters",
       "collectionName": "components_user_function_parameters",
-      "info": {
-        "displayName": "FunctionParameters"
-      }
+      "displayName": "FunctionParameters"
     }
   },
   {
@@ -196,15 +196,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "industry-sub-menu-item",
       "collectionName": "components_menu_industry_items",
-      "infoName": "IndustrySubMenuItem"
+      "displayName": "IndustrySubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "industry-sub-menu-item",
       "collectionName": "components_menu_industry_items",
-      "info": {
-        "displayName": "IndustrySubMenuItem"
-      }
+      "displayName": "IndustrySubMenuItem"
     }
   },
   {
@@ -212,15 +212,15 @@
     "kind": "component",
     "s3": {
       "folderName": "screening",
+      "fileName": "intro-conversation-qand-a",
       "collectionName": "components_screening_intro_conversation_qand_as",
-      "infoName": "Intro_Conversation_QandA"
+      "displayName": "Intro_Conversation_QandA"
     },
     "s4": {
       "folderName": "screening",
+      "fileName": "intro-conversation-qand-a",
       "collectionName": "components_screening_intro_conversation_qand_as",
-      "info": {
-        "displayName": "Intro_Conversation_QandA"
-      }
+      "displayName": "Intro_Conversation_QandA"
     }
   },
   {
@@ -228,15 +228,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "just-filmi-sub-menu-item",
       "collectionName": "components_menu_just_filmi_items",
-      "infoName": "JustFilmiSubMenuItem"
+      "displayName": "JustFilmiSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "just-filmi-sub-menu-item",
       "collectionName": "components_menu_just_filmi_items",
-      "info": {
-        "displayName": "JustFilmiSubMenuItem"
-      }
+      "displayName": "JustFilmiSubMenuItem"
     }
   },
   {
@@ -244,15 +244,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "kinoffi-sub-menu-item",
       "collectionName": "components_menu_kinoffi_items",
-      "infoName": "KinoffiSubMenuItem"
+      "displayName": "KinoffiSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "kinoffi-sub-menu-item",
       "collectionName": "components_menu_kinoffi_items",
-      "info": {
-        "displayName": "KinoffiSubMenuItem"
-      }
+      "displayName": "KinoffiSubMenuItem"
     }
   },
   {
@@ -260,15 +260,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "kumu-sub-menu-item",
       "collectionName": "components_menu_kumu_items",
-      "infoName": "KumuSubMenuItem"
+      "displayName": "KumuSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "kumu-sub-menu-item",
       "collectionName": "components_menu_kumu_items",
-      "info": {
-        "displayName": "KumuSubMenuItem"
-      }
+      "displayName": "KumuSubMenuItem"
     }
   },
   {
@@ -276,15 +276,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "l2-menu-industry",
       "collectionName": "components_menu_l2_menu_industries",
-      "infoName": "L2MenuIndustry"
+      "displayName": "L2MenuIndustry"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "l2-menu-industry",
       "collectionName": "components_menu_l2_menu_industries",
-      "info": {
-        "displayName": "L2MenuIndustry"
-      }
+      "displayName": "L2MenuIndustry"
     }
   },
   {
@@ -292,15 +292,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "l2-menu-kumu",
       "collectionName": "components_menu_l2_menu_kumus",
-      "infoName": "L2MenuKumu"
+      "displayName": "L2MenuKumu"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "l2-menu-kumu",
       "collectionName": "components_menu_l2_menu_kumus",
-      "info": {
-        "displayName": "L2MenuKumu"
-      }
+      "displayName": "L2MenuKumu"
     }
   },
   {
@@ -308,15 +308,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "l3-menu-industry",
       "collectionName": "components_menu_l3_menu_industries",
-      "infoName": "L3MenuIndustry"
+      "displayName": "L3MenuIndustry"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "l3-menu-industry",
       "collectionName": "components_menu_l3_menu_industries",
-      "info": {
-        "displayName": "L3MenuIndustry"
-      }
+      "displayName": "L3MenuIndustry"
     }
   },
   {
@@ -324,15 +324,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "l3-menu-kumu",
       "collectionName": "components_menu_l3_menu_kumus",
-      "infoName": "L3MenuKumu"
+      "displayName": "L3MenuKumu"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "l3-menu-kumu",
       "collectionName": "components_menu_l3_menu_kumus",
-      "info": {
-        "displayName": "L3MenuKumu"
-      }
+      "displayName": "L3MenuKumu"
     }
   },
   {
@@ -340,15 +340,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "my-events",
       "collectionName": "components_user_my_events",
-      "infoName": "MyEvents"
+      "displayName": "MyEvents"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "my-events",
       "collectionName": "components_user_my_events",
-      "info": {
-        "displayName": "MyEvents"
-      }
+      "displayName": "MyEvents"
     }
   },
   {
@@ -356,15 +356,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "my-films",
       "collectionName": "components_user_my_films",
-      "infoName": "MyFilms"
+      "displayName": "MyFilms"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "my-films",
       "collectionName": "components_user_my_films",
-      "info": {
-        "displayName": "MyFilms"
-      }
+      "displayName": "MyFilms"
     }
   },
   {
@@ -372,15 +372,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "my-screenings",
       "collectionName": "components_user_my_screenings",
-      "infoName": "MyScreenings"
+      "displayName": "MyScreenings"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "my-screenings",
       "collectionName": "components_user_my_screenings",
-      "info": {
-        "displayName": "MyScreenings"
-      }
+      "displayName": "MyScreenings"
     }
   },
   {
@@ -388,15 +388,15 @@
     "kind": "component",
     "s3": {
       "folderName": "time",
+      "fileName": "period-relative",
       "collectionName": "components_time_period_relatives",
-      "infoName": "PeriodRelative"
+      "displayName": "PeriodRelative"
     },
     "s4": {
       "folderName": "time",
+      "fileName": "period-relative",
       "collectionName": "components_time_period_relatives",
-      "info": {
-        "displayName": "PeriodRelative"
-      }
+      "displayName": "PeriodRelative"
     }
   },
   {
@@ -404,15 +404,15 @@
     "kind": "component",
     "s3": {
       "folderName": "media",
+      "fileName": "qa-clip",
       "collectionName": "components_media_qa_clips",
-      "infoName": "QaClip"
+      "displayName": "QaClip"
     },
     "s4": {
       "folderName": "media",
+      "fileName": "qa-clip",
       "collectionName": "components_media_qa_clips",
-      "info": {
-        "displayName": "QaClip"
-      }
+      "displayName": "QaClip"
     }
   },
   {
@@ -420,15 +420,15 @@
     "kind": "component",
     "s3": {
       "folderName": "media",
+      "fileName": "remote-img",
       "collectionName": "components_media_remote_imgs",
-      "infoName": "RemoteImg"
+      "displayName": "RemoteImg"
     },
     "s4": {
       "folderName": "media",
+      "fileName": "remote-img",
       "collectionName": "components_media_remote_imgs",
-      "info": {
-        "displayName": "RemoteImg"
-      }
+      "displayName": "RemoteImg"
     }
   },
   {
@@ -436,15 +436,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "shortsi-sub-menu-item",
       "collectionName": "components_menu_shortsi_items",
-      "infoName": "ShortsiSubMenuItem"
+      "displayName": "ShortsiSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "shortsi-sub-menu-item",
       "collectionName": "components_menu_shortsi_items",
-      "info": {
-        "displayName": "ShortsiSubMenuItem"
-      }
+      "displayName": "ShortsiSubMenuItem"
     }
   },
   {
@@ -452,15 +452,15 @@
     "kind": "component",
     "s3": {
       "folderName": "social",
+      "fileName": "social-group",
       "collectionName": "components_social_social_groups",
-      "infoName": "SocialGroup"
+      "displayName": "SocialGroup"
     },
     "s4": {
       "folderName": "social",
+      "fileName": "social-group",
       "collectionName": "components_social_social_groups",
-      "info": {
-        "displayName": "SocialGroup"
-      }
+      "displayName": "SocialGroup"
     }
   },
   {
@@ -468,15 +468,15 @@
     "kind": "component",
     "s3": {
       "folderName": "social",
+      "fileName": "social-item",
       "collectionName": "components_social_social_items",
-      "infoName": "SocialItem"
+      "displayName": "SocialItem"
     },
     "s4": {
       "folderName": "social",
+      "fileName": "social-item",
       "collectionName": "components_social_social_items",
-      "info": {
-        "displayName": "SocialItem"
-      }
+      "displayName": "SocialItem"
     }
   },
   {
@@ -484,15 +484,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-bruno",
       "collectionName": "components_footer_sup_bruno",
-      "infoName": "SupBruno"
+      "displayName": "SupBruno"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-bruno",
       "collectionName": "components_footer_sup_bruno",
-      "info": {
-        "displayName": "SupBruno"
-      }
+      "displayName": "SupBruno"
     }
   },
   {
@@ -500,15 +500,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-dis-camp",
       "collectionName": "components_footer_sup_dis_camps",
-      "infoName": "SupDisCamp"
+      "displayName": "SupDisCamp"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-dis-camp",
       "collectionName": "components_footer_sup_dis_camps",
-      "info": {
-        "displayName": "SupDisCamp"
-      }
+      "displayName": "SupDisCamp"
     }
   },
   {
@@ -516,15 +516,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-filmikool",
       "collectionName": "components_footer_sup_filmikools",
-      "infoName": "SupFilmikool"
+      "displayName": "SupFilmikool"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-filmikool",
       "collectionName": "components_footer_sup_filmikools",
-      "info": {
-        "displayName": "SupFilmikool"
-      }
+      "displayName": "SupFilmikool"
     }
   },
   {
@@ -532,15 +532,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-hoff",
       "collectionName": "components_footer_sup_hoffs",
-      "infoName": "SupHoff"
+      "displayName": "SupHoff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-hoff",
       "collectionName": "components_footer_sup_hoffs",
-      "info": {
-        "displayName": "SupHoff"
-      }
+      "displayName": "SupHoff"
     }
   },
   {
@@ -548,15 +548,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-industry",
       "collectionName": "components_footer_sup_industry",
-      "infoName": "SupIndustry"
+      "displayName": "SupIndustry"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-industry",
       "collectionName": "components_footer_sup_industry",
-      "info": {
-        "displayName": "SupIndustry"
-      }
+      "displayName": "SupIndustry"
     }
   },
   {
@@ -564,15 +564,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-kumu",
       "collectionName": "components_footer_sup_kumu",
-      "infoName": "SupKumu"
+      "displayName": "SupKumu"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-kumu",
       "collectionName": "components_footer_sup_kumu",
-      "info": {
-        "displayName": "SupKumu"
-      }
+      "displayName": "SupKumu"
     }
   },
   {
@@ -580,15 +580,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-bruno",
       "collectionName": "components_footer_sup_sec_bruno",
-      "infoName": "SupSecBruno"
+      "displayName": "SupSecBruno"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-bruno",
       "collectionName": "components_footer_sup_sec_bruno",
-      "info": {
-        "displayName": "SupSecBruno"
-      }
+      "displayName": "SupSecBruno"
     }
   },
   {
@@ -596,15 +596,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-dis-camp",
       "collectionName": "components_footer_sup_sec_dis_camps",
-      "infoName": "SupSecDisCamp"
+      "displayName": "SupSecDisCamp"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-dis-camp",
       "collectionName": "components_footer_sup_sec_dis_camps",
-      "info": {
-        "displayName": "SupSecDisCamp"
-      }
+      "displayName": "SupSecDisCamp"
     }
   },
   {
@@ -612,15 +612,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-filmikool",
       "collectionName": "components_footer_sup_sec_filmikools",
-      "infoName": "SupSecFilmikool"
+      "displayName": "SupSecFilmikool"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-filmikool",
       "collectionName": "components_footer_sup_sec_filmikools",
-      "info": {
-        "displayName": "SupSecFilmikool"
-      }
+      "displayName": "SupSecFilmikool"
     }
   },
   {
@@ -628,15 +628,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-hoff",
       "collectionName": "components_footer_sup_sec_hoffs",
-      "infoName": "SupSecHoff"
+      "displayName": "SupSecHoff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-hoff",
       "collectionName": "components_footer_sup_sec_hoffs",
-      "info": {
-        "displayName": "SupSecHoff"
-      }
+      "displayName": "SupSecHoff"
     }
   },
   {
@@ -644,15 +644,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-industry",
       "collectionName": "components_footer_sup_sec_industry",
-      "infoName": "SupSecIndustry"
+      "displayName": "SupSecIndustry"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-industry",
       "collectionName": "components_footer_sup_sec_industry",
-      "info": {
-        "displayName": "SupSecIndustry"
-      }
+      "displayName": "SupSecIndustry"
     }
   },
   {
@@ -660,15 +660,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-kinoff",
       "collectionName": "components_footer_sup_sec_kinoff",
-      "infoName": "SupSecKinoff"
+      "displayName": "SupSecKinoff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-kinoff",
       "collectionName": "components_footer_sup_sec_kinoff",
-      "info": {
-        "displayName": "SupSecKinoff"
-      }
+      "displayName": "SupSecKinoff"
     }
   },
   {
@@ -676,15 +676,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-kumu",
       "collectionName": "components_footer_sup_sec_kumu",
-      "infoName": "SupSecKumu"
+      "displayName": "SupSecKumu"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-kumu",
       "collectionName": "components_footer_sup_sec_kumu",
-      "info": {
-        "displayName": "SupSecKumu"
-      }
+      "displayName": "SupSecKumu"
     }
   },
   {
@@ -692,15 +692,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-tartuff",
       "collectionName": "components_footer_sup_sec_tartuffs",
-      "infoName": "SupSecTartuff"
+      "displayName": "SupSecTartuff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-tartuff",
       "collectionName": "components_footer_sup_sec_tartuffs",
-      "info": {
-        "displayName": "SupSecTartuff"
-      }
+      "displayName": "SupSecTartuff"
     }
   },
   {
@@ -708,15 +708,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-tartuff",
       "collectionName": "components_footer_sup_tartuffs",
-      "infoName": "SupTartuff"
+      "displayName": "SupTartuff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-tartuff",
       "collectionName": "components_footer_sup_tartuffs",
-      "info": {
-        "displayName": "SupTartuff"
-      }
+      "displayName": "SupTartuff"
     }
   },
   {
@@ -724,15 +724,15 @@
     "kind": "component",
     "s3": {
       "folderName": "tags",
+      "fileName": "tags",
       "collectionName": "components_tags_tags",
-      "infoName": "Tags"
+      "displayName": "Tags"
     },
     "s4": {
       "folderName": "tags",
+      "fileName": "tags",
       "collectionName": "components_tags_tags",
-      "info": {
-        "displayName": "Tags"
-      }
+      "displayName": "Tags"
     }
   },
   {
@@ -740,15 +740,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "tartuffi-sub-menu-item",
       "collectionName": "components_menu_tartuffi_items",
-      "infoName": "TartuffiSubMenuItem"
+      "displayName": "TartuffiSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "tartuffi-sub-menu-item",
       "collectionName": "components_menu_tartuffi_items",
-      "info": {
-        "displayName": "TartuffiSubMenuItem"
-      }
+      "displayName": "TartuffiSubMenuItem"
     }
   },
   {
@@ -756,15 +756,15 @@
     "kind": "component",
     "s3": {
       "folderName": "media",
+      "fileName": "trailers",
       "collectionName": "components_media_trailers",
-      "infoName": "Trailer"
+      "displayName": "Trailer"
     },
     "s4": {
       "folderName": "media",
+      "fileName": "trailers",
       "collectionName": "components_media_trailers",
-      "info": {
-        "displayName": "Trailer"
-      }
+      "displayName": "Trailer"
     }
   },
   {
@@ -772,15 +772,15 @@
     "kind": "component",
     "s3": {
       "folderName": "translated",
+      "fileName": "translated-long",
       "collectionName": "components_translated_translated_longs",
-      "infoName": "Translated Long"
+      "displayName": "Translated Long"
     },
     "s4": {
       "folderName": "translated",
+      "fileName": "translated-long",
       "collectionName": "components_translated_translated_longs",
-      "info": {
-        "displayName": "Translated Long"
-      }
+      "displayName": "Translated Long"
     }
   },
   {
@@ -788,15 +788,15 @@
     "kind": "component",
     "s3": {
       "folderName": "translated",
+      "fileName": "translated-short",
       "collectionName": "components_translated_translated_shorts",
-      "infoName": "Translated Short"
+      "displayName": "Translated Short"
     },
     "s4": {
       "folderName": "translated",
+      "fileName": "translated-short",
       "collectionName": "components_translated_translated_shorts",
-      "info": {
-        "displayName": "Translated Short"
-      }
+      "displayName": "Translated Short"
     }
   },
   {
@@ -804,15 +804,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-hoff",
       "collectionName": "components_article_trio_hoffs",
-      "infoName": "TrioHoff"
+      "displayName": "TrioHoff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-hoff",
       "collectionName": "components_article_trio_hoffs",
-      "info": {
-        "displayName": "TrioHoff"
-      }
+      "displayName": "TrioHoff"
     }
   },
   {
@@ -820,15 +820,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-bruno",
       "collectionName": "components_artcl_trtm_bruno",
-      "infoName": "TrioItemBruno"
+      "displayName": "TrioItemBruno"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-bruno",
       "collectionName": "components_artcl_trtm_bruno",
-      "info": {
-        "displayName": "TrioItemBruno"
-      }
+      "displayName": "TrioItemBruno"
     }
   },
   {
@@ -836,15 +836,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-dis-camp",
       "collectionName": "components_artcl_trtm_dis_camps",
-      "infoName": "TrioItemDisCamp"
+      "displayName": "TrioItemDisCamp"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-dis-camp",
       "collectionName": "components_artcl_trtm_dis_camps",
-      "info": {
-        "displayName": "TrioItemDisCamp"
-      }
+      "displayName": "TrioItemDisCamp"
     }
   },
   {
@@ -852,15 +852,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-filmikool",
       "collectionName": "components_artcl_trtm_filmikools",
-      "infoName": "TrioItemFilmikool"
+      "displayName": "TrioItemFilmikool"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-filmikool",
       "collectionName": "components_artcl_trtm_filmikools",
-      "info": {
-        "displayName": "TrioItemFilmikool"
-      }
+      "displayName": "TrioItemFilmikool"
     }
   },
   {
@@ -868,15 +868,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-hoff",
       "collectionName": "components_artcl_trtm_hoffs",
-      "infoName": "TrioItemHoff"
+      "displayName": "TrioItemHoff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-hoff",
       "collectionName": "components_artcl_trtm_hoffs",
-      "info": {
-        "displayName": "TrioItemHoff"
-      }
+      "displayName": "TrioItemHoff"
     }
   },
   {
@@ -884,15 +884,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-industry",
       "collectionName": "components_artcl_trtm_industry",
-      "infoName": "TrioItemIndustry"
+      "displayName": "TrioItemIndustry"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-industry",
       "collectionName": "components_artcl_trtm_industry",
-      "info": {
-        "displayName": "TrioItemIndustry"
-      }
+      "displayName": "TrioItemIndustry"
     }
   },
   {
@@ -900,15 +900,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-just-film",
       "collectionName": "components_artcl_trtm_just_films",
-      "infoName": "TrioItemJustFilm"
+      "displayName": "TrioItemJustFilm"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-just-film",
       "collectionName": "components_artcl_trtm_just_films",
-      "info": {
-        "displayName": "TrioItemJustFilm"
-      }
+      "displayName": "TrioItemJustFilm"
     }
   },
   {
@@ -916,15 +916,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-kinoff",
       "collectionName": "components_artcl_trtm_kinoff",
-      "infoName": "TrioItemKinoff"
+      "displayName": "TrioItemKinoff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-kinoff",
       "collectionName": "components_artcl_trtm_kinoff",
-      "info": {
-        "displayName": "TrioItemKinoff"
-      }
+      "displayName": "TrioItemKinoff"
     }
   },
   {
@@ -932,15 +932,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-kumu",
       "collectionName": "components_artcl_trtm_kumu",
-      "infoName": "TrioItemKumu"
+      "displayName": "TrioItemKumu"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-kumu",
       "collectionName": "components_artcl_trtm_kumu",
-      "info": {
-        "displayName": "TrioItemKumu"
-      }
+      "displayName": "TrioItemKumu"
     }
   },
   {
@@ -948,15 +948,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-lang-item",
       "collectionName": "components_article_trio_lang_items",
-      "infoName": "TrioItemPoff"
+      "displayName": "TrioItemPoff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-lang-item",
       "collectionName": "components_article_trio_lang_items",
-      "info": {
-        "displayName": "TrioItemPoff"
-      }
+      "displayName": "TrioItemPoff"
     }
   },
   {
@@ -964,15 +964,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-shorts",
       "collectionName": "components_artcl_trtm_shorts",
-      "infoName": "TrioItemShorts"
+      "displayName": "TrioItemShorts"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-shorts",
       "collectionName": "components_artcl_trtm_shorts",
-      "info": {
-        "displayName": "TrioItemShorts"
-      }
+      "displayName": "TrioItemShorts"
     }
   },
   {
@@ -980,15 +980,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-item-tartuff",
       "collectionName": "components_artcl_trtm_tartuffs",
-      "infoName": "TrioItemTartuff"
+      "displayName": "TrioItemTartuff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-item-tartuff",
       "collectionName": "components_artcl_trtm_tartuffs",
-      "info": {
-        "displayName": "TrioItemTartuff"
-      }
+      "displayName": "TrioItemTartuff"
     }
   },
   {
@@ -996,15 +996,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-bruno",
       "collectionName": "components_article_trio_bruno",
-      "infoName": "Triobruno"
+      "displayName": "Triobruno"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-bruno",
       "collectionName": "components_article_trio_bruno",
-      "info": {
-        "displayName": "Triobruno"
-      }
+      "displayName": "Triobruno"
     }
   },
   {
@@ -1012,15 +1012,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "triodiscamp",
       "collectionName": "components_article_triodiscamps",
-      "infoName": "Triodiscamp"
+      "displayName": "Triodiscamp"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "triodiscamp",
       "collectionName": "components_article_triodiscamps",
-      "info": {
-        "displayName": "Triodiscamp"
-      }
+      "displayName": "Triodiscamp"
     }
   },
   {
@@ -1028,15 +1028,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "triofilmikool",
       "collectionName": "components_article_triofilmikools",
-      "infoName": "Triofilmikool"
+      "displayName": "Triofilmikool"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "triofilmikool",
       "collectionName": "components_article_triofilmikools",
-      "info": {
-        "displayName": "Triofilmikool"
-      }
+      "displayName": "Triofilmikool"
     }
   },
   {
@@ -1044,15 +1044,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trioindustry",
       "collectionName": "components_article_trio_industry",
-      "infoName": "Trioindustry"
+      "displayName": "Trioindustry"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trioindustry",
       "collectionName": "components_article_trio_industry",
-      "info": {
-        "displayName": "Trioindustry"
-      }
+      "displayName": "Trioindustry"
     }
   },
   {
@@ -1060,15 +1060,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-just-film",
       "collectionName": "components_article_trio_just_films",
-      "infoName": "Triojustfilm"
+      "displayName": "Triojustfilm"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-just-film",
       "collectionName": "components_article_trio_just_films",
-      "info": {
-        "displayName": "Triojustfilm"
-      }
+      "displayName": "Triojustfilm"
     }
   },
   {
@@ -1076,15 +1076,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "triokinoff",
       "collectionName": "components_article_trio_kinoff",
-      "infoName": "Triokinoff"
+      "displayName": "Triokinoff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "triokinoff",
       "collectionName": "components_article_trio_kinoff",
-      "info": {
-        "displayName": "Triokinoff"
-      }
+      "displayName": "Triokinoff"
     }
   },
   {
@@ -1092,15 +1092,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-kumu",
       "collectionName": "components_article_trio_kumu",
-      "infoName": "Triokumu"
+      "displayName": "Triokumu"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-kumu",
       "collectionName": "components_article_trio_kumu",
-      "info": {
-        "displayName": "Triokumu"
-      }
+      "displayName": "Triokumu"
     }
   },
   {
@@ -1108,15 +1108,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-poff-et",
       "collectionName": "components_article_trio_poff_ets",
-      "infoName": "Triopoff"
+      "displayName": "Triopoff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-poff-et",
       "collectionName": "components_article_trio_poff_ets",
-      "info": {
-        "displayName": "Triopoff"
-      }
+      "displayName": "Triopoff"
     }
   },
   {
@@ -1124,15 +1124,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-shorts",
       "collectionName": "components_article_trio_shorts",
-      "infoName": "Trioshorts"
+      "displayName": "Trioshorts"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-shorts",
       "collectionName": "components_article_trio_shorts",
-      "info": {
-        "displayName": "Trioshorts"
-      }
+      "displayName": "Trioshorts"
     }
   },
   {
@@ -1140,15 +1140,15 @@
     "kind": "component",
     "s3": {
       "folderName": "article",
+      "fileName": "trio-tartuff",
       "collectionName": "components_article_trio_tartuffs",
-      "infoName": "Triotartuff"
+      "displayName": "Triotartuff"
     },
     "s4": {
       "folderName": "article",
+      "fileName": "trio-tartuff",
       "collectionName": "components_article_trio_tartuffs",
-      "info": {
-        "displayName": "Triotartuff"
-      }
+      "displayName": "Triotartuff"
     }
   },
   {
@@ -1156,15 +1156,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "user-right",
       "collectionName": "components_user_user_rights",
-      "infoName": "UserRight"
+      "displayName": "UserRight"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "user-right",
       "collectionName": "components_user_user_rights",
-      "info": {
-        "displayName": "UserRight"
-      }
+      "displayName": "UserRight"
     }
   },
   {
@@ -1172,15 +1172,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "credentials-new",
       "collectionName": "components_film_credentials_news",
-      "infoName": "credentials"
+      "displayName": "credentials"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "credentials-new",
       "collectionName": "components_film_credentials_news",
-      "info": {
-        "displayName": "credentials"
-      }
+      "displayName": "credentials"
     }
   },
   {
@@ -1188,15 +1188,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "external-providers",
       "collectionName": "components_user_external_providers",
-      "infoName": "externalProviders"
+      "displayName": "externalProviders"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "external-providers",
       "collectionName": "components_user_external_providers",
-      "info": {
-        "displayName": "externalProviders"
-      }
+      "displayName": "externalProviders"
     }
   },
   {
@@ -1204,15 +1204,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "film-in-filmography",
       "collectionName": "components_film_film_in_filmographies",
-      "infoName": "filmInFilmography"
+      "displayName": "filmInFilmography"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "film-in-filmography",
       "collectionName": "components_film_film_in_filmographies",
-      "info": {
-        "displayName": "filmInFilmography"
-      }
+      "displayName": "filmInFilmography"
     }
   },
   {
@@ -1220,15 +1220,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "filmography",
       "collectionName": "components_film_filmographies",
-      "infoName": "filmography"
+      "displayName": "filmography"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "filmography",
       "collectionName": "components_film_filmographies",
-      "info": {
-        "displayName": "filmography"
-      }
+      "displayName": "filmography"
     }
   },
   {
@@ -1236,15 +1236,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "footer-item-nav",
       "collectionName": "components_footer_footer_item_navs",
-      "infoName": "footerItemNav"
+      "displayName": "footerItemNav"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "footer-item-nav",
       "collectionName": "components_footer_footer_item_navs",
-      "info": {
-        "displayName": "footerItemNav"
-      }
+      "displayName": "footerItemNav"
     }
   },
   {
@@ -1252,15 +1252,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "hoffi-sub-menu-item",
       "collectionName": "components_menu_hoffi_items",
-      "infoName": "hoffiSubMenuItem"
+      "displayName": "hoffiSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "hoffi-sub-menu-item",
       "collectionName": "components_menu_hoffi_items",
-      "info": {
-        "displayName": "hoffiSubMenuItem"
-      }
+      "displayName": "hoffiSubMenuItem"
     }
   },
   {
@@ -1268,15 +1268,15 @@
     "kind": "component",
     "s3": {
       "folderName": "media",
+      "fileName": "imgs",
       "collectionName": "components_media_imgs",
-      "infoName": "imgs"
+      "displayName": "imgs"
     },
     "s4": {
       "folderName": "media",
+      "fileName": "imgs",
       "collectionName": "components_media_imgs",
-      "info": {
-        "displayName": "imgs"
-      }
+      "displayName": "imgs"
     }
   },
   {
@@ -1284,15 +1284,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "imported-to-strapi",
       "collectionName": "components_user_imported_to_strapis",
-      "infoName": "importedToStrapi"
+      "displayName": "importedToStrapi"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "imported-to-strapi",
       "collectionName": "components_user_imported_to_strapis",
-      "info": {
-        "displayName": "importedToStrapi"
-      }
+      "displayName": "importedToStrapi"
     }
   },
   {
@@ -1300,15 +1300,15 @@
     "kind": "component",
     "s3": {
       "folderName": "teams",
+      "fileName": "jury-member",
       "collectionName": "components_teams_jury_members",
-      "infoName": "juryMember"
+      "displayName": "juryMember"
     },
     "s4": {
       "folderName": "teams",
+      "fileName": "jury-member",
       "collectionName": "components_teams_jury_members",
-      "info": {
-        "displayName": "juryMember"
-      }
+      "displayName": "juryMember"
     }
   },
   {
@@ -1316,15 +1316,15 @@
     "kind": "component",
     "s3": {
       "folderName": "label",
+      "fileName": "label",
       "collectionName": "components_label_labels",
-      "infoName": "label"
+      "displayName": "label"
     },
     "s4": {
       "folderName": "label",
+      "fileName": "label",
       "collectionName": "components_label_labels",
-      "info": {
-        "displayName": "label"
-      }
+      "displayName": "label"
     }
   },
   {
@@ -1332,15 +1332,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "last10-logins",
       "collectionName": "components_user_last10_logins",
-      "infoName": "loginEvent"
+      "displayName": "loginEvent"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "last10-logins",
       "collectionName": "components_user_last10_logins",
-      "info": {
-        "displayName": "loginEvent"
-      }
+      "displayName": "loginEvent"
     }
   },
   {
@@ -1348,15 +1348,15 @@
     "kind": "component",
     "s3": {
       "folderName": "user",
+      "fileName": "my",
       "collectionName": "components_user_mies",
-      "infoName": "my"
+      "displayName": "my"
     },
     "s4": {
       "folderName": "user",
+      "fileName": "my",
       "collectionName": "components_user_mies",
-      "info": {
-        "displayName": "my"
-      }
+      "displayName": "my"
     }
   },
   {
@@ -1364,15 +1364,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "ordered-countries",
       "collectionName": "components_film_ordered_countries",
-      "infoName": "orderedCountries"
+      "displayName": "orderedCountries"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "ordered-countries",
       "collectionName": "components_film_ordered_countries",
-      "info": {
-        "displayName": "orderedCountries"
-      }
+      "displayName": "orderedCountries"
     }
   },
   {
@@ -1380,15 +1380,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "ordered-films",
       "collectionName": "components_film_ordered_films",
-      "infoName": "orderedFilms"
+      "displayName": "orderedFilms"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "ordered-films",
       "collectionName": "components_film_ordered_films",
-      "info": {
-        "displayName": "orderedFilms"
-      }
+      "displayName": "orderedFilms"
     }
   },
   {
@@ -1396,15 +1396,15 @@
     "kind": "component",
     "s3": {
       "folderName": "ticketing",
+      "fileName": "ordered-products",
       "collectionName": "components_ticketing_ordered_products",
-      "infoName": "orderedProduct"
+      "displayName": "orderedProduct"
     },
     "s4": {
       "folderName": "ticketing",
+      "fileName": "ordered-products",
       "collectionName": "components_ticketing_ordered_products",
-      "info": {
-        "displayName": "orderedProduct"
-      }
+      "displayName": "orderedProduct"
     }
   },
   {
@@ -1412,15 +1412,15 @@
     "kind": "component",
     "s3": {
       "folderName": "time",
+      "fileName": "period",
       "collectionName": "components_time_periods",
-      "infoName": "period"
+      "displayName": "period"
     },
     "s4": {
       "folderName": "time",
+      "fileName": "period",
       "collectionName": "components_time_periods",
-      "info": {
-        "displayName": "period"
-      }
+      "displayName": "period"
     }
   },
   {
@@ -1428,15 +1428,15 @@
     "kind": "component",
     "s3": {
       "folderName": "menu",
+      "fileName": "menu-item",
       "collectionName": "components_menu_menu_items",
-      "infoName": "poffiSubMenuItem"
+      "displayName": "poffiSubMenuItem"
     },
     "s4": {
       "folderName": "menu",
+      "fileName": "menu-item",
       "collectionName": "components_menu_menu_items",
-      "info": {
-        "displayName": "poffiSubMenuItem"
-      }
+      "displayName": "poffiSubMenuItem"
     }
   },
   {
@@ -1444,15 +1444,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "presented-by",
       "collectionName": "components_film_presented_bies",
-      "infoName": "presentedBy"
+      "displayName": "presentedBy"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "presented-by",
       "collectionName": "components_film_presented_bies",
-      "info": {
-        "displayName": "presentedBy"
-      }
+      "displayName": "presentedBy"
     }
   },
   {
@@ -1460,15 +1460,15 @@
     "kind": "component",
     "s3": {
       "folderName": "ticketing",
+      "fileName": "price-with-time",
       "collectionName": "components_ticketing_price_with_times",
-      "infoName": "priceAtPeriod"
+      "displayName": "priceAtPeriod"
     },
     "s4": {
       "folderName": "ticketing",
+      "fileName": "price-with-time",
       "collectionName": "components_ticketing_price_with_times",
-      "info": {
-        "displayName": "priceAtPeriod"
-      }
+      "displayName": "priceAtPeriod"
     }
   },
   {
@@ -1476,15 +1476,15 @@
     "kind": "component",
     "s3": {
       "folderName": "ticketing",
+      "fileName": "prod-cat-list",
       "collectionName": "components_ticketing_prod_cat_lists",
-      "infoName": "prodCatList"
+      "displayName": "prodCatList"
     },
     "s4": {
       "folderName": "ticketing",
+      "fileName": "prod-cat-list",
       "collectionName": "components_ticketing_prod_cat_lists",
-      "info": {
-        "displayName": "prodCatList"
-      }
+      "displayName": "prodCatList"
     }
   },
   {
@@ -1492,15 +1492,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "role-company",
       "collectionName": "components_film_role_companies",
-      "infoName": "roleCompany"
+      "displayName": "roleCompany"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "role-company",
       "collectionName": "components_film_role_companies",
-      "info": {
-        "displayName": "roleCompany"
-      }
+      "displayName": "roleCompany"
     }
   },
   {
@@ -1508,15 +1508,15 @@
     "kind": "component",
     "s3": {
       "folderName": "film",
+      "fileName": "role-person",
       "collectionName": "components_film_role_people",
-      "infoName": "rolePerson"
+      "displayName": "rolePerson"
     },
     "s4": {
       "folderName": "film",
+      "fileName": "role-person",
       "collectionName": "components_film_role_people",
-      "info": {
-        "displayName": "rolePerson"
-      }
+      "displayName": "rolePerson"
     }
   },
   {
@@ -1524,15 +1524,15 @@
     "kind": "component",
     "s3": {
       "folderName": "teams",
+      "fileName": "test-team",
       "collectionName": "components_teams_test_teams",
-      "infoName": "subTeam"
+      "displayName": "subTeam"
     },
     "s4": {
       "folderName": "teams",
+      "fileName": "test-team",
       "collectionName": "components_teams_test_teams",
-      "info": {
-        "displayName": "subTeam"
-      }
+      "displayName": "subTeam"
     }
   },
   {
@@ -1540,15 +1540,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-just",
       "collectionName": "components_footer_sup_justs",
-      "infoName": "supJust"
+      "displayName": "supJust"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-just",
       "collectionName": "components_footer_sup_justs",
-      "info": {
-        "displayName": "supJust"
-      }
+      "displayName": "supJust"
     }
   },
   {
@@ -1556,15 +1556,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-kinoff",
       "collectionName": "components_footer_sup_kinoffs",
-      "infoName": "supKinoff"
+      "displayName": "supKinoff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-kinoff",
       "collectionName": "components_footer_sup_kinoffs",
-      "info": {
-        "displayName": "supKinoff"
-      }
+      "displayName": "supKinoff"
     }
   },
   {
@@ -1572,15 +1572,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-poff",
       "collectionName": "components_footer_sup_poffs",
-      "infoName": "supPoff"
+      "displayName": "supPoff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-poff",
       "collectionName": "components_footer_sup_poffs",
-      "info": {
-        "displayName": "supPoff"
-      }
+      "displayName": "supPoff"
     }
   },
   {
@@ -1588,15 +1588,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-just",
       "collectionName": "components_footer_sup_sec_justs",
-      "infoName": "supSecJust"
+      "displayName": "supSecJust"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-just",
       "collectionName": "components_footer_sup_sec_justs",
-      "info": {
-        "displayName": "supSecJust"
-      }
+      "displayName": "supSecJust"
     }
   },
   {
@@ -1604,15 +1604,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-poff",
       "collectionName": "components_footer_sup_sec_poffs",
-      "infoName": "supSecPoff"
+      "displayName": "supSecPoff"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-poff",
       "collectionName": "components_footer_sup_sec_poffs",
-      "info": {
-        "displayName": "supSecPoff"
-      }
+      "displayName": "supSecPoff"
     }
   },
   {
@@ -1620,15 +1620,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-sec-shorts",
       "collectionName": "components_footer_sup_sec_shorts",
-      "infoName": "supSecShorts"
+      "displayName": "supSecShorts"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-sec-shorts",
       "collectionName": "components_footer_sup_sec_shorts",
-      "info": {
-        "displayName": "supSecShorts"
-      }
+      "displayName": "supSecShorts"
     }
   },
   {
@@ -1636,15 +1636,15 @@
     "kind": "component",
     "s3": {
       "folderName": "footer",
+      "fileName": "sup-shorts",
       "collectionName": "components_footer_sup_shorts",
-      "infoName": "supShorts"
+      "displayName": "supShorts"
     },
     "s4": {
       "folderName": "footer",
+      "fileName": "sup-shorts",
       "collectionName": "components_footer_sup_shorts",
-      "info": {
-        "displayName": "supShorts"
-      }
+      "displayName": "supShorts"
     }
   },
   {
@@ -1652,15 +1652,15 @@
     "kind": "component",
     "s3": {
       "folderName": "teams",
+      "fileName": "team-member",
       "collectionName": "components_teams_team_members",
-      "infoName": "teamMember"
+      "displayName": "teamMember"
     },
     "s4": {
       "folderName": "teams",
+      "fileName": "team-member",
       "collectionName": "components_teams_team_members",
-      "info": {
-        "displayName": "teamMember"
-      }
+      "displayName": "teamMember"
     }
   },
   {
@@ -1668,15 +1668,15 @@
     "kind": "component",
     "s3": {
       "folderName": "ticketing",
+      "fileName": "ticketing-rights",
       "collectionName": "components_ticketing_ticketing_rights",
-      "infoName": "ticketingRight"
+      "displayName": "ticketingRight"
     },
     "s4": {
       "folderName": "ticketing",
+      "fileName": "ticketing-rights",
       "collectionName": "components_ticketing_ticketing_rights",
-      "info": {
-        "displayName": "ticketingRight"
-      }
+      "displayName": "ticketingRight"
     }
   }
 ]

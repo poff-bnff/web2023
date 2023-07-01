@@ -18,17 +18,15 @@ const componentschema = JSON.parse(fs.readFileSync(STRAPI3_COMPONENTSCHEMA_PATH,
       kind: 'component',
       s3: {
         folderName: item.folderName,
-        // apiPath: item.s3ApiPath,
+        fileName: item.componentName,
         collectionName: item.v4.collectionName,
-        infoName: item.s3InfoName
+        displayName: item.s3InfoName
       },
       s4: {
         folderName: item.folderName,
-        // apiPath: item.s4ApiPath,
+        fileName: item.componentName,
         collectionName: item.v4.collectionName,
-        info: {
-          displayName: item.v4.info.displayName,
-        }
+        displayName: item.s3InfoName
       }
     }
   })
@@ -46,12 +44,13 @@ const flatModel = componentschema.map(item => {
     datamodelKey: item.datamodelKey,
     kind: item.kind,
     's3.folderName': item.s3.folderName,
-    // 's3.apiPath': item.s3.apiPath,
+    's3.fileName': item.s3.fileName,
     's3.collectionName': item.s3.collectionName,
-    's3.infoName': item.s3.infoName,
+    's3.displayName': item.s3.displayName,
     's4.folderName': item.s4.folderName,
+    's4.fileName': item.s4.fileName,
     's4.collectionName': item.s4.collectionName,
-    's4.info.displayName': item.s4.info.displayName
+    's4.displayName': item.s4.displayName
   }
 })
 
@@ -62,12 +61,13 @@ const csvWriter = csv({
     { id: 'datamodelKey', title: 'datamodelKey' },
     { id: 'kind', title: 'kind' },
     { id: 's3.folderName', title: 's3.folderName' },
-    // { id: 's3.apiPath', title: 's3.apiPath' },
+    { id: 's3.fileName', title: 's3.fileName' },
     { id: 's3.collectionName', title: 's3.collectionName' },
-    { id: 's3.infoName', title: 's3.infoName' },
+    { id: 's3.displayName', title: 's3.displayName' },
     { id: 's4.folderName', title: 's4.folderName' },
+    { id: 's4.fileName', title: 's4.fileName' },
     { id: 's4.collectionName', title: 's4.collectionName' },
-    { id: 's4.info.displayName', title: 's4.info.displayName' }
+    { id: 's4.displayName', title: 's4.displayName' }
   ]
 });
 csvWriter.writeRecords(flatModel)
