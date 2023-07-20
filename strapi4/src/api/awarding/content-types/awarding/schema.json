@@ -78,6 +78,11 @@
     },
     "year": {
       "type": "integer"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::industry-project.industry-project"
     }
   }
 }

@@ -104,6 +104,26 @@ const Transporter = class {
     })
   }
 
+  /** Fill existing entry in S4
+   * @param {string} s4ApiPath
+   * @param {Object} entry
+   */
+  async fillEntry(s4ApiPath, entry) {
+    const s4token = await this.getStrapi4token()
+    const s4url = `${S_4_URL}${s4ApiPath}/${entry.id}`
+    // console.log( `fillEntry: ${s4url}, entry: ${JSON.stringify(entry)}`)
+    const s4data = await axios.put(s4url, { data: entry }, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${s4token}`
+      }
+    }).then((response) => response.data
+    ).catch((error) => {
+      console.log(`Error uploading ${entry.id}: ${error.response.status} ${error.response.statusText}`)
+      throw error
+    })
+  }
+
   /** Create entry in S4
    * @param {string} s4ApiPath
    * @param {Object} entry
@@ -111,7 +131,7 @@ const Transporter = class {
   async createEntry(s4ApiPath, entry) {
     const s4token = await this.getStrapi4token()
     const s4url = `${S_4_URL}${s4ApiPath}`
-    console.log( `createEntry: ${s4ApiPath}, entry: ${JSON.stringify(entry)}`)
+    // console.log( `createEntry: ${s4ApiPath}, entry: ${JSON.stringify(entry)}`)
     const s4data = await axios.post(s4url, { data: entry }, {
       headers: {
         'Content-Type': 'application/json',

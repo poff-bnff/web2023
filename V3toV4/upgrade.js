@@ -105,6 +105,8 @@ const attributeTransformer = transformer.attributeTransformer
 const collectionTransformer = transformer.collectionTransformer
 const componentTransformer = transformer.componentTransformer
 
+const ignoreAttributes = ['id', 'created_by', 'updated_by', 'created_at', 'updated_at', 'published_at', 'valid_from', 'valid_to']
+
 // pluralize. also make kebab-case
 const pluralize = (singular) => {
   const kebab = singular.toLowerCase().replace(/_/g, '-')
@@ -132,6 +134,7 @@ const transformSchema = async () => {
   const datamodel = yaml.load(fs.readFileSync(STRAPI3_DATAMODEL_PATH, 'utf8'))
   const relevantCollectionTypes = Object.keys(datamodel)
     .map(key => {
+      // if ( key === 'Product' ) console.log(datamodel[key])
       return {
         key: key,
         model: datamodel[key]
@@ -172,10 +175,18 @@ const transformSchema = async () => {
 
     ; // TODO: this semicolon is required. Why?
 
+  // ... prepend V3CollectionTypes array with Users model
+  const usersModel = JSON.parse(fs.readFileSync(path.join(STRAPI3_COLLECTIONS_PATH, '..', 'extensions', 'users-permissions', 'models', 'User.settings.json'), 'utf8'))
+  usersModel.s3ApiPath = '/users'
+  usersModel.folderName = '../extensions/users-permissions'
+  usersModel.attributes.role.required = true
+  V3CollectionTypes.unshift(usersModel)
+
   // mark as found and populate with kind and s3* attributes
   V3CollectionTypes.forEach(item => {
     const relevantCollection = relevantCollectionTypes
       .find(collType => matchCollectionType(collType, item))
+    // console.log(`INFO 1.1: Found collection type ${item.collectionName} as relevant: ${relevantCollection !== undefined}`)
     delete relevantCollection.isFound
     relevantCollection.kind = item.kind
     relevantCollection.folderName = item.folderName
@@ -323,7 +334,7 @@ const transportData = async () => {
   }
 
   const collectionTypes = require('./V4schema.flat.collections.withAttributes.json')
-  const firstFiveCollectionTypes = collectionTypes//.slice(15, -1)
+  const firstFiveCollectionTypes = collectionTypes.slice(8,9)
 
   for (const collectionType of firstFiveCollectionTypes) {
     console.log(`Reading entries for collection type "${collectionType.collectionName}"...`)
@@ -336,16 +347,29 @@ const transportData = async () => {
     const s3DataFromFile = fs.existsSync(s3DataFileName) ? JSON.parse(fs.readFileSync(s3DataFileName, 'utf8')) : false
 
     const s3read = s3DataFromFile || await transporter.readS3(collectionType)
-    // reduce relation attributes to contain just IDs
+    // - reduce relation attributes to contain just IDs
+    // - remove attributes that doesnot exist in Strapi 4 schema
     s3read.s3data
       .forEach(entry => {
         // console.log(`entry: ${JSON.stringify(entry, null, 2)}`)
+        // reduce relation attributes to contain just IDs
         for (const attr of relationAttributes) {
           // console.log(`attr: ${attr}`)
           if (entry[attr] && entry[attr].id) {
             entry[attr] = entry[attr].id
           }
         }
+        // remove attributes that doesnot exist in Strapi 4 schema
+        Object.keys(entry)
+          .forEach(key => {
+            if (ignoreAttributes.includes(key)) {
+              return
+            }
+            if (!Object.keys(collectionType.v4.attributes).includes(key)) {
+              delete entry[key]
+            }
+          })
+
         return entry
       })
 
@@ -375,7 +399,40 @@ const transportData = async () => {
   // await deleteFromS4(firstFiveCollectionTypes)
 
   // import entries. Loop over s3DataFromFile.s3data
-  // await seedS4Entries(firstFiveCollectionTypes)
+  await seedS4Entries(firstFiveCollectionTypes)
+
+  // fill entries. Loop over s3DataFromFile.s3data
+  await fillS4Entries(firstFiveCollectionTypes)
+
+  async function fillS4Entries(collectionTypes) {
+    for (const collectionType of collectionTypes) {
+      // console.log(`Filling entries for collection type ${JSON.stringify(collectionType, null, 2)}`)
+      console.log(`Filling entries for collection type "${collectionType.collectionName}"...`)
+
+      const s3DataFileName = path.join(__dirname, 's3data', `s3.${collectionType.collectionName}.json`)
+      const s3DataFromFile = JSON.parse(fs.readFileSync(s3DataFileName, 'utf8'))
+
+      // import entries. Loop over s3DataFromFile.s3data
+      for (const entry of s3DataFromFile.s3data) {
+        // Remove id's from entry's component attributes
+        for (const attrName of Object.keys(entry)) {
+          if (ignoreAttributes.includes(attrName)) {
+            continue
+          }
+          if (collectionType.v4.attributes[attrName].component) {
+            if (collectionType.v4.attributes[attrName].repeatable) {
+              entry[attrName].forEach(comp => {
+                delete comp.id
+              })
+            } else {
+              delete entry[attrName].id
+            }
+          }
+        }
+        await transporter.fillEntry(s3DataFromFile.s4ApiPath, entry)
+      }
+    }
+  }
 
   async function seedS4Entries(collectionTypes) {
     for (const collectionType of collectionTypes) {
@@ -413,7 +470,7 @@ const main = async () => {
   // - Strapi 3 schema gets converted to Strapi 4 schema;
   // - Strapi 4 schema files get created;
   // - V4 schema is saved to V4_SCHEMA_FILE file;
-  // await transformSchema()
+  await transformSchema()
   // Now Strapi4 should be able to start with the new schema,
   // automatically creating the database tables.
 

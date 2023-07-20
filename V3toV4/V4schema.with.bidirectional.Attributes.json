@@ -1,0 +1,108 @@
+[
+  {
+    "collectionDisplayName": "UserRole",
+    "attributes": {
+      "product_categories": {
+        "target": "api::product-category.product-category",
+        "mappedBy": "user_roles"
+      },
+      "users": {
+        "inversedBy": "user_roles",
+        "target": "plugin::users-permissions.user"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "TagLocation",
+    "attributes": {
+      "tag_categories": {
+        "target": "api::tag-category.tag-category",
+        "mappedBy": "tag_locations"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "TagCategory",
+    "attributes": {
+      "tag_locations": {
+        "target": "api::tag-location.tag-location",
+        "inversedBy": "tag_categories"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "FestivalEdition",
+    "attributes": {
+      "projects": {
+        "target": "api::industry-project.industry-project",
+        "mappedBy": "editions"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "Person",
+    "attributes": {
+      "filmographies": {
+        "target": "api::filmography.filmography",
+        "mappedBy": "person"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "Industry_Article",
+    "attributes": {
+      "industry_categories": {
+        "target": "api::industry-category.industry-category",
+        "mappedBy": "industry_article"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "Industry_Project",
+    "attributes": {
+      "editions": {
+        "target": "api::festival-edition.festival-edition",
+        "inversedBy": "projects"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "Course",
+    "attributes": {
+      "events": {
+        "target": "api::event.event",
+        "mappedBy": "course"
+      },
+      "product_categories": {
+        "target": "api::product-category.product-category",
+        "mappedBy": "courses"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "Product_Category",
+    "attributes": {
+      "user_roles": {
+        "target": "api::user-role.user-role",
+        "inversedBy": "product_categories"
+      },
+      "courses": {
+        "target": "api::course.course",
+        "inversedBy": "product_categories"
+      },
+      "course_events": {
+        "target": "api::course-event.course-event",
+        "mappedBy": "product_categories"
+      }
+    }
+  },
+  {
+    "collectionDisplayName": "CourseEvent",
+    "attributes": {
+      "product_categories": {
+        "target": "api::product-category.product-category",
+        "inversedBy": "course_events"
+      }
+    }
+  }
+]

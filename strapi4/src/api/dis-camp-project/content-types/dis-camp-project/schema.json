@@ -61,7 +61,7 @@
       "relation": "oneToOne",
       "target": "api::country.country"
     },
-    "teamCredentials": {
+    "credentials": {
       "type": "component",
       "component": "film.credentials-new"
     },

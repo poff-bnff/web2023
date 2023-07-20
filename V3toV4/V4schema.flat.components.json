@@ -45,6 +45,216 @@
   },
   {
     "folderName": "user",
+    "componentName": "external-providers",
+    "s3InfoName": "externalProviders",
+    "s3ApiPath": "/components/user/external-providers",
+    "s4ApiPath": "/components/user/external-providers",
+    "v4": {
+      "collectionName": "components_user_external_providers",
+      "info": {
+        "displayName": "externalProviders"
+      },
+      "options": {},
+      "attributes": {
+        "provider": {
+          "type": "enumeration",
+          "enum": [
+            "Eventival",
+            "Facebook",
+            "Google",
+            "local"
+          ]
+        },
+        "UUID": {
+          "type": "string"
+        },
+        "dateConnected": {
+          "type": "datetime"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
+    "componentName": "last10-logins",
+    "s3InfoName": "loginEvent",
+    "s3ApiPath": "/components/user/last10-logins",
+    "s4ApiPath": "/components/user/last10-logins",
+    "v4": {
+      "collectionName": "components_user_last10_logins",
+      "info": {
+        "displayName": "loginEvent"
+      },
+      "options": {},
+      "attributes": {
+        "loginDateTime": {
+          "type": "datetime"
+        },
+        "provider": {
+          "type": "enumeration",
+          "enum": [
+            "local",
+            "eventival",
+            "facebook",
+            "google"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
+    "componentName": "imported-to-strapi",
+    "s3InfoName": "importedToStrapi",
+    "s3ApiPath": "/components/user/imported-to-strapi",
+    "s4ApiPath": "/components/user/imported-to-strapi",
+    "v4": {
+      "collectionName": "components_user_imported_to_strapis",
+      "info": {
+        "displayName": "importedToStrapi"
+      },
+      "options": {},
+      "attributes": {
+        "importedUser": {
+          "type": "boolean"
+        },
+        "timeStamp": {
+          "type": "datetime"
+        },
+        "importedFrom": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "UUID": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
+    "componentName": "my-films",
+    "s3InfoName": "MyFilms",
+    "s3ApiPath": "/components/user/my-films",
+    "s4ApiPath": "/components/user/my-films",
+    "v4": {
+      "collectionName": "components_user_my_films",
+      "info": {
+        "displayName": "MyFilms"
+      },
+      "options": {},
+      "attributes": {
+        "type": {
+          "type": "enumeration",
+          "enum": [
+            "favorite",
+            "other"
+          ]
+        },
+        "cassettes": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::cassette.cassette"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
+    "componentName": "my-screenings",
+    "s3InfoName": "MyScreenings",
+    "s3ApiPath": "/components/user/my-screenings",
+    "s4ApiPath": "/components/user/my-screenings",
+    "v4": {
+      "collectionName": "components_user_my_screenings",
+      "info": {
+        "displayName": "MyScreenings"
+      },
+      "options": {},
+      "attributes": {
+        "type": {
+          "type": "enumeration",
+          "enum": [
+            "schedule",
+            "other"
+          ]
+        },
+        "screenings": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::screening.screening"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
+    "componentName": "my-events",
+    "s3InfoName": "MyEvents",
+    "s3ApiPath": "/components/user/my-events",
+    "s4ApiPath": "/components/user/my-events",
+    "v4": {
+      "collectionName": "components_user_my_events",
+      "info": {
+        "displayName": "MyEvents"
+      },
+      "options": {},
+      "attributes": {
+        "type": {
+          "type": "enumeration",
+          "enum": [
+            "schedule",
+            "other"
+          ]
+        },
+        "industry_events": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::industry-event.industry-event"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
+    "componentName": "my",
+    "s3InfoName": "my",
+    "s3ApiPath": "/components/user/my",
+    "s4ApiPath": "/components/user/my",
+    "v4": {
+      "collectionName": "components_user_mies",
+      "info": {
+        "displayName": "my"
+      },
+      "options": {},
+      "attributes": {
+        "screenings": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::screening.screening"
+        },
+        "films": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::cassette.cassette"
+        },
+        "products": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::product.product"
+        },
+        "course_events": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::course-event.course-event"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "user",
     "componentName": "user-right",
     "s3InfoName": "UserRight",
     "s3ApiPath": "/components/user/user-right",
@@ -1855,6 +2065,70 @@
           "type": "component",
           "repeatable": true,
           "component": "menu.l3-menu-kumu"
+        }
+      }
+    }
+  },
+  {
+    "folderName": "frontpage",
+    "componentName": "banner",
+    "s3InfoName": "Banner",
+    "s3ApiPath": "/components/frontpage/banner",
+    "s4ApiPath": "/components/frontpage/banner",
+    "v4": {
+      "collectionName": "components_frontpage_banners",
+      "info": {
+        "displayName": "Banner"
+      },
+      "options": {},
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "publishFrom": {
+          "type": "datetime"
+        },
+        "publishUntil": {
+          "type": "datetime"
+        },
+        "imageDefault": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_et": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_en": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "image_ru": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "targetDefault": {
+          "type": "string"
+        },
+        "target_et": {
+          "type": "string"
+        },
+        "target_en": {
+          "type": "string"
+        },
+        "target_ru": {
+          "type": "string"
         }
       }
     }

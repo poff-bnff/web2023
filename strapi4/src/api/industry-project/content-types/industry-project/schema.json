@@ -61,7 +61,7 @@
       "relation": "oneToOne",
       "target": "api::country.country"
     },
-    "teamCredentials": {
+    "creds": {
       "type": "component",
       "component": "film.credentials-new"
     },
@@ -132,6 +132,12 @@
       "relation": "manyToMany",
       "target": "api::festival-edition.festival-edition",
       "inversedBy": "projects"
+    },
+    "awardings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::awarding.awarding",
+      "mappedBy": "project"
     },
     "tag_looking_fors": {
       "type": "relation",

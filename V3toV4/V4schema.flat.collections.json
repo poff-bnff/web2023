@@ -114,6 +114,63 @@
     }
   },
   {
+    "s3DatamodelKey": "TransactionProduct",
+    "collectionName": "transactions_products",
+    "kind": "collectionType",
+    "folderName": "transactions-products",
+    "s3ApiPath": "/transactions-products",
+    "s3InfoName": "TransactionsProducts",
+    "s3CollectionName": "transactions_products",
+    "s4ApiPath": "/api/transactions-productses",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "transactions_products",
+      "info": {
+        "singularName": "transactions-products",
+        "pluralName": "transactions-productses",
+        "displayName": "TransactionsProducts"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Transaction",
+    "collectionName": "transactions",
+    "kind": "collectionType",
+    "folderName": "transaction",
+    "s3ApiPath": "/transactions",
+    "s3InfoName": "transaction",
+    "s3CollectionName": "transactions",
+    "s4ApiPath": "/api/transactions",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "transactions",
+      "info": {
+        "singularName": "transaction",
+        "pluralName": "transactions",
+        "displayName": "transaction"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "user",
+    "collectionName": "users",
+    "kind": "collectionType",
+    "folderName": "../extensions/users-permissions",
+    "s3ApiPath": "/users",
+    "s3InfoName": "user",
+    "s3CollectionName": "users-permissions_user",
+    "s4ApiPath": "/api/../extensions/users-permissionses",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "users",
+      "info": {
+        "singularName": "../extensions/users-permissions",
+        "pluralName": "../extensions/users-permissionses",
+        "displayName": "user"
+      }
+    }
+  },
+  {
     "s3DatamodelKey": "UserRole",
     "collectionName": "user_roles",
     "kind": "collectionType",
@@ -129,6 +186,25 @@
         "singularName": "user-role",
         "pluralName": "user-roles",
         "displayName": "UserRole"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "UserProfile",
+    "collectionName": "user_profiles",
+    "kind": "collectionType",
+    "folderName": "user-profiles",
+    "s3ApiPath": "/user-profiles",
+    "s3InfoName": "UserProfiles",
+    "s3CollectionName": "user_profiles",
+    "s4ApiPath": "/api/user-profileses",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "user_profiles",
+      "info": {
+        "singularName": "user-profiles",
+        "pluralName": "user-profileses",
+        "displayName": "UserProfiles"
       }
     }
   },
@@ -1501,6 +1577,25 @@
     }
   },
   {
+    "s3DatamodelKey": "IndustryEvent",
+    "collectionName": "industry_events",
+    "kind": "collectionType",
+    "folderName": "industry-event",
+    "s3ApiPath": "/industry-events",
+    "s3InfoName": "Industry_Event",
+    "s3CollectionName": "industry_events",
+    "s4ApiPath": "/api/industry-events",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "industry_events",
+      "info": {
+        "singularName": "industry-event",
+        "pluralName": "industry-events",
+        "displayName": "Industry_Event"
+      }
+    }
+  },
+  {
     "s3DatamodelKey": "IndustryMenu",
     "collectionName": "industry_menus",
     "kind": "collectionType",
@@ -2447,6 +2542,44 @@
         "singularName": "l1-menu-kumu",
         "pluralName": "l1-menu-kumus",
         "displayName": "L1MenuKumu"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "BannerGroup",
+    "collectionName": "banner",
+    "kind": "collectionType",
+    "folderName": "banner",
+    "s3ApiPath": "/banners",
+    "s3InfoName": "BannerGroup",
+    "s3CollectionName": "banners",
+    "s4ApiPath": "/api/banners",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "banner",
+      "info": {
+        "singularName": "banner",
+        "pluralName": "banners",
+        "displayName": "BannerGroup"
+      }
+    }
+  },
+  {
+    "s3DatamodelKey": "Product",
+    "collectionName": "product",
+    "kind": "collectionType",
+    "folderName": "product",
+    "s3ApiPath": "/products",
+    "s3InfoName": "Product",
+    "s3CollectionName": "products",
+    "s4ApiPath": "/api/products",
+    "v4": {
+      "kind": "collectionType",
+      "collectionName": "product",
+      "info": {
+        "singularName": "product",
+        "pluralName": "products",
+        "displayName": "Product"
       }
     }
   },
