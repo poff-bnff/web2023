@@ -1,0 +1,131 @@
+### Login to Strapi 3
+POST https://admin.poff.ee/auth/local HTTP/1.1
+content-type: application/json
+
+{
+    "identifier": "{{user}}", 
+    "password": "{{secretKey}}"
+}
+
+### Login to Strapi 4
+POST http://localhost:1337/auth/auth HTTP/1.1
+content-type: application/json
+
+{
+    "identifier": "{{s4user}}", 
+    "password": "{{s4secretKey}}"
+}
+
+### query Strapi 4
+GET http://localhost:1337/api/product-types HTTP/1.1
+content-type: application/json
+Authorization: bearer {{nonProdToken}}
+
+###
+GET http://localhost:1337/api/users HTTP/1.1
+content-type: application/json
+Authorization: bearer {{nonProdToken}}
+
+### seed functions
+post http://127.0.0.1:1337/api/functions/ HTTP/1.1
+content-type: application/json
+Authorization: bearer {{nonProdToken}}
+
+{
+    "data": { "id":1 }
+}
+
+### fill functions
+put http://127.0.0.1:1337/api/functions/1 HTTP/1.1
+content-type: application/json
+Authorization: bearer {{nonProdToken}}
+
+{
+    "data": {
+        "id":1,
+        "name":"show_not_public",
+        "description":"Näita objekte, mille public = FALSE",
+        "valid_from":null,
+        "valid_to":null,
+        "created_at":"2022-02-02T06:04:23.290Z",
+        "updated_at":"2022-04-18T10:44:09.144Z",
+        "collection_pattern":"(poffi|industry)_article",
+        "function_parameters":[{"id":1,"property":"show","value":"TRUE"}]
+    }
+}
+
+### fill user-rights
+put http://127.0.0.1:1337/api/user-roles/1 HTTP/1.1
+content-type: application/json
+Authorization: bearer {{nonProdToken}}
+
+{"data":
+{"id":1,"name":"PÖFF Press 2022",
+"valid_from":"2022-01-01T10:00:00.000Z","valid_to":"2022-12-31T10:00:00.000Z",
+"created_at":"2022-02-02T05:58:50.582Z","updated_at":"2022-04-18T08:59:15.146Z",
+"user_right":[{"name":"Read PÖFF Press Articles","function":1,"read":true,"write":null,"execute":null,"valid_from":null,"valid_to":null,"functions":[{"id":1,"name":"show_not_public","description":"Näita objekte, mille public = FALSE","valid_from":null,"valid_to":null,"created_at":"2022-02-02T06:04:23.290Z","updated_at":"2022-04-18T10:44:09.144Z","collection_pattern":"(poffi|industry)_article"}],"smart_folders":[{"id":1,"name":"Pressi artiklid / PÖFF","description":"PÖFFi artiklid (POFFi_Articles), mille ArticleTypes hulgas on for_press (name) ja public on false","created_at":"2022-04-18T05:25:06.030Z","updated_at":"2022-06-08T11:01:07.853Z"}],"dumb_folders":[]}],
+"product_categories":[],
+"users":[{"id":14809,"username":"Jaan Leppik","email":"jaan.leppik@poff.ee","provider":"eventivalindustry,eventival,google","confirmed":true,"blocked":null,"role":1,"created_at":"2021-11-15T14:39:33.140Z","updated_at":"2023-03-02T13:54:56.006Z","account_created":"2021-11-15T14:39:33.136Z","profileFilled":true,"person_test_2":null,"users_person":null,"user_profile":4405,"business_profile":null,"moodle_id":null,"id_number_est":null,"person":15498,"externalProviders":[{"id":7000,"provider":"Eventivalindustry","UUID":"d2a27e43-3628-445a-b635-31aaf8f926b4","dateConnected":"2021-11-15T14:39:32.941Z"},{"id":8114,"provider":"Eventival","UUID":"d2a27e43-3628-445a-b635-31aaf8f926b4","dateConnected":"2022-03-23T11:05:58.087Z"},{"id":8569,"provider":"Google","UUID":"105332327267916439896","dateConnected":"2022-11-02T17:07:55.060Z"}],"last10Logins":[{"id":28870,"loginDateTime":"2022-08-16T11:24:54.498Z","provider":"eventivalindustry"},{"id":28919,"loginDateTime":"2022-08-17T15:28:30.438Z","provider":"eventivalindustry"},{"id":28920,"loginDateTime":"2022-08-17T15:28:42.065Z","provider":"eventivalindustry"},{"id":29002,"loginDateTime":"2022-08-18T19:43:15.994Z","provider":"eventivalindustry"},{"id":29220,"loginDateTime":"2022-08-25T14:25:52.264Z","provider":"eventivalindustry"},{"id":29224,"loginDateTime":"2022-08-25T16:56:28.378Z","provider":"eventivalindustry"},{"id":29343,"loginDateTime":"2022-08-28T20:10:35.202Z","provider":"eventivalindustry"},{"id":29409,"loginDateTime":"2022-08-29T21:28:40.483Z","provider":"eventivalindustry"},{"id":29471,"loginDateTime":"2022-08-30T17:34:45.233Z","provider":"eventivalindustry"},{"id":29472,"loginDateTime":"2022-08-30T17:35:53.418Z","provider":"eventivalindustry"},{"id":29473,"loginDateTime":"2022-08-30T17:35:53.419Z","provider":"eventivalindustry"},{"id":29481,"loginDateTime":"2022-08-30T18:09:51.669Z","provider":"eventivalindustry"},{"id":29661,"loginDateTime":"2022-09-02T11:27:58.462Z","provider":"eventivalindustry"},{"id":29717,"loginDateTime":"2022-09-04T16:42:12.476Z","provider":"eventivalindustry"},{"id":29718,"loginDateTime":"2022-09-04T16:42:49.128Z","provider":"eventivalindustry"},{"id":30913,"loginDateTime":"2022-09-19T07:44:27.977Z","provider":"eventivalindustry"},{"id":31474,"loginDateTime":"2022-09-23T08:58:36.965Z","provider":"eventivalindustry"},{"id":31505,"loginDateTime":"2022-09-24T13:30:38.878Z","provider":"eventivalindustry"},{"id":32105,"loginDateTime":"2022-10-06T04:43:34.720Z","provider":"eventivalindustry"},{"id":32106,"loginDateTime":"2022-10-06T04:44:23.863Z","provider":"eventivalindustry"},{"id":32107,"loginDateTime":"2022-10-06T04:46:06.201Z","provider":"eventivalindustry"},{"id":35028,"loginDateTime":"2022-11-02T17:07:55.277Z","provider":"google"},{"id":35713,"loginDateTime":"2022-11-04T14:17:17.835Z","provider":"eventivalindustry"},{"id":37048,"loginDateTime":"2022-11-08T14:55:41.763Z","provider":"eventivalindustry"}],"importedToStrapi":null,"my_films":[],"my_screenings":[],"my_events":[{"id":900,"type":"schedule","industry_events":[]}],"My":null}]
+}}
+
+### create user
+post http://127.0.0.1:1337/api/users HTTP/1.1
+content-type: application/json
+Authorization: bearer {{nonProdToken}}
+
+{"data":{
+    "id": 2,
+    "username": "ert2test",
+    "email": "test@test.test",
+    "provider": "local",
+    "confirmed": true,
+    "blocked": false,
+    "role": 1
+  }}
+
+### update user
+put http://127.0.0.1:1337/api/users/1 HTTP/1.1
+content-type: application/json
+Authorization: bearer {{nonProdToken}}
+
+{"data":{
+    "username": "ert2test",
+    "email": "test@test.test",
+    "provider": "local",
+    "confirmed": true,
+    "blocked": false,
+    "role": 1
+  }}
+
+
+
+### hunt is 16998
+### webuser is 14783
+### limit 3
+### depth 2
+GET https://admin.poff.ee/awardings?_limit=3
+content-type: application/json
+Authorization: Bearer {{nonProdToken}}
+
+###
+
+POST https://admin.poff.ee/auth/oauth/register HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{nonProdToken}}
+
+{
+    "username": "test123",
+    "email": "user@strapi.io",
+    "password": "{{nonProdToken}}{{nonProdToken}}{{nonProdToken}}{{nonProdToken}}"
+}
+
+### 1 of films
+GET https://admin.poff.ee/product-types HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{nonProdToken}}
+
+### 1 of festival-editions
+GET https://admin.poff.ee/festival-editions/66 HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{nonProdToken}}
+
